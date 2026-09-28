@@ -1,0 +1,146 @@
+[
+  {
+    "id": "kafe",
+    "name": "Kafe",
+    "color": "#C97B4D",
+    "icon": "☕",
+    "places": [
+      {
+        "name": "Sabah kahvesi köşesi",
+        "description": "Sokağın en sessiz kafesinde günün ilk kahvesi."
+      },
+      {
+        "name": "Kitaplı kafe",
+        "description": "Kitap kokusu ve fısıltıyla dolu bir mekan."
+      },
+      {
+        "name": "Manzaralı çatı katı",
+        "description": "Şehri tepeden izleyerek uzun bir latte."
+      },
+      {
+        "name": "Küçük ara sokak",
+        "description": "Tesadüfen keşfedilecek karakterli bir yer."
+      }
+    ]
+  },
+  {
+    "id": "restoran",
+    "name": "Restoran",
+    "color": "#D64545",
+    "icon": "🍽️",
+    "places": [
+      {
+        "name": "İtalyan akşamı",
+        "description": "Mum ışığında pasta ve kırmızı şarap."
+      },
+      {
+        "name": "Deniz kenarı",
+        "description": "Dalga sesi + taze balık."
+      },
+      {
+        "name": "Sokak lezzeti",
+        "description": "Yerel mekanda dumanı üstünde yemek."
+      },
+      {
+        "name": "Aile mutfağı",
+        "description": "Küçük, samimi, ev usulü."
+      }
+    ]
+  },
+  {
+    "id": "park",
+    "name": "Park",
+    "color": "#4CAF50",
+    "icon": "🌳",
+    "places": [
+      {
+        "name": "Piknik battaniyesi",
+        "description": "Sepet, meyve, çilekli limonata."
+      },
+      {
+        "name": "Akşam yürüyüşü",
+        "description": "Gün batımında el ele bir tur."
+      },
+      {
+        "name": "Bank üstünde",
+        "description": "Ağaç altında kitap ve kulaklık paylaşımı."
+      },
+      {
+        "name": "Sabahın erken saati",
+        "description": "Kuş sesleri, sadece siz ikiniz."
+      }
+    ]
+  },
+  {
+    "id": "sinema",
+    "name": "Sinema",
+    "color": "#6A4C93",
+    "icon": "🎬",
+    "places": [
+      {
+        "name": "Klasik salon + patlamış mısır",
+        "description": "Karanlık salon, koltuğa iyice yerleşin."
+      },
+      {
+        "name": "Bağımsız film gecesi",
+        "description": "Az bilinen bir yönetmenden."
+      },
+      {
+        "name": "Açık hava sineması",
+        "description": "Yıldızların altında ekran."
+      },
+      {
+        "name": "Evde festival",
+        "description": "Sinemaya gitmek yerine 3 kısa film seçin."
+      }
+    ]
+  },
+  {
+    "id": "ev",
+    "name": "Ev Baş Başa",
+    "color": "#EC7CAB",
+    "icon": "🏠",
+    "places": [
+      {
+        "name": "Battaniye tüneli",
+        "description": "Salonda kaleyi kur, filmi başlat."
+      },
+      {
+        "name": "Mutfak dansı",
+        "description": "Birlikte yemek yaparken müzik açık."
+      },
+      {
+        "name": "Balkon ışıkları",
+        "description": "Işıkları kapa, mumları yak."
+      },
+      {
+        "name": "Yatak oturumu",
+        "description": "Yastıklar arası uzun sohbet."
+      }
+    ]
+  },
+  {
+    "id": "surpriz",
+    "name": "Sürpriz",
+    "color": "#F0A500",
+    "icon": "🎁",
+    "places": [
+      {
+        "name": "Rastgele araba yolu",
+        "description": "GPS'siz, sadece \"sağa\" ve \"sola\" kararlarıyla."
+      },
+      {
+        "name": "İlk buluşma yeniden",
+        "description": "Aynı yeri, aynı sırayla."
+      },
+      {
+        "name": "Yeni bir mahalle",
+        "description": "Hiç gitmediğiniz semte doğru."
+      },
+      {
+        "name": "Rol yap gecesi",
+        "description": "Kendinizi yabancı gibi tanıştırın — bir cafede buluşun."
+      }
+    ]
+  }
+]

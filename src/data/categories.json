@@ -1,0 +1,98 @@
+[
+  {
+    "id": "cesaret",
+    "name": "Cesaret",
+    "color": "#FF4D6D",
+    "icon": "🔥",
+    "prompts": [
+      "Partnerine hiç söylemediğin bir hayalini anlat.",
+      "Ona 30 saniye boyunca gözlerinin içine bakarak sadece \"seni seviyorum\" de.",
+      "Telefonundaki son 5 fotoğrafı göster.",
+      "İlk buluşmanızdan aklında kalan en utanç verici anı paylaş.",
+      "Partnerine hakkında hayran olduğun 3 fiziksel özelliğini söyle.",
+      "Ona en son ne zaman yalan söylediğini itiraf et.",
+      "Bir kağıda \"ideal bir Cumartesi gecesi\" tarif et, birbirinize okuyun.",
+      "Partnerinin kulağına 10 saniyelik tatlı bir şey fısılda."
+    ]
+  },
+  {
+    "id": "dogruluk",
+    "name": "Doğruluk",
+    "color": "#4ECDC4",
+    "icon": "💭",
+    "prompts": [
+      "İlişkimizde en çok neyi değiştirmek isterdin?",
+      "Beni ilk gördüğünde ne düşünmüştün?",
+      "Son bir ayda seni en çok ne mutlu etti?",
+      "Hakkında henüz konuşmadığımız bir şey var mı?",
+      "Beni tarif etmek için üç kelime seç.",
+      "Birlikteliğimizin en güzel anısı senin için hangisi?",
+      "Beni en çok hangi konuda takdir ediyorsun?",
+      "Şu an içinde biriktirdiğin bir şey var mı?"
+    ]
+  },
+  {
+    "id": "sarilma",
+    "name": "Sarılma",
+    "color": "#FFB84D",
+    "icon": "🤗",
+    "prompts": [
+      "Partnerine sıkıca 30 saniye sarıl, hiçbir şey söyleme.",
+      "Alnına yavaşça bir öpücük kondur.",
+      "Ellerini tut ve nabzını hissetmeye çalış.",
+      "Onu kucakla ve favori şarkısından bir bölüm mırıldan.",
+      "Boynuna 3 minik öpücük ver.",
+      "Sarılırken kulağına en sevdiğin anımızı fısılda.",
+      "Elleriyle yüzünü tut ve gülümse.",
+      "Sırt sırta ver ve 1 dakika birlikte sessizce nefes al."
+    ]
+  },
+  {
+    "id": "anilar",
+    "name": "Anılar",
+    "color": "#A78BFA",
+    "icon": "📸",
+    "prompts": [
+      "İlk tanıştığımız günü hatırla ve o güne bir mesaj yaz.",
+      "Birlikte gittiğimiz en unutulmaz yeri anlat.",
+      "En çok güldüğün bizle ilgili anı hangisi?",
+      "İlk \"seni seviyorum\" dediğin anı tarif et.",
+      "Beraber çekilmiş favori fotoğrafımızı bul, gerekçesini anlat.",
+      "Bize ait bir \"içeri şaka\" hatırla ve söyle.",
+      "Birlikte kutladığımız en özel günü paylaş.",
+      "İlişkimizde seni en çok duygulandıran anı anlat."
+    ]
+  },
+  {
+    "id": "oyun",
+    "name": "Oyun",
+    "color": "#F472B6",
+    "icon": "🎲",
+    "prompts": [
+      "30 saniye içinde birbirinizin adını 20 farklı sesle söyleyin.",
+      "Sadece emoji kullanarak son 24 saatinizi anlatın.",
+      "Gözlerini kapat, partnerinin yüzünü sadece elinle keşfet.",
+      "Karşılıklı 5 saniye taklit yarışması yapın.",
+      "İkiniz de aynı anda içinden bir sayı tutun, tut turmayacağınıza bahis girin.",
+      "Birbirinize ilhamla 30 saniyelik doğaçlama şarkı yaz.",
+      "Partnerine tek kaşınla göz kırp — o da kırmaya çalışsın.",
+      "Beraber bir cümleyi tersinden söyleyin: \"seni seviyorum\" → \"muroyives ines\"."
+    ]
+  },
+  {
+    "id": "derin",
+    "name": "Derin",
+    "color": "#60A5FA",
+    "icon": "🌊",
+    "prompts": [
+      "Şu an hayatta en çok neyden korkuyorsun?",
+      "5 yıl sonra bizi nerede hayal ediyorsun?",
+      "Sana göre \"gerçek sevgi\" nedir?",
+      "Kendinde değiştirmek istediğin bir şey var mı?",
+      "Çocukluğundan bugüne taşıdığın en derin duygu ne?",
+      "Hangi konuda kırılgan olduğunu bana anlatabilir misin?",
+      "Bir gün başaramazsam benden ne isterdin?",
+      "Beni sevmenin sana öğrettiği bir şey var mı?"
+    ]
+  }
+]

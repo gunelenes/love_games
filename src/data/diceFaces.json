@@ -1,0 +1,80 @@
+[
+  {
+    "id": "opucuk",
+    "name": "Öpücük",
+    "color": "#FF4D6D",
+    "icon": "💋",
+    "prompts": [
+      "Partnerinin yanağına yumuşak bir öpücük ver.",
+      "Alnına uzun bir öpücük kondur.",
+      "Elini tut ve tersine bir öpücük ver.",
+      "Boynuna 3 küçük öpücük ver.",
+      "Bir öpücükte 5 saniye kalın, gözler kapalı."
+    ]
+  },
+  {
+    "id": "sarilma",
+    "name": "Sarılma",
+    "color": "#FFB84D",
+    "icon": "🤗",
+    "prompts": [
+      "Sıkıca 30 saniye sarılın.",
+      "Sırt sırta verip 1 dakika sessizce nefes al.",
+      "Arkadan sarıl ve omzuna dayan.",
+      "Ellerini tut, göz göze bak.",
+      "Kucağına al ve sallan."
+    ]
+  },
+  {
+    "id": "iltifat",
+    "name": "İltifat",
+    "color": "#4ECDC4",
+    "icon": "💫",
+    "prompts": [
+      "Partnerinin en sevdiğin fiziksel özelliğini söyle.",
+      "Onda hayran olduğun bir karakter yanını anlat.",
+      "Bugün onu neden özel bulduğunu paylaş.",
+      "Ona kısa bir teşekkür mesajı söyle.",
+      "Onun için hangi kelime aklına ilk geliyor?"
+    ]
+  },
+  {
+    "id": "ani",
+    "name": "Anı",
+    "color": "#A78BFA",
+    "icon": "📸",
+    "prompts": [
+      "Birlikte yaşadığınız favori anını anlat.",
+      "Onunla ilgili en komik anını paylaş.",
+      "İlk tanıştığınız günü hatırla.",
+      "En unutulmaz seyahatinizi anlat.",
+      "Birlikte en çok güldüğünüz anı paylaş."
+    ]
+  },
+  {
+    "id": "dokunus",
+    "name": "Dokunuş",
+    "color": "#F472B6",
+    "icon": "✨",
+    "prompts": [
+      "Ellerini yavaşça birbirine ovarak ısıt, ona uzat.",
+      "Saçlarını yumuşakça okşa.",
+      "Yüzünü ellerinle çerçevele.",
+      "Elini eline geçir, parmaklarını iç içe kilitle.",
+      "Sırtına yumuşak bir masaj yap 30 saniye."
+    ]
+  },
+  {
+    "id": "fisilti",
+    "name": "Fısıltı",
+    "color": "#60A5FA",
+    "icon": "🌙",
+    "prompts": [
+      "Kulağına en sevdiğin şarkının bir kısmını fısılda.",
+      "Ona seninle ilgili bir sırrını söyle.",
+      "Bugün onu düşündüren bir şey fısıldayarak anlat.",
+      "Beni en çok neyle mutlu ediyorsun de, fısıldayarak.",
+      "Kulağına 3 kelimeyle \"seni seviyorum\" fısılda."
+    ]
+  }
+]
