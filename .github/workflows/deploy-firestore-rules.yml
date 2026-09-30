@@ -1,0 +1,49 @@
+name: Deploy Firestore Rules
+
+# Rules + indexes değiştiğinde otomatik deploy.
+# Repository secret: FIREBASE_SERVICE_ACCOUNT (service-account.json içeriği).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'firestore.rules'
+      - 'firestore.indexes.json'
+      - 'firebase.json'
+      - '.firebaserc'
+      - '.github/workflows/deploy-firestore-rules.yml'
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools@latest
+
+      - name: Write service account credentials to file
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "::error::FIREBASE_SERVICE_ACCOUNT secret missing"
+            exit 1
+          fi
+          mkdir -p .ci
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > .ci/service-account.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$PWD/.ci/service-account.json" >> "$GITHUB_ENV"
+
+      - name: Deploy Firestore rules + indexes
+        run: firebase deploy --only firestore:rules,firestore:indexes --project love-games-prod --non-interactive
+
+      - name: Cleanup
+        if: always()
+        run: rm -rf .ci

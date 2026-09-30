@@ -29,7 +29,10 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "firebase:deploy:rules": "npx --yes firebase-tools deploy --only firestore:rules --project love-games-prod",
+    "firebase:deploy:indexes": "npx --yes firebase-tools deploy --only firestore:indexes --project love-games-prod",
+    "firebase:deploy": "npx --yes firebase-tools deploy --only firestore --project love-games-prod"
   },
   "private": true
 }

@@ -1,0 +1,67 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // -------- Public content (managed via admin panel) --------
+    // Read: herkes okuyabilir (mobil uygulama anonim de okur)
+    // Write: sadece admin custom claim taşıyan kullanıcılar
+
+    match /categories/{doc} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    match /placeCategories/{doc} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    match /diceFaces/{doc} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    match /meta/{doc} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // -------- Rooms & Boxes (Kutular real-time) --------
+
+    match /rooms/{roomCode} {
+      // Odayı sadece host veya guest okuyabilir
+      allow read: if request.auth != null && (
+        request.auth.uid == resource.data.hostUid ||
+        request.auth.uid == resource.data.guestUid
+      );
+
+      // Oda oluşturma: kendini host olarak yazmalı, guest null olmalı
+      allow create: if request.auth != null
+        && request.auth.uid == request.resource.data.hostUid
+        && request.resource.data.guestUid == null;
+
+      // Güncelleme:
+      // 1) Zaten host/guest olan üye → serbest
+      // 2) Boş oda (guestUid=null) → hostUid değişmeden guestUid=self olarak set edilebilir (join)
+      allow update: if request.auth != null && (
+        request.auth.uid == resource.data.hostUid ||
+        request.auth.uid == resource.data.guestUid ||
+        (
+          resource.data.guestUid == null &&
+          request.resource.data.guestUid == request.auth.uid &&
+          request.resource.data.hostUid == resource.data.hostUid
+        )
+      );
+
+      // Oda silme sadece host
+      allow delete: if request.auth != null
+        && request.auth.uid == resource.data.hostUid;
+
+      // Kutular: sadece odanın host'u veya guest'i CRUD yapabilir
+      match /boxes/{boxId} {
+        allow read, write: if request.auth != null && (
+          get(/databases/$(database)/documents/rooms/$(roomCode)).data.hostUid == request.auth.uid ||
+          get(/databases/$(database)/documents/rooms/$(roomCode)).data.guestUid == request.auth.uid
+        );
+      }
+    }
+  }
+}
