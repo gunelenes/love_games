@@ -70,6 +70,12 @@ function CategoryChip({
   const progress = useSharedValue(selected ? 1 : 0);
   const scale = useSharedValue(1);
 
+  // Compute derived colors on JS thread (worklet cannot call withAlpha).
+  const inactiveBg = 'rgba(255,255,255,0.06)';
+  const inactiveBorder = 'rgba(255,255,255,0.12)';
+  const activeBg = withAlpha(category.color, 0.28);
+  const activeBorder = withAlpha(category.color, 0.75);
+
   useEffect(() => {
     progress.value = withTiming(selected ? 1 : 0, { duration: 220 });
   }, [selected, progress]);
@@ -78,12 +84,12 @@ function CategoryChip({
     backgroundColor: interpolateColor(
       progress.value,
       [0, 1],
-      ['rgba(255,255,255,0.06)', withAlpha(category.color, 0.28)]
+      [inactiveBg, activeBg]
     ),
     borderColor: interpolateColor(
       progress.value,
       [0, 1],
-      ['rgba(255,255,255,0.12)', withAlpha(category.color, 0.75)]
+      [inactiveBorder, activeBorder]
     ),
     transform: [{ scale: scale.value }],
   }));
