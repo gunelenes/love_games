@@ -1,0 +1,53 @@
+[
+  {
+    "id": "rehberin-sozu",
+    "name": "Rehberin Sözü",
+    "color": "#1E3A8A",
+    "icon": "🌙",
+    "track": "cesur",
+    "level": 3,
+    "order": 30,
+    "prompts": [
+      "Bir kişi bu turda \"Rehber\" olur. Rehber, partnerine 3 komut verir — nefes al, gözlerini kapat, dudaklarını yala. Partner tam yerine getirir.",
+      "Rehber, partnerinin ellerini kendi ellerine götürerek \"nereye\" diye sorar. Partner sadece \"buraya\" veya \"orada değil\" diyebilir. Diğer kelimeler yasak.",
+      "Rehber bir kelime söyler (\"dur\", \"yavaşla\", \"tekrar\"). Partner o kelimede tam anlamıyla kalır. 3 tekrar.",
+      "Karşılıklı: bu tur Rehber sensin. Partnere \"gözlerini kapat, dudaklarını aç, nefesini tut\" gibi 3 komut ver. O uyarsa 5 saniye ödül dokunuş.",
+      "Rehber, elinin bir tarafını partnerine uzatır: \"öp\". Sonra \"yala\". Sonra \"ısır\". Her komut arasında 3 saniye bekle.",
+      "Rehber, \"gel\" der. Partner mesafeyi 3 adımda yavaşça kapatır — Rehberin gözlerini bırakmadan."
+    ]
+  },
+  {
+    "id": "kucuk-direnis",
+    "name": "Küçük Direniş",
+    "color": "#DB2777",
+    "icon": "🎭",
+    "track": "cesur",
+    "level": 3,
+    "order": 31,
+    "prompts": [
+      "Partnerin sana bir komut verir. Sen tam tersini yap — ama gülümseyerek. Bakalım kaç saniye dayanabilir sen kışkırtmasın.",
+      "Partnerin sana \"sessiz ol\" der. Sen 30 saniye boyunca tam tersine — kahkaha, sesli soluk, kışkırtıcı sözler. Sonuçta hangisi kazanır?",
+      "Partnerin sana yaklaşır. Sen 3 kez geri çekil — ama uzaklaşma. Yakınlık gerginlik, direniş oyun.",
+      "Partnerin bir hareket yapmak istediğini söyler. Sen \"belki\" de. \"Söz ver\" dediğinde \"yapmam\" de — 3 kez tekrar sonrası izin ver.",
+      "Partnerin bir öpücük ister. Sen \"hak ettin mi?\" diye sor. O 3 gerekçe sunsun. En ikna edeni seçtiğinde öp.",
+      "Rol tersine dönsün. Bu turda kural sen belirle: \"sana X yapmama izin verirsen, karşılığında Y.\" Ne olursa olsun karşılık verse ver."
+    ]
+  },
+  {
+    "id": "ilk-damar",
+    "name": "İlk Damar",
+    "color": "#C2410C",
+    "icon": "✋",
+    "track": "cesur",
+    "level": 3,
+    "order": 32,
+    "prompts": [
+      "Partnerinin sırtına açık avucunla 3 yumuşak, ölçülü el vur — her biri arasında 5 saniye ara. Her vuruştan sonra \"devam?\" diye sor.",
+      "Partnerinin kalçasına, öncelikle 3 saniye elinle sıcaklık ver, sonra tek bir yumuşak dokunuş. Karşılık ne hissetti sözle söylesin.",
+      "Ellerinin ayasıyla partnerinin uyluğuna 5 kere ritmik ama hafif vuruş — bir müzik ritmi gibi. Sonra \"hangisi en çok?\" diye sor.",
+      "Parmaklarınla partnerinin sırtında 10 saniyelik hafif basınçlı bir hat çiz — hissedilir ama iz bırakmayan.",
+      "Partnerine \"yumuşak mı sert mi?\" diye sor. Verdiği cevap doğrultusunda avucunla omuzuna 3 vuruş yap.",
+      "Ellerini partnerinin bilek ya da boynuna hafif kavrar. 5 saniye kavramayı tut, sonra bırak. Yeniden 5 saniye. Ritim ve güven kur."
+    ]
+  }
+]

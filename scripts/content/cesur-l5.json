@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ipin-dilinden",
+    "name": "İpin Dilinden",
+    "color": "#4C1D95",
+    "icon": "🎀",
+    "track": "cesur",
+    "level": 5,
+    "order": 50,
+    "prompts": [
+      "Sahne öncesi anlaşma: safeword netleştir, sınırları konuş. İpek eşarp ile partnerinin bileklerini bir kutsal örgü ile birleştir — 3 dolam, gevşek, nefes rahat. 5 dakika bu bağı sadece bakışla oyala.",
+      "Uzun bir eşarp ile partnerinin gövdesini korse örgüsü tarzında sar (göğüs ve bel). Baskı hissettirici ama nefes tamamen rahat. 3 dakika bu tutuşla sadece bakış + söz.",
+      "Halatçı sensin. Partnerinin gözlerini + bileklerini + ayak bileklerini üçlü örgüyle bağla. Sadece güvenlik kelimesi ile çözülür. 5 dakika keşif — nefes ve konforu sürekli kontrol et.",
+      "Bağladıktan sonra bir cümle: \"senin güvenin bende.\" 3 dakika sessizce dokunmadan sadece varlığınla ol. Sonra keşfet.",
+      "Partner diz çökmüş, elleri arkada yumuşakça bağlı. Ustabaşı öne durur, sadece bakışla + nefesle 2 dakika iletişim. Sonra tek komut.",
+      "Sahne sonu: bağı çöz, bilekleri masaj yap, göz göze bir dakika sessizce. \"Yanındayım, iyisin\" cümlesi. Su iç, bir şeyler ye — aftercare."
+    ]
+  },
+  {
+    "id": "kabul-toreni",
+    "name": "Kabul Töreni",
+    "color": "#78350F",
+    "icon": "📜",
+    "track": "cesur",
+    "level": 5,
+    "order": 51,
+    "prompts": [
+      "Sahne başlangıç ritüeli: 3 dakika birbirinin gözlerine bakış. Sonra netleştir: \"Bu 15 dakika boyunca Rehber sensin/benim.\" Safeword tekrar.",
+      "Partnerin bir \"kural\" belirler (örn. \"izin almadan konuşamam\"). Sen 5 dakika bu kurala uy. Kural kırılırsa 5 saniyelik önceden kararlaştırılmış bir sonuç (yumuşak dokunuş, öpücük başı yönlendirme, vs.).",
+      "Ustabaşı kutsal bir nesne hazırlar (mum, yüzük, bir kumaş). Partnere bir görev verir bu nesneyle: \"Bunu tut. Yerine getirene kadar başka bir şey yapmayacaksın.\"",
+      "Karşılıklı: 3 rol öneri sunun (Halatçı/Örücü, Rehber/Takipçi, Bahçıvan/Kedi). Birini kabul et. O rolde 10 dakika kal. Sonra hakkında birbirinize ne hissettiğinizi söyleyin.",
+      "Sahne kapanış ritüeli: Rehber, partnerinin başını okşar, \"iyisin, tamamsın\" der. 3 dakika sarılış. Karşılıklı geri bildirim — güven yenileme.",
+      "Yatak öncesi ritüel: 5 dakika boyunca bugün ne beğendiğin, ne değişebileceğini paylaşın. Bu bir sonraki sahne için temel."
+    ]
+  },
+  {
+    "id": "derin-bag",
+    "name": "Derin Bağ",
+    "color": "#1E1B4B",
+    "icon": "🌌",
+    "track": "cesur",
+    "level": 5,
+    "order": 52,
+    "prompts": [
+      "20 dakikalık bir \"sahne\" planla. Başlangıç: gözlerinize bak + safeword. Orta: 3 farklı aktivite (rol, dokunuş, kelime oyunu). Sonu: sarılma + geribildirim. Zamanı ayarla.",
+      "\"Sabah rutini\" gibi bir protokol tasarlayın: her sabah 5 dakika ortak bir ritüel (bakış, dokunuş, söz). 1 hafta test edin.",
+      "Ustabaşı ve Takipçi olarak yatak öncesi 10 dakikalık bir sahne. Ustabaşı 3 aktivite belirler — nefes, dokunuş, kelime. Takipçi her birini kabul veya \"sarı/kırmızı\" ile yönetir.",
+      "\"Sessiz gece\": 30 dakika kelime yasak. Sadece bakış, dokunuş, nefes. Sonda 5 dakika birbirinize ne hissettiğinizi anlatın.",
+      "\"Rol geceleri\": 1 hafta boyunca 2 gece rolleri değişerek yaşayın. Her gecenin sonunda 5 dakika değerlendirme.",
+      "En derin ritüel: gözbağı + hafif ipek bağ + sesli müzik + 30 dakika. Ustabaşı yönetir. Sahne sonu 10 dakika sarılış + su iç + aftercare + geribildirim."
+    ]
+  }
+]

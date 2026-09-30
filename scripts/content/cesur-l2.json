@@ -1,0 +1,53 @@
+[
+  {
+    "id": "yasak-duyular",
+    "name": "Yasak Duyular",
+    "color": "#4338CA",
+    "icon": "🕶️",
+    "track": "cesur",
+    "level": 2,
+    "order": 20,
+    "prompts": [
+      "Partnerine bir gözbağı (ipek fular, kravat) takı. 3 dakika boyunca ellerinle ona istediğin gibi dokun — o sadece hisseder ve tepki verir.",
+      "Gözlerinizin ikisi de kapalı. Karşılıklı oturun. 2 dakika boyunca sadece nefes seslerini ve ellerinizin yakınlığını hissederek yaklaşın — dudaklar değene kadar.",
+      "Partnerinin gözlerini kapat. 30 saniye boyunca 3 farklı şeyle (dudaklarınla, parmağınla, bir kumaşla) yavaşça teninin bir bölgesine dokun — tahmin etsin.",
+      "Gözbağı sende. Partnerin sana neyi hissettirmek istediğine karar verir — ama önce sana \"hazır mısın?\" diye sorması gerek.",
+      "Odayı karart. Sadece bir mum yak. 5 dakika boyunca birbirinizin yüzünü sadece o ışıkla keşfedin.",
+      "Partnerine \"gözlerini kapat\" de. Yanına yaklaş, kulağına 3 kelime fısılda, sonra dudaklarına 3 saniye değme — hafifçe. Sonra çekil, tekrar bekleyecek."
+    ]
+  },
+  {
+    "id": "yavas-ritim",
+    "name": "Yavaş Ritim",
+    "color": "#0F766E",
+    "icon": "🌊",
+    "track": "cesur",
+    "level": 2,
+    "order": 21,
+    "prompts": [
+      "Partnerinin bir kıyafet parçasını 60 saniyede yavaşça çıkar — hızın hep aynı olsun, aceleye gelmesin.",
+      "Karşılıklı otur. Sırayla partnerin kıyafetinden bir parça çıkar — her turda bir söz söyleyin: \"seni çekici bulduğum bir an…\"",
+      "Partnerine \"hangi kıyafetimi istersin çıkarmamı\" sor. Söylediğini, 2 dakikaya yaydığın yavaşlıkla çıkar.",
+      "Dokunmadan önce bir cümle: \"şimdi elimi nereye götürmemi istersin?\" O söyler, sen 30 saniye tam orada tut — hareketsiz.",
+      "Partnerine 5 saniye süren tek bir öpücük ver — dil kullanmadan. Sonra 5 saniye ara. Bir öpücük daha. Ritim böyle 3 tekrar.",
+      "Birbirinizin ellerini tutun. Yavaşça dans etmeye başlıyormuş gibi 30 saniye salının — göz teması bırakmayın, kelime yasak."
+    ]
+  },
+  {
+    "id": "ipekten-dokunus",
+    "name": "İpekten Dokunuş",
+    "color": "#9F1239",
+    "icon": "🪶",
+    "track": "cesur",
+    "level": 2,
+    "order": 22,
+    "prompts": [
+      "Elinde ipek (fular, tişörtün ucu, uzun saç) partnerinin sırtına 10 saniyelik yavaş bir hat çiz. Sonra sor: \"başka nereye?\"",
+      "Buzdan bir küp al ağzına. Partnerine 5 saniye bak, sonra kaşına ya da dudağına o küpten bir damla bırak.",
+      "3 farklı doku hazırla (yumuşak, sert, akıcı — örn. tüy, ahşap, su). Gözü kapalı partnere sırayla dokun. En çok titreme veren hangisiyse tekrar oraya dön.",
+      "Sıcak nefesin partnerinin kulağının 2 cm yakınında olsun — 10 saniye boyunca dokunmadan sadece nefes.",
+      "Partnerinin avucunun içine yumuşak bir dokunuş yap (parmakla, dudakla, ne istersen). \"Aynısını istediğim bir yere yap\" de.",
+      "İki farklı sıcaklık (bir sıcak bir soğuk içecek). Sırayla partnerinin bileğine bir yudum sıcak, sonra bir yudum soğuk dokundur — her seferinde 3 saniye bekle."
+    ]
+  }
+]

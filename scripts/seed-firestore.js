@@ -11,19 +11,16 @@
  * eksik alan ekleme veya güncelleme için güvenli.
  */
 
-const admin = require('firebase-admin');
-const path = require('path');
+const { initializeApp, cert } = require('firebase-admin/app');
+const { getFirestore } = require('firebase-admin/firestore');
 
 const serviceAccount = require('./service-account.json');
 const categoriesJson = require('../src/data/categories.json');
 const placeCategoriesJson = require('../src/data/placeCategories.json');
 const diceFacesJson = require('../src/data/diceFaces.json');
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
-
-const db = admin.firestore();
+initializeApp({ credential: cert(serviceAccount) });
+const db = getFirestore();
 
 async function seedCollection(name, items) {
   console.log(`\n→ ${name} (${items.length} items)`);

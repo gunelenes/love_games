@@ -1,0 +1,53 @@
+[
+  {
+    "id": "halatcinin-el-isi",
+    "name": "Halatçının El İşi",
+    "color": "#7C2D12",
+    "icon": "🪢",
+    "track": "cesur",
+    "level": 4,
+    "order": 40,
+    "prompts": [
+      "Sahne başlangıcı: safeword netleştir (örn. \"kırmızı\" = anında dur). İpek fular ya da ipek eşarpla partnerinin bileklerini yumuşakça birleştir — sıkı değil, dokunuşla hissettirici. 1 dakika boyunca ona dokunma, sadece bakışla.",
+      "Partnerinin bileklerini bir kravat ile başının üstünde birleştir. 2 dakika boyunca onu bu pozisyonda tutarak dokunuşla keşfet. Nefesini kontrol et.",
+      "Uzun bir eşarp ile partnerinin gözlerini bağla + bileklerini birleştir. 3 dakika boyunca sesle, dokunuşla, yakınlıkla oyala.",
+      "Halatçı sensin. Partnerin bir güvenlik kelimesi belirlesin. Her ne yaparsan yap, o kelime söylenirse anında dur. Sonra keşfe devam.",
+      "Partnerinin sadece bir bileğini ipeğe dola. Diğer eli serbest. O eliyle sana istediği yerden dokunabilir — sen çözmeden.",
+      "Bir kravat ile partnerinin uyluklarını birbirine yakın olarak bağla. 2 dakika onunla göz teması + dokunuşla bekle. Sonra ipi çöz."
+    ]
+  },
+  {
+    "id": "yaramaz-kedi",
+    "name": "Yaramaz Kedi",
+    "color": "#831843",
+    "icon": "🐈",
+    "track": "cesur",
+    "level": 4,
+    "order": 41,
+    "prompts": [
+      "Bu tur biri \"Bahçıvan\" biri \"Kedi\". Kedi sessiz — ama tepkiyle konuşur. Bahçıvan 3 farklı türde okşama sunar (yavaş, hızlı, yumuşak). Kedi hangisini istediğini fiziksel ifadeyle söyler.",
+      "Kedi rolündeki kişi konuşamaz. Bahçıvan, kediye 5 dakika boyunca yalnızca dokunuşla ve sözle iletişimde. Kedi tepkileriyle karşılık.",
+      "Bahçıvan, kedinin kulağının arkasını 30 saniye okşar. Kedi tepkiyle onaylar (mırıldanır, yaslanır). Bahçıvan bunu 3 farklı bölgede tekrarlar.",
+      "Kedi Bahçıvanın önünde diz çöker. Bahçıvan yavaşça yaklaşır, saçlarını okşar, \"iyi kedi\" der. 1 dakika bu ritüel.",
+      "Kedi sen isen: kelime kullanamazsın, sadece nefes ve mırıldanış. Bahçıvan sana bir görev verir (öp, dokun, otur). Görevi tam yap.",
+      "Roller değişir. Bu tur Kedi sen olursun. Partnerin Bahçıvanın rolünde. 3 dakikalık bu düet — sonra roller tartışılır, ne hissettin?"
+    ]
+  },
+  {
+    "id": "ustabasi",
+    "name": "Ustabaşı",
+    "color": "#0C4A6E",
+    "icon": "🗝️",
+    "track": "cesur",
+    "level": 4,
+    "order": 42,
+    "prompts": [
+      "Bir \"sahne\" başlat: \"Şimdi 10 dakikalık bir oyun oynayacağız. Güvenlik kelimeleri: 'sarı' devam et yavaşça, 'kırmızı' anında dur.\" Sonra Ustabaşı komut vermeye başlar.",
+      "Ustabaşı partnerine 3 pozisyon dener — hangisinde en rahat olduğunu keşfet. Her pozisyonda 30 saniye tut, sonra değiş.",
+      "Ustabaşı, partnerinin gözlerini kapatır. Elinin bir tarafıyla farklı bölgelere dokunur — partner \"burada\" veya \"başka yere\" der.",
+      "Ustabaşı 3 komut zinciri kurar: \"Nefes al. Gözlerini aç. Bana bak.\" Partner tam yerine getirir. Sonra tekrar aynı zincir farklı temposu ile.",
+      "Roller net: Ustabaşı ve Takipçi. Takipçi, sadece Ustabaşının komutlarıyla hareket eder. 5 dakika boyunca — kural bozarsa 5 saniyelik önceden kararlaştırılmış bir sonuç.",
+      "Sahne sonu ritüel: Ustabaşı, Takipçinin başını 1 dakika okşar, \"iyiydi\" der. Takipçi karşılık verir. Güven yenileme + geri bildirim."
+    ]
+  }
+]
