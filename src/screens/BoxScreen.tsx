@@ -21,6 +21,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
+import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
 import {
@@ -48,6 +49,7 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Box'>;
 const { width, height } = Dimensions.get('window');
 
 export function BoxScreen({ route, navigation }: Props) {
+  const { t } = useTranslation();
   const { boxId } = route.params;
   const { uid } = useAuth();
   const { code, room } = useRoom();
@@ -141,12 +143,12 @@ export function BoxScreen({ route, navigation }: Props) {
   const handleDeleteBox = useCallback(() => {
     if (!box || !code) return;
     Alert.alert(
-      'Kutuyu sil',
-      `"${box.name}" kutusunu ve tüm notlarını silmek istiyor musun? Bu iki telefonda da silinir.`,
+      t('boxes.deleteBoxTitle'),
+      t('boxes.deleteBoxText', { name: box.name }),
       [
-        { text: 'İptal', style: 'cancel' },
+        { text: t('boxes.cancel'), style: 'cancel' },
         {
-          text: 'Sil',
+          text: t('boxes.leave'),
           style: 'destructive',
           onPress: async () => {
             await deleteBox(code, box.id);
@@ -155,7 +157,7 @@ export function BoxScreen({ route, navigation }: Props) {
         },
       ]
     );
-  }, [box, code, navigation]);
+  }, [box, code, navigation, t]);
 
   const revealStyle = useAnimatedStyle(() => ({
     opacity: revealProgress.value,
@@ -195,7 +197,7 @@ export function BoxScreen({ route, navigation }: Props) {
             <BackButton onPress={() => navigation.goBack()} />
           </View>
           <View style={styles.missingCard}>
-            <Text style={styles.missingText}>Kutu bulunamadı</Text>
+            <Text style={styles.missingText}>{t('boxes.boxNotFound')}</Text>
           </View>
         </SafeAreaView>
       </View>
@@ -268,12 +270,12 @@ export function BoxScreen({ route, navigation }: Props) {
             contentContainerStyle={styles.scrollContent}
             keyboardShouldPersistTaps="handled"
           >
-            <Text style={styles.sectionTitle}>Notlarınız</Text>
+            <Text style={styles.sectionTitle}>{t('boxes.yours')}</Text>
             <View style={styles.addRow}>
               <TextInput
                 value={draft}
                 onChangeText={setDraft}
-                placeholder="Yeni not yaz…"
+                placeholder={t('boxes.newNotePlaceholder')}
                 placeholderTextColor="rgba(255,255,255,0.4)"
                 style={styles.addInput}
                 maxLength={200}
@@ -289,14 +291,14 @@ export function BoxScreen({ route, navigation }: Props) {
                   { backgroundColor: accent, opacity: draft.trim() ? 1 : 0.35 },
                 ]}
               >
-                <Text style={styles.addBtnText}>Ekle</Text>
+                <Text style={styles.addBtnText}>{t('boxes.add')}</Text>
               </Pressable>
             </View>
 
             <View style={styles.notesList}>
               {myNotes.length === 0 ? (
                 <Text style={styles.emptyNote}>
-                  Henüz not eklemedin. Yukarıdan yazmaya başla.
+                  {t('boxes.emptyNote')}
                 </Text>
               ) : (
                 myNotes.map((note) => (
@@ -318,16 +320,18 @@ export function BoxScreen({ route, navigation }: Props) {
             </View>
 
             <View style={styles.partnerCard}>
-              <Text style={styles.partnerLabel}>Partnerin</Text>
-              <Text style={styles.partnerCount}>{partnerNotes.length} not</Text>
+              <Text style={styles.partnerLabel}>{t('boxes.partner')}</Text>
+              <Text style={styles.partnerCount}>
+                {t('boxes.partnerNotesCount', { count: partnerNotes.length })}
+              </Text>
               <Text style={styles.partnerHint}>
                 {!partnerUid
-                  ? 'Odaya henüz katılmadı'
+                  ? t('boxes.partnerNotJoined')
                   : partnerConfirmed
-                    ? 'Partner hazır ✨'
+                    ? t('boxes.partnerReady')
                     : partnerNotes.length > 0
-                      ? 'Henüz onaylamadı'
-                      : 'Henüz not eklemedi'}
+                      ? t('boxes.partnerNotConfirmed')
+                      : t('boxes.partnerNoNotes')}
               </Text>
             </View>
           </ScrollView>
@@ -347,7 +351,7 @@ export function BoxScreen({ route, navigation }: Props) {
               ]}
             >
               <Text style={[styles.confirmLabel, { color: 'white' }]}>
-                Notlarım bitti
+                {t('boxes.notesDone')}
               </Text>
             </Pressable>
           ) : (
@@ -366,7 +370,7 @@ export function BoxScreen({ route, navigation }: Props) {
                   ]}
                 >
                   <Text style={styles.shuffleIcon}>🎲</Text>
-                  <Text style={styles.shuffleLabel}>KARIŞTIR</Text>
+                  <Text style={styles.shuffleLabel}>{t('boxes.shuffle')}</Text>
                 </Pressable>
               </Animated.View>
               <Pressable
@@ -376,8 +380,8 @@ export function BoxScreen({ route, navigation }: Props) {
               >
                 <Text style={styles.editLinkText}>
                   {partnerConfirmed
-                    ? 'Notlarımı değiştir'
-                    : 'Notlarımı değiştir · partner henüz onaylamadı'}
+                    ? t('boxes.editNotes')
+                    : t('boxes.editNotesWaiting')}
                 </Text>
               </Pressable>
             </>
@@ -417,20 +421,20 @@ export function BoxScreen({ route, navigation }: Props) {
                   { backgroundColor: withAlpha(lighten(accent, 0.5), 0.4) },
                 ]}
               />
-              <Text style={styles.revealEyebrow}>KUTUDAN ÇIKTI</Text>
+              <Text style={styles.revealEyebrow}>{t('boxes.revealEyebrow')}</Text>
               <Text style={styles.revealText}>{revealed.text}</Text>
               <View style={styles.revealActions}>
                 <Pressable
                   onPress={handleCloseReveal}
                   style={styles.revealCloseBtn}
                 >
-                  <Text style={styles.revealCloseLabel}>Kapat</Text>
+                  <Text style={styles.revealCloseLabel}>{t('boxes.close')}</Text>
                 </Pressable>
                 <Pressable
                   onPress={handleShuffle}
                   style={[styles.revealAgainBtn, { backgroundColor: accent }]}
                 >
-                  <Text style={styles.revealAgainLabel}>Tekrar karıştır</Text>
+                  <Text style={styles.revealAgainLabel}>{t('boxes.shuffleAgain')}</Text>
                 </Pressable>
               </View>
             </View>
