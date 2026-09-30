@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ellerin-sohbeti",
+    "name": "Ellerin Sohbeti",
+    "color": "#F97316",
+    "icon": "🤲",
+    "track": "romantik",
+    "level": 2,
+    "order": 20,
+    "prompts": [
+      "Karşılıklı ellerinizi kavuşturun. 30 saniye boyunca sadece parmaklarınızla konuşun — sıkma, hafif dokunuş, tırnakla iz.",
+      "Partnerinin elini avucuna al. Her parmağını sırayla, isim vererek okşa: \"bu parmağın en sevdiğim…\"",
+      "Partnerinin avucunun içine bir cümle \"yazma\" — parmak ucunla harf harf. O tahmin etsin.",
+      "Ellerinizi birbirine yaslayın (parmaklar açık, avuçlar temas). 1 dakika boyunca sadece sıcaklığı hissedin.",
+      "Partnerine el masajı yap 2 dakika — avuç, bilek, parmak eklemleri sırayla. O gözlerini kapatsın.",
+      "Partnerinin elini dudaklarına götür. Her parmağın ucuna hafif bir öpücük ver — çok yavaş, birer birer."
+    ]
+  },
+  {
+    "id": "kucak-saati",
+    "name": "Kucak Saati",
+    "color": "#EA580C",
+    "icon": "🤗",
+    "track": "romantik",
+    "level": 2,
+    "order": 21,
+    "prompts": [
+      "Partnerinle sarılın ve 3 dakika hiçbir şey söylemeyin. Sadece nefeslerinizi eşitleyin.",
+      "Partnerinin başını göğsüne yasla, 2 dakika saçlarını okşa. Bu süreçte \"seni seviyorum\" tek kelime.",
+      "Yanyana yat, birbirinizi arkadan kavurun. 5 dakika bu pozisyonda konuşmadan kalın.",
+      "Karşılıklı sarılmışken, birinin başı ötekinin omzunda. 1 dakika göz kapalı. Sonra rolleri değiştirin.",
+      "Kucakta partnerinle sallanın — yavaş, ritim sizin. Bir şarkı yerine sadece nefes ritmi.",
+      "Sarıldığınızda partnerinin sırtına yavaşça daire çizin — 30 saniye. Sonra o size aynısını yapsın."
+    ]
+  },
+  {
+    "id": "alin-alina",
+    "name": "Alın Alına",
+    "color": "#F59E0B",
+    "icon": "💛",
+    "track": "romantik",
+    "level": 2,
+    "order": 22,
+    "prompts": [
+      "Alnınızı partnerinin alnına yasla. Gözler kapalı, 1 dakika. Nefeslerinizi tanıyın.",
+      "Partnerinin alnına 3 farklı öpücük ver — uzun, kısa, dokunuş gibi. Hangisini istediğini sorup tekrarla.",
+      "Karşılıklı otur, dizleriniz dokunsun. Ellerinizi birbirinin yanaklarına götürün. 30 saniye böyle bakış.",
+      "Partnerinin alnına elini koyar gibi, sadece 5 saniye boyunca sıcaklığını hissettir. Sonra dudakla değ.",
+      "Alın alına, her nefes verirken bir hoş söz söyleyin sırayla: \"güvenlisin\", \"değerlisin\", \"yakınsın\".",
+      "Partnerinin alnına 5 saniyelik bir öpücük ver + kulağına isim fısılda. Sonra göz göze bakın 10 saniye."
+    ]
+  }
+]

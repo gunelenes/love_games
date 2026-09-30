@@ -1,0 +1,53 @@
+[
+  {
+    "id": "yavas-yakin",
+    "name": "Yavaş Yakın",
+    "color": "#DC2626",
+    "icon": "🔥",
+    "track": "romantik",
+    "level": 4,
+    "order": 40,
+    "prompts": [
+      "Yatağa yavaşça yerleş. Partnerine 3 dakika sadece dudak dudak — dil olmadan, yavaş, keşifçi öpücükler.",
+      "Partnerine tam bir öpücük ver ki bittiğinde ikiniz de nefessiz kalın. Zaman sınırı yok, tempo sınır.",
+      "Karşılıklı yat. 5 dakika boyunca sadece kollarınızın uzanabildiği kadar dokun — kıyafetler henüz üstte.",
+      "Partnerine \"gözlerini kapat\" de. Ondan izin isteyerek onu 2 dakika yavaşça öp — boyun, omuz, kaşlar, sırayla.",
+      "Partnerine hangi bölgede dokunulmayı sevdiğini sor. 3 tane söylesin. Sırayla her birinde 30 saniye yavaş dokunuş.",
+      "Elbiseli, sadece sarılma pozisyonunda 5 dakika. Ancak, kalp atışı hızlandığında partnerin \"yakında\" der. Öyle bir yakınlık kur."
+    ]
+  },
+  {
+    "id": "nefes-nefese",
+    "name": "Nefes Nefese",
+    "color": "#EF4444",
+    "icon": "💨",
+    "track": "romantik",
+    "level": 4,
+    "order": 41,
+    "prompts": [
+      "Partnerinle 2 dakika göğüs göğüse. Nefesleriniz aynı ritim olsun. Yavaş, derin.",
+      "Karşılıklı otur, alın alına, gözler kapalı. Nefeslerinizi 3 dakika eşitleyin — soluk sesli olsun.",
+      "Partnerinin nefesini kulağıyla dinle. 30 saniye. Sonra roller değişir.",
+      "Öpücük ver, dur, nefes ver, yeniden öpücük. Bu ritmi 5 kere tekrar et.",
+      "Partnerinin göğsüne kulağını dayamış olarak 2 dakika kalp atışını dinle.",
+      "Bir öpücükten sonra 3 saniye durup partnerinin gözünün içine bak. Sonra bir öpücük daha. 5 defa tekrar."
+    ]
+  },
+  {
+    "id": "isirgan-opucuk",
+    "name": "Isırgan Öpücük",
+    "color": "#B91C1C",
+    "icon": "💋",
+    "track": "romantik",
+    "level": 4,
+    "order": 42,
+    "prompts": [
+      "Partnerinin dudağını çok hafif ısır — kıvırcık, oyunbaz. Sonra öpücük.",
+      "Uzun ve tempolu bir öpücük — 30 saniye. Nefesler karışsın.",
+      "Partnerinin boynundan dudaklarına yavaş bir sıra öpücük — 5 tane, her biri arasında saniye ara.",
+      "Öpücüğün ortasında bir cümle: \"seni istiyorum\" — dudakları hâlâ dokunuyor olsun.",
+      "Partnerinin dudağına 3 saniyelik yumuşak bir öpücük, sonra hafif çekiliş, sonra 5 saniyelik derin bir öpücük.",
+      "Karşılıklı: aynı anda tekrar tekrar öpüşmek — 1 dakika kesintisiz. Kim önce nefes almak zorunda kalır?"
+    ]
+  }
+]

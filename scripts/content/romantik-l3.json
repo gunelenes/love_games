@@ -1,0 +1,53 @@
+[
+  {
+    "id": "fisiltinin-kitabi",
+    "name": "Fısıltının Kitabı",
+    "color": "#7C3AED",
+    "icon": "📖",
+    "track": "romantik",
+    "level": 3,
+    "order": 30,
+    "prompts": [
+      "Partnerine hiç söylemediğin bir hayalini kulağına fısılda. Sadece bir cümle olsun.",
+      "\"Seninle birlikte yaşamak istediğim bir an…\" diye başla ve partnerine detaylı anlat.",
+      "Partnerinin kulağına \"seninle ilgili bugünkü favori düşüncem…\" diye bir cümle fısılda.",
+      "Kağıda \"keşke şunu birlikte yaşasak\" yazın. Değişip birbirinize verin. Yüksek sesle okuyun.",
+      "Partnerine \"senden hâlâ öğrenmek istediğim tek şey…\" diye başla, dinle.",
+      "Gözlerinizi kapatın. 3 dakika boyunca sırayla birbirinizin yüzüne dair bir anıyı anlatın."
+    ]
+  },
+  {
+    "id": "kapali-gozlerle",
+    "name": "Kapalı Gözlerle",
+    "color": "#6366F1",
+    "icon": "🎠",
+    "track": "romantik",
+    "level": 3,
+    "order": 31,
+    "prompts": [
+      "Partnerinin gözleri kapalı. Yüzünü ellerinle 1 dakika keşfet — yumuşak, dikkatli, bir heykel gibi.",
+      "Gözlerinizin ikisi de kapalı. Karşılıklı otur. Sadece elleriniz temasa geçebilir — 3 dakika keşif.",
+      "Partnerinin gözlerini kapat, sen bir kokusu olan bir şey getir (parfüm, meyve, çiçek). Yavaşça yaklaştır. Tahmin etsin.",
+      "Gözü kapalı partnerine 30 saniye kulağına konuş — anı, mekan, duyu detayları. O görüntüsünü zihninde kur.",
+      "Partnerinin gözleri kapalı, sen elini onun elini tutup 1 dakika hiçbir şey söylemeden salla — hareket yavaş.",
+      "Karşılıklı gözler kapalı. Bir hikayeyi 5 cümlede birlikte kurun — 1 sen, 1 o. Kimin nereye götüreceği belli değil."
+    ]
+  },
+  {
+    "id": "uykuya-yakin",
+    "name": "Uykuya Yakın",
+    "color": "#4F46E5",
+    "icon": "🌙",
+    "track": "romantik",
+    "level": 3,
+    "order": 32,
+    "prompts": [
+      "Işıkları kapa. Yanyana yat. Karanlıkta sadece partnerinin sesini dinleyerek 5 dakika sohbet et.",
+      "Yatmadan önce partnerinin en sevdiğin özelliğinden 3 tane say. Sesli, yavaş.",
+      "Uyumadan önce partnerinin göğsüne başını yasla ve nefes ritminde bir masal başlat — istersen yarıda bırak.",
+      "Karanlıkta partnerinin elini bul + sıkıca tut. 3 dakika sessizlikte, sadece tutuş.",
+      "Uykuya yakın: \"en son ne için minnet duyduğunu\" partnerine anlat, dinle, karşılığında sen ver.",
+      "Yanyana yatarken, bir eliyle partnerinin kalp atışını hisset. 2 dakika sadece o."
+    ]
+  }
+]

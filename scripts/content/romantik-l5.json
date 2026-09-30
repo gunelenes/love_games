@@ -1,0 +1,53 @@
+[
+  {
+    "id": "gorunmez-ipler",
+    "name": "Görünmez İpler",
+    "color": "#DB2777",
+    "icon": "🕊️",
+    "track": "romantik",
+    "level": 5,
+    "order": 50,
+    "prompts": [
+      "Bir haftalık ritüel önerin: her akşam yatmadan önce 3 dakika alın alına + göz göze sessizlik.",
+      "Bir \"ortak günlük\" başlatın — her gece bir kişi bir kelime yazar. Bir hafta sonra okuyun.",
+      "\"Bugün seni fark ettiğim an\" ritüeli — her gün gece paylaşın. Bir hafta test.",
+      "Partnerinle bir \"işaret\" belirleyin (bir el hareketi, bir bakış). Gün içinde sadece ikinizin bildiği \"seni düşünüyorum\" mesajı.",
+      "Bir hafta boyunca sabah kahvenizi paylaşırken tek bir soru sorun: \"bugün hangi anını benimle geçirmek istersin?\"",
+      "Yatmadan önce her gece birbirinizin alnına bir öpücük + tek kelime söyleyin (bugünün özeti). Bir haftalık ritüel."
+    ]
+  },
+  {
+    "id": "ruh-esi",
+    "name": "Ruh Eşi",
+    "color": "#C026D3",
+    "icon": "✨",
+    "track": "romantik",
+    "level": 5,
+    "order": 51,
+    "prompts": [
+      "Karşılıklı 20 dakika. İlk 10: sen anlat, o dinle (ne dersen). Son 10: rol değiş.",
+      "Gözlerinizi kapatın. Partnerinin sesini dinleyerek onun sizde uyandırdığı ilk anıyı anlatın.",
+      "Bir \"sessiz akşam\" — 2 saat boyunca kelime yasak. Sadece bakış, dokunuş, jest ile iletişim.",
+      "Partnerinin ellerini avucuna al. 5 dakika göz kapalı — \"burada, benimle\" hissini paylaş.",
+      "\"Beni ilk gördüğün anda ne düşündün?\" diye sor. Dinle. Sonra \"seni ilk gördüğümde…\" ile karşılık.",
+      "Ortak bir \"gelecek anı\" hayal edin — 5 yıl sonrasını 3 dakika boyunca birlikte betimleyin, alternatif cümlelerle."
+    ]
+  },
+  {
+    "id": "sabah-isigi",
+    "name": "Sabah Işığı",
+    "color": "#F472B6",
+    "icon": "☀️",
+    "track": "romantik",
+    "level": 5,
+    "order": 52,
+    "prompts": [
+      "Uyanır uyanmaz partnerine ilk baktığında bir cümle: \"günaydın\" değil, \"seni gördüğüme sevindim\".",
+      "Yataktan çıkmadan önce partnerinin başını 30 saniye okşa + alnına bir öpücük.",
+      "Sabah kahvesini birlikte hazırlayın — sözsüz. Bir dans gibi. Bakışlarla koordinasyon.",
+      "Uyanır uyanmaz partnerine son gördüğün rüyayı 1 cümlede anlat. O da paylaşsın.",
+      "Uyanış ritüeli: yataktayken önce 5 dakika birbirinize sarılıp uykudan tam uyanmayı bekleyin.",
+      "Gün başlangıcında bir \"niyet\" paylaşın: \"bugünün en önemli anı için birlikte olalım\" — nasıl gerçekleşecek, planlayın."
+    ]
+  }
+]
