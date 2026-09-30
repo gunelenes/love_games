@@ -16,6 +16,7 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
+import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
 import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
@@ -46,6 +47,7 @@ const PRESETS = [
 ];
 
 export function BoxListScreen({ navigation }: Props) {
+  const { t } = useTranslation();
   const { uid } = useAuth();
   const { code, room, leave } = useRoom();
   const { boxes, loading, error } = useRoomBoxes(code);
@@ -109,15 +111,15 @@ export function BoxListScreen({ navigation }: Props) {
             style={styles.leaveBtn}
             hitSlop={8}
           >
-            <Text style={styles.leaveBtnText}>Odadan çık</Text>
+            <Text style={styles.leaveBtnText}>{t('boxes.leaveRoom')}</Text>
           </Pressable>
         </View>
 
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>ORTAK KUTULAR</Text>
+          <Text style={styles.eyebrow}>{t('boxes.listEyebrow')}</Text>
           {code ? (
             <View style={styles.codeChip}>
-              <Text style={styles.codeChipLabel}>ODA</Text>
+              <Text style={styles.codeChipLabel}>{t('boxes.listRoomLabel')}</Text>
               <Text style={styles.codeChipCode} selectable>
                 {code}
               </Text>
@@ -128,14 +130,14 @@ export function BoxListScreen({ navigation }: Props) {
                   { color: guestJoined ? '#6EE7B7' : '#FCD34D' },
                 ]}
               >
-                {guestJoined ? '2/2 kişi' : '1/2 · partneri bekliyor'}
+                {guestJoined ? t('boxes.listBoth') : t('boxes.listWaiting')}
               </Text>
             </View>
           ) : null}
           <Text style={styles.subtitle}>
             {guestJoined
-              ? 'Notları anlık paylaşıyorsunuz'
-              : 'Kod\'u partnerine ver ki bağlansın'}
+              ? t('boxes.listLiveSync')
+              : t('boxes.listGiveCode')}
           </Text>
         </View>
 
@@ -156,7 +158,7 @@ export function BoxListScreen({ navigation }: Props) {
           <NewBoxButton onPress={() => setCreating(true)} />
 
           {loading ? (
-            <Text style={styles.emptyText}>Yükleniyor…</Text>
+            <Text style={styles.emptyText}>{t('boxes.loading')}</Text>
           ) : error ? (
             <Text style={[styles.emptyText, { color: '#EF4444' }]}>
               Hata: {error}
@@ -164,10 +166,8 @@ export function BoxListScreen({ navigation }: Props) {
           ) : boxes.length === 0 ? (
             <View style={styles.empty}>
               <Text style={styles.emptyIcon}>📦</Text>
-              <Text style={styles.emptyTitle}>Henüz kutu yok</Text>
-              <Text style={styles.emptyText}>
-                Yeni bir kutu oluştur, notlarını ekle, partnerinle karıştır
-              </Text>
+              <Text style={styles.emptyTitle}>{t('boxes.noBoxes')}</Text>
+              <Text style={styles.emptyText}>{t('boxes.noBoxesHint')}</Text>
             </View>
           ) : (
             boxes.map((b) => (
@@ -192,6 +192,7 @@ export function BoxListScreen({ navigation }: Props) {
 }
 
 function NewBoxButton({ onPress }: { onPress: () => void }) {
+  const { t } = useTranslation();
   const scale = useSharedValue(1);
   const style = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
@@ -209,7 +210,7 @@ function NewBoxButton({ onPress }: { onPress: () => void }) {
         style={styles.newBtn}
       >
         <Text style={styles.newIcon}>+</Text>
-        <Text style={styles.newLabel}>Yeni Kutu</Text>
+        <Text style={styles.newLabel}>{t('boxes.newBox')}</Text>
       </Pressable>
     </Animated.View>
   );
@@ -320,6 +321,7 @@ function CreateBoxModal({
   onClose: () => void;
   onCreate: (name: string, icon: string, color: string) => void;
 }) {
+  const { t: tCM } = useTranslation();
   const [name, setName] = useState('');
   const [themeIdx, setThemeIdx] = useState(0);
 
@@ -350,7 +352,7 @@ function CreateBoxModal({
           style={styles.modalCard}
           onPress={(e) => e.stopPropagation()}
         >
-          <Text style={styles.modalTitle}>Yeni Kutu</Text>
+          <Text style={styles.modalTitle}>{tCM('boxes.createBoxTitle')}</Text>
           <Text style={styles.modalSubtitle}>
             Kutunuza bir isim ve tema verin
           </Text>

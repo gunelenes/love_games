@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
+import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
 import { BackButton } from '@/components/ui/BackButton';
@@ -29,6 +30,7 @@ const { width, height } = Dimensions.get('window');
 type Mode = 'idle' | 'creating' | 'joining';
 
 export function RoomLobbyScreen({ navigation }: Props) {
+  const { t } = useTranslation();
   const { uid, ready: authReady } = useAuth();
   const { setCode } = useRoom();
   const [mode, setMode] = useState<Mode>('idle');
@@ -44,7 +46,7 @@ export function RoomLobbyScreen({ navigation }: Props) {
 
   const handleCreate = async () => {
     if (!uid) {
-      setError('Kimlik hazır değil, birkaç saniye sonra tekrar dene');
+      setError(t('boxes.identityWait'));
       return;
     }
     setBusy(true);
@@ -67,7 +69,7 @@ export function RoomLobbyScreen({ navigation }: Props) {
 
   const handleJoin = async () => {
     if (!uid) {
-      setError('Kimlik hazır değil, birkaç saniye sonra tekrar dene');
+      setError(t('boxes.identityWait'));
       return;
     }
     setBusy(true);
@@ -80,9 +82,9 @@ export function RoomLobbyScreen({ navigation }: Props) {
       return;
     }
     if (res.status === 'not_found') {
-      setError('Böyle bir oda yok. Kodu kontrol et.');
+      setError(t('boxes.roomNotFound'));
     } else if (res.status === 'full') {
-      setError('Oda dolu (2 kişi). Başka bir oda dene.');
+      setError(t('boxes.roomFull'));
     } else {
       setError(res.message);
     }
@@ -103,32 +105,30 @@ export function RoomLobbyScreen({ navigation }: Props) {
           style={{ flex: 1 }}
         >
           <View style={styles.header}>
-            <Text style={styles.eyebrow}>KUTULAR</Text>
-            <Text style={styles.title}>Oda Kur ya da Katıl</Text>
-            <Text style={styles.subtitle}>
-              Notlarınız iki telefonda anlık senkron olur — QR yok, kod yeter
-            </Text>
+            <Text style={styles.eyebrow}>{t('boxes.lobbyEyebrow')}</Text>
+            <Text style={styles.title}>{t('boxes.lobbyTitle')}</Text>
+            <Text style={styles.subtitle}>{t('boxes.lobbySubtitle')}</Text>
           </View>
 
           {!authReady ? (
             <View style={styles.centerHint}>
-              <Text style={styles.hintText}>Kimlik hazırlanıyor…</Text>
+              <Text style={styles.hintText}>{t('app.loading')}</Text>
             </View>
           ) : mode === 'idle' && !createdCode ? (
             <View style={styles.body}>
               <BigCard
                 accent="#7C3AED"
                 icon="✨"
-                title="Yeni Oda Kur"
-                sub="6 haneli kod alırsın, partnerine söylersin"
+                title={t('boxes.createNew')}
+                sub={t('boxes.createNewSub')}
                 onPress={() => setMode('creating')}
                 disabled={busy}
               />
               <BigCard
                 accent="#10B981"
                 icon="🔑"
-                title="Odaya Katıl"
-                sub="Partnerinden aldığın kodu gir"
+                title={t('boxes.join')}
+                sub={t('boxes.joinSub')}
                 onPress={() => setMode('joining')}
                 disabled={busy}
               />
@@ -136,11 +136,8 @@ export function RoomLobbyScreen({ navigation }: Props) {
           ) : mode === 'creating' && !createdCode ? (
             <View style={styles.body}>
               <View style={styles.card}>
-                <Text style={styles.cardTitle}>Yeni Oda Kur</Text>
-                <Text style={styles.cardText}>
-                  Butona bas, sana benzersiz bir kod verelim. Partnerinle
-                  paylaş ki katılsın.
-                </Text>
+                <Text style={styles.cardTitle}>{t('boxes.createNew')}</Text>
+                <Text style={styles.cardText}>{t('boxes.createNewSub')}</Text>
                 <Pressable
                   onPress={handleCreate}
                   disabled={busy}
@@ -150,24 +147,22 @@ export function RoomLobbyScreen({ navigation }: Props) {
                   ]}
                 >
                   <Text style={styles.primaryBtnText}>
-                    {busy ? 'Üretiliyor…' : 'Kod Üret'}
+                    {busy ? t('boxes.generatingCode') : t('boxes.generateCode')}
                   </Text>
                 </Pressable>
                 <Pressable
                   onPress={() => setMode('idle')}
                   style={styles.linkBtn}
                 >
-                  <Text style={styles.linkText}>Geri</Text>
+                  <Text style={styles.linkText}>{t('boxes.back')}</Text>
                 </Pressable>
               </View>
             </View>
           ) : createdCode ? (
             <View style={styles.body}>
               <View style={styles.card}>
-                <Text style={styles.cardTitle}>Kodun Hazır 🎉</Text>
-                <Text style={styles.cardText}>
-                  Bu kodu partnerine söyle. O "Odaya Katıl" seçip girecek.
-                </Text>
+                <Text style={styles.cardTitle}>{t('boxes.codeReadyTitle')}</Text>
+                <Text style={styles.cardText}>{t('boxes.codeReadyText')}</Text>
                 <View
                   style={[
                     styles.codeBox,
@@ -182,21 +177,19 @@ export function RoomLobbyScreen({ navigation }: Props) {
                   onPress={handleUseCreated}
                   style={[styles.primaryBtn, { backgroundColor: '#7C3AED' }]}
                 >
-                  <Text style={styles.primaryBtnText}>Kutulara Geç</Text>
+                  <Text style={styles.primaryBtnText}>{t('boxes.goToBoxes')}</Text>
                 </Pressable>
               </View>
             </View>
           ) : (
             <View style={styles.body}>
               <View style={styles.card}>
-                <Text style={styles.cardTitle}>Odaya Katıl</Text>
-                <Text style={styles.cardText}>
-                  Partnerinden aldığın 6 haneli kodu gir.
-                </Text>
+                <Text style={styles.cardTitle}>{t('boxes.joinTitle')}</Text>
+                <Text style={styles.cardText}>{t('boxes.joinText')}</Text>
                 <TextInput
                   value={code}
-                  onChangeText={(t) =>
-                    setCodeInput(t.toUpperCase().replace(/[^A-Z2-9]/g, '').slice(0, 6))
+                  onChangeText={(txt) =>
+                    setCodeInput(txt.toUpperCase().replace(/[^A-Z2-9]/g, '').slice(0, 6))
                   }
                   autoCapitalize="characters"
                   autoCorrect={false}
@@ -221,7 +214,7 @@ export function RoomLobbyScreen({ navigation }: Props) {
                   ]}
                 >
                   <Text style={styles.primaryBtnText}>
-                    {busy ? 'Katılıyor…' : 'Katıl'}
+                    {busy ? t('boxes.joining') : t('boxes.joinBtn')}
                   </Text>
                 </Pressable>
                 <Pressable
@@ -232,7 +225,7 @@ export function RoomLobbyScreen({ navigation }: Props) {
                   }}
                   style={styles.linkBtn}
                 >
-                  <Text style={styles.linkText}>Geri</Text>
+                  <Text style={styles.linkText}>{t('boxes.back')}</Text>
                 </Pressable>
               </View>
             </View>
