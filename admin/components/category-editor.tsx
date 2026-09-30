@@ -6,7 +6,15 @@ import {
   removeDoc,
   saveDoc,
 } from '@/lib/content-service';
-import type { Category } from '@/lib/types';
+import {
+  LEVELS,
+  LEVEL_LABEL,
+  TRACKS,
+  TRACK_LABEL,
+  type Category,
+  type Level,
+  type Track,
+} from '@/lib/types';
 
 type Props = {
   collectionName: 'categories' | 'diceFaces';
@@ -21,6 +29,8 @@ function newBlank(): Category {
     color: '#FF4D6D',
     icon: '✨',
     prompts: [''],
+    track: 'romantik',
+    level: 1,
   };
 }
 
@@ -270,6 +280,38 @@ function CategoryCard({
                 onChange={(e) => onChange({ icon: e.target.value })}
                 placeholder="🔥"
               />
+            </div>
+            <div>
+              <label className="label">Track</label>
+              <select
+                className="input"
+                value={item.track}
+                onChange={(e) =>
+                  onChange({ track: e.target.value as Track })
+                }
+              >
+                {TRACKS.map((t) => (
+                  <option key={t} value={t}>
+                    {TRACK_LABEL[t]}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="label">Level</label>
+              <select
+                className="input"
+                value={item.level}
+                onChange={(e) =>
+                  onChange({ level: Number(e.target.value) as Level })
+                }
+              >
+                {LEVELS.map((l) => (
+                  <option key={l} value={l}>
+                    {LEVEL_LABEL[item.track][l]}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 

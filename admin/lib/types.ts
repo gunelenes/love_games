@@ -1,6 +1,34 @@
 // Mirror of mobile app's Category / Place / PlaceCategory types.
 // Keep in sync with love_games/src/types/index.ts.
 
+export type Track = 'romantik' | 'cesur';
+export type Level = 1 | 2 | 3 | 4 | 5;
+
+export const TRACKS: Track[] = ['romantik', 'cesur'];
+export const LEVELS: Level[] = [1, 2, 3, 4, 5];
+
+export const TRACK_LABEL: Record<Track, string> = {
+  romantik: 'Romantik (Yakınlık)',
+  cesur: 'Cesur (Keşif)',
+};
+
+export const LEVEL_LABEL: Record<Track, Record<Level, string>> = {
+  romantik: {
+    1: 'L1 · Fısıltı',
+    2: 'L2 · Yakınlık',
+    3: 'L3 · Sırlar',
+    4: 'L4 · Alev',
+    5: 'L5 · Bağ',
+  },
+  cesur: {
+    1: 'L1 · Kıvılcım',
+    2: 'L2 · Işıltı',
+    3: 'L3 · Cesaret',
+    4: 'L4 · Zirve',
+    5: 'L5 · Efsane',
+  },
+};
+
 export type Category = {
   id: string;
   name: string;
@@ -8,6 +36,8 @@ export type Category = {
   icon: string;
   prompts: string[];
   order?: number;
+  track: Track;
+  level: Level;
 };
 
 export type Place = {
@@ -23,4 +53,6 @@ export type PlaceCategory = {
   icon: string;
   places: Place[];
   order?: number;
+  track: Track;
+  level: Level;
 };

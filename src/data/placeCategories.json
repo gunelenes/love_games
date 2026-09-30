@@ -21,7 +21,9 @@
         "name": "Küçük ara sokak",
         "description": "Tesadüfen keşfedilecek karakterli bir yer."
       }
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "restoran",
@@ -45,7 +47,9 @@
         "name": "Aile mutfağı",
         "description": "Küçük, samimi, ev usulü."
       }
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "park",
@@ -69,7 +73,9 @@
         "name": "Sabahın erken saati",
         "description": "Kuş sesleri, sadece siz ikiniz."
       }
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "sinema",
@@ -93,7 +99,9 @@
         "name": "Evde festival",
         "description": "Sinemaya gitmek yerine 3 kısa film seçin."
       }
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "ev",
@@ -117,7 +125,9 @@
         "name": "Yatak oturumu",
         "description": "Yastıklar arası uzun sohbet."
       }
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "surpriz",
@@ -141,6 +151,8 @@
         "name": "Rol yap gecesi",
         "description": "Kendinizi yabancı gibi tanıştırın — bir cafede buluşun."
       }
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   }
 ]

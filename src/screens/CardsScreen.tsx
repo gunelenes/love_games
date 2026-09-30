@@ -18,8 +18,10 @@ import { CardDeck } from '@/components/Cards/CardDeck';
 import { CardFace } from '@/components/Cards/CardFace';
 import { CategoryChips } from '@/components/Cards/CategoryChips';
 import { FlipCard } from '@/components/Cards/FlipCard';
+import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { useCardSelection } from '@/hooks/useCardSelection';
 import { useContent } from '@/hooks/useContent';
+import { usePlayPrefs } from '@/hooks/usePlayPrefs';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
@@ -41,7 +43,13 @@ type DrawnCard = {
 
 export function CardsScreen({ navigation }: Props) {
   const { categories } = useContent();
-  const selection = useCardSelection(categories);
+  const play = usePlayPrefs();
+  const filteredCategories = React.useMemo(
+    () =>
+      categories.filter((c) => c.track === play.track && c.level <= play.level),
+    [categories, play.track, play.level]
+  );
+  const selection = useCardSelection(filteredCategories);
   const [drawn, setDrawn] = useState<DrawnCard | null>(null);
   const [drawing, setDrawing] = useState(false);
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
@@ -107,14 +115,19 @@ export function CardsScreen({ navigation }: Props) {
         <View style={styles.header}>
           <Text style={styles.eyebrow}>KART OYUNU</Text>
           <Text style={styles.title}>Kart Çek</Text>
-          <Text style={styles.subtitle}>
-            Kategorileri seç, karttan sürpriz çıksın
-          </Text>
         </View>
+
+        <TrackLevelBar
+          track={play.track}
+          level={play.level}
+          onTrackChange={play.setTrack}
+          onLevelChange={play.setLevel}
+          disabled={drawing}
+        />
 
         <View style={styles.chipsArea}>
           <CategoryChips
-            categories={categories}
+            categories={filteredCategories}
             selectedIds={selection.selectedIds}
             onToggle={selection.toggle}
             canDeselect={selection.canDeselect}

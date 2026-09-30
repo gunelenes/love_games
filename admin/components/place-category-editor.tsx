@@ -2,7 +2,16 @@
 
 import { useEffect, useState } from 'react';
 import { listDocs, removeDoc, saveDoc } from '@/lib/content-service';
-import type { Place, PlaceCategory } from '@/lib/types';
+import {
+  LEVELS,
+  LEVEL_LABEL,
+  TRACKS,
+  TRACK_LABEL,
+  type Level,
+  type Place,
+  type PlaceCategory,
+  type Track,
+} from '@/lib/types';
 
 function newBlank(): PlaceCategory {
   return {
@@ -11,6 +20,8 @@ function newBlank(): PlaceCategory {
     color: '#4CAF50',
     icon: '📍',
     places: [{ name: '', description: '' }],
+    track: 'romantik',
+    level: 1,
   };
 }
 
@@ -259,6 +270,38 @@ function PCCard({
                 value={item.icon}
                 onChange={(e) => onChange({ icon: e.target.value })}
               />
+            </div>
+            <div>
+              <label className="label">Track</label>
+              <select
+                className="input"
+                value={item.track}
+                onChange={(e) =>
+                  onChange({ track: e.target.value as Track })
+                }
+              >
+                {TRACKS.map((t) => (
+                  <option key={t} value={t}>
+                    {TRACK_LABEL[t]}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="label">Level</label>
+              <select
+                className="input"
+                value={item.level}
+                onChange={(e) =>
+                  onChange({ level: Number(e.target.value) as Level })
+                }
+              >
+                {LEVELS.map((l) => (
+                  <option key={l} value={l}>
+                    {LEVEL_LABEL[item.track][l]}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 

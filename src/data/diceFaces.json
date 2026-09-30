@@ -10,7 +10,9 @@
       "Elini tut ve tersine bir öpücük ver.",
       "Boynuna 3 küçük öpücük ver.",
       "Bir öpücükte 5 saniye kalın, gözler kapalı."
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "sarilma",
@@ -23,7 +25,9 @@
       "Arkadan sarıl ve omzuna dayan.",
       "Ellerini tut, göz göze bak.",
       "Kucağına al ve sallan."
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "iltifat",
@@ -36,7 +40,9 @@
       "Bugün onu neden özel bulduğunu paylaş.",
       "Ona kısa bir teşekkür mesajı söyle.",
       "Onun için hangi kelime aklına ilk geliyor?"
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "ani",
@@ -49,7 +55,9 @@
       "İlk tanıştığınız günü hatırla.",
       "En unutulmaz seyahatinizi anlat.",
       "Birlikte en çok güldüğünüz anı paylaş."
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "dokunus",
@@ -62,7 +70,9 @@
       "Yüzünü ellerinle çerçevele.",
       "Elini eline geçir, parmaklarını iç içe kilitle.",
       "Sırtına yumuşak bir masaj yap 30 saniye."
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   },
   {
     "id": "fisilti",
@@ -75,6 +85,8 @@
       "Bugün onu düşündüren bir şey fısıldayarak anlat.",
       "Beni en çok neyle mutlu ediyorsun de, fısıldayarak.",
       "Kulağına 3 kelimeyle \"seni seviyorum\" fısılda."
-    ]
+    ],
+    "track": "romantik",
+    "level": 1
   }
 ]

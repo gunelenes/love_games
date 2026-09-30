@@ -18,8 +18,10 @@ import { BackButton } from '@/components/ui/BackButton';
 import { Dice } from '@/components/Dice/Dice';
 import { DiceShadow } from '@/components/Dice/DiceShadow';
 import { TypewriterText } from '@/components/ResultCard/TypewriterText';
+import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { useContent } from '@/hooks/useContent';
 import { useDualDiceRoll } from '@/hooks/useDualDiceRoll';
+import { usePlayPrefs } from '@/hooks/usePlayPrefs';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
@@ -35,6 +37,19 @@ const SHADOW_HEIGHT = 44;
 
 export function DiceScreen({ navigation }: Props) {
   const { diceFaces, placeCategories } = useContent();
+  const play = usePlayPrefs();
+  const filteredDiceFaces = React.useMemo(
+    () =>
+      diceFaces.filter((c) => c.track === play.track && c.level <= play.level),
+    [diceFaces, play.track, play.level]
+  );
+  const filteredPlaceCategories = React.useMemo(
+    () =>
+      placeCategories.filter(
+        (c) => c.track === play.track && c.level <= play.level
+      ),
+    [placeCategories, play.track, play.level]
+  );
   const [action, setAction] = useState<Category | null>(null);
   const [placeCat, setPlaceCat] = useState<PlaceCategory | null>(null);
   const [place, setPlace] = useState<Place | null>(null);
@@ -60,8 +75,8 @@ export function DiceScreen({ navigation }: Props) {
 
   const { diceA, diceB, faceIndexA, faceIndexB, roll, isRolling } =
     useDualDiceRoll({
-      facesA: diceFaces,
-      facesB: placeCategories,
+      facesA: filteredDiceFaces,
+      facesB: filteredPlaceCategories,
       onComplete: handleComplete,
     });
 
@@ -96,10 +111,15 @@ export function DiceScreen({ navigation }: Props) {
         <View style={styles.header}>
           <Text style={styles.eyebrow}>ZAR OYUNU</Text>
           <Text style={styles.title}>Zarı At</Text>
-          <Text style={styles.subtitle}>
-            Aksiyon + mekan — ikisi de sürpriz
-          </Text>
         </View>
+
+        <TrackLevelBar
+          track={play.track}
+          level={play.level}
+          onTrackChange={play.setTrack}
+          onLevelChange={play.setLevel}
+          disabled={isRolling}
+        />
 
         <View style={styles.diceArea}>
           <View style={styles.diceSlot}>
@@ -112,7 +132,7 @@ export function DiceScreen({ navigation }: Props) {
               />
             </View>
             <Dice
-              faces={diceFaces}
+              faces={filteredDiceFaces}
               faceIndex={faceIndexA}
               rotX={diceA.rotX}
               rotY={diceA.rotY}
@@ -133,7 +153,7 @@ export function DiceScreen({ navigation }: Props) {
               />
             </View>
             <Dice
-              faces={placeCategories}
+              faces={filteredPlaceCategories}
               faceIndex={faceIndexB}
               rotX={diceB.rotX}
               rotY={diceB.rotY}

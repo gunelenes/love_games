@@ -11,8 +11,10 @@ import { CategoryPanel } from '@/components/Wheel/CategoryPanel';
 import { Wheel } from '@/components/Wheel/Wheel';
 import { WheelPointer } from '@/components/Wheel/WheelPointer';
 import { SpinButton } from '@/components/Wheel/SpinButton';
+import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { useCategoryPrefs } from '@/hooks/useCategoryPrefs';
 import { useContent } from '@/hooks/useContent';
+import { usePlayPrefs } from '@/hooks/usePlayPrefs';
 import { useWheelSpin } from '@/hooks/useWheelSpin';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
@@ -26,7 +28,13 @@ const WHEEL_SIZE = Math.min(width - 48, 360);
 
 export function WheelScreen({ navigation }: Props) {
   const { categories } = useContent();
-  const prefs = useCategoryPrefs(categories);
+  const play = usePlayPrefs();
+  const filteredCategories = React.useMemo(
+    () =>
+      categories.filter((c) => c.track === play.track && c.level <= play.level),
+    [categories, play.track, play.level]
+  );
+  const prefs = useCategoryPrefs(filteredCategories);
   const [selected, setSelected] = useState<Category | null>(null);
   const [prompt, setPrompt] = useState('');
   const [winningIndex, setWinningIndex] = useState<number | null>(null);
@@ -87,10 +95,15 @@ export function WheelScreen({ navigation }: Props) {
         <View style={styles.header}>
           <Text style={styles.eyebrow}>ÇARK OYUNU</Text>
           <Text style={styles.title}>Çarkı Çevir</Text>
-          <Text style={styles.subtitle}>
-            Bir kategori seç, sürpriz sizin olsun
-          </Text>
         </View>
+
+        <TrackLevelBar
+          track={play.track}
+          level={play.level}
+          onTrackChange={play.setTrack}
+          onLevelChange={play.setLevel}
+          disabled={isSpinning}
+        />
 
         <View style={styles.wheelWrap}>
           <View style={{ width: WHEEL_SIZE, height: WHEEL_SIZE }}>
@@ -156,7 +169,7 @@ export function WheelScreen({ navigation }: Props) {
         visible={settingsVisible}
         onClose={handleCloseSettings}
         prefs={prefs}
-        categories={categories}
+        categories={filteredCategories}
       />
     </View>
   );
