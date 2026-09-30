@@ -1,0 +1,53 @@
+[
+  {
+    "id": "ates-sozcukleri",
+    "name": "Ateş Sözcükleri",
+    "color": "#DC2626",
+    "icon": "💬",
+    "track": "cesur",
+    "level": 1,
+    "order": 10,
+    "prompts": [
+      "Partnerinin kulağına 10 saniye boyunca yalnızca 3 kelime fısılda — ama kelimeler kışkırtıcı olsun.",
+      "Ona \"bugün en çok istediğim şey…\" diye başlayan bir cümle söyle. Kelimeleri özenle seç.",
+      "30 saniye boyunca sadece \"evet\" ve \"hayır\" cümleleriyle konuş — göz teması bırakmadan.",
+      "Kulağına yaklaşıp isim yerine tek bir sıfat söyle. Öyle bir sıfat ki sana bakış attırsın.",
+      "Sesinin tonunu yavaşlatarak bir cümleyi 3 saniye uzat: \"Şu an aklımdan geçen şey…\" — devamını sen getir.",
+      "Partnerine \"seni istiyorum\" de. 3 farklı tonda tekrar et. Hangisi ona en çok işledi soru olsun."
+    ]
+  },
+  {
+    "id": "bakisin-isigi",
+    "name": "Bakışın Işığı",
+    "color": "#6B21A8",
+    "icon": "👁️",
+    "track": "cesur",
+    "level": 1,
+    "order": 11,
+    "prompts": [
+      "1 dakika boyunca partnerinin gözlerinden gözünü ayırma. İlk gülümseyen kaybeder — ödül galibin bileceği bir şey.",
+      "20 saniye boyunca sadece bakışlarınla ne yapmak istediğini anlat. Kelimeler yasak.",
+      "Karşılıklı otur. 30 saniye boyunca nefeslerinizin ritmini eşitleyin — gözler açık, ellerin ellerin üzerinde.",
+      "Partnerine 10 saniyeliğine dudaklarına baktığını hissettir. Sonra gözlerine geri dön — ne hissettiğini gözlerinle söyle.",
+      "Odanın diğer ucundan 5 saniye boyunca partnerinin dikkatini sadece bakışınla çek.",
+      "30 saniye göz temasını bozma. Arada \"seni ne kadar istediğim burada\" de — sözlerin bakışına eklensin."
+    ]
+  },
+  {
+    "id": "siritan-cesaret",
+    "name": "Sırıtan Cesaret",
+    "color": "#BE185D",
+    "icon": "😈",
+    "track": "cesur",
+    "level": 1,
+    "order": 12,
+    "prompts": [
+      "Partnerine bugüne kadar söylemediğin bir cesur isteğini itiraf et. Nazikçe ama net.",
+      "Sor: \"Bana ne yapmamı istersin şu an — utanma, en cüretkar olanı söyle.\"",
+      "Kendine dair bir \"kirli sır\" söyle — ilişkinize dair, seni heyecanlandıran ama söylemediğin bir şey.",
+      "Seni en çok neyin harekete geçirdiğini 1 cümlede özetle. Uzun konuşma yasak.",
+      "\"Eğer izin verirsen, şimdi yapacağım tek şey…\" diye başla, üç seçenek sun. O seçsin.",
+      "Sırayla \"seni en çok istediğim an…\" diye başlayan cümleler söyleyin. Kimse yorum yapmayacak, sadece dinleyecek."
+    ]
+  }
+]
