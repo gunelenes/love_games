@@ -23,31 +23,22 @@ export type PlaceCategory = {
 export type BoxNote = {
   id: string;
   text: string;
+  authorUid: string;
   createdAt: number;
 };
 
-export type Box = {
+/**
+ * Cloud-backed box (Firestore) shared within a room. Notes carry the author
+ * UID so the client can filter "mine" vs "partner" without separate arrays.
+ */
+export type RoomBox = {
   id: string;
   name: string;
   color: string;
   icon: string;
   createdAt: number;
   updatedAt: number;
-  myNotes: BoxNote[];
-  partnerNotes: BoxNote[];
-  myConfirmed: boolean;
-  partnerConfirmed: boolean;
-  lastSyncAt?: number;
-};
-
-/** Blob that travels between phones via QR or short code. */
-export type BoxSyncBlob = {
-  v: 1;
-  boxId: string;
-  boxName: string;
-  boxColor: string;
-  boxIcon: string;
-  notes: BoxNote[];   // sender's `myNotes`
-  confirmed: boolean; // sender's `myConfirmed`
-  ts: number;
+  createdBy: string;
+  notes: BoxNote[];
+  confirmations: Record<string, boolean>; // uid -> confirmed
 };

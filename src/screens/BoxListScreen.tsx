@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
+  Alert,
   Dimensions,
   Modal,
   Pressable,
@@ -18,13 +19,15 @@ import Animated, {
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
 import { BackButton } from '@/components/ui/BackButton';
-import { SyncModal } from '@/components/Box/SyncModal';
-import { useBoxes } from '@/hooks/useBoxes';
+import { useAuth } from '@/hooks/useAuth';
+import { useRoom } from '@/hooks/useRoom';
+import { useRoomBoxes } from '@/hooks/useRoomBoxes';
+import { createBox } from '@/services/boxService';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { darken, lighten, withAlpha } from '@/utils/color';
-import type { Box } from '@/types';
+import type { RoomBox } from '@/types';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'BoxList'>;
 
@@ -40,20 +43,44 @@ const PRESETS = [
 ];
 
 export function BoxListScreen({ navigation }: Props) {
-  const { boxes, createBox } = useBoxes();
+  const { uid } = useAuth();
+  const { code, room, leave } = useRoom();
+  const { boxes, loading, error } = useRoomBoxes(code);
   const [creating, setCreating] = useState(false);
-  const [joining, setJoining] = useState(false);
 
-  const handleCreate = (name: string, icon: string, color: string) => {
-    const box = createBox(name, color, icon);
+  // If we've somehow arrived here without a room code, bounce back to Lobby.
+  useEffect(() => {
+    if (!code) {
+      navigation.replace('RoomLobby');
+    }
+  }, [code, navigation]);
+
+  const handleCreate = async (name: string, icon: string, color: string) => {
+    if (!code || !uid) return;
+    const id = await createBox(code, uid, name, color, icon);
     setCreating(false);
-    navigation.navigate('Box', { boxId: box.id });
+    navigation.navigate('Box', { boxId: id });
   };
 
-  const handleJoinSuccess = (boxId: string) => {
-    setJoining(false);
-    navigation.navigate('Box', { boxId });
+  const handleLeave = () => {
+    Alert.alert(
+      'Odadan çık',
+      'Bu telefonda kaydedilmiş oda bağlantısı silinir. Kutular Firestore\'da kalır — kod ile tekrar girebilirsin.',
+      [
+        { text: 'İptal', style: 'cancel' },
+        {
+          text: 'Çık',
+          style: 'destructive',
+          onPress: async () => {
+            await leave();
+            navigation.replace('RoomLobby');
+          },
+        },
+      ]
+    );
   };
+
+  const guestJoined = !!room?.guestUid;
 
   return (
     <View style={styles.root}>
@@ -62,13 +89,38 @@ export function BoxListScreen({ navigation }: Props) {
       <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
         <View style={styles.topBar}>
           <BackButton onPress={() => navigation.goBack()} />
+          <Pressable
+            onPress={handleLeave}
+            style={styles.leaveBtn}
+            hitSlop={8}
+          >
+            <Text style={styles.leaveBtnText}>Odadan çık</Text>
+          </Pressable>
         </View>
 
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>KUTULAR</Text>
-          <Text style={styles.title}>Ortak Kutular</Text>
+          <Text style={styles.eyebrow}>ORTAK KUTULAR</Text>
+          {code ? (
+            <View style={styles.codeChip}>
+              <Text style={styles.codeChipLabel}>ODA</Text>
+              <Text style={styles.codeChipCode} selectable>
+                {code}
+              </Text>
+              <Text style={styles.codeChipDot}>·</Text>
+              <Text
+                style={[
+                  styles.codeChipMembers,
+                  { color: guestJoined ? '#6EE7B7' : '#FCD34D' },
+                ]}
+              >
+                {guestJoined ? '2/2 kişi' : '1/2 · partneri bekliyor'}
+              </Text>
+            </View>
+          ) : null}
           <Text style={styles.subtitle}>
-            Notları gizlice yaz, karışık çıksın
+            {guestJoined
+              ? 'Notları anlık paylaşıyorsunuz'
+              : 'Kod\'u partnerine ver ki bağlansın'}
           </Text>
         </View>
 
@@ -77,12 +129,15 @@ export function BoxListScreen({ navigation }: Props) {
           contentContainerStyle={styles.listContent}
           showsVerticalScrollIndicator={false}
         >
-          <View style={styles.topActionsRow}>
-            <NewBoxButton onPress={() => setCreating(true)} />
-            <JoinBoxButton onPress={() => setJoining(true)} />
-          </View>
+          <NewBoxButton onPress={() => setCreating(true)} />
 
-          {boxes.length === 0 ? (
+          {loading ? (
+            <Text style={styles.emptyText}>Yükleniyor…</Text>
+          ) : error ? (
+            <Text style={[styles.emptyText, { color: '#EF4444' }]}>
+              Hata: {error}
+            </Text>
+          ) : boxes.length === 0 ? (
             <View style={styles.empty}>
               <Text style={styles.emptyIcon}>📦</Text>
               <Text style={styles.emptyTitle}>Henüz kutu yok</Text>
@@ -95,6 +150,7 @@ export function BoxListScreen({ navigation }: Props) {
               <BoxCard
                 key={b.id}
                 box={b}
+                myUid={uid}
                 onPress={() => navigation.navigate('Box', { boxId: b.id })}
               />
             ))
@@ -107,12 +163,6 @@ export function BoxListScreen({ navigation }: Props) {
         onClose={() => setCreating(false)}
         onCreate={handleCreate}
       />
-
-      <SyncModal
-        visible={joining}
-        onClose={() => setJoining(false)}
-        onReceiveSuccess={handleJoinSuccess}
-      />
     </View>
   );
 }
@@ -121,9 +171,7 @@ function NewBoxButton({ onPress }: { onPress: () => void }) {
   const scale = useSharedValue(1);
   const style = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
-    flex: 1,
   }));
-
   return (
     <Animated.View style={style}>
       <Pressable
@@ -143,41 +191,27 @@ function NewBoxButton({ onPress }: { onPress: () => void }) {
   );
 }
 
-function JoinBoxButton({ onPress }: { onPress: () => void }) {
-  const scale = useSharedValue(1);
-  const style = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-    flex: 1,
-  }));
-
-  return (
-    <Animated.View style={style}>
-      <Pressable
-        onPress={onPress}
-        onPressIn={() =>
-          (scale.value = withSpring(0.96, { damping: 14, stiffness: 260 }))
-        }
-        onPressOut={() =>
-          (scale.value = withSpring(1, { damping: 10, stiffness: 200 }))
-        }
-        style={styles.joinBtn}
-      >
-        <Text style={styles.joinIcon}>📥</Text>
-        <Text style={styles.joinLabel}>Kutuya Katıl</Text>
-      </Pressable>
-    </Animated.View>
-  );
-}
-
-function BoxCard({ box, onPress }: { box: Box; onPress: () => void }) {
+function BoxCard({
+  box,
+  myUid,
+  onPress,
+}: {
+  box: RoomBox;
+  myUid: string | null;
+  onPress: () => void;
+}) {
   const scale = useSharedValue(1);
   const style = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
   }));
 
-  const bothConfirmed = box.myConfirmed && box.partnerConfirmed;
-  const totalNotes = box.myNotes.length + box.partnerNotes.length;
-
+  const myNotes = myUid ? box.notes.filter((n) => n.authorUid === myUid) : [];
+  const partnerNotes = myUid
+    ? box.notes.filter((n) => n.authorUid !== myUid)
+    : box.notes;
+  const uids = Object.keys(box.confirmations);
+  const allConfirmed =
+    uids.length >= 1 && uids.every((u) => box.confirmations[u]);
   return (
     <Animated.View style={style}>
       <Pressable
@@ -220,17 +254,17 @@ function BoxCard({ box, onPress }: { box: Box; onPress: () => void }) {
               {box.name}
             </Text>
             <Text style={styles.cardMeta}>
-              {box.myNotes.length} senin · {box.partnerNotes.length} partner
+              {myNotes.length} senin · {partnerNotes.length} partner
             </Text>
           </View>
           <View
             style={[
               styles.stateChip,
               {
-                backgroundColor: bothConfirmed
+                backgroundColor: allConfirmed
                   ? withAlpha('#10B981', 0.25)
                   : withAlpha('#FFFFFF', 0.12),
-                borderColor: bothConfirmed
+                borderColor: allConfirmed
                   ? withAlpha('#10B981', 0.6)
                   : withAlpha('#FFFFFF', 0.2),
               },
@@ -239,10 +273,12 @@ function BoxCard({ box, onPress }: { box: Box; onPress: () => void }) {
             <Text
               style={[
                 styles.stateText,
-                { color: bothConfirmed ? '#6EE7B7' : 'rgba(255,255,255,0.7)' },
+                {
+                  color: allConfirmed ? '#6EE7B7' : 'rgba(255,255,255,0.7)',
+                },
               ]}
             >
-              {bothConfirmed ? 'Hazır' : `${totalNotes} not`}
+              {allConfirmed ? 'Hazır' : `${box.notes.length} not`}
             </Text>
           </View>
         </View>
@@ -294,7 +330,6 @@ function CreateBoxModal({
           <Text style={styles.modalSubtitle}>
             Kutunuza bir isim ve tema verin
           </Text>
-
           <TextInput
             value={name}
             onChangeText={setName}
@@ -306,7 +341,6 @@ function CreateBoxModal({
             returnKeyType="done"
             onSubmitEditing={submit}
           />
-
           <View style={styles.themeGrid}>
             {PRESETS.map((p, i) => {
               const selected = i === themeIdx;
@@ -330,7 +364,6 @@ function CreateBoxModal({
               );
             })}
           </View>
-
           <View style={styles.modalActions}>
             <Pressable onPress={handleClose} style={styles.cancelBtn}>
               <Text style={styles.cancelLabel}>İptal</Text>
@@ -356,51 +389,77 @@ function CreateBoxModal({
 }
 
 const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
-  safe: {
-    flex: 1,
-  },
+  root: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1 },
   topBar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: 16,
     paddingTop: 4,
+  },
+  leaveBtn: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.15)',
+    backgroundColor: 'rgba(255,255,255,0.06)',
+  },
+  leaveBtnText: {
+    color: colors.fg,
+    fontSize: 12,
+    fontWeight: '700',
   },
   header: {
     alignItems: 'center',
     paddingHorizontal: 24,
     paddingTop: 8,
     paddingBottom: 12,
+    gap: 6,
   },
   eyebrow: {
     ...typography.small,
     color: colors.accent,
-    marginBottom: 6,
   },
-  title: {
-    ...typography.title,
+  codeChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 14,
+    backgroundColor: 'rgba(255,255,255,0.06)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.12)',
+  },
+  codeChipLabel: {
+    color: colors.fgDim,
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 1,
+  },
+  codeChipCode: {
     color: colors.fg,
-    marginBottom: 6,
-    fontSize: 30,
+    fontSize: 15,
+    fontWeight: '900',
+    letterSpacing: 2,
+  },
+  codeChipDot: { color: colors.fgDim },
+  codeChipMembers: {
+    fontSize: 12,
+    fontWeight: '700',
   },
   subtitle: {
-    ...typography.subtitle,
+    ...typography.small,
     color: colors.fgDim,
-    textAlign: 'center',
-    fontSize: 14,
+    fontStyle: 'italic',
   },
-  list: {
-    flex: 1,
-  },
+  list: { flex: 1 },
   listContent: {
     paddingHorizontal: 20,
     paddingBottom: 20,
     gap: 12,
-  },
-  topActionsRow: {
-    flexDirection: 'row',
-    gap: 10,
   },
   newBtn: {
     flexDirection: 'row',
@@ -422,40 +481,16 @@ const styles = StyleSheet.create({
   },
   newLabel: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: '700',
-    letterSpacing: 0.4,
-  },
-  joinBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    paddingVertical: 16,
-    borderRadius: 16,
-    backgroundColor: withAlpha('#10B981', 0.2),
-    borderWidth: 1.5,
-    borderColor: withAlpha('#10B981', 0.5),
-  },
-  joinIcon: {
-    fontSize: 18,
-  },
-  joinLabel: {
-    color: '#6EE7B7',
-    fontSize: 14,
-    fontWeight: '700',
-    letterSpacing: 0.4,
+    letterSpacing: 0.5,
   },
   empty: {
     alignItems: 'center',
     paddingVertical: 40,
     paddingHorizontal: 24,
   },
-  emptyIcon: {
-    fontSize: 56,
-    marginBottom: 12,
-    opacity: 0.6,
-  },
+  emptyIcon: { fontSize: 56, marginBottom: 12, opacity: 0.6 },
   emptyTitle: {
     ...typography.body,
     color: colors.fg,
@@ -468,6 +503,7 @@ const styles = StyleSheet.create({
     color: colors.fgDim,
     textAlign: 'center',
     lineHeight: 18,
+    paddingVertical: 8,
   },
   card: {
     borderRadius: 20,
@@ -500,12 +536,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  cardIconText: {
-    fontSize: 26,
-  },
-  cardMiddle: {
-    flex: 1,
-  },
+  cardIconText: { fontSize: 26 },
+  cardMiddle: { flex: 1 },
   cardName: {
     color: 'white',
     fontSize: 18,
@@ -584,9 +616,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  themeIcon: {
-    fontSize: 22,
-  },
+  themeIcon: { fontSize: 22 },
   modalActions: {
     flexDirection: 'row',
     gap: 10,

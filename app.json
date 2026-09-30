@@ -22,16 +22,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-status-bar",
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Partner cihazınla QR kod paylaşımı için kamera erişimi gerekli.",
-          "microphonePermission": false,
-          "recordAudioAndroid": false,
-          "barcodeScannerEnabled": true
-        }
-      ]
+      "expo-status-bar"
     ]
   }
 }

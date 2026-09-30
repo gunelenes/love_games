@@ -14,6 +14,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
+import { useRoom } from '@/hooks/useRoom';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { darken, lighten, withAlpha } from '@/utils/color';
@@ -63,6 +64,17 @@ const GAMES: GameCardData[] = [
 ];
 
 export function HomeScreen({ navigation }: Props) {
+  const { code } = useRoom();
+
+  const handlePress = (key: GameCardData['key']) => {
+    if (key === 'BoxList') {
+      // No room yet → send to lobby; else straight to boxes.
+      navigation.navigate(code ? 'BoxList' : 'RoomLobby');
+      return;
+    }
+    navigation.navigate(key);
+  };
+
   return (
     <View style={styles.root}>
       <AuroraBackground width={width} height={height} />
@@ -81,7 +93,7 @@ export function HomeScreen({ navigation }: Props) {
             <GameCard
               key={g.key}
               data={g}
-              onPress={() => navigation.navigate(g.key)}
+              onPress={() => handlePress(g.key)}
             />
           ))}
         </View>

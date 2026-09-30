@@ -14,8 +14,6 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, {
   Easing,
-  FadeIn,
-  FadeOut,
   useAnimatedStyle,
   useSharedValue,
   withSequence,
@@ -30,8 +28,15 @@ import {
   type ConfettiBurstRef,
 } from '@/components/Confetti/ConfettiBurst';
 import { BackButton } from '@/components/ui/BackButton';
-import { SyncModal } from '@/components/Box/SyncModal';
-import { useBoxes } from '@/hooks/useBoxes';
+import { useAuth } from '@/hooks/useAuth';
+import { useBoxDoc } from '@/hooks/useBoxDoc';
+import { useRoom } from '@/hooks/useRoom';
+import {
+  addNote,
+  deleteBox,
+  deleteNote,
+  setConfirmation,
+} from '@/services/boxService';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
@@ -44,64 +49,75 @@ const { width, height } = Dimensions.get('window');
 
 export function BoxScreen({ route, navigation }: Props) {
   const { boxId } = route.params;
-  const { boxes, addNote, deleteNote, setMyConfirmed, deleteBox } = useBoxes();
-  const box = boxes.find((b) => b.id === boxId);
+  const { uid } = useAuth();
+  const { code, room } = useRoom();
+  const { box, loading } = useBoxDoc(code, boxId);
 
   const [draft, setDraft] = useState('');
-  const [syncOpen, setSyncOpen] = useState(false);
   const [revealed, setRevealed] = useState<BoxNote | null>(null);
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
 
   const revealProgress = useSharedValue(0);
   const shuffleScale = useSharedValue(1);
 
-  const allNotes = useMemo(
-    () => (box ? [...box.myNotes, ...box.partnerNotes] : []),
-    [box]
+  const myNotes = useMemo(
+    () => (box && uid ? box.notes.filter((n) => n.authorUid === uid) : []),
+    [box, uid]
+  );
+  const partnerNotes = useMemo(
+    () =>
+      box && uid ? box.notes.filter((n) => n.authorUid !== uid) : box?.notes ?? [],
+    [box, uid]
   );
 
-  const bothConfirmed = !!box?.myConfirmed && !!box?.partnerConfirmed;
-  const canShuffle = !!box?.myConfirmed && allNotes.length > 0;
+  const myConfirmed = uid ? !!box?.confirmations?.[uid] : false;
+  const partnerUid =
+    uid && room
+      ? [room.hostUid, room.guestUid].find((u) => u && u !== uid) ?? null
+      : null;
+  const partnerConfirmed = partnerUid ? !!box?.confirmations?.[partnerUid] : false;
 
-  const handleAdd = useCallback(() => {
-    if (!box) return;
+  const totalNotes = box?.notes.length ?? 0;
+  const canShuffle = myConfirmed && totalNotes > 0;
+
+  const handleAdd = useCallback(async () => {
+    if (!box || !uid || !code) return;
     const trimmed = draft.trim();
     if (!trimmed) return;
-    addNote(box.id, trimmed);
     setDraft('');
     void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-  }, [box, draft, addNote]);
+    await addNote(code, box.id, uid, trimmed, box.notes);
+  }, [box, uid, code, draft]);
 
   const handleDeleteNote = useCallback(
-    (noteId: string) => {
-      if (!box) return;
-      deleteNote(box.id, noteId);
+    async (noteId: string) => {
+      if (!box || !uid || !code) return;
       void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+      await deleteNote(code, box.id, noteId, uid, box.notes);
     },
-    [box, deleteNote]
+    [box, uid, code]
   );
 
-  const handleToggleConfirm = useCallback(() => {
-    if (!box) return;
-    const next = !box.myConfirmed;
-    setMyConfirmed(box.id, next);
+  const handleToggleConfirm = useCallback(async () => {
+    if (!box || !uid || !code) return;
+    const next = !myConfirmed;
     void Haptics.notificationAsync(
       next
         ? Haptics.NotificationFeedbackType.Success
         : Haptics.NotificationFeedbackType.Warning
     );
-  }, [box, setMyConfirmed]);
+    await setConfirmation(code, box.id, uid, next);
+  }, [box, uid, code, myConfirmed]);
 
   const handleShuffle = useCallback(() => {
-    if (!canShuffle || allNotes.length === 0) return;
+    if (!canShuffle || !box || box.notes.length === 0) return;
     void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
     shuffleScale.value = withSequence(
       withTiming(0.9, { duration: 120 }),
       withSpring(1, { damping: 12, stiffness: 220 })
     );
-    // brief suspense before reveal
-    const idx = Math.floor(Math.random() * allNotes.length);
-    const pick = allNotes[idx];
+    const idx = Math.floor(Math.random() * box.notes.length);
+    const pick = box.notes[idx];
     setTimeout(() => {
       setRevealed(pick);
       revealProgress.value = 0;
@@ -112,40 +128,34 @@ export function BoxScreen({ route, navigation }: Props) {
       confettiRef.current?.burst();
       void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     }, 220);
-  }, [canShuffle, allNotes, revealProgress, shuffleScale]);
+  }, [canShuffle, box, revealProgress, shuffleScale]);
 
   const handleCloseReveal = useCallback(() => {
-    revealProgress.value = withTiming(
-      0,
-      { duration: 220, easing: Easing.in(Easing.cubic) },
-      (finished) => {
-        'worklet';
-        if (finished) {
-          // clear the note only after fade-out completes
-        }
-      }
-    );
+    revealProgress.value = withTiming(0, {
+      duration: 220,
+      easing: Easing.in(Easing.cubic),
+    });
     setTimeout(() => setRevealed(null), 240);
   }, [revealProgress]);
 
   const handleDeleteBox = useCallback(() => {
-    if (!box) return;
+    if (!box || !code) return;
     Alert.alert(
       'Kutuyu sil',
-      `"${box.name}" kutusunu ve tüm notlarını silmek istiyor musun?`,
+      `"${box.name}" kutusunu ve tüm notlarını silmek istiyor musun? Bu iki telefonda da silinir.`,
       [
         { text: 'İptal', style: 'cancel' },
         {
           text: 'Sil',
           style: 'destructive',
-          onPress: () => {
-            deleteBox(box.id);
+          onPress: async () => {
+            await deleteBox(code, box.id);
             navigation.goBack();
           },
         },
       ]
     );
-  }, [box, deleteBox, navigation]);
+  }, [box, code, navigation]);
 
   const revealStyle = useAnimatedStyle(() => ({
     opacity: revealProgress.value,
@@ -163,6 +173,20 @@ export function BoxScreen({ route, navigation }: Props) {
     transform: [{ scale: shuffleScale.value }],
   }));
 
+  if (loading && !box) {
+    return (
+      <View style={styles.root}>
+        <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+          <View style={styles.topBar}>
+            <BackButton onPress={() => navigation.goBack()} />
+          </View>
+          <View style={styles.missingCard}>
+            <Text style={styles.missingText}>Yükleniyor…</Text>
+          </View>
+        </SafeAreaView>
+      </View>
+    );
+  }
   if (!box) {
     return (
       <View style={styles.root}>
@@ -187,22 +211,13 @@ export function BoxScreen({ route, navigation }: Props) {
       <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
         <View style={styles.topBar}>
           <BackButton onPress={() => navigation.goBack()} />
-          <View style={styles.topActions}>
-            <Pressable
-              onPress={() => setSyncOpen(true)}
-              style={styles.iconBtn}
-              hitSlop={8}
-            >
-              <Text style={styles.iconBtnText}>⇄</Text>
-            </Pressable>
-            <Pressable
-              onPress={handleDeleteBox}
-              style={styles.iconBtn}
-              hitSlop={8}
-            >
-              <Text style={styles.iconBtnText}>✕</Text>
-            </Pressable>
-          </View>
+          <Pressable
+            onPress={handleDeleteBox}
+            style={styles.iconBtn}
+            hitSlop={8}
+          >
+            <Text style={styles.iconBtnText}>✕</Text>
+          </Pressable>
         </View>
 
         <View style={styles.header}>
@@ -223,48 +238,26 @@ export function BoxScreen({ route, navigation }: Props) {
           <View style={styles.statusRow}>
             <StatusPill
               label={
-                box.myConfirmed
-                  ? `Sen ✓ (${box.myNotes.length})`
-                  : `Sen ${box.myNotes.length}`
+                myConfirmed
+                  ? `Sen ✓ (${myNotes.length})`
+                  : `Sen ${myNotes.length}`
               }
-              active={box.myConfirmed}
+              active={myConfirmed}
               color={accent}
             />
             <StatusPill
               label={
-                box.partnerConfirmed
-                  ? `Partner ✓ (${box.partnerNotes.length})`
-                  : `Partner ${box.partnerNotes.length}`
+                partnerUid
+                  ? partnerConfirmed
+                    ? `Partner ✓ (${partnerNotes.length})`
+                    : `Partner ${partnerNotes.length}`
+                  : 'Partner bekleniyor'
               }
-              active={box.partnerConfirmed}
+              active={partnerConfirmed}
               color={accent}
             />
           </View>
         </View>
-
-        {box.myConfirmed && !box.partnerConfirmed ? (
-          <Pressable
-            onPress={() => setSyncOpen(true)}
-            style={[
-              styles.syncBanner,
-              {
-                borderColor: withAlpha('#F59E0B', 0.5),
-                backgroundColor: withAlpha('#F59E0B', 0.15),
-              },
-            ]}
-          >
-            <Text style={styles.syncBannerIcon}>🔄</Text>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.syncBannerTitle}>
-                Notlarınız partnerinize gitmedi
-              </Text>
-              <Text style={styles.syncBannerText}>
-                QR göster ya da kod paylaş — dokun.
-              </Text>
-            </View>
-            <Text style={styles.syncBannerArrow}>›</Text>
-          </Pressable>
-        ) : null}
 
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : undefined}
@@ -293,10 +286,7 @@ export function BoxScreen({ route, navigation }: Props) {
                 disabled={!draft.trim()}
                 style={[
                   styles.addBtn,
-                  {
-                    backgroundColor: accent,
-                    opacity: draft.trim() ? 1 : 0.35,
-                  },
+                  { backgroundColor: accent, opacity: draft.trim() ? 1 : 0.35 },
                 ]}
               >
                 <Text style={styles.addBtnText}>Ekle</Text>
@@ -304,18 +294,15 @@ export function BoxScreen({ route, navigation }: Props) {
             </View>
 
             <View style={styles.notesList}>
-              {box.myNotes.length === 0 ? (
+              {myNotes.length === 0 ? (
                 <Text style={styles.emptyNote}>
                   Henüz not eklemedin. Yukarıdan yazmaya başla.
                 </Text>
               ) : (
-                box.myNotes.map((note) => (
+                myNotes.map((note) => (
                   <View key={note.id} style={styles.noteRow}>
                     <View
-                      style={[
-                        styles.noteDot,
-                        { backgroundColor: accent },
-                      ]}
+                      style={[styles.noteDot, { backgroundColor: accent }]}
                     />
                     <Text style={styles.noteText}>{note.text}</Text>
                     <Pressable
@@ -332,30 +319,30 @@ export function BoxScreen({ route, navigation }: Props) {
 
             <View style={styles.partnerCard}>
               <Text style={styles.partnerLabel}>Partnerin</Text>
-              <Text style={styles.partnerCount}>
-                {box.partnerNotes.length} not
-              </Text>
+              <Text style={styles.partnerCount}>{partnerNotes.length} not</Text>
               <Text style={styles.partnerHint}>
-                {box.partnerConfirmed
-                  ? 'Partner hazır ✨'
-                  : box.partnerNotes.length > 0
-                    ? 'Henüz onaylamadı, sync et'
-                    : 'Henüz not eklemedi'}
+                {!partnerUid
+                  ? 'Odaya henüz katılmadı'
+                  : partnerConfirmed
+                    ? 'Partner hazır ✨'
+                    : partnerNotes.length > 0
+                      ? 'Henüz onaylamadı'
+                      : 'Henüz not eklemedi'}
               </Text>
             </View>
           </ScrollView>
         </KeyboardAvoidingView>
 
         <View style={styles.footer}>
-          {!box.myConfirmed ? (
+          {!myConfirmed ? (
             <Pressable
               onPress={handleToggleConfirm}
-              disabled={box.myNotes.length === 0}
+              disabled={myNotes.length === 0}
               style={[
                 styles.confirmBtn,
                 {
                   backgroundColor: accent,
-                  opacity: box.myNotes.length === 0 ? 0.4 : 1,
+                  opacity: myNotes.length === 0 ? 0.4 : 1,
                 },
               ]}
             >
@@ -388,7 +375,7 @@ export function BoxScreen({ route, navigation }: Props) {
                 hitSlop={8}
               >
                 <Text style={styles.editLinkText}>
-                  {box.partnerConfirmed
+                  {partnerConfirmed
                     ? 'Notlarımı değiştir'
                     : 'Notlarımı değiştir · partner henüz onaylamadı'}
                 </Text>
@@ -460,12 +447,6 @@ export function BoxScreen({ route, navigation }: Props) {
         count={70}
         colors={[accent, '#FFD166', '#FFFFFF', '#F472B6', lighten(accent, 0.3)]}
       />
-
-      <SyncModal
-        visible={syncOpen}
-        onClose={() => setSyncOpen(false)}
-        box={box}
-      />
     </View>
   );
 }
@@ -512,31 +493,18 @@ const pillStyles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
   },
-  text: {
-    fontSize: 12,
-    fontWeight: '800',
-    letterSpacing: 0.4,
-  },
+  text: { fontSize: 12, fontWeight: '800', letterSpacing: 0.4 },
 });
 
 const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
-  safe: {
-    flex: 1,
-  },
+  root: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1 },
   topBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingTop: 4,
-  },
-  topActions: {
-    flexDirection: 'row',
-    gap: 8,
   },
   iconBtn: {
     width: 44,
@@ -548,11 +516,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  iconBtnText: {
-    color: 'white',
-    fontSize: 18,
-    fontWeight: '600',
-  },
+  iconBtnText: { color: 'white', fontSize: 18, fontWeight: '600' },
   header: {
     alignItems: 'center',
     paddingHorizontal: 24,
@@ -568,26 +532,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 10,
   },
-  headerIcon: {
-    fontSize: 30,
-  },
+  headerIcon: { fontSize: 30 },
   headerName: {
     ...typography.title,
     fontSize: 24,
     color: colors.fg,
     marginBottom: 10,
   },
-  statusRow: {
-    flexDirection: 'row',
-    gap: 8,
-  },
-  scroll: {
-    flex: 1,
-  },
-  scrollContent: {
-    paddingHorizontal: 20,
-    paddingBottom: 20,
-  },
+  statusRow: { flexDirection: 'row', gap: 8, flexWrap: 'wrap', justifyContent: 'center' },
+  scroll: { flex: 1 },
+  scrollContent: { paddingHorizontal: 20, paddingBottom: 20 },
   sectionTitle: {
     ...typography.small,
     color: colors.fgDim,
@@ -628,10 +582,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 0.4,
   },
-  notesList: {
-    gap: 8,
-    marginBottom: 20,
-  },
+  notesList: { gap: 8, marginBottom: 20 },
   emptyNote: {
     ...typography.small,
     color: colors.fgDim,
@@ -734,9 +685,7 @@ const styles = StyleSheet.create({
     elevation: 10,
     minWidth: 240,
   },
-  shuffleIcon: {
-    fontSize: 22,
-  },
+  shuffleIcon: { fontSize: 22 },
   shuffleLabel: {
     color: 'white',
     fontSize: 17,
@@ -753,35 +702,8 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
     textDecorationLine: 'underline',
-  },
-  syncBanner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginHorizontal: 20,
-    marginBottom: 12,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    borderRadius: 14,
-    borderWidth: 1,
-    gap: 12,
-  },
-  syncBannerIcon: {
-    fontSize: 20,
-  },
-  syncBannerTitle: {
-    color: colors.fg,
-    fontSize: 13,
-    fontWeight: '800',
-    marginBottom: 2,
-  },
-  syncBannerText: {
-    color: colors.fgDim,
-    fontSize: 12,
-  },
-  syncBannerArrow: {
-    color: colors.fg,
-    fontSize: 24,
-    fontWeight: '300',
+    textAlign: 'center',
+    paddingHorizontal: 12,
   },
   revealBackdrop: {
     position: 'absolute',
@@ -839,10 +761,7 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     marginBottom: 24,
   },
-  revealActions: {
-    flexDirection: 'row',
-    gap: 10,
-  },
+  revealActions: { flexDirection: 'row', gap: 10 },
   revealCloseBtn: {
     flex: 1,
     paddingVertical: 12,
@@ -874,8 +793,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  missingText: {
-    color: colors.fgDim,
-    fontSize: 16,
-  },
+  missingText: { color: colors.fgDim, fontSize: 16 },
 });
