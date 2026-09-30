@@ -8,7 +8,8 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
-import { LEVEL_META, LEVELS, TRACK_META, TRACKS } from '@/data/tracks';
+import { useTranslation } from 'react-i18next';
+import { LEVELS, TRACK_META, TRACKS } from '@/data/tracks';
 import { colors } from '@/theme/colors';
 import { withAlpha } from '@/utils/color';
 import type { Level, Track } from '@/types';
@@ -28,8 +29,10 @@ export function TrackLevelBar({
   onLevelChange,
   disabled = false,
 }: Props) {
-  const meta = LEVEL_META[track][level];
+  const { t } = useTranslation();
   const trackAccent = TRACK_META[track].color;
+  const levelName = t(`tracks.${track}.levels.${level}.name`);
+  const levelHint = t(`tracks.${track}.levels.${level}.hint`);
 
   return (
     <View style={[styles.wrap, disabled && { opacity: 0.55 }]}>
@@ -71,9 +74,9 @@ export function TrackLevelBar({
       <Text style={styles.levelName}>
         <Text style={{ color: trackAccent }}>L{level}</Text>
         <Text style={styles.levelSep}> · </Text>
-        <Text style={styles.levelBold}>{meta.name}</Text>
+        <Text style={styles.levelBold}>{levelName}</Text>
       </Text>
-      <Text style={styles.levelHint}>{meta.hint}</Text>
+      <Text style={styles.levelHint}>{levelHint}</Text>
     </View>
   );
 }
@@ -87,7 +90,10 @@ function TrackChip({
   selected: boolean;
   onPress: () => void;
 }) {
+  const { t } = useTranslation();
   const meta = TRACK_META[trackKey];
+  const trackLabel = t(`tracks.${trackKey}.label`);
+  const trackTagline = t(`tracks.${trackKey}.tagline`);
   const progress = useSharedValue(selected ? 1 : 0);
   const scale = useSharedValue(1);
 
@@ -134,9 +140,9 @@ function TrackChip({
               { color: selected ? '#FFFFFF' : 'rgba(255,255,255,0.65)' },
             ]}
           >
-            {meta.label}
+            {trackLabel}
           </Text>
-          <Text style={styles.trackChipTagline}>{meta.tagline}</Text>
+          <Text style={styles.trackChipTagline}>{trackTagline}</Text>
         </View>
       </Animated.View>
     </Pressable>

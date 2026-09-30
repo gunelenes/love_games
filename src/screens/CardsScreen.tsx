@@ -18,6 +18,7 @@ import { CardDeck } from '@/components/Cards/CardDeck';
 import { CardFace } from '@/components/Cards/CardFace';
 import { CategoryChips } from '@/components/Cards/CategoryChips';
 import { FlipCard } from '@/components/Cards/FlipCard';
+import { useTranslation } from 'react-i18next';
 import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { useCardSelection } from '@/hooks/useCardSelection';
 import { useContent } from '@/hooks/useContent';
@@ -42,6 +43,7 @@ type DrawnCard = {
 };
 
 export function CardsScreen({ navigation }: Props) {
+  const { t } = useTranslation();
   const { categories } = useContent();
   const play = usePlayPrefs();
   const filteredCategories = React.useMemo(
@@ -113,8 +115,8 @@ export function CardsScreen({ navigation }: Props) {
         </View>
 
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>KART OYUNU</Text>
-          <Text style={styles.title}>Kart Çek</Text>
+          <Text style={styles.eyebrow}>{t('cards.eyebrow')}</Text>
+          <Text style={styles.title}>{t('cards.title')}</Text>
         </View>
 
         <TrackLevelBar
@@ -197,7 +199,7 @@ export function CardsScreen({ navigation }: Props) {
             ]}
           >
             <Text style={styles.drawLabel}>
-              {drawn ? 'Yeni Kart' : 'Kart Çek'}
+              {drawn ? t('cards.newCard') : t('cards.drawCard')}
             </Text>
           </Pressable>
         </View>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Dimensions,
   Pressable,
@@ -12,8 +12,10 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
+import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
+import { SettingsModal } from '@/components/Settings/SettingsModal';
 import { useRoom } from '@/hooks/useRoom';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
@@ -24,51 +26,29 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 const { width, height } = Dimensions.get('window');
 
+type GameKey = 'Wheel' | 'Dice' | 'BoxList' | 'Cards';
+
 type GameCardData = {
-  key: 'Wheel' | 'Dice' | 'BoxList' | 'Cards';
-  name: string;
-  tagline: string;
+  key: GameKey;
+  i18nKey: 'wheel' | 'dice' | 'cards' | 'boxes';
   icon: string;
   color: string;
 };
 
 const GAMES: GameCardData[] = [
-  {
-    key: 'Wheel',
-    name: 'Çark',
-    tagline: 'Çevir, kategorini bul',
-    icon: '🎡',
-    color: '#FF4D6D',
-  },
-  {
-    key: 'Dice',
-    name: 'Zar',
-    tagline: 'At, sürpriz seni bulsun',
-    icon: '🎲',
-    color: '#7C3AED',
-  },
-  {
-    key: 'Cards',
-    name: 'Kart',
-    tagline: 'Kategorini seç, kartından çıksın',
-    icon: '🃏',
-    color: '#F59E0B',
-  },
-  {
-    key: 'BoxList',
-    name: 'Kutular',
-    tagline: 'Notları karıştır, birbirinize sürpriz yap',
-    icon: '📦',
-    color: '#10B981',
-  },
+  { key: 'Wheel', i18nKey: 'wheel', icon: '🎡', color: '#FF4D6D' },
+  { key: 'Dice', i18nKey: 'dice', icon: '🎲', color: '#7C3AED' },
+  { key: 'Cards', i18nKey: 'cards', icon: '🃏', color: '#F59E0B' },
+  { key: 'BoxList', i18nKey: 'boxes', icon: '📦', color: '#10B981' },
 ];
 
 export function HomeScreen({ navigation }: Props) {
+  const { t } = useTranslation();
   const { code } = useRoom();
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
-  const handlePress = (key: GameCardData['key']) => {
+  const handlePress = (key: GameKey) => {
     if (key === 'BoxList') {
-      // No room yet → send to lobby; else straight to boxes.
       navigation.navigate(code ? 'BoxList' : 'RoomLobby');
       return;
     }
@@ -80,12 +60,21 @@ export function HomeScreen({ navigation }: Props) {
       <AuroraBackground width={width} height={height} />
 
       <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+        <View style={styles.topBar}>
+          <View style={{ flex: 1 }} />
+          <Pressable
+            onPress={() => setSettingsOpen(true)}
+            style={styles.settingsBtn}
+            hitSlop={8}
+          >
+            <Text style={styles.settingsIcon}>⚙︎</Text>
+          </Pressable>
+        </View>
+
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>SEVGİLİLER İÇİN</Text>
-          <Text style={styles.title}>Sevgi Oyunları</Text>
-          <Text style={styles.subtitle}>
-            Birlikte oynayabileceğiniz mini oyunlar
-          </Text>
+          <Text style={styles.eyebrow}>{t('home.eyebrow')}</Text>
+          <Text style={styles.title}>{t('home.title')}</Text>
+          <Text style={styles.subtitle}>{t('home.subtitle')}</Text>
         </View>
 
         <View style={styles.cards}>
@@ -93,24 +82,35 @@ export function HomeScreen({ navigation }: Props) {
             <GameCard
               key={g.key}
               data={g}
+              name={t(`games.${g.i18nKey}.name`)}
+              tagline={t(`games.${g.i18nKey}.tagline`)}
               onPress={() => handlePress(g.key)}
             />
           ))}
         </View>
 
         <View style={styles.footer}>
-          <Text style={styles.footerText}>Daha fazla oyun yolda ✨</Text>
+          <Text style={styles.footerText}>{t('home.footer')}</Text>
         </View>
       </SafeAreaView>
+
+      <SettingsModal
+        visible={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
+      />
     </View>
   );
 }
 
 function GameCard({
   data,
+  name,
+  tagline,
   onPress,
 }: {
   data: GameCardData;
+  name: string;
+  tagline: string;
   onPress: () => void;
 }) {
   const scale = useSharedValue(1);
@@ -165,8 +165,8 @@ function GameCard({
             <Text style={styles.icon}>{data.icon}</Text>
           </View>
           <View style={styles.cardText}>
-            <Text style={styles.cardName}>{data.name}</Text>
-            <Text style={styles.cardTagline}>{data.tagline}</Text>
+            <Text style={styles.cardName}>{name}</Text>
+            <Text style={styles.cardTagline}>{tagline}</Text>
           </View>
           <Text style={styles.arrow}>›</Text>
         </View>
@@ -179,6 +179,29 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: colors.bg,
+  },
+  topBar: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 4,
+  },
+  settingsBtn: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255,255,255,0.08)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.12)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  settingsIcon: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: '400',
+    marginTop: -2,
   },
   safe: {
     flex: 1,

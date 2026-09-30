@@ -1,0 +1,159 @@
+{
+  "app": {
+    "loading": "Yükleniyor…"
+  },
+  "home": {
+    "eyebrow": "SEVGİLİLER İÇİN",
+    "title": "Sevgi Oyunları",
+    "subtitle": "Birlikte oynayabileceğiniz mini oyunlar",
+    "footer": "Daha fazla oyun yolda ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Çark",
+      "tagline": "Çevir, kategorini bul"
+    },
+    "dice": {
+      "name": "Zar",
+      "tagline": "At, sürpriz seni bulsun"
+    },
+    "cards": {
+      "name": "Kart",
+      "tagline": "Kategorini seç, kartından çıksın"
+    },
+    "boxes": {
+      "name": "Kutular",
+      "tagline": "Notları karıştır, birbirinize sürpriz yap"
+    }
+  },
+  "wheel": {
+    "eyebrow": "ÇARK OYUNU",
+    "title": "Çarkı Çevir",
+    "spinPrompt": "Çevirmek için ortadaki butona bas",
+    "lastLabel": "Son:"
+  },
+  "dice": {
+    "eyebrow": "ZAR OYUNU",
+    "title": "Zarı At",
+    "rollLabel": "ZAR AT",
+    "newRoll": "YENİ ZAR",
+    "poster": "KUTUDAN ÇIKTI"
+  },
+  "cards": {
+    "eyebrow": "KART OYUNU",
+    "title": "Kart Çek",
+    "drawCard": "Kart Çek",
+    "newCard": "Yeni Kart",
+    "hint": "Aşağıdaki destede dokun → kart çık",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} kategori · {{prompts}} prompt"
+  },
+  "boxes": {
+    "lobbyEyebrow": "KUTULAR",
+    "lobbyTitle": "Oda Kur ya da Katıl",
+    "lobbySubtitle": "Notlarınız iki telefonda anlık senkron olur — QR yok, kod yeter",
+    "createNew": "Yeni Oda Kur",
+    "createNewSub": "6 haneli kod alırsın, partnerine söylersin",
+    "join": "Odaya Katıl",
+    "joinSub": "Partnerinden aldığın kodu gir",
+    "generatingCode": "Üretiliyor…",
+    "generateCode": "Kod Üret",
+    "back": "Geri",
+    "codeReadyTitle": "Kodun Hazır 🎉",
+    "codeReadyText": "Bu kodu partnerine söyle. O \"Odaya Katıl\" seçip girecek.",
+    "goToBoxes": "Kutulara Geç",
+    "joinTitle": "Odaya Katıl",
+    "joinText": "Partnerinden aldığın 6 haneli kodu gir.",
+    "joining": "Katılıyor…",
+    "joinBtn": "Katıl",
+    "identityWait": "Kimlik hazır değil, birkaç saniye sonra tekrar dene",
+    "roomNotFound": "Böyle bir oda yok. Kodu kontrol et.",
+    "roomFull": "Oda dolu (2 kişi). Başka bir oda dene.",
+    "listEyebrow": "ORTAK KUTULAR",
+    "listRoomLabel": "ODA",
+    "listBoth": "2/2 kişi",
+    "listWaiting": "1/2 · partneri bekliyor",
+    "listLiveSync": "Notları anlık paylaşıyorsunuz",
+    "listGiveCode": "Kod'u partnerine ver ki bağlansın",
+    "leaveRoom": "Odadan çık",
+    "leaveConfirmTitle": "Odadan çık",
+    "leaveConfirmText": "Bu telefonda kaydedilmiş oda bağlantısı silinir. Kutular Firestore'da kalır — kod ile tekrar girebilirsin.",
+    "cancel": "İptal",
+    "leave": "Çık",
+    "newBox": "Yeni Kutu",
+    "loading": "Yükleniyor…",
+    "error": "Hata:",
+    "noBoxes": "Henüz kutu yok",
+    "noBoxesHint": "Yeni bir kutu oluştur, notlarını ekle, partnerinle karıştır",
+    "boxCardMeta": "{{mine}} senin · {{partner}} partner",
+    "ready": "Hazır",
+    "notesCount": "{{count}} not",
+    "createBoxTitle": "Yeni Kutu",
+    "createBoxSub": "Kutunuza bir isim ve tema verin",
+    "namePlaceholder": "Örn. Sinema gecesi",
+    "create": "Oluştur",
+    "boxNotFound": "Kutu bulunamadı",
+    "yours": "Notlarınız",
+    "newNotePlaceholder": "Yeni not yaz…",
+    "add": "Ekle",
+    "emptyNote": "Henüz not eklemedin. Yukarıdan yazmaya başla.",
+    "partner": "Partnerin",
+    "partnerNotesCount": "{{count}} not",
+    "partnerNotJoined": "Odaya henüz katılmadı",
+    "partnerReady": "Partner hazır ✨",
+    "partnerNotConfirmed": "Henüz onaylamadı",
+    "partnerNoNotes": "Henüz not eklemedi",
+    "senYou": "Sen",
+    "notesDone": "Notlarım bitti",
+    "editNotes": "Notlarımı değiştir",
+    "editNotesWaiting": "Notlarımı değiştir · partner henüz onaylamadı",
+    "shuffle": "KARIŞTIR",
+    "revealEyebrow": "KUTUDAN ÇIKTI",
+    "close": "Kapat",
+    "shuffleAgain": "Tekrar karıştır",
+    "deleteBoxTitle": "Kutuyu sil",
+    "deleteBoxText": "\"{{name}}\" kutusunu ve tüm notlarını silmek istiyor musun? Bu iki telefonda da silinir."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Seviye: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Yakınlık",
+      "tagline": "Duygusal + fiziksel dokunuş",
+      "levels": {
+        "1": { "name": "Fısıltı", "hint": "Flört, göz teması, gizli notlar" },
+        "2": { "name": "Yakınlık", "hint": "Sarılma, öpücük, kucak" },
+        "3": { "name": "Sırlar", "hint": "Fantezi paylaşımı, sensory keşif" },
+        "4": { "name": "Alev", "hint": "Ateşli anlar, yavaş & derin" },
+        "5": { "name": "Bağ", "hint": "Derin fiziksel + ruhsal entegrasyon" }
+      }
+    },
+    "cesur": {
+      "label": "Keşif",
+      "tagline": "Sınırları keşfet",
+      "levels": {
+        "1": { "name": "Kıvılcım", "hint": "Kışkırtıcı meydan okumalar" },
+        "2": { "name": "Işıltı", "hint": "Gözbağı, yavaş soyunma, sensory" },
+        "3": { "name": "Cesaret", "hint": "Rehber/Öğrenci, light impact" },
+        "4": { "name": "Zirve", "hint": "Belirlenmiş rol, yapılandırılmış sahne" },
+        "5": { "name": "Efsane", "hint": "Advanced, ritüel/protokol, deep dynamic" }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Yetişkin İçeriği",
+    "body": "Bu uygulama **18 yaş ve üzeri** yetişkinlere yöneliktir. İçerik cinsel temalar, mahremiyet ve kink-yönelimli öneriler barındırır. Devam etmek için:",
+    "checkbox": "18 yaşından büyüğüm ve karşılıklı rızayla **partnerimle** kullanacağım.",
+    "accept": "Kabul Et ve Devam",
+    "saving": "Kaydediliyor…",
+    "footer": "Bu onay yalnızca cihazınızda saklanır. Herhangi bir hesap veya konum bilgisi gönderilmez."
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": "Dil",
+    "english": "English",
+    "turkish": "Türkçe",
+    "close": "Kapat"
+  }
+}

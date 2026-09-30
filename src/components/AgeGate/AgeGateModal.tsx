@@ -13,6 +13,7 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
+import { useTranslation } from 'react-i18next';
 import { useAgeGate } from '@/hooks/useAgeGate';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
@@ -21,6 +22,7 @@ import { withAlpha } from '@/utils/color';
 const { width } = Dimensions.get('window');
 
 export function AgeGateModal() {
+  const { t } = useTranslation();
   const { accepted, ready, accept } = useAgeGate();
   const [checked, setChecked] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -58,12 +60,8 @@ export function AgeGateModal() {
       <View style={styles.backdrop}>
         <View style={styles.card}>
           <Text style={styles.emoji}>🔞</Text>
-          <Text style={styles.title}>Yetişkin İçeriği</Text>
-          <Text style={styles.body}>
-            Bu uygulama <Text style={styles.bold}>18 yaş ve üzeri</Text>{' '}
-            yetişkinlere yöneliktir. İçerik cinsel temalar, mahremiyet ve
-            kink-yönelimli öneriler barındırır. Devam etmek için:
-          </Text>
+          <Text style={styles.title}>{t('ageGate.title')}</Text>
+          <Text style={styles.body}>{t('ageGate.body').replace(/\*\*/g, '')}</Text>
 
           <Pressable
             onPress={() => {
@@ -90,8 +88,7 @@ export function AgeGateModal() {
               </Animated.Text>
             </View>
             <Text style={styles.checkLabel}>
-              18 yaşından büyüğüm ve karşılıklı rızayla{' '}
-              <Text style={styles.bold}>partnerimle</Text> kullanacağım.
+              {t('ageGate.checkbox').replace(/\*\*/g, '')}
             </Text>
           </Pressable>
 
@@ -107,14 +104,11 @@ export function AgeGateModal() {
             ]}
           >
             <Text style={styles.primaryBtnText}>
-              {submitting ? 'Kaydediliyor…' : 'Kabul Et ve Devam'}
+              {submitting ? t('ageGate.saving') : t('ageGate.accept')}
             </Text>
           </Pressable>
 
-          <Text style={styles.footer}>
-            Bu onay yalnızca cihazınızda saklanır. Herhangi bir hesap veya
-            konum bilgisi gönderilmez.
-          </Text>
+          <Text style={styles.footer}>{t('ageGate.footer')}</Text>
         </View>
       </View>
     </Modal>

@@ -18,6 +18,7 @@ import { BackButton } from '@/components/ui/BackButton';
 import { Dice } from '@/components/Dice/Dice';
 import { DiceShadow } from '@/components/Dice/DiceShadow';
 import { TypewriterText } from '@/components/ResultCard/TypewriterText';
+import { useTranslation } from 'react-i18next';
 import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { useContent } from '@/hooks/useContent';
 import { useDualDiceRoll } from '@/hooks/useDualDiceRoll';
@@ -36,6 +37,7 @@ const WRAPPER_SIZE = DICE_SIZE * 1.6;
 const SHADOW_HEIGHT = 44;
 
 export function DiceScreen({ navigation }: Props) {
+  const { t } = useTranslation();
   const { diceFaces, placeCategories } = useContent();
   const play = usePlayPrefs();
   const filteredDiceFaces = React.useMemo(
@@ -109,8 +111,8 @@ export function DiceScreen({ navigation }: Props) {
         </View>
 
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>ZAR OYUNU</Text>
-          <Text style={styles.title}>Zarı At</Text>
+          <Text style={styles.eyebrow}>{t('dice.eyebrow')}</Text>
+          <Text style={styles.title}>{t('dice.title')}</Text>
         </View>
 
         <TrackLevelBar
@@ -213,7 +215,7 @@ export function DiceScreen({ navigation }: Props) {
             onPress={roll}
             disabled={isRolling}
             color={accent}
-            label={action ? 'YENİ ZAR' : 'ZAR AT'}
+            label={action ? t('dice.newRoll') : t('dice.rollLabel')}
           />
         </View>
       </SafeAreaView>

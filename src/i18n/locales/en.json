@@ -1,0 +1,159 @@
+{
+  "app": {
+    "loading": "Loading…"
+  },
+  "home": {
+    "eyebrow": "FOR COUPLES",
+    "title": "Love Games",
+    "subtitle": "Mini games you can play together",
+    "footer": "More games on the way ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Wheel",
+      "tagline": "Spin and find your category"
+    },
+    "dice": {
+      "name": "Dice",
+      "tagline": "Roll — let the surprise find you"
+    },
+    "cards": {
+      "name": "Cards",
+      "tagline": "Pick your categories, draw a card"
+    },
+    "boxes": {
+      "name": "Boxes",
+      "tagline": "Shuffle notes, surprise each other"
+    }
+  },
+  "wheel": {
+    "eyebrow": "WHEEL",
+    "title": "Spin the Wheel",
+    "spinPrompt": "Tap the button in the middle to spin",
+    "lastLabel": "Last:"
+  },
+  "dice": {
+    "eyebrow": "DICE",
+    "title": "Roll the Dice",
+    "rollLabel": "ROLL",
+    "newRoll": "NEW ROLL",
+    "poster": "OUT OF THE BOX"
+  },
+  "cards": {
+    "eyebrow": "CARDS",
+    "title": "Draw a Card",
+    "drawCard": "Draw a Card",
+    "newCard": "New Card",
+    "hint": "Tap the deck below → draw a card",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} categories · {{prompts}} prompts"
+  },
+  "boxes": {
+    "lobbyEyebrow": "BOXES",
+    "lobbyTitle": "Create or Join a Room",
+    "lobbySubtitle": "Notes sync live between two phones — no QR needed",
+    "createNew": "Create New Room",
+    "createNewSub": "Get a 6-digit code, share with your partner",
+    "join": "Join Room",
+    "joinSub": "Enter the code your partner gave you",
+    "generatingCode": "Generating…",
+    "generateCode": "Generate Code",
+    "back": "Back",
+    "codeReadyTitle": "Your Code Is Ready 🎉",
+    "codeReadyText": "Share this code with your partner. They'll pick \"Join Room\" and enter it.",
+    "goToBoxes": "Go to Boxes",
+    "joinTitle": "Join Room",
+    "joinText": "Enter the 6-digit code from your partner.",
+    "joining": "Joining…",
+    "joinBtn": "Join",
+    "identityWait": "Identity not ready, try again in a few seconds",
+    "roomNotFound": "No such room. Check the code.",
+    "roomFull": "Room is full (2 people). Try another room.",
+    "listEyebrow": "SHARED BOXES",
+    "listRoomLabel": "ROOM",
+    "listBoth": "2/2 people",
+    "listWaiting": "1/2 · waiting for partner",
+    "listLiveSync": "Notes are syncing live",
+    "listGiveCode": "Give the code to your partner to connect",
+    "leaveRoom": "Leave room",
+    "leaveConfirmTitle": "Leave room",
+    "leaveConfirmText": "The room link on this phone will be removed. Boxes stay on Firestore — you can rejoin with the code.",
+    "cancel": "Cancel",
+    "leave": "Leave",
+    "newBox": "New Box",
+    "loading": "Loading…",
+    "error": "Error:",
+    "noBoxes": "No boxes yet",
+    "noBoxesHint": "Create a new box, add notes, shuffle with your partner",
+    "boxCardMeta": "{{mine}} yours · {{partner}} partner",
+    "ready": "Ready",
+    "notesCount": "{{count}} notes",
+    "createBoxTitle": "New Box",
+    "createBoxSub": "Give your box a name and theme",
+    "namePlaceholder": "e.g. Movie night",
+    "create": "Create",
+    "boxNotFound": "Box not found",
+    "yours": "Your notes",
+    "newNotePlaceholder": "Write a new note…",
+    "add": "Add",
+    "emptyNote": "No notes yet. Start typing above.",
+    "partner": "Your partner",
+    "partnerNotesCount": "{{count}} notes",
+    "partnerNotJoined": "Hasn't joined the room yet",
+    "partnerReady": "Partner is ready ✨",
+    "partnerNotConfirmed": "Hasn't confirmed yet",
+    "partnerNoNotes": "Hasn't added notes yet",
+    "senYou": "You",
+    "notesDone": "My notes are done",
+    "editNotes": "Change my notes",
+    "editNotesWaiting": "Change my notes · partner hasn't confirmed",
+    "shuffle": "SHUFFLE",
+    "revealEyebrow": "OUT OF THE BOX",
+    "close": "Close",
+    "shuffleAgain": "Shuffle again",
+    "deleteBoxTitle": "Delete box",
+    "deleteBoxText": "Delete \"{{name}}\" and all its notes? This deletes on both phones."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Level: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Intimacy",
+      "tagline": "Emotional + physical touch",
+      "levels": {
+        "1": { "name": "Whisper", "hint": "Flirt, eye contact, hidden notes" },
+        "2": { "name": "Closeness", "hint": "Hugs, kisses, embraces" },
+        "3": { "name": "Secrets", "hint": "Fantasy sharing, sensory exploration" },
+        "4": { "name": "Flame", "hint": "Fiery moments, slow & deep" },
+        "5": { "name": "Bond", "hint": "Deep physical + spiritual integration" }
+      }
+    },
+    "cesur": {
+      "label": "Exploration",
+      "tagline": "Push boundaries",
+      "levels": {
+        "1": { "name": "Spark", "hint": "Provocative challenges" },
+        "2": { "name": "Glow", "hint": "Blindfold, slow undress, sensory" },
+        "3": { "name": "Courage", "hint": "Guide/Follower, light impact" },
+        "4": { "name": "Summit", "hint": "Defined roles, structured scenes" },
+        "5": { "name": "Legend", "hint": "Advanced, ritual/protocol, deep dynamic" }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Adult Content",
+    "body": "This app is intended for **adults aged 18 and over**. Content includes sexual themes, intimacy, and kink-oriented suggestions. To continue:",
+    "checkbox": "I am 18+ and will use this with **my partner** in mutual consent.",
+    "accept": "Accept and Continue",
+    "saving": "Saving…",
+    "footer": "This consent is stored only on your device. No account or location info is sent."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "english": "English",
+    "turkish": "Türkçe",
+    "close": "Close"
+  }
+}

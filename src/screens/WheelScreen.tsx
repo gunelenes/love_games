@@ -11,6 +11,7 @@ import { CategoryPanel } from '@/components/Wheel/CategoryPanel';
 import { Wheel } from '@/components/Wheel/Wheel';
 import { WheelPointer } from '@/components/Wheel/WheelPointer';
 import { SpinButton } from '@/components/Wheel/SpinButton';
+import { useTranslation } from 'react-i18next';
 import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { useCategoryPrefs } from '@/hooks/useCategoryPrefs';
 import { useContent } from '@/hooks/useContent';
@@ -27,6 +28,7 @@ const { width, height } = Dimensions.get('window');
 const WHEEL_SIZE = Math.min(width - 48, 360);
 
 export function WheelScreen({ navigation }: Props) {
+  const { t } = useTranslation();
   const { categories } = useContent();
   const play = usePlayPrefs();
   const filteredCategories = React.useMemo(
@@ -93,8 +95,8 @@ export function WheelScreen({ navigation }: Props) {
         </View>
 
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>ÇARK OYUNU</Text>
-          <Text style={styles.title}>Çarkı Çevir</Text>
+          <Text style={styles.eyebrow}>{t('wheel.eyebrow')}</Text>
+          <Text style={styles.title}>{t('wheel.title')}</Text>
         </View>
 
         <TrackLevelBar
@@ -131,13 +133,13 @@ export function WheelScreen({ navigation }: Props) {
         <View style={styles.footer}>
           {selected ? (
             <Text style={styles.footerText}>
-              Son: <Text style={{ color: selected.color, fontWeight: '700' }}>
+              {t('wheel.lastLabel')} <Text style={{ color: selected.color, fontWeight: '700' }}>
                 {selected.name}
               </Text>
             </Text>
           ) : (
             <Text style={styles.footerText}>
-              Çevirmek için ortadaki butona bas
+              {t('wheel.spinPrompt')}
             </Text>
           )}
         </View>
