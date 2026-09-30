@@ -1,15 +1,18 @@
 /**
- * İçerik seed script — scripts/content/ altındaki JSON'ları Firestore'a merge eder.
+ * İçerik seed script — scripts/content/{collection}/ altındaki JSON'ları
+ * Firestore'un ilgili collection'ına merge eder.
+ *
+ * Klasör yapısı:
+ *   scripts/content/
+ *     categories/*.json       → categories collection
+ *     diceFaces/*.json        → diceFaces collection
+ *     placeCategories/*.json  → placeCategories collection
  *
  * Kullanım:
  *   node scripts/seed-content.js
  *
- * Her JSON dosyası bir kategori dizisi barındırır (id, name, color, icon,
- * track, level, order, prompts). merge:true ile çalışır — mevcut alanları
- * korur, yeni prompt listesi/name/color/vs ile üzerine yazar.
- *
- * Dosya adı sadece organizasyon içindir (örn. cesur-l1.json, romantik-l3.json).
- * İçindeki her kategori kendi id'siyle collection'da tekil bir doc olur.
+ * Her JSON dosyası bir item dizisi barındırır (id + collection-uygun alanlar).
+ * merge:true ile çalışır — mevcut alanları korur, yeni alanlar üzerine yazar.
  */
 
 const { initializeApp, cert } = require('firebase-admin/app');
@@ -33,32 +36,32 @@ try {
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
 
-function isCategoryLike(x) {
-  return (
-    x &&
-    typeof x === 'object' &&
-    typeof x.id === 'string' &&
-    typeof x.name === 'string' &&
-    Array.isArray(x.prompts)
-  );
+function isItemLike(x) {
+  return x && typeof x === 'object' && typeof x.id === 'string';
 }
 
-async function seedFile(filePath) {
+async function seedFile(collection, filePath) {
   const raw = fs.readFileSync(filePath, 'utf-8');
   const items = JSON.parse(raw);
   if (!Array.isArray(items)) {
-    console.warn(`Skip (not array): ${path.basename(filePath)}`);
+    console.warn(`  Skip (not array): ${path.basename(filePath)}`);
     return 0;
   }
   let count = 0;
   for (const item of items) {
-    if (!isCategoryLike(item)) {
-      console.warn(`Skip (invalid shape): ${path.basename(filePath)}#${item?.id}`);
+    if (!isItemLike(item)) {
+      console.warn(`  Skip (no id): ${path.basename(filePath)}`);
       continue;
     }
     const { id, ...rest } = item;
-    await db.collection('categories').doc(id).set(rest, { merge: true });
-    console.log(`  ✓ categories/${id} (${rest.track || '-'} L${rest.level || '?'}, ${rest.prompts.length} prompts)`);
+    await db.collection(collection).doc(id).set(rest, { merge: true });
+    const summary =
+      collection === 'placeCategories'
+        ? `${rest.places?.length ?? 0} places`
+        : `${rest.prompts?.length ?? 0} prompts`;
+    console.log(
+      `  ✓ ${collection}/${id} (${rest.track || '-'} L${rest.level || '?'}, ${summary})`
+    );
     count += 1;
   }
   return count;
@@ -77,23 +80,33 @@ async function main() {
     console.error(`Klasör yok: ${CONTENT_DIR}`);
     process.exit(1);
   }
-  const files = fs
+  const collections = fs
     .readdirSync(CONTENT_DIR)
-    .filter((f) => f.endsWith('.json'))
-    .sort();
-  if (files.length === 0) {
-    console.log('scripts/content/ boş.');
+    .filter((name) => fs.statSync(path.join(CONTENT_DIR, name)).isDirectory());
+
+  if (collections.length === 0) {
+    console.log('scripts/content/ altında collection klasörü yok.');
     process.exit(0);
   }
-  console.log(`${files.length} dosya bulundu.\n`);
+
   let total = 0;
-  for (const f of files) {
-    console.log(`→ ${f}`);
-    total += await seedFile(path.join(CONTENT_DIR, f));
+  for (const col of collections) {
+    const colDir = path.join(CONTENT_DIR, col);
+    const files = fs
+      .readdirSync(colDir)
+      .filter((f) => f.endsWith('.json'))
+      .sort();
+    if (files.length === 0) continue;
+    console.log(`\n📁 ${col}/`);
+    for (const f of files) {
+      console.log(`→ ${f}`);
+      total += await seedFile(col, path.join(colDir, f));
+    }
   }
+
   console.log(`\n→ meta`);
   await bumpMeta();
-  console.log(`\n✅ Toplam ${total} kategori yazıldı.`);
+  console.log(`\n✅ Toplam ${total} item yazıldı.`);
   process.exit(0);
 }
 

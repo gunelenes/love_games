@@ -1,0 +1,92 @@
+[
+  {
+    "id": "yatak-odasi",
+    "name": "Yatak Odası",
+    "color": "#B91C1C",
+    "icon": "🛏️",
+    "track": "cesur",
+    "level": 1,
+    "order": 60,
+    "places": [
+      { "name": "Yastıklar Kalesi", "description": "Battaniyeler ve yastıklarla bir sığınak kur." },
+      { "name": "Mum Işığında Yatak", "description": "Sadece 2 mum + yatak. Tavan izleme." },
+      { "name": "Sabah Yatağı", "description": "Uyanış saatinde, ışık henüz yumuşakken." },
+      { "name": "Karanlık Yatak", "description": "Işıklar tamamen kapalı, sadece hisler." }
+    ]
+  },
+  {
+    "id": "dus-buhar",
+    "name": "Duş & Buhar",
+    "color": "#0F766E",
+    "icon": "🚿",
+    "track": "cesur",
+    "level": 1,
+    "order": 61,
+    "places": [
+      { "name": "Sıcak Duş", "description": "Buhar dolu, ıslak, kapalı." },
+      { "name": "Küvet Zamanı", "description": "Doldurulmuş küvet, kimse acele etmiyor." },
+      { "name": "Duş Sonrası", "description": "Islak saçlar, havlu, aynanın önü." },
+      { "name": "Bahçe Duşu", "description": "Yaz gecesi açık havada duş." }
+    ]
+  },
+  {
+    "id": "balkon-gecesi",
+    "name": "Balkon Gecesi",
+    "color": "#4338CA",
+    "icon": "🌃",
+    "track": "cesur",
+    "level": 1,
+    "order": 62,
+    "places": [
+      { "name": "Yıldızlar Altında", "description": "Balkon, karanlık, sadece siz." },
+      { "name": "Yağmurdan Sonra", "description": "Islak balkon, temiz hava." },
+      { "name": "Şehir Işıkları", "description": "Uzakta ışıklar, yakında siz." },
+      { "name": "Sabaha Yakın", "description": "Gün ağarmadan hemen önce." }
+    ]
+  },
+  {
+    "id": "mum-isigi",
+    "name": "Mum Işığı",
+    "color": "#F59E0B",
+    "icon": "🕯️",
+    "track": "cesur",
+    "level": 1,
+    "order": 63,
+    "places": [
+      { "name": "Salonun Ortası", "description": "Mumlar dizili, halı üstü." },
+      { "name": "Ateş Karşısında", "description": "Şömine veya büyük mum." },
+      { "name": "Ayna Karşısında", "description": "Mum ışığında yansımalar." },
+      { "name": "Loş Müzik", "description": "Sessiz, sadece mum + fısıltı." }
+    ]
+  },
+  {
+    "id": "otel-odasi",
+    "name": "Otel Odası",
+    "color": "#7C2D12",
+    "icon": "🏨",
+    "track": "cesur",
+    "level": 1,
+    "order": 64,
+    "places": [
+      { "name": "Şehir Merkezi Otel", "description": "Yabancı olmanın verdiği anonimlik." },
+      { "name": "Manzaralı Suite", "description": "Cam kenarı, yatak, manzara." },
+      { "name": "Küçük Boutique", "description": "Karakterli, samimi, 1 gecelik." },
+      { "name": "Deniz Kenarı Otel", "description": "Dalga sesi + kapalı perdeler." }
+    ]
+  },
+  {
+    "id": "gizli-mekan",
+    "name": "Gizli Mekan",
+    "color": "#831843",
+    "icon": "🗝️",
+    "track": "cesur",
+    "level": 1,
+    "order": 65,
+    "places": [
+      { "name": "Ofis Sonrası", "description": "Boş ofis, gece, yasak hissi." },
+      { "name": "Araç İçi", "description": "Park edilmiş, kapalı camlar." },
+      { "name": "Terk Edilmiş Oda", "description": "Kimsenin girmediği, siz keşfediyorsunuz." },
+      { "name": "Sürpriz Adres", "description": "Bir taraf mekanı seçer, diğeri şaşırır." }
+    ]
+  }
+]

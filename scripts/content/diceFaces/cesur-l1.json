@@ -1,0 +1,98 @@
+[
+  {
+    "id": "atesli-opucuk",
+    "name": "Ateşli Öpücük",
+    "color": "#DC2626",
+    "icon": "💋",
+    "track": "cesur",
+    "level": 1,
+    "order": 60,
+    "prompts": [
+      "Partnerine dilinle yavaş bir öpücük — 20 saniye, kesintisiz.",
+      "Boynundan dudağına yavaş bir öpücük sırası — 5 tane, aralarında 2 saniye.",
+      "Öpücüğün ortasında partnerin dudağını hafifçe ısır — oyunbaz, kısa.",
+      "Karşılıklı: aynı anda öpüşme, kim önce nefes almak zorunda kalır?",
+      "Partnerine bir öpücük ver, sonra 3 saniye durup gözlerine bak, sonra bir öpücük daha."
+    ]
+  },
+  {
+    "id": "yavas-dokunus",
+    "name": "Yavaş Dokunuş",
+    "color": "#0F766E",
+    "icon": "🪶",
+    "track": "cesur",
+    "level": 1,
+    "order": 61,
+    "prompts": [
+      "Partnerinin sırtına parmak ucuyla 30 saniyelik bir yol çiz — yavaş, hissedilir.",
+      "Elinin sıcaklığını partnerinin göğsünde 20 saniye tut — bastırmadan, sadece varlık.",
+      "Partnerinin boynuna 5 farklı tempoda dokunuş — hangisinde titriyor?",
+      "Ellerini partnerinin kalçasına götür, 3 saniye tut, sonra yavaşça çek.",
+      "Partnerine bir avuç masajı yap — parmaklarını iç içe geçirerek."
+    ]
+  },
+  {
+    "id": "kisikirtici-fisilti",
+    "name": "Kışkırtıcı Fısıltı",
+    "color": "#DB2777",
+    "icon": "🗣️",
+    "track": "cesur",
+    "level": 1,
+    "order": 62,
+    "prompts": [
+      "Partnerinin kulağına \"seni istiyorum\" fısılda — 3 farklı tonda tekrar.",
+      "Kulağına en son düşündüğün cesur fikri fısılda.",
+      "Partnerinin kulağına sadece nefes ver — 10 saniye, kelime yok.",
+      "\"Sonra…\" diye başlayan bir cümle fısılda, üçe böl.",
+      "Kulağına \"bugün seninle ilgili düşüncem\" cümlesini bitir."
+    ]
+  },
+  {
+    "id": "gozbagi",
+    "name": "Gözbağı",
+    "color": "#4338CA",
+    "icon": "🕶️",
+    "track": "cesur",
+    "level": 1,
+    "order": 63,
+    "prompts": [
+      "Partnerinin gözlerini bağla. 1 dakika sadece dokunuşla iletişim.",
+      "Gözbağlı partnere 3 farklı doku tanıt — tahmin etsin.",
+      "Kendi gözlerini bağla, partnerin seni yönlendirsin — 2 dakika.",
+      "Gözbağlı partnere yavaşça yaklaş — dudaklar değene kadar.",
+      "Partnerinin gözlerini kapat, kulağına 20 saniye fantezi anlat."
+    ]
+  },
+  {
+    "id": "rol-ver",
+    "name": "Rol Ver",
+    "color": "#0C4A6E",
+    "icon": "🎭",
+    "track": "cesur",
+    "level": 1,
+    "order": 64,
+    "prompts": [
+      "Bu 5 dakika \"Rehber\" sensin. 3 komut ver — nefes al, gözlerini kapat, bekle.",
+      "Roller: birer \"Bahçıvan\" ve \"Kedi\". 3 dakika sadece bakış + dokunuş.",
+      "Partnerine yeni bir isim tak. Sadece bu isimle çağır — 5 dakika.",
+      "Karşılıklı yabancı gibi tanışın — yeni bir hikaye ile 10 dakika.",
+      "Partnerine sen ne olursan o olur — bir role gir, 2 dakika sürdür."
+    ]
+  },
+  {
+    "id": "sinir-cesitle",
+    "name": "Sınırı Çeşitle",
+    "color": "#B91C1C",
+    "icon": "🎯",
+    "track": "cesur",
+    "level": 1,
+    "order": 65,
+    "prompts": [
+      "Partnerine \"3 şey söyleyeceğim, 1'ini seç\" diye başla. Cesur seçenekler sun.",
+      "\"Bu gece bir kural: X yapamayız.\" — sonra o kuralı çiğnemek için oyun kur.",
+      "Partnerine bir güvenlik kelimesi belirletmek: \"kırmızı\" = dur. Deneme yap.",
+      "Karşılıklı sınır listesi: 5 dakika içinde birbirinize \"asla olmaz\" ve \"denerdik\" listesi paylaş.",
+      "Partnerine \"neye evet dersen\" diye başla, kısa bir listeye evet almak için sor."
+    ]
+  }
+]
