@@ -24,7 +24,7 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 const { width, height } = Dimensions.get('window');
 
 type GameCardData = {
-  key: 'Wheel' | 'Dice' | 'BoxList';
+  key: 'Wheel' | 'Dice' | 'BoxList' | 'Cards';
   name: string;
   tagline: string;
   icon: string;
@@ -45,6 +45,13 @@ const GAMES: GameCardData[] = [
     tagline: 'At, sürpriz seni bulsun',
     icon: '🎲',
     color: '#7C3AED',
+  },
+  {
+    key: 'Cards',
+    name: 'Kart',
+    tagline: 'Kategorini seç, kartından çıksın',
+    icon: '🃏',
+    color: '#F59E0B',
   },
   {
     key: 'BoxList',
