@@ -3,9 +3,36 @@
 
 export type Track = 'romantik' | 'cesur';
 export type Level = 1 | 2 | 3 | 4 | 5;
+export type KinkFlavor =
+  | 'rope'
+  | 'command'
+  | 'petplay'
+  | 'primal'
+  | 'sensory'
+  | 'roleplay'
+  | 'impact';
 
 export const TRACKS: Track[] = ['romantik', 'cesur'];
 export const LEVELS: Level[] = [1, 2, 3, 4, 5];
+export const FLAVORS: KinkFlavor[] = [
+  'rope',
+  'command',
+  'petplay',
+  'primal',
+  'sensory',
+  'roleplay',
+  'impact',
+];
+
+export const FLAVOR_LABEL: Record<KinkFlavor, string> = {
+  rope: '🪢 Halat',
+  command: '🌙 Komut',
+  petplay: '🐈 Pet',
+  primal: '🐺 Primal',
+  sensory: '🕶️ Sensory',
+  roleplay: '🎭 Rol',
+  impact: '✋ Impact',
+};
 
 export const TRACK_LABEL: Record<Track, string> = {
   romantik: 'Romantik (Yakınlık)',
@@ -38,6 +65,7 @@ export type Category = {
   order?: number;
   track: Track;
   level: Level;
+  flavors?: KinkFlavor[];
 };
 
 export type Place = {

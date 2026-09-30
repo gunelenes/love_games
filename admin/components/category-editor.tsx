@@ -7,11 +7,14 @@ import {
   saveDoc,
 } from '@/lib/content-service';
 import {
+  FLAVORS,
+  FLAVOR_LABEL,
   LEVELS,
   LEVEL_LABEL,
   TRACKS,
   TRACK_LABEL,
   type Category,
+  type KinkFlavor,
   type Level,
   type Track,
 } from '@/lib/types';
@@ -314,6 +317,38 @@ function CategoryCard({
               </select>
             </div>
           </div>
+
+          {item.track === 'cesur' && item.level >= 3 ? (
+            <div>
+              <label className="label">Flavors (opsiyonel)</label>
+              <div className="flex flex-wrap gap-2">
+                {FLAVORS.map((f) => {
+                  const active = item.flavors?.includes(f) ?? false;
+                  return (
+                    <button
+                      key={f}
+                      type="button"
+                      onClick={() => {
+                        const cur = item.flavors ?? [];
+                        const next: KinkFlavor[] = active
+                          ? cur.filter((x) => x !== f)
+                          : [...cur, f];
+                        onChange({ flavors: next });
+                      }}
+                      className={
+                        'px-3 py-1.5 rounded-lg border text-xs font-semibold transition ' +
+                        (active
+                          ? 'bg-accent/25 border-accent/70 text-white'
+                          : 'bg-white/5 border-white/10 text-muted hover:bg-white/10')
+                      }
+                    >
+                      {FLAVOR_LABEL[f]}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ) : null}
 
           <div>
             <label className="label">Prompt&apos;lar</label>

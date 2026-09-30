@@ -3,8 +3,10 @@ import {
   getDoc,
   runTransaction,
   serverTimestamp,
+  updateDoc,
 } from 'firebase/firestore';
 import { firebaseFirestore } from './firebase';
+import type { Level, Track } from '@/types';
 
 // Unambiguous alphabet (excludes 0/O/1/I/L)
 const CODE_ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
@@ -24,6 +26,10 @@ export type Room = {
   guestUid: string | null;
   createdAt: number;
   active: boolean;
+  /** Ortak track — iki tarafın rızasıyla belirlenir, real-time sync. */
+  track?: Track;
+  /** Ortak level. */
+  level?: Level;
 };
 
 export type CreateRoomResult =
@@ -57,6 +63,8 @@ export async function createRoom(hostUid: string): Promise<CreateRoomResult> {
           guestUid: null,
           createdAt: serverTimestamp(),
           active: true,
+          track: 'romantik',
+          level: 1,
         });
         return true;
       });
@@ -111,4 +119,14 @@ export async function fetchRoom(code: string): Promise<Room | null> {
   const snap = await getDoc(doc(firebaseFirestore, 'rooms', code));
   if (!snap.exists()) return null;
   return snap.data() as Room;
+}
+
+/** İki tarafın gördüğü ortak track/level'ı Firestore'da günceller (real-time sync). */
+export async function setRoomTrackLevel(
+  code: string,
+  track: Track,
+  level: Level
+): Promise<void> {
+  if (!firebaseFirestore) return;
+  await updateDoc(doc(firebaseFirestore, 'rooms', code), { track, level });
 }
