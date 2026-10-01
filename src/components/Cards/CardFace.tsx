@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, type ViewStyle } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import type { Category } from '@/types';
 import { darken, lighten, withAlpha } from '@/utils/color';
 import { colors } from '@/theme/colors';
@@ -25,6 +26,7 @@ export function CardFace({
   prompt,
   style,
 }: Props) {
+  const { t } = useTranslation();
   if (side === 'back') {
     return (
       <View style={[styles.container, { width, height }, styles.back, style]}>
@@ -82,10 +84,12 @@ export function CardFace({
           ]}
         >
           <Text style={styles.badgeIcon}>{cat?.icon ?? '✨'}</Text>
-          <Text style={styles.badgeName}>{cat?.name ?? 'Kategori'}</Text>
+          <Text style={styles.badgeName}>
+            {cat?.name ?? t('cards.categoryFallback')}
+          </Text>
         </View>
         <Text style={styles.prompt}>{prompt ?? ''}</Text>
-        <Text style={styles.footerText}>Bir kart daha çek</Text>
+        <Text style={styles.footerText}>{t('cards.footerPrompt')}</Text>
       </View>
     </View>
   );

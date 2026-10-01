@@ -46,7 +46,9 @@
     "newCard": "New Card",
     "hint": "Tap the deck below → draw a card",
     "cardBack": "love_games",
-    "selectionSummary": "{{count}} categories · {{prompts}} prompts"
+    "selectionSummary": "{{count}} categories · {{prompts}} prompts",
+    "categoryFallback": "Category",
+    "footerPrompt": "Draw another"
   },
   "boxes": {
     "lobbyEyebrow": "BOXES",

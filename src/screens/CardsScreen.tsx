@@ -35,6 +35,9 @@ const { width, height } = Dimensions.get('window');
 const CARD_WIDTH = Math.min(width - 80, 260);
 const CARD_HEIGHT = Math.min(CARD_WIDTH * 1.35, 352);
 const DECK_SCALE = 0.55;
+const DECK_PADDING = 12; // CardDeck'in offset+rotate payı için ekstra
+const SCALED_DECK_WIDTH = (CARD_WIDTH + DECK_PADDING) * DECK_SCALE;
+const SCALED_DECK_HEIGHT = (CARD_HEIGHT + DECK_PADDING) * DECK_SCALE;
 
 type DrawnCard = {
   key: number;
@@ -51,7 +54,8 @@ export function CardsScreen({ navigation }: Props) {
       categories.filter((c) => c.track === play.track && c.level <= play.level),
     [categories, play.track, play.level]
   );
-  const selection = useCardSelection(filteredCategories);
+  const scopeKey = `${play.track}:${play.level}`;
+  const selection = useCardSelection(filteredCategories, scopeKey);
   const [drawn, setDrawn] = useState<DrawnCard | null>(null);
   const [drawing, setDrawing] = useState(false);
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
@@ -135,7 +139,10 @@ export function CardsScreen({ navigation }: Props) {
             canDeselect={selection.canDeselect}
           />
           <Text style={styles.chipsSummary}>
-            {selection.selectedCount} kategori · {selection.totalPrompts} prompt
+            {t('cards.selectionSummary', {
+              count: selection.selectedCount,
+              prompts: selection.totalPrompts,
+            })}
           </Text>
         </View>
 
@@ -167,22 +174,29 @@ export function CardsScreen({ navigation }: Props) {
                   height={CARD_HEIGHT}
                 />
               </View>
-              <Text style={styles.hintText}>
-                Aşağıdaki destede dokun → kart çık
-              </Text>
+              <Text style={styles.hintText}>{t('cards.hint')}</Text>
             </View>
           )}
         </View>
 
         <View style={styles.footer}>
           <View style={styles.deckWrap}>
-            <View style={{ transform: [{ scale: DECK_SCALE }] }}>
-              <CardDeck
-                width={CARD_WIDTH}
-                height={CARD_HEIGHT}
-                onPress={handleDraw}
-                disabled={drawing || !hasSelection}
-              />
+            <View
+              style={{
+                width: SCALED_DECK_WIDTH,
+                height: SCALED_DECK_HEIGHT,
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <View style={{ transform: [{ scale: DECK_SCALE }] }}>
+                <CardDeck
+                  width={CARD_WIDTH}
+                  height={CARD_HEIGHT}
+                  onPress={handleDraw}
+                  disabled={drawing || !hasSelection}
+                />
+              </View>
             </View>
           </View>
 
@@ -294,7 +308,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   deckWrap: {
-    height: CARD_HEIGHT * DECK_SCALE + 8,
+    height: SCALED_DECK_HEIGHT + 8,
     alignItems: 'center',
     justifyContent: 'center',
   },

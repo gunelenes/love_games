@@ -1,11 +1,21 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { Category } from '@/types';
 
-const STORAGE_KEY = 'cards:selectedIds:v1';
+const STORAGE_PREFIX = 'cards:selectedIds:v2';
 const MIN_ACTIVE = 1;
 
-export function useCardSelection(categories: Category[]) {
+/**
+ * Kart ekranı için kategori seçimi.
+ * `scopeKey` (ör. "romantik:1") değişince seçim sıfırlanır ve o scope'un kendi
+ * AsyncStorage anahtarından yüklenir. Böylece track/level değişince eski ID'ler
+ * ortalıkta kalmaz ve "görünür ama çalışmaz" durumu oluşmaz.
+ */
+export function useCardSelection(categories: Category[], scopeKey: string) {
+  const storageKey = `${STORAGE_PREFIX}:${scopeKey}`;
+  const categoriesRef = useRef(categories);
+  categoriesRef.current = categories;
+
   const [selectedIds, setSelectedIds] = useState<Set<string>>(
     () => new Set(categories.map((c) => c.id))
   );
@@ -13,45 +23,69 @@ export function useCardSelection(categories: Category[]) {
 
   useEffect(() => {
     let cancelled = false;
-    AsyncStorage.getItem(STORAGE_KEY)
+    setIsLoaded(false);
+    AsyncStorage.getItem(storageKey)
       .then((raw) => {
         if (cancelled) return;
+        const cats = categoriesRef.current;
+        const known = new Set(cats.map((c) => c.id));
+        let next: Set<string> | null = null;
         if (raw) {
           try {
             const parsed: unknown = JSON.parse(raw);
             if (Array.isArray(parsed)) {
-              const known = new Set(categories.map((c) => c.id));
               const filtered = parsed.filter(
                 (id): id is string => typeof id === 'string' && known.has(id)
               );
-              if (filtered.length > 0) {
-                setSelectedIds(new Set(filtered));
-              }
+              if (filtered.length > 0) next = new Set(filtered);
             }
           } catch {
-            // keep default
+            // corrupt — fall through to defaults
           }
         }
+        setSelectedIds(next ?? known);
         setIsLoaded(true);
       })
       .catch(() => {
-        if (!cancelled) setIsLoaded(true);
+        if (cancelled) return;
+        const cats = categoriesRef.current;
+        setSelectedIds(new Set(cats.map((c) => c.id)));
+        setIsLoaded(true);
       });
     return () => {
       cancelled = true;
     };
-  }, [categories]);
+  }, [storageKey]);
 
-  const persist = useCallback((next: Set<string>) => {
-    AsyncStorage.setItem(STORAGE_KEY, JSON.stringify([...next])).catch(() => {});
-  }, []);
+  const persist = useCallback(
+    (next: Set<string>) => {
+      AsyncStorage.setItem(storageKey, JSON.stringify([...next])).catch(() => {});
+    },
+    [storageKey]
+  );
+
+  const selectedCategories = useMemo(
+    () => categories.filter((c) => selectedIds.has(c.id)),
+    [selectedIds, categories]
+  );
+
+  const totalPrompts = useMemo(
+    () => selectedCategories.reduce((sum, c) => sum + c.prompts.length, 0),
+    [selectedCategories]
+  );
+
+  const visibleSelectedCount = selectedCategories.length;
 
   const toggle = useCallback(
     (id: string) => {
       setSelectedIds((prev) => {
         const next = new Set(prev);
+        const cats = categoriesRef.current;
         if (next.has(id)) {
-          if (next.size <= MIN_ACTIVE) return prev;
+          const stillActiveAfterRemove = cats.filter(
+            (c) => c.id !== id && next.has(c.id)
+          ).length;
+          if (stillActiveAfterRemove < MIN_ACTIVE) return prev;
           next.delete(id);
         } else {
           next.add(id);
@@ -64,30 +98,23 @@ export function useCardSelection(categories: Category[]) {
   );
 
   const selectAll = useCallback(() => {
-    const next = new Set(categories.map((c) => c.id));
+    const next = new Set(categoriesRef.current.map((c) => c.id));
     setSelectedIds(next);
     persist(next);
-  }, [categories, persist]);
-
-  const selectedCategories = useMemo(
-    () => categories.filter((c) => selectedIds.has(c.id)),
-    [selectedIds, categories]
-  );
-
-  const totalPrompts = useMemo(
-    () => selectedCategories.reduce((sum, c) => sum + c.prompts.length, 0),
-    [selectedCategories]
-  );
+  }, [persist]);
 
   const canDeselect = useCallback(
-    (id: string) => selectedIds.has(id) && selectedIds.size > MIN_ACTIVE,
-    [selectedIds]
+    (id: string) => {
+      if (!selectedIds.has(id)) return false;
+      return visibleSelectedCount > MIN_ACTIVE;
+    },
+    [selectedIds, visibleSelectedCount]
   );
 
   return {
     selectedIds,
     selectedCategories,
-    selectedCount: selectedIds.size,
+    selectedCount: visibleSelectedCount,
     totalPrompts,
     isLoaded,
     toggle,

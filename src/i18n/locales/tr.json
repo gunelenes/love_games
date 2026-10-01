@@ -46,7 +46,9 @@
     "newCard": "Yeni Kart",
     "hint": "Aşağıdaki destede dokun → kart çık",
     "cardBack": "love_games",
-    "selectionSummary": "{{count}} kategori · {{prompts}} prompt"
+    "selectionSummary": "{{count}} kategori · {{prompts}} prompt",
+    "categoryFallback": "Kategori",
+    "footerPrompt": "Bir kart daha çek"
   },
   "boxes": {
     "lobbyEyebrow": "KUTULAR",
