@@ -27,8 +27,13 @@ service cloud.firestore {
     // -------- Rooms & Boxes (Kutular real-time) --------
 
     match /rooms/{roomCode} {
-      // Odayı sadece host veya guest okuyabilir
+      // Odayı sadece host veya guest okuyabilir.
+      // İstisna: doc hiç yoksa (resource == null) okunabilir — createRoom'un
+      // transaction içindeki tx.get() çakışma kontrolü ve joinRoom'un
+      // "kod geçerli mi" kontrolü bunu gerektiriyor. İçerik sızmıyor,
+      // sadece "bu kod kullanılıyor mu" bilgisi var.
       allow read: if request.auth != null && (
+        resource == null ||
         request.auth.uid == resource.data.hostUid ||
         request.auth.uid == resource.data.guestUid
       );
