@@ -31,7 +31,7 @@ type Mode = 'idle' | 'creating' | 'joining';
 
 export function RoomLobbyScreen({ navigation }: Props) {
   const { t } = useTranslation();
-  const { uid, ready: authReady } = useAuth();
+  const { uid, ready: authReady, error: authError, retry: retryAuth } = useAuth();
   const { setCode } = useRoom();
   const [mode, setMode] = useState<Mode>('idle');
   const [code, setCodeInput] = useState('');
@@ -44,14 +44,28 @@ export function RoomLobbyScreen({ navigation }: Props) {
     navigation.replace('BoxList');
   };
 
+  const ensureUid = async (): Promise<string | null> => {
+    if (uid) return uid;
+    const next = await retryAuth();
+    return next;
+  };
+
+  const identityErrorText = () => {
+    const base = t('boxes.identityWait');
+    return authError ? `${base} (${authError})` : base;
+  };
+
   const handleCreate = async () => {
-    if (!uid) {
-      setError(t('boxes.identityWait'));
-      return;
-    }
     setBusy(true);
     setError(null);
-    const res = await createRoom(uid);
+    const activeUid = await ensureUid();
+    if (!activeUid) {
+      setBusy(false);
+      setError(identityErrorText());
+      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      return;
+    }
+    const res = await createRoom(activeUid);
     setBusy(false);
     if (res.status === 'ok') {
       setCreatedCode(res.code);
@@ -68,13 +82,16 @@ export function RoomLobbyScreen({ navigation }: Props) {
   };
 
   const handleJoin = async () => {
-    if (!uid) {
-      setError(t('boxes.identityWait'));
-      return;
-    }
     setBusy(true);
     setError(null);
-    const res = await joinRoom(code, uid);
+    const activeUid = await ensureUid();
+    if (!activeUid) {
+      setBusy(false);
+      setError(identityErrorText());
+      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      return;
+    }
+    const res = await joinRoom(code, activeUid);
     setBusy(false);
     if (res.status === 'ok') {
       void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
