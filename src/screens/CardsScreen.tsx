@@ -33,8 +33,10 @@ import type { Category } from '@/types';
 type Props = NativeStackScreenProps<RootStackParamList, 'Cards'>;
 
 const { width, height } = Dimensions.get('window');
-const CARD_WIDTH = Math.min(width - 80, 260);
-const CARD_HEIGHT = Math.min(CARD_WIDTH * 1.35, 352);
+// Shrunk from 260/352 so hint + drawn card don't bleed into the level dots
+// above or the deck in the footer. Keeps 1.35 aspect, still prominent.
+const CARD_WIDTH = Math.min(width - 96, 228);
+const CARD_HEIGHT = Math.min(CARD_WIDTH * 1.35, 300);
 const DECK_SCALE = 0.55;
 const DECK_PADDING = 12; // CardDeck'in offset+rotate payı için ekstra
 const SCALED_DECK_WIDTH = (CARD_WIDTH + DECK_PADDING) * DECK_SCALE;
