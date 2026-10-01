@@ -14,9 +14,10 @@ import {
   type ConfettiBurstRef,
 } from '@/components/Confetti/ConfettiBurst';
 import { BackButton } from '@/components/ui/BackButton';
+import { SettingsButton } from '@/components/ui/SettingsButton';
 import { CardDeck } from '@/components/Cards/CardDeck';
 import { CardFace } from '@/components/Cards/CardFace';
-import { CategoryChips } from '@/components/Cards/CategoryChips';
+import { CardSettingsPanel } from '@/components/Cards/CardSettingsPanel';
 import { FlipCard } from '@/components/Cards/FlipCard';
 import { useTranslation } from 'react-i18next';
 import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
@@ -58,6 +59,7 @@ export function CardsScreen({ navigation }: Props) {
   const selection = useCardSelection(filteredCategories, scopeKey);
   const [drawn, setDrawn] = useState<DrawnCard | null>(null);
   const [drawing, setDrawing] = useState(false);
+  const [settingsVisible, setSettingsVisible] = useState(false);
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
   const drawCountRef = useRef(0);
 
@@ -101,6 +103,16 @@ export function CardsScreen({ navigation }: Props) {
     confettiRef.current?.burst();
   }, []);
 
+  const handleOpenSettings = useCallback(() => {
+    setSettingsVisible(true);
+  }, []);
+
+  const handleCloseSettings = useCallback(() => {
+    setSettingsVisible(false);
+    // Clear stale drawn card — user may have deselected its category.
+    setDrawn(null);
+  }, []);
+
   const revealStyle = useAnimatedStyle(() => ({
     opacity: revealScale.value,
     transform: [{ scale: 0.9 + revealScale.value * 0.1 }],
@@ -116,6 +128,10 @@ export function CardsScreen({ navigation }: Props) {
       <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
         <View style={styles.topBar}>
           <BackButton onPress={() => navigation.goBack()} />
+          <SettingsButton
+            onPress={handleOpenSettings}
+            disabled={drawing}
+          />
         </View>
 
         <View style={styles.header}>
@@ -130,21 +146,6 @@ export function CardsScreen({ navigation }: Props) {
           onLevelChange={play.setLevel}
           disabled={drawing}
         />
-
-        <View style={styles.chipsArea}>
-          <CategoryChips
-            categories={filteredCategories}
-            selectedIds={selection.selectedIds}
-            onToggle={selection.toggle}
-            canDeselect={selection.canDeselect}
-          />
-          <Text style={styles.chipsSummary}>
-            {t('cards.selectionSummary', {
-              count: selection.selectedCount,
-              prompts: selection.totalPrompts,
-            })}
-          </Text>
-        </View>
 
         <View style={styles.cardArea}>
           {drawn ? (
@@ -232,6 +233,13 @@ export function CardsScreen({ navigation }: Props) {
             : undefined
         }
       />
+
+      <CardSettingsPanel
+        visible={settingsVisible}
+        onClose={handleCloseSettings}
+        selection={selection}
+        categories={filteredCategories}
+      />
     </View>
   );
 }
@@ -245,6 +253,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingTop: 4,
   },
@@ -270,16 +281,6 @@ const styles = StyleSheet.create({
     color: colors.fgDim,
     fontSize: 13,
     textAlign: 'center',
-  },
-  chipsArea: {
-    paddingBottom: 8,
-  },
-  chipsSummary: {
-    color: colors.fgDim,
-    fontSize: 12,
-    textAlign: 'center',
-    marginTop: 6,
-    fontWeight: '600',
   },
   cardArea: {
     flex: 1,

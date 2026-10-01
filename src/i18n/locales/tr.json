@@ -48,7 +48,13 @@
     "cardBack": "love_games",
     "selectionSummary": "{{count}} kategori · {{prompts}} prompt",
     "categoryFallback": "Kategori",
-    "footerPrompt": "Bir kart daha çek"
+    "footerPrompt": "Bir kart daha çek",
+    "settings": {
+      "title": "Kart Ayarları",
+      "summary": "{{active}} / {{total}} aktif · en az {{min}} olmalı",
+      "promptsCount": "{{count}} soru",
+      "lockNote": "Kalan son {{min}} kategoriden biri — kapatılamaz"
+    }
   },
   "boxes": {
     "lobbyEyebrow": "KUTULAR",

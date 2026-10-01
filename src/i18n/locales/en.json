@@ -48,7 +48,13 @@
     "cardBack": "love_games",
     "selectionSummary": "{{count}} categories · {{prompts}} prompts",
     "categoryFallback": "Category",
-    "footerPrompt": "Draw another"
+    "footerPrompt": "Draw another",
+    "settings": {
+      "title": "Card Settings",
+      "summary": "{{active}} / {{total}} active · min {{min}} required",
+      "promptsCount": "{{count}} prompts",
+      "lockNote": "One of the last {{min}} — can't be turned off"
+    }
   },
   "boxes": {
     "lobbyEyebrow": "BOXES",

@@ -124,7 +124,7 @@ love_games/                       # mobil
       TrackLevelBar/              # track chip + level dot bar (Wheel/Dice/Cards/BoxList)
       Settings/SettingsModal      # dil değişimi
       AgeGate/AgeGateModal        # ilk açılış 18+ blocker
-      Cards/                      # FlipCard, CardDeck, CardFace, CategoryChips
+      Cards/                      # FlipCard, CardDeck, CardFace, CardSettingsPanel
       Wheel/, Dice/               # (mevcut)
       Background/, Confetti/, ResultCard/, ui/
     screens/                      # Home, Wheel, Dice, Cards, RoomLobby, BoxList, Box

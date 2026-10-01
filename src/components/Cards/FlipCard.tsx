@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Animated, {
   Easing,
   runOnJS,
@@ -25,10 +25,13 @@ type Props = {
 
 /**
  * Deste üstünden havalanıp 3D flip ile açılan kart.
- * Reanimated `flip` shared value 0→1 boyunca:
- *   - Kart deste position'dan `liftOffset` kadar yukarı çıkar (yay çizerek)
- *   - rotateY 0→180 ile döner (backface visibility ile ön yüz açılır)
- *   - hafif scale up ile "havada" hissini verir
+ *
+ * ÖNEMLİ: Rotasyon parent'ta değil, her iki yüzde kendi animasyonu olarak
+ * uygulanır. Aksi halde iOS'ta `backfaceVisibility: 'hidden'` back face'i
+ * saklayamıyor (bug: flip bitince kart arka yüzü mirror'lı görünüyordu).
+ * - Back face: rotateY 0° → 180° (sonunda backface, saklanır)
+ * - Front face: rotateY 180° → 360° (başta backface, sonunda görünür)
+ * Parent sadece translate / scale (lift + arc) uygular.
  */
 export function FlipCard({
   width,
@@ -61,25 +64,31 @@ export function FlipCard({
     const arc = Math.sin(p * Math.PI);
     const translateY = -p * liftOffset - arc * 12;
     const scale = 1 + arc * 0.06;
-    const rotY = p * 180;
     return {
-      transform: [
-        { perspective: 1400 },
-        { translateY },
-        { rotateY: `${rotY}deg` },
-        { scale },
-      ],
+      transform: [{ translateY }, { scale }],
     };
   });
 
-  const frontRotation = { transform: [{ rotateY: '180deg' as const }] };
+  const backStyle = useAnimatedStyle(() => ({
+    transform: [
+      { perspective: 1400 },
+      { rotateY: `${flip.value * 180}deg` },
+    ],
+  }));
+
+  const frontStyle = useAnimatedStyle(() => ({
+    transform: [
+      { perspective: 1400 },
+      { rotateY: `${flip.value * 180 + 180}deg` },
+    ],
+  }));
 
   return (
     <Animated.View style={[styles.container, { width, height }, containerStyle]}>
-      <View style={styles.face}>
+      <Animated.View style={[styles.face, backStyle]}>
         <CardFace side="back" width={width} height={height} />
-      </View>
-      <View style={[styles.face, frontRotation]}>
+      </Animated.View>
+      <Animated.View style={[styles.face, frontStyle]}>
         <CardFace
           side="front"
           width={width}
@@ -87,7 +96,7 @@ export function FlipCard({
           category={category}
           prompt={prompt}
         />
-      </View>
+      </Animated.View>
     </Animated.View>
   );
 }
