@@ -9,10 +9,8 @@ export const CONTENT_LANGS = [
   'fr',
   'it',
   'pt',
-  'ru',
   'ja',
   'zh',
-  'ar',
 ] as const;
 
 export type ContentLang = (typeof CONTENT_LANGS)[number];
@@ -27,8 +25,6 @@ export const CONTENT_LANG_LABEL: Record<ContentLang | 'tr', string> = {
   fr: 'Français',
   it: 'Italiano',
   pt: 'Português',
-  ru: 'Русский',
   ja: '日本語',
   zh: '中文',
-  ar: 'العربية',
 };

@@ -2,7 +2,13 @@
   {
     "id": "atesli-opucuk",
     "name": "Ateşli Öpücük",
-    "nameI18n": { "en": "Fiery Kiss" },
+    "nameI18n": {
+      "en": "Fiery Kiss",
+      "de": "Feuriger Kuss",
+      "fr": "Baiser Brûlant",
+      "es": "Beso Ardiente",
+      "it": "Bacio Ardente"
+    },
     "color": "#DC2626",
     "icon": "💋",
     "track": "cesur",
@@ -22,13 +28,47 @@
         "Mid-kiss, nip their lip lightly — playful, brief.",
         "Face to face: kiss at the same time — who has to breathe first?",
         "A kiss, then 3 seconds of pause looking into their eyes, then another kiss."
+      ],
+      "de": [
+        "Küsse deinen Partner langsam mit der Zunge — 20 Sekunden, ohne Unterbrechung.",
+        "Eine Reihe langsamer Küsse vom Hals zu den Lippen — 5 Stück, mit 2 Sekunden Pause dazwischen.",
+        "Beiße deinem Partner mitten im Kuss sanft auf die Lippe — verspielt, kurz.",
+        "Gegenseitig: gleichzeitig küssen — wer muss zuerst Luft holen?",
+        "Gib deinem Partner einen Kuss, halte dann 3 Sekunden inne und schau in seine Augen, dann noch ein Kuss."
+      ],
+      "fr": [
+        "Donne un baiser lent avec ta langue à ton/ta partenaire — 20 secondes, sans interruption.",
+        "Une série de baisers lents du cou aux lèvres — 5 baisers, 2 secondes entre chacun.",
+        "Au milieu du baiser, mordille doucement la lèvre de ton/ta partenaire — joueur, bref.",
+        "Face à face : baiser simultané, qui devra reprendre son souffle en premier ?",
+        "Donne un baiser à ton/ta partenaire, puis arrête-toi 3 secondes pour plonger dans ses yeux, puis un autre baiser."
+      ],
+      "es": [
+        "Dale a tu pareja un beso lento con la lengua — 20 segundos, sin pausa.",
+        "Una serie de besos lentos desde el cuello hasta los labios — 5 en total, con 2 segundos entre cada uno.",
+        "En medio del beso, muerde suavemente el labio de tu pareja — juguetón, breve.",
+        "Mutuo: bésense al mismo tiempo, ¿quién tiene que tomar aire primero?",
+        "Dale un beso a tu pareja, luego detente 3 segundos y mírala a los ojos, y después otro beso."
+      ],
+      "it": [
+        "Dai al partner un bacio lento con la lingua — 20 secondi, senza fermarti.",
+        "Una scia di baci lenti dal collo alle labbra — 5 baci, con 2 secondi tra uno e l'altro.",
+        "A metà del bacio, mordi delicatamente il labbro del partner — giocoso, breve.",
+        "A due: bacio simultaneo, chi dei due deve riprendere fiato per primo?",
+        "Dai un bacio al partner, poi fermati 3 secondi guardandolo negli occhi, poi un altro bacio."
       ]
     }
   },
   {
     "id": "yavas-dokunus",
     "name": "Yavaş Dokunuş",
-    "nameI18n": { "en": "Slow Touch" },
+    "nameI18n": {
+      "en": "Slow Touch",
+      "de": "Langsame Berührung",
+      "fr": "Caresse Lente",
+      "es": "Caricia Lenta",
+      "it": "Tocco Lento"
+    },
     "color": "#0F766E",
     "icon": "🪶",
     "track": "cesur",
@@ -48,13 +88,47 @@
         "Touch their neck at 5 different tempos — which one makes them shiver?",
         "Rest your hands on their hip, hold for 3 seconds, then pull away slowly.",
         "Give them a palm massage — fingers interlaced."
+      ],
+      "de": [
+        "Zeichne mit der Fingerspitze 30 Sekunden lang einen Pfad auf den Rücken deines Partners — langsam, spürbar.",
+        "Halte die Wärme deiner Hand 20 Sekunden auf der Brust deines Partners — ohne Druck, nur Präsenz.",
+        "Berühre den Hals deines Partners in 5 verschiedenen Rhythmen — bei welchem erschauert er?",
+        "Führe deine Hände zur Hüfte deines Partners, halte sie 3 Sekunden, zieh sie dann langsam zurück.",
+        "Massiere deinem Partner eine Handfläche — mit ineinander verschränkten Fingern."
+      ],
+      "fr": [
+        "Dessine un chemin de 30 secondes du bout des doigts sur le dos de ton/ta partenaire — lent, perceptible.",
+        "Garde la chaleur de ta main sur la poitrine de ton/ta partenaire pendant 20 secondes — sans appuyer, juste la présence.",
+        "Touche le cou de ton/ta partenaire à 5 rythmes différents — à quel moment frissonne-t-il/elle ?",
+        "Pose tes mains sur les hanches de ton/ta partenaire, garde 3 secondes, puis retire-les lentement.",
+        "Masse la paume de ton/ta partenaire — en entrelaçant tes doigts aux siens."
+      ],
+      "es": [
+        "Dibuja un camino con la yema del dedo en la espalda de tu pareja durante 30 segundos — lento, perceptible.",
+        "Deja el calor de tu mano sobre el pecho de tu pareja por 20 segundos — sin presionar, solo presencia.",
+        "Toca el cuello de tu pareja con 5 ritmos distintos — ¿con cuál se estremece?",
+        "Lleva tus manos a las caderas de tu pareja, sostenlas 3 segundos y retíralas despacio.",
+        "Dale a tu pareja un masaje en la palma — entrelazando los dedos."
+      ],
+      "it": [
+        "Disegna un sentiero di 30 secondi sulla schiena del partner con la punta delle dita — lento, percepibile.",
+        "Tieni il calore della tua mano sul petto del partner per 20 secondi — senza premere, solo presenza.",
+        "Tocca il collo del partner con 5 ritmi diversi — con quale rabbrividisce?",
+        "Porta le mani sui fianchi del partner, tienile 3 secondi, poi ritirale lentamente.",
+        "Fai un massaggio al palmo del partner — intrecciando le dita."
       ]
     }
   },
   {
     "id": "kisikirtici-fisilti",
     "name": "Kışkırtıcı Fısıltı",
-    "nameI18n": { "en": "Teasing Whisper" },
+    "nameI18n": {
+      "en": "Teasing Whisper",
+      "de": "Verführerisches Flüstern",
+      "fr": "Murmure Provocant",
+      "es": "Susurro Provocador",
+      "it": "Sussurro Provocante"
+    },
     "color": "#DB2777",
     "icon": "🗣️",
     "track": "cesur",
@@ -74,13 +148,47 @@
         "Breathe into their ear — 10 seconds, no words.",
         "Whisper a sentence beginning with \"later…\" — break it into three.",
         "Finish the sentence \"my thought about you today is…\" in their ear."
+      ],
+      "de": [
+        "Flüstere deinem Partner ins Ohr \"ich will dich\" — wiederhole es in 3 verschiedenen Tonlagen.",
+        "Flüstere ihm ins Ohr den letzten gewagten Gedanken, den du hattest.",
+        "Atme deinem Partner nur ins Ohr — 10 Sekunden, keine Worte.",
+        "Flüstere einen Satz, der mit \"Danach…\" beginnt — teile ihn in drei Teile.",
+        "Vervollständige in seinem Ohr den Satz \"mein Gedanke an dich heute\"."
+      ],
+      "fr": [
+        "Murmure \"je te veux\" à l'oreille de ton/ta partenaire — répète sur 3 tons différents.",
+        "Murmure à son oreille la dernière idée audacieuse qui t'a traversé l'esprit.",
+        "Souffle seulement à l'oreille de ton/ta partenaire — 10 secondes, aucun mot.",
+        "Murmure une phrase qui commence par \"Après…\", divise-la en trois.",
+        "Termine à son oreille la phrase \"ce que je pense de toi aujourd'hui\"."
+      ],
+      "es": [
+        "Susúrrale al oído a tu pareja \"te deseo\" — repítelo en 3 tonos distintos.",
+        "Susúrrale al oído la última idea atrevida que se te cruzó por la mente.",
+        "Solo dale aliento al oído a tu pareja — 10 segundos, sin palabras.",
+        "Susurra una frase que empiece con \"Después…\", divídela en tres.",
+        "Termina al oído la frase \"lo que pensé hoy sobre ti\"."
+      ],
+      "it": [
+        "Sussurra all'orecchio del partner \"ti desidero\" — ripetilo in 3 toni diversi.",
+        "Sussurragli all'orecchio l'ultima idea audace che hai avuto.",
+        "Solo respiro sull'orecchio del partner — 10 secondi, nessuna parola.",
+        "Sussurra una frase che inizia con \"poi…\", dividila in tre.",
+        "Completa all'orecchio del partner la frase \"oggi quello che penso di te è…\"."
       ]
     }
   },
   {
     "id": "gozbagi",
     "name": "Gözbağı",
-    "nameI18n": { "en": "Blindfold" },
+    "nameI18n": {
+      "en": "Blindfold",
+      "de": "Augenbinde",
+      "fr": "Bandeau",
+      "es": "Venda en los Ojos",
+      "it": "Benda"
+    },
     "color": "#4338CA",
     "icon": "🕶️",
     "track": "cesur",
@@ -100,13 +208,47 @@
         "Blindfold yourself, let your partner lead you — 2 minutes.",
         "Approach your blindfolded partner slowly — until your lips touch.",
         "Have them close their eyes; whisper a fantasy into their ear for 20 seconds."
+      ],
+      "de": [
+        "Verbinde deinem Partner die Augen. 1 Minute Kommunikation nur über Berührung.",
+        "Lass deinen Partner mit verbundenen Augen 3 verschiedene Texturen erraten.",
+        "Verbinde dir selbst die Augen, lass dich von deinem Partner führen — 2 Minuten.",
+        "Nähere dich deinem Partner mit verbundenen Augen langsam — bis sich eure Lippen berühren.",
+        "Schließe deinem Partner die Augen und erzähle ihm 20 Sekunden lang eine Fantasie ins Ohr."
+      ],
+      "fr": [
+        "Bande les yeux de ton/ta partenaire. 1 minute de communication uniquement par le toucher.",
+        "Fais découvrir 3 textures différentes à ton/ta partenaire aux yeux bandés — qu'il/elle devine.",
+        "Bande tes propres yeux, laisse ton/ta partenaire te guider — 2 minutes.",
+        "Approche-toi lentement de ton/ta partenaire aux yeux bandés — jusqu'à ce que vos lèvres se touchent.",
+        "Couvre les yeux de ton/ta partenaire, raconte-lui un fantasme à l'oreille pendant 20 secondes."
+      ],
+      "es": [
+        "Véndale los ojos a tu pareja. 1 minuto comunicándose solo con el tacto.",
+        "A tu pareja con los ojos vendados, hazle sentir 3 texturas distintas — que adivine.",
+        "Véndate tú los ojos, deja que tu pareja te guíe — 2 minutos.",
+        "Acércate lentamente a tu pareja con los ojos vendados — hasta que los labios se toquen.",
+        "Cúbrele los ojos a tu pareja y cuéntale al oído una fantasía durante 20 segundos."
+      ],
+      "it": [
+        "Benda gli occhi del partner. Per 1 minuto comunicate solo con il tocco.",
+        "Fai conoscere al partner bendato 3 texture diverse — deve indovinare.",
+        "Bendati tu, lascia che sia il partner a guidarti — 2 minuti.",
+        "Avvicinati lentamente al partner bendato — finché le labbra non si sfiorano.",
+        "Chiudi gli occhi del partner e sussurragli una fantasia all'orecchio per 20 secondi."
       ]
     }
   },
   {
     "id": "rol-ver",
     "name": "Rol Ver",
-    "nameI18n": { "en": "Give a Role" },
+    "nameI18n": {
+      "en": "Give a Role",
+      "de": "Gib eine Rolle",
+      "fr": "Donne un Rôle",
+      "es": "Dar un Rol",
+      "it": "Dai un Ruolo"
+    },
     "color": "#0C4A6E",
     "icon": "🎭",
     "track": "cesur",
@@ -126,13 +268,47 @@
         "Give your partner a new name. For 5 minutes, use only that name.",
         "Meet each other as strangers — a brand-new story for 10 minutes.",
         "Whatever you become, your partner becomes — step into a role, hold it for 2 minutes."
+      ],
+      "de": [
+        "Für diese 5 Minuten bist du der \"Guide\". Gib 3 Befehle — atme, schließ die Augen, warte.",
+        "Rollen: ein \"Caretaker\" und eine \"Katze\". 3 Minuten nur Blicke + Berührung.",
+        "Gib deinem Partner einen neuen Namen. Ruf ihn nur so — 5 Minuten.",
+        "Lernt euch wie Fremde kennen — eine neue Geschichte, 10 Minuten.",
+        "Dein Partner wird, was immer du willst — schlüpf in eine Rolle, halte sie 2 Minuten."
+      ],
+      "fr": [
+        "Pendant ces 5 minutes, c'est toi le \"Guide\". Donne 3 ordres — respire, ferme les yeux, attends.",
+        "Rôles : un \"Gardien\" et un \"Chat\". 3 minutes de regards + caresses seulement.",
+        "Donne un nouveau prénom à ton/ta partenaire. Appelle-le/la uniquement par ce prénom — 5 minutes.",
+        "Rencontrez-vous comme deux inconnus — 10 minutes avec une nouvelle histoire.",
+        "Tu deviens ce que ton/ta partenaire désire — entre dans un rôle, tiens-le 2 minutes."
+      ],
+      "es": [
+        "Durante estos 5 minutos tú eres la \"Guía\". Da 3 órdenes — respira, cierra los ojos, espera.",
+        "Roles: uno es \"Cuidador\" y el otro \"Gato\". 3 minutos solo con miradas + caricias.",
+        "Ponle un nombre nuevo a tu pareja. Llámala solo con ese nombre — 5 minutos.",
+        "Preséntense como si fueran desconocidos — con una historia nueva, 10 minutos.",
+        "Lo que tú seas, tu pareja también lo será — entra en un rol y sostenlo 2 minutos."
+      ],
+      "it": [
+        "Per questi 5 minuti sei tu la \"Guida\". Dai 3 comandi — respira, chiudi gli occhi, aspetta.",
+        "Ruoli: un \"Custode\" e un \"Gatto\". 3 minuti solo sguardi + tocco.",
+        "Dai al partner un nome nuovo. Chiamalo solo con questo nome — 5 minuti.",
+        "Conoscetevi come due estranei — con una storia nuova, per 10 minuti.",
+        "Diventi ciò che il partner vuole — entra in un ruolo e mantienilo per 2 minuti."
       ]
     }
   },
   {
     "id": "sinir-cesitle",
     "name": "Sınırı Çeşitle",
-    "nameI18n": { "en": "Play with the Line" },
+    "nameI18n": {
+      "en": "Play with the Line",
+      "de": "Grenzen variieren",
+      "fr": "Varier les Limites",
+      "es": "Varía el Límite",
+      "it": "Varia il Limite"
+    },
     "color": "#B91C1C",
     "icon": "🎯",
     "track": "cesur",
@@ -152,6 +328,34 @@
         "Have your partner pick a safeword: \"red\" = stop. Try it out.",
         "A line-swap, both sides: in 5 minutes, share your \"never\" list and your \"we'd try\" list.",
         "Begin with \"what will you say yes to?\" and get a yes to a short list of things."
+      ],
+      "de": [
+        "Beginn mit \"Ich sage dir 3 Dinge, wähl eins davon aus.\" Biete gewagte Optionen an.",
+        "\"Heute Abend eine Regel: X dürfen wir nicht.\" — bau dann ein Spiel darum, diese Regel zu brechen.",
+        "Lass deinen Partner ein Safeword festlegen: \"rot\" = stopp. Probiert es aus.",
+        "Gegenseitige Grenzenliste: teilt euch innerhalb von 5 Minuten eine \"niemals\"- und eine \"würden wir probieren\"-Liste mit.",
+        "Beginn mit \"wozu sagst du ja\" — frag eine kurze Liste durch, um Jas zu sammeln."
+      ],
+      "fr": [
+        "Commence par \"je vais dire 3 choses, choisis-en 1\" à ton/ta partenaire. Propose des options audacieuses.",
+        "\"Une règle pour ce soir : on ne peut pas faire X.\" — puis invente un jeu pour enfreindre cette règle.",
+        "Fais choisir un mot de sécurité à ton/ta partenaire : \"rouge\" = stop. Fais un essai.",
+        "Liste de limites mutuelle : en 5 minutes, partagez vos listes \"jamais\" et \"on essaierait\".",
+        "Commence par \"à quoi tu dirais oui\" à ton/ta partenaire, demande-lui d'accepter une courte liste."
+      ],
+      "es": [
+        "Dile a tu pareja \"voy a decirte 3 cosas, elige 1\". Ofrece opciones atrevidas.",
+        "\"Esta noche una regla: no podemos hacer X.\" — luego inventen un juego para romper esa regla.",
+        "Pídele a tu pareja que fije una palabra de seguridad: \"rojo\" = alto. Hagan una prueba.",
+        "Lista mutua de límites: en 5 minutos compartan una lista de \"jamás\" y de \"lo probaríamos\".",
+        "Empieza con \"a qué le dirías que sí\" y pídele un sí a una lista breve."
+      ],
+      "it": [
+        "Comincia dicendo al partner \"ti dirò 3 cose, scegline 1\". Offri opzioni audaci.",
+        "\"Stanotte una regola: non possiamo fare X.\" — poi inventa un gioco per infrangerla.",
+        "Fai scegliere al partner una parola di sicurezza: \"rosso\" = stop. Fai una prova.",
+        "Lista reciproca di limiti: in 5 minuti condividete una lista di \"mai\" e \"proveremmo\".",
+        "Comincia con \"a cosa diresti sì\" e chiedi al partner un sì su una breve lista."
       ]
     }
   }

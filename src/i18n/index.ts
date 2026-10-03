@@ -22,10 +22,14 @@
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import de from './locales/de.json';
 import en from './locales/en.json';
+import es from './locales/es.json';
+import fr from './locales/fr.json';
+import it from './locales/it.json';
 import tr from './locales/tr.json';
 
-export const SUPPORTED_LANGUAGES = ['en', 'tr'] as const;
+export const SUPPORTED_LANGUAGES = ['en', 'tr', 'de', 'fr', 'es', 'it'] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 export const DEFAULT_LANGUAGE: SupportedLanguage = 'en';
@@ -34,9 +38,16 @@ void i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
     tr: { translation: tr },
+    de: { translation: de },
+    fr: { translation: fr },
+    es: { translation: es },
+    it: { translation: it },
   },
   lng: DEFAULT_LANGUAGE,
-  fallbackLng: 'tr',
+  // English is the authoring language for the UI shell; missing keys in any
+  // non-en locale fall back to en (not tr) so a half-translated locale
+  // never surprises a user with a Turkish word in the middle of their UI.
+  fallbackLng: 'en',
   interpolation: { escapeValue: false },
   returnNull: false,
   compatibilityJSON: 'v4',

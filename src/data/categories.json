@@ -2,7 +2,13 @@
   {
     "id": "cesaret",
     "name": "Cesaret",
-    "nameI18n": { "en": "Courage" },
+    "nameI18n": {
+      "en": "Courage",
+      "de": "Mut",
+      "fr": "Audace",
+      "es": "Atrevimiento",
+      "it": "Coraggio"
+    },
     "color": "#FF4D6D",
     "icon": "🔥",
     "prompts": [
@@ -25,6 +31,46 @@
         "Confess the last time you told them a lie.",
         "On a piece of paper, describe an \"ideal Saturday night\" — read them to each other.",
         "Whisper something sweet into your partner's ear for 10 seconds."
+      ],
+      "de": [
+        "Erzähl deiner Partnerin / deinem Partner eine Fantasie, die du noch nie geteilt hast.",
+        "Schau ihr/ihm 30 Sekunden lang in die Augen und sag nur \"ich liebe dich\".",
+        "Zeig die letzten 5 Fotos auf deinem Handy.",
+        "Teile den peinlichsten Moment, der dir von eurem ersten Date in Erinnerung geblieben ist.",
+        "Nenne 3 körperliche Eigenschaften, die du an ihr/ihm bewunderst.",
+        "Gestehe, wann du zuletzt gelogen hast.",
+        "Beschreibt auf einem Zettel \"den idealen Samstagabend\" und lest es euch gegenseitig vor.",
+        "Flüstere ihr/ihm 10 Sekunden lang etwas Süßes ins Ohr."
+      ],
+      "fr": [
+        "Raconte à ton/ta partenaire un fantasme que tu n'as jamais confié.",
+        "Pendant 30 secondes, regarde-le/la dans les yeux et dis seulement \"je t'aime\".",
+        "Montre les 5 dernières photos de ton téléphone.",
+        "Partage le moment le plus gênant dont tu te souviens de votre premier rendez-vous.",
+        "Dis à ton/ta partenaire 3 traits physiques que tu adores chez lui/elle.",
+        "Avoue-lui le dernier mensonge que tu lui as dit.",
+        "Décris sur une feuille \"un samedi soir idéal\", puis lisez-les l'un à l'autre.",
+        "Chuchote à l'oreille de ton/ta partenaire une douceur de 10 secondes."
+      ],
+      "es": [
+        "Cuéntale a tu pareja una fantasía que nunca le has contado.",
+        "Mirándole a los ojos durante 30 segundos, dile solo \"te amo\".",
+        "Muéstrale las últimas 5 fotos de tu teléfono.",
+        "Comparte el momento más vergonzoso que recuerdas de su primera cita.",
+        "Dile a tu pareja 3 rasgos físicos suyos que te vuelven loco/a.",
+        "Confiésale cuándo fue la última vez que le mentiste.",
+        "En un papel describe \"una noche de sábado ideal\" y léanselas.",
+        "Susúrrale al oído algo dulce durante 10 segundos."
+      ],
+      "it": [
+        "Racconta al tuo partner una fantasia che non hai mai confessato.",
+        "Guardalo negli occhi per 30 secondi e dì solo \"ti amo\".",
+        "Mostra le ultime 5 foto del tuo telefono.",
+        "Condividi il momento più imbarazzante che ricordi del vostro primo appuntamento.",
+        "Dì al tuo partner 3 caratteristiche fisiche che ami di lui.",
+        "Confessa l'ultima volta che gli hai detto una bugia.",
+        "Descrivi su un foglio \"un sabato sera ideale\" e leggetelo a vicenda.",
+        "Sussurra all'orecchio del tuo partner qualcosa di dolce per 10 secondi."
       ]
     },
     "track": "romantik",
@@ -33,7 +79,13 @@
   {
     "id": "dogruluk",
     "name": "Doğruluk",
-    "nameI18n": { "en": "Truth" },
+    "nameI18n": {
+      "en": "Truth",
+      "de": "Wahrheit",
+      "fr": "Vérité",
+      "es": "Verdad",
+      "it": "Verità"
+    },
     "color": "#4ECDC4",
     "icon": "💭",
     "prompts": [
@@ -56,6 +108,46 @@
         "Which memory of us is the most beautiful one for you?",
         "What do you appreciate about me the most?",
         "Is there anything you've been holding inside right now?"
+      ],
+      "de": [
+        "Was würdest du an unserer Beziehung am liebsten ändern?",
+        "Was hast du gedacht, als du mich zum ersten Mal gesehen hast?",
+        "Was hat dich im letzten Monat am glücklichsten gemacht?",
+        "Gibt es etwas, worüber wir noch nicht gesprochen haben?",
+        "Wähle drei Worte, um mich zu beschreiben.",
+        "Welche ist für dich die schönste Erinnerung aus unserer Zeit zusammen?",
+        "Wofür schätzt du mich am meisten?",
+        "Trägst du gerade etwas mit dir herum?"
+      ],
+      "fr": [
+        "Qu'est-ce que tu changerais le plus dans notre relation ?",
+        "Qu'as-tu pensé la première fois que tu m'as vu(e) ?",
+        "Qu'est-ce qui t'a rendu(e) le plus heureux(se) ce dernier mois ?",
+        "Y a-t-il quelque chose dont on n'a pas encore parlé ?",
+        "Choisis trois mots pour me décrire.",
+        "Quel est pour toi le plus beau souvenir de notre histoire ?",
+        "Pour quoi m'apprécies-tu le plus ?",
+        "Y a-t-il quelque chose que tu gardes en toi en ce moment ?"
+      ],
+      "es": [
+        "¿Qué es lo que más te gustaría cambiar de nuestra relación?",
+        "¿Qué pensaste la primera vez que me viste?",
+        "¿Qué te hizo más feliz en el último mes?",
+        "¿Hay algo de lo que todavía no hemos hablado?",
+        "Elige tres palabras para describirme.",
+        "¿Cuál es tu recuerdo más bonito de nuestra relación?",
+        "¿En qué me admiras más?",
+        "¿Hay algo que estés guardando por dentro ahora mismo?"
+      ],
+      "it": [
+        "Cosa vorresti cambiare di più nella nostra relazione?",
+        "Cosa hai pensato quando mi hai visto per la prima volta?",
+        "Cosa ti ha reso più felice nell'ultimo mese?",
+        "C'è qualcosa di cui non abbiamo ancora parlato?",
+        "Scegli tre parole per descrivermi.",
+        "Qual è per te il ricordo più bello della nostra storia?",
+        "Cosa apprezzi di più in me?",
+        "C'è qualcosa che stai tenendo dentro di te in questo momento?"
       ]
     },
     "track": "romantik",
@@ -64,7 +156,13 @@
   {
     "id": "sarilma",
     "name": "Sarılma",
-    "nameI18n": { "en": "Embrace" },
+    "nameI18n": {
+      "en": "Embrace",
+      "de": "Umarmung",
+      "fr": "Étreinte",
+      "es": "Abrazo",
+      "it": "Abbraccio"
+    },
     "color": "#FFB84D",
     "icon": "🤗",
     "prompts": [
@@ -87,6 +185,46 @@
         "While holding them, whisper your favorite memory of us into their ear.",
         "Cup their face in your hands and smile.",
         "Sit back to back and breathe quietly together for a minute."
+      ],
+      "de": [
+        "Umarme deine Partnerin / deinen Partner 30 Sekunden lang fest — ohne ein Wort.",
+        "Drück ihr/ihm sanft einen Kuss auf die Stirn.",
+        "Halte ihre/seine Hände und versuche, den Puls zu spüren.",
+        "Nimm sie/ihn in den Arm und summe eine Zeile aus ihrem/seinem Lieblingslied.",
+        "Gib ihr/ihm 3 kleine Küsse auf den Hals.",
+        "Flüstere ihr/ihm beim Umarmen unsere schönste Erinnerung ins Ohr.",
+        "Nimm ihr/sein Gesicht in deine Hände und lächle.",
+        "Setzt euch Rücken an Rücken und atmet 1 Minute lang still gemeinsam."
+      ],
+      "fr": [
+        "Serre ton/ta partenaire fort pendant 30 secondes, sans un mot.",
+        "Dépose lentement un baiser sur son front.",
+        "Prends ses mains et essaie de sentir son pouls.",
+        "Prends-le/la dans tes bras et fredonne un morceau de sa chanson préférée.",
+        "Dépose 3 petits baisers sur son cou.",
+        "En l'enlaçant, chuchote à son oreille notre souvenir préféré.",
+        "Prends son visage entre tes mains et souris.",
+        "Mettez-vous dos à dos et respirez ensemble en silence pendant 1 minute."
+      ],
+      "es": [
+        "Abraza fuerte a tu pareja durante 30 segundos, sin decir nada.",
+        "Dale un beso lento en la frente.",
+        "Tómale las manos e intenta sentir su pulso.",
+        "Abrázale y tararéale un fragmento de su canción favorita.",
+        "Dale 3 besitos en el cuello.",
+        "Mientras le abrazas, susúrrale al oído tu recuerdo favorito de nosotros.",
+        "Toma su rostro entre tus manos y sonríele.",
+        "Espalda con espalda, respiren juntos en silencio durante 1 minuto."
+      ],
+      "it": [
+        "Abbraccia forte il tuo partner per 30 secondi, senza dire una parola.",
+        "Posa lentamente un bacio sulla sua fronte.",
+        "Prendigli le mani e prova a sentire il suo battito.",
+        "Stringilo tra le braccia e canticchia un pezzo della sua canzone preferita.",
+        "Dagli 3 piccoli baci sul collo.",
+        "Mentre lo abbracci, sussurragli all'orecchio il tuo ricordo preferito di noi.",
+        "Prendigli il viso tra le mani e sorridi.",
+        "Mettetevi schiena contro schiena e respirate in silenzio insieme per 1 minuto."
       ]
     },
     "track": "romantik",
@@ -95,7 +233,13 @@
   {
     "id": "anilar",
     "name": "Anılar",
-    "nameI18n": { "en": "Memories" },
+    "nameI18n": {
+      "en": "Memories",
+      "de": "Erinnerungen",
+      "fr": "Souvenirs",
+      "es": "Recuerdos",
+      "it": "Ricordi"
+    },
     "color": "#A78BFA",
     "icon": "📸",
     "prompts": [
@@ -118,6 +262,46 @@
         "Think of an inside joke that belongs just to us and say it.",
         "Share the most special day we've celebrated together.",
         "Tell me the moment in our relationship that moved you the most."
+      ],
+      "de": [
+        "Erinnere dich an den Tag, an dem wir uns kennengelernt haben, und schreib eine Nachricht an jenen Tag.",
+        "Erzähl von dem unvergesslichsten Ort, an dem wir zusammen waren.",
+        "Welche Erinnerung an uns bringt dich am meisten zum Lachen?",
+        "Beschreibe den Moment, in dem du zum ersten Mal \"ich liebe dich\" gesagt hast.",
+        "Finde unser liebstes gemeinsames Foto und erzähl, warum.",
+        "Erinnere dich an einen \"Insider\" von uns und sag ihn.",
+        "Teile den besondersten Tag, den wir zusammen gefeiert haben.",
+        "Erzähl den Moment unserer Beziehung, der dich am meisten berührt hat."
+      ],
+      "fr": [
+        "Rappelle-toi notre première rencontre et écris un message à ce jour-là.",
+        "Raconte l'endroit le plus inoubliable où nous sommes allés ensemble.",
+        "Quel souvenir sur nous te fait le plus rire ?",
+        "Décris l'instant où tu as dit \"je t'aime\" pour la première fois.",
+        "Trouve notre photo préférée prise ensemble et explique pourquoi.",
+        "Rappelle-toi une \"blague entre nous\" et dis-la.",
+        "Partage le jour le plus spécial que nous avons fêté ensemble.",
+        "Raconte le moment qui t'a le plus ému(e) dans notre relation."
+      ],
+      "es": [
+        "Recuerda el día en que nos conocimos y escríbele un mensaje a ese día.",
+        "Cuenta el lugar más inolvidable al que hemos ido juntos.",
+        "¿Cuál es el recuerdo nuestro con el que más te has reído?",
+        "Describe el momento en que me dijiste \"te amo\" por primera vez.",
+        "Busca nuestra foto favorita juntos y explica por qué lo es.",
+        "Recuerda un \"chiste interno\" nuestro y dilo.",
+        "Comparte el día más especial que hemos celebrado juntos.",
+        "Cuenta el momento de nuestra relación que más te ha emocionado."
+      ],
+      "it": [
+        "Ricorda il giorno in cui ci siamo conosciuti e scrivi un messaggio a quel giorno.",
+        "Racconta il posto più indimenticabile in cui siamo stati insieme.",
+        "Qual è il ricordo di noi che ti ha fatto ridere di più?",
+        "Descrivi il momento in cui mi hai detto \"ti amo\" per la prima volta.",
+        "Trova la nostra foto preferita insieme e spiega il perché.",
+        "Ricorda una nostra \"battuta privata\" e dilla.",
+        "Condividi il giorno più speciale che abbiamo festeggiato insieme.",
+        "Racconta il momento della nostra relazione che ti ha più emozionato."
       ]
     },
     "track": "romantik",
@@ -126,7 +310,13 @@
   {
     "id": "oyun",
     "name": "Oyun",
-    "nameI18n": { "en": "Play" },
+    "nameI18n": {
+      "en": "Play",
+      "de": "Spiel",
+      "fr": "Jeu",
+      "es": "Juego",
+      "it": "Gioco"
+    },
     "color": "#F472B6",
     "icon": "🎲",
     "prompts": [
@@ -149,6 +339,46 @@
         "Write a 30-second improvised song inspired by each other.",
         "Wink with one eyebrow raised — see if your partner can match it.",
         "Say a sentence backwards together: \"I love you\" → \"uoy evol I.\""
+      ],
+      "de": [
+        "Sagt in 30 Sekunden euren Namen gegenseitig in 20 verschiedenen Stimmen.",
+        "Erzählt eure letzten 24 Stunden nur mit Emojis.",
+        "Schließ die Augen und erkunde das Gesicht deiner Partnerin / deines Partners nur mit der Hand.",
+        "Macht ein 5-Sekunden-Imitationsduell gegeneinander.",
+        "Denkt beide gleichzeitig an eine Zahl und wettet, ob sie übereinstimmen.",
+        "Schreibt euch gegenseitig spontan ein 30-sekündiges Lied.",
+        "Zwinker deiner Partnerin / deinem Partner mit einem Auge zu — sie/er versucht es nachzumachen.",
+        "Sagt einen Satz rückwärts: \"ich liebe dich\" → \"hcid ebeil hci\"."
+      ],
+      "fr": [
+        "En 30 secondes, dites le prénom de l'autre avec 20 voix différentes.",
+        "Racontez vos dernières 24 heures en n'utilisant que des emojis.",
+        "Ferme les yeux et découvre le visage de ton/ta partenaire seulement avec ta main.",
+        "Faites un concours d'imitation de 5 secondes chacun.",
+        "Pensez tous les deux à un chiffre en même temps, pariez si vous tomberez pile.",
+        "Improvisez l'un pour l'autre une chanson de 30 secondes.",
+        "Fais un clin d'œil à ton/ta partenaire d'un seul œil — à lui/elle d'essayer aussi.",
+        "Dites ensemble une phrase à l'envers : \"je t'aime\" → \"emia't ej\"."
+      ],
+      "es": [
+        "En 30 segundos, digan el nombre del otro con 20 voces distintas.",
+        "Cuenten sus últimas 24 horas usando solo emojis.",
+        "Cierra los ojos y descubre el rostro de tu pareja solo con tu mano.",
+        "Hagan un duelo de imitaciones de 5 segundos cada uno.",
+        "Piensen al mismo tiempo un número en secreto y apuesten si coincidirá.",
+        "Compón una canción improvisada de 30 segundos inspirada en el otro.",
+        "Guíñale un ojo a tu pareja con una sola ceja — que intente devolvértelo.",
+        "Digan juntos una frase al revés: \"te amo\" → \"oma et\"."
+      ],
+      "it": [
+        "In 30 secondi, pronunciate il nome dell'altro con 20 voci diverse.",
+        "Raccontate le vostre ultime 24 ore usando solo emoji.",
+        "Chiudi gli occhi ed esplora il viso del tuo partner solo con le mani.",
+        "Fate una gara di imitazioni di 5 secondi, uno di fronte all'altra.",
+        "Pensate entrambi a un numero nello stesso istante e scommettete se coinciderà.",
+        "Scrivi una canzone improvvisata di 30 secondi ispirata all'altro.",
+        "Fai l'occhiolino al tuo partner con un occhio solo — e lui provi a imitarti.",
+        "Insieme, pronunciate una frase al contrario: \"ti amo\" → \"oma it\"."
       ]
     },
     "track": "romantik",
@@ -157,7 +387,13 @@
   {
     "id": "derin",
     "name": "Derin",
-    "nameI18n": { "en": "Deep" },
+    "nameI18n": {
+      "en": "Deep",
+      "de": "Tiefe",
+      "fr": "Profond",
+      "es": "Profundo",
+      "it": "Profondo"
+    },
     "color": "#60A5FA",
     "icon": "🌊",
     "prompts": [
@@ -180,6 +416,46 @@
         "Can you tell me where you feel most fragile?",
         "If one day I fail, what would you ask of me?",
         "Has loving me taught you something?"
+      ],
+      "de": [
+        "Wovor hast du im Leben gerade am meisten Angst?",
+        "Wo stellst du uns in 5 Jahren vor?",
+        "Was ist für dich \"wahre Liebe\"?",
+        "Gibt es etwas an dir, das du ändern möchtest?",
+        "Welches tiefste Gefühl trägst du aus deiner Kindheit bis heute mit dir?",
+        "Kannst du mir sagen, in welchem Bereich du verletzlich bist?",
+        "Was würdest du dir von mir wünschen, falls ich eines Tages scheitere?",
+        "Hat dich das Lieben mit mir etwas gelehrt?"
+      ],
+      "fr": [
+        "De quoi as-tu le plus peur dans la vie en ce moment ?",
+        "Où nous imagines-tu dans 5 ans ?",
+        "Pour toi, qu'est-ce que \"le véritable amour\" ?",
+        "Y a-t-il quelque chose que tu voudrais changer chez toi ?",
+        "Quelle est l'émotion la plus profonde que tu portes depuis l'enfance ?",
+        "Peux-tu me dire sur quoi tu te sens vulnérable ?",
+        "Si un jour je n'y arrive pas, que me demanderais-tu ?",
+        "Y a-t-il quelque chose que m'aimer t'a appris ?"
+      ],
+      "es": [
+        "¿A qué le tienes más miedo ahora mismo en la vida?",
+        "¿Dónde nos imaginas dentro de 5 años?",
+        "Para ti, ¿qué es el \"amor verdadero\"?",
+        "¿Hay algo de ti mismo/a que te gustaría cambiar?",
+        "¿Cuál es la emoción más profunda que arrastras desde tu infancia?",
+        "¿Puedes contarme en qué te sientes vulnerable?",
+        "Si un día no lo lograra, ¿qué me pedirías?",
+        "¿Hay algo que amarme te haya enseñado?"
+      ],
+      "it": [
+        "Qual è la cosa che ti spaventa di più nella vita in questo momento?",
+        "Dove ci immagini tra 5 anni?",
+        "Cos'è per te il \"vero amore\"?",
+        "C'è qualcosa che vorresti cambiare di te stesso?",
+        "Qual è l'emozione più profonda che porti con te dall'infanzia?",
+        "Puoi dirmi su cosa ti senti fragile?",
+        "Se un giorno non ce la facessi, cosa vorresti da me?",
+        "C'è qualcosa che amarmi ti ha insegnato?"
       ]
     },
     "track": "romantik",

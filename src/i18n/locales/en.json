@@ -183,6 +183,10 @@
     "language": "Language",
     "english": "English",
     "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
     "close": "Close"
   }
 }

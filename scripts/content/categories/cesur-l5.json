@@ -2,7 +2,13 @@
   {
     "id": "ipin-dilinden",
     "name": "İpin Dilinden",
-    "nameI18n": { "en": "In the Rope's Language" },
+    "nameI18n": {
+      "en": "In the Rope's Language",
+      "de": "Sprache des Seils",
+      "fr": "Au langage de la corde",
+      "es": "El Lenguaje de la Cuerda",
+      "it": "Il Linguaggio della Corda"
+    },
     "color": "#4C1D95",
     "icon": "🎀",
     "track": "cesur",
@@ -24,13 +30,51 @@
         "Once they're bound, one sentence: \"your trust is with me.\" For 3 minutes, hold the space with your presence only — no touch. Then explore.",
         "The partner kneels, hands softly bound behind. The Foreman stands in front — 2 minutes of pure gaze + breath communication. Then one single command.",
         "End of scene: untie, massage the wrists, lock eyes for a quiet minute. Say \"I'm here, you're safe.\" Water, something to eat — aftercare."
+      ],
+      "de": [
+        "Absprache vor der Szene: Safeword klären, Grenzen besprechen. Verbinde die Handgelenke deiner Partnerin / deines Partners mit einem Seidentuch zu einem heiligen Knoten — 3 Wicklungen, locker, der Atem bleibt frei. 5 Minuten lang nur mit Blicken an dieser Bindung verweilen.",
+        "Wickle mit einem langen Tuch den Oberkörper deiner Partnerin / deines Partners im Korsettmuster ein (Brust und Taille). Spürbarer Druck, aber die Atmung völlig frei. 3 Minuten in diesem Halt — nur Blick und Wort.",
+        "Du bist der Seiler. Verbinde Augen, Handgelenke und Fußgelenke deiner Partnerin / deines Partners in einem dreifachen Geflecht. Nur das Safeword löst alles. 5 Minuten Erkundung — Atem und Komfort ständig prüfen.",
+        "Nach dem Binden ein Satz: \"dein Vertrauen liegt bei mir.\" 3 Minuten still, ohne Berührung, nur mit deiner Anwesenheit da sein. Dann erkunden.",
+        "Partner kniet, Hände weich hinter dem Rücken gebunden. Der Vorarbeiter steht davor, 2 Minuten Kommunikation nur über Blick und Atem. Dann ein einziger Befehl.",
+        "Szenenende: Bindung lösen, Handgelenke massieren, eine Minute still Auge in Auge. Der Satz \"ich bin bei dir, es ist alles gut\". Wasser trinken, etwas essen — Aftercare."
+      ],
+      "fr": [
+        "Accord avant la scène : clarifie le safeword, parle des limites. Avec un foulard de soie, unis les poignets de ton/ta partenaire en un tressage sacré — 3 tours, lâches, respiration libre. Pendant 5 minutes, caresse ce lien seulement du regard.",
+        "Avec un long foulard, enveloppe le torse de ton/ta partenaire façon laçage de corset (poitrine et taille). Une pression qui se fait sentir, mais une respiration tout à fait libre. 3 minutes dans cette prise — rien que des regards et des mots.",
+        "C'est toi le Lieur. Noue les yeux + les poignets + les chevilles de ton/ta partenaire en un triple tressage. Rien ne se défait sans le safeword. 5 minutes d'exploration — vérifie sans cesse le souffle et le confort.",
+        "Une fois noué·e, une seule phrase : \"ta confiance est entre mes mains.\" Pendant 3 minutes, reste simplement là, en silence, sans toucher — rien que ta présence. Ensuite, explore.",
+        "Ton/ta partenaire à genoux, mains attachées doucement dans le dos. Le Contremaître se tient devant, 2 minutes de communication seulement par le regard + le souffle. Puis un seul ordre.",
+        "Fin de scène : défais le lien, masse les poignets, une minute les yeux dans les yeux, en silence. La phrase : \"je suis là, tu vas bien.\" Bois de l'eau, mange quelque chose — aftercare."
+      ],
+      "es": [
+        "Acuerdo previo a la escena: define la palabra de seguridad, hablen los límites. Con un pañuelo de seda, une las muñecas de tu pareja en un tejido sagrado — 3 vueltas, suelto, la respiración cómoda. Durante 5 minutos recorre ese vínculo solo con la mirada.",
+        "Con un pañuelo largo, envuelve el torso de tu pareja al estilo de un corsé (pecho y cintura). Que sienta la presión pero que respire con total soltura. 3 minutos sosteniendo ese agarre solo con miradas + palabras.",
+        "Tú eres el Cuerdista. Ata los ojos + las muñecas + los tobillos de tu pareja en un tejido triple. Solo se desata con la palabra de seguridad. 5 minutos de exploración — chequea su respiración y comodidad en todo momento.",
+        "Después de atarle, una frase: \"tu confianza está conmigo.\" 3 minutos en silencio, sin tocar, solo con tu presencia. Luego explora.",
+        "Tu pareja arrodillada, manos atadas con suavidad a la espalda. El Capataz se para al frente, 2 minutos de comunicación solo con mirada + respiración. Luego una sola orden.",
+        "Cierre de escena: desata el vínculo, masajea las muñecas, un minuto mirándose en silencio. La frase \"estoy contigo, estás bien.\" Tomen agua, coman algo — aftercare."
+      ],
+      "it": [
+        "Accordo pre-scena: chiarite la safeword, parlate dei limiti. Con un foulard di seta unisci i polsi del tuo partner in un intreccio sacro — 3 giri, morbidi, il respiro libero. Per 5 minuti accarezza questo legame solo con lo sguardo.",
+        "Con un foulard lungo avvolgi il busto del tuo partner come un corsetto (petto e vita). Deve sentire la pressione ma respirare liberamente. 3 minuti con questa stretta — solo sguardi e parole.",
+        "Sei tu il Legatore. Lega gli occhi + i polsi + le caviglie del tuo partner con un triplo intreccio. Si scioglie solo con la parola di sicurezza. 5 minuti di esplorazione — controlla continuamente il respiro e il comfort.",
+        "Dopo averlo legato, una sola frase: \"la tua fiducia è nelle mie mani.\" Per 3 minuti stai in silenzio, senza toccare, solo con la tua presenza. Poi esplora.",
+        "Il partner in ginocchio, mani dietro legate dolcemente. Il Capo si pone davanti, comunica per 2 minuti solo con lo sguardo + il respiro. Poi un unico comando.",
+        "Fine scena: sciogli il legame, massaggia i polsi, un minuto in silenzio occhi negli occhi. La frase \"sono qui, stai bene.\" Bevete acqua, mangiate qualcosa — aftercare."
       ]
     }
   },
   {
     "id": "kabul-toreni",
     "name": "Kabul Töreni",
-    "nameI18n": { "en": "Rite of Acceptance" },
+    "nameI18n": {
+      "en": "Rite of Acceptance",
+      "de": "Zeremonie der Hingabe",
+      "fr": "Cérémonie d'accueil",
+      "es": "Ceremonia de Aceptación",
+      "it": "Rito di Accettazione"
+    },
     "color": "#78350F",
     "icon": "📜",
     "track": "cesur",
@@ -52,13 +96,51 @@
         "Face to face: each of you proposes 3 roles (Rigger/Weaver, Guide/Follower, Caretaker/Cat). Accept one. Stay in it for 10 minutes. Then tell each other what you felt about it.",
         "Scene-closing ritual: the Guide strokes the partner's head, says \"you're good, you're whole.\" Three minutes of embrace. Mutual feedback — trust renewed.",
         "Pre-sleep ritual: for 5 minutes, share what you loved today, what could change next time. This is the ground for the next scene."
+      ],
+      "de": [
+        "Eröffnungsritual der Szene: 3 Minuten in die Augen des anderen schauen. Dann klar aussprechen: \"Für diese 15 Minuten bist du / bin ich der Führer.\" Safeword wiederholen.",
+        "Dein/e Partner/in legt eine \"Regel\" fest (z. B. \"ich darf ohne Erlaubnis nicht sprechen\"). Halte dich 5 Minuten an diese Regel. Wird sie gebrochen, folgt eine vorher vereinbarte 5-Sekunden-Konsequenz (sanfte Berührung, Kuss, Kopf lenken usw.).",
+        "Der Vorarbeiter bereitet einen heiligen Gegenstand vor (Kerze, Ring, ein Tuch). Er gibt dem/der Partner/in eine Aufgabe mit diesem Gegenstand: \"Halte das. Bis du es erfüllst, tust du nichts anderes.\"",
+        "Gegenseitig: schlagt je 3 Rollen vor (Seiler/Flechter, Führer/Nachfolger, Pfleger/Katze). Nimm eine an. Bleib 10 Minuten in dieser Rolle. Sagt euch danach, wie es sich angefühlt hat.",
+        "Abschlussritual der Szene: Der Führer streichelt den Kopf des/der Partner/in und sagt \"du bist gut, du bist ganz\". 3 Minuten Umarmung. Gegenseitiges Feedback — Vertrauen erneuern.",
+        "Ritual vor dem Schlaf: Teilt 5 Minuten lang, was euch heute gefallen hat und was sich ändern könnte. Das ist die Grundlage für die nächste Szene."
+      ],
+      "fr": [
+        "Rituel d'ouverture de scène : 3 minutes les yeux dans les yeux. Puis clarifie : \"Pendant ces 15 minutes, le Guide, c'est toi/moi.\" Redis le safeword.",
+        "Ton/ta partenaire fixe une \"règle\" (par ex. \"je ne peux pas parler sans permission\"). Toi, tu respectes cette règle pendant 5 minutes. Si la règle est brisée, une conséquence de 5 secondes convenue à l'avance (une caresse douce, un baiser qui guide la tête, etc.).",
+        "Le Contremaître prépare un objet sacré (une bougie, une bague, un tissu). Il/elle confie une tâche à ton/ta partenaire avec cet objet : \"Tiens-le. Tant que ce n'est pas accompli, tu ne feras rien d'autre.\"",
+        "Face à face : proposez-vous 3 rôles (Lieur/Tresseur, Guide/Suiveur, Gardien/Chat). Accepte-en un. Reste dans ce rôle 10 minutes. Puis dites-vous ce que vous avez ressenti.",
+        "Rituel de clôture de scène : le Guide caresse la tête de son/sa partenaire et dit : \"tu vas bien, tu es entier/entière.\" 3 minutes d'étreinte. Retour mutuel — renouer la confiance.",
+        "Rituel d'avant-coucher : pendant 5 minutes, partagez ce que vous avez aimé aujourd'hui et ce qui pourrait changer. C'est la base de la prochaine scène."
+      ],
+      "es": [
+        "Ritual de apertura de escena: 3 minutos mirándose a los ojos. Luego dejen claro: \"Durante estos 15 minutos la Guía eres tú/soy yo.\" Repitan la palabra de seguridad.",
+        "Tu pareja define una \"regla\" (p. ej. \"no puedo hablar sin permiso\"). Tú obedeces esa regla durante 5 minutos. Si se rompe, una consecuencia de 5 segundos acordada de antemano (una caricia suave, un beso que redirige, etc.).",
+        "El Capataz prepara un objeto sagrado (una vela, un anillo, una tela). Le da una tarea a su pareja con ese objeto: \"Sostén esto. No harás nada más hasta cumplirlo.\"",
+        "Mutuo: propongan 3 roles (Cuerdista/Tejedor, Guía/Seguidor, Cuidador/Gato). Acepten uno. Permanezcan en ese rol 10 minutos. Después cuéntense qué sintieron al respecto.",
+        "Ritual de cierre de escena: la Guía acaricia la cabeza de su pareja y dice \"estás bien, estás completo/a.\" 3 minutos de abrazo. Retroalimentación mutua — renovación de la confianza.",
+        "Ritual de antes de dormir: durante 5 minutos compartan qué les gustó hoy y qué podría cambiar. Esta es la base para la próxima escena."
+      ],
+      "it": [
+        "Rituale di apertura della scena: 3 minuti guardandovi negli occhi. Poi chiarite: \"Per questi 15 minuti la Guida sei tu/sono io.\" Ripetete la safeword.",
+        "Il tuo partner stabilisce una \"regola\" (es. \"non posso parlare senza permesso\"). Tu per 5 minuti rispetti questa regola. Se la regola viene infranta, una conseguenza di 5 secondi concordata in anticipo (una carezza morbida, una guida con un bacio sulla testa, ecc.).",
+        "Il Capo prepara un oggetto sacro (una candela, un anello, un tessuto). Dà al partner un compito con questo oggetto: \"Tienilo. Finché non l'hai portato a termine non farai nient'altro.\"",
+        "Reciprocamente: proponete 3 ruoli (Legatore/Intrecciatore, Guida/Seguace, Custode/Gattino). Accettatene uno. Restate in quel ruolo per 10 minuti. Poi raccontatevi cosa avete provato.",
+        "Rituale di chiusura della scena: la Guida accarezza la testa del partner, dice \"stai bene, sei al sicuro.\" 3 minuti di abbraccio. Feedback reciproco — rinnovate la fiducia.",
+        "Rituale prima di dormire: per 5 minuti condividete cosa vi è piaciuto oggi e cosa potrebbe cambiare. È la base per la prossima scena."
       ]
     }
   },
   {
     "id": "derin-bag",
     "name": "Derin Bağ",
-    "nameI18n": { "en": "Deep Bond" },
+    "nameI18n": {
+      "en": "Deep Bond",
+      "de": "Tiefe Verbindung",
+      "fr": "Lien profond",
+      "es": "Vínculo Profundo",
+      "it": "Legame Profondo"
+    },
     "color": "#1E1B4B",
     "icon": "🌌",
     "track": "cesur",
@@ -80,6 +162,38 @@
         "\"Silent night\": 30 minutes, no words. Only gaze, touch, breath. At the end, 5 minutes to tell each other what you felt.",
         "\"Role nights\": over one week, swap roles across two nights. End each night with a 5-minute debrief.",
         "The deepest ritual: blindfold + light silk tie + music + 30 minutes. The Foreman leads. End of scene — 10 minutes of embrace + water + aftercare + feedback."
+      ],
+      "de": [
+        "Plant eine \"Szene\" von 20 Minuten. Anfang: Blick in die Augen und Safeword. Mitte: 3 verschiedene Aktivitäten (Rolle, Berührung, Wortspiel). Ende: Umarmung und Feedback. Zeit stellen.",
+        "Entwerft ein Protokoll wie eine \"Morgenroutine\": jeden Morgen 5 Minuten ein gemeinsames Ritual (Blick, Berührung, Wort). Testet es 1 Woche lang.",
+        "Als Vorarbeiter und Nachfolger eine 10-minütige Szene vor dem Schlaf. Der Vorarbeiter bestimmt 3 Aktivitäten — Atem, Berührung, Wort. Der Nachfolger steuert jede mit Zustimmung oder mit \"gelb/rot\".",
+        "\"Stille Nacht\": 30 Minuten lang keine Worte. Nur Blick, Berührung, Atem. Am Ende 5 Minuten erzählen, wie es sich angefühlt hat.",
+        "\"Rollenabende\": tauscht in 1 Woche an 2 Abenden die Rollen. Am Ende jedes Abends 5 Minuten Auswertung.",
+        "Das tiefste Ritual: Augenbinde + leichte Seidenbindung + sanfte Musik + 30 Minuten. Der Vorarbeiter führt. Szenenende: 10 Minuten Umarmung, Wasser trinken, Aftercare, Feedback."
+      ],
+      "fr": [
+        "Planifie une \"scène\" de 20 minutes. Ouverture : yeux dans les yeux + safeword. Milieu : 3 activités différentes (un rôle, un toucher, un jeu de mots). Fin : étreinte + retour. Règle le minuteur.",
+        "Imaginez un protocole comme une \"routine du matin\" : chaque matin, 5 minutes d'un rituel partagé (regard, toucher, parole). Testez-le pendant 1 semaine.",
+        "En Contremaître et Suiveur, une scène de 10 minutes avant le coucher. Le Contremaître choisit 3 activités — souffle, toucher, mot. Le Suiveur accueille chacune ou la module par \"jaune/rouge\".",
+        "\"Nuit silencieuse\" : 30 minutes sans un mot. Rien que des regards, des touchers, des souffles. À la fin, 5 minutes pour vous dire ce que vous avez ressenti.",
+        "\"Nuits de rôles\" : pendant 1 semaine, vivez 2 soirées en échangeant vos rôles. À la fin de chaque nuit, 5 minutes de bilan.",
+        "Le rituel le plus profond : bandeau + un lien de soie léger + musique douce + 30 minutes. Le Contremaître mène. Fin de scène : 10 minutes d'étreinte + bois de l'eau + aftercare + retour."
+      ],
+      "es": [
+        "Planea una \"escena\" de 20 minutos. Inicio: mírense a los ojos + palabra de seguridad. Medio: 3 actividades distintas (rol, caricia, juego de palabras). Final: abrazo + retroalimentación. Pon el tiempo.",
+        "Diseñen un protocolo tipo \"rutina matutina\": cada mañana 5 minutos de un ritual compartido (mirada, caricia, palabra). Pruébenlo durante 1 semana.",
+        "Como Capataz y Seguidor, una escena de 10 minutos antes de dormir. El Capataz define 3 actividades — respiración, caricia, palabra. El Seguidor acepta cada una o la regula con \"amarillo/rojo.\"",
+        "\"Noche silenciosa\": 30 minutos sin palabras. Solo mirada, caricia, respiración. Al final, 5 minutos para contarse qué sintieron.",
+        "\"Noches de rol\": durante 1 semana, 2 noches intercambiando roles. Al final de cada noche, 5 minutos de evaluación.",
+        "El ritual más profundo: venda en los ojos + un suave vínculo de seda + música + 30 minutos. El Capataz guía. Cierre de escena: 10 minutos de abrazo + tomen agua + aftercare + retroalimentación."
+      ],
+      "it": [
+        "Pianifica una \"scena\" di 20 minuti. Inizio: guardatevi negli occhi + safeword. Centro: 3 attività diverse (ruolo, tocco, gioco di parole). Fine: abbraccio + feedback. Imposta il tempo.",
+        "Progettate un protocollo tipo \"routine del mattino\": ogni mattina un rituale condiviso di 5 minuti (sguardo, tocco, parola). Provatelo per 1 settimana.",
+        "Come Capo e Seguace, una scena di 10 minuti prima di dormire. Il Capo stabilisce 3 attività — respiro, tocco, parola. Il Seguace gestisce ciascuna con un sì o con \"giallo/rosso.\"",
+        "\"Notte silenziosa\": 30 minuti senza parole. Solo sguardi, tocco, respiro. Alla fine, 5 minuti per raccontarvi cosa avete provato.",
+        "\"Notti dei ruoli\": per 1 settimana vivete 2 notti scambiandovi i ruoli. Alla fine di ogni notte, 5 minuti di confronto.",
+        "Il rituale più profondo: benda sugli occhi + un legame morbido di seta + musica + 30 minuti. Il Capo conduce. Fine scena: 10 minuti di abbraccio + bevete acqua + aftercare + feedback."
       ]
     }
   }

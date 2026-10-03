@@ -2,7 +2,13 @@
   {
     "id": "yatak-odasi",
     "name": "Yatak Odası",
-    "nameI18n": { "en": "Bedroom" },
+    "nameI18n": {
+      "en": "Bedroom",
+      "de": "Schlafzimmer",
+      "fr": "Chambre à coucher",
+      "es": "Dormitorio",
+      "it": "Camera da Letto"
+    },
     "color": "#B91C1C",
     "icon": "🛏️",
     "track": "cesur",
@@ -12,33 +18,73 @@
       {
         "name": "Yastıklar Kalesi",
         "description": "Battaniyeler ve yastıklarla bir sığınak kur.",
-        "nameI18n": { "en": "Pillow Fort" },
+        "nameI18n": {
+          "en": "Pillow Fort",
+          "de": "Kissenburg",
+          "fr": "Fort de coussins",
+          "es": "Castillo de Almohadas",
+          "it": "Fortezza di Cuscini"
+        },
         "descriptionI18n": {
-          "en": "Build a sanctuary out of blankets and pillows."
+          "en": "Build a sanctuary out of blankets and pillows.",
+          "de": "Bau ein Nest aus Decken und Kissen.",
+          "fr": "Construisez un refuge avec des couvertures et des coussins.",
+          "es": "Arma un refugio con mantas y almohadas.",
+          "it": "Costruite un rifugio con coperte e cuscini."
         }
       },
       {
         "name": "Mum Işığında Yatak",
         "description": "Sadece 2 mum + yatak. Tavan izleme.",
-        "nameI18n": { "en": "Candlelit Bed" },
+        "nameI18n": {
+          "en": "Candlelit Bed",
+          "de": "Bett im Kerzenschein",
+          "fr": "Lit à la lueur des bougies",
+          "es": "Cama a la Luz de las Velas",
+          "it": "Letto a Lume di Candela"
+        },
         "descriptionI18n": {
-          "en": "Two candles + the bed. Watch the ceiling."
+          "en": "Two candles + the bed. Watch the ceiling.",
+          "de": "Nur 2 Kerzen + Bett. Decke anstarren.",
+          "fr": "Juste 2 bougies + le lit. À regarder le plafond.",
+          "es": "Solo 2 velas + la cama. Mirando al techo.",
+          "it": "Solo 2 candele + letto. Guardate il soffitto."
         }
       },
       {
         "name": "Sabah Yatağı",
         "description": "Uyanış saatinde, ışık henüz yumuşakken.",
-        "nameI18n": { "en": "Morning Bed" },
+        "nameI18n": {
+          "en": "Morning Bed",
+          "de": "Morgenbett",
+          "fr": "Lit du matin",
+          "es": "Cama Matutina",
+          "it": "Letto del Mattino"
+        },
         "descriptionI18n": {
-          "en": "At waking hour, while the light is still soft."
+          "en": "At waking hour, while the light is still soft.",
+          "de": "Zur Aufwachstunde, wenn das Licht noch weich ist.",
+          "fr": "À l'heure du réveil, quand la lumière est encore douce.",
+          "es": "Al despertar, cuando la luz aún está suave.",
+          "it": "All'ora del risveglio, mentre la luce è ancora morbida."
         }
       },
       {
         "name": "Karanlık Yatak",
         "description": "Işıklar tamamen kapalı, sadece hisler.",
-        "nameI18n": { "en": "Dark Bed" },
+        "nameI18n": {
+          "en": "Dark Bed",
+          "de": "Dunkles Bett",
+          "fr": "Lit obscur",
+          "es": "Cama a Oscuras",
+          "it": "Letto al Buio"
+        },
         "descriptionI18n": {
-          "en": "Lights fully off — only sensation."
+          "en": "Lights fully off — only sensation.",
+          "de": "Licht ganz aus, nur Spüren.",
+          "fr": "Lumières complètement éteintes, rien que les sensations.",
+          "es": "Luces totalmente apagadas, solo sensaciones.",
+          "it": "Luci completamente spente, solo sensazioni."
         }
       }
     ]
@@ -46,7 +92,13 @@
   {
     "id": "dus-buhar",
     "name": "Duş & Buhar",
-    "nameI18n": { "en": "Shower & Steam" },
+    "nameI18n": {
+      "en": "Shower & Steam",
+      "de": "Dusche & Dampf",
+      "fr": "Douche & vapeur",
+      "es": "Ducha y Vapor",
+      "it": "Doccia & Vapore"
+    },
     "color": "#0F766E",
     "icon": "🚿",
     "track": "cesur",
@@ -56,33 +108,73 @@
       {
         "name": "Sıcak Duş",
         "description": "Buhar dolu, ıslak, kapalı.",
-        "nameI18n": { "en": "Hot Shower" },
+        "nameI18n": {
+          "en": "Hot Shower",
+          "de": "Heiße Dusche",
+          "fr": "Douche chaude",
+          "es": "Ducha Caliente",
+          "it": "Doccia Calda"
+        },
         "descriptionI18n": {
-          "en": "Full of steam, wet, closed in."
+          "en": "Full of steam, wet, closed in.",
+          "de": "Dampfig, nass, abgeschottet.",
+          "fr": "Pleine de vapeur, mouillée, enfermée.",
+          "es": "Llena de vapor, mojada, cerrada.",
+          "it": "Piena di vapore, bagnata, chiusa."
         }
       },
       {
         "name": "Küvet Zamanı",
         "description": "Doldurulmuş küvet, kimse acele etmiyor.",
-        "nameI18n": { "en": "Tub Time" },
+        "nameI18n": {
+          "en": "Tub Time",
+          "de": "Wannenzeit",
+          "fr": "L'heure du bain",
+          "es": "Hora de la Tina",
+          "it": "Ora della Vasca"
+        },
         "descriptionI18n": {
-          "en": "A filled tub, no one in a hurry."
+          "en": "A filled tub, no one in a hurry.",
+          "de": "Volle Wanne, niemand hat es eilig.",
+          "fr": "Baignoire remplie, personne n'est pressé.",
+          "es": "Tina llena, nadie tiene prisa.",
+          "it": "Vasca piena, nessuno ha fretta."
         }
       },
       {
         "name": "Duş Sonrası",
         "description": "Islak saçlar, havlu, aynanın önü.",
-        "nameI18n": { "en": "After the Shower" },
+        "nameI18n": {
+          "en": "After the Shower",
+          "de": "Nach der Dusche",
+          "fr": "Après la douche",
+          "es": "Después de la Ducha",
+          "it": "Dopo la Doccia"
+        },
         "descriptionI18n": {
-          "en": "Wet hair, a towel, in front of the mirror."
+          "en": "Wet hair, a towel, in front of the mirror.",
+          "de": "Nasse Haare, Handtuch, vor dem Spiegel.",
+          "fr": "Cheveux mouillés, serviette, devant le miroir.",
+          "es": "Pelo mojado, toalla, frente al espejo.",
+          "it": "Capelli bagnati, asciugamano, davanti allo specchio."
         }
       },
       {
         "name": "Bahçe Duşu",
         "description": "Yaz gecesi açık havada duş.",
-        "nameI18n": { "en": "Garden Shower" },
+        "nameI18n": {
+          "en": "Garden Shower",
+          "de": "Gartendusche",
+          "fr": "Douche de jardin",
+          "es": "Ducha de Jardín",
+          "it": "Doccia in Giardino"
+        },
         "descriptionI18n": {
-          "en": "An outdoor shower on a summer night."
+          "en": "An outdoor shower on a summer night.",
+          "de": "Sommernacht, Dusche unter freiem Himmel.",
+          "fr": "Douche en plein air par une nuit d'été.",
+          "es": "Ducha al aire libre en una noche de verano.",
+          "it": "Doccia all'aperto in una notte d'estate."
         }
       }
     ]
@@ -90,7 +182,13 @@
   {
     "id": "balkon-gecesi",
     "name": "Balkon Gecesi",
-    "nameI18n": { "en": "Balcony Night" },
+    "nameI18n": {
+      "en": "Balcony Night",
+      "de": "Balkonnacht",
+      "fr": "Nuit au balcon",
+      "es": "Noche en el Balcón",
+      "it": "Notte sul Balcone"
+    },
     "color": "#4338CA",
     "icon": "🌃",
     "track": "cesur",
@@ -100,33 +198,73 @@
       {
         "name": "Yıldızlar Altında",
         "description": "Balkon, karanlık, sadece siz.",
-        "nameI18n": { "en": "Under the Stars" },
+        "nameI18n": {
+          "en": "Under the Stars",
+          "de": "Unter Sternen",
+          "fr": "Sous les étoiles",
+          "es": "Bajo las Estrellas",
+          "it": "Sotto le Stelle"
+        },
         "descriptionI18n": {
-          "en": "The balcony, the dark, just the two of you."
+          "en": "The balcony, the dark, just the two of you.",
+          "de": "Balkon, Dunkelheit, nur ihr zwei.",
+          "fr": "Le balcon, l'obscurité, vous seuls.",
+          "es": "El balcón, la oscuridad, solo ustedes.",
+          "it": "Balcone, buio, solo voi due."
         }
       },
       {
         "name": "Yağmurdan Sonra",
         "description": "Islak balkon, temiz hava.",
-        "nameI18n": { "en": "After the Rain" },
+        "nameI18n": {
+          "en": "After the Rain",
+          "de": "Nach dem Regen",
+          "fr": "Après la pluie",
+          "es": "Después de la Lluvia",
+          "it": "Dopo la Pioggia"
+        },
         "descriptionI18n": {
-          "en": "Wet balcony, clean air."
+          "en": "Wet balcony, clean air.",
+          "de": "Nasser Balkon, klare Luft.",
+          "fr": "Balcon mouillé, air pur.",
+          "es": "Balcón mojado, aire limpio.",
+          "it": "Balcone bagnato, aria pulita."
         }
       },
       {
         "name": "Şehir Işıkları",
         "description": "Uzakta ışıklar, yakında siz.",
-        "nameI18n": { "en": "City Lights" },
+        "nameI18n": {
+          "en": "City Lights",
+          "de": "Stadtlichter",
+          "fr": "Lumières de la ville",
+          "es": "Luces de la Ciudad",
+          "it": "Luci della Città"
+        },
         "descriptionI18n": {
-          "en": "Lights in the distance, the two of you up close."
+          "en": "Lights in the distance, the two of you up close.",
+          "de": "In der Ferne Lichter, ganz nah ihr beide.",
+          "fr": "Les lumières au loin, vous tout près.",
+          "es": "Luces a lo lejos, ustedes muy cerca.",
+          "it": "Luci lontane, voi vicini."
         }
       },
       {
         "name": "Sabaha Yakın",
         "description": "Gün ağarmadan hemen önce.",
-        "nameI18n": { "en": "Just Before Dawn" },
+        "nameI18n": {
+          "en": "Just Before Dawn",
+          "de": "Kurz vor Morgen",
+          "fr": "Vers le matin",
+          "es": "Cerca del Amanecer",
+          "it": "Verso il Mattino"
+        },
         "descriptionI18n": {
-          "en": "Right before the day breaks."
+          "en": "Right before the day breaks.",
+          "de": "Direkt bevor der Tag anbricht.",
+          "fr": "Juste avant que le jour ne se lève.",
+          "es": "Justo antes de que raye el día.",
+          "it": "Appena prima dell'alba."
         }
       }
     ]
@@ -134,7 +272,13 @@
   {
     "id": "mum-isigi",
     "name": "Mum Işığı",
-    "nameI18n": { "en": "Candlelight" },
+    "nameI18n": {
+      "en": "Candlelight",
+      "de": "Kerzenschein",
+      "fr": "Lueur des bougies",
+      "es": "Luz de Velas",
+      "it": "Lume di Candela"
+    },
     "color": "#F59E0B",
     "icon": "🕯️",
     "track": "cesur",
@@ -144,33 +288,73 @@
       {
         "name": "Salonun Ortası",
         "description": "Mumlar dizili, halı üstü.",
-        "nameI18n": { "en": "Middle of the Living Room" },
+        "nameI18n": {
+          "en": "Middle of the Living Room",
+          "de": "Mitten im Wohnzimmer",
+          "fr": "Au milieu du salon",
+          "es": "El Centro de la Sala",
+          "it": "Al Centro del Salotto"
+        },
         "descriptionI18n": {
-          "en": "Candles in a row, on the rug."
+          "en": "Candles in a row, on the rug.",
+          "de": "Kerzen aufgereiht, auf dem Teppich.",
+          "fr": "Bougies alignées, sur le tapis.",
+          "es": "Velas alineadas, sobre la alfombra.",
+          "it": "Candele allineate, sul tappeto."
         }
       },
       {
         "name": "Ateş Karşısında",
         "description": "Şömine veya büyük mum.",
-        "nameI18n": { "en": "By the Fire" },
+        "nameI18n": {
+          "en": "By the Fire",
+          "de": "Vor dem Feuer",
+          "fr": "Face au feu",
+          "es": "Frente al Fuego",
+          "it": "Davanti al Fuoco"
+        },
         "descriptionI18n": {
-          "en": "A fireplace, or a big candle."
+          "en": "A fireplace, or a big candle.",
+          "de": "Kamin oder große Kerze.",
+          "fr": "Cheminée ou grande bougie.",
+          "es": "Chimenea o una vela grande.",
+          "it": "Camino o una grande candela."
         }
       },
       {
         "name": "Ayna Karşısında",
         "description": "Mum ışığında yansımalar.",
-        "nameI18n": { "en": "In Front of the Mirror" },
+        "nameI18n": {
+          "en": "In Front of the Mirror",
+          "de": "Vor dem Spiegel",
+          "fr": "Face au miroir",
+          "es": "Frente al Espejo",
+          "it": "Davanti allo Specchio"
+        },
         "descriptionI18n": {
-          "en": "Reflections in candlelight."
+          "en": "Reflections in candlelight.",
+          "de": "Spiegelungen im Kerzenlicht.",
+          "fr": "Reflets à la lueur des bougies.",
+          "es": "Reflejos a la luz de las velas.",
+          "it": "Riflessi a lume di candela."
         }
       },
       {
         "name": "Loş Müzik",
         "description": "Sessiz, sadece mum + fısıltı.",
-        "nameI18n": { "en": "Dim Music" },
+        "nameI18n": {
+          "en": "Dim Music",
+          "de": "Gedämpfte Musik",
+          "fr": "Musique tamisée",
+          "es": "Música Tenue",
+          "it": "Musica Soffusa"
+        },
         "descriptionI18n": {
-          "en": "Quiet, just candles + whispers."
+          "en": "Quiet, just candles + whispers.",
+          "de": "Leise, nur Kerze + Flüstern.",
+          "fr": "Silence, rien que la bougie + les chuchotements.",
+          "es": "Silencio, solo velas + susurros.",
+          "it": "Silenzio, solo candele + sussurri."
         }
       }
     ]
@@ -178,7 +362,13 @@
   {
     "id": "otel-odasi",
     "name": "Otel Odası",
-    "nameI18n": { "en": "Hotel Room" },
+    "nameI18n": {
+      "en": "Hotel Room",
+      "de": "Hotelzimmer",
+      "fr": "Chambre d'hôtel",
+      "es": "Habitación de Hotel",
+      "it": "Camera d'Hotel"
+    },
     "color": "#7C2D12",
     "icon": "🏨",
     "track": "cesur",
@@ -188,33 +378,73 @@
       {
         "name": "Şehir Merkezi Otel",
         "description": "Yabancı olmanın verdiği anonimlik.",
-        "nameI18n": { "en": "Downtown Hotel" },
+        "nameI18n": {
+          "en": "Downtown Hotel",
+          "de": "City-Hotel",
+          "fr": "Hôtel en centre-ville",
+          "es": "Hotel en el Centro",
+          "it": "Hotel in Centro"
+        },
         "descriptionI18n": {
-          "en": "The anonymity of being strangers in a city."
+          "en": "The anonymity of being strangers in a city.",
+          "de": "Die Anonymität, fremd zu sein.",
+          "fr": "L'anonymat d'être des inconnus.",
+          "es": "El anonimato de ser extraños.",
+          "it": "L'anonimato di essere stranieri."
         }
       },
       {
         "name": "Manzaralı Suite",
         "description": "Cam kenarı, yatak, manzara.",
-        "nameI18n": { "en": "Suite with a View" },
+        "nameI18n": {
+          "en": "Suite with a View",
+          "de": "Suite mit Aussicht",
+          "fr": "Suite avec vue",
+          "es": "Suite con Vista",
+          "it": "Suite con Vista"
+        },
         "descriptionI18n": {
-          "en": "Window side, bed, view."
+          "en": "Window side, bed, view.",
+          "de": "Am Fenster, Bett, Ausblick.",
+          "fr": "Au bord de la vitre, le lit, la vue.",
+          "es": "Junto al ventanal, la cama, la vista.",
+          "it": "Vicino alla vetrata, letto, panorama."
         }
       },
       {
         "name": "Küçük Boutique",
         "description": "Karakterli, samimi, 1 gecelik.",
-        "nameI18n": { "en": "Tiny Boutique" },
+        "nameI18n": {
+          "en": "Tiny Boutique",
+          "de": "Kleines Boutique",
+          "fr": "Petite boutique",
+          "es": "Pequeño Boutique",
+          "it": "Piccolo Boutique"
+        },
         "descriptionI18n": {
-          "en": "Full of character, intimate, one night."
+          "en": "Full of character, intimate, one night.",
+          "de": "Charaktervoll, intim, nur eine Nacht.",
+          "fr": "Avec du caractère, intime, pour une nuit.",
+          "es": "Con carácter, íntimo, por una noche.",
+          "it": "Di carattere, intimo, per una notte."
         }
       },
       {
         "name": "Deniz Kenarı Otel",
         "description": "Dalga sesi + kapalı perdeler.",
-        "nameI18n": { "en": "Seaside Hotel" },
+        "nameI18n": {
+          "en": "Seaside Hotel",
+          "de": "Hotel am Meer",
+          "fr": "Hôtel en bord de mer",
+          "es": "Hotel Frente al Mar",
+          "it": "Hotel sul Mare"
+        },
         "descriptionI18n": {
-          "en": "The sound of waves + drawn curtains."
+          "en": "The sound of waves + drawn curtains.",
+          "de": "Wellenrauschen + zugezogene Vorhänge.",
+          "fr": "Le bruit des vagues + rideaux tirés.",
+          "es": "Sonido de las olas + cortinas cerradas.",
+          "it": "Suono delle onde + tende chiuse."
         }
       }
     ]
@@ -222,7 +452,13 @@
   {
     "id": "gizli-mekan",
     "name": "Gizli Mekan",
-    "nameI18n": { "en": "Hidden Place" },
+    "nameI18n": {
+      "en": "Hidden Place",
+      "de": "Geheimer Ort",
+      "fr": "Lieu secret",
+      "es": "Lugar Secreto",
+      "it": "Luogo Segreto"
+    },
     "color": "#831843",
     "icon": "🗝️",
     "track": "cesur",
@@ -232,33 +468,73 @@
       {
         "name": "Ofis Sonrası",
         "description": "Boş ofis, gece, yasak hissi.",
-        "nameI18n": { "en": "After the Office" },
+        "nameI18n": {
+          "en": "After the Office",
+          "de": "Nach Feierabend im Büro",
+          "fr": "Après le bureau",
+          "es": "Después de la Oficina",
+          "it": "Dopo l'Ufficio"
+        },
         "descriptionI18n": {
-          "en": "An empty office at night, a forbidden feeling."
+          "en": "An empty office at night, a forbidden feeling.",
+          "de": "Leeres Büro, Nacht, das Gefühl des Verbotenen.",
+          "fr": "Bureau vide, la nuit, un parfum d'interdit.",
+          "es": "Oficina vacía, de noche, sensación de lo prohibido.",
+          "it": "Ufficio vuoto, notte, sensazione di proibito."
         }
       },
       {
         "name": "Araç İçi",
         "description": "Park edilmiş, kapalı camlar.",
-        "nameI18n": { "en": "Inside a Car" },
+        "nameI18n": {
+          "en": "Inside a Car",
+          "de": "Im Auto",
+          "fr": "Dans la voiture",
+          "es": "Dentro del Auto",
+          "it": "In Auto"
+        },
         "descriptionI18n": {
-          "en": "Parked, windows up."
+          "en": "Parked, windows up.",
+          "de": "Geparkt, Scheiben beschlagen.",
+          "fr": "Garée, vitres fermées.",
+          "es": "Estacionado, ventanas cerradas.",
+          "it": "Parcheggiata, finestrini chiusi."
         }
       },
       {
         "name": "Terk Edilmiş Oda",
         "description": "Kimsenin girmediği, siz keşfediyorsunuz.",
-        "nameI18n": { "en": "Forgotten Room" },
+        "nameI18n": {
+          "en": "Forgotten Room",
+          "de": "Verlassener Raum",
+          "fr": "Pièce abandonnée",
+          "es": "Cuarto Abandonado",
+          "it": "Stanza Abbandonata"
+        },
         "descriptionI18n": {
-          "en": "Somewhere no one goes — you're the ones discovering it."
+          "en": "Somewhere no one goes — you're the ones discovering it.",
+          "de": "Wo sonst niemand hingeht, ihr entdeckt ihn.",
+          "fr": "Un endroit où personne ne va, vous l'explorez.",
+          "es": "Donde nadie entra, ustedes lo descubren.",
+          "it": "Dove nessuno entra, la state scoprendo voi."
         }
       },
       {
         "name": "Sürpriz Adres",
         "description": "Bir taraf mekanı seçer, diğeri şaşırır.",
-        "nameI18n": { "en": "Surprise Address" },
+        "nameI18n": {
+          "en": "Surprise Address",
+          "de": "Überraschungsadresse",
+          "fr": "Adresse surprise",
+          "es": "Dirección Sorpresa",
+          "it": "Indirizzo a Sorpresa"
+        },
         "descriptionI18n": {
-          "en": "One of you picks the place; the other is surprised."
+          "en": "One of you picks the place; the other is surprised.",
+          "de": "Eine/r sucht den Ort aus, der/die andere wird überrascht.",
+          "fr": "L'un choisit le lieu, l'autre se laisse surprendre.",
+          "es": "Uno elige el lugar, el otro se sorprende.",
+          "it": "Uno sceglie il luogo, l'altro resta sorpreso."
         }
       }
     ]

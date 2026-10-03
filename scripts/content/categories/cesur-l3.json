@@ -2,7 +2,13 @@
   {
     "id": "rehberin-sozu",
     "name": "Rehberin Sözü",
-    "nameI18n": { "en": "The Guide's Word" },
+    "nameI18n": {
+      "en": "The Guide's Word",
+      "de": "Das Wort des Guides",
+      "fr": "La Parole du Guide",
+      "es": "La Palabra del Guía",
+      "it": "La Parola della Guida"
+    },
     "color": "#1E3A8A",
     "icon": "🌙",
     "track": "cesur",
@@ -24,13 +30,51 @@
         "Face to face: this round, you're the Guide. Give three commands like \"close your eyes, part your lips, hold your breath.\" If they obey, 5 seconds of reward touch.",
         "The Guide offers one side of their hand to the partner: \"kiss.\" Then \"lick.\" Then \"bite.\" Wait 3 seconds between commands.",
         "The Guide says \"come.\" The partner closes the distance in three slow steps — without letting go of the Guide's eyes."
+      ],
+      "de": [
+        "Eine Person wird in dieser Runde zum \"Guide\". Der Guide gibt deinem Partner 3 Befehle — atme ein, schließe die Augen, lecke dir über die Lippen. Der Partner führt sie genau aus.",
+        "Der Guide führt die Hände des Partners zu den eigenen und fragt \"wohin\". Der Partner darf nur \"hierher\" oder \"nicht dort\" sagen. Andere Worte sind verboten.",
+        "Der Guide sagt ein Wort (\"halt\", \"langsamer\", \"nochmal\"). Der Partner verharrt bei diesem Wort vollkommen. 3 Wiederholungen.",
+        "Wechsel: in dieser Runde bist du der Guide. Gib deinem Partner 3 Befehle wie \"schließ die Augen, öffne die Lippen, halt den Atem an\". Wenn er gehorcht, 5 Sekunden Belohnungsberührung.",
+        "Der Guide hält eine Seite seiner Hand deinem Partner hin: \"küss\". Dann \"leck\". Dann \"beiß\". Zwischen jedem Befehl 3 Sekunden warten.",
+        "Der Guide sagt \"komm\". Der Partner schließt die Distanz langsam in 3 Schritten — ohne die Augen des Guides loszulassen."
+      ],
+      "fr": [
+        "Une personne devient le \"Guide\" ce tour-ci. Le Guide donne 3 ordres à son/sa partenaire — respire, ferme les yeux, lèche-toi les lèvres. Le/la partenaire exécute parfaitement.",
+        "Le Guide porte les mains de son/sa partenaire vers les siennes et demande \"où\". Le/la partenaire ne peut dire que \"ici\" ou \"pas là\". Les autres mots sont interdits.",
+        "Le Guide dit un mot (\"arrête\", \"ralentis\", \"encore\"). Le/la partenaire reste figé(e) exactement sur ce mot. 3 répétitions.",
+        "À ton tour : ce tour-ci, le Guide, c'est toi. Donne 3 ordres à ton/ta partenaire comme \"ferme les yeux, ouvre les lèvres, retiens ton souffle\". S'il/elle obéit, 5 secondes de caresse en récompense.",
+        "Le Guide tend un côté de sa main à son/sa partenaire : \"embrasse\". Puis \"lèche\". Puis \"mords\". 3 secondes d'attente entre chaque ordre.",
+        "Le Guide dit \"viens\". Le/la partenaire ferme la distance lentement en 3 pas — sans lâcher les yeux du Guide."
+      ],
+      "es": [
+        "Una persona es el \"Guía\" en esta ronda. El Guía le da 3 órdenes a su pareja — respira, cierra los ojos, lámete los labios. La pareja las cumple al pie de la letra.",
+        "El Guía lleva las manos de su pareja hacia las suyas y pregunta \"¿dónde?\". La pareja solo puede decir \"aquí\" o \"ahí no\". Otras palabras están prohibidas.",
+        "El Guía dice una palabra (\"detente\", \"más lento\", \"otra vez\"). La pareja se queda exactamente en esa palabra. 3 repeticiones.",
+        "Al revés: en esta ronda el Guía eres tú. Dale a tu pareja 3 órdenes como \"cierra los ojos, abre los labios, aguanta la respiración\". Si obedece, 5 segundos de caricia como premio.",
+        "El Guía extiende un lado de su mano hacia su pareja: \"besa\". Luego \"lame\". Luego \"muerde\". Espera 3 segundos entre cada orden.",
+        "El Guía dice \"ven\". La pareja acorta la distancia lentamente en 3 pasos — sin soltar los ojos del Guía."
+      ],
+      "it": [
+        "In questo turno una persona diventa la \"Guida\". La Guida dà 3 comandi al partner — respira, chiudi gli occhi, leccati le labbra. Il partner esegue alla lettera.",
+        "La Guida porta le mani del partner sulle proprie e chiede \"dove?\". Il partner può rispondere solo \"qui\" o \"non lì\". Nessun'altra parola è permessa.",
+        "La Guida pronuncia una parola (\"fermati\", \"rallenta\", \"ancora\"). Il partner si ferma esattamente in quel gesto. 3 ripetizioni.",
+        "Scambio: in questo turno la Guida sei tu. Dai al partner 3 comandi tipo \"chiudi gli occhi, apri le labbra, trattieni il respiro\". Se obbedisce, 5 secondi di tocco come premio.",
+        "La Guida porge un lato della mano al partner: \"bacia\". Poi \"lecca\". Poi \"mordi\". Tra un comando e l'altro, aspetta 3 secondi.",
+        "La Guida dice \"vieni\". Il partner colma la distanza lentamente in 3 passi — senza mai staccare gli occhi da quelli della Guida."
       ]
     }
   },
   {
     "id": "kucuk-direnis",
     "name": "Küçük Direniş",
-    "nameI18n": { "en": "Little Resistance" },
+    "nameI18n": {
+      "en": "Little Resistance",
+      "de": "Kleiner Widerstand",
+      "fr": "Petite Résistance",
+      "es": "Pequeña Resistencia",
+      "it": "Piccola Resistenza"
+    },
     "color": "#DB2777",
     "icon": "🎭",
     "track": "cesur",
@@ -52,13 +96,51 @@
         "Your partner says they want to do something. You say \"maybe.\" When they say \"promise?\" say \"I won't.\" After three rounds, let them.",
         "Your partner asks for a kiss. Ask \"have you earned it?\" Let them give three reasons. When they pick the most convincing one, kiss them.",
         "Flip the role. You set the rule this round: \"if you let me do X, you get Y.\" Hold the trade no matter what."
+      ],
+      "de": [
+        "Dein Partner gibt dir einen Befehl. Mach genau das Gegenteil — aber mit einem Lächeln. Mal sehen, wie viele Sekunden er aushält, ohne dich zu reizen.",
+        "Dein Partner sagt dir \"sei still\". Du machst 30 Sekunden lang das genaue Gegenteil — Lachen, hörbares Atmen, verführerische Worte. Wer gewinnt am Ende?",
+        "Dein Partner nähert sich dir. Zieh dich 3 Mal zurück — aber geh nicht weg. Nähe ist Spannung, Widerstand ist Spiel.",
+        "Dein Partner sagt, er will etwas tun. Antworte \"vielleicht\". Wenn er \"versprich es\" sagt, antworte \"werde ich nicht\" — nach 3 Wiederholungen lass es zu.",
+        "Dein Partner will einen Kuss. Frag \"hast du ihn verdient?\" Er soll 3 Gründe nennen. Küss ihn, wenn du den überzeugendsten gewählt hast.",
+        "Dreh die Rollen um. In dieser Runde bestimmst du die Regel: \"wenn du mir X machen lässt, gibt es Y zurück.\" Was auch kommt, antworte darauf."
+      ],
+      "fr": [
+        "Ton/ta partenaire te donne un ordre. Fais exactement l'inverse — mais en souriant. Voyons combien de secondes il/elle tiendra avant de céder à la provocation.",
+        "Ton/ta partenaire te dit \"tais-toi\". Pendant 30 secondes, fais tout le contraire — rires, souffles sonores, mots provocants. Qui gagnera à la fin ?",
+        "Ton/ta partenaire s'approche. Recule 3 fois — mais sans t'éloigner. La proximité, c'est la tension ; la résistance, c'est le jeu.",
+        "Ton/ta partenaire te dit qu'il/elle veut faire un geste. Toi, dis \"peut-être\". Quand il/elle dit \"promets\", réponds \"je ne le ferai pas\" — après 3 répétitions, cède.",
+        "Ton/ta partenaire veut un baiser. Demande \"tu l'as mérité ?\". Qu'il/elle avance 3 raisons. Quand tu choisis la plus convaincante, embrasse.",
+        "Les rôles s'inversent. Ce tour-ci, c'est toi qui poses la règle : \"si tu me laisses te faire X, en échange Y.\" Quoi qu'il/elle propose, réponds par la pareille."
+      ],
+      "es": [
+        "Tu pareja te da una orden. Haz justo lo contrario — pero sonriendo. A ver cuántos segundos aguanta sin provocarte.",
+        "Tu pareja te dice \"guarda silencio\". Durante 30 segundos haz justo lo opuesto — risa, suspiros, palabras provocadoras. ¿Al final, quién gana?",
+        "Tu pareja se acerca. Retrocede 3 veces — pero sin alejarte. Cercanía como tensión, resistencia como juego.",
+        "Tu pareja te dice que quiere hacer un movimiento. Tú di \"quizás\". Cuando diga \"prométemelo\", di \"no lo haré\" — tras 3 repeticiones, cede.",
+        "Tu pareja te pide un beso. Pregúntale \"¿te lo has ganado?\". Que te dé 3 razones. Cuando elijas la más convincente, bésale.",
+        "Invierte los papeles. En esta ronda tú pones las reglas: \"si me dejas hacerte X, a cambio Y.\" Pase lo que pase, responde con lo prometido."
+      ],
+      "it": [
+        "Il partner ti dà un comando. Tu fai l'esatto contrario — ma sorridendo. Vediamo quanti secondi resiste senza provocarti ancora.",
+        "Il partner ti dice \"stai zitto/a\". Tu per 30 secondi fai il contrario — risate, respiri sonori, parole provocanti. Alla fine, chi vince?",
+        "Il partner si avvicina. Tu ti ritrai 3 volte — ma non ti allontani. Vicinanza come tensione, resistenza come gioco.",
+        "Il partner dice di voler fare un gesto. Tu rispondi \"forse\". Quando dice \"promettimelo\", tu dici \"non lo farò\" — dopo 3 ripetizioni, concedi.",
+        "Il partner chiede un bacio. Tu chiedi \"te lo sei meritato?\". Che ti dia 3 motivi. Quando scegli il più convincente, bacialo.",
+        "Inversione dei ruoli. In questo turno le regole le fai tu: \"se mi lasci fare X, in cambio Y\". Qualunque sia la risposta, mantieni la parola."
       ]
     }
   },
   {
     "id": "ilk-damar",
     "name": "İlk Damar",
-    "nameI18n": { "en": "First Pulse" },
+    "nameI18n": {
+      "en": "First Pulse",
+      "de": "Erste Ader",
+      "fr": "Première Veine",
+      "es": "La Primera Vena",
+      "it": "Prima Vena"
+    },
     "color": "#C2410C",
     "icon": "✋",
     "track": "cesur",
@@ -80,6 +162,38 @@
         "With your fingers, trace a line down their back for 10 seconds under light pressure — felt, but leaving no mark.",
         "Ask your partner \"soft or hard?\" Based on their answer, give three taps on their shoulder with your palm.",
         "Softly cup their wrist or neck with your hand. Hold the grip for 5 seconds, then let go. Again, 5 seconds. Build rhythm and trust."
+      ],
+      "de": [
+        "Gib deinem Partner mit offener Hand 3 sanfte, dosierte Schläge auf den Rücken — zwischen jedem 5 Sekunden Pause. Frag nach jedem Schlag \"weiter?\".",
+        "Gib dem Po deines Partners zuerst 3 Sekunden lang Wärme mit der Hand, dann eine einzige sanfte Berührung. Lass ihn in Worten sagen, was er gespürt hat.",
+        "Klopfe mit den Handflächen 5 Mal rhythmisch, aber leicht auf den Oberschenkel deines Partners — wie ein Musikrhythmus. Frag dann \"welcher am meisten?\".",
+        "Zeichne mit deinen Fingern 10 Sekunden lang eine Linie mit leichtem Druck auf den Rücken deines Partners — spürbar, aber ohne Spuren.",
+        "Frag deinen Partner \"sanft oder hart?\". Je nach Antwort gib ihm 3 Schläge mit der Handfläche auf die Schulter.",
+        "Umschließe das Handgelenk oder den Hals deines Partners sanft mit deinen Händen. Halt den Griff 5 Sekunden, dann lass los. Wieder 5 Sekunden. Bau Rhythmus und Vertrauen auf."
+      ],
+      "fr": [
+        "Donne 3 petites tapes douces et mesurées sur le dos de ton/ta partenaire avec la paume ouverte — 5 secondes entre chacune. Après chaque tape, demande \"on continue ?\".",
+        "Sur la hanche de ton/ta partenaire, offre d'abord 3 secondes de chaleur avec ta main, puis une seule caresse douce. Qu'il/elle dise à voix haute ce qu'il/elle a ressenti en retour.",
+        "Avec la paume de tes mains, donne 5 tapes rythmées mais légères sur la cuisse de ton/ta partenaire — comme un rythme de musique. Puis demande \"laquelle le plus ?\".",
+        "Avec tes doigts, trace une ligne de 10 secondes à pression légère sur le dos de ton/ta partenaire — perceptible mais sans laisser de trace.",
+        "Demande à ton/ta partenaire \"doux ou fort ?\". Selon sa réponse, donne 3 tapes avec ta paume sur son épaule.",
+        "Enserre doucement le poignet ou la nuque de ton/ta partenaire. Tiens la prise 5 secondes, puis relâche. À nouveau 5 secondes. Installe un rythme et une confiance."
+      ],
+      "es": [
+        "Dale a tu pareja 3 palmadas suaves y medidas en la espalda con la palma abierta — con 5 segundos entre cada una. Después de cada palmada pregunta \"¿sigo?\".",
+        "En la cadera de tu pareja, primero dale 3 segundos de calor con la mano, luego un único toque suave. Que te diga con palabras qué sintió.",
+        "Con la palma de la mano, dale 5 golpecitos rítmicos pero ligeros en el muslo de tu pareja — como un ritmo musical. Luego pregunta \"¿cuál más?\".",
+        "Con tus dedos, traza una línea de 10 segundos con presión ligera en la espalda de tu pareja — que se sienta pero sin dejar marca.",
+        "Pregúntale a tu pareja \"¿suave o fuerte?\". Según su respuesta, dale 3 palmadas en el hombro con la palma de la mano.",
+        "Toma la muñeca o el cuello de tu pareja con un agarre suave. Sostén 5 segundos, luego suelta. Otros 5 segundos. Construye ritmo y confianza."
+      ],
+      "it": [
+        "Dai 3 colpetti morbidi e misurati sulla schiena del partner con il palmo aperto — 5 secondi di pausa tra uno e l'altro. Dopo ogni colpo chiedi \"continuo?\".",
+        "Sul fianco del partner, prima scalda per 3 secondi con la mano, poi un unico tocco morbido. Che ti dica a voce cosa ha sentito.",
+        "Con il palmo delle mani, dai 5 colpetti ritmici ma leggeri sulla coscia del partner — come un ritmo musicale. Poi chiedi \"quale di più?\".",
+        "Con le dita, traccia una linea di 10 secondi con lieve pressione sulla schiena del partner — percepibile ma senza lasciare segno.",
+        "Chiedi al partner \"morbido o deciso?\". In base alla risposta, dai 3 colpetti con il palmo sulla sua spalla.",
+        "Afferra lievemente il polso o il collo del partner. Mantieni la presa per 5 secondi, poi lascia. Di nuovo 5 secondi. Costruisci ritmo e fiducia."
       ]
     }
   }

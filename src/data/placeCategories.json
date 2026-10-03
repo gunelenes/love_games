@@ -2,40 +2,86 @@
   {
     "id": "kafe",
     "name": "Kafe",
-    "nameI18n": { "en": "Café" },
+    "nameI18n": {
+      "en": "Café",
+      "de": "Café",
+      "fr": "Café",
+      "es": "Café",
+      "it": "Caffè"
+    },
     "color": "#C97B4D",
     "icon": "☕",
     "places": [
       {
         "name": "Sabah kahvesi köşesi",
         "description": "Sokağın en sessiz kafesinde günün ilk kahvesi.",
-        "nameI18n": { "en": "Morning-coffee corner" },
+        "nameI18n": {
+          "en": "Morning-coffee corner",
+          "de": "Morgenkaffee-Ecke",
+          "fr": "Coin du café matinal",
+          "es": "Rincón del café matutino",
+          "it": "Angolo del caffè mattutino"
+        },
         "descriptionI18n": {
-          "en": "The first coffee of the day at the quietest café on the street."
+          "en": "The first coffee of the day at the quietest café on the street.",
+          "de": "Der erste Kaffee des Tages im stillsten Café der Straße.",
+          "fr": "Le premier café de la journée dans le café le plus calme de la rue.",
+          "es": "El primer café del día en el lugar más silencioso de la calle.",
+          "it": "Il primo caffè della giornata nel locale più silenzioso della via."
         }
       },
       {
         "name": "Kitaplı kafe",
         "description": "Kitap kokusu ve fısıltıyla dolu bir mekan.",
-        "nameI18n": { "en": "Book café" },
+        "nameI18n": {
+          "en": "Book café",
+          "de": "Buchcafé",
+          "fr": "Café-librairie",
+          "es": "Café con libros",
+          "it": "Caffè letterario"
+        },
         "descriptionI18n": {
-          "en": "A place that smells of old books and hushed voices."
+          "en": "A place that smells of old books and hushed voices.",
+          "de": "Ein Ort voller Buchduft und Geflüster.",
+          "fr": "Un lieu rempli de l'odeur des livres et de chuchotements.",
+          "es": "Un lugar lleno de aroma a libros y susurros.",
+          "it": "Un posto pieno di profumo di libri e sussurri."
         }
       },
       {
         "name": "Manzaralı çatı katı",
         "description": "Şehri tepeden izleyerek uzun bir latte.",
-        "nameI18n": { "en": "Rooftop with a view" },
+        "nameI18n": {
+          "en": "Rooftop with a view",
+          "de": "Dachterrasse mit Aussicht",
+          "fr": "Rooftop avec vue",
+          "es": "Terraza con vista",
+          "it": "Terrazza panoramica"
+        },
         "descriptionI18n": {
-          "en": "A slow latte while watching the city from above."
+          "en": "A slow latte while watching the city from above.",
+          "de": "Ein langer Latte, während ihr die Stadt von oben beobachtet.",
+          "fr": "Un long latte en contemplant la ville d'en haut.",
+          "es": "Un latte largo mirando la ciudad desde las alturas.",
+          "it": "Un lungo latte guardando la città dall'alto."
         }
       },
       {
         "name": "Küçük ara sokak",
         "description": "Tesadüfen keşfedilecek karakterli bir yer.",
-        "nameI18n": { "en": "Tiny side street" },
+        "nameI18n": {
+          "en": "Tiny side street",
+          "de": "Kleine Seitengasse",
+          "fr": "Petite ruelle",
+          "es": "Callejón escondido",
+          "it": "Piccolo vicolo"
+        },
         "descriptionI18n": {
-          "en": "A full-of-character place to stumble into by accident."
+          "en": "A full-of-character place to stumble into by accident.",
+          "de": "Ein eigenwilliger Ort, den man zufällig entdeckt.",
+          "fr": "Un endroit plein de caractère à découvrir par hasard.",
+          "es": "Un lugar con carácter para descubrir por casualidad.",
+          "it": "Un posto pieno di carattere, da scoprire per caso."
         }
       }
     ],
@@ -45,40 +91,86 @@
   {
     "id": "restoran",
     "name": "Restoran",
-    "nameI18n": { "en": "Restaurant" },
+    "nameI18n": {
+      "en": "Restaurant",
+      "de": "Restaurant",
+      "fr": "Restaurant",
+      "es": "Restaurante",
+      "it": "Ristorante"
+    },
     "color": "#D64545",
     "icon": "🍽️",
     "places": [
       {
         "name": "İtalyan akşamı",
         "description": "Mum ışığında pasta ve kırmızı şarap.",
-        "nameI18n": { "en": "Italian evening" },
+        "nameI18n": {
+          "en": "Italian evening",
+          "de": "Italienischer Abend",
+          "fr": "Soirée italienne",
+          "es": "Noche italiana",
+          "it": "Serata italiana"
+        },
         "descriptionI18n": {
-          "en": "Pasta and red wine by candlelight."
+          "en": "Pasta and red wine by candlelight.",
+          "de": "Pasta und Rotwein bei Kerzenschein.",
+          "fr": "Pâtes et vin rouge aux chandelles.",
+          "es": "Pasta y vino tinto a la luz de las velas.",
+          "it": "Pasta e vino rosso a lume di candela."
         }
       },
       {
         "name": "Deniz kenarı",
         "description": "Dalga sesi + taze balık.",
-        "nameI18n": { "en": "Seaside table" },
+        "nameI18n": {
+          "en": "Seaside table",
+          "de": "Am Meer",
+          "fr": "Bord de mer",
+          "es": "Frente al mar",
+          "it": "In riva al mare"
+        },
         "descriptionI18n": {
-          "en": "The sound of waves + fresh fish."
+          "en": "The sound of waves + fresh fish.",
+          "de": "Wellenrauschen + frischer Fisch.",
+          "fr": "Le bruit des vagues + du poisson frais.",
+          "es": "Sonido de las olas + pescado fresco.",
+          "it": "Rumore delle onde + pesce fresco."
         }
       },
       {
         "name": "Sokak lezzeti",
         "description": "Yerel mekanda dumanı üstünde yemek.",
-        "nameI18n": { "en": "Street food" },
+        "nameI18n": {
+          "en": "Street food",
+          "de": "Straßenküche",
+          "fr": "Saveur de rue",
+          "es": "Sabor callejero",
+          "it": "Sapore di strada"
+        },
         "descriptionI18n": {
-          "en": "Piping-hot food at a local hole-in-the-wall."
+          "en": "Piping-hot food at a local hole-in-the-wall.",
+          "de": "Dampfendes Essen in einem lokalen Laden.",
+          "fr": "Un plat fumant dans un lieu local.",
+          "es": "Comida humeante en un lugar local.",
+          "it": "Cibo fumante in un locale locale."
         }
       },
       {
         "name": "Aile mutfağı",
         "description": "Küçük, samimi, ev usulü.",
-        "nameI18n": { "en": "Family kitchen" },
+        "nameI18n": {
+          "en": "Family kitchen",
+          "de": "Familienküche",
+          "fr": "Cuisine familiale",
+          "es": "Cocina familiar",
+          "it": "Cucina di famiglia"
+        },
         "descriptionI18n": {
-          "en": "Small, warm, home-style cooking."
+          "en": "Small, warm, home-style cooking.",
+          "de": "Klein, herzlich, hausgemacht.",
+          "fr": "Petit, intime, fait maison.",
+          "es": "Pequeño, íntimo, estilo casero.",
+          "it": "Piccolo, intimo, fatto in casa."
         }
       }
     ],
@@ -88,40 +180,86 @@
   {
     "id": "park",
     "name": "Park",
-    "nameI18n": { "en": "Park" },
+    "nameI18n": {
+      "en": "Park",
+      "de": "Park",
+      "fr": "Parc",
+      "es": "Parque",
+      "it": "Parco"
+    },
     "color": "#4CAF50",
     "icon": "🌳",
     "places": [
       {
         "name": "Piknik battaniyesi",
         "description": "Sepet, meyve, çilekli limonata.",
-        "nameI18n": { "en": "Picnic blanket" },
+        "nameI18n": {
+          "en": "Picnic blanket",
+          "de": "Picknickdecke",
+          "fr": "Couverture de pique-nique",
+          "es": "Manta de picnic",
+          "it": "Coperta da picnic"
+        },
         "descriptionI18n": {
-          "en": "A basket, fruit, strawberry lemonade."
+          "en": "A basket, fruit, strawberry lemonade.",
+          "de": "Korb, Obst, Erdbeerlimonade.",
+          "fr": "Panier, fruits, limonade à la fraise.",
+          "es": "Canasta, fruta, limonada con fresas.",
+          "it": "Cesto, frutta, limonata alla fragola."
         }
       },
       {
         "name": "Akşam yürüyüşü",
         "description": "Gün batımında el ele bir tur.",
-        "nameI18n": { "en": "Evening walk" },
+        "nameI18n": {
+          "en": "Evening walk",
+          "de": "Abendspaziergang",
+          "fr": "Promenade du soir",
+          "es": "Caminata al atardecer",
+          "it": "Passeggiata serale"
+        },
         "descriptionI18n": {
-          "en": "A loop hand in hand at sunset."
+          "en": "A loop hand in hand at sunset.",
+          "de": "Hand in Hand bei Sonnenuntergang.",
+          "fr": "Un tour main dans la main au coucher du soleil.",
+          "es": "Una vuelta de la mano al caer el sol.",
+          "it": "Un giro mano nella mano al tramonto."
         }
       },
       {
         "name": "Bank üstünde",
         "description": "Ağaç altında kitap ve kulaklık paylaşımı.",
-        "nameI18n": { "en": "On a park bench" },
+        "nameI18n": {
+          "en": "On a park bench",
+          "de": "Auf der Bank",
+          "fr": "Sur un banc",
+          "es": "Sobre la banca",
+          "it": "Sulla panchina"
+        },
         "descriptionI18n": {
-          "en": "A book under a tree and one shared pair of earbuds."
+          "en": "A book under a tree and one shared pair of earbuds.",
+          "de": "Unter dem Baum ein Buch und ein Kopfhörer zu zweit.",
+          "fr": "Un livre sous un arbre et des écouteurs partagés.",
+          "es": "Un libro y audífonos compartidos bajo un árbol.",
+          "it": "Un libro sotto l'albero e le cuffie da condividere."
         }
       },
       {
         "name": "Sabahın erken saati",
         "description": "Kuş sesleri, sadece siz ikiniz.",
-        "nameI18n": { "en": "Early morning" },
+        "nameI18n": {
+          "en": "Early morning",
+          "de": "Früher Morgen",
+          "fr": "Petit matin",
+          "es": "Temprano por la mañana",
+          "it": "Prime ore del mattino"
+        },
         "descriptionI18n": {
-          "en": "Birdsong, and only the two of you."
+          "en": "Birdsong, and only the two of you.",
+          "de": "Vogelgezwitscher, nur ihr beide.",
+          "fr": "Le chant des oiseaux, rien que vous deux.",
+          "es": "El canto de los pájaros, solo ustedes dos.",
+          "it": "Il canto degli uccelli, soltanto voi due."
         }
       }
     ],
@@ -131,40 +269,86 @@
   {
     "id": "sinema",
     "name": "Sinema",
-    "nameI18n": { "en": "Cinema" },
+    "nameI18n": {
+      "en": "Cinema",
+      "de": "Kino",
+      "fr": "Cinéma",
+      "es": "Cine",
+      "it": "Cinema"
+    },
     "color": "#6A4C93",
     "icon": "🎬",
     "places": [
       {
         "name": "Klasik salon + patlamış mısır",
         "description": "Karanlık salon, koltuğa iyice yerleşin.",
-        "nameI18n": { "en": "Classic theater + popcorn" },
+        "nameI18n": {
+          "en": "Classic theater + popcorn",
+          "de": "Klassischer Saal + Popcorn",
+          "fr": "Salle classique + popcorn",
+          "es": "Sala clásica + palomitas",
+          "it": "Sala classica + popcorn"
+        },
         "descriptionI18n": {
-          "en": "Dim room — sink deep into your seats."
+          "en": "Dim room — sink deep into your seats.",
+          "de": "Dunkler Saal, macht es euch im Sessel bequem.",
+          "fr": "Salle obscure, installez-vous bien dans vos fauteuils.",
+          "es": "Sala oscura, acomódense bien en el asiento.",
+          "it": "Sala buia, sprofondate nella poltrona."
         }
       },
       {
         "name": "Bağımsız film gecesi",
         "description": "Az bilinen bir yönetmenden.",
-        "nameI18n": { "en": "Indie film night" },
+        "nameI18n": {
+          "en": "Indie film night",
+          "de": "Independent-Filmabend",
+          "fr": "Soirée film indépendant",
+          "es": "Noche de cine independiente",
+          "it": "Serata film indipendente"
+        },
         "descriptionI18n": {
-          "en": "Something from a lesser-known director."
+          "en": "Something from a lesser-known director.",
+          "de": "Von einer kaum bekannten Regie.",
+          "fr": "D'un réalisateur peu connu.",
+          "es": "De un director poco conocido.",
+          "it": "Di un regista poco conosciuto."
         }
       },
       {
         "name": "Açık hava sineması",
         "description": "Yıldızların altında ekran.",
-        "nameI18n": { "en": "Open-air cinema" },
+        "nameI18n": {
+          "en": "Open-air cinema",
+          "de": "Freiluftkino",
+          "fr": "Cinéma en plein air",
+          "es": "Cine al aire libre",
+          "it": "Cinema all'aperto"
+        },
         "descriptionI18n": {
-          "en": "A screen under the stars."
+          "en": "A screen under the stars.",
+          "de": "Leinwand unter den Sternen.",
+          "fr": "Un écran sous les étoiles.",
+          "es": "Una pantalla bajo las estrellas.",
+          "it": "Schermo sotto le stelle."
         }
       },
       {
         "name": "Evde festival",
         "description": "Sinemaya gitmek yerine 3 kısa film seçin.",
-        "nameI18n": { "en": "Home festival" },
+        "nameI18n": {
+          "en": "Home festival",
+          "de": "Festival zu Hause",
+          "fr": "Festival à la maison",
+          "es": "Festival en casa",
+          "it": "Festival in casa"
+        },
         "descriptionI18n": {
-          "en": "Skip the theater — pick 3 short films instead."
+          "en": "Skip the theater — pick 3 short films instead.",
+          "de": "Statt ins Kino zu gehen, wählt 3 Kurzfilme aus.",
+          "fr": "Au lieu d'aller au cinéma, choisissez 3 courts métrages.",
+          "es": "En vez de ir al cine, elijan 3 cortometrajes.",
+          "it": "Invece di andare al cinema, scegliete 3 cortometraggi."
         }
       }
     ],
@@ -174,40 +358,86 @@
   {
     "id": "ev",
     "name": "Ev Baş Başa",
-    "nameI18n": { "en": "Home, Just Us" },
+    "nameI18n": {
+      "en": "Home, Just Us",
+      "de": "Zuhause zu zweit",
+      "fr": "En tête-à-tête à la maison",
+      "es": "En Casa a Solas",
+      "it": "Casa a Due"
+    },
     "color": "#EC7CAB",
     "icon": "🏠",
     "places": [
       {
         "name": "Battaniye tüneli",
         "description": "Salonda kaleyi kur, filmi başlat.",
-        "nameI18n": { "en": "Blanket fort" },
+        "nameI18n": {
+          "en": "Blanket fort",
+          "de": "Deckentunnel",
+          "fr": "Tunnel de couvertures",
+          "es": "Túnel de mantas",
+          "it": "Tunnel di coperte"
+        },
         "descriptionI18n": {
-          "en": "Build the fort in the living room, roll the movie."
+          "en": "Build the fort in the living room, roll the movie.",
+          "de": "Bau die Burg im Wohnzimmer, starte den Film.",
+          "fr": "Monte le fort dans le salon, lance le film.",
+          "es": "Arma el fuerte en la sala, pon la película.",
+          "it": "Costruisci il castello in salotto, fai partire il film."
         }
       },
       {
         "name": "Mutfak dansı",
         "description": "Birlikte yemek yaparken müzik açık.",
-        "nameI18n": { "en": "Kitchen dance" },
+        "nameI18n": {
+          "en": "Kitchen dance",
+          "de": "Küchentanz",
+          "fr": "Danse en cuisine",
+          "es": "Baile en la cocina",
+          "it": "Danza in cucina"
+        },
         "descriptionI18n": {
-          "en": "Music on while you cook together."
+          "en": "Music on while you cook together.",
+          "de": "Beim gemeinsamen Kochen läuft Musik.",
+          "fr": "Musique à fond pendant que vous cuisinez ensemble.",
+          "es": "Música sonando mientras cocinan juntos.",
+          "it": "Musica accesa mentre cucinate insieme."
         }
       },
       {
         "name": "Balkon ışıkları",
         "description": "Işıkları kapa, mumları yak.",
-        "nameI18n": { "en": "Balcony lights" },
+        "nameI18n": {
+          "en": "Balcony lights",
+          "de": "Balkonlichter",
+          "fr": "Lumières du balcon",
+          "es": "Luces del balcón",
+          "it": "Luci sul balcone"
+        },
         "descriptionI18n": {
-          "en": "Turn the lights off, light the candles."
+          "en": "Turn the lights off, light the candles.",
+          "de": "Mach das Licht aus, zünd die Kerzen an.",
+          "fr": "Éteins les lumières, allume les bougies.",
+          "es": "Apaga las luces, enciende las velas.",
+          "it": "Spegni le luci, accendi le candele."
         }
       },
       {
         "name": "Yatak oturumu",
         "description": "Yastıklar arası uzun sohbet.",
-        "nameI18n": { "en": "Bed session" },
+        "nameI18n": {
+          "en": "Bed session",
+          "de": "Bettgespräch",
+          "fr": "Séance au lit",
+          "es": "Sesión de cama",
+          "it": "Seduta sul letto"
+        },
         "descriptionI18n": {
-          "en": "A long talk among the pillows."
+          "en": "A long talk among the pillows.",
+          "de": "Ein langes Gespräch zwischen Kissen.",
+          "fr": "Une longue conversation entre les oreillers.",
+          "es": "Charla larga entre almohadas.",
+          "it": "Una lunga chiacchierata tra i cuscini."
         }
       }
     ],
@@ -217,40 +447,86 @@
   {
     "id": "surpriz",
     "name": "Sürpriz",
-    "nameI18n": { "en": "Surprise" },
+    "nameI18n": {
+      "en": "Surprise",
+      "de": "Überraschung",
+      "fr": "Surprise",
+      "es": "Sorpresa",
+      "it": "Sorpresa"
+    },
     "color": "#F0A500",
     "icon": "🎁",
     "places": [
       {
         "name": "Rastgele araba yolu",
         "description": "GPS'siz, sadece \"sağa\" ve \"sola\" kararlarıyla.",
-        "nameI18n": { "en": "Random drive" },
+        "nameI18n": {
+          "en": "Random drive",
+          "de": "Zufällige Autofahrt",
+          "fr": "Route en voiture au hasard",
+          "es": "Ruta al azar en auto",
+          "it": "Strada a caso in auto"
+        },
         "descriptionI18n": {
-          "en": "No GPS — only \"left\" and \"right\" decisions."
+          "en": "No GPS — only \"left\" and \"right\" decisions.",
+          "de": "Ohne GPS, nur mit \"rechts\" und \"links\" entscheiden.",
+          "fr": "Sans GPS, juste avec des décisions \"à droite\" et \"à gauche\".",
+          "es": "Sin GPS, solo con decisiones de \"a la derecha\" y \"a la izquierda\".",
+          "it": "Senza GPS, solo con decisioni \"a destra\" e \"a sinistra\"."
         }
       },
       {
         "name": "İlk buluşma yeniden",
         "description": "Aynı yeri, aynı sırayla.",
-        "nameI18n": { "en": "First date, again" },
+        "nameI18n": {
+          "en": "First date, again",
+          "de": "Erstes Date noch mal",
+          "fr": "Premier rendez-vous rejoué",
+          "es": "La primera cita otra vez",
+          "it": "Primo appuntamento, di nuovo"
+        },
         "descriptionI18n": {
-          "en": "Same place, same order of events."
+          "en": "Same place, same order of events.",
+          "de": "Derselbe Ort, dieselbe Reihenfolge.",
+          "fr": "Le même endroit, dans le même ordre.",
+          "es": "El mismo lugar, en el mismo orden.",
+          "it": "Stesso posto, stesso ordine."
         }
       },
       {
         "name": "Yeni bir mahalle",
         "description": "Hiç gitmediğiniz semte doğru.",
-        "nameI18n": { "en": "A new neighborhood" },
+        "nameI18n": {
+          "en": "A new neighborhood",
+          "de": "Ein neues Viertel",
+          "fr": "Un nouveau quartier",
+          "es": "Un barrio nuevo",
+          "it": "Un quartiere nuovo"
+        },
         "descriptionI18n": {
-          "en": "Head toward a district you've never set foot in."
+          "en": "Head toward a district you've never set foot in.",
+          "de": "In einen Stadtteil, in dem ihr noch nie wart.",
+          "fr": "Vers un quartier où vous n'êtes jamais allés.",
+          "es": "Hacia una zona a la que nunca han ido.",
+          "it": "Verso una zona in cui non siete mai stati."
         }
       },
       {
         "name": "Rol yap gecesi",
         "description": "Kendinizi yabancı gibi tanıştırın — bir cafede buluşun.",
-        "nameI18n": { "en": "Roleplay night" },
+        "nameI18n": {
+          "en": "Roleplay night",
+          "de": "Rollenspiel-Abend",
+          "fr": "Soirée jeu de rôle",
+          "es": "Noche de rol",
+          "it": "Serata di ruolo"
+        },
         "descriptionI18n": {
-          "en": "Introduce yourselves as strangers — meet at a café."
+          "en": "Introduce yourselves as strangers — meet at a café.",
+          "de": "Stellt euch wie Fremde vor — trefft euch in einem Café.",
+          "fr": "Présentez-vous comme des inconnus — retrouvez-vous dans un café.",
+          "es": "Preséntense como extraños — encuéntrense en un café.",
+          "it": "Presentatevi come due sconosciuti — incontratevi in un caffè."
         }
       }
     ],

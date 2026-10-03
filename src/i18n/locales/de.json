@@ -1,0 +1,222 @@
+{
+  "app": {
+    "loading": "Lädt …"
+  },
+  "common": {
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "delete": "Löschen",
+    "save": "Speichern",
+    "retry": "Erneut",
+    "error": "Fehler:"
+  },
+  "home": {
+    "eyebrow": "FÜR PAARE",
+    "title": "Love Games",
+    "subtitle": "Mini-Spiele für euch zu zweit",
+    "footer": "Weitere Spiele kommen bald ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Rad",
+      "tagline": "Dreh und finde eure Kategorie"
+    },
+    "dice": {
+      "name": "Würfel",
+      "tagline": "Würfle — lass dich überraschen"
+    },
+    "cards": {
+      "name": "Karten",
+      "tagline": "Wählt Kategorien, zieht eine Karte"
+    },
+    "boxes": {
+      "name": "Boxen",
+      "tagline": "Zettel mischen, euch überraschen"
+    }
+  },
+  "wheel": {
+    "eyebrow": "RAD",
+    "title": "Dreh das Rad",
+    "spinPrompt": "Tipp auf den Knopf in der Mitte",
+    "spinBtn": "DREHEN",
+    "spinAgain": "Nochmal drehen",
+    "lastLabel": "Zuletzt:",
+    "settings": {
+      "title": "Rad-Einstellungen",
+      "summary": "{{active}} / {{total}} aktiv · mind. {{min}} nötig",
+      "promptsCount": "{{count}} Impulse",
+      "lockNote": "Eine der letzten {{min}} Kategorien — nicht abschaltbar"
+    }
+  },
+  "dice": {
+    "eyebrow": "WÜRFEL",
+    "title": "Würfle",
+    "rollLabel": "WÜRFELN",
+    "newRoll": "NEU WÜRFELN",
+    "poster": "OUT OF THE BOX"
+  },
+  "cards": {
+    "eyebrow": "KARTEN",
+    "title": "Zieh eine Karte",
+    "drawCard": "Karte ziehen",
+    "newCard": "Neue Karte",
+    "hint": "Tipp auf das Deck → zieh eine Karte",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} Kategorien · {{prompts}} Impulse",
+    "categoryFallback": "Kategorie",
+    "footerPrompt": "Noch eine ziehen",
+    "settings": {
+      "title": "Karten-Einstellungen",
+      "summary": "{{active}} / {{total}} aktiv · mind. {{min}} nötig",
+      "promptsCount": "{{count}} Impulse",
+      "lockNote": "Eine der letzten {{min}} — nicht abschaltbar"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "BOXEN",
+    "lobbyTitle": "Raum erstellen oder beitreten",
+    "lobbySubtitle": "Zettel syncen live zwischen zwei Handys — ohne QR",
+    "createNew": "Neuen Raum erstellen",
+    "createNewSub": "6-stelligen Code bekommen, mit Partner teilen",
+    "join": "Raum beitreten",
+    "joinSub": "Gib den Code deines Partners ein",
+    "generatingCode": "Erstelle …",
+    "generateCode": "Code erzeugen",
+    "back": "Zurück",
+    "codeReadyTitle": "Dein Code ist bereit 🎉",
+    "codeReadyText": "Teil diesen Code mit deinem Partner. Er tippt auf \"Raum beitreten\" und gibt ihn ein.",
+    "goToBoxes": "Zu den Boxen",
+    "joinTitle": "Raum beitreten",
+    "joinText": "Gib den 6-stelligen Code deines Partners ein.",
+    "joining": "Trete bei …",
+    "joinBtn": "Beitreten",
+    "identityWait": "Identität noch nicht bereit, gleich nochmal versuchen",
+    "roomNotFound": "Kein Raum gefunden. Prüf den Code.",
+    "roomFull": "Raum ist voll (2 Personen). Versuch einen anderen.",
+    "listEyebrow": "GEMEINSAME BOXEN",
+    "listRoomLabel": "RAUM",
+    "listBoth": "2/2 Personen",
+    "listWaiting": "1/2 · wartet auf Partner",
+    "listLiveSync": "Zettel syncen live",
+    "listGiveCode": "Gib den Code deinem Partner",
+    "leaveRoom": "Raum verlassen",
+    "leaveConfirmTitle": "Raum verlassen",
+    "leaveConfirmText": "Die Raum-Verknüpfung auf diesem Handy wird entfernt. Boxen bleiben in Firestore — du kannst mit dem Code wieder beitreten.",
+    "cancel": "Abbrechen",
+    "leave": "Verlassen",
+    "newBox": "Neue Box",
+    "loading": "Lädt …",
+    "error": "Fehler:",
+    "noBoxes": "Noch keine Boxen",
+    "noBoxesHint": "Erstell eine neue Box, schreib Zettel, mischt zu zweit",
+    "boxCardMeta": "{{mine}} du · {{partner}} Partner",
+    "ready": "Bereit",
+    "notesCount": "{{count}} Zettel",
+    "createBoxTitle": "Neue Box",
+    "createBoxSub": "Gib der Box einen Namen und ein Thema",
+    "namePlaceholder": "z. B. Filmabend",
+    "create": "Erstellen",
+    "boxNotFound": "Box nicht gefunden",
+    "yours": "Deine Zettel",
+    "newNotePlaceholder": "Neuen Zettel schreiben …",
+    "add": "Hinzu",
+    "emptyNote": "Noch keine Zettel. Fang oben an.",
+    "partner": "Dein Partner",
+    "partnerNotesCount": "{{count}} Zettel",
+    "partnerNotJoined": "Noch nicht im Raum",
+    "partnerReady": "Partner ist bereit ✨",
+    "partnerNotConfirmed": "Noch nicht bestätigt",
+    "partnerNoNotes": "Noch keine Zettel",
+    "youConfirmed": "Du ✓ ({{count}})",
+    "youCount": "Du {{count}}",
+    "partnerConfirmed": "Partner ✓ ({{count}})",
+    "partnerCount": "Partner {{count}}",
+    "partnerWaiting": "Warte auf Partner",
+    "notesDone": "Meine Zettel sind fertig",
+    "editNotes": "Zettel ändern",
+    "editNotesWaiting": "Zettel ändern · Partner nicht bestätigt",
+    "shuffle": "MISCHEN",
+    "revealEyebrow": "OUT OF THE BOX",
+    "close": "Schließen",
+    "shuffleAgain": "Nochmal mischen",
+    "deleteBoxTitle": "Box löschen",
+    "deleteBoxText": "\"{{name}}\" und alle Zettel löschen? Das löscht auf beiden Handys."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Level: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Nähe",
+      "tagline": "Gefühl + Berührung",
+      "levels": {
+        "1": {
+          "name": "Flüstern",
+          "hint": "Flirt, Blicke, versteckte Zettel"
+        },
+        "2": {
+          "name": "Nähe",
+          "hint": "Umarmungen, Küsse, Kuscheln"
+        },
+        "3": {
+          "name": "Geheimnisse",
+          "hint": "Fantasien teilen, Sinne entdecken"
+        },
+        "4": {
+          "name": "Flamme",
+          "hint": "Heiße Momente, langsam & tief"
+        },
+        "5": {
+          "name": "Verbunden",
+          "hint": "Tiefe körperlich + seelische Verschmelzung"
+        }
+      }
+    },
+    "cesur": {
+      "label": "Entdecken",
+      "tagline": "Grenzen verschieben",
+      "levels": {
+        "1": {
+          "name": "Funke",
+          "hint": "Freche Challenges"
+        },
+        "2": {
+          "name": "Glühen",
+          "hint": "Augenbinde, langsames Entkleiden, Sinne"
+        },
+        "3": {
+          "name": "Mut",
+          "hint": "Führen/Folgen, leichter Impact"
+        },
+        "4": {
+          "name": "Gipfel",
+          "hint": "Klare Rollen, geplante Szenen"
+        },
+        "5": {
+          "name": "Legende",
+          "hint": "Fortgeschritten, Ritual/Protokoll, tiefe Dynamik"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Inhalte für Erwachsene",
+    "body": "Diese App ist für **Erwachsene ab 18 Jahren**. Inhalte umfassen sexuelle Themen, Intimität und Kink-Vorschläge. Um fortzufahren:",
+    "checkbox": "Ich bin 18+ und nutze dies mit **meinem Partner** im Einvernehmen.",
+    "accept": "Annehmen & weiter",
+    "saving": "Speichert …",
+    "footer": "Diese Zustimmung bleibt nur auf deinem Gerät. Kein Konto, keine Standortdaten."
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "close": "Schließen"
+  }
+}

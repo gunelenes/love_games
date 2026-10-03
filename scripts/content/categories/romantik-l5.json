@@ -2,7 +2,13 @@
   {
     "id": "gorunmez-ipler",
     "name": "Görünmez İpler",
-    "nameI18n": { "en": "Invisible Threads" },
+    "nameI18n": {
+      "en": "Invisible Threads",
+      "de": "Unsichtbare Fäden",
+      "fr": "Fils Invisibles",
+      "es": "Hilos Invisibles",
+      "it": "Fili Invisibili"
+    },
     "color": "#DB2777",
     "icon": "🕊️",
     "track": "romantik",
@@ -24,13 +30,51 @@
         "Agree on a \"signal\" with your partner (a hand gesture, a glance). A \"thinking of you\" message no one else knows.",
         "For one week, over morning coffee, ask one single question: \"which moment of today do you want to spend with me?\"",
         "Each night before sleep, a kiss on each other's forehead + one word (the day in a word). A seven-day ritual."
+      ],
+      "de": [
+        "Schlagt ein Wochenritual vor: jeden Abend vor dem Schlafen 3 Minuten Stirn an Stirn + Blick in Blick, in Stille.",
+        "Startet ein \"gemeinsames Tagebuch\" — jede Nacht schreibt eine Person ein Wort. Lest es nach einer Woche zusammen.",
+        "Ritual \"Der Moment, in dem ich dich heute wahrgenommen habe\" — teilt es jede Nacht. Eine Woche lang testen.",
+        "Legt mit deinem Partner ein \"Zeichen\" fest (eine Handbewegung, ein Blick). Tagsüber eine \"ich denke an dich\"-Botschaft, die nur ihr beide kennt.",
+        "Stellt euch eine Woche lang beim Morgenkaffee eine einzige Frage: \"welchen deiner Momente willst du heute mit mir verbringen?\"",
+        "Jede Nacht vor dem Schlafen ein Kuss auf die Stirn + ein einziges Wort (die Zusammenfassung des Tages). Ein Ritual für eine Woche."
+      ],
+      "fr": [
+        "Proposez un rituel d'une semaine : chaque soir avant de dormir, 3 minutes front contre front + yeux dans les yeux en silence.",
+        "Commencez un \"journal commun\" — chaque nuit, l'un de vous écrit un mot. Lisez-le ensemble au bout d'une semaine.",
+        "Rituel \"le moment où je t'ai remarqué·e aujourd'hui\" — partagez-le chaque nuit. Testez pendant une semaine.",
+        "Décidez d'un \"signe\" avec ton/ta partenaire (un geste de la main, un regard). Dans la journée, un message \"je pense à toi\" que vous seuls comprenez.",
+        "Pendant une semaine, en partageant le café du matin, posez une seule question : \"quel moment d'aujourd'hui aimerais-tu passer avec moi ?\"",
+        "Avant de dormir, chaque soir un baiser sur le front de l'autre + un seul mot (le résumé du jour). Rituel d'une semaine."
+      ],
+      "es": [
+        "Propongan un ritual de una semana: cada noche antes de dormir, 3 minutos de silencio frente a frente + mirada a los ojos.",
+        "Empiecen un \"diario compartido\" — cada noche uno escribe una palabra. Léanlo juntos después de una semana.",
+        "Ritual del \"momento en que te noté hoy\" — compártanlo cada noche. Prueba de una semana.",
+        "Elijan con tu pareja una \"señal\" (un gesto con la mano, una mirada). Durante el día, un mensaje secreto que solo ustedes conocen: \"estoy pensando en ti\".",
+        "Durante una semana, mientras comparten el café de la mañana, háganse una sola pregunta: \"¿qué momento de hoy quieres pasar conmigo?\"",
+        "Cada noche antes de dormir, un beso en la frente del otro + una sola palabra (el resumen del día). Ritual de una semana."
+      ],
+      "it": [
+        "Proponi un rituale di una settimana: ogni sera prima di dormire prendetevi 3 minuti fronte contro fronte + silenzio occhi negli occhi.",
+        "Iniziate un \"diario condiviso\" — ogni notte uno di voi scrive una parola. Rileggetelo dopo una settimana.",
+        "Rituale \"il momento in cui oggi ti ho notato\" — condividetelo ogni sera. Provatelo per una settimana.",
+        "Scegliete con il tuo partner un \"segnale\" (un gesto della mano, uno sguardo). Durante il giorno, un messaggio \"ti sto pensando\" che conoscete solo voi due.",
+        "Per una settimana, mentre condividete il caffè del mattino, poniti una sola domanda: \"quale momento di oggi vorresti passare con me?\"",
+        "Ogni sera prima di dormire, un bacio sulla fronte + una parola sola (il riassunto della giornata). Un rituale di una settimana."
       ]
     }
   },
   {
     "id": "ruh-esi",
     "name": "Ruh Eşi",
-    "nameI18n": { "en": "Soul Mirror" },
+    "nameI18n": {
+      "en": "Soul Mirror",
+      "de": "Seelenverwandt",
+      "fr": "Âme Sœur",
+      "es": "Alma Gemela",
+      "it": "Anima Gemella"
+    },
     "color": "#C026D3",
     "icon": "✨",
     "track": "romantik",
@@ -52,13 +96,51 @@
         "Take their hands in yours. Five minutes, eyes closed — share the feeling of \"I'm here, with you.\"",
         "Ask \"what did you think the first time you saw me?\" Listen. Then answer with your own: \"when I first saw you…\"",
         "Dream a shared \"future moment\" — describe five years from now together for 3 minutes, alternating sentences."
+      ],
+      "de": [
+        "Je 20 Minuten. Erste 10: du erzählst, er/sie hört zu (was auch immer du sagst). Letzte 10: tauscht die Rollen.",
+        "Schließt die Augen. Hör auf die Stimme deines Partners und erzähle die erste Erinnerung, die sie in dir weckt.",
+        "Ein \"stiller Abend\" — 2 Stunden lang sind Worte verboten. Nur Blicke, Berührungen, Gesten.",
+        "Nimm die Hände deines Partners in deine. 5 Minuten mit geschlossenen Augen — teilt das Gefühl \"hier, bei mir\".",
+        "Frag: \"was hast du gedacht, als du mich zum ersten Mal gesehen hast?\" Hör zu. Antworte dann mit \"als ich dich zum ersten Mal sah…\".",
+        "Stellt euch gemeinsam einen \"zukünftigen Moment\" vor — beschreibt 3 Minuten lang in abwechselnden Sätzen, wie es in 5 Jahren aussieht."
+      ],
+      "fr": [
+        "20 minutes face à face. Les 10 premières : tu parles, iel écoute (ce que tu veux). Les 10 dernières : échangez les rôles.",
+        "Fermez les yeux. En écoutant la voix de ton/ta partenaire, raconte le tout premier souvenir qu'iel éveille en toi.",
+        "Une \"soirée silencieuse\" — pendant 2 heures, les mots sont interdits. Uniquement regards, touchers, gestes pour communiquer.",
+        "Prends les mains de ton/ta partenaire dans les tiennes. 5 minutes, yeux fermés — partage la sensation \"je suis là, avec toi\".",
+        "Demande : \"qu'as-tu pensé la première fois que tu m'as vu·e ?\" Écoute. Puis réponds par \"la première fois que je t'ai vu·e…\".",
+        "Imaginez ensemble un \"moment futur\" — décrivez à deux voix, pendant 3 minutes, votre vie dans 5 ans, en alternant les phrases."
+      ],
+      "es": [
+        "20 minutos cara a cara. Los primeros 10: tú hablas, él/ella escucha (lo que quieras decir). Los últimos 10: cambien de rol.",
+        "Cierren los ojos. Escuchando la voz de tu pareja, cuéntale el primer recuerdo que despierta en ti.",
+        "Una \"noche silenciosa\" — durante 2 horas, prohibidas las palabras. Solo miradas, caricias y gestos.",
+        "Toma las manos de tu pareja entre las tuyas. 5 minutos con los ojos cerrados — compartan la sensación de \"aquí, contigo\".",
+        "Pregúntale: \"¿qué pensaste la primera vez que me viste?\" Escucha. Luego responde con \"cuando te vi por primera vez…\".",
+        "Imaginen juntos un \"momento futuro\" — describan dentro de 5 años durante 3 minutos, alternando frases."
+      ],
+      "it": [
+        "20 minuti a testa. I primi 10: tu racconti, lui/lei ascolta (qualunque cosa dirai). Gli ultimi 10: scambio di ruoli.",
+        "Chiudete gli occhi. Ascoltando la voce del tuo partner, racconta il primo ricordo che risveglia in te.",
+        "Una \"serata silenziosa\" — per 2 ore, parole vietate. Solo sguardi, tocchi, gesti per comunicare.",
+        "Prendi le mani del tuo partner nelle tue. 5 minuti con gli occhi chiusi — condividete la sensazione del \"qui, con te\".",
+        "Chiedi: \"cosa hai pensato la prima volta che mi hai visto?\" Ascolta. Poi rispondi con \"quando ti ho visto per la prima volta…\"",
+        "Immaginate insieme un \"momento futuro\" — descrivete per 3 minuti come sarà tra 5 anni, alternando le frasi."
       ]
     }
   },
   {
     "id": "sabah-isigi",
     "name": "Sabah Işığı",
-    "nameI18n": { "en": "Morning Light" },
+    "nameI18n": {
+      "en": "Morning Light",
+      "de": "Morgenlicht",
+      "fr": "Lumière du Matin",
+      "es": "Luz de la Mañana",
+      "it": "Luce del Mattino"
+    },
     "color": "#F472B6",
     "icon": "☀️",
     "track": "romantik",
@@ -80,6 +162,38 @@
         "The moment you wake, tell them the last dream you had in one sentence. Have them share one back.",
         "A waking ritual: in bed, hold each other for 5 minutes first — let yourselves finish waking up.",
         "At the start of the day, share an intention: \"let's be together for today's most important moment\" — plan how it happens."
+      ],
+      "de": [
+        "Sobald du aufwachst und deinen Partner zum ersten Mal ansiehst, ein Satz: nicht \"guten Morgen\", sondern \"ich bin froh, dich zu sehen\".",
+        "Bevor du aus dem Bett steigst, streichle 30 Sekunden lang den Kopf deines Partners + ein Kuss auf die Stirn.",
+        "Macht den Morgenkaffee gemeinsam — ohne Worte. Wie ein Tanz. Koordination allein durch Blicke.",
+        "Erzähl deinem Partner gleich nach dem Aufwachen in einem Satz deinen letzten Traum. Er/sie teilt auch einen.",
+        "Aufwachritual: haltet euch im Bett zuerst 5 Minuten im Arm und wartet, bis ihr ganz wach seid.",
+        "Teilt zum Tagesbeginn eine \"Absicht\": \"lass uns für den wichtigsten Moment des Tages zusammen sein\" — plant, wie es passieren soll."
+      ],
+      "fr": [
+        "Au réveil, dès le premier regard posé sur ton/ta partenaire, une phrase : pas \"bonjour\", mais \"je suis heureux·se de te voir\".",
+        "Avant de sortir du lit, caresse la tête de ton/ta partenaire pendant 30 secondes + un baiser sur le front.",
+        "Préparez le café du matin ensemble — sans un mot. Comme une danse. Coordonnez-vous par les regards.",
+        "Au réveil, raconte à ton/ta partenaire le dernier rêve dont tu te souviens en une phrase. Qu'iel partage le sien.",
+        "Rituel du réveil : encore au lit, prenez-vous dans les bras pendant 5 minutes et laissez le sommeil se dissiper doucement.",
+        "En début de journée, partagez une \"intention\" : \"soyons ensemble pour le moment le plus important d'aujourd'hui\" — planifiez comment ça se passera."
+      ],
+      "es": [
+        "Apenas despiertes, al mirar a tu pareja dile una frase: no \"buenos días\", sino \"me alegra verte\".",
+        "Antes de levantarte de la cama, acaricia la cabeza de tu pareja durante 30 segundos + un beso en la frente.",
+        "Preparen juntos el café de la mañana — sin palabras. Como una danza. Coordínense con las miradas.",
+        "Apenas despiertes, cuéntale a tu pareja en una frase el último sueño que recuerdas. Que te comparta el suyo también.",
+        "Ritual al despertar: todavía en la cama, abrácense durante 5 minutos y esperen a despertar del todo.",
+        "Al comenzar el día, compartan una \"intención\": \"estemos juntos para el momento más importante de hoy\" — planeen cómo lo harán realidad."
+      ],
+      "it": [
+        "Appena sveglio, al primo sguardo verso il tuo partner una frase: non \"buongiorno\", ma \"sono felice di vederti\".",
+        "Prima di alzarti dal letto, accarezza la testa del tuo partner per 30 secondi + un bacio sulla fronte.",
+        "Preparate insieme il caffè del mattino — senza parlare. Come una danza. Coordinatevi con gli sguardi.",
+        "Appena sveglio, racconta al tuo partner in una frase l'ultimo sogno che hai fatto. Che lo faccia anche lui/lei.",
+        "Rituale del risveglio: a letto, abbracciatevi per 5 minuti e aspettate di svegliarvi davvero dal sonno.",
+        "All'inizio della giornata condividete una \"intenzione\": \"stiamo insieme per il momento più importante di oggi\" — pianificate come realizzarlo."
       ]
     }
   }

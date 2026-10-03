@@ -1,0 +1,222 @@
+{
+  "app": {
+    "loading": "Chargement…"
+  },
+  "common": {
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "retry": "Réessayer",
+    "error": "Erreur :"
+  },
+  "home": {
+    "eyebrow": "POUR LES COUPLES",
+    "title": "Love Games",
+    "subtitle": "Des mini-jeux à partager à deux",
+    "footer": "D'autres jeux arrivent ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Roue",
+      "tagline": "Fais tourner et trouve ta catégorie"
+    },
+    "dice": {
+      "name": "Dés",
+      "tagline": "Lance — laisse la surprise venir"
+    },
+    "cards": {
+      "name": "Cartes",
+      "tagline": "Choisis tes catégories, tire une carte"
+    },
+    "boxes": {
+      "name": "Boîtes",
+      "tagline": "Mélangez vos notes, surprenez-vous"
+    }
+  },
+  "wheel": {
+    "eyebrow": "ROUE",
+    "title": "Fais tourner la Roue",
+    "spinPrompt": "Appuie sur le bouton central pour lancer",
+    "spinBtn": "TOURNER",
+    "spinAgain": "Relancer",
+    "lastLabel": "Dernier :",
+    "settings": {
+      "title": "Réglages de la Roue",
+      "summary": "{{active}} / {{total}} actives · min {{min}} requis",
+      "promptsCount": "{{count}} défis",
+      "lockNote": "L'une des {{min}} dernières catégories — impossible de la désactiver"
+    }
+  },
+  "dice": {
+    "eyebrow": "DÉS",
+    "title": "Lance les Dés",
+    "rollLabel": "LANCER",
+    "newRoll": "RELANCER",
+    "poster": "SORS DU CADRE"
+  },
+  "cards": {
+    "eyebrow": "CARTES",
+    "title": "Tire une Carte",
+    "drawCard": "Tirer une carte",
+    "newCard": "Nouvelle carte",
+    "hint": "Touche le paquet → tire une carte",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} catégories · {{prompts}} défis",
+    "categoryFallback": "Catégorie",
+    "footerPrompt": "En tirer une autre",
+    "settings": {
+      "title": "Réglages des Cartes",
+      "summary": "{{active}} / {{total}} actives · min {{min}} requis",
+      "promptsCount": "{{count}} défis",
+      "lockNote": "L'une des {{min}} dernières — impossible de la désactiver"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "BOÎTES",
+    "lobbyTitle": "Créer ou rejoindre un salon",
+    "lobbySubtitle": "Les notes se synchronisent en direct entre deux téléphones — sans QR",
+    "createNew": "Créer un salon",
+    "createNewSub": "Reçois un code à 6 chiffres à partager",
+    "join": "Rejoindre un salon",
+    "joinSub": "Entre le code reçu de ton/ta partenaire",
+    "generatingCode": "Génération…",
+    "generateCode": "Générer le code",
+    "back": "Retour",
+    "codeReadyTitle": "Ton code est prêt 🎉",
+    "codeReadyText": "Partage ce code avec ton/ta partenaire. Il/elle choisit « Rejoindre un salon » et le saisit.",
+    "goToBoxes": "Aller aux Boîtes",
+    "joinTitle": "Rejoindre un salon",
+    "joinText": "Entre le code à 6 chiffres de ton/ta partenaire.",
+    "joining": "Connexion…",
+    "joinBtn": "Rejoindre",
+    "identityWait": "Identité pas prête, réessaie dans quelques secondes",
+    "roomNotFound": "Salon introuvable. Vérifie le code.",
+    "roomFull": "Salon complet (2 personnes). Essaie-en un autre.",
+    "listEyebrow": "BOÎTES PARTAGÉES",
+    "listRoomLabel": "SALON",
+    "listBoth": "2/2 personnes",
+    "listWaiting": "1/2 · en attente du/de la partenaire",
+    "listLiveSync": "Les notes se synchronisent en direct",
+    "listGiveCode": "Donne le code à ton/ta partenaire pour vous connecter",
+    "leaveRoom": "Quitter le salon",
+    "leaveConfirmTitle": "Quitter le salon",
+    "leaveConfirmText": "Le lien du salon sera retiré de ce téléphone. Les boîtes restent sur Firestore — tu peux revenir avec le code.",
+    "cancel": "Annuler",
+    "leave": "Quitter",
+    "newBox": "Nouvelle boîte",
+    "loading": "Chargement…",
+    "error": "Erreur :",
+    "noBoxes": "Aucune boîte",
+    "noBoxesHint": "Crée une boîte, ajoute des notes, mélangez à deux",
+    "boxCardMeta": "{{mine}} toi · {{partner}} partenaire",
+    "ready": "Prêt·e",
+    "notesCount": "{{count}} notes",
+    "createBoxTitle": "Nouvelle boîte",
+    "createBoxSub": "Donne-lui un nom et un thème",
+    "namePlaceholder": "ex. Soirée ciné",
+    "create": "Créer",
+    "boxNotFound": "Boîte introuvable",
+    "yours": "Tes notes",
+    "newNotePlaceholder": "Écris une nouvelle note…",
+    "add": "Ajouter",
+    "emptyNote": "Pas encore de notes. Commence à écrire.",
+    "partner": "Ton/ta partenaire",
+    "partnerNotesCount": "{{count}} notes",
+    "partnerNotJoined": "N'a pas encore rejoint le salon",
+    "partnerReady": "Ton/ta partenaire est prêt·e ✨",
+    "partnerNotConfirmed": "Pas encore confirmé",
+    "partnerNoNotes": "Pas encore de notes ajoutées",
+    "youConfirmed": "Toi ✓ ({{count}})",
+    "youCount": "Toi {{count}}",
+    "partnerConfirmed": "Partenaire ✓ ({{count}})",
+    "partnerCount": "Partenaire {{count}}",
+    "partnerWaiting": "En attente du/de la partenaire",
+    "notesDone": "Mes notes sont prêtes",
+    "editNotes": "Modifier mes notes",
+    "editNotesWaiting": "Modifier mes notes · partenaire pas encore confirmé",
+    "shuffle": "MÉLANGER",
+    "revealEyebrow": "SORS DU CADRE",
+    "close": "Fermer",
+    "shuffleAgain": "Mélanger encore",
+    "deleteBoxTitle": "Supprimer la boîte",
+    "deleteBoxText": "Supprimer « {{name}} » et toutes ses notes ? Supprimée sur les deux téléphones."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Niveau : {{track}} N{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Intimité",
+      "tagline": "Toucher émotionnel + physique",
+      "levels": {
+        "1": {
+          "name": "Murmure",
+          "hint": "Flirt, regards, petits mots cachés"
+        },
+        "2": {
+          "name": "Proximité",
+          "hint": "Câlins, baisers, étreintes"
+        },
+        "3": {
+          "name": "Secrets",
+          "hint": "Partage de fantasmes, exploration sensorielle"
+        },
+        "4": {
+          "name": "Flamme",
+          "hint": "Instants brûlants, lents & profonds"
+        },
+        "5": {
+          "name": "Lien",
+          "hint": "Fusion physique + spirituelle profonde"
+        }
+      }
+    },
+    "cesur": {
+      "label": "Exploration",
+      "tagline": "Repousse les limites",
+      "levels": {
+        "1": {
+          "name": "Étincelle",
+          "hint": "Défis provocants"
+        },
+        "2": {
+          "name": "Éclat",
+          "hint": "Bandeau, effeuillage lent, sensoriel"
+        },
+        "3": {
+          "name": "Audace",
+          "hint": "Guide/Suiveur·se, contact léger"
+        },
+        "4": {
+          "name": "Sommet",
+          "hint": "Rôles définis, scènes structurées"
+        },
+        "5": {
+          "name": "Légende",
+          "hint": "Avancé, rituel/protocole, dynamique profonde"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Contenu adulte",
+    "body": "Cette app est destinée aux **adultes de 18 ans et plus**. Le contenu aborde des thèmes sexuels, l'intimité et des suggestions kink. Pour continuer :",
+    "checkbox": "J'ai 18 ans ou plus et j'utiliserai cette app avec **mon/ma partenaire** en plein consentement mutuel.",
+    "accept": "Accepter et continuer",
+    "saving": "Enregistrement…",
+    "footer": "Ce consentement est stocké uniquement sur ton appareil. Aucun compte ni info de localisation n'est envoyé."
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "close": "Fermer"
+  }
+}

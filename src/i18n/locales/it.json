@@ -1,0 +1,222 @@
+{
+  "app": {
+    "loading": "Caricamento…"
+  },
+  "common": {
+    "close": "Chiudi",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "delete": "Elimina",
+    "save": "Salva",
+    "retry": "Riprova",
+    "error": "Errore:"
+  },
+  "home": {
+    "eyebrow": "PER COPPIE",
+    "title": "Love Games",
+    "subtitle": "Mini giochi da fare insieme",
+    "footer": "Altri giochi in arrivo ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Ruota",
+      "tagline": "Gira e scopri la tua categoria"
+    },
+    "dice": {
+      "name": "Dadi",
+      "tagline": "Lancia — lascia che la sorpresa ti trovi"
+    },
+    "cards": {
+      "name": "Carte",
+      "tagline": "Scegli le categorie, pesca una carta"
+    },
+    "boxes": {
+      "name": "Scatole",
+      "tagline": "Mescola i bigliettini, sorprendetevi"
+    }
+  },
+  "wheel": {
+    "eyebrow": "RUOTA",
+    "title": "Gira la Ruota",
+    "spinPrompt": "Tocca il pulsante al centro per girare",
+    "spinBtn": "GIRA",
+    "spinAgain": "Gira di nuovo",
+    "lastLabel": "Ultimo:",
+    "settings": {
+      "title": "Impostazioni Ruota",
+      "summary": "{{active}} / {{total}} attive · min {{min}} richieste",
+      "promptsCount": "{{count}} spunti",
+      "lockNote": "Una delle ultime {{min}} categorie — non si può disattivare"
+    }
+  },
+  "dice": {
+    "eyebrow": "DADI",
+    "title": "Lancia i Dadi",
+    "rollLabel": "LANCIA",
+    "newRoll": "NUOVO LANCIO",
+    "poster": "FUORI DAGLI SCHEMI"
+  },
+  "cards": {
+    "eyebrow": "CARTE",
+    "title": "Pesca una Carta",
+    "drawCard": "Pesca una Carta",
+    "newCard": "Nuova Carta",
+    "hint": "Tocca il mazzo qui sotto → pesca una carta",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} categorie · {{prompts}} spunti",
+    "categoryFallback": "Categoria",
+    "footerPrompt": "Pesca un'altra",
+    "settings": {
+      "title": "Impostazioni Carte",
+      "summary": "{{active}} / {{total}} attive · min {{min}} richieste",
+      "promptsCount": "{{count}} spunti",
+      "lockNote": "Una delle ultime {{min}} — non si può disattivare"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "SCATOLE",
+    "lobbyTitle": "Crea o Entra in una Stanza",
+    "lobbySubtitle": "I bigliettini si sincronizzano in diretta tra due telefoni — niente QR",
+    "createNew": "Crea Nuova Stanza",
+    "createNewSub": "Ottieni un codice a 6 cifre, condividilo col tuo partner",
+    "join": "Entra in una Stanza",
+    "joinSub": "Inserisci il codice che ti ha dato il tuo partner",
+    "generatingCode": "Generazione…",
+    "generateCode": "Genera Codice",
+    "back": "Indietro",
+    "codeReadyTitle": "Il tuo codice è pronto 🎉",
+    "codeReadyText": "Condividi questo codice col tuo partner. Sceglierà \"Entra in una Stanza\" e lo inserirà.",
+    "goToBoxes": "Vai alle Scatole",
+    "joinTitle": "Entra in una Stanza",
+    "joinText": "Inserisci il codice a 6 cifre del tuo partner.",
+    "joining": "Ingresso…",
+    "joinBtn": "Entra",
+    "identityWait": "Identità non pronta, riprova tra qualche secondo",
+    "roomNotFound": "Stanza inesistente. Controlla il codice.",
+    "roomFull": "Stanza piena (2 persone). Prova un'altra stanza.",
+    "listEyebrow": "SCATOLE CONDIVISE",
+    "listRoomLabel": "STANZA",
+    "listBoth": "2/2 persone",
+    "listWaiting": "1/2 · in attesa del partner",
+    "listLiveSync": "I bigliettini si sincronizzano in diretta",
+    "listGiveCode": "Dai il codice al tuo partner per connettervi",
+    "leaveRoom": "Esci dalla stanza",
+    "leaveConfirmTitle": "Esci dalla stanza",
+    "leaveConfirmText": "Il collegamento alla stanza su questo telefono verrà rimosso. Le scatole restano su Firestore — puoi rientrare col codice.",
+    "cancel": "Annulla",
+    "leave": "Esci",
+    "newBox": "Nuova Scatola",
+    "loading": "Caricamento…",
+    "error": "Errore:",
+    "noBoxes": "Ancora nessuna scatola",
+    "noBoxesHint": "Crea una nuova scatola, aggiungi bigliettini, mescolali col tuo partner",
+    "boxCardMeta": "{{mine}} tuoi · {{partner}} partner",
+    "ready": "Pronto",
+    "notesCount": "{{count}} bigliettini",
+    "createBoxTitle": "Nuova Scatola",
+    "createBoxSub": "Dai alla tua scatola un nome e un tema",
+    "namePlaceholder": "es. Serata film",
+    "create": "Crea",
+    "boxNotFound": "Scatola non trovata",
+    "yours": "I tuoi bigliettini",
+    "newNotePlaceholder": "Scrivi un nuovo bigliettino…",
+    "add": "Aggiungi",
+    "emptyNote": "Ancora nessun bigliettino. Inizia a scrivere sopra.",
+    "partner": "Il tuo partner",
+    "partnerNotesCount": "{{count}} bigliettini",
+    "partnerNotJoined": "Non è ancora entrato nella stanza",
+    "partnerReady": "Il partner è pronto ✨",
+    "partnerNotConfirmed": "Non ha ancora confermato",
+    "partnerNoNotes": "Non ha ancora aggiunto bigliettini",
+    "youConfirmed": "Tu ✓ ({{count}})",
+    "youCount": "Tu {{count}}",
+    "partnerConfirmed": "Partner ✓ ({{count}})",
+    "partnerCount": "Partner {{count}}",
+    "partnerWaiting": "In attesa del partner",
+    "notesDone": "I miei bigliettini sono pronti",
+    "editNotes": "Modifica i miei bigliettini",
+    "editNotesWaiting": "Modifica i miei bigliettini · il partner non ha confermato",
+    "shuffle": "MESCOLA",
+    "revealEyebrow": "FUORI DAGLI SCHEMI",
+    "close": "Chiudi",
+    "shuffleAgain": "Mescola di nuovo",
+    "deleteBoxTitle": "Elimina scatola",
+    "deleteBoxText": "Eliminare \"{{name}}\" e tutti i suoi bigliettini? Verranno rimossi da entrambi i telefoni."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Livello: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Intimità",
+      "tagline": "Tocco emotivo + fisico",
+      "levels": {
+        "1": {
+          "name": "Sussurro",
+          "hint": "Flirt, sguardi, bigliettini nascosti"
+        },
+        "2": {
+          "name": "Vicinanza",
+          "hint": "Abbracci, baci, carezze"
+        },
+        "3": {
+          "name": "Segreti",
+          "hint": "Condividere fantasie, esplorare i sensi"
+        },
+        "4": {
+          "name": "Fiamma",
+          "hint": "Momenti ardenti, lenti e profondi"
+        },
+        "5": {
+          "name": "Legame",
+          "hint": "Fusione profonda, fisica e spirituale"
+        }
+      }
+    },
+    "cesur": {
+      "label": "Esplorazione",
+      "tagline": "Supera i limiti",
+      "levels": {
+        "1": {
+          "name": "Scintilla",
+          "hint": "Sfide provocanti"
+        },
+        "2": {
+          "name": "Bagliore",
+          "hint": "Benda, spogliarello lento, sensi"
+        },
+        "3": {
+          "name": "Coraggio",
+          "hint": "Guida/Seguace, impatto leggero"
+        },
+        "4": {
+          "name": "Vetta",
+          "hint": "Ruoli definiti, scene strutturate"
+        },
+        "5": {
+          "name": "Leggenda",
+          "hint": "Avanzato, rituali/protocolli, dinamica intensa"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Contenuto per adulti",
+    "body": "Questa app è destinata ad **adulti dai 18 anni in su**. I contenuti includono tematiche sessuali, intimità e suggerimenti kink. Per continuare:",
+    "checkbox": "Ho 18+ anni e userò l'app con **il mio partner** nel reciproco consenso.",
+    "accept": "Accetto e Continuo",
+    "saving": "Salvataggio…",
+    "footer": "Questo consenso viene salvato solo sul tuo dispositivo. Nessun account o informazione sulla posizione viene inviata."
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "close": "Chiudi"
+  }
+}

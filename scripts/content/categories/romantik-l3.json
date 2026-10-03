@@ -2,7 +2,13 @@
   {
     "id": "fisiltinin-kitabi",
     "name": "Fısıltının Kitabı",
-    "nameI18n": { "en": "The Book of Whispers" },
+    "nameI18n": {
+      "en": "The Book of Whispers",
+      "de": "Das Buch des Flüsterns",
+      "fr": "Le Livre des Chuchotements",
+      "es": "El Libro del Susurro",
+      "it": "Il Libro dei Sussurri"
+    },
     "color": "#7C3AED",
     "icon": "📖",
     "track": "romantik",
@@ -24,13 +30,51 @@
         "On a slip of paper, write \"I wish we could live this together.\" Swap papers and read them aloud.",
         "Begin with \"the one thing I still want to learn about you is…\" and then listen.",
         "Close your eyes. For 3 minutes take turns telling a memory about each other's face."
+      ],
+      "de": [
+        "Flüstere deinem/deiner Partner:in eine Fantasie ins Ohr, die du nie ausgesprochen hast. Nur ein Satz.",
+        "Beginne mit \"Ein Moment, den ich mit dir erleben möchte…\" und erzähl es ausführlich.",
+        "Flüstere ins Ohr: \"Mein liebster Gedanke an dich heute…\" — ein einziger Satz.",
+        "Schreibt beide auf Papier: \"Ich wünschte, wir würden das zusammen erleben.\" Tauscht die Zettel. Lest sie laut vor.",
+        "Beginne mit \"Das Einzige, was ich noch von dir lernen möchte…\" — und dann hör zu.",
+        "Schließt die Augen. Erzählt euch 3 Minuten lang abwechselnd je eine Erinnerung an das Gesicht des/der anderen."
+      ],
+      "fr": [
+        "Chuchote à l'oreille de ton partenaire un fantasme que tu ne lui as jamais avoué. Une seule phrase.",
+        "Commence par \"Un moment que j'aimerais vivre avec toi…\" et raconte-le en détail à ton partenaire.",
+        "Chuchote à l'oreille de ton partenaire : \"ma pensée préférée du jour à ton sujet…\"",
+        "Écrivez chacun sur un papier \"j'aimerais tant qu'on vive ça ensemble\". Échangez. Lisez à voix haute.",
+        "Dis à ton partenaire \"la seule chose que je veux encore apprendre de toi…\" et écoute.",
+        "Fermez les yeux. Pendant 3 minutes, racontez à tour de rôle un souvenir lié au visage de l'autre."
+      ],
+      "es": [
+        "Susúrrale al oído a tu pareja una fantasía que nunca le hayas contado. Que sea solo una frase.",
+        "Empieza con \"un momento que quisiera vivir contigo…\" y cuéntaselo a tu pareja con detalle.",
+        "Susúrrale al oído a tu pareja una frase que empiece con \"mi pensamiento favorito sobre ti hoy…\".",
+        "Escriban en un papel \"ojalá viviéramos esto juntos\". Intercámbienlos. Léanlos en voz alta.",
+        "Dile a tu pareja: \"lo único que todavía quiero aprender de ti…\" y escucha.",
+        "Cierren los ojos. Durante 3 minutos, por turnos, cuéntense un recuerdo del rostro del otro."
+      ],
+      "it": [
+        "Sussurra all'orecchio del tuo partner una fantasia che non gli hai mai detto. Solo una frase.",
+        "Inizia con \"Un momento che vorrei vivere con te…\" e raccontalo al tuo partner nei dettagli.",
+        "Sussurra all'orecchio del tuo partner una frase che inizi con \"il mio pensiero preferito di oggi su di te…\".",
+        "Scrivete su un foglio \"vorrei vivere questo insieme\". Scambiatevi i fogli. Leggete ad alta voce.",
+        "Inizia con \"l'unica cosa che vorrei ancora imparare di te…\", poi ascolta.",
+        "Chiudete gli occhi. Per 3 minuti, a turno, raccontate un ricordo legato al viso dell'altro."
       ]
     }
   },
   {
     "id": "kapali-gozlerle",
     "name": "Kapalı Gözlerle",
-    "nameI18n": { "en": "Eyes Closed" },
+    "nameI18n": {
+      "en": "Eyes Closed",
+      "de": "Mit geschlossenen Augen",
+      "fr": "Les Yeux Fermés",
+      "es": "Con los Ojos Cerrados",
+      "it": "A Occhi Chiusi"
+    },
     "color": "#6366F1",
     "icon": "🎠",
     "track": "romantik",
@@ -52,13 +96,51 @@
         "With their eyes closed, speak into their ear for 30 seconds — a memory, a place, sensory details. Let them build the picture.",
         "Their eyes closed, hold their hand and sway it slowly for 1 minute without a word — gentle motion.",
         "Both eyes closed. Build a story together in 5 sentences — one you, one them. Nobody knows where it'll go."
+      ],
+      "de": [
+        "Dein:e Partner:in schließt die Augen. Erkunde 1 Minute lang das Gesicht mit deinen Händen — sanft, achtsam, wie eine Skulptur.",
+        "Beide Augen zu. Setzt euch gegenüber. Nur eure Hände dürfen sich berühren — 3 Minuten Erkundung.",
+        "Lass dein:e Partner:in die Augen schließen. Hol etwas Duftendes (Parfüm, Obst, Blume). Führ es langsam heran. Lass raten.",
+        "Sprich 30 Sekunden ins Ohr deines/deiner Partner:in mit geschlossenen Augen — ein Moment, ein Ort, Sinnesdetails. Baut das Bild in seinem/ihrem Kopf.",
+        "Dein:e Partner:in hat die Augen zu. Nimm die Hand, bewege sie 1 Minute lang sanft hin und her — ohne ein Wort.",
+        "Beide Augen geschlossen. Erfindet gemeinsam eine Geschichte in 5 Sätzen — abwechselnd. Keine:r weiß, wohin es führt."
+      ],
+      "fr": [
+        "Ton partenaire a les yeux fermés. Explore son visage avec tes mains pendant 1 minute — doux, attentif, comme une sculpture.",
+        "Vous avez tous les deux les yeux fermés. Asseyez-vous face à face. Seules vos mains peuvent se toucher — 3 minutes d'exploration.",
+        "Ferme les yeux de ton partenaire, apporte quelque chose qui a une odeur (parfum, fruit, fleur). Approche-le lentement. À lui de deviner.",
+        "Parle 30 secondes à l'oreille de ton partenaire qui a les yeux fermés — un souvenir, un lieu, des détails sensoriels. Qu'il en construise l'image dans sa tête.",
+        "Ton partenaire a les yeux fermés, prends sa main et balance-la pendant 1 minute sans rien dire — mouvement lent.",
+        "Les yeux fermés, face à face. Construisez une histoire ensemble en 5 phrases — une toi, une lui. On ne sait pas qui mènera où."
+      ],
+      "es": [
+        "Tu pareja tiene los ojos cerrados. Explora su rostro con tus manos durante 1 minuto — suave, atento, como si fuera una escultura.",
+        "Ambos con los ojos cerrados. Siéntense frente a frente. Solo sus manos pueden tocarse — 3 minutos de exploración.",
+        "Pídele a tu pareja que cierre los ojos y acércale algo con aroma (perfume, fruta, flor). Lentamente. Que lo adivine.",
+        "Con tu pareja de ojos cerrados, háblale al oído 30 segundos — un recuerdo, un lugar, detalles sensoriales. Que arme la imagen en su mente.",
+        "Tu pareja tiene los ojos cerrados; toma su mano y muévela suavemente durante 1 minuto sin decir nada — movimiento lento.",
+        "Ambos con los ojos cerrados, frente a frente. Construyan juntos una historia en 5 frases — 1 tú, 1 él/ella. Nadie sabe adónde la llevará el otro."
+      ],
+      "it": [
+        "Il tuo partner tiene gli occhi chiusi. Esplora il suo viso con le mani per 1 minuto — morbido, attento, come una scultura.",
+        "Entrambi a occhi chiusi. Sedetevi uno di fronte all'altra. Possono toccarsi solo le mani — 3 minuti di esplorazione.",
+        "Chiudi gli occhi del tuo partner, poi porta qualcosa con un profumo (profumo, frutta, un fiore). Avvicinalo lentamente. Deve indovinare.",
+        "Parla per 30 secondi all'orecchio del tuo partner a occhi chiusi — un ricordo, un luogo, dettagli sensoriali. Lascia che costruisca l'immagine nella mente.",
+        "Il tuo partner tiene gli occhi chiusi, tu prendi la sua mano e dondolala per 1 minuto senza dire nulla — movimento lento.",
+        "Entrambi a occhi chiusi, uno di fronte all'altra. Create insieme una storia in 5 frasi — 1 tu, 1 lui/lei. Non si sa dove la porterà l'altro."
       ]
     }
   },
   {
     "id": "uykuya-yakin",
     "name": "Uykuya Yakın",
-    "nameI18n": { "en": "Close to Sleep" },
+    "nameI18n": {
+      "en": "Close to Sleep",
+      "de": "Kurz vor dem Schlaf",
+      "fr": "Au Bord du Sommeil",
+      "es": "Cerca del Sueño",
+      "it": "Vicino al Sonno"
+    },
     "color": "#4F46E5",
     "icon": "🌙",
     "track": "romantik",
@@ -80,6 +162,38 @@
         "In the dark, find their hand + hold it tight. Three minutes of silence, just the grip.",
         "Close to sleep: tell them the last thing you were grateful for, listen, then give them yours.",
         "Side by side, feel their heartbeat with one hand. Two minutes, nothing else."
+      ],
+      "de": [
+        "Mach das Licht aus. Legt euch nebeneinander. Redet 5 Minuten im Dunkeln — hör nur die Stimme deines/deiner Partner:in.",
+        "Vor dem Einschlafen: Nenne 3 Eigenschaften, die du an deinem/deiner Partner:in am meisten liebst. Laut, langsam.",
+        "Leg deinen Kopf vor dem Einschlafen auf die Brust deines/deiner Partner:in und beginne im Rhythmus des Atems ein Märchen — brich es ruhig mittendrin ab.",
+        "Finde im Dunkeln die Hand deines/deiner Partner:in + halte sie fest. 3 Minuten Stille, nur dieser Griff.",
+        "Kurz vor dem Schlaf: Erzähl, wofür du zuletzt dankbar warst, hör zu, dann gib du zurück.",
+        "Neben ihm/ihr liegend: Spüre mit einer Hand den Herzschlag. 2 Minuten lang nur das."
+      ],
+      "fr": [
+        "Éteins les lumières. Allongez-vous côte à côte. Dans le noir, discute 5 minutes en n'écoutant que la voix de ton partenaire.",
+        "Avant de dormir, nomme 3 qualités que tu préfères chez ton partenaire. À voix haute, lentement.",
+        "Avant de t'endormir, pose ta tête sur la poitrine de ton partenaire et commence un conte au rythme de sa respiration — tu peux le laisser inachevé.",
+        "Dans le noir, cherche la main de ton partenaire + serre-la fort. 3 minutes de silence, juste cette étreinte.",
+        "Au bord du sommeil : raconte à ton partenaire \"la dernière chose pour laquelle tu as ressenti de la gratitude\", écoute, puis offre-lui la tienne en retour.",
+        "Allongé à côté de lui, sens les battements de son cœur avec une main. 2 minutes, rien que ça."
+      ],
+      "es": [
+        "Apaga las luces. Acuéstense lado a lado. En la oscuridad, conversen 5 minutos escuchando solo la voz del otro.",
+        "Antes de dormir, nombra 3 cosas que más amas de tu pareja. En voz alta, despacio.",
+        "Antes de dormir, apoya la cabeza en el pecho de tu pareja y empieza un cuento al ritmo de su respiración — déjalo a medias si quieres.",
+        "En la oscuridad, busca la mano de tu pareja y sostenla con fuerza. 3 minutos en silencio, solo el agarre.",
+        "Cerca del sueño: cuéntale a tu pareja \"lo último por lo que te sentiste agradecido/a\", escucha, y luego dale lo mismo a cambio.",
+        "Acostados lado a lado, siente con una mano los latidos de tu pareja. 2 minutos, solo eso."
+      ],
+      "it": [
+        "Spegni le luci. Sdraiatevi fianco a fianco. Al buio, chiacchierate per 5 minuti ascoltando solo la voce del tuo partner.",
+        "Prima di dormire, elenca 3 qualità del tuo partner che ami di più. A voce alta, lentamente.",
+        "Prima di addormentarti, appoggia la testa sul petto del tuo partner e inizia una fiaba al ritmo del suo respiro — puoi lasciarla a metà, se vuoi.",
+        "Al buio, trova la mano del tuo partner + stringila forte. 3 minuti di silenzio, solo la stretta.",
+        "Vicino al sonno: racconta al tuo partner \"l'ultima cosa per cui hai provato gratitudine\", ascolta, poi offri la tua.",
+        "Sdraiati accanto a lui/lei e senti con una mano il battito del suo cuore. Per 2 minuti, solo quello."
       ]
     }
   }

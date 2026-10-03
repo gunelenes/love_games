@@ -2,7 +2,13 @@
   {
     "id": "ellerin-sohbeti",
     "name": "Ellerin Sohbeti",
-    "nameI18n": { "en": "Hands' Conversation" },
+    "nameI18n": {
+      "en": "Hands' Conversation",
+      "de": "Gespräch der Hände",
+      "fr": "La Conversation des Mains",
+      "es": "La Charla de las Manos",
+      "it": "Il Dialogo delle Mani"
+    },
     "color": "#F97316",
     "icon": "🤲",
     "track": "romantik",
@@ -24,13 +30,51 @@
         "Press your hands together (fingers open, palms touching). For a full minute, just feel the warmth.",
         "Give them a hand massage for 2 minutes — palm, wrist, finger joints in order. Have them close their eyes.",
         "Lift their hand to your lips. Place a light kiss on the tip of each finger — very slowly, one by one."
+      ],
+      "de": [
+        "Legt eure Hände ineinander. 30 Sekunden lang sprecht nur mit euren Fingern — ein Drücken, eine zarte Berührung, eine Spur mit dem Nagel.",
+        "Nimm die Hand deines Partners in deine. Streichle jeden Finger nacheinander und benenne ihn: \"dieser Finger ist mein liebster, weil…\"",
+        "\"Schreibe\" einen Satz in die Handfläche deines Partners — mit der Fingerspitze, Buchstabe für Buchstabe. Lass sie*ihn raten.",
+        "Lehnt eure Hände aneinander (Finger gespreizt, Handflächen berühren sich). Spürt eine Minute lang nur die Wärme.",
+        "Gib deinem Partner 2 Minuten lang eine Handmassage — Handfläche, Handgelenk, Fingergelenke der Reihe nach. Lass sie*ihn die Augen schließen.",
+        "Führe die Hand deines Partners an deine Lippen. Gib jeder Fingerspitze einen zarten Kuss — ganz langsam, einen nach dem anderen."
+      ],
+      "fr": [
+        "Joignez vos mains face à face. Pendant 30 secondes, parlez uniquement avec vos doigts — pression, effleurement, trace d'ongle.",
+        "Prends la main de ton/ta partenaire dans ta paume. Caresse chaque doigt tour à tour, en le nommant : \"ce doigt, c'est mon préféré parce que…\"",
+        "\"Écris\" une phrase au creux de la paume de ton/ta partenaire — lettre par lettre, du bout du doigt. À lui/elle de deviner.",
+        "Appuyez vos mains l'une contre l'autre (doigts écartés, paumes en contact). Pendant 1 minute, ressentez seulement la chaleur.",
+        "Masse les mains de ton/ta partenaire pendant 2 minutes — la paume, le poignet, les phalanges, tour à tour. Qu'il/elle ferme les yeux.",
+        "Porte la main de ton/ta partenaire à tes lèvres. Dépose un léger baiser au bout de chaque doigt — très lentement, un à un."
+      ],
+      "es": [
+        "Junten las manos cara a cara. Durante 30 segundos hablen solo con los dedos — un apretón, un roce suave, la huella de una uña.",
+        "Toma la mano de tu pareja en tu palma. Acaricia cada dedo por turno, dándole un nombre: \"este dedo es mi favorito porque…\"",
+        "\"Escribe\" una frase en la palma de tu pareja — letra por letra con la punta del dedo. Que adivine.",
+        "Apoyen las manos una contra la otra (dedos abiertos, palmas en contacto). Durante 1 minuto sientan solo el calor.",
+        "Dale a tu pareja un masaje de manos durante 2 minutos — palma, muñeca, nudillos, en ese orden. Que cierre los ojos.",
+        "Lleva la mano de tu pareja a tus labios. Dale un beso suave en la punta de cada dedo — muy lento, uno por uno."
+      ],
+      "it": [
+        "Intrecciate le mani l'uno nell'altra. Per 30 secondi parlate solo con le dita — una stretta, un tocco leggero, un segno con l'unghia.",
+        "Prendi la mano del tuo partner nel palmo. Accarezza ogni dito uno alla volta, dandogli un nome: \"questo dito è il mio preferito perché…\"",
+        "\"Scrivi\" una frase nel palmo del tuo partner — lettera per lettera, con la punta del dito. Lascia che la indovini.",
+        "Appoggiate le mani l'una contro l'altra (dita aperte, palmi a contatto). Per 1 minuto sentite solo il calore.",
+        "Fai un massaggio alle mani del tuo partner per 2 minuti — palmo, polso, nocche, uno dopo l'altro. Lui/lei tenga gli occhi chiusi.",
+        "Porta la mano del tuo partner alle tue labbra. Dai un bacio leggero sulla punta di ogni dito — molto lentamente, uno a uno."
       ]
     }
   },
   {
     "id": "kucak-saati",
     "name": "Kucak Saati",
-    "nameI18n": { "en": "Embrace Hour" },
+    "nameI18n": {
+      "en": "Embrace Hour",
+      "de": "Umarmungsstunde",
+      "fr": "L'Heure des Bras",
+      "es": "Hora de Abrazos",
+      "it": "L'Ora dell'Abbraccio"
+    },
     "color": "#EA580C",
     "icon": "🤗",
     "track": "romantik",
@@ -52,13 +96,51 @@
         "Hold each other, one head on the other's shoulder. One minute, eyes closed. Then switch roles.",
         "Rock your partner in your arms — slow, your own rhythm. No song, only the beat of your breathing.",
         "While hugging, trace slow circles on your partner's back — 30 seconds. Then let them do the same for you."
+      ],
+      "de": [
+        "Umarme deinen Partner und sagt 3 Minuten lang nichts. Nur eure Atemzüge im Gleichklang.",
+        "Lehne den Kopf deines Partners an deine Brust und streichle 2 Minuten lang sein*ihr Haar. Dabei nur ein Wort: \"ich liebe dich\".",
+        "Legt euch nebeneinander, umarmt euch von hinten. Bleibt 5 Minuten so, ohne zu sprechen.",
+        "In einer Umarmung — der Kopf des einen auf der Schulter des anderen. 1 Minute, Augen geschlossen. Dann tauscht die Rollen.",
+        "Wiegt euch in der Umarmung — langsam, euer eigener Rhythmus. Statt eines Liedes nur der Rhythmus eures Atems.",
+        "Zeichne während der Umarmung langsame Kreise auf den Rücken deines Partners — 30 Sekunden. Dann macht sie*er dasselbe bei dir."
+      ],
+      "fr": [
+        "Serre ton/ta partenaire dans tes bras et restez silencieux pendant 3 minutes. Accordez seulement vos souffles.",
+        "Pose la tête de ton/ta partenaire sur ta poitrine, caresse ses cheveux pendant 2 minutes. Pendant ce temps, un seul mot : \"je t'aime\".",
+        "Allongez-vous côte à côte, enlacez-vous par-derrière. Restez 5 minutes dans cette position, sans parler.",
+        "Enlacés face à face, la tête de l'un sur l'épaule de l'autre. 1 minute les yeux fermés. Puis inversez les rôles.",
+        "Balancez-vous dans les bras l'un de l'autre — doucement, à votre rythme. Pas de chanson, juste le rythme du souffle.",
+        "Pendant l'étreinte, dessine lentement des cercles dans le dos de ton/ta partenaire — 30 secondes. Puis laisse-lui te faire la même chose."
+      ],
+      "es": [
+        "Abrázate con tu pareja y no digan nada durante 3 minutos. Solo igualen la respiración.",
+        "Apoya la cabeza de tu pareja en tu pecho y acaricia su cabello 2 minutos. En ese tiempo, una sola palabra: \"te amo\".",
+        "Acuéstense lado a lado y abrácense por detrás. Quédense 5 minutos en esta posición sin hablar.",
+        "Abrazados cara a cara, la cabeza de uno sobre el hombro del otro. 1 minuto con los ojos cerrados. Después cambien los roles.",
+        "Mécete con tu pareja en un abrazo — lento, el ritmo lo marcan ustedes. En lugar de una canción, solo el ritmo de la respiración.",
+        "Mientras se abrazan, dibuja despacio círculos en la espalda de tu pareja — 30 segundos. Después que te lo haga igual."
+      ],
+      "it": [
+        "Abbracciatevi e per 3 minuti non dite nulla. Sincronizzate solo il respiro.",
+        "Appoggia la testa del tuo partner sul tuo petto e accarezzagli i capelli per 2 minuti. In tutto questo tempo, una sola parola: \"ti amo\".",
+        "Sdraiatevi uno accanto all'altra, abbracciandovi da dietro. Restate in questa posizione per 5 minuti senza parlare.",
+        "Abbracciati l'uno all'altra, la testa di uno sulla spalla dell'altro. 1 minuto a occhi chiusi. Poi scambiatevi i ruoli.",
+        "Nell'abbraccio, dondolatevi insieme — piano, al vostro ritmo. Niente canzone, solo il ritmo del respiro.",
+        "Mentre siete abbracciati, disegna lentamente dei cerchi sulla schiena del tuo partner — per 30 secondi. Poi lascia che faccia lo stesso a te."
       ]
     }
   },
   {
     "id": "alin-alina",
     "name": "Alın Alına",
-    "nameI18n": { "en": "Forehead to Forehead" },
+    "nameI18n": {
+      "en": "Forehead to Forehead",
+      "de": "Stirn an Stirn",
+      "fr": "Front contre Front",
+      "es": "Frente con Frente",
+      "it": "Fronte Contro Fronte"
+    },
     "color": "#F59E0B",
     "icon": "💛",
     "track": "romantik",
@@ -80,6 +162,38 @@
         "Hover your hand near their forehead — just let them feel the warmth for 5 seconds. Then let your lips touch.",
         "Forehead to forehead, take turns: with each exhale, one gentle word — \"safe,\" \"treasured,\" \"close.\"",
         "A 5-second kiss on their forehead + whisper their name in their ear. Then lock eyes for 10 seconds."
+      ],
+      "de": [
+        "Lehne deine Stirn an die deines Partners. Augen zu, 1 Minute. Lernt euren Atem kennen.",
+        "Gib deinem Partner 3 verschiedene Küsse auf die Stirn — einen langen, einen kurzen, einen hauchzarten. Frag, welcher gewünscht ist, und wiederhole ihn.",
+        "Setzt euch gegenüber, eure Knie berühren sich. Legt eure Hände an die Wangen des anderen. 30 Sekunden lang so in die Augen schauen.",
+        "Halte deine Hand über die Stirn deines Partners — nur 5 Sekunden, lass die Wärme spüren. Dann berühre sie mit den Lippen.",
+        "Stirn an Stirn, bei jedem Ausatmen sagt ihr abwechselnd ein zartes Wort: \"du bist sicher\", \"du bist kostbar\", \"du bist nah\".",
+        "Gib deinem Partner einen 5 Sekunden langen Kuss auf die Stirn + flüstere seinen*ihren Namen ins Ohr. Dann schaut euch 10 Sekunden in die Augen."
+      ],
+      "fr": [
+        "Pose ton front contre celui de ton/ta partenaire. Yeux fermés, 1 minute. Apprenez à reconnaître vos souffles.",
+        "Dépose 3 baisers différents sur le front de ton/ta partenaire — un long, un court, un simple effleurement. Demande-lui lequel il/elle préfère et recommence.",
+        "Asseyez-vous face à face, genoux qui se touchent. Portez vos mains aux joues de l'autre. 30 secondes de regard, comme ça.",
+        "Comme si tu posais la main sur le front de ton/ta partenaire, laisse seulement 5 secondes de ta chaleur passer. Puis effleure avec les lèvres.",
+        "Front contre front, à chaque expiration dites tour à tour un mot doux : \"tu es en sécurité\", \"tu comptes\", \"tu es tout près\".",
+        "Dépose un baiser de 5 secondes sur le front de ton/ta partenaire + murmure son prénom à son oreille. Puis regardez-vous dans les yeux pendant 10 secondes."
+      ],
+      "es": [
+        "Apoya tu frente contra la de tu pareja. Ojos cerrados, 1 minuto. Reconozcan la respiración del otro.",
+        "Dale a tu pareja 3 besos distintos en la frente — uno largo, uno corto, uno apenas un roce. Pregúntale cuál quiere y repítelo.",
+        "Siéntense cara a cara, que sus rodillas se toquen. Lleven las manos a las mejillas del otro. 30 segundos así, mirándose.",
+        "Como si pusieras la mano en la frente de tu pareja, hazle sentir tu calor solo durante 5 segundos. Después, toca con los labios.",
+        "Frente con frente, con cada exhalación díganse por turno una palabra bonita: \"estás a salvo\", \"eres valioso/a\", \"estás cerca\".",
+        "Dale a tu pareja un beso de 5 segundos en la frente + susúrrale su nombre al oído. Después mírense a los ojos 10 segundos."
+      ],
+      "it": [
+        "Appoggia la tua fronte a quella del tuo partner. Occhi chiusi, per 1 minuto. Riconoscete i vostri respiri.",
+        "Dai tre baci diversi sulla fronte del tuo partner — uno lungo, uno breve, uno appena sfiorato. Chiedigli quale ha preferito e ripetilo.",
+        "Sedetevi uno di fronte all'altra, le ginocchia si tocchino. Portate le mani sulle guance dell'altro. 30 secondi di sguardi così.",
+        "Come se posassi la mano sulla fronte del tuo partner, fagli sentire solo il tuo calore per 5 secondi. Poi sfiora con le labbra.",
+        "Fronte contro fronte, a ogni espirazione dite a turno una parola dolce: \"sei al sicuro\", \"sei prezioso/a\", \"sei vicino/a\".",
+        "Dai un bacio di 5 secondi sulla fronte del tuo partner + sussurragli il nome all'orecchio. Poi guardatevi negli occhi per 10 secondi."
       ]
     }
   }

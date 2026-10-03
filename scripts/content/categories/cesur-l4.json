@@ -2,7 +2,13 @@
   {
     "id": "halatcinin-el-isi",
     "name": "Halatçının El İşi",
-    "nameI18n": { "en": "The Rigger's Craft" },
+    "nameI18n": {
+      "en": "The Rigger's Craft",
+      "de": "Die Handarbeit des Seilers",
+      "fr": "L'ouvrage du Lieur",
+      "es": "Trabajo Manual del Cuerdista",
+      "it": "Il Lavoro del Legatore"
+    },
     "color": "#7C2D12",
     "icon": "🪢",
     "track": "cesur",
@@ -24,13 +30,51 @@
         "You're the Rigger. Have your partner pick a safeword. Whatever you do, if that word is spoken — stop instantly. Then keep exploring.",
         "Wrap only one of your partner's wrists in silk. The other hand is free. They can touch you anywhere they like with that hand — before you untie.",
         "With a tie, bind your partner's thighs close together. For 2 minutes, hold them with eye contact + touch. Then untie."
+      ],
+      "de": [
+        "Szenenbeginn: Safeword klären (z. B. \"rot\" = sofort stopp). Mit einem Seidentuch oder Seidenschal die Handgelenke deines Partners sanft zusammenführen — nicht fest, nur spürbar durch die Berührung. 1 Minute lang nicht berühren, nur anschauen.",
+        "Führe die Handgelenke deines Partners mit einer Krawatte über seinem Kopf zusammen. Halte ihn 2 Minuten in dieser Position und erkunde ihn mit Berührungen. Kontrolliere seinen Atem.",
+        "Mit einem langen Schal die Augen deines Partners verbinden + die Handgelenke zusammenführen. 3 Minuten lang mit Stimme, Berührung und Nähe hinhalten.",
+        "Du bist der Seiler. Dein Partner wählt ein Safeword. Was auch immer du tust — wird dieses Wort gesagt, hältst du sofort inne. Dann weiter auf Entdeckung.",
+        "Wickle nur ein Handgelenk deines Partners in Seide. Die andere Hand bleibt frei. Mit dieser Hand darf er dich berühren, wo er will — ohne dass du ihn löst.",
+        "Binde mit einer Krawatte die Oberschenkel deines Partners dicht aneinander. Warte 2 Minuten mit Augenkontakt + Berührung. Dann löse das Band."
+      ],
+      "fr": [
+        "Début de scène : clarifiez le safeword (par ex. \"rouge\" = stop immédiat). Avec un foulard en soie, joins doucement les poignets de ton/ta partenaire — pas serré, juste présent au toucher. Pendant 1 minute, ne le/la touche pas, seulement du regard.",
+        "Avec une cravate, joins les poignets de ton/ta partenaire au-dessus de sa tête. Garde-le/la dans cette position pendant 2 minutes et explore-le/la par le toucher. Contrôle sa respiration.",
+        "Avec un long foulard, bande les yeux de ton/ta partenaire + joins ses poignets. Pendant 3 minutes, fais-le/la languir par la voix, le toucher, la proximité.",
+        "Tu es le Lieur. Que ton/ta partenaire choisisse un mot de sécurité. Quoi que tu fasses, si ce mot est prononcé, arrête-toi à l'instant. Puis reprends l'exploration.",
+        "N'enroule la soie qu'autour d'un seul poignet de ton/ta partenaire. L'autre main reste libre. Avec cette main, il/elle peut te toucher où il/elle veut — sans que tu ne défasses rien.",
+        "Avec une cravate, lie les cuisses de ton/ta partenaire proches l'une de l'autre. Attends 2 minutes avec lui/elle en contact visuel + toucher. Puis dénoue."
+      ],
+      "es": [
+        "Inicio de escena: aclara la safeword (ej. \"rojo\" = detente al instante). Con un pañuelo de seda o una bufanda de seda, une suavemente las muñecas de tu pareja — no apretado, solo que lo sienta al tacto. Durante 1 minuto no la toques, solo mírala.",
+        "Con una corbata, une las muñecas de tu pareja por encima de su cabeza. Mantenla en esa posición durante 2 minutos y explórala con el tacto. Controla su respiración.",
+        "Con una bufanda larga, véndale los ojos a tu pareja + une sus muñecas. Durante 3 minutos entretenla con la voz, el tacto y la cercanía.",
+        "Tú eres el Cuerdista. Que tu pareja elija una palabra de seguridad. Hagas lo que hagas, si dice esa palabra, detente al instante. Después sigue explorando.",
+        "Envuelve con seda solo una muñeca de tu pareja. La otra mano queda libre. Con esa mano libre puede tocarte donde quiera — sin que tú la sueltes.",
+        "Con una corbata, ata los muslos de tu pareja uno junto al otro. Durante 2 minutos quédate con ella en contacto visual + tacto. Luego desata la cuerda."
+      ],
+      "it": [
+        "Inizio scena: chiarite la safeword (es. \"rosso\" = stop immediato). Con un foulard di seta o una sciarpa di seta unisci dolcemente i polsi del tuo partner — non stretti, solo percepibili al tocco. Per 1 minuto non toccarlo/a, solo con lo sguardo.",
+        "Unisci i polsi del tuo partner sopra la testa con una cravatta. Per 2 minuti tienilo/a in questa posizione ed esplora con il tocco. Controlla il respiro.",
+        "Con una sciarpa lunga benda gli occhi del tuo partner + unisci i polsi. Per 3 minuti stuzzicalo/a con la voce, il tocco, la vicinanza.",
+        "Il Legatore sei tu. Il tuo partner stabilisca una parola di sicurezza. Qualunque cosa tu stia facendo, se viene detta quella parola fermati all'istante. Poi riprendi l'esplorazione.",
+        "Avvolgi nella seta un solo polso del tuo partner. L'altra mano resta libera. Con quella mano può toccarti dove vuole — senza che tu sciolga il nodo.",
+        "Con una cravatta lega le cosce del tuo partner vicine tra loro. Per 2 minuti resta con lui/lei con contatto visivo + tocco. Poi sciogli il legame."
       ]
     }
   },
   {
     "id": "yaramaz-kedi",
     "name": "Yaramaz Kedi",
-    "nameI18n": { "en": "Mischievous Cat" },
+    "nameI18n": {
+      "en": "Mischievous Cat",
+      "de": "Freche Katze",
+      "fr": "Chaton Malicieux",
+      "es": "Gatita Traviesa",
+      "it": "Gatta Birichina"
+    },
     "color": "#831843",
     "icon": "🐈",
     "track": "cesur",
@@ -52,13 +96,51 @@
         "The Cat kneels in front of the Caretaker. The Caretaker approaches slowly, strokes their hair, says \"good cat.\" One minute of this ritual.",
         "If you're the Cat: no words — only breath and small sounds. The Caretaker gives you a task (kiss, touch, sit). Carry it out exactly.",
         "Switch roles. This round you're the Cat. Your partner is the Caretaker. Three-minute duet — then talk about the roles. What did you feel?"
+      ],
+      "de": [
+        "Diese Runde: einer ist \"Pfleger\", einer ist \"Katze\". Die Katze schweigt — spricht aber durch Reaktionen. Der Pfleger bietet 3 verschiedene Arten von Streicheln an (langsam, schnell, sanft). Die Katze zeigt körperlich, welche sie will.",
+        "Die Person in der Katzenrolle darf nicht sprechen. Der Pfleger kommuniziert 5 Minuten lang nur mit Berührung und Worten. Die Katze antwortet mit Reaktionen.",
+        "Der Pfleger streichelt 30 Sekunden hinter dem Ohr der Katze. Die Katze bestätigt mit einer Reaktion (schnurrt, lehnt sich an). Der Pfleger wiederholt das an 3 verschiedenen Stellen.",
+        "Die Katze kniet vor dem Pfleger nieder. Der Pfleger nähert sich langsam, streichelt ihr Haar, sagt \"brave Katze\". 1 Minute dieses Ritual.",
+        "Wenn du die Katze bist: keine Worte, nur Atem und Schnurren. Der Pfleger gibt dir eine Aufgabe (küss, berühr, setz dich). Führ sie ganz aus.",
+        "Rollenwechsel. Diese Runde bist du die Katze. Dein Partner ist der Pfleger. 3 Minuten dieses Duett — danach sprecht ihr über die Rollen: Was hast du gefühlt?"
+      ],
+      "fr": [
+        "Ce tour, l'un est \"Gardien\", l'autre \"Chat\". Le Chat est silencieux — mais parle par ses réactions. Le Gardien propose 3 types de caresses différentes (lente, rapide, douce). Le Chat exprime physiquement celle qu'il préfère.",
+        "La personne dans le rôle du Chat ne peut pas parler. Le Gardien communique avec le Chat pendant 5 minutes uniquement par le toucher et la parole. Le Chat répond par ses réactions.",
+        "Le Gardien caresse l'arrière de l'oreille du Chat pendant 30 secondes. Le Chat approuve par sa réaction (ronronne, se penche). Le Gardien répète cela sur 3 zones différentes.",
+        "Le Chat s'agenouille devant le Gardien. Le Gardien s'approche lentement, caresse ses cheveux, dit \"gentil chat\". 1 minute de ce rituel.",
+        "Si c'est toi le Chat : pas de mots, seulement souffle et ronronnement. Le Gardien te donne une tâche (embrasse, touche, assieds-toi). Exécute la tâche à la perfection.",
+        "Les rôles changent. Ce tour, c'est toi le Chat. Ton/ta partenaire est dans le rôle du Gardien. 3 minutes de ce duo — puis parlez des rôles, qu'as-tu ressenti ?"
+      ],
+      "es": [
+        "Esta ronda uno es \"Cuidador\" y el otro \"Gatita\". La Gatita está en silencio — pero habla con reacciones. El Cuidador le ofrece 3 tipos distintos de caricias (lenta, rápida, suave). La Gatita dice cuál quiere con una expresión física.",
+        "Quien hace de Gatita no puede hablar. El Cuidador se comunica con la Gatita durante 5 minutos solo con el tacto y la voz. La Gatita responde con reacciones.",
+        "El Cuidador acaricia detrás de la oreja de la Gatita durante 30 segundos. La Gatita lo aprueba con una reacción (ronronea, se recuesta). El Cuidador lo repite en 3 zonas distintas.",
+        "La Gatita se arrodilla frente al Cuidador. El Cuidador se acerca lentamente, le acaricia el cabello y le dice \"buena gatita\". 1 minuto con este ritual.",
+        "Si tú eres la Gatita: no puedes usar palabras, solo respiración y ronroneos. El Cuidador te da una tarea (besa, toca, siéntate). Cumple la tarea al pie de la letra.",
+        "Los roles se invierten. Esta ronda tú eres la Gatita. Tu pareja hace de Cuidador. 3 minutos de este dúo — después hablan de los roles, ¿qué sentiste?"
+      ],
+      "it": [
+        "In questo turno uno è \"Custode\" e l'altro è \"Gatta\". La Gatta è silenziosa — ma parla con le reazioni. Il Custode offre 3 tipi diversi di carezze (lenta, veloce, morbida). La Gatta dice quale vuole con l'espressione fisica.",
+        "Chi fa la Gatta non può parlare. Il Custode, per 5 minuti, comunica con la Gatta solo con il tocco e la voce. La Gatta risponde con le sue reazioni.",
+        "Il Custode accarezza dietro l'orecchio della Gatta per 30 secondi. La Gatta risponde approvando (fa le fusa, si appoggia). Il Custode ripete lo stesso in 3 zone diverse.",
+        "La Gatta si inginocchia davanti al Custode. Il Custode si avvicina lentamente, le accarezza i capelli, dice \"brava gatta\". Per 1 minuto questo rituale.",
+        "Se la Gatta sei tu: non puoi usare parole, solo respiro e fusa. Il Custode ti dà un compito (bacia, tocca, siediti). Esegui il compito alla perfezione.",
+        "I ruoli si scambiano. Questo turno la Gatta sei tu. Il tuo partner è nel ruolo del Custode. Questo duetto di 3 minuti — poi parlate dei ruoli, cosa hai sentito?"
       ]
     }
   },
   {
     "id": "ustabasi",
     "name": "Ustabaşı",
-    "nameI18n": { "en": "Foreman" },
+    "nameI18n": {
+      "en": "Foreman",
+      "de": "Vorarbeiter",
+      "fr": "Contremaître",
+      "es": "Capataz",
+      "it": "Capo"
+    },
     "color": "#0C4A6E",
     "icon": "🗝️",
     "track": "cesur",
@@ -80,6 +162,38 @@
         "The Foreman builds a chain of three commands: \"Breathe. Open your eyes. Look at me.\" The partner follows exactly. Then the same chain again, different tempo.",
         "Clear roles: Foreman and Follower. The Follower moves only on the Foreman's command. Five minutes — if a rule is broken, a 5-second pre-agreed consequence follows.",
         "End-of-scene ritual: the Foreman strokes the Follower's head for 1 minute, says \"that was good.\" The Follower answers back. Trust renewed + feedback."
+      ],
+      "de": [
+        "Starte eine \"Szene\": \"Wir spielen jetzt 10 Minuten ein Spiel. Safewords: 'gelb' mach langsam weiter, 'rot' sofort stopp.\" Dann beginnt der Vorarbeiter mit den Kommandos.",
+        "Der Vorarbeiter probiert mit seinem Partner 3 Positionen — finde heraus, in welcher er sich am wohlsten fühlt. Halte jede Position 30 Sekunden, dann wechsle.",
+        "Der Vorarbeiter schließt die Augen seines Partners. Mit einer Handseite berührt er verschiedene Stellen — der Partner sagt \"hier\" oder \"woanders\".",
+        "Der Vorarbeiter baut eine Kette aus 3 Kommandos: \"Atme ein. Öffne die Augen. Sieh mich an.\" Der Partner führt sie genau aus. Dann noch einmal dieselbe Kette in anderem Tempo.",
+        "Rollen klar: Vorarbeiter und Nachfolger. Der Nachfolger bewegt sich nur auf Kommando des Vorarbeiters. 5 Minuten lang — bei Regelbruch eine 5-sekündige, vorher vereinbarte Konsequenz.",
+        "Ritual zum Szenenende: Der Vorarbeiter streichelt 1 Minute den Kopf des Nachfolgers, sagt \"das war gut\". Der Nachfolger antwortet. Vertrauen erneuern + Feedback."
+      ],
+      "fr": [
+        "Lance une \"scène\" : \"On va jouer un jeu de 10 minutes. Mots de sécurité : 'jaune' continue mais plus lentement, 'rouge' arrête tout de suite.\" Puis le Contremaître commence à donner ses ordres.",
+        "Le Contremaître essaie 3 positions avec son/sa partenaire — découvre dans laquelle il/elle est le/la plus à l'aise. Tiens chaque position 30 secondes, puis change.",
+        "Le Contremaître ferme les yeux de son/sa partenaire. Avec un côté de la main, il touche différentes zones — le/la partenaire dit \"ici\" ou \"ailleurs\".",
+        "Le Contremaître enchaîne 3 ordres : \"Respire. Ouvre les yeux. Regarde-moi.\" Le/la partenaire exécute à la perfection. Puis la même chaîne à un autre tempo.",
+        "Rôles clairs : Contremaître et Suiveur. Le Suiveur ne bouge qu'aux ordres du Contremaître. Pendant 5 minutes — s'il/elle enfreint la règle, une conséquence de 5 secondes convenue à l'avance.",
+        "Rituel de fin de scène : le Contremaître caresse la tête du Suiveur pendant 1 minute, dit \"c'était bien\". Le Suiveur répond. Renouer la confiance + retour."
+      ],
+      "es": [
+        "Abre una \"escena\": \"Ahora vamos a jugar un juego de 10 minutos. Palabras de seguridad: 'amarillo' sigue despacio, 'rojo' detente al instante.\" Después el Capataz empieza a dar órdenes.",
+        "El Capataz prueba 3 posiciones con su pareja — descubre en cuál se siente más cómoda. Mantén cada posición 30 segundos y luego cambia.",
+        "El Capataz le cubre los ojos a su pareja. Con un lado de su mano toca distintas zonas — la pareja dice \"aquí\" o \"a otro lado\".",
+        "El Capataz arma una cadena de 3 órdenes: \"Respira. Abre los ojos. Mírame.\" La pareja las cumple al pie de la letra. Después repite la misma cadena con otro ritmo.",
+        "Roles claros: Capataz y Seguidor. El Seguidor solo se mueve con las órdenes del Capataz. Durante 5 minutos — si rompe la regla, una consecuencia de 5 segundos acordada de antemano.",
+        "Ritual de cierre de escena: el Capataz acaricia la cabeza del Seguidor durante 1 minuto y le dice \"estuviste bien\". El Seguidor responde. Renovación de confianza + retroalimentación."
+      ],
+      "it": [
+        "Avvia una \"scena\": \"Ora giocheremo per 10 minuti. Parole di sicurezza: 'giallo' continua più piano, 'rosso' fermati subito.\" Poi il Capo inizia a dare comandi.",
+        "Il Capo prova 3 posizioni col partner — scoprite in quale è più a suo agio. Tieni ogni posizione per 30 secondi, poi cambia.",
+        "Il Capo chiude gli occhi del partner. Con un lato della mano tocca zone diverse — il partner dice \"qui\" oppure \"da un'altra parte\".",
+        "Il Capo costruisce una catena di 3 comandi: \"Respira. Apri gli occhi. Guardami.\" Il partner esegue alla lettera. Poi di nuovo la stessa catena con un tempo diverso.",
+        "Ruoli chiari: Capo e Seguace. Il Seguace si muove solo con i comandi del Capo. Per 5 minuti — se infrange la regola, una conseguenza di 5 secondi concordata prima.",
+        "Rituale di fine scena: il Capo accarezza la testa del Seguace per 1 minuto, dice \"sei stato/a bravo/a\". Il Seguace risponde. Rinnovo della fiducia + feedback."
       ]
     }
   }

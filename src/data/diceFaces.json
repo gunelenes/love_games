@@ -2,7 +2,13 @@
   {
     "id": "opucuk",
     "name": "Öpücük",
-    "nameI18n": { "en": "Kiss" },
+    "nameI18n": {
+      "en": "Kiss",
+      "de": "Kuss",
+      "fr": "Baiser",
+      "es": "Beso",
+      "it": "Bacio"
+    },
     "color": "#FF4D6D",
     "icon": "💋",
     "prompts": [
@@ -19,6 +25,34 @@
         "Hold their hand and kiss the back of it.",
         "Give 3 small kisses on their neck.",
         "Hold a kiss for 5 seconds, eyes closed."
+      ],
+      "de": [
+        "Gib deiner Partnerin einen sanften Kuss auf die Wange.",
+        "Drück einen langen Kuss auf ihre Stirn.",
+        "Nimm ihre Hand und küsse sie auf den Handrücken.",
+        "Gib ihr 3 kleine Küsse auf den Hals.",
+        "Bleibt 5 Sekunden in einem Kuss, mit geschlossenen Augen."
+      ],
+      "fr": [
+        "Dépose un tendre baiser sur la joue de ton/ta partenaire.",
+        "Pose un long baiser sur son front.",
+        "Prends sa main et embrasse-la à l'envers.",
+        "Dépose 3 petits baisers dans son cou.",
+        "Restez 5 secondes dans un même baiser, les yeux fermés."
+      ],
+      "es": [
+        "Dale a tu pareja un beso suave en la mejilla.",
+        "Posa un beso largo en su frente.",
+        "Toma su mano y dale un beso al revés.",
+        "Dale 3 besitos en el cuello.",
+        "Quédense 5 segundos en un beso, con los ojos cerrados."
+      ],
+      "it": [
+        "Dai un bacio dolce sulla guancia del tuo partner.",
+        "Posa un lungo bacio sulla sua fronte.",
+        "Prendigli la mano e baciala sul dorso.",
+        "Dai 3 piccoli baci sul suo collo.",
+        "Rimanete in un bacio per 5 secondi, con gli occhi chiusi."
       ]
     },
     "track": "romantik",
@@ -27,7 +61,13 @@
   {
     "id": "sarilma",
     "name": "Sarılma",
-    "nameI18n": { "en": "Embrace" },
+    "nameI18n": {
+      "en": "Embrace",
+      "de": "Umarmung",
+      "fr": "Étreinte",
+      "es": "Abrazo",
+      "it": "Abbraccio"
+    },
     "color": "#FFB84D",
     "icon": "🤗",
     "prompts": [
@@ -44,6 +84,34 @@
         "Hug them from behind and rest on their shoulder.",
         "Hold their hands, lock eyes.",
         "Pull them into your lap and rock gently."
+      ],
+      "de": [
+        "Umarmt euch 30 Sekunden fest.",
+        "Rücken an Rücken — atmet 1 Minute lang still zusammen.",
+        "Umarme sie von hinten und lehn dich an ihre Schulter.",
+        "Haltet die Hände, schaut euch in die Augen.",
+        "Nimm sie in den Arm und wiegt euch sanft."
+      ],
+      "fr": [
+        "Serrez-vous fort pendant 30 secondes.",
+        "Dos à dos, respirez en silence pendant 1 minute.",
+        "Enlace-le/la par-derrière et pose ta tête sur son épaule.",
+        "Prends ses mains, regarde-le/la dans les yeux.",
+        "Prends-le/la sur tes genoux et berce-le/la."
+      ],
+      "es": [
+        "Abrácense fuerte durante 30 segundos.",
+        "Espalda con espalda, respiren en silencio durante 1 minuto.",
+        "Abrázala por detrás y apoya la cabeza en su hombro.",
+        "Tómense de las manos y mírense a los ojos.",
+        "Tómala en tu regazo y mézanse."
+      ],
+      "it": [
+        "Abbracciatevi stretti per 30 secondi.",
+        "Mettetevi schiena contro schiena e respirate in silenzio per 1 minuto.",
+        "Abbraccialo da dietro e appoggiati alla sua spalla.",
+        "Prendigli le mani e guardatevi negli occhi.",
+        "Prendilo tra le braccia e cullatevi."
       ]
     },
     "track": "romantik",
@@ -52,7 +120,13 @@
   {
     "id": "iltifat",
     "name": "İltifat",
-    "nameI18n": { "en": "Compliment" },
+    "nameI18n": {
+      "en": "Compliment",
+      "de": "Kompliment",
+      "fr": "Compliment",
+      "es": "Cumplido",
+      "it": "Complimento"
+    },
     "color": "#4ECDC4",
     "icon": "💫",
     "prompts": [
@@ -69,6 +143,34 @@
         "Share why they feel special to you today.",
         "Say a short thank-you message to them.",
         "What's the first word that comes to mind when you think of them?"
+      ],
+      "de": [
+        "Sag ihr, welche körperliche Eigenschaft du an ihr am meisten liebst.",
+        "Erzähl ihr, welche Charakterseite du an ihr bewunderst.",
+        "Teil mit ihr, warum sie heute für dich besonders ist.",
+        "Sag ihr kurz Danke — mit deinen eigenen Worten.",
+        "Welches Wort fällt dir als erstes zu ihr ein?"
+      ],
+      "fr": [
+        "Dis-lui quel trait physique tu préfères chez lui/elle.",
+        "Raconte un trait de caractère que tu admires chez lui/elle.",
+        "Partage ce qui le/la rend spécial(e) à tes yeux aujourd'hui.",
+        "Dis-lui un petit mot de remerciement.",
+        "Quel mot te vient en premier à l'esprit quand tu penses à lui/elle ?"
+      ],
+      "es": [
+        "Dile cuál es tu rasgo físico favorito de tu pareja.",
+        "Cuéntale una faceta de su carácter que admiras.",
+        "Comparte por qué hoy lo encuentras especial.",
+        "Dile un breve mensaje de agradecimiento.",
+        "¿Qué palabra es la primera que te viene a la mente al pensar en él?"
+      ],
+      "it": [
+        "Dì al tuo partner qual è il suo tratto fisico che ami di più.",
+        "Raccontagli un lato del suo carattere che ammiri.",
+        "Condividi perché oggi lo trovi speciale.",
+        "Dedicagli un breve messaggio di gratitudine.",
+        "Qual è la prima parola che ti viene in mente pensando a lui?"
       ]
     },
     "track": "romantik",
@@ -77,7 +179,13 @@
   {
     "id": "ani",
     "name": "Anı",
-    "nameI18n": { "en": "Memory" },
+    "nameI18n": {
+      "en": "Memory",
+      "de": "Erinnerung",
+      "fr": "Souvenir",
+      "es": "Recuerdo",
+      "it": "Ricordo"
+    },
     "color": "#A78BFA",
     "icon": "📸",
     "prompts": [
@@ -94,6 +202,34 @@
         "Remember the day you first met.",
         "Describe your most unforgettable trip together.",
         "Share the moment you laughed the hardest together."
+      ],
+      "de": [
+        "Erzähl von eurer liebsten gemeinsamen Erinnerung.",
+        "Teil den lustigsten Moment, den du mit ihr hattest.",
+        "Erinnert euch an den Tag, an dem ihr euch kennengelernt habt.",
+        "Erzähl von eurer unvergesslichsten Reise.",
+        "Teil den Moment, bei dem ihr am meisten gelacht habt."
+      ],
+      "fr": [
+        "Raconte votre moment préféré vécu ensemble.",
+        "Partage ton souvenir le plus drôle avec lui/elle.",
+        "Souvenez-vous du jour de votre première rencontre.",
+        "Raconte votre voyage le plus inoubliable.",
+        "Partage le moment où vous avez le plus ri ensemble."
+      ],
+      "es": [
+        "Cuenta su momento favorito juntos.",
+        "Comparte el recuerdo más divertido que tienes con él.",
+        "Recuerda el día en que se conocieron.",
+        "Cuenta su viaje más inolvidable.",
+        "Comparte el momento en que más se rieron juntos."
+      ],
+      "it": [
+        "Racconta il tuo ricordo preferito vissuto insieme.",
+        "Condividi il ricordo più divertente che hai con lui.",
+        "Ricorda il giorno in cui vi siete conosciuti.",
+        "Racconta il vostro viaggio più indimenticabile.",
+        "Condividi il momento in cui avete riso di più insieme."
       ]
     },
     "track": "romantik",
@@ -102,7 +238,13 @@
   {
     "id": "dokunus",
     "name": "Dokunuş",
-    "nameI18n": { "en": "Touch" },
+    "nameI18n": {
+      "en": "Touch",
+      "de": "Berührung",
+      "fr": "Toucher",
+      "es": "Caricia",
+      "it": "Tocco"
+    },
     "color": "#F472B6",
     "icon": "✨",
     "prompts": [
@@ -119,6 +261,34 @@
         "Frame their face with your hands.",
         "Slide your hand into theirs — interlace your fingers.",
         "Give them a soft back massage for 30 seconds."
+      ],
+      "de": [
+        "Reibe deine Hände langsam warm und leg sie auf sie.",
+        "Streichle sanft durch ihr Haar.",
+        "Rahm ihr Gesicht mit deinen Händen ein.",
+        "Nimm ihre Hand, verschränkt die Finger ineinander.",
+        "Massier ihren Rücken 30 Sekunden lang sanft."
+      ],
+      "fr": [
+        "Réchauffe tes mains en les frottant doucement, puis tends-les vers lui/elle.",
+        "Caresse ses cheveux avec douceur.",
+        "Encadre son visage de tes mains.",
+        "Glisse ta main dans la sienne, entrelace vos doigts.",
+        "Fais-lui un massage doux dans le dos pendant 30 secondes."
+      ],
+      "es": [
+        "Frota tus manos lentamente para calentarlas y ofréceselas.",
+        "Acaricia su cabello con suavidad.",
+        "Enmarca su rostro con tus manos.",
+        "Toma su mano y entrelaza los dedos.",
+        "Dale un masaje suave en la espalda durante 30 segundos."
+      ],
+      "it": [
+        "Scalda le tue mani sfregandole lentamente, poi tendigliele.",
+        "Accarezzagli i capelli con dolcezza.",
+        "Incornicia il suo viso tra le tue mani.",
+        "Infila la sua mano nella tua e intreccia le dita.",
+        "Fagli un massaggio delicato sulla schiena per 30 secondi."
       ]
     },
     "track": "romantik",
@@ -127,7 +297,13 @@
   {
     "id": "fisilti",
     "name": "Fısıltı",
-    "nameI18n": { "en": "Whisper" },
+    "nameI18n": {
+      "en": "Whisper",
+      "de": "Flüstern",
+      "fr": "Murmure",
+      "es": "Susurro",
+      "it": "Sussurro"
+    },
     "color": "#60A5FA",
     "icon": "🌙",
     "prompts": [
@@ -144,6 +320,34 @@
         "Whisper something that's been on your mind about them today.",
         "Whisper what makes you happiest about them.",
         "Whisper \"I love you\" in three words into their ear."
+      ],
+      "de": [
+        "Flüster ihr einen Teil deines Lieblingslieds ins Ohr.",
+        "Verrat ihr ein Geheimnis über dich selbst.",
+        "Flüster ihr etwas zu, das dich heute an sie denken ließ.",
+        "Sag flüsternd: womit machst du mich am glücklichsten.",
+        "Flüster ihr in 3 Worten \"ich liebe dich\" ins Ohr."
+      ],
+      "fr": [
+        "Murmure à son oreille un passage de ta chanson préférée.",
+        "Confie-lui un secret à ton sujet.",
+        "Murmure-lui une chose qui t'a fait penser à lui/elle aujourd'hui.",
+        "Dis-lui, en murmurant, ce qui te rend le/la plus heureux(se) chez lui/elle.",
+        "Murmure à son oreille, en 3 mots : \"je t'aime très fort\"."
+      ],
+      "es": [
+        "Susúrrale al oído un fragmento de tu canción favorita.",
+        "Cuéntale un secreto tuyo.",
+        "Susúrrale algo que te hizo pensar en él hoy.",
+        "Dile susurrando con qué cosa es que más te hace feliz.",
+        "Susúrrale al oído en 3 palabras: \"te amo mucho\"."
+      ],
+      "it": [
+        "Sussurragli all'orecchio un pezzo della tua canzone preferita.",
+        "Confidagli un tuo segreto che ti riguarda.",
+        "Sussurragli qualcosa che oggi te lo ha fatto pensare.",
+        "Digli sussurrando cosa ti rende più felice di lui.",
+        "Sussurragli all'orecchio, in 3 parole: \"ti amo tanto\"."
       ]
     },
     "track": "romantik",

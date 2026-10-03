@@ -1,0 +1,222 @@
+{
+  "app": {
+    "loading": "Cargando…"
+  },
+  "common": {
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "retry": "Reintentar",
+    "error": "Error:"
+  },
+  "home": {
+    "eyebrow": "PARA PAREJAS",
+    "title": "Love Games",
+    "subtitle": "Minijuegos para jugar juntos",
+    "footer": "Más juegos en camino ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Ruleta",
+      "tagline": "Gírala y descubre tu categoría"
+    },
+    "dice": {
+      "name": "Dados",
+      "tagline": "Tira — deja que la sorpresa te encuentre"
+    },
+    "cards": {
+      "name": "Cartas",
+      "tagline": "Elige categorías y saca una carta"
+    },
+    "boxes": {
+      "name": "Cajas",
+      "tagline": "Mezclen notas y sorpréndanse"
+    }
+  },
+  "wheel": {
+    "eyebrow": "RULETA",
+    "title": "Gira la Ruleta",
+    "spinPrompt": "Toca el botón del centro para girar",
+    "spinBtn": "GIRAR",
+    "spinAgain": "Girar de nuevo",
+    "lastLabel": "Última:",
+    "settings": {
+      "title": "Ajustes de la Ruleta",
+      "summary": "{{active}} / {{total}} activas · mín {{min}} requeridas",
+      "promptsCount": "{{count}} desafíos",
+      "lockNote": "Una de las últimas {{min}} categorías — no se puede desactivar"
+    }
+  },
+  "dice": {
+    "eyebrow": "DADOS",
+    "title": "Tira los Dados",
+    "rollLabel": "TIRAR",
+    "newRoll": "NUEVA TIRADA",
+    "poster": "FUERA DE LA CAJA"
+  },
+  "cards": {
+    "eyebrow": "CARTAS",
+    "title": "Saca una Carta",
+    "drawCard": "Sacar una carta",
+    "newCard": "Nueva carta",
+    "hint": "Toca el mazo abajo → saca una carta",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} categorías · {{prompts}} desafíos",
+    "categoryFallback": "Categoría",
+    "footerPrompt": "Sacar otra",
+    "settings": {
+      "title": "Ajustes de Cartas",
+      "summary": "{{active}} / {{total}} activas · mín {{min}} requeridas",
+      "promptsCount": "{{count}} desafíos",
+      "lockNote": "Una de las últimas {{min}} — no se puede desactivar"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "CAJAS",
+    "lobbyTitle": "Crea o únete a una sala",
+    "lobbySubtitle": "Las notas se sincronizan en vivo entre dos teléfonos — sin QR",
+    "createNew": "Crear nueva sala",
+    "createNewSub": "Obtén un código de 6 dígitos y compártelo con tu pareja",
+    "join": "Unirse a sala",
+    "joinSub": "Ingresa el código que te dio tu pareja",
+    "generatingCode": "Generando…",
+    "generateCode": "Generar código",
+    "back": "Atrás",
+    "codeReadyTitle": "Tu código está listo 🎉",
+    "codeReadyText": "Comparte este código con tu pareja. Elegirá \"Unirse a sala\" e ingresará el código.",
+    "goToBoxes": "Ir a Cajas",
+    "joinTitle": "Unirse a sala",
+    "joinText": "Ingresa el código de 6 dígitos que te dio tu pareja.",
+    "joining": "Uniéndose…",
+    "joinBtn": "Unirse",
+    "identityWait": "Identidad no lista, intenta de nuevo en unos segundos",
+    "roomNotFound": "No existe esa sala. Revisa el código.",
+    "roomFull": "La sala está llena (2 personas). Prueba con otra.",
+    "listEyebrow": "CAJAS COMPARTIDAS",
+    "listRoomLabel": "SALA",
+    "listBoth": "2/2 personas",
+    "listWaiting": "1/2 · esperando a tu pareja",
+    "listLiveSync": "Las notas se sincronizan en vivo",
+    "listGiveCode": "Dale el código a tu pareja para conectarse",
+    "leaveRoom": "Salir de la sala",
+    "leaveConfirmTitle": "Salir de la sala",
+    "leaveConfirmText": "El vínculo con esta sala se eliminará de este teléfono. Las cajas se quedan en Firestore — puedes volver con el código.",
+    "cancel": "Cancelar",
+    "leave": "Salir",
+    "newBox": "Nueva caja",
+    "loading": "Cargando…",
+    "error": "Error:",
+    "noBoxes": "Aún no hay cajas",
+    "noBoxesHint": "Crea una caja nueva, agrega notas y mézclalas con tu pareja",
+    "boxCardMeta": "{{mine}} tuyas · {{partner}} de tu pareja",
+    "ready": "Listo",
+    "notesCount": "{{count}} notas",
+    "createBoxTitle": "Nueva caja",
+    "createBoxSub": "Dale un nombre y tema a tu caja",
+    "namePlaceholder": "ej. Noche de pelis",
+    "create": "Crear",
+    "boxNotFound": "Caja no encontrada",
+    "yours": "Tus notas",
+    "newNotePlaceholder": "Escribe una nota nueva…",
+    "add": "Agregar",
+    "emptyNote": "Aún no hay notas. Empieza a escribir arriba.",
+    "partner": "Tu pareja",
+    "partnerNotesCount": "{{count}} notas",
+    "partnerNotJoined": "Aún no se ha unido a la sala",
+    "partnerReady": "Tu pareja está lista ✨",
+    "partnerNotConfirmed": "Aún no ha confirmado",
+    "partnerNoNotes": "Aún no ha agregado notas",
+    "youConfirmed": "Tú ✓ ({{count}})",
+    "youCount": "Tú {{count}}",
+    "partnerConfirmed": "Pareja ✓ ({{count}})",
+    "partnerCount": "Pareja {{count}}",
+    "partnerWaiting": "Esperando a tu pareja",
+    "notesDone": "Mis notas están listas",
+    "editNotes": "Cambiar mis notas",
+    "editNotesWaiting": "Cambiar mis notas · tu pareja no ha confirmado",
+    "shuffle": "MEZCLAR",
+    "revealEyebrow": "FUERA DE LA CAJA",
+    "close": "Cerrar",
+    "shuffleAgain": "Mezclar de nuevo",
+    "deleteBoxTitle": "Eliminar caja",
+    "deleteBoxText": "¿Eliminar \"{{name}}\" y todas sus notas? Se elimina en ambos teléfonos."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Nivel: {{track}} N{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Intimidad",
+      "tagline": "Caricias emocionales y físicas",
+      "levels": {
+        "1": {
+          "name": "Susurro",
+          "hint": "Flirteo, miradas, notas escondidas"
+        },
+        "2": {
+          "name": "Cercanía",
+          "hint": "Abrazos, besos, caricias"
+        },
+        "3": {
+          "name": "Secretos",
+          "hint": "Compartir fantasías, explorar los sentidos"
+        },
+        "4": {
+          "name": "Llama",
+          "hint": "Momentos ardientes, lentos y profundos"
+        },
+        "5": {
+          "name": "Vínculo",
+          "hint": "Unión física y espiritual profunda"
+        }
+      }
+    },
+    "cesur": {
+      "label": "Exploración",
+      "tagline": "Rompe los límites",
+      "levels": {
+        "1": {
+          "name": "Chispa",
+          "hint": "Desafíos provocadores"
+        },
+        "2": {
+          "name": "Brillo",
+          "hint": "Antifaz, desvestir lento, sentidos"
+        },
+        "3": {
+          "name": "Audacia",
+          "hint": "Guía/Seguidor, impacto suave"
+        },
+        "4": {
+          "name": "Cumbre",
+          "hint": "Roles definidos, escenas estructuradas"
+        },
+        "5": {
+          "name": "Leyenda",
+          "hint": "Avanzado, ritual/protocolo, dinámica profunda"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Contenido para adultos",
+    "body": "Esta app está pensada para **adultos de 18 años o más**. El contenido incluye temas sexuales, intimidad y sugerencias con tintes kink. Para continuar:",
+    "checkbox": "Tengo 18+ y voy a usarla con **mi pareja** en consentimiento mutuo.",
+    "accept": "Aceptar y continuar",
+    "saving": "Guardando…",
+    "footer": "Este consentimiento se guarda solo en tu dispositivo. No se envía ninguna cuenta ni ubicación."
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "close": "Cerrar"
+  }
+}

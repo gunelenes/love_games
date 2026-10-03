@@ -2,7 +2,13 @@
   {
     "id": "yasak-duyular",
     "name": "Yasak Duyular",
-    "nameI18n": { "en": "Forbidden Senses" },
+    "nameI18n": {
+      "en": "Forbidden Senses",
+      "de": "Verbotene Sinne",
+      "fr": "Sens interdits",
+      "es": "Sentidos Prohibidos",
+      "it": "Sensi Proibiti"
+    },
     "color": "#4338CA",
     "icon": "🕶️",
     "track": "cesur",
@@ -24,13 +30,51 @@
         "The blindfold is on you. Your partner decides what they want you to feel — but first they have to ask you \"are you ready?\"",
         "Dim the room. Light one candle. For 5 minutes, discover each other's face by that light alone.",
         "Tell them \"close your eyes.\" Lean in, whisper three words in their ear, then let your lips meet theirs for 3 seconds — barely. Then pull back, and let them wait for the next."
+      ],
+      "de": [
+        "Verbinde deinem Partner die Augen (Seidentuch, Krawatte). Berühre ihn 3 Minuten lang mit deinen Händen, wie du willst — er darf nur fühlen und reagieren.",
+        "Beide Augen geschlossen. Setzt euch gegenüber. Nähert euch 2 Minuten lang nur über eure Atemzüge und die Nähe eurer Hände — bis sich eure Lippen berühren.",
+        "Schließe die Augen deines Partners. Berühre 30 Sekunden lang mit 3 verschiedenen Dingen (deinen Lippen, deinem Finger, einem Stoff) langsam eine Stelle seiner Haut — lass ihn raten.",
+        "Die Augenbinde trägst du. Dein Partner entscheidet, was er dich fühlen lassen will — aber vorher muss er dich fragen: \"bist du bereit?\"",
+        "Verdunkle den Raum. Zünde nur eine Kerze an. Entdeckt 5 Minuten lang eure Gesichter nur in diesem Licht.",
+        "Sag deinem Partner \"schließ die Augen\". Komm nah heran, flüstere ihm 3 Worte ins Ohr, berühre dann 3 Sekunden lang seine Lippen — ganz sanft. Dann zieh dich zurück, er wird warten."
+      ],
+      "fr": [
+        "Mets un bandeau à ton/ta partenaire (foulard en soie, cravate). Pendant 3 minutes, touche-le/la avec tes mains comme tu le désires — iel ne fait que ressentir et réagir.",
+        "Vos deux paires d'yeux sont fermées. Asseyez-vous face à face. Pendant 2 minutes, approchez-vous en ne percevant que le souffle de l'autre et la proximité de vos mains — jusqu'à ce que vos lèvres se touchent.",
+        "Couvre les yeux de ton/ta partenaire. Pendant 30 secondes, effleure doucement une zone de sa peau avec 3 choses différentes (tes lèvres, ton doigt, un tissu) — à iel de deviner.",
+        "C'est toi qui portes le bandeau. Ton/ta partenaire décide de ce qu'iel veut te faire ressentir — mais iel doit d'abord te demander \"tu es prêt·e ?\"",
+        "Plonge la pièce dans le noir. N'allume qu'une seule bougie. Pendant 5 minutes, explorez le visage de l'autre uniquement à cette lumière.",
+        "Dis à ton/ta partenaire \"ferme les yeux\". Approche-toi, murmure 3 mots à son oreille, puis pose tes lèvres sur les siennes 3 secondes — à peine. Puis recule, iel attendra encore."
+      ],
+      "es": [
+        "Pon una venda en los ojos de tu pareja (un pañuelo de seda, una corbata). Durante 3 minutos tócala con las manos como quieras — ella solo siente y reacciona.",
+        "Los dos con los ojos cerrados. Siéntense frente a frente. Durante 2 minutos acérquense sintiendo solo el sonido de su respiración y la cercanía de sus manos — hasta que los labios se rocen.",
+        "Cierra los ojos de tu pareja. Durante 30 segundos toca lentamente una zona de su piel con 3 cosas distintas (tus labios, un dedo, una tela) — que adivine qué es cada una.",
+        "La venda la llevas tú. Tu pareja decide qué quiere hacerte sentir — pero antes tiene que preguntarte \"¿estás lista?\".",
+        "Oscurece la habitación. Enciende solo una vela. Durante 5 minutos descubran el rostro del otro únicamente con esa luz.",
+        "Dile a tu pareja \"cierra los ojos\". Acércate, susúrrale 3 palabras al oído, luego roza sus labios por 3 segundos — muy suave. Después aléjate; va a quedarse esperando más."
+      ],
+      "it": [
+        "Metti una benda a chi ami (un foulard di seta, una cravatta). Per 3 minuti tocca il suo corpo come desideri — lui/lei sente soltanto e reagisce.",
+        "Entrambi con gli occhi chiusi. Sedetevi uno di fronte all'altra. Per 2 minuti avvicinatevi sentendo solo il respiro e la vicinanza delle mani — fino a quando le labbra si sfiorano.",
+        "Copri gli occhi a chi ami. Per 30 secondi tocca lentamente una zona della sua pelle con 3 cose diverse (le labbra, un dito, un tessuto) — deve indovinare.",
+        "La benda è su di te. Chi ami decide cosa farti sentire — ma prima deve chiederti \"sei pronto/a?\"",
+        "Oscura la stanza. Accendi solo una candela. Per 5 minuti scoprite il viso l'uno dell'altra solo con quella luce.",
+        "Di' a chi ami \"chiudi gli occhi\". Avvicinati, sussurragli 3 parole all'orecchio, poi sfiora le sue labbra per 3 secondi — con leggerezza. Poi ritirati, aspetterà ancora."
       ]
     }
   },
   {
     "id": "yavas-ritim",
     "name": "Yavaş Ritim",
-    "nameI18n": { "en": "Slow Rhythm" },
+    "nameI18n": {
+      "en": "Slow Rhythm",
+      "de": "Langsamer Rhythmus",
+      "fr": "Rythme lent",
+      "es": "Ritmo Lento",
+      "it": "Ritmo Lento"
+    },
     "color": "#0F766E",
     "icon": "🌊",
     "track": "cesur",
@@ -52,13 +96,51 @@
         "Before you touch, say one line: \"where do you want my hand to go?\" They answer; you hold your hand right there for 30 motionless seconds.",
         "Give your partner a single 5-second kiss — no tongue. Then 5 seconds of pause. Another kiss. Three rounds of that rhythm.",
         "Hold each other's hands. Sway as if you're about to dance, 30 seconds — don't break eye contact, no words."
+      ],
+      "de": [
+        "Zieh deinem Partner in 60 Sekunden ein Kleidungsstück langsam aus — immer gleiches Tempo, keine Eile.",
+        "Setzt euch gegenüber. Zieht abwechselnd dem anderen ein Kleidungsstück aus — bei jeder Runde ein Satz: \"ein Moment, in dem ich dich anziehend fand…\"",
+        "Frag deinen Partner \"welches meiner Kleidungsstücke soll ich ausziehen\". Zieh das Genannte in 2 Minuten langsam aus.",
+        "Vor dem Berühren ein Satz: \"wohin soll ich meine Hand jetzt führen?\" Er sagt es, du hältst sie 30 Sekunden genau dort — reglos.",
+        "Gib deinem Partner einen einzigen Kuss von 5 Sekunden — ohne Zunge. Dann 5 Sekunden Pause. Noch ein Kuss. Dieser Rhythmus, 3 Wiederholungen.",
+        "Haltet einander die Hände. Wiegt euch 30 Sekunden lang, als würdet ihr langsam zu tanzen beginnen — brecht den Blickkontakt nicht, Worte verboten."
+      ],
+      "fr": [
+        "Retire lentement un vêtement de ton/ta partenaire en 60 secondes — garde toujours la même vitesse, sans jamais te presser.",
+        "Asseyez-vous face à face. Chacun·e à son tour, retire un vêtement de l'autre — à chaque tour, dites une phrase : \"un moment où je t'ai trouvé·e irrésistible…\"",
+        "Demande à ton/ta partenaire \"lequel de mes vêtements veux-tu que j'enlève ?\" Ce qu'iel dit, retire-le avec une lenteur étirée sur 2 minutes.",
+        "Avant de toucher, une phrase : \"où veux-tu que je pose ma main maintenant ?\" Iel te dit, et tu la laisses exactement là 30 secondes — immobile.",
+        "Donne à ton/ta partenaire un seul baiser qui dure 5 secondes — sans langue. Puis 5 secondes de pause. Un autre baiser. Ce rythme, 3 fois.",
+        "Prenez-vous les mains. Balancez-vous 30 secondes comme si vous commenciez une danse lente — ne lâchez pas le regard, les mots sont interdits."
+      ],
+      "es": [
+        "Quítale una prenda a tu pareja en 60 segundos, muy despacio — mantén siempre la misma velocidad, nada de prisa.",
+        "Siéntense frente a frente. Por turnos, quítale una prenda a tu pareja — en cada ronda digan una frase: \"un momento en que te encontré irresistible…\"",
+        "Pregúntale a tu pareja \"¿qué prenda mía quieres que me quite?\". Quítate la que diga, estirando el gesto durante 2 minutos.",
+        "Antes de tocar, una frase: \"¿a dónde quieres que lleve mi mano ahora?\". Ella lo dice, y tú la dejas ahí exactamente durante 30 segundos — sin moverte.",
+        "Dale a tu pareja un solo beso de 5 segundos — sin lengua. Luego 5 segundos de pausa. Otro beso. Así 3 veces.",
+        "Tómense de las manos. Mézanse 30 segundos como si empezaran a bailar lento — sin romper el contacto visual, prohibido hablar."
+      ],
+      "it": [
+        "Togli lentamente un capo d'abbigliamento a chi ami in 60 secondi — la velocità resti sempre la stessa, niente fretta.",
+        "Sedetevi uno di fronte all'altra. A turno togliete un capo all'altro/a — a ogni turno dite una frase: \"un momento in cui ti ho trovato/a irresistibile…\"",
+        "Chiedi a chi ami \"quale dei miei vestiti vuoi che tolga?\" Togli quello che dice, con la lentezza distribuita in 2 minuti.",
+        "Prima di toccare, una frase: \"dove vuoi che porti la mia mano adesso?\" Lui/lei lo dice, tu la tieni esattamente lì per 30 secondi — immobile.",
+        "Dai a chi ami un solo bacio di 5 secondi — senza lingua. Poi 5 secondi di pausa. Un altro bacio. Questo ritmo per 3 volte.",
+        "Prendetevi per mano. Dondolatevi per 30 secondi come se steste iniziando a ballare lentamente — non interrompete il contatto visivo, parole vietate."
       ]
     }
   },
   {
     "id": "ipekten-dokunus",
     "name": "İpekten Dokunuş",
-    "nameI18n": { "en": "Silk Touch" },
+    "nameI18n": {
+      "en": "Silk Touch",
+      "de": "Seidige Berührung",
+      "fr": "Caresse de soie",
+      "es": "Caricia de Seda",
+      "it": "Tocco di Seta"
+    },
     "color": "#9F1239",
     "icon": "🪶",
     "track": "cesur",
@@ -80,6 +162,38 @@
         "Let your warm breath hover 2 cm from their ear — 10 seconds, no touch, only breath.",
         "Place one soft touch into their palm (finger, lip, whatever you want). Say \"do the same thing to a place I want.\"",
         "Two different temperatures (one hot drink, one cold). Touch your partner's wrist with a sip of hot, then a sip of cold, in turn — wait 3 seconds between each."
+      ],
+      "de": [
+        "Zieh mit etwas Seidigem in deiner Hand (Tuch, Hemdsaum, langes Haar) eine langsame, 10 Sekunden lange Linie über den Rücken deines Partners. Dann frag: \"wohin noch?\"",
+        "Nimm einen Eiswürfel in den Mund. Schau deinen Partner 5 Sekunden an, dann lass einen Tropfen davon auf seine Augenbraue oder Lippe fallen.",
+        "Bereite 3 verschiedene Texturen vor (weich, hart, fließend — z. B. Feder, Holz, Wasser). Berühre deinen Partner mit verbundenen Augen nacheinander. Was das stärkste Zittern auslöst — kehr dorthin zurück.",
+        "Dein warmer Atem bleibt 2 cm neben dem Ohr deines Partners — 10 Sekunden lang nur Atem, keine Berührung.",
+        "Gib eine zarte Berührung in die Handfläche deines Partners (mit dem Finger, den Lippen, wie du willst). Sag: \"mach dasselbe an einer Stelle, wo ich es mir wünsche\".",
+        "Zwei verschiedene Temperaturen (ein warmes und ein kaltes Getränk). Berühre abwechselnd mit einem Schluck Warmem, dann einem Schluck Kaltem das Handgelenk deines Partners — warte jedes Mal 3 Sekunden."
+      ],
+      "fr": [
+        "Avec de la soie dans la main (un foulard, le bord d'un t-shirt, de longs cheveux), trace une ligne lente de 10 secondes dans le dos de ton/ta partenaire. Puis demande : \"où d'autre ?\"",
+        "Prends un glaçon dans ta bouche. Regarde ton/ta partenaire pendant 5 secondes, puis laisse tomber une goutte de ce glaçon sur son sourcil ou sa lèvre.",
+        "Prépare 3 textures différentes (douce, dure, fluide — par ex. une plume, du bois, de l'eau). Touche ton/ta partenaire les yeux fermés, l'une après l'autre. Celle qui provoque le plus de frisson, reviens-y.",
+        "Que ton souffle chaud reste à 2 cm de l'oreille de ton/ta partenaire — pendant 10 secondes, rien que le souffle, sans toucher.",
+        "Dépose une caresse douce au creux de la paume de ton/ta partenaire (avec un doigt, les lèvres, ce que tu veux). Puis dis : \"fais-moi la même chose là où j'ai envie.\"",
+        "Deux températures différentes (une boisson chaude, une froide). Pose tour à tour une gorgée chaude puis une gorgée froide sur le poignet de ton/ta partenaire — attends 3 secondes à chaque fois."
+      ],
+      "es": [
+        "Con algo de seda en la mano (un pañuelo, la punta de tu camiseta, el pelo largo) dibuja una línea lenta de 10 segundos sobre la espalda de tu pareja. Luego pregunta: \"¿dónde más?\"",
+        "Toma un cubito de hielo en la boca. Mira a tu pareja durante 5 segundos, luego deja caer una gota de ese hielo sobre su ceja o sus labios.",
+        "Prepara 3 texturas distintas (suave, dura, fluida — por ejemplo una pluma, madera, agua). Con tu pareja con los ojos cerrados, tócala con cada una por turnos. La que la haga temblar más, vuelve ahí.",
+        "Que tu aliento tibio quede a 2 cm del oído de tu pareja — durante 10 segundos solo respiración, sin tocar.",
+        "Haz una caricia suave en la palma de la mano de tu pareja (con un dedo, con los labios, lo que quieras). Dile: \"haz lo mismo donde yo quiera\".",
+        "Dos temperaturas distintas (una bebida caliente y una fría). Por turnos, roza la muñeca de tu pareja con un sorbo caliente, luego con uno frío — espera 3 segundos entre cada uno."
+      ],
+      "it": [
+        "Con della seta in mano (un foulard, l'orlo di una maglietta, i capelli lunghi) traccia una linea lenta di 10 secondi sulla schiena di chi ami. Poi chiedi: \"dove ancora?\"",
+        "Prendi in bocca un cubetto di ghiaccio. Guarda chi ami per 5 secondi, poi lascia cadere da quel cubetto una goccia sul suo sopracciglio o sulle sue labbra.",
+        "Prepara 3 texture diverse (morbida, dura, fluida — es. una piuma, del legno, dell'acqua). A occhi chiusi, tocca chi ami in sequenza. Torna sulla zona che l'ha fatto/a tremare di più.",
+        "Il tuo respiro caldo a 2 cm dall'orecchio di chi ami — per 10 secondi solo respiro, senza toccare.",
+        "Fai un tocco morbido nel palmo della mano di chi ami (con un dito, con le labbra, come vuoi). Di': \"fai lo stesso in un punto che desidero io\".",
+        "Due temperature diverse (una bevanda calda e una fredda). A turno sfiora il polso di chi ami con un sorso caldo, poi uno freddo — ogni volta aspetta 3 secondi."
       ]
     }
   }

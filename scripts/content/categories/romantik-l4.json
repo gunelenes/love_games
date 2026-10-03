@@ -2,7 +2,13 @@
   {
     "id": "yavas-yakin",
     "name": "Yavaş Yakın",
-    "nameI18n": { "en": "Slow Close" },
+    "nameI18n": {
+      "en": "Slow Close",
+      "de": "Langsame Nähe",
+      "fr": "Doucement Près",
+      "es": "Lento y Cerca",
+      "it": "Lento e Vicino"
+    },
     "color": "#DC2626",
     "icon": "🔥",
     "track": "romantik",
@@ -24,13 +30,51 @@
         "Tell them \"close your eyes.\" With their consent, kiss them slowly for 2 minutes — neck, shoulder, brows, in order.",
         "Ask where they most love to be touched. Have them name three places. Spend 30 slow seconds on each in turn.",
         "Dressed, in a simple embrace, for 5 minutes. When your heart quickens, let your partner say \"close.\" Build that kind of nearness."
+      ],
+      "de": [
+        "Lass dich langsam aufs Bett sinken. Schenk deinem Partner 3 Minuten lang nur Lippe auf Lippe — ohne Zunge, langsam, entdeckend.",
+        "Gib deinem Partner einen Kuss, der euch beide am Ende atemlos zurücklässt. Kein Zeitlimit, nur Tempo.",
+        "Legt euch einander gegenüber. 5 Minuten lang berührt euch nur so weit, wie eure Arme reichen — die Kleider bleiben noch an.",
+        "Sag deinem Partner \"schließ die Augen\". Bitte um Erlaubnis und küsse ihn 2 Minuten lang langsam — Hals, Schulter, Augenbrauen, der Reihe nach.",
+        "Frag deinen Partner, wo er am liebsten berührt wird. Er soll 3 Stellen nennen. Der Reihe nach an jeder 30 Sekunden langsame Berührung.",
+        "Angezogen, nur in der Umarmung, 5 Minuten lang. Doch sobald der Herzschlag schneller wird, sagt dein Partner \"nah\". Erschaffe genau diese Nähe."
+      ],
+      "fr": [
+        "Installe-toi lentement au lit. Offre à ton/ta partenaire 3 minutes de lèvres contre lèvres — sans langue, des baisers lents, qui explorent.",
+        "Donne à ton/ta partenaire un baiser si entier qu'à la fin vous êtes tous les deux à bout de souffle. Pas de limite de temps, la lenteur est la seule règle.",
+        "Allongez-vous face à face. Pendant 5 minutes, ne touche que ce que tes bras peuvent atteindre — vêtements encore sur vous.",
+        "Dis à ton/ta partenaire \"ferme les yeux\". En lui demandant la permission, embrasse-le/la lentement pendant 2 minutes — le cou, l'épaule, les sourcils, l'un après l'autre.",
+        "Demande à ton/ta partenaire où il/elle aime être touché(e). Qu'il/elle en nomme 3. Puis, 30 secondes de caresse lente sur chacun, à tour de rôle.",
+        "Habillés, juste en position de câlin pendant 5 minutes. Mais quand les battements de cœur s'accélèrent, ton/ta partenaire dit \"tout près\". Construis une proximité comme ça."
+      ],
+      "es": [
+        "Acomódate lentamente en la cama. Dale a tu pareja 3 minutos de solo labio con labio — sin lengua, besos lentos, exploratorios.",
+        "Dale a tu pareja un beso tan completo que al terminar los dos se queden sin aliento. Sin límite de tiempo, el límite es el ritmo.",
+        "Acuéstense frente a frente. Durante 5 minutos tóquense solo hasta donde alcancen los brazos — la ropa todavía puesta.",
+        "Dile a tu pareja \"cierra los ojos\". Pidiéndole permiso, bésala lentamente durante 2 minutos — cuello, hombro, cejas, por turnos.",
+        "Pregúntale a tu pareja en qué zonas le gusta ser tocada. Que diga 3. Por turnos, 30 segundos de caricia lenta en cada una.",
+        "Vestidos, solo en posición de abrazo durante 5 minutos. Pero cuando el pulso se acelere, tu pareja dice \"cerca\". Crea esa cercanía."
+      ],
+      "it": [
+        "Sistemati lentamente sul letto. Dai al tuo partner 3 minuti di solo labbra su labbra — senza lingua, baci lenti, esplorativi.",
+        "Dai al tuo partner un bacio così completo che alla fine resterete entrambi senza fiato. Nessun limite di tempo, solo di ritmo.",
+        "Sdraiatevi uno di fronte all'altra. Per 5 minuti toccatevi solo fin dove arrivano le vostre braccia — vestiti ancora addosso.",
+        "Di' al tuo partner \"chiudi gli occhi\". Chiedendogli il permesso, baciala/o lentamente per 2 minuti — collo, spalla, sopracciglia, uno dopo l'altro.",
+        "Chiedi al tuo partner in quali zone ama essere toccata/o. Che ne dica 3. A turno, 30 secondi di tocco lento su ognuna.",
+        "Vestiti, solo in posizione di abbraccio per 5 minuti. Però, quando il battito accelera, il partner dice \"vicino\". Crea quel tipo di intimità."
       ]
     }
   },
   {
     "id": "nefes-nefese",
     "name": "Nefes Nefese",
-    "nameI18n": { "en": "Breath to Breath" },
+    "nameI18n": {
+      "en": "Breath to Breath",
+      "de": "Atemlos",
+      "fr": "À Bout de Souffle",
+      "es": "Sin Aliento",
+      "it": "Senza Fiato"
+    },
     "color": "#EF4444",
     "icon": "💨",
     "track": "romantik",
@@ -52,13 +96,51 @@
         "Kiss, pause, exhale, kiss again. Repeat that rhythm 5 times.",
         "With your ear pressed to their chest, listen to their heartbeat for 2 minutes.",
         "After a kiss, pause 3 seconds and look into their eyes. Then kiss again. Five rounds."
+      ],
+      "de": [
+        "2 Minuten Brust an Brust mit deinem Partner. Euer Atem soll denselben Rhythmus finden. Langsam, tief.",
+        "Setzt euch gegenüber, Stirn an Stirn, Augen zu. Gleicht euren Atem 3 Minuten lang an — hörbar.",
+        "Lausche dem Atem deines Partners mit dem Ohr. 30 Sekunden. Dann wechselt ihr die Rollen.",
+        "Kuss, Pause, Atem, wieder Kuss. Wiederholt diesen Rhythmus 5 Mal.",
+        "Leg dein Ohr an die Brust deines Partners und hör 2 Minuten lang seinem Herzschlag zu.",
+        "Nach einem Kuss haltet 3 Sekunden inne und schau deinem Partner tief in die Augen. Dann noch ein Kuss. 5 Mal wiederholen."
+      ],
+      "fr": [
+        "Avec ton/ta partenaire, poitrine contre poitrine pendant 2 minutes. Que vos respirations trouvent le même rythme. Lentes, profondes.",
+        "Assieds-toi face à lui/elle, front contre front, yeux fermés. Synchronisez vos respirations pendant 3 minutes — qu'elles soient audibles.",
+        "Écoute la respiration de ton/ta partenaire avec ton oreille. 30 secondes. Puis les rôles s'inversent.",
+        "Donne un baiser, arrête, respire, reprends le baiser. Répète ce rythme 5 fois.",
+        "L'oreille posée sur la poitrine de ton/ta partenaire, écoute son cœur battre pendant 2 minutes.",
+        "Après un baiser, arrête-toi 3 secondes et plonge dans les yeux de ton/ta partenaire. Puis un baiser de plus. 5 fois."
+      ],
+      "es": [
+        "Con tu pareja, pecho con pecho durante 2 minutos. Que sus respiraciones tengan el mismo ritmo. Lento, profundo.",
+        "Siéntense frente a frente, frente con frente, ojos cerrados. Igualen sus respiraciones durante 3 minutos — que el aliento sea audible.",
+        "Escucha la respiración de tu pareja con el oído. 30 segundos. Luego cambian los roles.",
+        "Da un beso, detente, exhala, vuelve a besar. Repite este ritmo 5 veces.",
+        "Con el oído apoyado en el pecho de tu pareja, escucha su latido durante 2 minutos.",
+        "Después de un beso, detente 3 segundos y mira a tu pareja a los ojos. Luego otro beso. Repite 5 veces."
+      ],
+      "it": [
+        "Petto contro petto con il tuo partner per 2 minuti. I vostri respiri trovino lo stesso ritmo. Lenti, profondi.",
+        "Sedetevi uno di fronte all'altra, fronte contro fronte, occhi chiusi. Sincronizzate i respiri per 3 minuti — che si sentano.",
+        "Ascolta il respiro del tuo partner con l'orecchio. 30 secondi. Poi scambiatevi i ruoli.",
+        "Un bacio, fermati, respira, di nuovo un bacio. Ripeti questo ritmo 5 volte.",
+        "Appoggia l'orecchio sul petto del tuo partner e ascolta il battito del cuore per 2 minuti.",
+        "Dopo un bacio, fermati 3 secondi e guarda il tuo partner dritto negli occhi. Poi un altro bacio. Ripeti 5 volte."
       ]
     }
   },
   {
     "id": "isirgan-opucuk",
     "name": "Isırgan Öpücük",
-    "nameI18n": { "en": "Biting Kiss" },
+    "nameI18n": {
+      "en": "Biting Kiss",
+      "de": "Bissiger Kuss",
+      "fr": "Baiser Mordant",
+      "es": "Beso Mordaz",
+      "it": "Bacio che Morde"
+    },
     "color": "#B91C1C",
     "icon": "💋",
     "track": "romantik",
@@ -80,6 +162,38 @@
         "Mid-kiss, slip in a sentence: \"I want you\" — keep your lips touching.",
         "A 3-second soft kiss on their lip, then a slight pull back, then a 5-second deep kiss.",
         "Face to face: kiss again and again at the same time — 1 unbroken minute. Who has to breathe first?"
+      ],
+      "de": [
+        "Beiß ganz leicht in die Lippe deines Partners — frech, verspielt. Dann ein Kuss.",
+        "Ein langer, rhythmischer Kuss — 30 Sekunden. Lasst euren Atem verschmelzen.",
+        "Eine langsame Reihe Küsse vom Hals deines Partners bis zu den Lippen — 5 Stück, zwischen jedem eine Sekunde Pause.",
+        "Mitten im Kuss ein Satz: \"ich will dich\" — eure Lippen berühren sich dabei weiter.",
+        "Ein 3 Sekunden weicher Kuss auf die Lippen deines Partners, dann leichtes Zurückziehen, dann ein 5 Sekunden tiefer Kuss.",
+        "Gegenseitig: gleichzeitig immer wieder küssen — 1 Minute ohne Unterbrechung. Wer muss zuerst Luft holen?"
+      ],
+      "fr": [
+        "Mordille très doucement la lèvre de ton/ta partenaire — espiègle, joueur. Puis un baiser.",
+        "Un baiser long et rythmé — 30 secondes. Que vos souffles se mêlent.",
+        "Une lente traînée de baisers du cou aux lèvres de ton/ta partenaire — 5 baisers, quelques secondes de pause entre chacun.",
+        "Au milieu du baiser, une phrase : \"je te veux\" — que les lèvres se touchent encore.",
+        "Un doux baiser de 3 secondes sur la lèvre de ton/ta partenaire, puis un léger recul, puis un baiser profond de 5 secondes.",
+        "Ensemble : s'embrasser encore et encore en même temps — 1 minute sans interruption. Qui devra reprendre son souffle en premier ?"
+      ],
+      "es": [
+        "Muerde muy suavemente el labio de tu pareja — travieso, juguetón. Luego un beso.",
+        "Un beso largo y con ritmo — 30 segundos. Que las respiraciones se mezclen.",
+        "Una fila lenta de besos desde el cuello hasta los labios de tu pareja — 5 en total, con segundos de pausa entre cada uno.",
+        "A mitad del beso, una frase: \"te deseo\" — que los labios sigan tocándose.",
+        "Un beso suave de 3 segundos en el labio de tu pareja, luego aléjate un poco, luego un beso profundo de 5 segundos.",
+        "Mutuo: besarse una y otra vez al mismo tiempo — 1 minuto sin pausa. ¿Quién tendrá que tomar aire primero?"
+      ],
+      "it": [
+        "Mordi molto delicatamente il labbro del tuo partner — birichino, giocoso. Poi un bacio.",
+        "Un bacio lungo e ritmato — 30 secondi. I respiri si mescolino.",
+        "Una scia lenta di baci dal collo alle labbra del tuo partner — 5 baci, con qualche secondo di pausa tra uno e l'altro.",
+        "A metà del bacio, una frase: \"ti voglio\" — con le labbra che ancora si sfiorano.",
+        "Un bacio morbido di 3 secondi sulle labbra del tuo partner, poi un leggero ritiro, poi un bacio profondo di 5 secondi.",
+        "Reciproco: baciarsi ancora e ancora allo stesso tempo — 1 minuto senza pause. Chi dovrà respirare per primo?"
       ]
     }
   }

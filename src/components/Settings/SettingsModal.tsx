@@ -12,7 +12,16 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { withAlpha } from '@/utils/color';
-import type { SupportedLanguage } from '@/i18n';
+import { SUPPORTED_LANGUAGES, type SupportedLanguage } from '@/i18n';
+
+const LANG_LABEL_KEY: Record<SupportedLanguage, string> = {
+  en: 'settings.english',
+  tr: 'settings.turkish',
+  de: 'settings.german',
+  fr: 'settings.french',
+  es: 'settings.spanish',
+  it: 'settings.italian',
+};
 
 type Props = {
   visible: boolean;
@@ -45,18 +54,15 @@ export function SettingsModal({ visible, onClose }: Props) {
           <Text style={styles.label}>{t('settings.language')}</Text>
 
           <View style={styles.row}>
-            <LanguageOption
-              value="en"
-              label={t('settings.english')}
-              active={language === 'en'}
-              onPress={() => pick('en')}
-            />
-            <LanguageOption
-              value="tr"
-              label={t('settings.turkish')}
-              active={language === 'tr'}
-              onPress={() => pick('tr')}
-            />
+            {SUPPORTED_LANGUAGES.map((lang) => (
+              <LanguageOption
+                key={lang}
+                value={lang}
+                label={t(LANG_LABEL_KEY[lang])}
+                active={language === lang}
+                onPress={() => pick(lang)}
+              />
+            ))}
           </View>
 
           <Pressable onPress={onClose} style={styles.closeBtn}>
@@ -137,11 +143,17 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: 10,
   },
   option: {
-    flex: 1,
-    paddingVertical: 14,
+    // Three per row at the modal's 360px max width — labels like
+    // "Deutsch" or "Español" need more than the ~55px two-per-row would
+    // force, and six buttons single-row would truncate.
+    flexBasis: '30%',
+    flexGrow: 1,
+    paddingVertical: 12,
+    paddingHorizontal: 6,
     borderRadius: 12,
     borderWidth: 1.5,
     alignItems: 'center',

@@ -2,7 +2,13 @@
   {
     "id": "ates-sozcukleri",
     "name": "Ateş Sözcükleri",
-    "nameI18n": { "en": "Fire Words" },
+    "nameI18n": {
+      "en": "Fire Words",
+      "de": "Feuerworte",
+      "fr": "Mots de feu",
+      "es": "Palabras de fuego",
+      "it": "Parole di fuoco"
+    },
     "color": "#DC2626",
     "icon": "💬",
     "track": "cesur",
@@ -32,13 +38,67 @@
         "Say \"I'm watching you\" into their ear. Then go quiet and look at them for 20 seconds — no words.",
         "Tell them \"name one thing you like about me and say it to me.\" They say it; you only answer with \"yes, that.\"",
         "A two-word order: \"wait for me.\" Then step a meter away and wait a minute, no glances."
+      ],
+      "de": [
+        "Flüstere deinem Partner 10 Sekunden lang nur 3 Worte ins Ohr — aber lass sie provozierend sein.",
+        "Sag ihm einen Satz, der mit „was ich heute am meisten will…\" beginnt. Wähle deine Worte sorgfältig.",
+        "Sprich 30 Sekunden lang nur in „Ja\"- und „Nein\"-Sätzen — ohne den Blickkontakt zu lösen.",
+        "Komm nah an sein Ohr und sag statt seines Namens ein einziges Adjektiv. Eines, das ihm einen Blick entlockt.",
+        "Verlangsame deine Stimme und zieh einen Satz 3 Sekunden lang: „Was mir gerade durch den Kopf geht…\" — vervollständige ihn selbst.",
+        "Sag deinem Partner „ich will dich\". Wiederhole es in 3 verschiedenen Tonlagen. Frag ihn, welche am tiefsten traf.",
+        "Provoziere deinen Partner mit einem einzigen Wort: „später\". Behalte für dich, was passieren wird — kein Hinweis.",
+        "Sag ihm ins Ohr „ich beobachte dich\". Dann 20 Sekunden schweigen und ansehen — sag nichts.",
+        "Sag deinem Partner: „nenn eine Seite an mir, die du magst\". Er sagt sie, du bestätigst nur mit „ja, die.\"",
+        "Ein Befehl aus zwei Worten: „warte auf mich\". Dann geh einen Meter weg und warte eine Minute ohne Blick."
+      ],
+      "fr": [
+        "Pendant 10 secondes, murmure seulement 3 mots à l'oreille de ton/ta partenaire — mais que ces mots soient brûlants.",
+        "Dis-lui une phrase qui commence par \"ce que je désire le plus aujourd'hui…\". Choisis tes mots avec soin.",
+        "Pendant 30 secondes, ne parle qu'avec des phrases en \"oui\" et \"non\" — sans jamais rompre le regard.",
+        "Rapproche-toi de son oreille et, au lieu de son prénom, dis-lui un seul adjectif. Un adjectif qui le/la fera te regarder autrement.",
+        "Ralentis le ton de ta voix et étire une phrase sur 3 secondes : \"ce qui me traverse l'esprit, là, maintenant…\" — à toi de la finir.",
+        "Dis à ton/ta partenaire \"je te veux\". Répète-le sur 3 tonalités différentes. Demande-lui laquelle l'a le plus touché(e).",
+        "Provoque ton/ta partenaire avec un seul mot : \"après\". Garde la suite pour toi, aucun indice.",
+        "Murmure-lui \"je te regarde\". Puis tais-toi 20 secondes et fixe-le/la — ne dis rien d'autre.",
+        "Demande à ton/ta partenaire \"dis-moi un détail de toi que j'adore\". Il/elle le dit, et toi tu confirmes seulement par \"oui, celui-là.\"",
+        "Un ordre en deux mots : \"attends-moi\". Puis éloigne-toi d'un mètre et attends une minute sans croiser son regard."
+      ],
+      "es": [
+        "Susurra solo 3 palabras al oído de tu pareja durante 10 segundos — que sean palabras que provoquen.",
+        "Dile una frase que empiece con \"lo que más deseo hoy es…\". Elige las palabras con cuidado.",
+        "Durante 30 segundos habla solo con frases de \"sí\" y \"no\" — sin romper el contacto visual.",
+        "Acércate a su oído y, en lugar de su nombre, dile un solo adjetivo. Uno de esos que la haga voltear a verte.",
+        "Baja el tono de tu voz y alarga una frase durante 3 segundos: \"Lo que ahora mismo pasa por mi mente es…\" — tú le das el final.",
+        "Dile a tu pareja \"te deseo\". Repítelo en 3 tonos distintos. Que te diga cuál le llegó más.",
+        "Provoca a tu pareja con una sola palabra: \"después\". Guarda tú lo que viene, no des pistas.",
+        "Dile al oído \"te estoy mirando\". Luego cállate 20 segundos y mírala — sin decir nada.",
+        "Dile a tu pareja \"dime algo que te guste de ti\". Que lo diga, y tú solo confirma con \"sí, eso.\"",
+        "Una orden de dos palabras: \"espérame\". Luego aléjate un metro y espera un minuto sin mirarla."
+      ],
+      "it": [
+        "Sussurra all'orecchio del tuo partner solo 3 parole per 10 secondi — ma che siano parole provocanti.",
+        "Digli una frase che inizia con \"la cosa che desidero di più oggi è…\". Scegli le parole con cura.",
+        "Per 30 secondi parla solo con frasi \"sì\" e \"no\" — senza mai staccare lo sguardo.",
+        "Avvicinati al suo orecchio e, al posto del nome, dì un solo aggettivo. Un aggettivo tale da fargli lanciare uno sguardo.",
+        "Rallenta il tono della voce e allunga una frase per 3 secondi: \"ciò che mi passa per la mente adesso è…\" — completala tu.",
+        "Dì al tuo partner \"ti voglio\". Ripetilo in 3 toni diversi. Chiedigli quale lo ha colpito di più.",
+        "Provoca il tuo partner con una sola parola: \"dopo\". Tieni per te cosa accadrà, non dare indizi.",
+        "Dì al suo orecchio \"ti sto guardando\". Poi taci per 20 secondi e guardalo — non dire nulla.",
+        "Dì al tuo partner \"dimmi un lato di te che ti piace\". Lui lo dirà, tu confermi soltanto con \"sì, è così.\"",
+        "Un ordine di due parole: \"aspettami\". Poi allontanati di 1 metro, aspetta un minuto senza guardarlo."
       ]
     }
   },
   {
     "id": "bakisin-isigi",
     "name": "Bakışın Işığı",
-    "nameI18n": { "en": "The Light of a Gaze" },
+    "nameI18n": {
+      "en": "The Light of a Gaze",
+      "de": "Licht deines Blicks",
+      "fr": "Lumière du regard",
+      "es": "La luz de tu mirada",
+      "it": "Luce dello sguardo"
+    },
     "color": "#6B21A8",
     "icon": "👁️",
     "track": "cesur",
@@ -68,13 +128,67 @@
         "Head to head on a pillow. 30 seconds of pure gaze — who blinks first?",
         "From 2 meters away, communicate with your partner for 10 seconds using only your gaze. Then step 3 steps closer, 10 more seconds.",
         "Hands behind your back. 1 minute of eye contact + soft breath. Touching forbidden — just the gaze."
+      ],
+      "de": [
+        "Lass 1 Minute lang deinen Blick nicht von den Augen deines Partners. Wer zuerst lächelt, verliert — die Belohnung bestimmt der Gewinner.",
+        "Zeig 20 Sekunden lang nur mit deinen Blicken, was du mit ihm tun willst. Worte verboten.",
+        "Setzt euch gegenüber. Gleicht 30 Sekunden lang den Rhythmus eures Atems an — Augen offen, Hände auf den Händen.",
+        "Lass deinen Partner 10 Sekunden spüren, dass du auf seine Lippen schaust. Dann zurück in die Augen — sag mit dem Blick, was du fühlst.",
+        "Zieh vom anderen Ende des Raumes 5 Sekunden lang die Aufmerksamkeit deines Partners allein mit deinem Blick auf dich.",
+        "Halte 30 Sekunden den Blickkontakt. Sag zwischendurch „wie sehr ich dich will, liegt hier\" — die Worte sollen deinen Blick vollenden.",
+        "Nähert euch einander. Komm so nah, bis dein Atem seine Wange berührt — dann halte 5 Sekunden dort, ohne zu berühren.",
+        "Legt euch Kopf an Kopf auf ein Kissen. 30 Sekunden nur Blick — wer blinzelt zuerst?",
+        "Kommuniziere aus 2 Metern Entfernung 10 Sekunden lang nur mit dem Blick. Dann 3 Schritte näher, wieder 10 Sekunden.",
+        "Hände hinter dem Rücken. 1 Minute Blickkontakt + sanfter Atem. Berühren verboten — nur der Blick."
+      ],
+      "fr": [
+        "Pendant 1 minute, ne quitte pas les yeux de ton/ta partenaire. Le premier qui sourit perd — la récompense, c'est au/à la gagnant(e) de la choisir.",
+        "Pendant 20 secondes, raconte-lui ce que tu veux lui faire rien qu'avec le regard. Les mots sont interdits.",
+        "Asseyez-vous face à face. Pendant 30 secondes, accordez le rythme de vos souffles — yeux ouverts, mains posées sur ses mains.",
+        "Fais sentir à ton/ta partenaire que tu regardes ses lèvres pendant 10 secondes. Puis reviens à ses yeux — dis-lui ce que tu ressens avec le regard.",
+        "Depuis l'autre bout de la pièce, capte l'attention de ton/ta partenaire pendant 5 secondes rien qu'avec ton regard.",
+        "Ne romps pas le contact des yeux pendant 30 secondes. À un moment, glisse \"à quel point je te veux, c'est ici\" — que les mots s'ajoutent à ton regard.",
+        "Rapprochez-vous face à face. Avance jusqu'à ce que ton souffle effleure sa joue — puis reste là 5 secondes, sans toucher.",
+        "Allongez-vous, têtes sur le même oreiller. 30 secondes de regard seulement — qui cligne des yeux en premier ?",
+        "À 2 mètres de distance, communique avec ton/ta partenaire pendant 10 secondes rien qu'avec le regard. Puis fais 3 pas vers lui/elle et recommence 10 secondes.",
+        "Mains dans le dos. 1 minute de contact visuel + souffle léger. Toucher interdit — rien que le regard."
+      ],
+      "es": [
+        "Durante 1 minuto no apartes los ojos de los de tu pareja. El primero que sonría pierde — el premio lo decide quien gana.",
+        "Durante 20 segundos cuéntale con la mirada lo que quieres hacerle. Palabras prohibidas.",
+        "Siéntense frente a frente. Durante 30 segundos sincronicen el ritmo de su respiración — ojos abiertos, tus manos sobre las suyas.",
+        "Durante 10 segundos haz que tu pareja sienta que miras sus labios. Luego vuelve a sus ojos — dile con la mirada lo que sientes.",
+        "Desde el otro extremo de la habitación, durante 5 segundos atrae la atención de tu pareja solo con la mirada.",
+        "30 segundos sin romper el contacto visual. En algún momento di \"cuánto te deseo aquí\" — que las palabras se sumen a la mirada.",
+        "Acérquense el uno al otro. Acércate hasta que tu aliento roce su mejilla — luego quédate ahí 5 segundos, sin tocar.",
+        "Acuéstense sobre la misma almohada, cabeza con cabeza. 30 segundos solo mirándose — ¿quién parpadea primero?",
+        "Desde 2 metros, comunícate con tu pareja durante 10 segundos solo con la mirada. Luego acércate 3 pasos y otros 10 segundos.",
+        "Las manos atrás. 1 minuto de contacto visual + respiración suave. Tocar está prohibido — solo mirada."
+      ],
+      "it": [
+        "Per 1 minuto non distogliere lo sguardo dagli occhi del tuo partner. Chi sorride per primo perde — il premio lo sceglierà il vincitore.",
+        "Per 20 secondi racconta solo con lo sguardo cosa vorresti fare. Parole vietate.",
+        "Sedetevi uno di fronte all'altro. Per 30 secondi sincronizzate il ritmo del respiro — occhi aperti, mani sulle mani.",
+        "Fai sentire al tuo partner che per 10 secondi stai guardando le sue labbra. Poi torna ai suoi occhi — dì con lo sguardo cosa provi.",
+        "Dall'altro capo della stanza, cattura l'attenzione del tuo partner per 5 secondi solo con lo sguardo.",
+        "Non rompere il contatto visivo per 30 secondi. Nel mezzo dì \"quanto ti voglio, è qui\" — che le parole si fondano con lo sguardo.",
+        "Avvicinatevi uno all'altro. Avvicinati finché il tuo respiro non sfiora la sua guancia — poi resta lì 5 secondi, senza toccare.",
+        "Stendetevi testa a testa su un cuscino. 30 secondi solo di sguardo — chi batte le ciglia per primo?",
+        "Da 2 metri di distanza, comunica col tuo partner per 10 secondi solo con lo sguardo. Poi avvicinati di 3 passi, altri 10 secondi.",
+        "Mani dietro la schiena. 1 minuto di contatto visivo + respiro lieve. Toccare è vietato — solo sguardo."
       ]
     }
   },
   {
     "id": "siritan-cesaret",
     "name": "Sırıtan Cesaret",
-    "nameI18n": { "en": "Grinning Dare" },
+    "nameI18n": {
+      "en": "Grinning Dare",
+      "de": "Grinsender Mut",
+      "fr": "Audace souriante",
+      "es": "Valentía traviesa",
+      "it": "Coraggio sfacciato"
+    },
     "color": "#BE185D",
     "icon": "😈",
     "track": "cesur",
@@ -104,6 +218,54 @@
         "\"Confession rounds,\" face to face. Each round, one brave confession — listen, no response, then switch.",
         "Finish the sentence \"I have a weakness that comes out around you…\" Give details.",
         "Begin with \"the one thing I want to do to you is…\" One clear, short, bold sentence."
+      ],
+      "de": [
+        "Gestehe deinem Partner einen mutigen Wunsch, den du bisher nie ausgesprochen hast. Sanft, aber klar.",
+        "Frag: „Was soll ich jetzt mit dir tun — scheu dich nicht, sag das Dreisteste.\"",
+        "Verrate ein „schmutziges Geheimnis\" über dich — etwas über eure Beziehung, das dich erregt, aber du nie gesagt hast.",
+        "Fass in einem Satz zusammen, was dich am meisten in Bewegung bringt. Langes Reden verboten.",
+        "Beginne mit „wenn du es erlaubst, würde ich jetzt nur eines tun…\" und biete drei Optionen. Lass ihn wählen.",
+        "Sagt abwechselnd Sätze, die mit „der Moment, in dem ich dich am meisten wollte…\" beginnen. Keiner kommentiert, nur zuhören.",
+        "Vervollständige deinem Partner den Satz „etwas, woran ich denke, wenn ich dich ansehe…\". Ein Satz, scharf.",
+        "Gegenseitige „Beichtrunde\". Pro Runde ein mutiges Geständnis — zuhören, kein Kommentar, dann bist du dran.",
+        "Vervollständige den Satz „ich habe eine Schwäche, und sie zeigt sich nur vor dir…\". Werde konkret.",
+        "Beginne deinem Partner gegenüber mit „das Einzige, was ich mit dir tun will…\". Ein klarer, kurzer, mutiger Satz."
+      ],
+      "fr": [
+        "Avoue à ton/ta partenaire une envie audacieuse que tu ne lui as jamais confiée. Avec douceur, mais sans détour.",
+        "Demande-lui : \"qu'est-ce que tu voudrais que je te fasse, là, maintenant — ne sois pas timide, dis-moi le plus osé.\"",
+        "Confie un \"petit secret coupable\" sur toi — quelque chose sur votre relation qui t'excite mais que tu n'as jamais dit.",
+        "Résume en une seule phrase ce qui te met le plus en mouvement. Pas le droit de s'étendre.",
+        "Commence par \"si tu me le permets, la seule chose que je ferai, c'est…\" et propose trois options. À lui/elle de choisir.",
+        "À tour de rôle, dites des phrases qui commencent par \"le moment où je te désire le plus…\". Personne ne commente, on écoute juste.",
+        "Finis la phrase : \"une chose à laquelle je pense en te regardant…\". Une seule phrase, tranchante.",
+        "Face à face, \"tour d'aveu\". À chaque tour, un aveu audacieux — on écoute, pas de commentaire, puis c'est à toi.",
+        "Finis la phrase : \"j'ai une faiblesse, et elle apparaît face à toi…\". Donne des détails.",
+        "Commence par \"la seule chose que je veux te faire…\". Phrase claire, courte, audacieuse."
+      ],
+      "es": [
+        "Confiésale a tu pareja un deseo atrevido que nunca le hayas dicho. Con dulzura, pero claro.",
+        "Pregunta: \"¿Qué quieres que te haga ahora mismo — sin pena, dime lo más atrevido?\"",
+        "Cuenta un \"secreto sucio\" sobre ti — algo de la relación que te enciende y que no has dicho.",
+        "Resume en 1 frase qué es lo que más te enciende. Prohibido extenderse.",
+        "Empieza con \"si me lo permites, lo único que haré ahora es…\" y ofrece tres opciones. Que elija.",
+        "Por turnos, digan frases que empiecen con \"el momento en que más te he deseado…\". Nadie comenta, solo se escucha.",
+        "Completa la frase \"algo en lo que pienso cuando te miro…\". Una frase, afilada.",
+        "\"Turno de confesión\" por turnos. Cada ronda, una confesión atrevida — escucha, sin comentar, y luego te toca a ti.",
+        "Completa la frase \"tengo una debilidad, y aparece frente a ti…\". Da detalles.",
+        "Empieza con \"lo único que quiero hacerte es…\". Frase clara, corta, valiente."
+      ],
+      "it": [
+        "Confessa al tuo partner un desiderio audace che non gli hai mai detto. Con dolcezza ma con chiarezza.",
+        "Chiedi: \"cosa vorresti che ti facessi proprio adesso — non vergognarti, dimmi la cosa più ardita.\"",
+        "Confessa un tuo \"segreto sporco\" — qualcosa sul vostro rapporto che ti eccita ma non hai mai detto.",
+        "Riassumi in 1 frase ciò che ti accende di più. Niente discorsi lunghi.",
+        "Comincia con \"se me lo permetti, l'unica cosa che farò adesso è…\", offri tre opzioni. Sceglie lui.",
+        "A turno dite frasi che iniziano con \"il momento in cui ti ho voluto di più è stato…\". Nessuno commenta, si ascolta e basta.",
+        "Completa al tuo partner la frase \"una cosa che penso mentre ti guardo è…\". Una frase, tagliente.",
+        "\"Turno delle confessioni\" a vicenda. Ogni giro una confessione audace — ascolta, niente commenti, poi tocca a te.",
+        "Completa la frase \"ho una debolezza, e viene fuori davanti a te…\". Dai dettagli.",
+        "Inizia con \"l'unica cosa che voglio farti è…\". Frase chiara, breve, coraggiosa."
       ]
     }
   }
