@@ -19,19 +19,16 @@ import Animated, {
 import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
-import { TrackLevelBar } from '@/components/TrackLevelBar/TrackLevelBar';
 import { BackButton } from '@/components/ui/BackButton';
-import { DEFAULT_LEVEL, DEFAULT_TRACK } from '@/data/tracks';
 import { useAuth } from '@/hooks/useAuth';
 import { useRoom } from '@/hooks/useRoom';
 import { useRoomBoxes } from '@/hooks/useRoomBoxes';
 import { createBox } from '@/services/boxService';
-import { setRoomTrackLevel } from '@/services/roomService';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { darken, lighten, withAlpha } from '@/utils/color';
-import type { Level, RoomBox, Track } from '@/types';
+import type { RoomBox } from '@/types';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'BoxList'>;
 
@@ -65,18 +62,6 @@ export function BoxListScreen({ navigation }: Props) {
     const id = await createBox(code, uid, name, color, icon);
     setCreating(false);
     navigation.navigate('Box', { boxId: id });
-  };
-
-  const roomTrack: Track = room?.track ?? DEFAULT_TRACK;
-  const roomLevel: Level = room?.level ?? DEFAULT_LEVEL;
-
-  const handleTrackChange = async (t: Track) => {
-    if (!code) return;
-    await setRoomTrackLevel(code, t, roomLevel);
-  };
-  const handleLevelChange = async (l: Level) => {
-    if (!code) return;
-    await setRoomTrackLevel(code, roomTrack, l);
   };
 
   const handleLeave = () => {
@@ -140,15 +125,6 @@ export function BoxListScreen({ navigation }: Props) {
               : t('boxes.listGiveCode')}
           </Text>
         </View>
-
-        {room ? (
-          <TrackLevelBar
-            track={roomTrack}
-            level={roomLevel}
-            onTrackChange={handleTrackChange}
-            onLevelChange={handleLevelChange}
-          />
-        ) : null}
 
         <ScrollView
           style={styles.list}
