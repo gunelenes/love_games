@@ -57,6 +57,11 @@ export function BoxScreen({ route, navigation }: Props) {
 
   const [draft, setDraft] = useState('');
   const [revealed, setRevealed] = useState<BoxNote | null>(null);
+  // Session-local pool: ids already revealed in this cycle. We never pick
+  // the same note twice until every note has been drawn, then the pool
+  // resets. Not persisted — opening the box starts a fresh cycle, which
+  // matches the "surprise again" feel each session.
+  const [seenIds, setSeenIds] = useState<string[]>([]);
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
 
   const revealProgress = useSharedValue(0);
@@ -118,8 +123,17 @@ export function BoxScreen({ route, navigation }: Props) {
       withTiming(0.9, { duration: 120 }),
       withSpring(1, { damping: 12, stiffness: 220 })
     );
-    const idx = Math.floor(Math.random() * box.notes.length);
-    const pick = box.notes[idx];
+    // Deleted notes can leave stale ids in `seenIds`; intersect with the
+    // live note list first so the pool reset triggers on the real set.
+    const liveIds = new Set(box.notes.map((n) => n.id));
+    const seenLive = seenIds.filter((id) => liveIds.has(id));
+    const pool =
+      seenLive.length >= box.notes.length
+        ? box.notes
+        : box.notes.filter((n) => !seenLive.includes(n.id));
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+    const cycleWasFull = seenLive.length >= box.notes.length;
+    setSeenIds(cycleWasFull ? [pick.id] : [...seenLive, pick.id]);
     setTimeout(() => {
       setRevealed(pick);
       revealProgress.value = 0;
@@ -130,7 +144,7 @@ export function BoxScreen({ route, navigation }: Props) {
       confettiRef.current?.burst();
       void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     }, 220);
-  }, [canShuffle, box, revealProgress, shuffleScale]);
+  }, [canShuffle, box, revealProgress, shuffleScale, seenIds]);
 
   const handleCloseReveal = useCallback(() => {
     revealProgress.value = withTiming(0, {
