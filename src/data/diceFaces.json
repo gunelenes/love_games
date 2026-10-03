@@ -7,7 +7,13 @@
       "de": "Kuss",
       "fr": "Baiser",
       "es": "Beso",
-      "it": "Bacio"
+      "it": "Bacio",
+      "ja": "キス",
+      "ko": "키스",
+      "zh-TW": "親吻",
+      "id": "Ciuman",
+      "hi": "चुंबन",
+      "ar": "قُبلة"
     },
     "color": "#FF4D6D",
     "icon": "💋",
@@ -53,6 +59,48 @@
         "Prendigli la mano e baciala sul dorso.",
         "Dai 3 piccoli baci sul suo collo.",
         "Rimanete in un bacio per 5 secondi, con gli occhi chiusi."
+      ],
+      "ja": [
+        "パートナーの頬にそっとキスして。",
+        "額に長いキスを落として。",
+        "手を取って、手の甲にキスを。",
+        "首筋に小さなキスを3回。",
+        "目を閉じて、5秒間のキスを交わそう。"
+      ],
+      "ko": [
+        "파트너의 뺨에 부드러운 키스를 해줘.",
+        "이마에 긴 키스를 남겨줘.",
+        "손을 잡고 손등에 키스해줘.",
+        "목에 작은 키스 3번.",
+        "눈을 감고 5초 동안 키스를 멈추지 마."
+      ],
+      "zh-TW": [
+        "在你伴侶的臉頰上輕輕一吻。",
+        "在他的額頭上留下一個長長的吻。",
+        "牽起他的手，在手背上獻上一吻。",
+        "在他的頸間落下三個小小的吻。",
+        "一個吻停留 5 秒鐘，閉上雙眼。"
+      ],
+      "id": [
+        "Beri ciuman lembut di pipi pasanganmu.",
+        "Kecup keningnya lama-lama.",
+        "Pegang tangannya dan beri ciuman di punggung tangannya.",
+        "Beri 3 ciuman kecil di lehernya.",
+        "Tahan satu ciuman selama 5 detik, mata terpejam."
+      ],
+      "hi": [
+        "अपने पार्टनर के गाल पर एक नरम चुंबन दो।",
+        "माथे पर एक लंबा चुंबन दो।",
+        "उसका हाथ पकड़ो और उल्टी तरफ चुंबन दो।",
+        "उसकी गर्दन पर 3 छोटे चुंबन दो।",
+        "एक चुंबन में 5 सेकंड तक रुको, आँखें बंद।"
+      ],
+      "ar": [
+        "اطبع قبلة ناعمة على خدّ شريكك.",
+        "ضع قبلة طويلة على جبينه.",
+        "امسك يده واطبع قبلة على ظهرها.",
+        "اطبع 3 قبلات صغيرة على عنقه.",
+        "ابقَ في قبلة واحدة لمدة 5 ثوانٍ، والعينان مغمضتان."
       ]
     },
     "track": "romantik",
@@ -66,7 +114,13 @@
       "de": "Umarmung",
       "fr": "Étreinte",
       "es": "Abrazo",
-      "it": "Abbraccio"
+      "it": "Abbraccio",
+      "ja": "ハグ",
+      "ko": "포옹",
+      "zh-TW": "擁抱",
+      "id": "Pelukan",
+      "hi": "आलिंगन",
+      "ar": "عناق"
     },
     "color": "#FFB84D",
     "icon": "🤗",
@@ -112,6 +166,48 @@
         "Abbraccialo da dietro e appoggiati alla sua spalla.",
         "Prendigli le mani e guardatevi negli occhi.",
         "Prendilo tra le braccia e cullatevi."
+      ],
+      "ja": [
+        "30秒間、ぎゅっと抱きしめ合って。",
+        "背中合わせになって、1分間静かに呼吸して。",
+        "後ろから抱きしめて、肩に顔をあずけて。",
+        "手をつないで、目と目を合わせて。",
+        "膝の上に乗せて、ゆらゆら揺らしてあげて。"
+      ],
+      "ko": [
+        "30초 동안 꽉 안아줘.",
+        "등을 맞대고 1분 동안 조용히 숨을 쉬어.",
+        "뒤에서 안아 어깨에 기대.",
+        "두 손을 잡고 눈을 마주 봐.",
+        "무릎에 앉혀 가볍게 흔들어줘."
+      ],
+      "zh-TW": [
+        "緊緊相擁 30 秒。",
+        "背靠著背，安靜地呼吸 1 分鐘。",
+        "從背後抱住他，把頭靠在他的肩上。",
+        "握住他的雙手，眼神交會。",
+        "把他擁入懷中，輕輕搖晃。"
+      ],
+      "id": [
+        "Berpelukan erat selama 30 detik.",
+        "Saling membelakangi dan bernapaslah dalam diam selama 1 menit.",
+        "Peluk dia dari belakang dan sandarkan kepala di bahunya.",
+        "Genggam tangannya, saling tatap mata.",
+        "Pangku dia dan ayunkan perlahan."
+      ],
+      "hi": [
+        "30 सेकंड तक कसकर गले लगाओ।",
+        "पीठ से पीठ टिकाकर 1 मिनट चुपचाप साँस लो।",
+        "पीछे से गले लगाओ और उसके कंधे पर सिर टिकाओ।",
+        "उसके हाथ पकड़ो, आँखों में आँखें डालो।",
+        "उसे गोद में लो और धीरे-धीरे झुलाओ।"
+      ],
+      "ar": [
+        "تعانقا بإحكام لمدة 30 ثانية.",
+        "اجلسا ظهراً لظهر وتنفّس بصمت لمدة دقيقة.",
+        "عانقه من الخلف واتّكئ على كتفه.",
+        "امسك يديه وانظر في عينيه.",
+        "خذه بين ذراعيك وتمايلا معاً."
       ]
     },
     "track": "romantik",
@@ -125,7 +221,13 @@
       "de": "Kompliment",
       "fr": "Compliment",
       "es": "Cumplido",
-      "it": "Complimento"
+      "it": "Complimento",
+      "ja": "ほめ言葉",
+      "ko": "칭찬",
+      "zh-TW": "讚美",
+      "id": "Pujian",
+      "hi": "तारीफ़",
+      "ar": "إطراء"
     },
     "color": "#4ECDC4",
     "icon": "💫",
@@ -171,6 +273,48 @@
         "Condividi perché oggi lo trovi speciale.",
         "Dedicagli un breve messaggio di gratitudine.",
         "Qual è la prima parola che ti viene in mente pensando a lui?"
+      ],
+      "ja": [
+        "パートナーの一番好きな身体の部分を伝えて。",
+        "彼/彼女のうっとりする性格の一面を話して。",
+        "今日、どうして特別に感じたかを伝えて。",
+        "短い感謝のメッセージを言葉にして。",
+        "彼/彼女を思うと最初に浮かぶ言葉は？"
+      ],
+      "ko": [
+        "파트너에게서 가장 좋아하는 신체적 특징을 말해줘.",
+        "그 사람에게서 네가 반한 성격의 한 면을 이야기해줘.",
+        "오늘 그 사람이 왜 특별하게 느껴지는지 말해줘.",
+        "짧은 감사의 말을 전해줘.",
+        "그 사람을 떠올리면 가장 먼저 생각나는 한 단어는?"
+      ],
+      "zh-TW": [
+        "告訴他，你最喜歡他身上的哪個地方。",
+        "說說他身上你最欣賞的性格特質。",
+        "分享今天為什麼覺得他特別。",
+        "對他說一句簡短的感謝。",
+        "想到他，第一個浮現在你腦海的詞是什麼？"
+      ],
+      "id": [
+        "Sebutkan ciri fisik pasanganmu yang paling kamu sukai.",
+        "Ceritakan satu sisi karakternya yang kamu kagumi.",
+        "Bagikan kenapa hari ini dia terasa istimewa buatmu.",
+        "Ucapkan pesan terima kasih singkat untuknya.",
+        "Kata apa yang pertama terlintas di benakmu tentang dia?"
+      ],
+      "hi": [
+        "अपने पार्टनर की जो शारीरिक ख़ूबी तुम्हें सबसे पसंद है, वो बताओ।",
+        "उसकी शख़्सियत का एक ऐसा पहलू बताओ जिसकी तुम दीवानगी से तारीफ़ करते हो।",
+        "आज उसे ख़ास क्यों पाया, यह साझा करो।",
+        "उसे एक छोटा-सा शुक्रिया कहो।",
+        "उसके लिए सबसे पहले कौन-सा शब्द तुम्हारे मन में आता है?"
+      ],
+      "ar": [
+        "أخبر شريكك عن أكثر ملمح جسدي تحبه فيه.",
+        "تحدّث عن جانب في شخصيته يُثير إعجابك.",
+        "شاركه لماذا تجده مميزاً اليوم.",
+        "قل له كلمة شكر قصيرة.",
+        "ما أول كلمة تخطر في بالك حين تفكر فيه؟"
       ]
     },
     "track": "romantik",
@@ -184,7 +328,13 @@
       "de": "Erinnerung",
       "fr": "Souvenir",
       "es": "Recuerdo",
-      "it": "Ricordo"
+      "it": "Ricordo",
+      "ja": "思い出",
+      "ko": "추억",
+      "zh-TW": "回憶",
+      "id": "Kenangan",
+      "hi": "यादें",
+      "ar": "ذكرى"
     },
     "color": "#A78BFA",
     "icon": "📸",
@@ -230,6 +380,48 @@
         "Ricorda il giorno in cui vi siete conosciuti.",
         "Racconta il vostro viaggio più indimenticabile.",
         "Condividi il momento in cui avete riso di più insieme."
+      ],
+      "ja": [
+        "ふたりで過ごしたお気に入りの瞬間を話して。",
+        "彼/彼女との一番おかしかった思い出を分かち合って。",
+        "初めて出会った日を思い出して。",
+        "一番忘れられない旅行の話をして。",
+        "一緒に一番笑った瞬間を話して。"
+      ],
+      "ko": [
+        "둘이 함께한 가장 좋아하는 순간을 들려줘.",
+        "그 사람과 있었던 가장 웃긴 기억을 나눠봐.",
+        "처음 만났던 날을 떠올려봐.",
+        "가장 잊지 못할 여행을 이야기해줘.",
+        "함께 가장 크게 웃었던 순간을 나눠봐."
+      ],
+      "zh-TW": [
+        "說說你們一起度過最喜歡的那個片刻。",
+        "分享關於他最好笑的一段回憶。",
+        "回想你們第一次相遇的那天。",
+        "說說你們最難忘的那趟旅行。",
+        "分享你們一起笑得最開心的那一刻。"
+      ],
+      "id": [
+        "Ceritakan momen favoritmu bersamanya.",
+        "Bagikan kenangan paling lucu bersamanya.",
+        "Ingat kembali hari pertama kalian bertemu.",
+        "Ceritakan perjalanan paling tak terlupakan kalian.",
+        "Bagikan momen di mana kalian paling banyak tertawa bersama."
+      ],
+      "hi": [
+        "साथ बिताया अपना पसंदीदा पल सुनाओ।",
+        "उसके साथ का सबसे मज़ेदार पल साझा करो।",
+        "जिस दिन पहली बार मिले थे, उसे याद करो।",
+        "अपनी सबसे यादगार यात्रा के बारे में बताओ।",
+        "वो पल बताओ जब तुम दोनों सबसे ज़्यादा हँसे थे।"
+      ],
+      "ar": [
+        "احكِ عن لحظتك المفضلة التي عشتماها معاً.",
+        "شاركه أطرف ذكرى تجمعك به.",
+        "تذكّر معه يوم لقائكما الأول.",
+        "احكِ عن أكثر رحلة لا تُنسى بينكما.",
+        "شاركه اللحظة التي ضحكتما فيها من قلبكما معاً."
       ]
     },
     "track": "romantik",
@@ -243,7 +435,13 @@
       "de": "Berührung",
       "fr": "Toucher",
       "es": "Caricia",
-      "it": "Tocco"
+      "it": "Tocco",
+      "ja": "触れあい",
+      "ko": "손길",
+      "zh-TW": "觸碰",
+      "id": "Sentuhan",
+      "hi": "स्पर्श",
+      "ar": "لمسة"
     },
     "color": "#F472B6",
     "icon": "✨",
@@ -289,6 +487,48 @@
         "Incornicia il suo viso tra le tue mani.",
         "Infila la sua mano nella tua e intreccia le dita.",
         "Fagli un massaggio delicato sulla schiena per 30 secondi."
+      ],
+      "ja": [
+        "両手をゆっくり擦り合わせて温めて、彼/彼女に差し出して。",
+        "髪をやさしく撫でて。",
+        "両手で顔を包んで。",
+        "手を取って、指を絡めて。",
+        "30秒間、背中をやさしくマッサージして。"
+      ],
+      "ko": [
+        "두 손을 천천히 비벼 따뜻하게 한 뒤, 그 사람에게 내밀어.",
+        "머리카락을 부드럽게 쓰다듬어줘.",
+        "두 손으로 얼굴을 감싸.",
+        "손을 포개어 손가락을 하나하나 깍지 껴.",
+        "30초 동안 등을 부드럽게 마사지해줘."
+      ],
+      "zh-TW": [
+        "慢慢搓熱雙手，再伸向他。",
+        "輕柔地撫摸他的頭髮。",
+        "用你的雙手捧起他的臉。",
+        "手牽著手，十指交扣。",
+        "為他輕柔地按摩背部 30 秒。"
+      ],
+      "id": [
+        "Hangatkan tanganmu dengan menggosokkannya perlahan, lalu ulurkan padanya.",
+        "Belai rambutnya dengan lembut.",
+        "Bingkai wajahnya dengan kedua tanganmu.",
+        "Selipkan tanganmu ke tangannya, kaitkan jari-jari kalian.",
+        "Pijat punggungnya dengan lembut selama 30 detik."
+      ],
+      "hi": [
+        "अपने हाथों को आपस में रगड़कर गर्म करो, फिर उसकी ओर बढ़ाओ।",
+        "उसके बालों को नरमी से सहलाओ।",
+        "अपने हाथों से उसके चेहरे को फ्रेम करो।",
+        "उसका हाथ अपने हाथ में लो, उंगलियाँ आपस में फँसाओ।",
+        "उसकी पीठ पर 30 सेकंड तक नरम मसाज करो।"
+      ],
+      "ar": [
+        "دفّئ يديك بفركهما ببطء، ثم مُدّهما إليه.",
+        "داعب شعره بنعومة.",
+        "أحِط وجهه بكفّيك كإطار.",
+        "ضع يدك في يده واشبك أصابعك بأصابعه.",
+        "دلّك ظهره بلطف لمدة 30 ثانية."
       ]
     },
     "track": "romantik",
@@ -302,7 +542,13 @@
       "de": "Flüstern",
       "fr": "Murmure",
       "es": "Susurro",
-      "it": "Sussurro"
+      "it": "Sussurro",
+      "ja": "ささやき",
+      "ko": "속삭임",
+      "zh-TW": "低語",
+      "id": "Bisikan",
+      "hi": "फुसफुसाहट",
+      "ar": "همسة"
     },
     "color": "#60A5FA",
     "icon": "🌙",
@@ -348,6 +594,48 @@
         "Sussurragli qualcosa che oggi te lo ha fatto pensare.",
         "Digli sussurrando cosa ti rende più felice di lui.",
         "Sussurragli all'orecchio, in 3 parole: \"ti amo tanto\"."
+      ],
+      "ja": [
+        "耳元で、一番好きな歌の一節をささやいて。",
+        "自分の秘密をひとつ、彼/彼女に打ち明けて。",
+        "今日、彼/彼女を思わせた何かをささやいて伝えて。",
+        "\"あなたのこういうところが一番うれしい\"と、ささやいて。",
+        "耳元で3つの言葉、\"あなたを愛してる\"とささやいて。"
+      ],
+      "ko": [
+        "귀에 네가 가장 좋아하는 노래의 한 소절을 속삭여줘.",
+        "너에 관한 작은 비밀 하나를 말해줘.",
+        "오늘 그 사람을 떠올리게 한 무언가를 속삭여줘.",
+        "\"네가 날 가장 행복하게 하는 건\" 하고 속삭이며 말해줘.",
+        "귀에 세 단어로 \"너를 사랑해\" 하고 속삭여줘."
+      ],
+      "zh-TW": [
+        "在他耳邊輕聲哼唱你最愛的那首歌的片段。",
+        "悄悄告訴他一個關於你自己的秘密。",
+        "低聲說出今天讓你想起他的某件事。",
+        "輕聲說出：你用什麼最讓我感到幸福。",
+        "在他耳邊用三個字輕聲說：\"我愛你\"。"
+      ],
+      "id": [
+        "Bisikkan sepotong lagu favoritmu ke telinganya.",
+        "Beri tahu dia satu rahasiamu tentang dirinya.",
+        "Bisikkan satu hal tentangnya yang terus kamu pikirkan hari ini.",
+        "Bisikkan padanya hal apa darinya yang paling membuatmu bahagia.",
+        "Bisikkan di telinganya dalam 3 kata: \"aku cinta kamu\"."
+      ],
+      "hi": [
+        "उसके कान में अपने पसंदीदा गाने का एक हिस्सा फुसफुसाओ।",
+        "उसे अपना कोई राज़ बताओ।",
+        "आज कोई बात जो तुम्हें उसकी याद दिला रही है, फुसफुसाकर बताओ।",
+        "\"तुम मुझे सबसे ज़्यादा किस बात से ख़ुश करते हो\" — यह फुसफुसाकर कहो।",
+        "उसके कान में 3 शब्दों में \"मैं तुमसे प्यार करता हूँ\" फुसफुसाओ।"
+      ],
+      "ar": [
+        "اهمس في أذنه مقطعاً من أغنيتك المفضلة.",
+        "أخبره بسرٍّ عنك.",
+        "اهمس له بشيء جعلك تفكر فيه اليوم.",
+        "قل له همساً: بأي شيء تُسعدني أكثر؟",
+        "اهمس في أذنه بثلاث كلمات: \"أنا أحبك\"."
       ]
     },
     "track": "romantik",

@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Modal,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -21,6 +22,12 @@ const LANG_LABEL_KEY: Record<SupportedLanguage, string> = {
   fr: 'settings.french',
   es: 'settings.spanish',
   it: 'settings.italian',
+  ja: 'settings.japanese',
+  ko: 'settings.korean',
+  'zh-TW': 'settings.chinese',
+  id: 'settings.indonesian',
+  hi: 'settings.hindi',
+  ar: 'settings.arabic',
 };
 
 type Props = {
@@ -53,7 +60,11 @@ export function SettingsModal({ visible, onClose }: Props) {
           <Text style={styles.title}>{t('settings.title')}</Text>
           <Text style={styles.label}>{t('settings.language')}</Text>
 
-          <View style={styles.row}>
+          <ScrollView
+            style={styles.scroll}
+            contentContainerStyle={styles.row}
+            showsVerticalScrollIndicator={false}
+          >
             {SUPPORTED_LANGUAGES.map((lang) => (
               <LanguageOption
                 key={lang}
@@ -63,7 +74,7 @@ export function SettingsModal({ visible, onClose }: Props) {
                 onPress={() => pick(lang)}
               />
             ))}
-          </View>
+          </ScrollView>
 
           <Pressable onPress={onClose} style={styles.closeBtn}>
             <Text style={styles.closeBtnText}>{t('settings.close')}</Text>
@@ -141,26 +152,34 @@ const styles = StyleSheet.create({
     letterSpacing: 0.6,
     textTransform: 'uppercase',
   },
+  scroll: {
+    // Cap at ~4 rows of pills so the whole modal still fits on short
+    // phones; wraps + scrolls once we exceed that. 12 languages at
+    // 3-per-row = 4 rows; adding more languages later wraps cleanly.
+    maxHeight: 240,
+  },
   row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 10,
+    gap: 8,
+    paddingBottom: 2,
   },
   option: {
-    // Three per row at the modal's 360px max width — labels like
-    // "Deutsch" or "Español" need more than the ~55px two-per-row would
-    // force, and six buttons single-row would truncate.
-    flexBasis: '30%',
+    // Three per row at the modal's 360px max width. Shorter font size
+    // keeps "Bahasa Indonesia" / "繁體中文" readable without overflow.
+    flexBasis: '31%',
     flexGrow: 1,
-    paddingVertical: 12,
-    paddingHorizontal: 6,
+    paddingVertical: 10,
+    paddingHorizontal: 4,
     borderRadius: 12,
     borderWidth: 1.5,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   optionLabel: {
-    fontSize: 15,
+    fontSize: 13,
     fontWeight: '800',
+    textAlign: 'center',
   },
   closeBtn: {
     marginTop: 6,

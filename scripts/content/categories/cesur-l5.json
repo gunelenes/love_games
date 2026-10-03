@@ -7,7 +7,13 @@
       "de": "Sprache des Seils",
       "fr": "Au langage de la corde",
       "es": "El Lenguaje de la Cuerda",
-      "it": "Il Linguaggio della Corda"
+      "it": "Il Linguaggio della Corda",
+      "ja": "縄の言葉",
+      "ko": "밧줄의 언어",
+      "zh-TW": "繩的語言",
+      "id": "Dari Bahasa Tali",
+      "hi": "रस्सी की ज़बानी",
+      "ar": "بلسان الحبل"
     },
     "color": "#4C1D95",
     "icon": "🎀",
@@ -62,6 +68,54 @@
         "Dopo averlo legato, una sola frase: \"la tua fiducia è nelle mie mani.\" Per 3 minuti stai in silenzio, senza toccare, solo con la tua presenza. Poi esplora.",
         "Il partner in ginocchio, mani dietro legate dolcemente. Il Capo si pone davanti, comunica per 2 minuti solo con lo sguardo + il respiro. Poi un unico comando.",
         "Fine scena: sciogli il legame, massaggia i polsi, un minuto in silenzio occhi negli occhi. La frase \"sono qui, stai bene.\" Bevete acqua, mangiate qualcosa — aftercare."
+      ],
+      "ja": [
+        "シーン前の約束：セーフワードを決めて、境界を話し合う。シルクのスカーフでパートナーの手首を神聖な結びで一つに — 3巻き、ゆるめに、呼吸は楽に。5分間、この結びをただ眼差しだけで味わって。",
+        "長めのスカーフでパートナーの胴（胸と腰）をコルセット編みのように巻きつけて。締めつけは感じるけれど、呼吸は完全に自由。3分間、この拘束のまま眼差しと言葉だけで。",
+        "君が縄師。パートナーの目、手首、足首を三重の結びで繋ぐ。セーフワードでのみ解ける。5分間の探索 — 呼吸と心地よさを常に確認して。",
+        "縛り終えたら一言：\"君の信頼は僕が預かる。\" 3分間、触れずにただ君の存在だけで寄り添って。それから探索を。",
+        "パートナーは膝をつき、手は背中でやわらかく縛られている。統率者は前に立ち、眼差しと呼吸だけで2分間の対話。そして一つだけ命令を。",
+        "シーンの締め：結びを解き、手首をマッサージ、目と目で1分間静かに。\"そばにいる、大丈夫だよ\" と伝えて。水を飲み、何か口にして — アフターケア。"
+      ],
+      "ko": [
+        "장면 전 합의: 안전어를 명확히 하고 경계를 이야기해. 실크 스카프로 파트너의 손목을 신성한 매듭으로 하나로 묶어 — 세 번 감고, 느슨하게, 호흡은 편안하게. 5분 동안 이 묶음을 오직 눈빛으로만 어루만져.",
+        "긴 스카프로 파트너의 몸통을 코르셋처럼 감아 (가슴과 허리). 압박감은 느껴지되 호흡은 완전히 편안하게. 3분 동안 이 상태로 눈빛과 말만 건네.",
+        "네가 로프 묶는 사람이야. 파트너의 눈, 손목, 발목을 세 겹 매듭으로 묶어. 안전어로만 풀려. 5분 동안 탐험해 — 호흡과 편안함을 계속 확인하면서.",
+        "묶은 뒤 한 문장: \"너의 믿음은 내게 있어.\" 3분 동안 조용히, 손대지 않고 오직 네 존재만으로 함께 있어. 그러고 나서 탐험해.",
+        "파트너는 무릎 꿇고, 두 손은 뒤로 부드럽게 묶여 있어. 지휘자는 앞에 서서, 오직 눈빛과 호흡만으로 2분간 소통해. 그리고 단 하나의 명령.",
+        "장면 마무리: 매듭을 풀고, 손목을 마사지해 주고, 1분 동안 말없이 눈을 맞춰. \"내가 곁에 있어, 넌 괜찮아\"라고 말해. 물을 마시고, 뭔가 먹어 — 애프터케어."
+      ],
+      "zh-TW": [
+        "場景前的約定：確認安全詞、聊聊界線。用絲質絲巾將伴侶的手腕以一個神聖的結交織在一起——繞三圈，鬆鬆的，呼吸要順暢。用這個束縛，只以眼神流連 5 分鐘。",
+        "用一條長絲巾像馬甲編織般纏繞伴侶的身軀（胸部與腰部）。要能感到壓力，但呼吸完全自在。維持這個束縛 3 分鐘，只用眼神＋言語。",
+        "你是繩師。用三重結將伴侶的雙眼＋手腕＋腳踝綁起，只能以安全詞解開。探索 5 分鐘——持續確認呼吸與舒適度。",
+        "綁好之後說一句話：\"你的信任交給我了。\" 3 分鐘不觸碰，只以你的存在靜靜陪著。然後再探索。",
+        "伴侶跪著，雙手在背後被柔軟地束起。主導者站在前方，只用眼神＋呼吸溝通 2 分鐘。然後下一個指令。",
+        "場景結束：解開束縛，按摩手腕，眼神交會靜靜一分鐘。說出 \"我在你身邊，你很好\" 這句話。喝水、吃點東西——善後照護。"
+      ],
+      "id": [
+        "Kesepakatan sebelum sesi: perjelas safeword, bicarakan batasan. Dengan selendang sutra, satukan pergelangan tangan pasanganmu dalam ikatan sakral — 3 lilitan, longgar, napas tetap lega. 5 menit mainkan ikatan ini hanya lewat tatapan.",
+        "Dengan selendang panjang, lilitkan tubuh pasanganmu bergaya anyaman korset (dada dan pinggang). Terasa menekan tapi napas sepenuhnya lega. 3 menit dalam pelukan ini hanya dengan tatapan + kata.",
+        "Kamu adalah Pengikat Tali. Ikat mata + pergelangan tangan + pergelangan kaki pasanganmu dalam anyaman tiga simpul. Hanya terlepas dengan kata aman. 5 menit menjelajah — terus periksa napas dan kenyamanannya.",
+        "Setelah mengikat, satu kalimat: \"kepercayaanmu ada padaku.\" 3 menit diam tanpa sentuhan, hadir hanya dengan keberadaanmu. Lalu mulailah menjelajah.",
+        "Pasangan berlutut, kedua tangannya diikat lembut di belakang. Pengarah berdiri di depan, 2 menit komunikasi hanya lewat tatapan + napas. Lalu satu perintah.",
+        "Akhir sesi: lepaskan ikatan, pijat pergelangan tangannya, satu menit saling menatap dalam diam. Kalimat \"aku di sisimu, kamu baik-baik saja.\" Minum air, makan sesuatu — aftercare."
+      ],
+      "hi": [
+        "सीन से पहले का समझौता: safeword साफ़ करो, सीमाओं पर बात करो। रेशमी स्कार्फ़ से अपने पार्टनर की कलाइयों को एक पवित्र गाँठ में बाँधो — 3 लपेट, ढीली, साँस आराम से। 5 मिनट तक इस बंधन को सिर्फ़ निगाहों से महसूस करो।",
+        "एक लंबे स्कार्फ़ से अपने पार्टनर के बदन को कोर्सेट की बुनाई के अंदाज़ में लपेटो (सीना और कमर)। दबाव महसूस हो पर साँस पूरी तरह आज़ाद रहे। 3 मिनट इसी पकड़ में सिर्फ़ निगाह + शब्द।",
+        "तुम रस्सी बांधने वाला हो। पार्टनर की आँखें + कलाइयाँ + टखने तीनों को एक बुनाई से बाँधो। सिर्फ़ safeword पर खुलेगी। 5 मिनट की खोज — साँस और आराम को लगातार परखो।",
+        "बाँधने के बाद एक वाक्य: \"तुम्हारा भरोसा मेरे पास है।\" 3 मिनट चुपचाप, बिना छुए, सिर्फ़ अपनी मौजूदगी से साथ दो। फिर खोज शुरू।",
+        "पार्टनर घुटनों पर, हाथ पीछे नरमी से बंधे। प्रमुख सामने खड़ा हो, सिर्फ़ निगाह + साँस से 2 मिनट संवाद। फिर एक ही आदेश।",
+        "सीन का अंत: बंधन खोलो, कलाइयों की मालिश करो, आँखों में आँखें डाल एक मिनट ख़ामोशी। \"मैं तुम्हारे साथ हूँ, तुम ठीक हो\" यह वाक्य। पानी पियो, कुछ खाओ — aftercare।"
+      ],
+      "ar": [
+        "اتفاق ما قبل المشهد: وضّح كلمة الأمان، وتحدّثا عن الحدود. بوشاح حريري، اجمع معصمَي شريكك بضفيرة مقدّسة — 3 لفّات، مرخاة، والتنفّس مرتاح تمامًا. امكث 5 دقائق مع هذا الرباط بالنظرة وحدها.",
+        "بوشاح طويل، لفّ جذع شريكك على طراز ضفيرة الكورسيه (الصدر والخصر). ضغط محسوس لكن التنفّس مرتاح بالكامل. 3 دقائق في هذه القبضة — نظرة وكلمة فقط.",
+        "أنت الرابط. اربط عينَي شريكك ومعصمَيه وكاحلَيه بضفيرة ثلاثية. لا تُحلّ إلا بكلمة الأمان. 5 دقائق استكشاف — راقب التنفّس والراحة باستمرار.",
+        "بعد الرباط، جملة واحدة: \"ثقتك بين يديّ.\" 3 دقائق في صمت ودون لمس، بحضورك فقط. ثم اكتشف.",
+        "شريكك راكعٌ، يداه خلفه مربوطتان بلين. المدبّر يقف أمامه، تواصل بالنظرة والنفَس فقط لمدة دقيقتين. ثم أمرٌ واحد.",
+        "نهاية المشهد: حُلّ الرباط، دلّك المعصمَين، عين في عين بصمت لدقيقة. جملة: \"أنا بجانبك، أنت بخير.\" اشربا الماء، تناولا شيئًا — رعاية ما بعد المشهد."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Zeremonie der Hingabe",
       "fr": "Cérémonie d'accueil",
       "es": "Ceremonia de Aceptación",
-      "it": "Rito di Accettazione"
+      "it": "Rito di Accettazione",
+      "ja": "受け入れの儀",
+      "ko": "받아들임의 의식",
+      "zh-TW": "接納儀式",
+      "id": "Upacara Penerimaan",
+      "hi": "स्वीकृति की रस्म",
+      "ar": "طقس القبول"
     },
     "color": "#78350F",
     "icon": "📜",
@@ -128,6 +188,54 @@
         "Reciprocamente: proponete 3 ruoli (Legatore/Intrecciatore, Guida/Seguace, Custode/Gattino). Accettatene uno. Restate in quel ruolo per 10 minuti. Poi raccontatevi cosa avete provato.",
         "Rituale di chiusura della scena: la Guida accarezza la testa del partner, dice \"stai bene, sei al sicuro.\" 3 minuti di abbraccio. Feedback reciproco — rinnovate la fiducia.",
         "Rituale prima di dormire: per 5 minuti condividete cosa vi è piaciuto oggi e cosa potrebbe cambiare. È la base per la prossima scena."
+      ],
+      "ja": [
+        "シーン開始の儀式：3分間、互いの目を見つめ合う。そして明確に：\"この15分間、導き手は君/僕だ。\" セーフワードを再確認。",
+        "パートナーが\"ルール\"を一つ決める（例：\"許可なく話せない\"）。君は5分間そのルールに従う。破ったら、事前に決めた5秒の結果（やさしい触れ合い、頭からのキス、など）。",
+        "統率者が神聖な物を一つ用意する（ろうそく、指輪、布）。パートナーにその物を使った役目を与える：\"これを持って。果たすまで他のことは何もしない。\"",
+        "お互いに：3つの役の提案を出し合う（縄師/編み手、導き手/従う者、世話人/猫）。一つを受け入れる。その役で10分間過ごす。そのあと互いにどう感じたかを話す。",
+        "シーン終了の儀式：導き手がパートナーの頭を撫で、\"大丈夫、ちゃんとできたよ\" と言う。3分間の抱擁。互いにフィードバック — 信頼を新たに。",
+        "就寝前の儀式：5分間、今日何が良かったか、何を変えられるかを分かち合う。これが次のシーンの土台になる。"
+      ],
+      "ko": [
+        "장면 시작 의식: 3분 동안 서로의 눈을 바라봐. 그런 다음 분명히 해: \"이 15분 동안 안내자는 너야/나야.\" 안전어도 다시 확인.",
+        "파트너가 하나의 \"규칙\"을 정해 (예: \"허락 없이는 말할 수 없다\"). 넌 5분 동안 그 규칙을 지켜. 규칙을 어기면 미리 정해둔 5초짜리 결과 (부드러운 터치, 머리를 이끄는 입맞춤 등).",
+        "지휘자가 신성한 물건을 하나 준비해 (초, 반지, 천 조각). 그 물건으로 파트너에게 임무를 줘: \"이걸 잡고 있어. 끝낼 때까지 다른 건 아무것도 하지 마.\"",
+        "서로 마주 보고: 세 가지 역할 제안을 해봐 (로프 묶는 사람/엮이는 사람, 안내자/따르는 사람, 돌보는 사람/고양이). 하나를 받아들여. 그 역할로 10분 머물러. 그리고 그에 대해 서로 어떤 느낌이었는지 말해.",
+        "장면 마무리 의식: 안내자가 파트너의 머리를 쓰다듬으며 \"넌 괜찮아, 다 끝났어\"라고 말해. 3분간 포옹. 서로 피드백 — 신뢰 회복.",
+        "잠들기 전 의식: 5분 동안 오늘 무엇이 좋았는지, 무엇이 바뀔 수 있는지 나눠. 이것이 다음 장면의 토대야."
+      ],
+      "zh-TW": [
+        "場景起始儀式：互相凝視對方的雙眼 3 分鐘。然後明確說出：\"接下來的 15 分鐘，引導者是你／是我。\" 再次確認安全詞。",
+        "伴侶訂一條「規則」（例如：\"未經允許不能說話\"）。你要遵守這條規則 5 分鐘。若破壞規則，就承擔事先約定好的 5 秒結果（輕柔的觸碰、引導親吻、等等）。",
+        "主導者準備一件神聖的物品（蠟燭、戒指、一塊布）。用這件物品給伴侶一項任務：\"拿著它。在完成之前不許做其他任何事。\"",
+        "彼此提出：各提議 3 組角色（繩師／被編者、引導者／跟隨者、照護者／貓）。接受其中一組，在那個角色裡停留 10 分鐘。然後互相說說對彼此的感受。",
+        "場景收尾儀式：引導者輕撫伴侶的頭，說 \"你很好，你完整。\" 擁抱 3 分鐘。互相回饋——重建信任。",
+        "睡前儀式：用 5 分鐘分享今天你喜歡什麼、什麼可以改變。這會是下一場景的基礎。"
+      ],
+      "id": [
+        "Ritual pembuka sesi: 3 menit saling menatap mata. Lalu perjelas: \"Selama 15 menit ini, Pembimbingnya adalah kamu/aku.\" Ulangi safeword.",
+        "Pasanganmu menentukan satu \"aturan\" (mis. \"aku tidak boleh bicara tanpa izin\"). Kamu patuhi aturan itu selama 5 menit. Jika dilanggar, konsekuensi 5 detik yang sudah disepakati sebelumnya (sentuhan lembut, mengarahkan kepala untuk ciuman, dsb.).",
+        "Pengarah menyiapkan sebuah benda sakral (lilin, cincin, selembar kain). Beri pasangan sebuah tugas dengan benda itu: \"Peganglah ini. Sampai kamu menyelesaikannya, kamu tidak akan melakukan hal lain.\"",
+        "Saling bergantian: ajukan 3 usulan peran (Pengikat Tali/Yang Dianyam, Pembimbing/Pengikut, Perawat/Kucing). Terima salah satunya. Bertahan 10 menit dalam peran itu. Lalu saling ceritakan apa yang kamu rasakan tentangnya.",
+        "Ritual penutup sesi: Pembimbing mengelus kepala pasangannya, berkata \"kamu baik-baik saja, kamu utuh.\" 3 menit berpelukan. Umpan balik timbal balik — memperbarui kepercayaan.",
+        "Ritual sebelum tidur: selama 5 menit, bagikan apa yang kamu suka hari ini dan apa yang bisa diubah. Ini jadi fondasi untuk sesi berikutnya."
+      ],
+      "hi": [
+        "सीन शुरू करने की रस्म: 3 मिनट एक-दूसरे की आँखों में देखो। फिर साफ़ करो: \"अगले 15 मिनट तक मार्गदर्शक तुम हो / मैं हूँ।\" safeword दोहराओ।",
+        "पार्टनर एक \"नियम\" तय करे (जैसे \"बिना इजाज़त बोल नहीं सकता/सकती\")। तुम 5 मिनट उस नियम पर चलो। नियम टूटे तो पहले से तय 5 सेकंड का नतीजा (नरम स्पर्श, सिर पर हल्का सा चूमना, वग़ैरह)।",
+        "प्रमुख एक पवित्र चीज़ तैयार करे (मोमबत्ती, अंगूठी, एक कपड़ा)। पार्टनर को उस चीज़ के साथ एक काम दे: \"इसे थामे रखो। जब तक पूरा न हो, कुछ और नहीं करोगे/करोगी।\"",
+        "आमने-सामने: 3 भूमिकाओं के सुझाव दो (रस्सी बांधने वाला/बुनने वाला, मार्गदर्शक/अनुसरणकर्ता, देखभाल करने वाला/बिल्ली)। एक चुनो। उसी भूमिका में 10 मिनट रहो। फिर एक-दूसरे को बताओ कैसा लगा।",
+        "सीन के समापन की रस्म: मार्गदर्शक पार्टनर के सिर पर हाथ फेरे, कहे \"तुम ठीक हो, सब पूरा है\"। 3 मिनट गले लगाओ। आपसी फ़ीडबैक — भरोसे की नवीनीकरण।",
+        "सोने से पहले की रस्म: 5 मिनट तक बताओ कि आज क्या अच्छा लगा, क्या बदला जा सकता है। यह अगले सीन की नींव है।"
+      ],
+      "ar": [
+        "طقس بداية المشهد: 3 دقائق نظرة متبادلة في العينين. ثم وضّحا: \"خلال هذه الـ15 دقيقة، المرشد هو أنت/أنا.\" أعيدا كلمة الأمان.",
+        "يضع شريكك \"قاعدة\" (مثلًا: \"لا أستطيع الكلام دون إذن\"). التزم بها 5 دقائق. إن كُسِرت القاعدة، نتيجة مُتّفق عليها مسبقًا مدّتها 5 ثوانٍ (لمسة ناعمة، توجيه الرأس للقبلة، إلخ).",
+        "يُحضّر المدبّر شيئًا مقدّسًا (شمعة، خاتم، قطعة قماش). يُكلّف شريكه بمهمّة بهذا الشيء: \"أمسكه. لن تفعل شيئًا آخر حتى تُنجزه.\"",
+        "تبادلًا: اقترح كلٌّ منكما 3 أدوار (الرابط/الناسج، المرشد/التابع، المعتني/القط). اقبل واحدًا. ابقَ في ذلك الدور 10 دقائق. ثم أخبرا بعضكما بما شعرتما به حياله.",
+        "طقس إغلاق المشهد: يمسح المرشد على رأس شريكه، ويقول: \"أنت بخير، أنت كاملٌ.\" 3 دقائق عناق. تغذية راجعة متبادلة — تجديد الثقة.",
+        "طقس ما قبل النوم: لمدة 5 دقائق، تبادلا ما أحببتماه اليوم وما يمكن أن يتغيّر. هذا أساس المشهد التالي."
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Tiefe Verbindung",
       "fr": "Lien profond",
       "es": "Vínculo Profundo",
-      "it": "Legame Profondo"
+      "it": "Legame Profondo",
+      "ja": "深い絆",
+      "ko": "깊은 유대",
+      "zh-TW": "深層連結",
+      "id": "Ikatan Dalam",
+      "hi": "गहरा बंधन",
+      "ar": "رابط عميق"
     },
     "color": "#1E1B4B",
     "icon": "🌌",
@@ -194,6 +308,54 @@
         "\"Notte silenziosa\": 30 minuti senza parole. Solo sguardi, tocco, respiro. Alla fine, 5 minuti per raccontarvi cosa avete provato.",
         "\"Notti dei ruoli\": per 1 settimana vivete 2 notti scambiandovi i ruoli. Alla fine di ogni notte, 5 minuti di confronto.",
         "Il rituale più profondo: benda sugli occhi + un legame morbido di seta + musica + 30 minuti. Il Capo conduce. Fine scena: 10 minuti di abbraccio + bevete acqua + aftercare + feedback."
+      ],
+      "ja": [
+        "20分の\"シーン\"を計画して。始まり：目を見てセーフワード。中盤：3つの異なる活動（役、触れ合い、言葉遊び）。終わり：抱擁とフィードバック。時間を測って。",
+        "\"朝のルーティン\"のようなプロトコルを一緒に作る：毎朝5分の共通の儀式（眼差し、触れ合い、言葉）。1週間試してみて。",
+        "統率者と従う者として、就寝前の10分シーン。統率者が3つの活動を決める — 呼吸、触れ合い、言葉。従う者はそれぞれを受け入れるか、\"黄色/赤\" で舵を取る。",
+        "\"沈黙の夜\"：30分間、言葉禁止。眼差し、触れ合い、呼吸だけ。終わりに5分間、互いにどう感じたかを伝え合う。",
+        "\"役の夜\"：1週間のうち2晩、役を入れ替えて過ごす。毎晩の終わりに5分の振り返り。",
+        "最も深い儀式：目隠し＋軽いシルクの拘束＋音楽＋30分。統率者が導く。シーンの終わりは10分の抱擁＋水を飲む＋アフターケア＋フィードバック。"
+      ],
+      "ko": [
+        "20분짜리 \"장면\"을 계획해. 시작: 눈을 맞추고 안전어 확인. 중간: 세 가지 다른 활동 (역할, 터치, 언어 놀이). 끝: 포옹과 피드백. 타이머를 맞춰.",
+        "\"아침 루틴\" 같은 프로토콜을 디자인해봐: 매일 아침 5분, 함께하는 하나의 의식 (눈빛, 터치, 말). 일주일 동안 시험해봐.",
+        "지휘자와 따르는 사람으로 잠들기 전 10분 장면. 지휘자가 세 가지 활동을 정해 — 호흡, 터치, 말. 따르는 사람은 각각을 수락하거나 \"노랑/빨강\"으로 조절해.",
+        "\"조용한 밤\": 30분 동안 말 금지. 오직 눈빛, 터치, 호흡뿐. 끝에 5분 동안 서로 어떤 느낌이었는지 이야기해.",
+        "\"역할의 밤들\": 일주일 동안 이틀은 역할을 바꿔가며 지내봐. 각 밤의 끝에 5분 평가.",
+        "가장 깊은 의식: 눈가리개 + 가벼운 실크 매듭 + 잔잔한 음악 + 30분. 지휘자가 이끌어. 장면 끝에 10분 포옹 + 물 마시기 + 애프터케어 + 피드백."
+      ],
+      "zh-TW": [
+        "規劃一個 20 分鐘的「場景」。開始：互相凝視＋安全詞。中段：3 種不同的活動（角色、觸碰、文字遊戲）。結束：擁抱＋回饋。設好計時。",
+        "設計一個像「晨間例行」的協定：每天早上 5 分鐘共同的儀式（眼神、觸碰、話語）。試行一週。",
+        "以主導者和跟隨者之姿，在睡前進行 10 分鐘的場景。主導者決定 3 項活動——呼吸、觸碰、話語。跟隨者以接受或 \"黃／紅\" 來掌控每一項。",
+        "「安靜夜」：30 分鐘禁止說話。只有眼神、觸碰、呼吸。最後用 5 分鐘互相訴說你的感受。",
+        "「角色之夜」：一週內有 2 個晚上輪換角色度過。每晚結束時用 5 分鐘評估。",
+        "最深層的儀式：眼罩＋輕柔的絲質束縛＋有聲的音樂＋30 分鐘。由主導者引領。場景結束後 10 分鐘擁抱＋喝水＋善後照護＋回饋。"
+      ],
+      "id": [
+        "Rencanakan sebuah \"sesi\" 20 menit. Pembuka: saling menatap mata + safeword. Tengah: 3 aktivitas berbeda (peran, sentuhan, permainan kata). Penutup: pelukan + umpan balik. Atur waktunya.",
+        "Rancang sebuah protokol seperti \"rutinitas pagi\": setiap pagi 5 menit ritual bersama (tatapan, sentuhan, kata). Uji selama 1 minggu.",
+        "Sebagai Pengarah dan Pengikut, sebuah sesi 10 menit sebelum tidur. Pengarah menentukan 3 aktivitas — napas, sentuhan, kata. Pengikut mengatur setiap aktivitas dengan menerima atau \"kuning/merah\".",
+        "\"Malam hening\": 30 menit kata-kata dilarang. Hanya tatapan, sentuhan, napas. Di akhir, 5 menit saling ceritakan apa yang kamu rasakan.",
+        "\"Malam peran\": selama 1 minggu, 2 malam hidupilah dengan peran yang bertukar. Di akhir setiap malam, evaluasi 5 menit.",
+        "Ritual terdalam: penutup mata + ikatan sutra ringan + musik lembut + 30 menit. Pengarah memimpin. Akhir sesi 10 menit berpelukan + minum air + aftercare + umpan balik."
+      ],
+      "hi": [
+        "20 मिनट का एक \"सीन\" प्लान करो। शुरुआत: आँखों में आँखें + safeword। बीच में: 3 अलग गतिविधियाँ (भूमिका, स्पर्श, शब्द का खेल)। अंत: गले लगना + फ़ीडबैक। समय सेट कर लो।",
+        "\"सुबह की रूटीन\" जैसा एक प्रोटोकॉल बनाओ: हर सुबह 5 मिनट एक साझा रस्म (निगाह, स्पर्श, शब्द)। 1 हफ़्ते आज़माओ।",
+        "प्रमुख और अनुसरणकर्ता बनकर सोने से पहले 10 मिनट का एक सीन। प्रमुख 3 गतिविधियाँ तय करे — साँस, स्पर्श, शब्द। अनुसरणकर्ता हर एक को स्वीकार करे या \"पीला/लाल\" से संभाले।",
+        "\"ख़ामोश रात\": 30 मिनट शब्द मना। सिर्फ़ निगाह, स्पर्श, साँस। अंत में 5 मिनट एक-दूसरे को बताओ क्या महसूस हुआ।",
+        "\"भूमिकाओं की रातें\": 1 हफ़्ते में 2 रातें भूमिकाएँ बदलकर जियो। हर रात के अंत में 5 मिनट का जायज़ा।",
+        "सबसे गहरी रस्म: आँख पर पट्टी + हल्की रेशमी बंधन + धीमा संगीत + 30 मिनट। प्रमुख संभाले। सीन के अंत में 10 मिनट गले लगाना + पानी पीना + aftercare + फ़ीडबैक।"
+      ],
+      "ar": [
+        "خطّط لـ\"مشهد\" مدّته 20 دقيقة. البداية: تبادل النظرات + كلمة الأمان. الوسط: 3 أنشطة مختلفة (دور، لمسة، لعبة كلمات). النهاية: عناق + تغذية راجعة. اضبط الوقت.",
+        "صمّما بروتوكولًا كـ\"روتين الصباح\": كل صباح، 5 دقائق من طقس مشترك (نظرة، لمسة، كلمة). جرّباه لمدة أسبوع.",
+        "مشهد مدّته 10 دقائق قبل النوم، أنت المدبّر وشريكك التابع. يُحدّد المدبّر 3 أنشطة — نفَس، لمسة، كلمة. يدير التابع كلًّا منها بالقبول أو بـ\"أصفر/أحمر\".",
+        "\"ليلة صامتة\": 30 دقيقة بلا كلام. فقط النظرة واللمسة والنفَس. في النهاية، لمدة 5 دقائق، أخبرا بعضكما بما شعرتما به.",
+        "\"ليالي الأدوار\": على مدى أسبوع، في ليلتين، عيشا الأدوار متبادلة. في نهاية كل ليلة، 5 دقائق تقييم.",
+        "أعمق الطقوس: عصبة عين + رباط حريري خفيف + موسيقى هادئة + 30 دقيقة. المدبّر يقود. نهاية المشهد: 10 دقائق عناق + اشربا الماء + رعاية ما بعد المشهد + تغذية راجعة."
       ]
     }
   }

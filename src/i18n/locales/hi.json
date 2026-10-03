@@ -1,0 +1,231 @@
+{
+  "app": {
+    "loading": "लोड हो रहा है…"
+  },
+  "common": {
+    "close": "बंद करो",
+    "cancel": "रद्द करो",
+    "confirm": "पक्का करो",
+    "delete": "हटाओ",
+    "save": "सेव करो",
+    "retry": "फिर से कोशिश",
+    "error": "गड़बड़:"
+  },
+  "home": {
+    "eyebrow": "जोड़ों के लिए",
+    "title": "Love Games",
+    "subtitle": "छोटे खेल, साथ खेलने के लिए",
+    "footer": "और खेल जल्द आ रहे हैं ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "पहिया",
+      "tagline": "घुमाओ और अपनी श्रेणी पाओ"
+    },
+    "dice": {
+      "name": "पासा",
+      "tagline": "फेंको — सरप्राइज़ खुद मिलेगा"
+    },
+    "cards": {
+      "name": "ताश",
+      "tagline": "श्रेणियाँ चुनो, एक कार्ड निकालो"
+    },
+    "boxes": {
+      "name": "डिब्बे",
+      "tagline": "पर्चियाँ मिलाओ, एक-दूसरे को चौंकाओ"
+    }
+  },
+  "wheel": {
+    "eyebrow": "पहिया",
+    "title": "पहिया घुमाओ",
+    "spinPrompt": "घुमाने के लिए बीच का बटन दबाओ",
+    "spinBtn": "घुमाओ",
+    "spinAgain": "फिर घुमाओ",
+    "lastLabel": "पिछला:",
+    "settings": {
+      "title": "पहिया सेटिंग्स",
+      "summary": "{{active}} / {{total}} चालू · कम से कम {{min}} ज़रूरी",
+      "promptsCount": "{{count}} संकेत",
+      "lockNote": "आख़िरी {{min}} श्रेणियों में से एक — बंद नहीं कर सकते"
+    }
+  },
+  "dice": {
+    "eyebrow": "पासा",
+    "title": "पासा फेंको",
+    "rollLabel": "फेंको",
+    "newRoll": "फिर फेंको",
+    "poster": "डिब्बे के बाहर"
+  },
+  "cards": {
+    "eyebrow": "ताश",
+    "title": "एक कार्ड निकालो",
+    "drawCard": "कार्ड निकालो",
+    "newCard": "नया कार्ड",
+    "hint": "नीचे ढेर पर टैप करो → एक कार्ड निकालो",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} श्रेणियाँ · {{prompts}} संकेत",
+    "categoryFallback": "श्रेणी",
+    "footerPrompt": "एक और निकालो",
+    "settings": {
+      "title": "कार्ड सेटिंग्स",
+      "summary": "{{active}} / {{total}} चालू · कम से कम {{min}} ज़रूरी",
+      "promptsCount": "{{count}} संकेत",
+      "lockNote": "आख़िरी {{min}} में से एक — बंद नहीं कर सकते"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "डिब्बे",
+    "lobbyTitle": "कमरा बनाओ या जुड़ो",
+    "lobbySubtitle": "पर्चियाँ दोनों फ़ोन में साथ-साथ अपडेट होंगी — QR की ज़रूरत नहीं",
+    "createNew": "नया कमरा बनाओ",
+    "createNewSub": "6 अंकों का कोड लो, पार्टनर को भेजो",
+    "join": "कमरे में जुड़ो",
+    "joinSub": "पार्टनर से मिला कोड डालो",
+    "generatingCode": "बन रहा है…",
+    "generateCode": "कोड बनाओ",
+    "back": "वापस",
+    "codeReadyTitle": "तुम्हारा कोड तैयार है 🎉",
+    "codeReadyText": "यह कोड पार्टनर को भेजो। वो \"कमरे में जुड़ो\" चुनकर इसे डालेंगे।",
+    "goToBoxes": "डिब्बों पर जाओ",
+    "joinTitle": "कमरे में जुड़ो",
+    "joinText": "पार्टनर से मिला 6 अंकों का कोड डालो।",
+    "joining": "जुड़ रहे हैं…",
+    "joinBtn": "जुड़ो",
+    "identityWait": "पहचान तैयार नहीं है, थोड़ी देर में फिर कोशिश करो",
+    "roomNotFound": "ऐसा कोई कमरा नहीं। कोड जाँचो।",
+    "roomFull": "कमरा भरा है (2 लोग)। कोई और कमरा देखो।",
+    "listEyebrow": "साझा डिब्बे",
+    "listRoomLabel": "कमरा",
+    "listBoth": "2/2 लोग",
+    "listWaiting": "1/2 · पार्टनर का इंतज़ार",
+    "listLiveSync": "पर्चियाँ लाइव अपडेट हो रही हैं",
+    "listGiveCode": "जुड़ने के लिए पार्टनर को कोड दो",
+    "leaveRoom": "कमरा छोड़ो",
+    "leaveConfirmTitle": "कमरा छोड़ो",
+    "leaveConfirmText": "इस फ़ोन से कमरे का लिंक हट जाएगा। डिब्बे Firestore पर रहेंगे — कोड से दोबारा जुड़ सकते हो।",
+    "cancel": "रद्द करो",
+    "leave": "छोड़ो",
+    "newBox": "नया डिब्बा",
+    "loading": "लोड हो रहा है…",
+    "error": "गड़बड़:",
+    "noBoxes": "अभी कोई डिब्बा नहीं",
+    "noBoxesHint": "नया डिब्बा बनाओ, पर्चियाँ डालो, पार्टनर के साथ मिलाओ",
+    "boxCardMeta": "{{mine}} तुम्हारी · {{partner}} पार्टनर की",
+    "ready": "तैयार",
+    "notesCount": "{{count}} पर्चियाँ",
+    "createBoxTitle": "नया डिब्बा",
+    "createBoxSub": "डिब्बे को नाम और थीम दो",
+    "namePlaceholder": "जैसे मूवी नाइट",
+    "create": "बनाओ",
+    "boxNotFound": "डिब्बा नहीं मिला",
+    "yours": "तुम्हारी पर्चियाँ",
+    "newNotePlaceholder": "नई पर्ची लिखो…",
+    "add": "जोड़ो",
+    "emptyNote": "अभी कोई पर्ची नहीं। ऊपर लिखना शुरू करो।",
+    "partner": "तुम्हारा पार्टनर",
+    "partnerNotesCount": "{{count}} पर्चियाँ",
+    "partnerNotJoined": "अभी कमरे में नहीं आया",
+    "partnerReady": "पार्टनर तैयार है ✨",
+    "partnerNotConfirmed": "अभी पक्का नहीं किया",
+    "partnerNoNotes": "अभी पर्चियाँ नहीं डालीं",
+    "youConfirmed": "तुम ✓ ({{count}})",
+    "youCount": "तुम {{count}}",
+    "partnerConfirmed": "पार्टनर ✓ ({{count}})",
+    "partnerCount": "पार्टनर {{count}}",
+    "partnerWaiting": "पार्टनर का इंतज़ार",
+    "notesDone": "मेरी पर्चियाँ हो गईं",
+    "editNotes": "मेरी पर्चियाँ बदलो",
+    "editNotesWaiting": "मेरी पर्चियाँ बदलो · पार्टनर ने पक्का नहीं किया",
+    "shuffle": "मिलाओ",
+    "revealEyebrow": "डिब्बे के बाहर",
+    "close": "बंद करो",
+    "shuffleAgain": "फिर मिलाओ",
+    "deleteBoxTitle": "डिब्बा हटाओ",
+    "deleteBoxText": "\"{{name}}\" और इसकी सारी पर्चियाँ हटाएँ? यह दोनों फ़ोन से हट जाएगा।"
+  },
+  "trackBar": {
+    "trackLevelInfo": "स्तर: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "नज़दीकी",
+      "tagline": "दिल और छुअन का मेल",
+      "levels": {
+        "1": {
+          "name": "सरगोशी",
+          "hint": "फ़्लर्ट, नज़रें मिलाना, छुपी पर्चियाँ"
+        },
+        "2": {
+          "name": "क़ुर्बत",
+          "hint": "गले लगना, चूमना, बाहों में लेना"
+        },
+        "3": {
+          "name": "राज़",
+          "hint": "ख़्वाहिशें बाँटना, एहसासों की खोज"
+        },
+        "4": {
+          "name": "शोला",
+          "hint": "गर्म पल, धीमे और गहरे"
+        },
+        "5": {
+          "name": "बंधन",
+          "hint": "तन और मन का गहरा मेल"
+        }
+      }
+    },
+    "cesur": {
+      "label": "खोज",
+      "tagline": "हदें आगे बढ़ाओ",
+      "levels": {
+        "1": {
+          "name": "चिंगारी",
+          "hint": "चुभते-छेड़ते चैलेंज"
+        },
+        "2": {
+          "name": "दमक",
+          "hint": "आँखों पर पट्टी, धीमे उतारना, एहसास"
+        },
+        "3": {
+          "name": "हिम्मत",
+          "hint": "राहबर/साथी, हल्की चोट"
+        },
+        "4": {
+          "name": "शिखर",
+          "hint": "तय किरदार, सजे हुए पल"
+        },
+        "5": {
+          "name": "दास्तान",
+          "hint": "गहरा खेल, रिवाज़/नियम, मज़बूत बंधन"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "वयस्कों के लिए सामग्री",
+    "body": "यह ऐप **18 साल और उससे ऊपर के वयस्कों** के लिए है। इसमें यौन, नज़दीकी और किंक से जुड़े सुझाव हैं। आगे बढ़ने के लिए:",
+    "checkbox": "मैं 18+ हूँ और इसे **अपने पार्टनर** के साथ आपसी रज़ामंदी से इस्तेमाल करूँगा/करूँगी।",
+    "accept": "मानो और आगे बढ़ो",
+    "saving": "सेव हो रहा है…",
+    "footer": "यह रज़ामंदी सिर्फ़ तुम्हारे फ़ोन में रहती है। कोई अकाउंट या लोकेशन नहीं भेजी जाती।"
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": "भाषा",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "फिर से शुरू करना ज़रूरी",
+    "rtlReloadBody": "अरबी दाएँ से बाएँ लिखी जाती है। दिशा बदलने के लिए ऐप को फिर से शुरू करना होगा।",
+    "rtlReloadButton": "अभी फिर शुरू करो",
+    "close": "बंद करो"
+  }
+}

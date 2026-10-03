@@ -187,6 +187,15 @@
     "french": "Français",
     "spanish": "Español",
     "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Restart required",
+    "rtlReloadBody": "Arabic uses right-to-left layout. The app needs to restart to apply the direction change.",
+    "rtlReloadButton": "Restart now",
     "close": "Close"
   }
 }

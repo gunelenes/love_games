@@ -217,6 +217,15 @@
     "french": "Français",
     "spanish": "Español",
     "italian": "Italiano",
-    "close": "Fermer"
+    "close": "Fermer",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Redémarrage nécessaire",
+    "rtlReloadBody": "L'arabe s'affiche de droite à gauche. L'app doit redémarrer pour appliquer ce changement.",
+    "rtlReloadButton": "Redémarrer"
   }
 }

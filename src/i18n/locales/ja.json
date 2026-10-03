@@ -1,0 +1,231 @@
+{
+  "app": {
+    "loading": "読み込み中…"
+  },
+  "common": {
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "confirm": "決定",
+    "delete": "削除",
+    "save": "保存",
+    "retry": "再試行",
+    "error": "エラー:"
+  },
+  "home": {
+    "eyebrow": "カップル向け",
+    "title": "Love Games",
+    "subtitle": "ふたりで遊べるミニゲーム",
+    "footer": "新しいゲームも準備中 ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "ルーレット",
+      "tagline": "回して、お題を見つけて"
+    },
+    "dice": {
+      "name": "サイコロ",
+      "tagline": "振って、サプライズを味わって"
+    },
+    "cards": {
+      "name": "カード",
+      "tagline": "カテゴリーを選んで、一枚引いて"
+    },
+    "boxes": {
+      "name": "ボックス",
+      "tagline": "メモをシャッフル、お互いにサプライズ"
+    }
+  },
+  "wheel": {
+    "eyebrow": "ルーレット",
+    "title": "ルーレットを回す",
+    "spinPrompt": "真ん中のボタンをタップして回して",
+    "spinBtn": "スピン",
+    "spinAgain": "もう一度回す",
+    "lastLabel": "直前:",
+    "settings": {
+      "title": "ルーレット設定",
+      "summary": "{{active}} / {{total}} 有効 · 最低 {{min}} 必要",
+      "promptsCount": "{{count}} 件のお題",
+      "lockNote": "残り {{min}} カテゴリーのひとつ — オフにできません"
+    }
+  },
+  "dice": {
+    "eyebrow": "サイコロ",
+    "title": "サイコロを振る",
+    "rollLabel": "ロール",
+    "newRoll": "もう一回",
+    "poster": "OUT OF THE BOX"
+  },
+  "cards": {
+    "eyebrow": "カード",
+    "title": "カードを引く",
+    "drawCard": "カードを引く",
+    "newCard": "次のカード",
+    "hint": "下のデッキをタップ → 一枚引く",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} カテゴリー · {{prompts}} 件のお題",
+    "categoryFallback": "カテゴリー",
+    "footerPrompt": "もう一枚引く",
+    "settings": {
+      "title": "カード設定",
+      "summary": "{{active}} / {{total}} 有効 · 最低 {{min}} 必要",
+      "promptsCount": "{{count}} 件のお題",
+      "lockNote": "残り {{min}} のひとつ — オフにできません"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "ボックス",
+    "lobbyTitle": "ルームを作成 or 参加",
+    "lobbySubtitle": "メモは2台のスマホでリアルタイム同期 — QR不要",
+    "createNew": "新しいルームを作成",
+    "createNewSub": "6桁のコードを取得して、パートナーに共有",
+    "join": "ルームに参加",
+    "joinSub": "パートナーから聞いたコードを入力",
+    "generatingCode": "生成中…",
+    "generateCode": "コードを生成",
+    "back": "戻る",
+    "codeReadyTitle": "コードができたよ 🎉",
+    "codeReadyText": "このコードをパートナーに共有して。相手は「ルームに参加」から入力してね。",
+    "goToBoxes": "ボックスへ",
+    "joinTitle": "ルームに参加",
+    "joinText": "パートナーからの6桁コードを入力して。",
+    "joining": "参加中…",
+    "joinBtn": "参加",
+    "identityWait": "準備ができていません。数秒後にもう一度試して",
+    "roomNotFound": "ルームが見つかりません。コードを確認して。",
+    "roomFull": "ルームは満員です(2人)。別のルームを試して。",
+    "listEyebrow": "共有ボックス",
+    "listRoomLabel": "ルーム",
+    "listBoth": "2/2 人",
+    "listWaiting": "1/2 · パートナーを待機中",
+    "listLiveSync": "メモはリアルタイム同期中",
+    "listGiveCode": "コードをパートナーに渡して繋がろう",
+    "leaveRoom": "ルームを退出",
+    "leaveConfirmTitle": "ルームを退出",
+    "leaveConfirmText": "このスマホのルームリンクが削除されます。ボックスはFirestoreに残るので、コードで再参加できます。",
+    "cancel": "キャンセル",
+    "leave": "退出",
+    "newBox": "新しいボックス",
+    "loading": "読み込み中…",
+    "error": "エラー:",
+    "noBoxes": "まだボックスがありません",
+    "noBoxesHint": "新しいボックスを作って、メモを追加、パートナーとシャッフル",
+    "boxCardMeta": "{{mine}} あなた · {{partner}} パートナー",
+    "ready": "準備OK",
+    "notesCount": "{{count}} 件のメモ",
+    "createBoxTitle": "新しいボックス",
+    "createBoxSub": "ボックスに名前とテーマをつけて",
+    "namePlaceholder": "例: 映画の夜",
+    "create": "作成",
+    "boxNotFound": "ボックスが見つかりません",
+    "yours": "あなたのメモ",
+    "newNotePlaceholder": "新しいメモを書いて…",
+    "add": "追加",
+    "emptyNote": "まだメモがありません。上から書いてみて。",
+    "partner": "パートナー",
+    "partnerNotesCount": "{{count}} 件のメモ",
+    "partnerNotJoined": "まだルームに参加していません",
+    "partnerReady": "パートナーは準備OK ✨",
+    "partnerNotConfirmed": "まだ確定していません",
+    "partnerNoNotes": "まだメモを追加していません",
+    "youConfirmed": "あなた ✓ ({{count}})",
+    "youCount": "あなた {{count}}",
+    "partnerConfirmed": "パートナー ✓ ({{count}})",
+    "partnerCount": "パートナー {{count}}",
+    "partnerWaiting": "パートナー待ち",
+    "notesDone": "メモを確定する",
+    "editNotes": "メモを変更する",
+    "editNotesWaiting": "メモを変更する · パートナー未確定",
+    "shuffle": "シャッフル",
+    "revealEyebrow": "OUT OF THE BOX",
+    "close": "閉じる",
+    "shuffleAgain": "もう一度シャッフル",
+    "deleteBoxTitle": "ボックスを削除",
+    "deleteBoxText": "「{{name}}」とすべてのメモを削除しますか?両方のスマホから消えます。"
+  },
+  "trackBar": {
+    "trackLevelInfo": "レベル: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "親密さ",
+      "tagline": "心と身体の触れ合い",
+      "levels": {
+        "1": {
+          "name": "ささやき",
+          "hint": "フラート、目線、隠しメモ"
+        },
+        "2": {
+          "name": "寄り添い",
+          "hint": "ハグ、キス、抱擁"
+        },
+        "3": {
+          "name": "ひみつ",
+          "hint": "妄想の共有、五感の探求"
+        },
+        "4": {
+          "name": "炎",
+          "hint": "熱い瞬間、ゆっくり深く"
+        },
+        "5": {
+          "name": "絆",
+          "hint": "身体と心の深い融合"
+        }
+      }
+    },
+    "cesur": {
+      "label": "冒険",
+      "tagline": "境界線を越えて",
+      "levels": {
+        "1": {
+          "name": "火花",
+          "hint": "挑発的なチャレンジ"
+        },
+        "2": {
+          "name": "ほの灯り",
+          "hint": "目隠し、スロー脱衣、感覚遊び"
+        },
+        "3": {
+          "name": "勇気",
+          "hint": "導く側/従う側、軽いインパクト"
+        },
+        "4": {
+          "name": "頂へ",
+          "hint": "役割を決めて、構成されたシーン"
+        },
+        "5": {
+          "name": "伝説",
+          "hint": "上級、儀式/プロトコル、深いダイナミクス"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "アダルトコンテンツ",
+    "body": "このアプリは**18歳以上の方**を対象としています。性的なテーマ、親密さ、キンク寄りの提案が含まれます。続けるには:",
+    "checkbox": "私は18歳以上で、**パートナーと**合意のうえで使用します。",
+    "accept": "同意して続ける",
+    "saving": "保存中…",
+    "footer": "この同意は端末内にのみ保存されます。アカウントや位置情報は送信されません。"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "再起動が必要です",
+    "rtlReloadBody": "アラビア語は右から左のレイアウトを使います。方向の変更を反映するため、アプリの再起動が必要です。",
+    "rtlReloadButton": "今すぐ再起動",
+    "close": "閉じる"
+  }
+}

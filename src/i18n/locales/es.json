@@ -217,6 +217,15 @@
     "french": "Français",
     "spanish": "Español",
     "italian": "Italiano",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Reinicio necesario",
+    "rtlReloadBody": "El árabe usa una disposición de derecha a izquierda. La app debe reiniciarse para aplicar el cambio de dirección.",
+    "rtlReloadButton": "Reiniciar ahora"
   }
 }

@@ -51,6 +51,36 @@ const TARGET_LANGS = {
     note:
       "Use informal 'tu' form (couples app). Keep tone warm and playful.",
   },
+  ja: {
+    name: 'Japanese (日本語)',
+    note:
+      'Use informal / familiar register appropriate for couples (plain-form だ/いる, です/ます softened only where natural). Japanese is ~20-30% denser than English — translations can be shorter. Preserve the warm, playful tone. For UPPERCASE English button labels (SPIN, ROLL), use katakana or kanji+hiragana of similar visual weight; do not force an all-caps rendering.',
+  },
+  ko: {
+    name: 'Korean (한국어)',
+    note:
+      'Use informal / intimate speech level (반말 or soft 해요체 where tenderness fits). This is a couples app — avoid stiff formal 하십시오체. UPPERCASE English button labels become natural Korean verbs without caps.',
+  },
+  'zh-TW': {
+    name: 'Traditional Chinese (繁體中文)',
+    note:
+      'Use Taiwan Traditional Chinese conventions and vocabulary (not Simplified / mainland terms). Second-person 你 is fine for couples. UPPERCASE button labels become natural Chinese verbs — do not force caps. Traditional characters only (繁體, not 简体).',
+  },
+  id: {
+    name: 'Indonesian (Bahasa Indonesia)',
+    note:
+      "Use informal 'kamu' (couples app). Standard Indonesian — not Jakarta slang. UPPERCASE English button labels can stay uppercase in Indonesian (SPIN → PUTAR, ROLL → LEMPAR) since Latin alphabet.",
+  },
+  hi: {
+    name: 'Hindi (हिन्दी)',
+    note:
+      'Use informal तुम form (couples app, intimate). Devanagari script. Hindi runs similar length to English. Preserve warm, flirty tone — use Hindi softness naturally. Avoid Sanskrit-heavy or English-loaded ("Hinglish") phrasing.',
+  },
+  ar: {
+    name: 'Arabic (العربية)',
+    note:
+      'Use Modern Standard Arabic (فصحى) with a slight colloquial warmth — accessible to any Arabic reader. Treat the UI as addressing one partner; use masculine singular as the default (أنت / فعلت) since Arabic requires grammatical gender. The content is adult / sensual — translate naturally without euphemizing beyond the English source. Script is RTL; your JSON string values will still be written in logical order (first character of the sentence first), the client handles layout.',
+  },
 };
 
 const SYSTEM_PROMPT = `You translate UI strings for "Love Games" — a mobile app for couples with intimate, playful, sensual mini-games. The voice is warm, confident, and tender; never clinical, corporate, or robotic. Treat the user and their partner as adults who want closeness.

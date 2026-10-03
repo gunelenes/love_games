@@ -7,7 +7,13 @@
       "de": "Unsichtbare Fäden",
       "fr": "Fils Invisibles",
       "es": "Hilos Invisibles",
-      "it": "Fili Invisibili"
+      "it": "Fili Invisibili",
+      "ja": "見えない糸",
+      "ko": "보이지 않는 끈",
+      "zh-TW": "無形之線",
+      "id": "Tali-Tali Tak Terlihat",
+      "hi": "अदृश्य धागे",
+      "ar": "خيوط خفيّة"
     },
     "color": "#DB2777",
     "icon": "🕊️",
@@ -62,6 +68,54 @@
         "Scegliete con il tuo partner un \"segnale\" (un gesto della mano, uno sguardo). Durante il giorno, un messaggio \"ti sto pensando\" che conoscete solo voi due.",
         "Per una settimana, mentre condividete il caffè del mattino, poniti una sola domanda: \"quale momento di oggi vorresti passare con me?\"",
         "Ogni sera prima di dormire, un bacio sulla fronte + una parola sola (il riassunto della giornata). Un rituale di una settimana."
+      ],
+      "ja": [
+        "1週間の儀式を提案して：毎晩寝る前に3分間、額を合わせて目と目で沈黙。",
+        "\"共有ノート\"を始めて — 毎晩どちらか一人が一言だけ書く。1週間後に一緒に読もう。",
+        "\"今日あなたに気づいた瞬間\"の儀式 — 毎晩シェアしよう。1週間お試し。",
+        "パートナーと\"合図\"を決めて（手の仕草、ひとつの眼差し）。日中、二人だけが知る\"君を想ってる\"のメッセージ。",
+        "1週間、朝のコーヒーを分け合いながら一つだけ質問して：\"今日のどの瞬間を私と過ごしたい？\"",
+        "寝る前、毎晩お互いの額にキス＋一言（今日のまとめ）。1週間の儀式。"
+      ],
+      "ko": [
+        "일주일 동안의 의식을 제안해봐: 매일 밤 자기 전 3분, 이마를 맞대고 눈을 바라보는 침묵.",
+        "\"함께 쓰는 일기\"를 시작해 — 매일 밤 한 사람이 한 단어씩 적어. 일주일 후에 함께 읽어봐.",
+        "\"오늘 너를 느낀 순간\" 의식 — 매일 밤 서로 나눠봐. 일주일 동안 해보기.",
+        "파트너와 \"신호\"를 정해봐 (손짓 하나, 눈빛 하나). 하루 중 둘만 아는 \"너를 생각하고 있어\" 메시지.",
+        "일주일 동안 아침 커피를 나누면서 딱 한 가지 질문을 해봐: \"오늘 어떤 순간을 나랑 보내고 싶어?\"",
+        "자기 전 매일 밤 서로의 이마에 입맞춤 + 한 단어 (오늘의 요약). 일주일 동안의 의식."
+      ],
+      "zh-TW": [
+        "提議一週的儀式：每晚睡前花 3 分鐘，額頭貼額頭、四目相對，靜靜無語。",
+        "開啟一本\"共同日記\"——每晚其中一人寫下一個字。一週後一起翻閱。",
+        "\"今天我注意到你的那一刻\"儀式——每晚睡前分享。試行一週。",
+        "和你的伴侶約定一個\"暗號\"（一個手勢、一個眼神）。白天裡，只有你們兩人懂的\"我在想你\"的訊息。",
+        "一整週，在共享早晨咖啡時只問一個問題：\"今天你最想和我一起度過哪個時刻？\"",
+        "每晚睡前，在彼此的額頭上落下一吻，再說出一個詞（今日的縮影）。為期一週的儀式。"
+      ],
+      "id": [
+        "Usulkan ritual seminggu: setiap malam sebelum tidur, luangkan 3 menit — dahi menempel dahi, mata bertemu mata, dalam diam.",
+        "Mulailah sebuah \"jurnal bersama\" — setiap malam satu orang menulis satu kata. Bacalah seminggu kemudian.",
+        "Ritual \"momen aku memperhatikanmu hari ini\" — bagikan setiap malam. Uji selama seminggu.",
+        "Tentukan sebuah \"isyarat\" dengan pasanganmu (gerakan tangan, tatapan). Di tengah hari, itu jadi pesan \"aku memikirkanmu\" yang hanya kalian berdua tahu.",
+        "Selama seminggu, saat berbagi kopi pagi, ajukan satu pertanyaan: \"momen apa hari ini yang ingin kamu lewati bersamaku?\"",
+        "Setiap malam sebelum tidur, berikan satu kecupan di dahi + ucapkan satu kata (rangkuman hari ini). Ritual seminggu."
+      ],
+      "hi": [
+        "एक हफ़्ते का रिवाज़ सुझाओ: हर रात सोने से पहले 3 मिनट माथा से माथा + आँखों में आँखें डालकर मौन।",
+        "एक \"साझा डायरी\" शुरू करो — हर रात एक इंसान एक शब्द लिखे। एक हफ़्ते बाद साथ पढ़ो।",
+        "\"आज तुम्हें जिस पल में महसूस किया\" का रिवाज़ — हर रात साझा करो। एक हफ़्ते का प्रयोग।",
+        "अपने पार्टनर के साथ एक \"इशारा\" तय करो (एक हाथ की हरकत, एक नज़र)। दिन में सिर्फ़ तुम दोनों का जाना हुआ \"मैं तुम्हारे बारे में सोच रहा/रही हूँ\" का संदेश।",
+        "एक हफ़्ते तक सुबह की कॉफ़ी साझा करते हुए सिर्फ़ एक सवाल पूछो: \"आज का कौन सा पल मेरे साथ बिताना चाहोगे?\"",
+        "सोने से पहले हर रात एक-दूसरे के माथे पर एक चुंबन + एक शब्द कहो (आज का सार)। एक हफ़्ते का रिवाज़।"
+      ],
+      "ar": [
+        "اقترحا طقساً لمدة أسبوع: كل مساء قبل النوم، خذا 3 دقائق جبهة إلى جبهة + صمت وأعين متلاقية.",
+        "ابدآ \"يوميّات مشتركة\" — كل ليلة يكتب أحدكما كلمة واحدة. اقرآها معاً بعد أسبوع.",
+        "طقس \"اللحظة التي لاحظتك فيها اليوم\" — تشاركاها كل ليلة. جرّباه لأسبوع.",
+        "اتفقا مع شريكك على \"إشارة\" (حركة يد، نظرة). خلال النهار تكون رسالة \"أفكّر فيك\" لا يعرفها سواكما.",
+        "طوال أسبوع، أثناء تشارك قهوة الصباح، اطرح سؤالاً واحداً: \"أيّ لحظة من يومك تودّ أن تقضيها معي؟\"",
+        "كل ليلة قبل النوم، قبّل جبين شريكك + قل كلمة واحدة (خلاصة اليوم). طقس لأسبوع كامل."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Seelenverwandt",
       "fr": "Âme Sœur",
       "es": "Alma Gemela",
-      "it": "Anima Gemella"
+      "it": "Anima Gemella",
+      "ja": "ソウルメイト",
+      "ko": "영혼의 짝",
+      "zh-TW": "靈魂伴侶",
+      "id": "Belahan Jiwa",
+      "hi": "रूह का साथी",
+      "ar": "توأم الروح"
     },
     "color": "#C026D3",
     "icon": "✨",
@@ -128,6 +188,54 @@
         "Prendi le mani del tuo partner nelle tue. 5 minuti con gli occhi chiusi — condividete la sensazione del \"qui, con te\".",
         "Chiedi: \"cosa hai pensato la prima volta che mi hai visto?\" Ascolta. Poi rispondi con \"quando ti ho visto per la prima volta…\"",
         "Immaginate insieme un \"momento futuro\" — descrivete per 3 minuti come sarà tra 5 anni, alternando le frasi."
+      ],
+      "ja": [
+        "向かい合って20分。最初の10分：君が話し、相手が聴く（何でもいい）。残り10分：役割を交代。",
+        "目を閉じて。パートナーの声を聴きながら、その声が呼び起こす最初の記憶を語って。",
+        "\"静かな夜\" — 2時間、言葉は禁止。眼差し、触れ合い、仕草だけで伝え合う。",
+        "パートナーの両手を手のひらで包んで。5分間、目を閉じて — \"ここに、君と一緒にいる\"という感覚を分かち合って。",
+        "\"私を初めて見た時、何を思った？\"と訊いて。聴いて。それから\"君を初めて見た時はね…\"と返して。",
+        "共通の\"未来の瞬間\"を想像して — 5年後の光景を3分間、交互に文を重ねながら一緒に描いて。"
+      ],
+      "ko": [
+        "서로 20분. 처음 10분: 네가 말하고, 상대는 들어 (뭐든지). 나머지 10분: 역할을 바꿔.",
+        "눈을 감아. 파트너의 목소리를 들으며 그 사람이 네 안에 떠올리게 하는 첫 번째 기억을 이야기해봐.",
+        "\"조용한 저녁\" — 2시간 동안 말 금지. 오직 눈빛, 손길, 몸짓으로만 소통해.",
+        "파트너의 두 손을 네 손바닥 안에 담아. 5분 동안 눈을 감고 — \"지금 여기, 너와 함께\"라는 느낌을 나눠.",
+        "\"나를 처음 봤을 때 무슨 생각했어?\"라고 물어봐. 들어. 그리고 \"내가 너를 처음 봤을 땐…\"으로 답해.",
+        "함께 \"미래의 한 순간\"을 상상해봐 — 5년 후를 3분 동안 함께 묘사해, 한 문장씩 번갈아가며."
+      ],
+      "zh-TW": [
+        "彼此 20 分鐘。前 10 分鐘：你說，他聽（想說什麼都可以）。後 10 分鐘：角色互換。",
+        "閉上眼睛。聽著伴侶的聲音，說出他在你心中喚起的第一段回憶。",
+        "一個\"沉默之夜\"——2 小時內禁止說話。只用眼神、觸碰、手勢交流。",
+        "把伴侶的雙手捧在你的掌心。閉眼 5 分鐘——分享\"我在這裡，和你在一起\"的感受。",
+        "問他：\"你第一次見到我時，心裡想的是什麼？\"仔細聽。然後用\"我第一次見到你時……\"回應。",
+        "一起想像一個\"未來的時刻\"——用 3 分鐘，交替著一句一句，共同描繪 5 年後的畫面。"
+      ],
+      "id": [
+        "Bergantian 20 menit. 10 menit pertama: kamu bercerita, dia mendengarkan (apa pun yang kamu katakan). 10 menit terakhir: tukar peran.",
+        "Pejamkan mata. Sambil mendengarkan suara pasanganmu, ceritakan kenangan pertama yang dia bangkitkan dalam dirimu.",
+        "Sebuah \"malam sunyi\" — selama 2 jam, kata-kata dilarang. Hanya tatapan, sentuhan, dan isyarat.",
+        "Rengkuh tangan pasanganmu di telapakmu. 5 menit dengan mata terpejam — bagikan rasa \"di sini, bersamaku\".",
+        "Tanyakan, \"apa yang kamu pikirkan saat pertama melihatku?\" Dengarkan. Lalu balas dengan, \"saat aku pertama melihatmu…\"",
+        "Bayangkan bersama sebuah \"momen masa depan\" — gambarkan 5 tahun ke depan selama 3 menit berdua, dengan kalimat bergantian."
+      ],
+      "hi": [
+        "आमने-सामने 20 मिनट। पहले 10: तुम बोलो, वो सुने (जो चाहो)। आख़िरी 10: भूमिकाएँ बदलो।",
+        "अपनी आँखें बंद करो। पार्टनर की आवाज़ सुनते हुए, उसने तुम में जो पहली याद जगाई उसे बयाँ करो।",
+        "एक \"ख़ामोश शाम\" — 2 घंटे तक शब्द मना। सिर्फ़ नज़र, स्पर्श, इशारों से बात।",
+        "अपने पार्टनर के हाथ अपनी हथेली में लो। 5 मिनट आँखें बंद — \"यहाँ, मेरे साथ\" का एहसास साझा करो।",
+        "पूछो, \"मुझे पहली बार देखा तो क्या सोचा था?\" सुनो। फिर \"तुम्हें पहली बार देखा तो…\" से जवाब दो।",
+        "एक साझा \"भविष्य का पल\" कल्पना करो — 5 साल बाद को 3 मिनट तक साथ मिलकर, बारी-बारी वाक्यों में बयाँ करो।"
+      ],
+      "ar": [
+        "عشرون دقيقة بالتبادل. العشر الأولى: تحكي أنت، وهو يصغي (قل ما تشاء). العشر الأخيرة: تبادلا الدور.",
+        "أغمضا أعينكما. وأنت تصغي لصوت شريكك، احكِ له أول ذكرى يُوقظها فيك.",
+        "\"مساء صامت\" — ساعتان، الكلام ممنوع. فقط النظرات واللمسات والإيماءات.",
+        "خذ يدَي شريكك بين كفّيك. خمس دقائق بعيون مغمضة — تشاركا إحساس \"هنا، معك\".",
+        "اسأله: \"ماذا دار في بالك حين رأيتني لأول مرة؟\" أصغِ. ثم ردّ عليه بـ \"حين رأيتك لأول مرة…\".",
+        "تخيّلا \"لحظة قادمة\" مشتركة — صِفا معاً ما ستكونان عليه بعد 5 سنوات لمدة 3 دقائق، بجمل متناوبة."
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Morgenlicht",
       "fr": "Lumière du Matin",
       "es": "Luz de la Mañana",
-      "it": "Luce del Mattino"
+      "it": "Luce del Mattino",
+      "ja": "朝の光",
+      "ko": "아침 햇살",
+      "zh-TW": "晨光",
+      "id": "Cahaya Pagi",
+      "hi": "सुबह की रौशनी",
+      "ar": "ضوء الصباح"
     },
     "color": "#F472B6",
     "icon": "☀️",
@@ -194,6 +308,54 @@
         "Appena sveglio, racconta al tuo partner in una frase l'ultimo sogno che hai fatto. Che lo faccia anche lui/lei.",
         "Rituale del risveglio: a letto, abbracciatevi per 5 minuti e aspettate di svegliarvi davvero dal sonno.",
         "All'inizio della giornata condividete una \"intenzione\": \"stiamo insieme per il momento più importante di oggi\" — pianificate come realizzarlo."
+      ],
+      "ja": [
+        "目覚めてパートナーを初めて見た瞬間に一言：\"おはよう\"じゃなく、\"君に会えて嬉しい\"。",
+        "ベッドから出る前に、パートナーの髪を30秒撫でて＋額にキス。",
+        "朝のコーヒーを一緒に淹れて — 言葉なしで。ダンスのように。眼差しだけで息を合わせて。",
+        "目覚めてすぐ、最後に見た夢を一文でパートナーに語って。相手もシェアしてくれるように。",
+        "目覚めの儀式：ベッドの中でまず5分間、抱き合ったまま眠りから完全に浮かび上がるのを待って。",
+        "一日の始まりに\"願い\"を分かち合って：\"今日の一番大切な瞬間を一緒にいよう\" — どう叶えるか、二人で計画して。"
+      ],
+      "ko": [
+        "눈뜨자마자 파트너를 처음 본 순간 한마디: \"잘 잤어\"가 아니라, \"너를 보니 좋다\".",
+        "침대에서 나오기 전에 파트너의 머리를 30초 동안 쓰다듬고 + 이마에 입맞춤.",
+        "아침 커피를 함께 준비해봐 — 말없이. 춤처럼. 눈빛으로 호흡 맞추기.",
+        "눈뜨자마자 마지막으로 꾼 꿈을 파트너에게 한 문장으로 들려줘. 상대도 나누게 해.",
+        "기상 의식: 침대에서 먼저 5분 동안 서로를 끌어안고 잠에서 완전히 깨어나는 걸 기다려봐.",
+        "하루를 시작하며 \"의도\"를 나눠: \"오늘의 가장 중요한 순간을 함께하자\" — 어떻게 이룰지 함께 계획해봐."
+      ],
+      "zh-TW": [
+        "一醒來第一眼看向伴侶時，說一句話：不是\"早安\"，而是\"真高興看見你\"。",
+        "下床前，先輕撫伴侶的頭 30 秒，再在額頭落下一吻。",
+        "一起準備早晨的咖啡——不說話。像一支舞。用眼神默契配合。",
+        "一醒來就用一句話告訴伴侶你最後的那個夢。讓他也分享他的。",
+        "甦醒儀式：還在床上時，先彼此相擁 5 分鐘，等著從睡意中完全清醒。",
+        "在一天開始時，分享一個\"心願\"：\"讓我們一起度過今天最重要的時刻\"——然後規劃它會如何發生。"
+      ],
+      "id": [
+        "Begitu bangun, saat pertama kali menatap pasanganmu, ucapkan satu kalimat: bukan \"selamat pagi\", tapi \"aku senang melihatmu\".",
+        "Sebelum turun dari ranjang, usap kepala pasanganmu selama 30 detik + satu kecupan di dahi.",
+        "Siapkan kopi pagi bersama — tanpa kata. Seperti tarian. Koordinasi lewat tatapan.",
+        "Begitu bangun, ceritakan mimpi terakhirmu pada pasanganmu dalam 1 kalimat. Biar dia juga berbagi.",
+        "Ritual bangun: masih di ranjang, saling berpelukan dulu selama 5 menit sambil menunggu benar-benar terjaga dari tidur.",
+        "Di awal hari, bagikan sebuah \"niat\": \"mari bersama untuk momen terpenting hari ini\" — rencanakan bagaimana itu akan terjadi."
+      ],
+      "hi": [
+        "जागते ही पार्टनर पर पहली नज़र पड़ते ही एक वाक्य: \"गुड मॉर्निंग\" नहीं, \"तुम्हें देखकर अच्छा लगा\"।",
+        "बिस्तर से उठने से पहले 30 सेकंड अपने पार्टनर का सिर सहलाओ + माथे पर एक चुंबन।",
+        "सुबह की कॉफ़ी साथ मिलकर बनाओ — बिना शब्दों के। एक नाच की तरह। नज़रों से तालमेल।",
+        "जागते ही पार्टनर को आख़िरी देखा हुआ सपना 1 वाक्य में सुनाओ। वो भी साझा करे।",
+        "जागने का रिवाज़: बिस्तर में पहले 5 मिनट एक-दूसरे को गले लगाकर नींद से पूरी तरह उठने का इंतज़ार करो।",
+        "दिन की शुरुआत में एक \"इरादा\" साझा करो: \"आज के सबसे ज़रूरी पल के लिए साथ रहें\" — कैसे होगा, मिलकर प्लान करो।"
+      ],
+      "ar": [
+        "فور استيقاظك، حين تقع عيناك على شريكك، قل جملة واحدة: ليس \"صباح الخير\"، بل \"سعيد لأني أراك\".",
+        "قبل مغادرة الفراش، داعب رأس شريكك لثلاثين ثانية + قبّل جبينه.",
+        "حضّرا قهوة الصباح معاً — بلا كلمات. كأنّها رقصة. تناغمٌ بالنظرات.",
+        "فور استيقاظك، احكِ لشريكك آخر حلم رأيته في جملة واحدة. وليفعل هو المثل.",
+        "طقس الاستيقاظ: ابقيا في الفراش متعانقَين لخمس دقائق، وانتظرا أن تفيقا من النوم تماماً.",
+        "في بداية اليوم، تشاركا \"نيّة\": \"لنكن معاً في أهمّ لحظات هذا اليوم\" — خطّطا كيف ستتحقّق."
       ]
     }
   }

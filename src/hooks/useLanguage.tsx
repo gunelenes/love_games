@@ -6,9 +6,11 @@ import React, {
   useState,
   type ReactNode,
 } from 'react';
+import { Alert, I18nManager, Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import i18n, {
   DEFAULT_LANGUAGE,
+  RTL_LANGUAGES,
   SUPPORTED_LANGUAGES,
   type SupportedLanguage,
 } from '@/i18n';
@@ -22,6 +24,36 @@ type LanguageContextValue = {
 };
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
+
+function isRtlLang(lang: SupportedLanguage): boolean {
+  return (RTL_LANGUAGES as readonly string[]).includes(lang);
+}
+
+/**
+ * React Native caches text direction at mount time. Flipping `forceRTL`
+ * only takes full visual effect after a full JS reload — in Expo Go the
+ * user shakes to reload; in a production build they relaunch the app.
+ * We flip the flag eagerly so the next launch is correct, and prompt
+ * the user to restart.
+ */
+function syncRtl(lang: SupportedLanguage, t: (k: string) => string) {
+  const want = isRtlLang(lang);
+  if (I18nManager.isRTL === want) return; // already correct
+  try {
+    I18nManager.allowRTL(want);
+    I18nManager.forceRTL(want);
+  } catch {
+    // Older RN / web shim — ignore.
+  }
+  // One-shot alert; user restarts manually. Reload automation would need
+  // expo-updates (not currently a dep). Fine to add later.
+  Alert.alert(
+    t('settings.rtlReloadTitle'),
+    t('settings.rtlReloadBody'),
+    [{ text: t('settings.rtlReloadButton'), style: 'default' }],
+    { cancelable: false }
+  );
+}
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLangState] = useState<SupportedLanguage>(DEFAULT_LANGUAGE);
@@ -54,6 +86,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       await AsyncStorage.setItem(STORAGE_KEY, lang);
     } catch {
       // ignore
+    }
+    // Platform.OS === 'web' doesn't have I18nManager — skip the flip there.
+    if (Platform.OS !== 'web') {
+      syncRtl(lang, (k) => i18n.t(k) as string);
     }
   }, []);
 

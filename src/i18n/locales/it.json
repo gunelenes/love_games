@@ -217,6 +217,15 @@
     "french": "Français",
     "spanish": "Español",
     "italian": "Italiano",
-    "close": "Chiudi"
+    "close": "Chiudi",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Riavvio necessario",
+    "rtlReloadBody": "L'arabo usa il layout da destra a sinistra. L'app deve riavviarsi per applicare il cambio di direzione.",
+    "rtlReloadButton": "Riavvia ora"
   }
 }

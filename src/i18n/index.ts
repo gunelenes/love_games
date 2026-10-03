@@ -22,17 +22,39 @@
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import ar from './locales/ar.json';
 import de from './locales/de.json';
 import en from './locales/en.json';
 import es from './locales/es.json';
 import fr from './locales/fr.json';
+import hi from './locales/hi.json';
+import id from './locales/id.json';
 import it from './locales/it.json';
+import ja from './locales/ja.json';
+import ko from './locales/ko.json';
 import tr from './locales/tr.json';
+import zhTW from './locales/zh-TW.json';
 
-export const SUPPORTED_LANGUAGES = ['en', 'tr', 'de', 'fr', 'es', 'it'] as const;
+export const SUPPORTED_LANGUAGES = [
+  'en',
+  'tr',
+  'de',
+  'fr',
+  'es',
+  'it',
+  'ja',
+  'ko',
+  'zh-TW',
+  'id',
+  'hi',
+  'ar',
+] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 export const DEFAULT_LANGUAGE: SupportedLanguage = 'en';
+
+/** Locales that need right-to-left layout. UI shells + layout flip accordingly. */
+export const RTL_LANGUAGES: readonly SupportedLanguage[] = ['ar'];
 
 void i18n.use(initReactI18next).init({
   resources: {
@@ -42,6 +64,12 @@ void i18n.use(initReactI18next).init({
     fr: { translation: fr },
     es: { translation: es },
     it: { translation: it },
+    ja: { translation: ja },
+    ko: { translation: ko },
+    'zh-TW': { translation: zhTW },
+    id: { translation: id },
+    hi: { translation: hi },
+    ar: { translation: ar },
   },
   lng: DEFAULT_LANGUAGE,
   // English is the authoring language for the UI shell; missing keys in any

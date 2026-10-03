@@ -7,7 +7,13 @@
       "de": "Die Handarbeit des Seilers",
       "fr": "L'ouvrage du Lieur",
       "es": "Trabajo Manual del Cuerdista",
-      "it": "Il Lavoro del Legatore"
+      "it": "Il Lavoro del Legatore",
+      "ja": "縄師の手仕事",
+      "ko": "로프 묶는 사람의 손길",
+      "zh-TW": "繩師之手",
+      "id": "Kerja Tangan Si Pengikat Tali",
+      "hi": "रस्सी बांधने वाले का हस्तकला",
+      "ar": "يدا الرابط"
     },
     "color": "#7C2D12",
     "icon": "🪢",
@@ -62,6 +68,54 @@
         "Il Legatore sei tu. Il tuo partner stabilisca una parola di sicurezza. Qualunque cosa tu stia facendo, se viene detta quella parola fermati all'istante. Poi riprendi l'esplorazione.",
         "Avvolgi nella seta un solo polso del tuo partner. L'altra mano resta libera. Con quella mano può toccarti dove vuole — senza che tu sciolga il nodo.",
         "Con una cravatta lega le cosce del tuo partner vicine tra loro. Per 2 minuti resta con lui/lei con contatto visivo + tocco. Poi sciogli il legame."
+      ],
+      "ja": [
+        "シーン開始:セーフワードをはっきり決めよう(例:\"赤\" = 即停止)。シルクのスカーフでパートナーの手首をそっと合わせて — きつくなく、感触を伝える程度に。1分間、触れずに視線だけで見つめて。",
+        "ネクタイでパートナーの手首を頭の上で合わせて。2分間その体勢をキープしながら、触れて探って。呼吸をコントロールして。",
+        "長いスカーフでパートナーの目を覆い + 手首も合わせて。3分間、声と触れ合いと近さでじらして。",
+        "君が縄師。パートナーにセーフワードを決めてもらって。何をしていても、その言葉が出たら即停止。それから探索を続けよう。",
+        "パートナーの片方の手首だけシルクで巻いて。もう片方は自由。その自由な手で、好きな場所から君に触れていい — 君がほどくまで。",
+        "ネクタイでパートナーの太ももを近く寄せて縛って。2分間、見つめ合い + 触れながら待って。それから結びをほどいて。"
+      ],
+      "ko": [
+        "장면 시작: 세이프워드를 분명히 정해 (예: \"빨강\" = 즉시 멈춤). 실크 스카프나 실크 손수건으로 파트너의 손목을 부드럽게 모아 — 꽉 조이지 말고, 감촉으로만 느껴지게. 1분 동안 만지지 말고 오직 눈빛으로만.",
+        "넥타이로 파트너의 손목을 머리 위에서 모아. 2분 동안 그 자세를 유지하게 하면서 손길로 탐험해. 호흡을 살펴봐.",
+        "긴 스카프로 파트너의 눈을 가리고 + 손목을 모아. 3분 동안 목소리, 손길, 가까움으로 애태워.",
+        "네가 로프 묶는 사람이야. 파트너에게 안전어를 정하게 해. 무엇을 하든, 그 단어가 나오면 즉시 멈춰. 그 다음 다시 탐험을 이어가.",
+        "파트너의 한쪽 손목만 실크로 감아. 다른 손은 자유야. 그 자유로운 손으로 원하는 곳 어디든 너를 만질 수 있어 — 네가 풀어주기 전까지.",
+        "넥타이로 파트너의 허벅지를 서로 가깝게 묶어. 2분 동안 눈을 맞추며 손길로 기다려. 그런 다음 끈을 풀어줘."
+      ],
+      "zh-TW": [
+        "場景開始：先確認安全詞（例如 \"紅色\" = 立刻停止）。用絲巾或絲質圍巾輕柔地將你伴侶的雙手腕合攏——不要太緊，只要能被觸覺感知就好。接下來 1 分鐘不要碰他／她，只用眼神。",
+        "用一條領帶把你伴侶的雙腕合攏並舉過頭頂。讓他／她維持這個姿勢 2 分鐘，期間用觸摸探索。注意控制他／她的呼吸。",
+        "用一條長圍巾蒙住你伴侶的眼睛＋束起他／她的雙腕。接下來 3 分鐘，用聲音、觸摸與親密感逗弄他／她。",
+        "你是繩師。讓你的伴侶訂一個安全詞。無論你正在做什麼，只要那個詞被說出，立刻停下。然後再繼續探索。",
+        "只把你伴侶的一隻手腕纏上絲巾。另一隻手自由。他／她可以用那隻自由的手，在你還沒解開之前，從任何想要的地方碰你。",
+        "用一條領帶把你伴侶的兩條大腿緊緊綁在一起。保持 2 分鐘的眼神接觸＋觸摸。然後解開。"
+      ],
+      "id": [
+        "Awal adegan: perjelas safeword (misalnya \"merah\" = berhenti seketika). Dengan selendang sutra atau syal sutra, satukan pergelangan tangan pasanganmu dengan lembut — jangan ketat, cukup terasa dari sentuhannya. Selama 1 menit jangan sentuh dia, hanya pandang saja.",
+        "Satukan pergelangan tangan pasanganmu di atas kepalanya dengan sebuah dasi. Tahan dia dalam posisi itu selama 2 menit sambil kamu jelajahi dengan sentuhan. Kendalikan napasmu.",
+        "Dengan syal panjang, tutup mata pasanganmu + satukan pergelangan tangannya. Selama 3 menit, pancing dia dengan suara, sentuhan, dan kedekatan.",
+        "Kamulah si Pengikat Tali. Biarkan pasanganmu menentukan satu kata aman. Apa pun yang kamu lakukan, begitu kata itu diucapkan, berhenti seketika. Lalu lanjutkan jelajahmu.",
+        "Lilitkan hanya satu pergelangan tangan pasanganmu dengan sutra. Tangan satunya bebas. Dengan tangan itu dia boleh menyentuhmu di mana pun yang dia mau — selama kamu belum melepaskannya.",
+        "Dengan sebuah dasi, ikat paha pasanganmu agar saling berdekatan. Selama 2 menit, tatap matanya + sentuh dia sambil menunggu. Lalu lepaskan talinya."
+      ],
+      "hi": [
+        "दृश्य की शुरुआत: सेफवर्ड साफ कर लो (जैसे \"लाल\" = तुरंत रुको)। रेशमी स्कार्फ या रेशमी दुपट्टे से अपने पार्टनर की कलाइयों को नरमी से जोड़ो — कसकर नहीं, बस स्पर्श महसूस हो। 1 मिनट तक उसे मत छूना, सिर्फ निगाहों से।",
+        "अपने पार्टनर की कलाइयों को एक टाई से उसके सिर के ऊपर बांधो। 2 मिनट तक उसे इसी मुद्रा में रखकर स्पर्श से उसकी खोज करो। उसकी सांस पर ध्यान दो।",
+        "एक लंबे दुपट्टे से अपने पार्टनर की आंखें बांधो + कलाइयां भी जोड़ो। 3 मिनट तक आवाज़, स्पर्श और नज़दीकी से उसे व्यस्त रखो।",
+        "रस्सी बांधने वाला तुम हो। अपने पार्टनर से एक सुरक्षा शब्द तय करवाओ। तुम कुछ भी करो, वो शब्द बोला जाए तो तुरंत रुक जाना। फिर खोज जारी रखो।",
+        "अपने पार्टनर की सिर्फ एक कलाई को रेशम में लपेटो। दूसरा हाथ आज़ाद। उस हाथ से वो तुम्हें जहां चाहे वहां छू सकता/सकती है — तुम खोले बिना।",
+        "एक टाई से अपने पार्टनर की जांघों को एक-दूसरे के पास बांधो। 2 मिनट तक आंखों में आंखें डालकर + स्पर्श के साथ रुको। फिर बंधन खोल दो।"
+      ],
+      "ar": [
+        "بداية المشهد: اتفقا على كلمة أمان (مثلاً \"أحمر\" = توقّف فوري). بوشاح حرير أو ربطة حريرية، اجمع معصمَي شريكك برفق — ليس بإحكام، بل بلمسة محسوسة. لمدة دقيقة واحدة لا تلمسه، فقط بالنظرة.",
+        "اجمع معصمَي شريكك بربطة عنق فوق رأسه. لمدة دقيقتين أبقه في هذا الوضع واستكشفه باللمس. تحكّم في أنفاسه.",
+        "بوشاح طويل اعصب عينَي شريكك + اجمع معصميه. لمدة 3 دقائق أشغله بالصوت واللمس والقرب.",
+        "أنت الرابط. ليحدّد شريكك كلمة أمان. مهما كنت تفعل، إن قالها فتوقّف فوراً. ثم تابع الاستكشاف.",
+        "لفّ معصماً واحداً فقط من معصمَي شريكك بالحرير. اليد الأخرى حرّة. بتلك اليد يستطيع أن يلمسك حيث يشاء — دون أن تفكّ الرباط.",
+        "بربطة عنق اربط فخذَي شريكك قريبين من بعضهما. انتظر دقيقتين بتواصل بصري + لمس. ثم فكّ الرباط."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Freche Katze",
       "fr": "Chaton Malicieux",
       "es": "Gatita Traviesa",
-      "it": "Gatta Birichina"
+      "it": "Gatta Birichina",
+      "ja": "いたずら猫",
+      "ko": "장난꾸러기 고양이",
+      "zh-TW": "淘氣小貓",
+      "id": "Kucing Nakal",
+      "hi": "शरारती बिल्ली",
+      "ar": "القطة الشقية"
     },
     "color": "#831843",
     "icon": "🐈",
@@ -128,6 +188,54 @@
         "La Gatta si inginocchia davanti al Custode. Il Custode si avvicina lentamente, le accarezza i capelli, dice \"brava gatta\". Per 1 minuto questo rituale.",
         "Se la Gatta sei tu: non puoi usare parole, solo respiro e fusa. Il Custode ti dà un compito (bacia, tocca, siediti). Esegui il compito alla perfezione.",
         "I ruoli si scambiano. Questo turno la Gatta sei tu. Il tuo partner è nel ruolo del Custode. Questo duetto di 3 minuti — poi parlate dei ruoli, cosa hai sentito?"
+      ],
+      "ja": [
+        "このターンは一人が\"世話人\"、もう一人が\"猫\"。猫は無言 — でも反応で語る。世話人は3種類の撫で方を試して(ゆっくり、速く、やわらかく)。猫はどれが欲しいか体で伝える。",
+        "猫役は喋れない。世話人は5分間、触れ合いと言葉だけで猫とコミュニケーション。猫は反応で応える。",
+        "世話人は猫の耳の後ろを30秒撫でる。猫は反応で肯定する(のどを鳴らす、寄りかかる)。世話人はこれを別の3箇所でも繰り返す。",
+        "猫は世話人の前に膝をつく。世話人はゆっくり近づいて、髪を撫でて、\"いい子\"と言う。1分間このリチュアル。",
+        "君が猫なら:言葉は使えない、息遣いとのど鳴らしだけ。世話人が君に課題を与える(キスして、触れて、座って)。きちんとこなそう。",
+        "役を交代。このターンは君が猫。パートナーが世話人役。3分間のこのデュエット — そのあと役について話し合おう、どう感じた?"
+      ],
+      "ko": [
+        "이번 라운드엔 한 명은 \"돌보는 사람\", 한 명은 \"고양이\". 고양이는 말이 없어 — 반응으로 이야기해. 돌보는 사람은 3가지 다른 쓰다듬기를 선사해 (느리게, 빠르게, 부드럽게). 고양이는 어떤 걸 원하는지 몸으로 표현해.",
+        "고양이 역할인 사람은 말할 수 없어. 돌보는 사람은 5분 동안 오직 손길과 말로만 고양이와 소통해. 고양이는 반응으로 답해.",
+        "돌보는 사람이 고양이의 귀 뒤를 30초 동안 쓰다듬어. 고양이는 반응으로 응답해 (가르랑거리거나, 기대거나). 돌보는 사람은 이걸 3군데 다른 부위에서 반복해.",
+        "고양이는 돌보는 사람 앞에 무릎을 꿇어. 돌보는 사람은 천천히 다가와 머리를 쓰다듬으며 \"착한 고양이\"라고 말해. 1분 동안 이 의식.",
+        "네가 고양이라면: 말은 쓸 수 없고, 오직 숨소리와 가르랑거림만. 돌보는 사람이 너에게 임무를 줘 (입맞춤, 손길, 앉기). 그 임무를 완벽하게 수행해.",
+        "역할을 바꿔. 이번 라운드엔 네가 고양이가 돼. 파트너가 돌보는 사람 역할. 3분짜리 이 듀엣 — 끝나면 역할에 대해 이야기해, 어떤 느낌이었어?"
+      ],
+      "zh-TW": [
+        "這一輪，一人當 \"照護者\"，一人當 \"小貓\"。小貓不說話——只用反應來回應。照護者提供 3 種不同的撫摸（慢的、快的、柔的）。小貓用身體表達想要哪一種。",
+        "扮演小貓的人不能說話。照護者在接下來 5 分鐘內，只用觸摸與話語與小貓溝通。小貓用反應回應。",
+        "照護者輕撫小貓耳後 30 秒。小貓用反應確認（發出呢喃、靠過來）。照護者在身體 3 個不同部位重複這個動作。",
+        "小貓在照護者面前跪下。照護者緩緩靠近，撫摸他／她的頭髮，說 \"乖貓咪\"。進行 1 分鐘的這個儀式。",
+        "如果你是小貓：不能用字詞，只能用呼吸與呢喃。照護者會給你一個任務（親吻、觸碰、坐下）。確實完成任務。",
+        "角色互換。這一輪你當小貓，你的伴侶扮演照護者。進行 3 分鐘的這段雙人戲——結束後討論角色，你有什麼感受？"
+      ],
+      "id": [
+        "Giliran ini salah satu jadi \"Perawat\", satunya jadi \"Kucing\". Kucing diam — tapi berbicara lewat reaksi. Perawat menawarkan 3 jenis belaian berbeda (pelan, cepat, lembut). Kucing menyampaikan mana yang dia mau lewat bahasa tubuh.",
+        "Yang berperan sebagai Kucing tidak boleh bicara. Perawat berkomunikasi dengan Kucing selama 5 menit hanya lewat sentuhan dan kata-kata. Kucing membalas dengan reaksinya.",
+        "Perawat mengelus belakang telinga Kucing selama 30 detik. Kucing membalas sebagai tanda setuju (mendengkur, menyandar). Perawat mengulanginya di 3 bagian tubuh berbeda.",
+        "Kucing berlutut di hadapan Perawat. Perawat mendekat perlahan, mengelus rambutnya, berkata \"kucing yang baik\". Ritual ini berlangsung 1 menit.",
+        "Jika kamu si Kucing: kamu tidak boleh pakai kata-kata, hanya napas dan dengkuran. Perawat memberimu sebuah tugas (cium, sentuh, duduk). Lakukan tugas itu sempurna.",
+        "Peran bertukar. Giliran ini kamulah Kucingnya. Pasanganmu jadi Perawat. Duet 3 menit ini — setelah itu bahas perannya, apa yang kamu rasakan?"
+      ],
+      "hi": [
+        "इस राउंड में एक \"देखभाल करने वाला\" और एक \"बिल्ली\"। बिल्ली चुप रहती है — पर प्रतिक्रिया से बोलती है। देखभाल करने वाला 3 तरह के सहलाव देता है (धीमा, तेज़, नरम)। बिल्ली शारीरिक भाव से बताती है कि उसे कौन सा चाहिए।",
+        "बिल्ली की भूमिका में जो है, वो बोल नहीं सकता/सकती। देखभाल करने वाला 5 मिनट तक सिर्फ स्पर्श और शब्दों से बिल्ली से संवाद करता है। बिल्ली अपनी प्रतिक्रियाओं से जवाब देती है।",
+        "देखभाल करने वाला, बिल्ली के कान के पीछे 30 सेकंड तक सहलाता है। बिल्ली प्रतिक्रिया से मंज़ूरी देती है (मीठी आवाज़ निकालती है, झुक जाती है)। देखभाल करने वाला यही 3 अलग जगहों पर दोहराता है।",
+        "बिल्ली देखभाल करने वाले के सामने घुटनों पर बैठती है। देखभाल करने वाला धीरे से पास आता है, उसके बाल सहलाता है, \"अच्छी बिल्ली\" कहता है। 1 मिनट यही रस्म।",
+        "अगर बिल्ली तुम हो: शब्द इस्तेमाल नहीं कर सकते, सिर्फ सांस और मीठी आवाज़ें। देखभाल करने वाला तुम्हें एक काम देगा (चूमो, छुओ, बैठो)। उस काम को पूरा करो।",
+        "भूमिकाएं बदलो। इस राउंड में बिल्ली तुम बनोगे। तुम्हारा पार्टनर देखभाल करने वाले की भूमिका में। 3 मिनट का यह युगल — फिर भूमिकाओं पर बात करो, क्या महसूस हुआ?"
+      ],
+      "ar": [
+        "هذه الجولة أحدكما \"المعتني\" والآخر \"القطة\". القطة صامتة — لكنها تتكلم بردود الفعل. يقدّم المعتني 3 أنواع من المداعبة (بطيئة، سريعة، ناعمة). تخبره القطة أيّها تريد بتعبير جسدي.",
+        "من يلعب دور القطة لا يستطيع الكلام. المعتني يتواصل مع القطة لمدة 5 دقائق باللمس والكلام فقط. القطة تردّ بتفاعلاتها.",
+        "يداعب المعتني ما خلف أذن القطة لمدة 30 ثانية. تؤكّد القطة بردّ فعل (تخرخر، تتكئ). يكرّر المعتني ذلك في 3 مناطق مختلفة.",
+        "تجثو القطة أمام المعتني. يقترب ببطء، يداعب شعرها، ويقول \"قطة جيدة\". دقيقة واحدة من هذا الطقس.",
+        "إن كنت القطة: لا يمكنك استخدام الكلمات، فقط النفَس والخرخرة. يعطيك المعتني مهمة (قبّل، المس، اجلس). نفّذ المهمة تماماً.",
+        "تتبادلان الأدوار. هذه الجولة أنت القطة. شريكك في دور المعتني. دويتو من 3 دقائق — ثم ناقشا الأدوار، بماذا شعرت؟"
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Vorarbeiter",
       "fr": "Contremaître",
       "es": "Capataz",
-      "it": "Capo"
+      "it": "Capo",
+      "ja": "統率者",
+      "ko": "지휘자",
+      "zh-TW": "主導者",
+      "id": "Pengarah",
+      "hi": "प्रमुख",
+      "ar": "المدبّر"
     },
     "color": "#0C4A6E",
     "icon": "🗝️",
@@ -194,6 +308,54 @@
         "Il Capo costruisce una catena di 3 comandi: \"Respira. Apri gli occhi. Guardami.\" Il partner esegue alla lettera. Poi di nuovo la stessa catena con un tempo diverso.",
         "Ruoli chiari: Capo e Seguace. Il Seguace si muove solo con i comandi del Capo. Per 5 minuti — se infrange la regola, una conseguenza di 5 secondi concordata prima.",
         "Rituale di fine scena: il Capo accarezza la testa del Seguace per 1 minuto, dice \"sei stato/a bravo/a\". Il Seguace risponde. Rinnovo della fiducia + feedback."
+      ],
+      "ja": [
+        "\"シーン\"を始めよう:\"これから10分のゲームをするよ。セーフワード:'黄' = ゆっくり続けて、'赤' = 即停止。\" それから統率者が指示を出し始める。",
+        "統率者はパートナーに3つの体勢を試させる — どれが一番心地よいか探って。それぞれ30秒キープしてから交代。",
+        "統率者はパートナーの目を閉じさせる。片手で別々の場所に触れて — パートナーは\"ここ\"か\"別の場所\"と答える。",
+        "統率者は3つの指示の連鎖を作る:\"息をして。目を開けて。私を見て。\" パートナーはきちんと従う。それから同じ連鎖を違うテンポでもう一度。",
+        "役ははっきり:統率者と従う者。従う者は統率者の指示だけで動く。5分間 — ルールを破ったら、事前に決めた5秒の結果。",
+        "シーン終了のリチュアル:統率者が従う者の頭を1分撫でて、\"よくやった\"と言う。従う者も返す。信頼の再構築 + フィードバック。"
+      ],
+      "ko": [
+        "\"장면\"을 시작해: \"지금부터 10분짜리 게임을 할 거야. 안전어는: '노랑'은 천천히 계속, '빨강'은 즉시 멈춤.\" 그 다음 지휘자가 명령을 내리기 시작해.",
+        "지휘자는 파트너에게 3가지 자세를 시도해 — 어느 자세가 가장 편안한지 찾아봐. 각 자세에서 30초씩 유지한 다음 바꿔.",
+        "지휘자가 파트너의 눈을 가려. 한쪽 손으로 다른 부위들을 만져 — 파트너는 \"여기\" 또는 \"다른 곳\"이라고 말해.",
+        "지휘자는 3단계 명령을 만들어: \"숨을 들이쉬어. 눈을 떠. 날 봐.\" 파트너는 완벽히 따라. 그 다음 같은 명령을 다른 템포로 다시.",
+        "역할은 분명해: 지휘자와 따르는 사람. 따르는 사람은 오직 지휘자의 명령에만 움직여. 5분 동안 — 규칙을 어기면 미리 정해둔 5초짜리 결과가 따라와.",
+        "장면 마무리 의식: 지휘자가 따르는 사람의 머리를 1분 동안 쓰다듬으며 \"잘했어\"라고 말해. 따르는 사람도 화답해. 신뢰 회복 + 피드백."
+      ],
+      "zh-TW": [
+        "開啟一個 \"場景\"：\"接下來我們要玩一個 10 分鐘的遊戲。安全詞：'黃色' 繼續但放慢，'紅色' 立刻停止。\" 然後主導者開始下指令。",
+        "主導者讓伴侶嘗試 3 種姿勢——找出他／她在哪個姿勢最舒服。每個姿勢保持 30 秒，再換下一個。",
+        "主導者讓伴侶閉上眼睛。用一隻手觸碰不同部位——伴侶回答 \"這裡\" 或 \"別的地方\"。",
+        "主導者下 3 個連續指令：\"吸氣。張開眼睛。看著我。\" 伴侶完整執行。然後用不同節奏再重複一次同樣的指令鏈。",
+        "角色分明：主導者與跟隨者。跟隨者只依主導者的指令行動。持續 5 分鐘——若違反規則，執行一個事先約好、持續 5 秒的小後果。",
+        "場景結束儀式：主導者撫摸跟隨者的頭 1 分鐘，說 \"你很棒\"。跟隨者也回應。重建信任＋互相給予回饋。"
+      ],
+      "id": [
+        "Mulai sebuah \"adegan\": \"Sekarang kita akan main sebuah permainan 10 menit. Kata aman: 'kuning' lanjut tapi pelan, 'merah' berhenti seketika.\" Lalu Pengarah mulai memberi perintah.",
+        "Pengarah mencoba 3 posisi pada pasangannya — temukan di posisi mana dia paling nyaman. Tahan tiap posisi selama 30 detik, lalu ganti.",
+        "Pengarah menutup mata pasangannya. Dengan satu sisi tangannya, dia menyentuh bagian tubuh yang berbeda-beda — pasangan menjawab \"di sini\" atau \"ke tempat lain\".",
+        "Pengarah menyusun rangkaian 3 perintah: \"Tarik napas. Buka matamu. Tatap aku.\" Pasangan menjalankannya persis. Lalu ulangi rangkaian yang sama dengan tempo berbeda.",
+        "Perannya jelas: Pengarah dan Pengikut. Pengikut hanya bergerak atas perintah Pengarah. Selama 5 menit — kalau dia melanggar aturan, ada konsekuensi 5 detik yang sudah disepakati sebelumnya.",
+        "Ritual penutup adegan: Pengarah mengelus kepala Pengikut selama 1 menit, berkata \"tadi hebat\". Pengikut membalasnya. Memulihkan kepercayaan + umpan balik."
+      ],
+      "hi": [
+        "एक \"दृश्य\" शुरू करो: \"अब हम 10 मिनट का एक खेल खेलेंगे। सुरक्षा शब्द: 'पीला' धीरे-धीरे जारी रखो, 'लाल' तुरंत रुको।\" फिर प्रमुख आदेश देना शुरू करता है।",
+        "प्रमुख अपने पार्टनर के साथ 3 मुद्राएं आज़माता है — पता लगाओ कि किसमें वो सबसे आरामदेह है। हर मुद्रा में 30 सेकंड रुको, फिर बदलो।",
+        "प्रमुख अपने पार्टनर की आंखें बंद करवाता है। अपने हाथ के एक हिस्से से अलग-अलग जगहों पर छूता है — पार्टनर कहता है \"यहां\" या \"कहीं और\"।",
+        "प्रमुख 3 आदेशों की एक कड़ी बनाता है: \"सांस लो। आंखें खोलो। मुझे देखो।\" पार्टनर पूरी तरह से करता है। फिर वही कड़ी अलग गति में दोहराओ।",
+        "भूमिकाएं साफ: प्रमुख और अनुसरणकर्ता। अनुसरणकर्ता सिर्फ प्रमुख के आदेशों पर ही हरकत करता है। 5 मिनट तक — नियम तोड़े तो पहले से तय किया हुआ 5 सेकंड का एक नतीजा।",
+        "दृश्य के अंत की रस्म: प्रमुख, अनुसरणकर्ता के सिर को 1 मिनट सहलाता है, \"अच्छा था\" कहता है। अनुसरणकर्ता जवाब देता है। भरोसे का नवीनीकरण + फीडबैक।"
+      ],
+      "ar": [
+        "ابدأ \"مشهداً\": \"سنلعب الآن لعبة من 10 دقائق. كلمتا الأمان: 'أصفر' تابع ببطء، 'أحمر' توقّف فوراً.\" ثم يبدأ المدبّر بإصدار الأوامر.",
+        "يجرّب المدبّر 3 أوضاع مع شريكه — اكتشف أيّها أكثر راحة له. أبقه في كل وضع 30 ثانية، ثم بدّل.",
+        "يُغمض المدبّر عينَي شريكه. يلمس مناطق مختلفة بجانب واحد من يده — ويقول الشريك \"هنا\" أو \"في مكان آخر\".",
+        "يبني المدبّر سلسلة من 3 أوامر: \"خذ نفساً. افتح عينيك. انظر إليّ.\" ينفّذها الشريك تماماً. ثم تُعاد السلسلة نفسها بإيقاع مختلف.",
+        "الأدوار واضحة: المدبّر والتابع. التابع يتحرّك فقط بأوامر المدبّر. لمدة 5 دقائق — وإن خالف القاعدة، فنتيجة مدّتها 5 ثوانٍ متّفَق عليها مسبقاً.",
+        "طقس نهاية المشهد: يداعب المدبّر رأس التابع لمدة دقيقة، ويقول \"كان جميلاً\". يردّ التابع بالمثل. تجديد للثقة + تغذية راجعة."
       ]
     }
   }

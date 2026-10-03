@@ -1,0 +1,231 @@
+{
+  "app": {
+    "loading": "載入中…"
+  },
+  "common": {
+    "close": "關閉",
+    "cancel": "取消",
+    "confirm": "確認",
+    "delete": "刪除",
+    "save": "儲存",
+    "retry": "重試",
+    "error": "錯誤:"
+  },
+  "home": {
+    "eyebrow": "獻給情侶",
+    "title": "Love Games",
+    "subtitle": "兩個人一起玩的小遊戲",
+    "footer": "更多遊戲陸續登場 ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "轉盤",
+      "tagline": "轉一下，找到你們的主題"
+    },
+    "dice": {
+      "name": "骰子",
+      "tagline": "擲一把——讓驚喜找上你"
+    },
+    "cards": {
+      "name": "卡牌",
+      "tagline": "挑選主題，抽張卡牌"
+    },
+    "boxes": {
+      "name": "紙條盒",
+      "tagline": "打亂紙條，給彼此一個驚喜"
+    }
+  },
+  "wheel": {
+    "eyebrow": "轉盤",
+    "title": "旋轉轉盤",
+    "spinPrompt": "點中間的按鈕開始旋轉",
+    "spinBtn": "開始轉",
+    "spinAgain": "再轉一次",
+    "lastLabel": "上一輪:",
+    "settings": {
+      "title": "轉盤設定",
+      "summary": "{{active}} / {{total}} 已啟用 · 至少需要 {{min}} 個",
+      "promptsCount": "{{count}} 個提示",
+      "lockNote": "最後 {{min}} 個主題之一——無法關閉"
+    }
+  },
+  "dice": {
+    "eyebrow": "骰子",
+    "title": "擲骰子",
+    "rollLabel": "擲骰",
+    "newRoll": "再擲一次",
+    "poster": "跳脫框架"
+  },
+  "cards": {
+    "eyebrow": "卡牌",
+    "title": "抽張卡牌",
+    "drawCard": "抽張卡牌",
+    "newCard": "新的一張",
+    "hint": "點下方牌堆 → 抽張卡牌",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} 個主題 · {{prompts}} 個提示",
+    "categoryFallback": "主題",
+    "footerPrompt": "再抽一張",
+    "settings": {
+      "title": "卡牌設定",
+      "summary": "{{active}} / {{total}} 已啟用 · 至少需要 {{min}} 個",
+      "promptsCount": "{{count}} 個提示",
+      "lockNote": "最後 {{min}} 個之一——無法關閉"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "紙條盒",
+    "lobbyTitle": "建立或加入房間",
+    "lobbySubtitle": "兩支手機之間即時同步紙條——無需 QR Code",
+    "createNew": "建立新房間",
+    "createNewSub": "取得 6 位數代碼，分享給你的另一半",
+    "join": "加入房間",
+    "joinSub": "輸入另一半給你的代碼",
+    "generatingCode": "產生中…",
+    "generateCode": "產生代碼",
+    "back": "返回",
+    "codeReadyTitle": "你的代碼準備好囉 🎉",
+    "codeReadyText": "把這組代碼分享給你的另一半，請他選「加入房間」並輸入。",
+    "goToBoxes": "前往紙條盒",
+    "joinTitle": "加入房間",
+    "joinText": "輸入另一半給你的 6 位數代碼。",
+    "joining": "加入中…",
+    "joinBtn": "加入",
+    "identityWait": "身分尚未就緒，請幾秒後再試",
+    "roomNotFound": "找不到這個房間，請確認代碼。",
+    "roomFull": "房間已滿（2 人），請試試其他房間。",
+    "listEyebrow": "共享紙條盒",
+    "listRoomLabel": "房間",
+    "listBoth": "2/2 人",
+    "listWaiting": "1/2 · 等待另一半",
+    "listLiveSync": "紙條即時同步中",
+    "listGiveCode": "把代碼給另一半讓他連進來",
+    "leaveRoom": "離開房間",
+    "leaveConfirmTitle": "離開房間",
+    "leaveConfirmText": "這支手機上的房間連結會被移除。紙條盒仍保留在 Firestore——你隨時可以用代碼重新加入。",
+    "cancel": "取消",
+    "leave": "離開",
+    "newBox": "新的紙條盒",
+    "loading": "載入中…",
+    "error": "錯誤:",
+    "noBoxes": "還沒有任何紙條盒",
+    "noBoxesHint": "建立新的紙條盒，寫下紙條，和另一半一起打亂",
+    "boxCardMeta": "{{mine}} 你的 · {{partner}} 另一半的",
+    "ready": "準備好了",
+    "notesCount": "{{count}} 張紙條",
+    "createBoxTitle": "新的紙條盒",
+    "createBoxSub": "為你的紙條盒取個名字和主題",
+    "namePlaceholder": "例如：電影之夜",
+    "create": "建立",
+    "boxNotFound": "找不到紙條盒",
+    "yours": "你的紙條",
+    "newNotePlaceholder": "寫一張新紙條…",
+    "add": "新增",
+    "emptyNote": "還沒有紙條，從上面開始寫吧。",
+    "partner": "你的另一半",
+    "partnerNotesCount": "{{count}} 張紙條",
+    "partnerNotJoined": "尚未加入房間",
+    "partnerReady": "另一半準備好囉 ✨",
+    "partnerNotConfirmed": "尚未確認",
+    "partnerNoNotes": "尚未寫下紙條",
+    "youConfirmed": "你 ✓ ({{count}})",
+    "youCount": "你 {{count}}",
+    "partnerConfirmed": "另一半 ✓ ({{count}})",
+    "partnerCount": "另一半 {{count}}",
+    "partnerWaiting": "等待另一半",
+    "notesDone": "我寫好了",
+    "editNotes": "修改我的紙條",
+    "editNotesWaiting": "修改我的紙條 · 另一半還沒確認",
+    "shuffle": "打亂",
+    "revealEyebrow": "跳脫框架",
+    "close": "關閉",
+    "shuffleAgain": "再打亂一次",
+    "deleteBoxTitle": "刪除紙條盒",
+    "deleteBoxText": "確定要刪除「{{name}}」及裡面所有紙條嗎？兩支手機上都會一併刪除。"
+  },
+  "trackBar": {
+    "trackLevelInfo": "等級: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "親密",
+      "tagline": "情感 + 身體的觸碰",
+      "levels": {
+        "1": {
+          "name": "低語",
+          "hint": "調情、眼神交會、藏起來的小紙條"
+        },
+        "2": {
+          "name": "靠近",
+          "hint": "擁抱、親吻、依偎"
+        },
+        "3": {
+          "name": "祕密",
+          "hint": "分享幻想、感官探索"
+        },
+        "4": {
+          "name": "火焰",
+          "hint": "熾熱時刻，緩慢而深入"
+        },
+        "5": {
+          "name": "羈絆",
+          "hint": "身體與心靈的深度交融"
+        }
+      }
+    },
+    "cesur": {
+      "label": "探索",
+      "tagline": "跨越界限",
+      "levels": {
+        "1": {
+          "name": "火花",
+          "hint": "挑逗的小挑戰"
+        },
+        "2": {
+          "name": "微光",
+          "hint": "眼罩、慢慢褪去、感官體驗"
+        },
+        "3": {
+          "name": "勇氣",
+          "hint": "引導/跟隨、輕度刺激"
+        },
+        "4": {
+          "name": "巔峰",
+          "hint": "明確角色、結構化情境"
+        },
+        "5": {
+          "name": "傳奇",
+          "hint": "進階玩法、儀式/規則、深度互動"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "成人內容",
+    "body": "本應用程式僅供 **18 歲以上成人** 使用。內容包含性相關主題、親密互動與情趣取向的建議。若要繼續：",
+    "checkbox": "我已年滿 18 歲，將與 **我的另一半** 在雙方同意下使用。",
+    "accept": "同意並繼續",
+    "saving": "儲存中…",
+    "footer": "此同意僅儲存於你的裝置上，不會傳送任何帳號或位置資訊。"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "語言",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "需要重新啟動",
+    "rtlReloadBody": "阿拉伯文採用由右至左的版面。應用程式需要重新啟動以套用方向變更。",
+    "rtlReloadButton": "立即重啟",
+    "close": "關閉"
+  }
+}

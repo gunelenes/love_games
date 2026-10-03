@@ -49,6 +49,36 @@ const TARGET_LANGS = {
     name: 'Italian (Italiano)',
     note: "Use informal 'tu'. Keep the warmth and sensuality of the Turkish source.",
   },
+  ja: {
+    name: 'Japanese (日本語)',
+    note:
+      'Use informal / familiar register for intimate couples content. Katakana/kanji/hiragana as naturally fits. Softened kink role names: Halatçı → 縄師 (rigger), Rehber → 導き手 (guide), Bahçıvan → 世話人 (caretaker), Ustabaşı → 統率者 (foreman), Takipçi → 従う者 (follower).',
+  },
+  ko: {
+    name: 'Korean (한국어)',
+    note:
+      'Use informal / intimate 반말 or soft 해요체 as fits the tenderness of each prompt. Softened kink role names: Halatçı → 로프 묶는 사람 (rope rigger), Rehber → 안내자 (guide), Bahçıvan → 돌보는 사람 (caretaker), Ustabaşı → 지휘자 (foreman), Takipçi → 따르는 사람 (follower).',
+  },
+  'zh-TW': {
+    name: 'Traditional Chinese (繁體中文)',
+    note:
+      'Taiwan Traditional Chinese conventions. Use 你 for second person (couples register). Softened kink role names: Halatçı → 繩師 (rigger), Rehber → 引導者 (guide), Bahçıvan → 照護者 (caretaker), Ustabaşı → 主導者 (foreman), Takipçi → 跟隨者 (follower). Traditional characters only — never Simplified.',
+  },
+  id: {
+    name: 'Indonesian (Bahasa Indonesia)',
+    note:
+      "Use informal 'kamu' (couples app). Standard Indonesian. Softened kink role names: Halatçı → Pengikat Tali (rigger), Rehber → Pembimbing (guide), Bahçıvan → Perawat (caretaker), Ustabaşı → Pengarah (foreman), Takipçi → Pengikut (follower).",
+  },
+  hi: {
+    name: 'Hindi (हिन्दी)',
+    note:
+      'Use informal तुम form (couples app, Devanagari script). Softened kink role names: Halatçı → रस्सी बांधने वाला (rigger), Rehber → मार्गदर्शक (guide), Bahçıvan → देखभाल करने वाला (caretaker), Ustabaşı → प्रमुख (foreman), Takipçi → अनुसरणकर्ता (follower). Keep sensual tone warm and respectful.',
+  },
+  ar: {
+    name: 'Arabic (العربية)',
+    note:
+      'Modern Standard Arabic with warmth — accessible to adult Arabic readers. Use masculine singular second person (أنت) as default; the prompts address one partner. Softened kink role names: Halatçı → الرابط (rigger), Rehber → المرشد (guide), Bahçıvan → المعتني (caretaker), Ustabaşı → المدبّر (foreman), Takipçi → التابع (follower). Content is adult / sensual — translate naturally without over-softening or euphemism beyond the Turkish source.',
+  },
 };
 
 const SYSTEM_PROMPT = `You translate intimate couples' game content for "Love Games" — a mobile app with sensual, playful mini-games for adults (18+). The source is Turkish, written in a warm, direct, slightly flirtatious voice. The content is spicy but tasteful; discreet BDSM-adjacent prompts use softened terminology (Rigger, Guide, Caretaker, Foreman, Follower — never the raw clinical terms).

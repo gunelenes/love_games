@@ -7,7 +7,13 @@
       "de": "Verbotene Sinne",
       "fr": "Sens interdits",
       "es": "Sentidos Prohibidos",
-      "it": "Sensi Proibiti"
+      "it": "Sensi Proibiti",
+      "ja": "禁じられた感覚",
+      "ko": "금지된 감각",
+      "zh-TW": "禁忌感官",
+      "id": "Indra Terlarang",
+      "hi": "मना की हुई इंद्रियाँ",
+      "ar": "الحواس المحظورة"
     },
     "color": "#4338CA",
     "icon": "🕶️",
@@ -62,6 +68,54 @@
         "La benda è su di te. Chi ami decide cosa farti sentire — ma prima deve chiederti \"sei pronto/a?\"",
         "Oscura la stanza. Accendi solo una candela. Per 5 minuti scoprite il viso l'uno dell'altra solo con quella luce.",
         "Di' a chi ami \"chiudi gli occhi\". Avvicinati, sussurragli 3 parole all'orecchio, poi sfiora le sue labbra per 3 secondi — con leggerezza. Poi ritirati, aspetterà ancora."
+      ],
+      "ja": [
+        "パートナーに目隠し（シルクのスカーフ、ネクタイ）をつけて。3分間、好きなように手で触れて — 相手はただ感じて、反応するだけ。",
+        "二人とも目を閉じて。向かい合って座る。2分間、呼吸の音と手の近さだけを感じながら近づいて — 唇が触れるまで。",
+        "パートナーの目を閉じさせて。30秒間、3つの違うもの（唇、指、布）で肌の一部にゆっくり触れて — 何か当てさせて。",
+        "目隠しは君の番。パートナーが何を感じさせたいか決める — でもその前に \"準備はいい？\" と聞かなきゃダメ。",
+        "部屋を暗くして。ろうそくを一本だけ灯す。5分間、その光だけでお互いの顔を探って。",
+        "パートナーに \"目を閉じて\" と言う。そばに寄って、耳元で3つの言葉をささやき、唇に3秒だけ触れる — ごく軽く。それから離れて、相手をもう一度待たせる。"
+      ],
+      "ko": [
+        "파트너에게 눈가리개(실크 스카프, 넥타이)를 씌워. 3분 동안 네가 원하는 대로 손으로 그를 만져 — 그는 그저 느끼고 반응할 뿐이야.",
+        "둘 다 눈을 감아. 마주 보고 앉아. 2분 동안 서로의 숨소리와 손의 가까움만 느끼면서 다가가 — 입술이 닿을 때까지.",
+        "파트너의 눈을 가려. 30초 동안 3가지 다른 것으로(입술로, 손가락으로, 천 조각으로) 그의 피부 한 곳을 천천히 만져 — 뭔지 맞혀 보라고 해.",
+        "눈가리개는 네가 해. 파트너가 너에게 무엇을 느끼게 할지 결정해 — 하지만 먼저 \"준비됐어?\"라고 물어야 해.",
+        "방을 어둡게 해. 촛불 하나만 켜. 5분 동안 그 빛만으로 서로의 얼굴을 탐색해.",
+        "파트너에게 \"눈을 감아\"라고 말해. 가까이 다가가, 귀에 세 단어를 속삭이고, 입술에 3초 동안 살짝 닿아. 그리고 물러나 — 그는 다시 기다릴 거야."
+      ],
+      "zh-TW": [
+        "幫你的伴侶戴上眼罩（絲巾、領帶都行）。接下來 3 分鐘，用你的雙手隨心所欲地撫摸他／她——他／她只需感受並回應。",
+        "兩人都閉上眼睛，面對面坐下。2 分鐘內，只憑彼此的呼吸聲與雙手靠近的氣息，慢慢靠攏——直到唇瓣相觸。",
+        "讓你的伴侶閉上眼睛。30 秒內，用 3 種不同的東西（你的唇、你的指尖、一塊布料）緩緩觸碰他／她身上的某一處——讓他／她猜。",
+        "這次換你戴眼罩。由你的伴侶決定想讓你感受到什麼——但在開始前，他／她必須先問你：\"你準備好了嗎？\"",
+        "把房間調暗，只點一支蠟燭。接下來 5 分鐘，就著那一點燭光，細細探索彼此的臉龐。",
+        "對你的伴侶說：\"閉上眼睛\"。靠近他／她，在耳邊低語 3 個字，然後讓你的唇停在他／她的唇上 3 秒——輕輕地。接著退開，讓他／她繼續等。"
+      ],
+      "id": [
+        "Pasangkan penutup mata (syal sutra, dasi) ke pasanganmu. Selama 3 menit, sentuh dia dengan tanganmu sesukamu — dia hanya merasakan dan bereaksi.",
+        "Mata kalian berdua terpejam. Duduk saling berhadapan. Selama 2 menit, hanya rasakan suara napas dan kedekatan tangan sambil mendekat — sampai bibir bersentuhan.",
+        "Tutup mata pasanganmu. Selama 30 detik, sentuh perlahan satu bagian kulitnya dengan 3 hal berbeda (bibirmu, jarimu, sepotong kain) — biar dia menebak.",
+        "Penutup mata ada padamu. Pasanganmu yang menentukan apa yang ingin dia buat kamu rasakan — tapi dia harus bertanya dulu, \"kamu siap?\"",
+        "Redupkan ruangan. Nyalakan hanya satu lilin. Selama 5 menit, jelajahi wajah satu sama lain hanya dengan cahaya itu.",
+        "Katakan pada pasanganmu, \"tutup matamu.\" Mendekatlah, bisikkan 3 kata ke telinganya, lalu sentuh bibirnya selama 3 detik — ringan saja. Lalu menjauhlah, dia akan menunggu lagi."
+      ],
+      "hi": [
+        "अपने पार्टनर की आँखों पर पट्टी बाँधो (रेशमी स्कार्फ, टाई)। 3 मिनट तक अपने हाथों से उसे जैसे चाहो वैसे छुओ — वो सिर्फ महसूस करेगा और प्रतिक्रिया देगा।",
+        "दोनों की आँखें बंद। आमने-सामने बैठो। 2 मिनट तक सिर्फ एक-दूसरे की साँसों की आवाज़ और हाथों की नज़दीकी महसूस करते हुए पास आओ — जब तक होंठ न छू जाएँ।",
+        "अपने पार्टनर की आँखें बंद करो। 30 सेकंड तक 3 अलग-अलग चीज़ों से (अपने होंठों से, उंगली से, एक कपड़े से) धीरे-धीरे उसकी त्वचा के किसी एक हिस्से को छुओ — वो अंदाज़ा लगाए।",
+        "आँखों पर पट्टी तुम्हारी है। तुम्हारा पार्टनर तय करेगा कि तुम्हें क्या महसूस कराना है — लेकिन पहले उसे तुमसे पूछना होगा \"क्या तुम तैयार हो?\"",
+        "कमरा अँधेरा कर दो। सिर्फ एक मोमबत्ती जलाओ। 5 मिनट तक सिर्फ उसी रोशनी में एक-दूसरे का चेहरा खोजो।",
+        "अपने पार्टनर से कहो \"अपनी आँखें बंद करो\"। पास जाओ, उसके कान में 3 शब्द फुसफुसाओ, फिर उसके होंठों को 3 सेकंड के लिए छुओ — बहुत हल्के से। फिर पीछे हट जाओ, वो फिर इंतज़ार करेगा।"
+      ],
+      "ar": [
+        "ضع عصابة على عيني شريكك (وشاح حرير، ربطة عنق). لمدة 3 دقائق، المس جسده بيديك كما تشاء — هو فقط يشعر ويتجاوب.",
+        "عيناكما مغمضتان. اجلسا متقابلين. لمدة دقيقتين، اقتربا منه وأنتما تشعران فقط بصوت الأنفاس وقرب الأيدي — حتى تلتقي الشفاه.",
+        "أغمض عيني شريكك. لمدة 30 ثانية، المس منطقة من جلده ببطء بـ 3 أشياء مختلفة (بشفتيك، بإصبعك، بقماشة) — دعه يخمّن.",
+        "العصابة على عينيك أنت. شريكك يقرر ماذا يريدك أن تشعر — لكن عليه أولاً أن يسألك \"هل أنت مستعد؟\".",
+        "أعتم الغرفة. أشعل شمعة واحدة فقط. لمدة 5 دقائق، اكتشفا ملامح وجهيكما في ذلك الضوء وحده.",
+        "قل لشريكك \"أغمض عينيك\". اقترب منه، اهمس في أذنه بـ 3 كلمات، ثم المس شفتيه لمدة 3 ثوانٍ — بخفّة. ثم ابتعد، سينتظر مرة أخرى."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Langsamer Rhythmus",
       "fr": "Rythme lent",
       "es": "Ritmo Lento",
-      "it": "Ritmo Lento"
+      "it": "Ritmo Lento",
+      "ja": "ゆるやかなリズム",
+      "ko": "느린 리듬",
+      "zh-TW": "慢板節奏",
+      "id": "Irama Lambat",
+      "hi": "धीमी लय",
+      "ar": "إيقاع بطيء"
     },
     "color": "#0F766E",
     "icon": "🌊",
@@ -128,6 +188,54 @@
         "Prima di toccare, una frase: \"dove vuoi che porti la mia mano adesso?\" Lui/lei lo dice, tu la tieni esattamente lì per 30 secondi — immobile.",
         "Dai a chi ami un solo bacio di 5 secondi — senza lingua. Poi 5 secondi di pausa. Un altro bacio. Questo ritmo per 3 volte.",
         "Prendetevi per mano. Dondolatevi per 30 secondi come se steste iniziando a ballare lentamente — non interrompete il contatto visivo, parole vietate."
+      ],
+      "ja": [
+        "パートナーの服を一枚、60秒かけてゆっくり脱がせて — スピードは最後まで同じ、焦らないで。",
+        "向かい合って座る。順番にパートナーの服を一枚ずつ脱がせる — 一回ごとに一言：\"君を魅力的だと思った瞬間は…\"",
+        "パートナーに \"どの服から脱がせてほしい？\" と聞いて。言われたものを、2分かけたゆっくりさで脱がせて。",
+        "触れる前に一言：\"今、手をどこに置いてほしい？\" 相手が答えたら、30秒そのままそこで止める — 動かずに。",
+        "パートナーに5秒間のキスを一度だけ — 舌は使わないで。それから5秒待つ。もう一度キス。このリズムで3回繰り返す。",
+        "お互いの手を取って。ゆっくりダンスを始めるように30秒揺れて — 目を離さないで、言葉は禁止。"
+      ],
+      "ko": [
+        "파트너의 옷 한 벌을 60초에 걸쳐 천천히 벗겨 — 속도는 늘 같게, 서두르지 말고.",
+        "마주 보고 앉아. 번갈아 가며 파트너의 옷 한 가지를 벗겨 — 매 차례마다 한마디 해: \"네가 매력적으로 느껴진 순간은…\"",
+        "파트너에게 \"내 옷 중에 어떤 걸 벗기고 싶어?\"라고 물어. 그가 말한 걸, 2분에 걸친 느림으로 벗겨.",
+        "만지기 전에 한 문장: \"지금 내 손을 어디로 가져가면 좋겠어?\" 그가 말하면, 30초 동안 바로 그 자리에 두어 — 움직이지 말고.",
+        "파트너에게 5초 동안 지속되는 입맞춤을 한 번 해 — 혀는 쓰지 말고. 그리고 5초 쉬어. 또 한 번. 이 리듬으로 3번 반복.",
+        "서로의 손을 잡아. 천천히 춤을 추기 시작하는 것처럼 30초 동안 흔들려 — 눈을 떼지 말고, 말은 금지."
+      ],
+      "zh-TW": [
+        "用 60 秒的時間，慢慢褪去你伴侶的一件衣物——速度始終如一，不急不躁。",
+        "面對面坐下。輪流為對方脫下一件衣物——每一輪都要說一句話：\"我覺得你最迷人的一個瞬間是……\"",
+        "問你的伴侶：\"你想讓我脫掉哪一件？\"把他／她指定的那件，用拉長到 2 分鐘的緩慢節奏褪下。",
+        "在觸碰之前先說一句：\"現在，你想要我的手放到哪裡？\"他／她說出來，你就把手停在那裡整整 30 秒——一動不動。",
+        "給你的伴侶一個長達 5 秒的吻——不用舌。接著停 5 秒。再一個吻。這樣的節奏，重複 3 次。",
+        "牽起彼此的手。像剛要開始跳舞那樣，輕輕搖擺 30 秒——視線不要離開對方，禁止說話。"
+      ],
+      "id": [
+        "Lepaskan satu potong pakaian pasanganmu perlahan dalam 60 detik — kecepatannya harus tetap sama, jangan tergesa-gesa.",
+        "Duduk saling berhadapan. Bergantian lepaskan satu potong pakaian dari pasanganmu — di setiap giliran, ucapkan sepatah kata: \"momen di mana aku merasa kamu memikat…\"",
+        "Tanya pasanganmu, \"pakaianku yang mana yang ingin kamu buka?\" Lepaskan yang dia sebut dengan kelambatan yang kamu rentangkan selama 2 menit.",
+        "Sebelum menyentuh, satu kalimat: \"sekarang kamu ingin aku bawa tanganku ke mana?\" Dia menjawab, kamu tahan 30 detik tepat di sana — tanpa bergerak.",
+        "Beri pasanganmu satu ciuman yang berlangsung 5 detik — tanpa lidah. Lalu jeda 5 detik. Satu ciuman lagi. Ulangi iramanya 3 kali.",
+        "Saling berpegangan tangan. Berayunlah selama 30 detik seolah mulai menari perlahan — jangan lepas kontak mata, kata-kata dilarang."
+      ],
+      "hi": [
+        "अपने पार्टनर के कपड़े का एक टुकड़ा 60 सेकंड में धीरे-धीरे उतारो — रफ़्तार हमेशा एक जैसी हो, जल्दबाज़ी नहीं।",
+        "आमने-सामने बैठो। बारी-बारी से पार्टनर के कपड़े का एक टुकड़ा उतारो — हर बार एक बात कहो: \"वो एक पल जब तुम मुझे बेहद आकर्षक लगे…\"",
+        "अपने पार्टनर से पूछो \"मेरा कौन सा कपड़ा उतरवाना चाहोगे?\" जो वो कहे, उसे 2 मिनट में फैली हुई धीमी रफ़्तार से उतारो।",
+        "छूने से पहले एक वाक्य: \"अभी मेरा हाथ कहाँ ले जाना चाहोगे?\" वो बताएगा, तुम 30 सेकंड ठीक वहीं रखो — बिना हिले।",
+        "अपने पार्टनर को 5 सेकंड लंबा एक चुंबन दो — बिना जीभ के। फिर 5 सेकंड रुको। एक और चुंबन। यही लय 3 बार।",
+        "एक-दूसरे के हाथ पकड़ो। जैसे धीरे-धीरे नाचना शुरू कर रहे हो, वैसे 30 सेकंड झूलो — नज़रें मत हटाओ, शब्द मना हैं।"
+      ],
+      "ar": [
+        "اخلع قطعة من ملابس شريكك ببطء خلال 60 ثانية — ليبقَ الإيقاع ثابتاً، دون أي استعجال.",
+        "اجلسا متقابلين. بالتناوب، اخلع قطعة من ملابس شريكك — وفي كل دور قولا جملة: \"لحظة وجدتك فيها مثيراً…\"",
+        "اسأل شريكك \"أيّ قطعة من ملابسي تريد أن أخلعها؟\". اخلع ما يقوله لك ببطء ممتد على دقيقتين.",
+        "قبل أن تلمسه، قل جملة: \"إلى أين تريدني أن آخذ يدي الآن؟\" هو يقول، وأنت تثبّت يدك هناك تماماً لمدة 30 ثانية — بلا حركة.",
+        "امنح شريكك قبلة واحدة تستمر 5 ثوانٍ — دون لسان. ثم توقف 5 ثوانٍ. قبلة أخرى. وهكذا الإيقاع 3 مرات.",
+        "تمسّكا بأيدي بعضكما. تمايلا لمدة 30 ثانية وكأنكما تبدآن رقصة بطيئة — لا تقطعا التواصل البصري، والكلام ممنوع."
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Seidige Berührung",
       "fr": "Caresse de soie",
       "es": "Caricia de Seda",
-      "it": "Tocco di Seta"
+      "it": "Tocco di Seta",
+      "ja": "絹のような触れ合い",
+      "ko": "실크 같은 손길",
+      "zh-TW": "絲綢般的觸碰",
+      "id": "Sentuhan Sutra",
+      "hi": "रेशमी स्पर्श",
+      "ar": "لمسة من حرير"
     },
     "color": "#9F1239",
     "icon": "🪶",
@@ -194,6 +308,54 @@
         "Il tuo respiro caldo a 2 cm dall'orecchio di chi ami — per 10 secondi solo respiro, senza toccare.",
         "Fai un tocco morbido nel palmo della mano di chi ami (con un dito, con le labbra, come vuoi). Di': \"fai lo stesso in un punto che desidero io\".",
         "Due temperature diverse (una bevanda calda e una fredda). A turno sfiora il polso di chi ami con un sorso caldo, poi uno freddo — ogni volta aspetta 3 secondi."
+      ],
+      "ja": [
+        "手にシルク（スカーフ、Tシャツの裾、長い髪）を持って、パートナーの背中に10秒かけてゆっくり一本線を引いて。それから聞く：\"次はどこ？\"",
+        "氷のかけらを口に含んで。パートナーを5秒見つめて、それから眉か唇にその一滴を落とす。",
+        "3つの違う感触を用意して（柔らかい、硬い、流れるもの — 例えば羽、木、水）。目を閉じたパートナーに順番に触れて。一番震えたのがどれか、そこへもう一度戻って。",
+        "温かい吐息をパートナーの耳の2cm手前に — 10秒間、触れずに息だけ。",
+        "パートナーの手のひらに柔らかく触れて（指で、唇で、好きなやり方で）。\"同じことを、私がしてほしい場所にしてみて\" と言う。",
+        "温度違いの飲み物を2つ（熱いのと冷たいの）。順番にパートナーの手首に、まず熱いのを一口、次に冷たいのを一口触れさせて — 毎回3秒待つ。"
+      ],
+      "ko": [
+        "손에 실크(스카프, 티셔츠 자락, 긴 머리카락)를 쥐고 파트너의 등에 10초짜리 느린 선을 그어. 그리고 물어: \"또 어디에?\"",
+        "얼음 한 조각을 입에 물어. 파트너를 5초 동안 바라본 뒤, 눈썹이나 입술에 그 얼음에서 한 방울을 떨어뜨려.",
+        "서로 다른 질감 3가지를 준비해(부드러운 것, 단단한 것, 흐르는 것 — 예: 깃털, 나무, 물). 눈을 감은 파트너를 차례로 만져. 가장 많이 떨리게 한 게 뭐든, 그 자리로 다시 돌아가.",
+        "따뜻한 네 숨결을 파트너의 귀에서 2cm 떨어진 곳에 둬 — 10초 동안 닿지 않고 숨결만.",
+        "파트너의 손바닥 안에 부드러운 손길을 남겨(손가락으로든, 입술로든, 뭐든 네가 원하는 걸로). \"내가 원하는 곳에 똑같이 해줘\"라고 말해.",
+        "서로 다른 두 가지 온도(따뜻한 음료 하나, 차가운 음료 하나). 번갈아 가며 파트너의 손목에 따뜻한 한 모금, 그다음 차가운 한 모금을 닿게 해 — 매번 3초씩 기다려."
+      ],
+      "zh-TW": [
+        "手裡拿一樣絲滑的東西（絲巾、T 恤的下襬、或一綹長髮），花 10 秒在你伴侶的背上緩緩劃出一條線。然後問：\"還想要哪裡？\"",
+        "含一塊冰在嘴裡。注視你的伴侶 5 秒，然後讓那塊冰融出的一滴水，落在他／她的眉梢或唇上。",
+        "準備 3 種不同觸感的東西（柔軟的、堅硬的、流動的——例如羽毛、木頭、水）。讓你的伴侶閉上眼，依序觸碰他／她。哪一種讓他／她顫抖得最厲害，就回到那一處再來一次。",
+        "把你溫熱的呼吸停在距離伴侶耳朵 2 公分的地方——10 秒內只有呼吸，不要觸碰。",
+        "在你伴侶的掌心裡，留下一個柔軟的觸碰（用指尖、用唇，隨你）。然後對他／她說：\"把同樣的觸碰，放到我想要的地方。\"",
+        "準備兩種溫度（一杯熱飲、一杯冷飲）。輪流在你伴侶的手腕上，用一口熱、再用一口冷輕觸——每一次都停留 3 秒。"
+      ],
+      "id": [
+        "Dengan sutra di tanganmu (syal, ujung kaosmu, rambut panjang), tarik garis lambat selama 10 detik di punggung pasanganmu. Lalu tanya, \"ke mana lagi?\"",
+        "Ambil sebongkah es batu di mulutmu. Tatap pasanganmu selama 5 detik, lalu teteskan satu tetes dari es itu ke alisnya atau bibirnya.",
+        "Siapkan 3 tekstur berbeda (lembut, keras, cair — misalnya bulu, kayu, air). Dengan mata tertutup, pasanganmu disentuh bergantian. Yang paling membuatnya bergetar, kembali ke sana lagi.",
+        "Biarkan napas hangatmu berada 2 cm dari telinga pasanganmu — selama 10 detik, hanya napas tanpa sentuhan.",
+        "Beri sentuhan lembut di telapak tangan pasanganmu (dengan jari, bibir, apa pun yang kamu mau). Katakan, \"lakukan hal yang sama di tempat yang aku inginkan.\"",
+        "Dua suhu berbeda (satu minuman panas, satu dingin). Bergantian, sentuhkan satu teguk panas lalu satu teguk dingin ke pergelangan tangan pasanganmu — tunggu 3 detik setiap kali."
+      ],
+      "hi": [
+        "हाथ में रेशम (स्कार्फ, टी-शर्ट का किनारा, लंबे बाल) लेकर पार्टनर की पीठ पर 10 सेकंड की धीमी एक लकीर खींचो। फिर पूछो: \"और कहाँ?\"",
+        "मुँह में एक बर्फ का टुकड़ा लो। अपने पार्टनर को 5 सेकंड देखो, फिर उसकी भौंह या होंठ पर उस टुकड़े से एक बूँद छोड़ो।",
+        "3 अलग-अलग बनावट तैयार करो (मुलायम, सख़्त, बहती हुई — जैसे पंख, लकड़ी, पानी)। आँखें बंद किए पार्टनर को बारी-बारी से छुओ। जिससे सबसे ज़्यादा सिहरन हो, वापस वहीं लौटो।",
+        "तुम्हारी गर्म साँस पार्टनर के कान से 2 सेमी दूर हो — 10 सेकंड तक बिना छुए सिर्फ साँस।",
+        "अपने पार्टनर की हथेली के बीच एक नरम स्पर्श करो (उंगली से, होंठ से, जो चाहो)। कहो \"यही मेरी किसी मनचाही जगह पर करो।\"",
+        "दो अलग तापमान (एक गर्म, एक ठंडा पेय)। बारी-बारी से पार्टनर की कलाई पर एक घूँट गर्म, फिर एक घूँट ठंडा छुआओ — हर बार 3 सेकंड रुको।"
+      ],
+      "ar": [
+        "بقطعة حرير في يدك (وشاح، طرف قميصك، شعر طويل) ارسم خطاً بطيئاً لمدة 10 ثوانٍ على ظهر شريكك. ثم اسأل: \"إلى أين أيضاً؟\"",
+        "خذ مكعب ثلج في فمك. انظر إلى شريكك 5 ثوانٍ، ثم اترك قطرة من ذلك المكعب على حاجبه أو شفته.",
+        "حضّر 3 ملمسات مختلفة (ناعم، قاسٍ، سائل — مثلاً ريشة، خشب، ماء). المس شريكك المغمض العينين بها بالتناوب. أيّها أحدث فيه أكبر رعشة، عد إلى تلك البقعة.",
+        "ليكن نَفَسك الدافئ على بُعد 2 سم من أذن شريكك — لمدة 10 ثوانٍ، نَفَس فقط دون أي لمس.",
+        "امنح باطن كف شريكك لمسة ناعمة (بإصبعك، بشفتيك، كما تشاء). ثم قل: \"افعل الشيء نفسه في المكان الذي أريده\".",
+        "درجتا حرارة مختلفتان (مشروب ساخن وآخر بارد). بالتناوب، المس معصم شريكك برشفة ساخنة، ثم برشفة باردة — وانتظر 3 ثوانٍ في كل مرة."
       ]
     }
   }

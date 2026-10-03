@@ -7,7 +7,13 @@
       "de": "Schlafzimmer",
       "fr": "Chambre à coucher",
       "es": "Dormitorio",
-      "it": "Camera da Letto"
+      "it": "Camera da Letto",
+      "ja": "寝室",
+      "ko": "침실",
+      "zh-TW": "臥室",
+      "id": "Kamar Tidur",
+      "hi": "बेडरूम",
+      "ar": "غرفة النوم"
     },
     "color": "#B91C1C",
     "icon": "🛏️",
@@ -23,14 +29,26 @@
           "de": "Kissenburg",
           "fr": "Fort de coussins",
           "es": "Castillo de Almohadas",
-          "it": "Fortezza di Cuscini"
+          "it": "Fortezza di Cuscini",
+          "ja": "枕の砦",
+          "ko": "베개 요새",
+          "zh-TW": "枕頭堡壘",
+          "id": "Benteng Bantal",
+          "hi": "तकियों का किला",
+          "ar": "قلعة الوسائد"
         },
         "descriptionI18n": {
           "en": "Build a sanctuary out of blankets and pillows.",
           "de": "Bau ein Nest aus Decken und Kissen.",
           "fr": "Construisez un refuge avec des couvertures et des coussins.",
           "es": "Arma un refugio con mantas y almohadas.",
-          "it": "Costruite un rifugio con coperte e cuscini."
+          "it": "Costruite un rifugio con coperte e cuscini.",
+          "ja": "毛布と枕で隠れ家を作って。",
+          "ko": "담요와 베개로 둘만의 아지트를 만들어.",
+          "zh-TW": "用毯子和枕頭築一個藏身窩。",
+          "id": "Bangun tempat berlindung dari selimut dan bantal.",
+          "hi": "कंबल और तकियों से एक पनाहगाह बनाओ।",
+          "ar": "ابنِ ملاذًا من البطانيات والوسائد."
         }
       },
       {
@@ -41,14 +59,26 @@
           "de": "Bett im Kerzenschein",
           "fr": "Lit à la lueur des bougies",
           "es": "Cama a la Luz de las Velas",
-          "it": "Letto a Lume di Candela"
+          "it": "Letto a Lume di Candela",
+          "ja": "キャンドルの灯るベッド",
+          "ko": "촛불 아래 침대",
+          "zh-TW": "燭光下的床",
+          "id": "Ranjang Bercahaya Lilin",
+          "hi": "मोमबत्ती की रोशनी में बिस्तर",
+          "ar": "سرير على ضوء الشموع"
         },
         "descriptionI18n": {
           "en": "Two candles + the bed. Watch the ceiling.",
           "de": "Nur 2 Kerzen + Bett. Decke anstarren.",
           "fr": "Juste 2 bougies + le lit. À regarder le plafond.",
           "es": "Solo 2 velas + la cama. Mirando al techo.",
-          "it": "Solo 2 candele + letto. Guardate il soffitto."
+          "it": "Solo 2 candele + letto. Guardate il soffitto.",
+          "ja": "キャンドル2本とベッドだけ。天井を見つめて。",
+          "ko": "촛불 2개 + 침대. 천장을 바라봐.",
+          "zh-TW": "只有 2 支蠟燭 + 床。凝望天花板。",
+          "id": "Hanya 2 lilin + ranjang. Pandangi langit-langit.",
+          "hi": "सिर्फ़ 2 मोमबत्तियाँ + बिस्तर। छत को निहारो।",
+          "ar": "شمعتان فقط + السرير. ممنوع التحديق في السقف."
         }
       },
       {
@@ -59,14 +89,26 @@
           "de": "Morgenbett",
           "fr": "Lit du matin",
           "es": "Cama Matutina",
-          "it": "Letto del Mattino"
+          "it": "Letto del Mattino",
+          "ja": "朝のベッド",
+          "ko": "아침의 침대",
+          "zh-TW": "清晨的床",
+          "id": "Ranjang Pagi",
+          "hi": "सुबह का बिस्तर",
+          "ar": "سرير الصباح"
         },
         "descriptionI18n": {
           "en": "At waking hour, while the light is still soft.",
           "de": "Zur Aufwachstunde, wenn das Licht noch weich ist.",
           "fr": "À l'heure du réveil, quand la lumière est encore douce.",
           "es": "Al despertar, cuando la luz aún está suave.",
-          "it": "All'ora del risveglio, mentre la luce è ancora morbida."
+          "it": "All'ora del risveglio, mentre la luce è ancora morbida.",
+          "ja": "目覚めの時間、光がまだ柔らかいうちに。",
+          "ko": "막 깨어난 시간, 빛이 아직 부드러울 때.",
+          "zh-TW": "剛醒來的時刻,光線還柔柔的。",
+          "id": "Saat bangun tidur, ketika cahaya masih lembut.",
+          "hi": "जागने के वक़्त, जब रोशनी अभी नरम है।",
+          "ar": "في ساعة اليقظة، حين يكون الضوء لا يزال ناعمًا."
         }
       },
       {
@@ -77,14 +119,26 @@
           "de": "Dunkles Bett",
           "fr": "Lit obscur",
           "es": "Cama a Oscuras",
-          "it": "Letto al Buio"
+          "it": "Letto al Buio",
+          "ja": "暗闇のベッド",
+          "ko": "어둠 속 침대",
+          "zh-TW": "黑暗中的床",
+          "id": "Ranjang Gelap",
+          "hi": "अँधेरा बिस्तर",
+          "ar": "السرير المظلم"
         },
         "descriptionI18n": {
           "en": "Lights fully off — only sensation.",
           "de": "Licht ganz aus, nur Spüren.",
           "fr": "Lumières complètement éteintes, rien que les sensations.",
           "es": "Luces totalmente apagadas, solo sensaciones.",
-          "it": "Luci completamente spente, solo sensazioni."
+          "it": "Luci completamente spente, solo sensazioni.",
+          "ja": "灯りは完全に消して、感覚だけ。",
+          "ko": "불은 완전히 꺼진 채, 오직 감각만.",
+          "zh-TW": "燈全關,只剩觸感。",
+          "id": "Lampu padam total, hanya rasa.",
+          "hi": "सारी बत्तियाँ बंद, बस एहसास।",
+          "ar": "الأنوار مطفأة تمامًا، الأحاسيس وحدها."
         }
       }
     ]
@@ -97,7 +151,13 @@
       "de": "Dusche & Dampf",
       "fr": "Douche & vapeur",
       "es": "Ducha y Vapor",
-      "it": "Doccia & Vapore"
+      "it": "Doccia & Vapore",
+      "ja": "シャワー & 湯気",
+      "ko": "샤워 & 수증기",
+      "zh-TW": "淋浴 & 蒸氣",
+      "id": "Pancuran & Uap",
+      "hi": "शावर और भाप",
+      "ar": "الدش والبخار"
     },
     "color": "#0F766E",
     "icon": "🚿",
@@ -113,14 +173,26 @@
           "de": "Heiße Dusche",
           "fr": "Douche chaude",
           "es": "Ducha Caliente",
-          "it": "Doccia Calda"
+          "it": "Doccia Calda",
+          "ja": "熱いシャワー",
+          "ko": "뜨거운 샤워",
+          "zh-TW": "熱水淋浴",
+          "id": "Mandi Air Panas",
+          "hi": "गरम शावर",
+          "ar": "دشّ ساخن"
         },
         "descriptionI18n": {
           "en": "Full of steam, wet, closed in.",
           "de": "Dampfig, nass, abgeschottet.",
           "fr": "Pleine de vapeur, mouillée, enfermée.",
           "es": "Llena de vapor, mojada, cerrada.",
-          "it": "Piena di vapore, bagnata, chiusa."
+          "it": "Piena di vapore, bagnata, chiusa.",
+          "ja": "湯気に満ちて、濡れて、閉ざされた空間。",
+          "ko": "수증기 가득, 젖어 있고, 문은 닫힌 채.",
+          "zh-TW": "蒸氣瀰漫、濕潤、密閉。",
+          "id": "Penuh uap, basah, tertutup.",
+          "hi": "भाप से भरा, गीला, बंद।",
+          "ar": "مليء بالبخار، مبلّل، مغلق."
         }
       },
       {
@@ -131,14 +203,26 @@
           "de": "Wannenzeit",
           "fr": "L'heure du bain",
           "es": "Hora de la Tina",
-          "it": "Ora della Vasca"
+          "it": "Ora della Vasca",
+          "ja": "バスタブの時間",
+          "ko": "욕조 시간",
+          "zh-TW": "泡澡時光",
+          "id": "Waktu Bak Mandi",
+          "hi": "बाथटब का वक़्त",
+          "ar": "وقت حوض الاستحمام"
         },
         "descriptionI18n": {
           "en": "A filled tub, no one in a hurry.",
           "de": "Volle Wanne, niemand hat es eilig.",
           "fr": "Baignoire remplie, personne n'est pressé.",
           "es": "Tina llena, nadie tiene prisa.",
-          "it": "Vasca piena, nessuno ha fretta."
+          "it": "Vasca piena, nessuno ha fretta.",
+          "ja": "お湯を張ったバスタブ、誰も急がない。",
+          "ko": "가득 채운 욕조, 아무도 서두르지 않아.",
+          "zh-TW": "放滿水的浴缸,誰也不急。",
+          "id": "Bak terisi penuh, tak ada yang terburu-buru.",
+          "hi": "भरा हुआ टब, किसी को जल्दी नहीं।",
+          "ar": "حوض ممتلئ، ولا أحد في عجلة من أمره."
         }
       },
       {
@@ -149,14 +233,26 @@
           "de": "Nach der Dusche",
           "fr": "Après la douche",
           "es": "Después de la Ducha",
-          "it": "Dopo la Doccia"
+          "it": "Dopo la Doccia",
+          "ja": "シャワーのあと",
+          "ko": "샤워 후",
+          "zh-TW": "淋浴之後",
+          "id": "Setelah Mandi",
+          "hi": "शावर के बाद",
+          "ar": "ما بعد الدش"
         },
         "descriptionI18n": {
           "en": "Wet hair, a towel, in front of the mirror.",
           "de": "Nasse Haare, Handtuch, vor dem Spiegel.",
           "fr": "Cheveux mouillés, serviette, devant le miroir.",
           "es": "Pelo mojado, toalla, frente al espejo.",
-          "it": "Capelli bagnati, asciugamano, davanti allo specchio."
+          "it": "Capelli bagnati, asciugamano, davanti allo specchio.",
+          "ja": "濡れた髪、タオル、鏡の前。",
+          "ko": "젖은 머리, 수건, 거울 앞.",
+          "zh-TW": "濕髮、浴巾、鏡子前。",
+          "id": "Rambut basah, handuk, di depan cermin.",
+          "hi": "गीले बाल, तौलिया, आईने के सामने।",
+          "ar": "شعر مبلّل، منشفة، أمام المرآة."
         }
       },
       {
@@ -167,14 +263,26 @@
           "de": "Gartendusche",
           "fr": "Douche de jardin",
           "es": "Ducha de Jardín",
-          "it": "Doccia in Giardino"
+          "it": "Doccia in Giardino",
+          "ja": "庭のシャワー",
+          "ko": "정원 샤워",
+          "zh-TW": "庭院淋浴",
+          "id": "Pancuran Taman",
+          "hi": "बगीचे का शावर",
+          "ar": "دشّ الحديقة"
         },
         "descriptionI18n": {
           "en": "An outdoor shower on a summer night.",
           "de": "Sommernacht, Dusche unter freiem Himmel.",
           "fr": "Douche en plein air par une nuit d'été.",
           "es": "Ducha al aire libre en una noche de verano.",
-          "it": "Doccia all'aperto in una notte d'estate."
+          "it": "Doccia all'aperto in una notte d'estate.",
+          "ja": "夏の夜、屋外でのシャワー。",
+          "ko": "여름밤, 야외에서의 샤워.",
+          "zh-TW": "夏夜,露天下沖澡。",
+          "id": "Mandi di udara terbuka, malam musim panas.",
+          "hi": "गर्मी की रात में खुले आसमान तले शावर।",
+          "ar": "دشّ في الهواء الطلق في ليلة صيف."
         }
       }
     ]
@@ -187,7 +295,13 @@
       "de": "Balkonnacht",
       "fr": "Nuit au balcon",
       "es": "Noche en el Balcón",
-      "it": "Notte sul Balcone"
+      "it": "Notte sul Balcone",
+      "ja": "バルコニーの夜",
+      "ko": "발코니의 밤",
+      "zh-TW": "陽台之夜",
+      "id": "Malam di Balkon",
+      "hi": "बालकनी की रात",
+      "ar": "ليلة الشرفة"
     },
     "color": "#4338CA",
     "icon": "🌃",
@@ -203,14 +317,26 @@
           "de": "Unter Sternen",
           "fr": "Sous les étoiles",
           "es": "Bajo las Estrellas",
-          "it": "Sotto le Stelle"
+          "it": "Sotto le Stelle",
+          "ja": "星の下で",
+          "ko": "별 아래",
+          "zh-TW": "星空下",
+          "id": "Di Bawah Bintang",
+          "hi": "तारों के नीचे",
+          "ar": "تحت النجوم"
         },
         "descriptionI18n": {
           "en": "The balcony, the dark, just the two of you.",
           "de": "Balkon, Dunkelheit, nur ihr zwei.",
           "fr": "Le balcon, l'obscurité, vous seuls.",
           "es": "El balcón, la oscuridad, solo ustedes.",
-          "it": "Balcone, buio, solo voi due."
+          "it": "Balcone, buio, solo voi due.",
+          "ja": "バルコニー、闇、二人だけ。",
+          "ko": "발코니, 어둠, 오직 둘뿐.",
+          "zh-TW": "陽台、黑夜,只有你們。",
+          "id": "Balkon, gelap, hanya kalian berdua.",
+          "hi": "बालकनी, अँधेरा, सिर्फ़ तुम दोनों।",
+          "ar": "الشرفة، الظلام، أنتما وحدكما."
         }
       },
       {
@@ -221,14 +347,26 @@
           "de": "Nach dem Regen",
           "fr": "Après la pluie",
           "es": "Después de la Lluvia",
-          "it": "Dopo la Pioggia"
+          "it": "Dopo la Pioggia",
+          "ja": "雨上がり",
+          "ko": "비 온 뒤",
+          "zh-TW": "雨後",
+          "id": "Setelah Hujan",
+          "hi": "बारिश के बाद",
+          "ar": "بعد المطر"
         },
         "descriptionI18n": {
           "en": "Wet balcony, clean air.",
           "de": "Nasser Balkon, klare Luft.",
           "fr": "Balcon mouillé, air pur.",
           "es": "Balcón mojado, aire limpio.",
-          "it": "Balcone bagnato, aria pulita."
+          "it": "Balcone bagnato, aria pulita.",
+          "ja": "濡れたバルコニー、澄んだ空気。",
+          "ko": "젖은 발코니, 맑은 공기.",
+          "zh-TW": "濕潤的陽台,清新的空氣。",
+          "id": "Balkon basah, udara segar.",
+          "hi": "गीली बालकनी, ताज़ी हवा।",
+          "ar": "شرفة مبلّلة، وهواء نقي."
         }
       },
       {
@@ -239,14 +377,26 @@
           "de": "Stadtlichter",
           "fr": "Lumières de la ville",
           "es": "Luces de la Ciudad",
-          "it": "Luci della Città"
+          "it": "Luci della Città",
+          "ja": "街の灯り",
+          "ko": "도시의 불빛",
+          "zh-TW": "城市燈火",
+          "id": "Lampu Kota",
+          "hi": "शहर की रोशनियाँ",
+          "ar": "أضواء المدينة"
         },
         "descriptionI18n": {
           "en": "Lights in the distance, the two of you up close.",
           "de": "In der Ferne Lichter, ganz nah ihr beide.",
           "fr": "Les lumières au loin, vous tout près.",
           "es": "Luces a lo lejos, ustedes muy cerca.",
-          "it": "Luci lontane, voi vicini."
+          "it": "Luci lontane, voi vicini.",
+          "ja": "遠くに灯り、近くに二人。",
+          "ko": "저 멀리 불빛, 바로 곁에 너희 둘.",
+          "zh-TW": "遠處燈光,近處是你們。",
+          "id": "Lampu di kejauhan, kalian di dekat.",
+          "hi": "दूर रोशनियाँ, पास तुम।",
+          "ar": "الأضواء بعيدة، وأنتما قريبان."
         }
       },
       {
@@ -257,14 +407,26 @@
           "de": "Kurz vor Morgen",
           "fr": "Vers le matin",
           "es": "Cerca del Amanecer",
-          "it": "Verso il Mattino"
+          "it": "Verso il Mattino",
+          "ja": "夜明け前",
+          "ko": "새벽 가까이",
+          "zh-TW": "破曉之前",
+          "id": "Menjelang Pagi",
+          "hi": "सुबह के क़रीब",
+          "ar": "قُبيل الفجر"
         },
         "descriptionI18n": {
           "en": "Right before the day breaks.",
           "de": "Direkt bevor der Tag anbricht.",
           "fr": "Juste avant que le jour ne se lève.",
           "es": "Justo antes de que raye el día.",
-          "it": "Appena prima dell'alba."
+          "it": "Appena prima dell'alba.",
+          "ja": "空が白む直前。",
+          "ko": "날이 밝기 바로 직전.",
+          "zh-TW": "天還沒亮的那一刻。",
+          "id": "Tepat sebelum fajar menyingsing.",
+          "hi": "भोर होने से ठीक पहले।",
+          "ar": "قبل أن يطلع النهار بلحظات."
         }
       }
     ]
@@ -277,7 +439,13 @@
       "de": "Kerzenschein",
       "fr": "Lueur des bougies",
       "es": "Luz de Velas",
-      "it": "Lume di Candela"
+      "it": "Lume di Candela",
+      "ja": "キャンドルの灯り",
+      "ko": "촛불",
+      "zh-TW": "燭光",
+      "id": "Cahaya Lilin",
+      "hi": "मोमबत्ती की रोशनी",
+      "ar": "ضوء الشموع"
     },
     "color": "#F59E0B",
     "icon": "🕯️",
@@ -293,14 +461,26 @@
           "de": "Mitten im Wohnzimmer",
           "fr": "Au milieu du salon",
           "es": "El Centro de la Sala",
-          "it": "Al Centro del Salotto"
+          "it": "Al Centro del Salotto",
+          "ja": "リビングの真ん中",
+          "ko": "거실 한가운데",
+          "zh-TW": "客廳中央",
+          "id": "Tengah Ruang Tamu",
+          "hi": "कमरे के बीचों-बीच",
+          "ar": "وسط الصالة"
         },
         "descriptionI18n": {
           "en": "Candles in a row, on the rug.",
           "de": "Kerzen aufgereiht, auf dem Teppich.",
           "fr": "Bougies alignées, sur le tapis.",
           "es": "Velas alineadas, sobre la alfombra.",
-          "it": "Candele allineate, sul tappeto."
+          "it": "Candele allineate, sul tappeto.",
+          "ja": "キャンドルが並び、ラグの上で。",
+          "ko": "촛불이 줄지어 있고, 러그 위.",
+          "zh-TW": "蠟燭排開,就在地毯上。",
+          "id": "Lilin berjejer, di atas karpet.",
+          "hi": "मोमबत्तियाँ कतार में, कालीन के ऊपर।",
+          "ar": "شموع مصفوفة، فوق السجادة."
         }
       },
       {
@@ -311,14 +491,26 @@
           "de": "Vor dem Feuer",
           "fr": "Face au feu",
           "es": "Frente al Fuego",
-          "it": "Davanti al Fuoco"
+          "it": "Davanti al Fuoco",
+          "ja": "炎の前で",
+          "ko": "불꽃 앞에서",
+          "zh-TW": "爐火前",
+          "id": "Di Hadapan Api",
+          "hi": "आग के सामने",
+          "ar": "أمام النار"
         },
         "descriptionI18n": {
           "en": "A fireplace, or a big candle.",
           "de": "Kamin oder große Kerze.",
           "fr": "Cheminée ou grande bougie.",
           "es": "Chimenea o una vela grande.",
-          "it": "Camino o una grande candela."
+          "it": "Camino o una grande candela.",
+          "ja": "暖炉、または大きなキャンドル。",
+          "ko": "벽난로 혹은 큰 초.",
+          "zh-TW": "壁爐,或一支大蠟燭。",
+          "id": "Perapian atau lilin besar.",
+          "hi": "अंगीठी या बड़ी मोमबत्ती।",
+          "ar": "مدفأة أو شمعة كبيرة."
         }
       },
       {
@@ -329,14 +521,26 @@
           "de": "Vor dem Spiegel",
           "fr": "Face au miroir",
           "es": "Frente al Espejo",
-          "it": "Davanti allo Specchio"
+          "it": "Davanti allo Specchio",
+          "ja": "鏡の前で",
+          "ko": "거울 앞에서",
+          "zh-TW": "鏡子前",
+          "id": "Di Depan Cermin",
+          "hi": "आईने के सामने",
+          "ar": "أمام المرآة"
         },
         "descriptionI18n": {
           "en": "Reflections in candlelight.",
           "de": "Spiegelungen im Kerzenlicht.",
           "fr": "Reflets à la lueur des bougies.",
           "es": "Reflejos a la luz de las velas.",
-          "it": "Riflessi a lume di candela."
+          "it": "Riflessi a lume di candela.",
+          "ja": "キャンドルの灯りに映る姿。",
+          "ko": "촛불 속에 비치는 그림자들.",
+          "zh-TW": "燭光下的倒影。",
+          "id": "Pantulan dalam cahaya lilin.",
+          "hi": "मोमबत्ती की रोशनी में अक्स।",
+          "ar": "انعكاسات على ضوء الشموع."
         }
       },
       {
@@ -347,14 +551,26 @@
           "de": "Gedämpfte Musik",
           "fr": "Musique tamisée",
           "es": "Música Tenue",
-          "it": "Musica Soffusa"
+          "it": "Musica Soffusa",
+          "ja": "ほの暗い音楽",
+          "ko": "희미한 음악",
+          "zh-TW": "低吟的音樂",
+          "id": "Musik Redup",
+          "hi": "मद्धम संगीत",
+          "ar": "موسيقى خافتة"
         },
         "descriptionI18n": {
           "en": "Quiet, just candles + whispers.",
           "de": "Leise, nur Kerze + Flüstern.",
           "fr": "Silence, rien que la bougie + les chuchotements.",
           "es": "Silencio, solo velas + susurros.",
-          "it": "Silenzio, solo candele + sussurri."
+          "it": "Silenzio, solo candele + sussurri.",
+          "ja": "静かに、キャンドルとささやきだけ。",
+          "ko": "조용히, 오직 촛불 + 속삭임.",
+          "zh-TW": "靜靜地,只有燭光 + 低語。",
+          "id": "Sunyi, hanya lilin + bisikan.",
+          "hi": "ख़ामोशी, बस मोमबत्ती + फुसफुसाहट।",
+          "ar": "صمت، فقط شمعة + همس."
         }
       }
     ]
@@ -367,7 +583,13 @@
       "de": "Hotelzimmer",
       "fr": "Chambre d'hôtel",
       "es": "Habitación de Hotel",
-      "it": "Camera d'Hotel"
+      "it": "Camera d'Hotel",
+      "ja": "ホテルの部屋",
+      "ko": "호텔 방",
+      "zh-TW": "飯店房間",
+      "id": "Kamar Hotel",
+      "hi": "होटल का कमरा",
+      "ar": "غرفة الفندق"
     },
     "color": "#7C2D12",
     "icon": "🏨",
@@ -383,14 +605,26 @@
           "de": "City-Hotel",
           "fr": "Hôtel en centre-ville",
           "es": "Hotel en el Centro",
-          "it": "Hotel in Centro"
+          "it": "Hotel in Centro",
+          "ja": "街中のホテル",
+          "ko": "시내 중심 호텔",
+          "zh-TW": "市中心飯店",
+          "id": "Hotel Pusat Kota",
+          "hi": "शहर के बीच का होटल",
+          "ar": "فندق وسط المدينة"
         },
         "descriptionI18n": {
           "en": "The anonymity of being strangers in a city.",
           "de": "Die Anonymität, fremd zu sein.",
           "fr": "L'anonymat d'être des inconnus.",
           "es": "El anonimato de ser extraños.",
-          "it": "L'anonimato di essere stranieri."
+          "it": "L'anonimato di essere stranieri.",
+          "ja": "よそ者である匿名の感覚。",
+          "ko": "낯선 곳이 주는 익명의 자유.",
+          "zh-TW": "身為陌生人的那份匿名感。",
+          "id": "Keanoniman yang hadir karena jadi orang asing.",
+          "hi": "अजनबी होने की वो गुमनामी।",
+          "ar": "خصوصية الغرباء ومجهوليتهم."
         }
       },
       {
@@ -401,14 +635,26 @@
           "de": "Suite mit Aussicht",
           "fr": "Suite avec vue",
           "es": "Suite con Vista",
-          "it": "Suite con Vista"
+          "it": "Suite con Vista",
+          "ja": "眺めのいいスイート",
+          "ko": "전망 좋은 스위트",
+          "zh-TW": "景觀套房",
+          "id": "Suite dengan Pemandangan",
+          "hi": "नज़ारे वाला सुइट",
+          "ar": "جناح بإطلالة"
         },
         "descriptionI18n": {
           "en": "Window side, bed, view.",
           "de": "Am Fenster, Bett, Ausblick.",
           "fr": "Au bord de la vitre, le lit, la vue.",
           "es": "Junto al ventanal, la cama, la vista.",
-          "it": "Vicino alla vetrata, letto, panorama."
+          "it": "Vicino alla vetrata, letto, panorama.",
+          "ja": "窓際、ベッド、景色。",
+          "ko": "창가, 침대, 그리고 풍경.",
+          "zh-TW": "落地窗邊、床、風景。",
+          "id": "Tepi jendela, ranjang, pemandangan.",
+          "hi": "खिड़की के किनारे, बिस्तर, नज़ारा।",
+          "ar": "جانب الزجاج، السرير، المنظر."
         }
       },
       {
@@ -419,14 +665,26 @@
           "de": "Kleines Boutique",
           "fr": "Petite boutique",
           "es": "Pequeño Boutique",
-          "it": "Piccolo Boutique"
+          "it": "Piccolo Boutique",
+          "ja": "小さなブティックホテル",
+          "ko": "작은 부티크",
+          "zh-TW": "小型精品旅店",
+          "id": "Boutique Mungil",
+          "hi": "छोटा बुटीक",
+          "ar": "بوتيك صغير"
         },
         "descriptionI18n": {
           "en": "Full of character, intimate, one night.",
           "de": "Charaktervoll, intim, nur eine Nacht.",
           "fr": "Avec du caractère, intime, pour une nuit.",
           "es": "Con carácter, íntimo, por una noche.",
-          "it": "Di carattere, intimo, per una notte."
+          "it": "Di carattere, intimo, per una notte.",
+          "ja": "個性的で、親密で、一夜限り。",
+          "ko": "개성 있고, 아늑하고, 하룻밤짜리.",
+          "zh-TW": "有個性、親密、只住一晚。",
+          "id": "Berkarakter, intim, satu malam saja.",
+          "hi": "अपने अंदाज़ वाला, घरेलू, एक रात के लिए।",
+          "ar": "ذو طابع، حميمي، ليلة واحدة."
         }
       },
       {
@@ -437,14 +695,26 @@
           "de": "Hotel am Meer",
           "fr": "Hôtel en bord de mer",
           "es": "Hotel Frente al Mar",
-          "it": "Hotel sul Mare"
+          "it": "Hotel sul Mare",
+          "ja": "海辺のホテル",
+          "ko": "바닷가 호텔",
+          "zh-TW": "海濱飯店",
+          "id": "Hotel Tepi Laut",
+          "hi": "समंदर किनारे का होटल",
+          "ar": "فندق على البحر"
         },
         "descriptionI18n": {
           "en": "The sound of waves + drawn curtains.",
           "de": "Wellenrauschen + zugezogene Vorhänge.",
           "fr": "Le bruit des vagues + rideaux tirés.",
           "es": "Sonido de las olas + cortinas cerradas.",
-          "it": "Suono delle onde + tende chiuse."
+          "it": "Suono delle onde + tende chiuse.",
+          "ja": "波の音とカーテンを閉め切った部屋。",
+          "ko": "파도 소리 + 닫힌 커튼.",
+          "zh-TW": "海浪聲 + 拉上的窗簾。",
+          "id": "Suara ombak + tirai tertutup.",
+          "hi": "लहरों की आवाज़ + बंद परदे।",
+          "ar": "صوت الأمواج + ستائر مُسدَلة."
         }
       }
     ]
@@ -457,7 +727,13 @@
       "de": "Geheimer Ort",
       "fr": "Lieu secret",
       "es": "Lugar Secreto",
-      "it": "Luogo Segreto"
+      "it": "Luogo Segreto",
+      "ja": "秘密の場所",
+      "ko": "비밀 장소",
+      "zh-TW": "秘密地點",
+      "id": "Tempat Rahasia",
+      "hi": "छुपी हुई जगह",
+      "ar": "مكان سرّي"
     },
     "color": "#831843",
     "icon": "🗝️",
@@ -473,14 +749,26 @@
           "de": "Nach Feierabend im Büro",
           "fr": "Après le bureau",
           "es": "Después de la Oficina",
-          "it": "Dopo l'Ufficio"
+          "it": "Dopo l'Ufficio",
+          "ja": "オフィスのあと",
+          "ko": "퇴근 후 사무실",
+          "zh-TW": "下班後的辦公室",
+          "id": "Sepulang Jam Kantor",
+          "hi": "ऑफ़िस के बाद",
+          "ar": "ما بعد المكتب"
         },
         "descriptionI18n": {
           "en": "An empty office at night, a forbidden feeling.",
           "de": "Leeres Büro, Nacht, das Gefühl des Verbotenen.",
           "fr": "Bureau vide, la nuit, un parfum d'interdit.",
           "es": "Oficina vacía, de noche, sensación de lo prohibido.",
-          "it": "Ufficio vuoto, notte, sensazione di proibito."
+          "it": "Ufficio vuoto, notte, sensazione di proibito.",
+          "ja": "誰もいないオフィス、夜、禁じられた感覚。",
+          "ko": "빈 사무실, 밤, 금지된 느낌.",
+          "zh-TW": "空蕩的辦公室、夜晚、禁忌感。",
+          "id": "Kantor kosong, malam, rasa terlarang.",
+          "hi": "ख़ाली ऑफ़िस, रात, मनाही का एहसास।",
+          "ar": "مكتب فارغ، ليل، إحساس بالممنوع."
         }
       },
       {
@@ -491,14 +779,26 @@
           "de": "Im Auto",
           "fr": "Dans la voiture",
           "es": "Dentro del Auto",
-          "it": "In Auto"
+          "it": "In Auto",
+          "ja": "車の中",
+          "ko": "차 안",
+          "zh-TW": "車內",
+          "id": "Di Dalam Mobil",
+          "hi": "गाड़ी के अंदर",
+          "ar": "داخل السيارة"
         },
         "descriptionI18n": {
           "en": "Parked, windows up.",
           "de": "Geparkt, Scheiben beschlagen.",
           "fr": "Garée, vitres fermées.",
           "es": "Estacionado, ventanas cerradas.",
-          "it": "Parcheggiata, finestrini chiusi."
+          "it": "Parcheggiata, finestrini chiusi.",
+          "ja": "駐車した車、窓は閉め切って。",
+          "ko": "주차된 차, 창문은 닫혀 있어.",
+          "zh-TW": "停好的車,窗戶關上。",
+          "id": "Terparkir, kaca tertutup.",
+          "hi": "पार्क की हुई, शीशे बंद।",
+          "ar": "متوقّفة، والنوافذ مغلقة."
         }
       },
       {
@@ -509,14 +809,26 @@
           "de": "Verlassener Raum",
           "fr": "Pièce abandonnée",
           "es": "Cuarto Abandonado",
-          "it": "Stanza Abbandonata"
+          "it": "Stanza Abbandonata",
+          "ja": "打ち捨てられた部屋",
+          "ko": "버려진 방",
+          "zh-TW": "廢棄的房間",
+          "id": "Ruangan Terbengkalai",
+          "hi": "वीरान कमरा",
+          "ar": "غرفة مهجورة"
         },
         "descriptionI18n": {
           "en": "Somewhere no one goes — you're the ones discovering it.",
           "de": "Wo sonst niemand hingeht, ihr entdeckt ihn.",
           "fr": "Un endroit où personne ne va, vous l'explorez.",
           "es": "Donde nadie entra, ustedes lo descubren.",
-          "it": "Dove nessuno entra, la state scoprendo voi."
+          "it": "Dove nessuno entra, la state scoprendo voi.",
+          "ja": "誰も立ち入らない場所を、二人で見つけて。",
+          "ko": "아무도 들어오지 않는 곳, 둘이서 탐험해.",
+          "zh-TW": "沒人進去過,由你們來探索。",
+          "id": "Tak pernah dijamah siapa pun, kalian yang menjelajah.",
+          "hi": "जहाँ कोई नहीं आता, तुम दोनों खोज रहे हो।",
+          "ar": "لم يدخلها أحد، وأنتما تكتشفانها."
         }
       },
       {
@@ -527,14 +839,26 @@
           "de": "Überraschungsadresse",
           "fr": "Adresse surprise",
           "es": "Dirección Sorpresa",
-          "it": "Indirizzo a Sorpresa"
+          "it": "Indirizzo a Sorpresa",
+          "ja": "サプライズの住所",
+          "ko": "서프라이즈 주소",
+          "zh-TW": "驚喜地址",
+          "id": "Alamat Kejutan",
+          "hi": "सरप्राइज़ पता",
+          "ar": "عنوان مفاجأة"
         },
         "descriptionI18n": {
           "en": "One of you picks the place; the other is surprised.",
           "de": "Eine/r sucht den Ort aus, der/die andere wird überrascht.",
           "fr": "L'un choisit le lieu, l'autre se laisse surprendre.",
           "es": "Uno elige el lugar, el otro se sorprende.",
-          "it": "Uno sceglie il luogo, l'altro resta sorpreso."
+          "it": "Uno sceglie il luogo, l'altro resta sorpreso.",
+          "ja": "片方が場所を選び、もう片方は驚かされる。",
+          "ko": "한 사람이 장소를 고르고, 다른 사람은 놀라게 돼.",
+          "zh-TW": "一方挑地點,另一方被驚喜。",
+          "id": "Satu pihak memilih tempatnya, yang lain terkejut.",
+          "hi": "एक जगह चुनता है, दूसरा हैरान होता है।",
+          "ar": "طرف يختار المكان، والآخر يُفاجَأ."
         }
       }
     ]

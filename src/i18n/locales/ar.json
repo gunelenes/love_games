@@ -1,0 +1,231 @@
+{
+  "app": {
+    "loading": "جارٍ التحميل…"
+  },
+  "common": {
+    "close": "إغلاق",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "delete": "حذف",
+    "save": "حفظ",
+    "retry": "إعادة المحاولة",
+    "error": "خطأ:"
+  },
+  "home": {
+    "eyebrow": "للثنائي",
+    "title": "Love Games",
+    "subtitle": "ألعاب صغيرة تلعبانها معًا",
+    "footer": "المزيد من الألعاب قادمة ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "العجلة",
+      "tagline": "أدِرها واكتشف فئتك"
+    },
+    "dice": {
+      "name": "النرد",
+      "tagline": "ارمِه — ودع المفاجأة تجدك"
+    },
+    "cards": {
+      "name": "البطاقات",
+      "tagline": "اختر فئاتك واسحب بطاقة"
+    },
+    "boxes": {
+      "name": "الصناديق",
+      "tagline": "اخلطا الملاحظات وفاجئا بعضكما"
+    }
+  },
+  "wheel": {
+    "eyebrow": "العجلة",
+    "title": "أدِر العجلة",
+    "spinPrompt": "اضغط الزر في المنتصف لتدويرها",
+    "spinBtn": "أدِر",
+    "spinAgain": "أدِر مرة أخرى",
+    "lastLabel": "الأخيرة:",
+    "settings": {
+      "title": "إعدادات العجلة",
+      "summary": "{{active}} / {{total}} مفعّلة · الحد الأدنى {{min}}",
+      "promptsCount": "{{count}} فكرة",
+      "lockNote": "واحدة من آخر {{min}} فئات — لا يمكن إيقافها"
+    }
+  },
+  "dice": {
+    "eyebrow": "النرد",
+    "title": "ارمِ النرد",
+    "rollLabel": "ارمِ",
+    "newRoll": "رمية جديدة",
+    "poster": "من خارج الصندوق"
+  },
+  "cards": {
+    "eyebrow": "البطاقات",
+    "title": "اسحب بطاقة",
+    "drawCard": "اسحب بطاقة",
+    "newCard": "بطاقة جديدة",
+    "hint": "اضغط على المجموعة أدناه ← واسحب بطاقة",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} فئة · {{prompts}} فكرة",
+    "categoryFallback": "فئة",
+    "footerPrompt": "اسحب أخرى",
+    "settings": {
+      "title": "إعدادات البطاقات",
+      "summary": "{{active}} / {{total}} مفعّلة · الحد الأدنى {{min}}",
+      "promptsCount": "{{count}} فكرة",
+      "lockNote": "واحدة من آخر {{min}} — لا يمكن إيقافها"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "الصناديق",
+    "lobbyTitle": "أنشئ غرفة أو انضم إليها",
+    "lobbySubtitle": "الملاحظات تتزامن مباشرة بين هاتفين — دون الحاجة إلى QR",
+    "createNew": "إنشاء غرفة جديدة",
+    "createNewSub": "احصل على رمز من 6 أرقام وشاركه مع شريكك",
+    "join": "الانضمام إلى غرفة",
+    "joinSub": "أدخل الرمز الذي أعطاك إياه شريكك",
+    "generatingCode": "جارٍ الإنشاء…",
+    "generateCode": "إنشاء الرمز",
+    "back": "رجوع",
+    "codeReadyTitle": "رمزك جاهز 🎉",
+    "codeReadyText": "شارك هذا الرمز مع شريكك. سيختار \"الانضمام إلى غرفة\" ويدخله.",
+    "goToBoxes": "اذهب إلى الصناديق",
+    "joinTitle": "الانضمام إلى غرفة",
+    "joinText": "أدخل الرمز المكوّن من 6 أرقام الذي أعطاك إياه شريكك.",
+    "joining": "جارٍ الانضمام…",
+    "joinBtn": "انضم",
+    "identityWait": "الهوية ليست جاهزة بعد، أعد المحاولة بعد ثوانٍ",
+    "roomNotFound": "لا توجد غرفة بهذا الرمز. تحقق منه.",
+    "roomFull": "الغرفة ممتلئة (شخصان). جرّب غرفة أخرى.",
+    "listEyebrow": "الصناديق المشتركة",
+    "listRoomLabel": "الغرفة",
+    "listBoth": "2/2 شخصان",
+    "listWaiting": "1/2 · في انتظار الشريك",
+    "listLiveSync": "الملاحظات تتزامن مباشرة",
+    "listGiveCode": "أعطِ الرمز لشريكك ليتصل",
+    "leaveRoom": "مغادرة الغرفة",
+    "leaveConfirmTitle": "مغادرة الغرفة",
+    "leaveConfirmText": "سيُحذف رابط الغرفة من هذا الهاتف. تبقى الصناديق على Firestore — يمكنك الانضمام مجددًا بالرمز.",
+    "cancel": "إلغاء",
+    "leave": "مغادرة",
+    "newBox": "صندوق جديد",
+    "loading": "جارٍ التحميل…",
+    "error": "خطأ:",
+    "noBoxes": "لا توجد صناديق بعد",
+    "noBoxesHint": "أنشئ صندوقًا جديدًا، أضف ملاحظات، واخلطها مع شريكك",
+    "boxCardMeta": "{{mine}} لك · {{partner}} للشريك",
+    "ready": "جاهز",
+    "notesCount": "{{count}} ملاحظة",
+    "createBoxTitle": "صندوق جديد",
+    "createBoxSub": "امنح صندوقك اسمًا وموضوعًا",
+    "namePlaceholder": "مثلاً: ليلة أفلام",
+    "create": "إنشاء",
+    "boxNotFound": "الصندوق غير موجود",
+    "yours": "ملاحظاتك",
+    "newNotePlaceholder": "اكتب ملاحظة جديدة…",
+    "add": "إضافة",
+    "emptyNote": "لا توجد ملاحظات بعد. ابدأ الكتابة في الأعلى.",
+    "partner": "شريكك",
+    "partnerNotesCount": "{{count}} ملاحظة",
+    "partnerNotJoined": "لم ينضم إلى الغرفة بعد",
+    "partnerReady": "الشريك جاهز ✨",
+    "partnerNotConfirmed": "لم يؤكد بعد",
+    "partnerNoNotes": "لم يُضِف ملاحظات بعد",
+    "youConfirmed": "أنت ✓ ({{count}})",
+    "youCount": "أنت {{count}}",
+    "partnerConfirmed": "الشريك ✓ ({{count}})",
+    "partnerCount": "الشريك {{count}}",
+    "partnerWaiting": "في انتظار الشريك",
+    "notesDone": "انتهيت من ملاحظاتي",
+    "editNotes": "تعديل ملاحظاتي",
+    "editNotesWaiting": "تعديل ملاحظاتي · الشريك لم يؤكد بعد",
+    "shuffle": "اخلط",
+    "revealEyebrow": "من خارج الصندوق",
+    "close": "إغلاق",
+    "shuffleAgain": "اخلط مرة أخرى",
+    "deleteBoxTitle": "حذف الصندوق",
+    "deleteBoxText": "حذف \"{{name}}\" وكل ملاحظاته؟ سيُحذف من الهاتفين."
+  },
+  "trackBar": {
+    "trackLevelInfo": "المستوى: {{track}} م{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "الحميمية",
+      "tagline": "لمسة عاطفية وجسدية",
+      "levels": {
+        "1": {
+          "name": "همس",
+          "hint": "غزل، تلاقي عيون، رسائل خفية"
+        },
+        "2": {
+          "name": "قرب",
+          "hint": "عناقات، قبلات، احتضان"
+        },
+        "3": {
+          "name": "أسرار",
+          "hint": "مشاركة الخيال واستكشاف الحواس"
+        },
+        "4": {
+          "name": "لهب",
+          "hint": "لحظات ملتهبة، بطيئة وعميقة"
+        },
+        "5": {
+          "name": "ارتباط",
+          "hint": "اندماج جسدي وروحي عميق"
+        }
+      }
+    },
+    "cesur": {
+      "label": "الاستكشاف",
+      "tagline": "تخطَّ الحدود",
+      "levels": {
+        "1": {
+          "name": "شرارة",
+          "hint": "تحديات مُثيرة"
+        },
+        "2": {
+          "name": "توهّج",
+          "hint": "عصبة عينين، تعرٍّ بطيء، حواس"
+        },
+        "3": {
+          "name": "جرأة",
+          "hint": "موجِّه/تابع، لمسات خفيفة"
+        },
+        "4": {
+          "name": "قمة",
+          "hint": "أدوار محددة ومشاهد منظّمة"
+        },
+        "5": {
+          "name": "أسطورة",
+          "hint": "متقدّم، طقوس وبروتوكول، ديناميكية عميقة"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "محتوى للبالغين",
+    "body": "هذا التطبيق مخصص **للبالغين من 18 عامًا فأكثر**. يحتوي على مواضيع جنسية وحميمية واقتراحات ذات طابع جريء. للمتابعة:",
+    "checkbox": "عمري 18 عامًا فأكثر، وسأستخدم التطبيق مع **شريكي** بتراضٍ متبادل.",
+    "accept": "موافق ومتابعة",
+    "saving": "جارٍ الحفظ…",
+    "footer": "تُحفظ هذه الموافقة على جهازك فقط. لا يُرسل أي حساب أو معلومات موقع."
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "يلزم إعادة التشغيل",
+    "rtlReloadBody": "العربية تستخدم تخطيطًا من اليمين إلى اليسار. يحتاج التطبيق إلى إعادة التشغيل لتطبيق تغيير الاتجاه.",
+    "rtlReloadButton": "أعد التشغيل الآن",
+    "close": "إغلاق"
+  }
+}

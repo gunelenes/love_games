@@ -7,7 +7,13 @@
       "de": "Gespräch der Hände",
       "fr": "La Conversation des Mains",
       "es": "La Charla de las Manos",
-      "it": "Il Dialogo delle Mani"
+      "it": "Il Dialogo delle Mani",
+      "ja": "手の対話",
+      "ko": "손들의 대화",
+      "zh-TW": "雙手的對話",
+      "id": "Obrolan Tangan",
+      "hi": "हाथों की बातचीत",
+      "ar": "حديث الأيادي"
     },
     "color": "#F97316",
     "icon": "🤲",
@@ -62,6 +68,54 @@
         "Appoggiate le mani l'una contro l'altra (dita aperte, palmi a contatto). Per 1 minuto sentite solo il calore.",
         "Fai un massaggio alle mani del tuo partner per 2 minuti — palmo, polso, nocche, uno dopo l'altro. Lui/lei tenga gli occhi chiusi.",
         "Porta la mano del tuo partner alle tue labbra. Dai un bacio leggero sulla punta di ogni dito — molto lentamente, uno a uno."
+      ],
+      "ja": [
+        "向かい合って手を組んで。30秒間、指だけで語り合う — 握る、軽く触れる、爪で跡をつける。",
+        "パートナーの手を自分の手のひらに乗せて。指を一本ずつ、名前をつけながら撫でる：\"この指は私の一番好きな…\"",
+        "パートナーの手のひらに一文を\"書く\" — 指先で一文字ずつ。相手に当ててもらって。",
+        "手のひらを合わせて（指は開いて、手のひらは触れたまま）。1分間、ただ温もりだけを感じて。",
+        "パートナーに2分間ハンドマッサージ — 手のひら、手首、指の関節を順番に。相手は目を閉じて。",
+        "パートナーの手を自分の唇へ運んで。指先に一本ずつ、軽いキスを — とてもゆっくり、一本ずつ。"
+      ],
+      "ko": [
+        "서로의 손을 맞잡아. 30초 동안 손가락으로만 이야기해 — 꽉 쥐기, 가벼운 터치, 손톱으로 흔적 남기기.",
+        "파트너의 손을 손바닥에 올려. 손가락 하나하나 이름을 붙여가며 쓰다듬어: \"이 손가락이 내가 제일 좋아하는…\"",
+        "파트너의 손바닥 안에 한 문장을 \"써봐\" — 손끝으로 한 글자씩. 상대가 맞혀보게 해.",
+        "두 손을 서로 맞대어봐 (손가락은 벌리고, 손바닥은 닿게). 1분 동안 오직 온기만 느껴.",
+        "파트너에게 2분 동안 손 마사지를 해줘 — 손바닥, 손목, 손가락 관절 순서대로. 상대는 눈을 감게 해.",
+        "파트너의 손을 입술로 가져가. 손가락 끝 하나하나에 가벼운 입맞춤 — 아주 천천히, 하나씩."
+      ],
+      "zh-TW": [
+        "面對面交握彼此的手。30 秒內只用手指交談 — 輕捏、淺觸、用指甲劃痕。",
+        "把伴侶的手放在你的掌心。依序撫摸每一根手指，一邊叫出它的名字：\"這根手指是我最喜歡的……\"",
+        "用指尖在伴侶的掌心裡一個字一個字地「寫」下一句話。讓他／她猜猜看。",
+        "雙手相靠（手指張開，掌心相貼）。1 分鐘內只感受彼此的溫度。",
+        "為伴侶做 2 分鐘的手部按摩 — 掌心、手腕、指關節依序來。讓他／她閉上眼睛。",
+        "把伴侶的手拉到你的唇邊。在每根手指的指尖輕輕一吻 — 非常慢，一根接一根。"
+      ],
+      "id": [
+        "Satukan tangan kalian saling berhadapan. Selama 30 detik, bicaralah hanya dengan jari — remasan, sentuhan ringan, jejak kuku.",
+        "Ambil tangan pasanganmu ke telapakmu. Belai setiap jarinya bergantian sambil menamainya: \"jari ini yang paling kusuka…\"",
+        "\"Tulis\" sebuah kalimat di telapak tangan pasanganmu — huruf demi huruf dengan ujung jarimu. Biar dia menebak.",
+        "Rapatkan tangan kalian (jari terbuka, telapak bersentuhan). Selama 1 menit, rasakan hanya kehangatannya.",
+        "Pijat tangan pasanganmu selama 2 menit — telapak, pergelangan, buku jari secara bergantian. Biar dia memejamkan mata.",
+        "Bawa tangan pasanganmu ke bibirmu. Berikan kecupan ringan di ujung setiap jarinya — sangat perlahan, satu per satu."
+      ],
+      "hi": [
+        "आमने-सामने अपने हाथ जोड़ो। 30 सेकंड तक सिर्फ उंगलियों से बात करो — हल्का दबाव, नरम स्पर्श, नाखून से निशान।",
+        "अपने पार्टनर का हाथ अपनी हथेली में लो। हर उंगली को बारी-बारी से, नाम देकर सहलाओ: \"ये उंगली मेरी सबसे पसंदीदा…\"",
+        "अपने पार्टनर की हथेली में एक वाक्य \"लिखो\" — उंगली की नोक से अक्षर दर अक्षर। वो अंदाज़ा लगाए।",
+        "अपने हाथ एक-दूसरे से सटाओ (उंगलियां खुली, हथेलियां स्पर्श में)। 1 मिनट तक सिर्फ गर्माहट महसूस करो।",
+        "अपने पार्टनर को 2 मिनट तक हाथ की मालिश दो — हथेली, कलाई, उंगलियों के जोड़ बारी-बारी से। वो आंखें बंद रखे।",
+        "अपने पार्टनर का हाथ अपने होंठों तक लाओ। हर उंगली की नोक पर एक हल्का चुंबन दो — बहुत धीरे, एक-एक करके।"
+      ],
+      "ar": [
+        "شابكا أيديكما وجهاً لوجه. لمدة 30 ثانية، تحدّثا بأصابعكما فقط — ضغطة، لمسة خفيفة، أثر بالظفر.",
+        "خذ يد شريكك في راحتك. داعب كل إصبع بالترتيب وسمّه: \"هذا الإصبع هو المفضّل لديّ…\"",
+        "\"اكتب\" جملة في راحة شريكك — حرفاً حرفاً بطرف إصبعك. دعه يخمّن.",
+        "أسندا يديكما إلى بعضهما (الأصابع مفتوحة، الراحتان متلامستان). لمدة دقيقة واحدة، اشعرا بالدفء فقط.",
+        "دلّك يد شريكك لمدة دقيقتين — الراحة، المعصم، مفاصل الأصابع بالترتيب. دعه يغمض عينيه.",
+        "ارفع يد شريكك إلى شفتيك. ضع قبلة خفيفة على طرف كل إصبع — ببطء شديد، واحداً تلو الآخر."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Umarmungsstunde",
       "fr": "L'Heure des Bras",
       "es": "Hora de Abrazos",
-      "it": "L'Ora dell'Abbraccio"
+      "it": "L'Ora dell'Abbraccio",
+      "ja": "抱擁の時間",
+      "ko": "포옹의 시간",
+      "zh-TW": "擁抱時光",
+      "id": "Jam Pelukan",
+      "hi": "आग़ोश का समय",
+      "ar": "ساعة العناق"
     },
     "color": "#EA580C",
     "icon": "🤗",
@@ -128,6 +188,54 @@
         "Abbracciati l'uno all'altra, la testa di uno sulla spalla dell'altro. 1 minuto a occhi chiusi. Poi scambiatevi i ruoli.",
         "Nell'abbraccio, dondolatevi insieme — piano, al vostro ritmo. Niente canzone, solo il ritmo del respiro.",
         "Mentre siete abbracciati, disegna lentamente dei cerchi sulla schiena del tuo partner — per 30 secondi. Poi lascia che faccia lo stesso a te."
+      ],
+      "ja": [
+        "パートナーと抱き合って、3分間何も言わない。ただ呼吸を揃えて。",
+        "パートナーの頭を胸にあずけさせて、2分間髪を撫でる。その間に言う言葉は\"愛してる\"の一言だけ。",
+        "並んで横になって、後ろから抱きしめ合う。5分間この体勢で、話さずに。",
+        "向かい合って抱き合い、一方の頭をもう一方の肩に。1分間目を閉じて。それから役割を交代。",
+        "抱き合いながら揺れる — ゆっくり、リズムは二人のもの。曲の代わりに呼吸のリズムだけで。",
+        "抱き合いながらパートナーの背中にゆっくり円を描いて — 30秒。それから相手に同じことをしてもらう。"
+      ],
+      "ko": [
+        "파트너를 안고 3분 동안 아무 말도 하지 마. 그저 숨결을 맞춰봐.",
+        "파트너의 머리를 가슴에 기대게 하고, 2분 동안 머리카락을 쓰다듬어. 그 사이 \"사랑해\" 한 마디만.",
+        "나란히 누워, 뒤에서 서로를 감싸 안아. 5분 동안 말없이 이 자세로 있어.",
+        "마주 안은 채, 한 사람의 머리를 다른 사람의 어깨에. 1분 눈 감고. 그다음 역할을 바꿔봐.",
+        "품 안에서 파트너와 함께 흔들려 — 천천히, 리듬은 너희 둘의 것. 노래 대신 오직 숨결의 리듬.",
+        "안고 있을 때 파트너의 등에 천천히 원을 그려 — 30초. 그다음 상대가 너에게 똑같이 해주게 해."
+      ],
+      "zh-TW": [
+        "與伴侶相擁，3 分鐘什麼都不說。只讓彼此的呼吸同步。",
+        "讓伴侶把頭靠在你胸口，撫摸他／她的頭髮 2 分鐘。這段時間裡只說一句話：\"我愛你\"。",
+        "並肩躺下，從背後抱住對方。保持這個姿勢 5 分鐘，不說話。",
+        "彼此相擁，一個人的頭靠在另一個人的肩上。閉眼 1 分鐘。然後交換角色。",
+        "在懷裡與伴侶輕輕搖擺 — 慢慢地，節奏由你們決定。不要音樂，只跟隨呼吸的節奏。",
+        "相擁時在伴侶的背上慢慢畫圓 — 30 秒。然後讓他／她為你做同樣的事。"
+      ],
+      "id": [
+        "Berpelukanlah dengan pasanganmu dan jangan katakan apa pun selama 3 menit. Cukup selaraskan napas kalian.",
+        "Sandarkan kepala pasanganmu ke dadamu, belai rambutnya selama 2 menit. Dalam proses ini, hanya satu kata: \"aku mencintaimu\".",
+        "Berbaringlah berdampingan, peluk satu sama lain dari belakang. Tetap dalam posisi ini selama 5 menit tanpa bicara.",
+        "Saat berpelukan saling berhadapan, letakkan kepala salah satu di bahu yang lain. 1 menit mata tertutup. Lalu tukar peran.",
+        "Dalam pelukan, bergoyanglah bersama pasanganmu — pelan, ritmenya kalian yang tentukan. Tanpa lagu, hanya irama napas.",
+        "Saat berpelukan, gambar lingkaran perlahan di punggung pasanganmu — 30 detik. Lalu biar dia melakukan hal yang sama padamu."
+      ],
+      "hi": [
+        "अपने पार्टनर से लिपटो और 3 मिनट तक कुछ मत कहो। बस अपनी सांसों को एक लय में लाओ।",
+        "अपने पार्टनर का सिर अपने सीने पर रखो, 2 मिनट तक उसके बाल सहलाओ। इस दौरान सिर्फ एक शब्द — \"मैं तुमसे प्यार करता हूँ\"।",
+        "साथ-साथ लेटो, एक-दूसरे को पीछे से बांहों में भर लो। 5 मिनट इसी स्थिति में बिना बोले रहो।",
+        "आमने-सामने लिपटे हुए, एक का सिर दूसरे के कंधे पर। 1 मिनट आंखें बंद। फिर भूमिकाएं बदल लो।",
+        "आग़ोश में अपने पार्टनर के साथ झूमो — धीरे, लय तुम्हारी अपनी। किसी गाने की जगह बस सांसों की ताल।",
+        "लिपटे हुए अपने पार्टनर की पीठ पर धीरे-धीरे गोल घेरे बनाओ — 30 सेकंड। फिर वो तुम्हारे साथ वही करे।"
+      ],
+      "ar": [
+        "عانق شريكك ولا تقل شيئاً لمدة 3 دقائق. فقط وحّدا أنفاسكما.",
+        "أسند رأس شريكك إلى صدرك، وداعب شعره لمدة دقيقتين. خلال هذا الوقت، كلمة واحدة فقط: \"أحبك\".",
+        "استلقيا جنباً إلى جنب، واحتضنا بعضكما من الخلف. ابقيا في هذه الوضعية 5 دقائق دون كلام.",
+        "وأنتما متعانقان وجهاً لوجه، ليكن رأس أحدكما على كتف الآخر. دقيقة واحدة بعينين مغمضتين. ثم بدّلا الدورين.",
+        "تمايلا في حضن بعضكما — ببطء، الإيقاع لكما. لا أغنية، فقط إيقاع الأنفاس.",
+        "وأنتما متعانقان، ارسم دوائر بطيئة على ظهر شريكك — لمدة 30 ثانية. ثم دعه يفعل الشيء نفسه معك."
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Stirn an Stirn",
       "fr": "Front contre Front",
       "es": "Frente con Frente",
-      "it": "Fronte Contro Fronte"
+      "it": "Fronte Contro Fronte",
+      "ja": "額と額",
+      "ko": "이마와 이마",
+      "zh-TW": "額頭相貼",
+      "id": "Kening Bertemu Kening",
+      "hi": "माथे से माथा",
+      "ar": "جبين إلى جبين"
     },
     "color": "#F59E0B",
     "icon": "💛",
@@ -194,6 +308,54 @@
         "Come se posassi la mano sulla fronte del tuo partner, fagli sentire solo il tuo calore per 5 secondi. Poi sfiora con le labbra.",
         "Fronte contro fronte, a ogni espirazione dite a turno una parola dolce: \"sei al sicuro\", \"sei prezioso/a\", \"sei vicino/a\".",
         "Dai un bacio di 5 secondi sulla fronte del tuo partner + sussurragli il nome all'orecchio. Poi guardatevi negli occhi per 10 secondi."
+      ],
+      "ja": [
+        "額をパートナーの額に寄せて。目を閉じて1分間。お互いの呼吸を知って。",
+        "パートナーの額に3種類のキスをする — 長く、短く、触れるように。どれが欲しいか聞いて、繰り返す。",
+        "向かい合って座り、膝を触れ合わせて。手を相手の頬にあてて。30秒間こうして見つめ合う。",
+        "パートナーの額に手を置くように、5秒間だけ温もりを感じさせて。そのあと唇で触れて。",
+        "額を合わせて、息を吐くたびに順番に優しい言葉を：\"安心していいよ\"、\"大切だよ\"、\"そばにいるよ\"。",
+        "パートナーの額に5秒のキス＋耳に名前をささやく。そのあと10秒間見つめ合って。"
+      ],
+      "ko": [
+        "너의 이마를 파트너의 이마에 기대. 눈 감고, 1분. 서로의 숨결을 알아가.",
+        "파트너의 이마에 세 가지 다른 입맞춤을 해 — 긴 것, 짧은 것, 스치는 듯한 것. 어떤 걸 원하는지 물어보고 다시 해줘.",
+        "마주 앉아, 무릎이 닿게. 서로의 뺨에 손을 가져가. 30초 그렇게 바라봐.",
+        "파트너의 이마에 손을 올리듯, 5초 동안만 너의 온기를 느끼게 해. 그다음 입술로 닿아.",
+        "이마를 맞댄 채, 숨을 내쉴 때마다 한 마디씩 다정한 말을 번갈아: \"넌 안전해\", \"넌 소중해\", \"넌 가까워\".",
+        "파트너의 이마에 5초간의 입맞춤 + 귀에 이름을 속삭여. 그다음 10초 동안 눈을 마주봐."
+      ],
+      "zh-TW": [
+        "把額頭靠在伴侶的額頭上。閉上眼睛，1 分鐘。認識彼此的呼吸。",
+        "在伴侶的額頭上給三種不同的吻 — 長的、短的、像觸碰般的。問他／她想要哪一種，再重複一次。",
+        "面對面坐下，膝蓋相觸。把手放在對方的臉頰上。這樣對望 30 秒。",
+        "像要把手放在伴侶額頭上一樣，只用 5 秒讓他／她感受你的溫度。然後用唇輕輕觸碰。",
+        "額頭相貼，每一次吐氣輪流說一句溫柔的話：\"你很安全\"、\"你很珍貴\"、\"你很近\"。",
+        "在伴侶的額頭上給一個 5 秒的吻 ＋ 在他／她耳邊輕喚名字。然後對望 10 秒。"
+      ],
+      "id": [
+        "Sandarkan keningmu ke kening pasanganmu. Mata tertutup, 1 menit. Kenali napas satu sama lain.",
+        "Berikan 3 kecupan berbeda di kening pasanganmu — panjang, pendek, selembut sentuhan. Tanya mana yang dia mau, lalu ulangi.",
+        "Duduk saling berhadapan, lutut kalian bersentuhan. Bawa tangan kalian ke pipi masing-masing. 30 detik saling menatap seperti itu.",
+        "Seolah meletakkan tanganmu di kening pasanganmu, biarkan dia merasakan kehangatanmu hanya 5 detik. Lalu sentuh dengan bibir.",
+        "Kening bertemu kening, setiap mengembuskan napas ucapkan satu kata manis secara bergantian: \"kamu aman\", \"kamu berharga\", \"kamu dekat\".",
+        "Berikan kecupan 5 detik di kening pasanganmu + bisikkan namanya di telinganya. Lalu saling menatap mata selama 10 detik."
+      ],
+      "hi": [
+        "अपना माथा अपने पार्टनर के माथे से लगाओ। आंखें बंद, 1 मिनट। एक-दूसरे की सांसों को पहचानो।",
+        "अपने पार्टनर के माथे पर 3 अलग-अलग चुंबन दो — लंबा, छोटा, स्पर्श जैसा। पूछो उसे कौन-सा पसंद आया और वही दोहराओ।",
+        "आमने-सामने बैठो, तुम्हारे घुटने एक-दूसरे को छुएं। अपने हाथ एक-दूसरे के गालों पर रखो। 30 सेकंड ऐसे ही नज़रें मिलाओ।",
+        "अपने पार्टनर के माथे पर हाथ रखने जैसे, सिर्फ 5 सेकंड तक अपनी गर्माहट महसूस कराओ। फिर होंठ से छुओ।",
+        "माथे से माथा लगाकर, हर सांस छोड़ते हुए बारी-बारी एक प्यारी बात कहो: \"तुम सुरक्षित हो\", \"तुम कीमती हो\", \"तुम करीब हो\"।",
+        "अपने पार्टनर के माथे पर 5 सेकंड का चुंबन दो + उसके कान में उसका नाम फुसफुसाओ। फिर 10 सेकंड आंखों में आंखें डालो।"
+      ],
+      "ar": [
+        "أسند جبينك إلى جبين شريكك. العينان مغمضتان، لمدة دقيقة. تعرّفا على أنفاس بعضكما.",
+        "ضع 3 قبلات مختلفة على جبين شريكك — طويلة، قصيرة، كاللمسة. اسأله أيّها يريد وكرّرها.",
+        "اجلسا وجهاً لوجه، لتتلامس ركبكما. ضعا يديكما على خدّي بعضكما. تبادلا النظرات هكذا لمدة 30 ثانية.",
+        "ضع يدك كأنها على جبين شريكك، ودعه يشعر بدفئك لمدة 5 ثوانٍ فقط. ثم المسه بشفتيك.",
+        "جبيناً إلى جبين، مع كل زفير قولا كلمة لطيفة بالتناوب: \"أنت بأمان\"، \"أنت غالٍ\"، \"أنت قريب\".",
+        "ضع قبلة مدّتها 5 ثوانٍ على جبين شريكك + اهمس باسمه في أذنه. ثم تبادلا النظرات لمدة 10 ثوانٍ."
       ]
     }
   }

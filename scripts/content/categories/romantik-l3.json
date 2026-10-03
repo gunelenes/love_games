@@ -7,7 +7,13 @@
       "de": "Das Buch des Flüsterns",
       "fr": "Le Livre des Chuchotements",
       "es": "El Libro del Susurro",
-      "it": "Il Libro dei Sussurri"
+      "it": "Il Libro dei Sussurri",
+      "ja": "ささやきの書",
+      "ko": "속삭임의 책",
+      "zh-TW": "低語之書",
+      "id": "Buku Bisikan",
+      "hi": "फुसफुसाहट की किताब",
+      "ar": "كتاب الهمس"
     },
     "color": "#7C3AED",
     "icon": "📖",
@@ -62,6 +68,54 @@
         "Scrivete su un foglio \"vorrei vivere questo insieme\". Scambiatevi i fogli. Leggete ad alta voce.",
         "Inizia con \"l'unica cosa che vorrei ancora imparare di te…\", poi ascolta.",
         "Chiudete gli occhi. Per 3 minuti, a turno, raccontate un ricordo legato al viso dell'altro."
+      ],
+      "ja": [
+        "パートナーに今まで言ったことのない空想を耳元でささやいて。一文だけで。",
+        "\"あなたと一緒に生きてみたい瞬間が…\" と切り出して、パートナーに細かく話して。",
+        "パートナーの耳元に \"今日のあなたについてのお気に入りの考えは…\" と一文ささやいて。",
+        "紙に \"これを一緒に体験できたらいいのに\" と書いて。交換して渡し合い、声に出して読んで。",
+        "パートナーに \"あなたからまだ知りたい唯一のことは…\" と切り出して、聞いて。",
+        "目を閉じて。3分間、順番にお互いの顔にまつわる思い出を語り合って。"
+      ],
+      "ko": [
+        "지금껏 한 번도 말하지 않았던 네 환상을 파트너의 귀에 속삭여줘. 딱 한 문장이면 돼.",
+        "\"너와 함께 살아보고 싶은 순간이 있어…\"로 시작해서 파트너에게 자세히 들려줘.",
+        "파트너의 귀에 \"오늘 너에 대해 가장 좋았던 생각은…\"이라고 한 문장 속삭여줘.",
+        "종이에 \"이걸 너랑 같이 해봤으면 좋겠어\"라고 각자 적어. 바꿔서 서로에게 건네. 소리 내서 읽어줘.",
+        "파트너에게 \"아직도 너에게서 배우고 싶은 단 한 가지는…\"으로 시작해서 말해보고, 그 답을 들어줘.",
+        "눈을 감아. 3분 동안 번갈아 가며 서로의 얼굴에 얽힌 기억을 하나씩 이야기해줘."
+      ],
+      "zh-TW": [
+        "把一個你從未對伴侶說過的幻想，輕聲耳語給他聽。只要一句話就好。",
+        "以 \"我想和你一起度過的一個時刻…\" 開頭，詳細地說給你的伴侶聽。",
+        "在伴侶耳邊低語一句 \"我今天最喜歡關於你的一個念頭是…\"。",
+        "在紙上寫下 \"真希望我們能一起經歷這件事\"。交換，給對方。大聲讀出來。",
+        "對你的伴侶說 \"我還想從你身上了解的唯一一件事是…\"，然後聆聽。",
+        "閉上眼睛。3 分鐘內輪流分享一段關於彼此臉龐的回憶。"
+      ],
+      "id": [
+        "Bisikkan ke telinga pasanganmu sebuah fantasi yang belum pernah kamu ceritakan. Cukup satu kalimat.",
+        "Mulai dengan \"Satu momen yang ingin kualami bersamamu…\" lalu ceritakan detailnya ke pasanganmu.",
+        "Bisikkan ke telinga pasanganmu satu kalimat: \"pikiran favoritku tentangmu hari ini…\"",
+        "Tulis di kertas \"andai kita bisa mengalami ini bersama\". Tukar dan berikan satu sama lain. Bacakan dengan suara keras.",
+        "Mulai dengan \"satu hal yang masih ingin kupelajari darimu…\" lalu dengarkan jawaban pasanganmu.",
+        "Tutup mata kalian. Selama 3 menit, bergantian ceritakan sebuah kenangan tentang wajah satu sama lain."
+      ],
+      "hi": [
+        "अपने पार्टनर के कान में एक ऐसी ख्वाहिश फुसफुसाओ जो तुमने कभी नहीं बताई। बस एक वाक्य में।",
+        "\"तुम्हारे साथ जीना चाहता/चाहती हूँ एक ऐसा पल…\" इस तरह शुरू करो और अपने पार्टनर को विस्तार से बताओ।",
+        "अपने पार्टनर के कान में फुसफुसाओ \"आज तुम्हारे बारे में मेरा पसंदीदा ख्याल…\" और एक वाक्य कहो।",
+        "कागज़ पर लिखो \"काश हम यह साथ जीते।\" आपस में बदलो और एक-दूसरे को दो। ज़ोर से पढ़ो।",
+        "अपने पार्टनर से कहो \"तुमसे अभी भी जो एक बात सीखना चाहता/चाहती हूँ…\" और सुनो।",
+        "दोनों आँखें बंद करो। 3 मिनट तक बारी-बारी एक-दूसरे के चेहरे से जुड़ी कोई याद सुनाओ।"
+      ],
+      "ar": [
+        "اهمس في أذن شريكك بحلم لم تخبره به من قبل. جملة واحدة فقط.",
+        "ابدأ بـ \"لحظة أتمنى أن أعيشها معك…\" ثم احكِ لشريكك بالتفصيل.",
+        "اهمس في أذن شريكك جملة تبدأ بـ \"فكرتي المفضلة عنك اليوم…\".",
+        "اكتبا على ورقة \"ليتنا نعيش هذا معاً\". بادلا الورقتين. اقرآ بصوت مرتفع.",
+        "ابدأ بـ \"الشيء الوحيد الذي ما زلت أرغب في معرفته عنك…\" ثم أنصت.",
+        "أغمضا عينيكما. لمدة 3 دقائق، احكيا بالتناوب ذكرى عن وجه الآخر."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Mit geschlossenen Augen",
       "fr": "Les Yeux Fermés",
       "es": "Con los Ojos Cerrados",
-      "it": "A Occhi Chiusi"
+      "it": "A Occhi Chiusi",
+      "ja": "閉じた瞳で",
+      "ko": "눈을 감고",
+      "zh-TW": "閉上雙眼",
+      "id": "Dengan Mata Tertutup",
+      "hi": "बंद आँखों से",
+      "ar": "بعيون مغلقة"
     },
     "color": "#6366F1",
     "icon": "🎠",
@@ -128,6 +188,54 @@
         "Parla per 30 secondi all'orecchio del tuo partner a occhi chiusi — un ricordo, un luogo, dettagli sensoriali. Lascia che costruisca l'immagine nella mente.",
         "Il tuo partner tiene gli occhi chiusi, tu prendi la sua mano e dondolala per 1 minuto senza dire nulla — movimento lento.",
         "Entrambi a occhi chiusi, uno di fronte all'altra. Create insieme una storia in 5 frasi — 1 tu, 1 lui/lei. Non si sa dove la porterà l'altro."
+      ],
+      "ja": [
+        "パートナーは目を閉じたまま。彼／彼女の顔を1分間、手で探って — やわらかく、丁寧に、彫刻をなぞるように。",
+        "二人とも目を閉じて。向かい合って座って。触れていいのは手だけ — 3分の探索。",
+        "パートナーの目を閉じさせて、香りのあるものを持ってきて（香水、果物、花）。ゆっくり近づけて。当ててもらって。",
+        "目を閉じたパートナーの耳元で30秒話して — 思い出、場所、感覚の細部を。その情景を頭の中に描かせて。",
+        "パートナーは目を閉じたまま。あなたはその手を取って1分間、何も言わずに揺らして — 動きはゆっくり。",
+        "向かい合って目を閉じて。一緒に5文で物語を作って — 1文あなた、1文相手。どこへ連れていくかは誰にもわからない。"
+      ],
+      "ko": [
+        "파트너는 눈을 감고 있어. 1분 동안 손으로 그 얼굴을 탐험해줘 — 부드럽게, 조심스럽게, 조각상을 만지듯이.",
+        "둘 다 눈을 감아. 마주 보고 앉아. 오직 손만 닿을 수 있어 — 3분 동안의 탐험.",
+        "파트너의 눈을 감겨. 향이 있는 것을 가져와 (향수, 과일, 꽃). 천천히 가까이 대줘. 맞혀 보게 해.",
+        "눈 감은 파트너의 귀에 30초 동안 속삭여줘 — 추억, 장소, 감각의 디테일. 그 장면을 머릿속에 그릴 수 있게.",
+        "파트너는 눈을 감고 있어. 너는 그 손을 잡고 1분 동안 아무 말 없이 흔들어줘 — 움직임은 아주 느리게.",
+        "마주 보고 눈을 감아. 다섯 문장으로 함께 이야기를 만들어봐 — 한 문장은 너, 한 문장은 파트너. 어디로 흘러갈지는 아무도 몰라."
+      ],
+      "zh-TW": [
+        "你的伴侶閉著眼。用你的雙手探索他的臉 1 分鐘 — 輕柔、細心，彷彿一尊雕像。",
+        "你們兩人都閉上眼。面對面坐下。只有雙手可以接觸 — 探索 3 分鐘。",
+        "讓伴侶閉上眼，你去拿一樣有氣味的東西（香水、水果、花）。慢慢靠近。讓他猜。",
+        "對著閉著眼的伴侶耳邊說 30 秒 — 一段回憶、場景、感官的細節。讓他在腦中建構那個畫面。",
+        "你的伴侶閉著眼，你牽起他的手輕輕搖晃 1 分鐘，什麼都不要說 — 動作放慢。",
+        "面對面閉上雙眼。用 5 句話一起編一個故事 — 1 句你，1 句他。誰也不知道會被帶往何處。"
+      ],
+      "id": [
+        "Mata pasanganmu tertutup. Jelajahi wajahnya dengan tanganmu selama 1 menit — lembut, hati-hati, seperti sebuah patung.",
+        "Mata kalian berdua tertutup. Duduk saling berhadapan. Hanya tangan yang boleh bersentuhan — jelajahi selama 3 menit.",
+        "Tutup mata pasanganmu, lalu ambil sesuatu yang beraroma (parfum, buah, bunga). Dekatkan perlahan. Biar dia menebak.",
+        "Bicara ke telinga pasanganmu yang matanya tertutup selama 30 detik — detail kenangan, tempat, indera. Bangun gambaran itu di pikirannya.",
+        "Mata pasanganmu tertutup, kamu pegang tangannya dan ayunkan selama 1 menit tanpa berkata apa pun — gerakannya lambat.",
+        "Kalian berdua tutup mata. Bangun sebuah cerita bersama dalam 5 kalimat — 1 kamu, 1 dia. Tak ada yang tahu ke mana cerita akan dibawa."
+      ],
+      "hi": [
+        "तुम्हारे पार्टनर की आँखें बंद हैं। उसके चेहरे को अपने हाथों से 1 मिनट तक खोजो — नरमी से, ध्यान से, जैसे किसी मूर्ति को।",
+        "दोनों की आँखें बंद। आमने-सामने बैठो। सिर्फ़ हाथ छू सकते हैं — 3 मिनट की खोज।",
+        "अपने पार्टनर की आँखें बंद करवाओ, और कोई खुशबूदार चीज़ लाओ (परफ्यूम, फल, फूल)। धीरे से पास लाओ। उसे अंदाज़ा लगाने दो।",
+        "आँखें बंद किए पार्टनर के कान में 30 सेकंड बोलो — एक याद, जगह, छोटी-छोटी तफ़सीलें। उसे वह तस्वीर मन में बनाने दो।",
+        "तुम्हारे पार्टनर की आँखें बंद हैं, तुम उसका हाथ थामकर 1 मिनट बिना कुछ कहे धीरे-धीरे हिलाओ — हरकत बहुत धीमी।",
+        "आमने-सामने आँखें बंद। मिलकर 5 वाक्यों में एक कहानी गढ़ो — 1 तुम, 1 वो। कौन कहाँ ले जाएगा, पता नहीं।"
+      ],
+      "ar": [
+        "عينا شريكك مغلقتان. استكشف وجهه بيديك لمدة دقيقة — بلطف، بانتباه، كأنه تمثال.",
+        "عيناكما مغلقتان كلاهما. اجلسا متقابلين. يداكما فقط يمكنهما التلامس — 3 دقائق من الاستكشاف.",
+        "أغمض عينَي شريكك، وأحضر شيئاً له رائحة (عطر، فاكهة، زهرة). قرّبه ببطء. دعه يخمّن.",
+        "تحدّث لمدة 30 ثانية في أذن شريكك المغلقة العينين — لحظة، مكان، تفاصيل حسية. دعه يبني الصورة في ذهنه.",
+        "عينا شريكك مغلقتان، أمسك يده وهزّها بلطف لمدة دقيقة دون أن تقول شيئاً — حركة بطيئة.",
+        "عيناكما مغلقتان متقابلين. ابنيا معاً حكاية في 5 جمل — واحدة لك، واحدة له. لا أحد يعرف إلى أين ستأخذها."
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Kurz vor dem Schlaf",
       "fr": "Au Bord du Sommeil",
       "es": "Cerca del Sueño",
-      "it": "Vicino al Sonno"
+      "it": "Vicino al Sonno",
+      "ja": "眠りの間際",
+      "ko": "잠에 가까이",
+      "zh-TW": "臨睡時分",
+      "id": "Menjelang Tidur",
+      "hi": "नींद के करीब",
+      "ar": "قُرب النوم"
     },
     "color": "#4F46E5",
     "icon": "🌙",
@@ -194,6 +308,54 @@
         "Al buio, trova la mano del tuo partner + stringila forte. 3 minuti di silenzio, solo la stretta.",
         "Vicino al sonno: racconta al tuo partner \"l'ultima cosa per cui hai provato gratitudine\", ascolta, poi offri la tua.",
         "Sdraiati accanto a lui/lei e senti con una mano il battito del suo cuore. Per 2 minuti, solo quello."
+      ],
+      "ja": [
+        "明かりを消して。隣に横になって。暗闇の中、パートナーの声だけを聞きながら5分間おしゃべりして。",
+        "寝る前に、パートナーの一番好きなところを3つ数えて。声に出して、ゆっくり。",
+        "眠りにつく前にパートナーの胸に頭をあずけて、呼吸のリズムに合わせて物語を始めて — 途中でやめてもいい。",
+        "暗闇の中でパートナーの手を見つけて、ぎゅっと握って。3分間の沈黙、ただ握るだけ。",
+        "眠りの間際に：\"最近何に感謝したか\" をパートナーに話して、聞いて、お返しにあなたも伝えて。",
+        "並んで横になりながら、片手でパートナーの鼓動を感じて。2分間、それだけ。"
+      ],
+      "ko": [
+        "불을 꺼. 나란히 누워. 어둠 속에서 오직 파트너의 목소리에만 귀 기울이며 5분 동안 이야기해.",
+        "잠들기 전에 파트너에게서 가장 좋아하는 점 3가지를 꼽아줘. 소리 내서, 천천히.",
+        "자기 전에 파트너의 가슴에 머리를 기대고, 그 숨결의 리듬에 맞춰 이야기를 하나 시작해 — 중간에 멈춰도 괜찮아.",
+        "어둠 속에서 파트너의 손을 찾아 꼭 잡아. 3분 동안 침묵 속에서, 오직 그 손만.",
+        "잠들기 직전에: \"가장 최근에 무엇에 감사했는지\"를 파트너에게 들려주고, 그 답도 들어줘.",
+        "나란히 누운 채, 한 손으로 파트너의 심장 박동을 느껴봐. 2분 동안 오직 그것만."
+      ],
+      "zh-TW": [
+        "關掉燈。並肩躺下。在黑暗中只聆聽伴侶的聲音，聊 5 分鐘。",
+        "睡前，說出 3 個你最喜歡伴侶的特質。出聲、慢慢地說。",
+        "入睡前，把頭靠在伴侶的胸口，隨著他的呼吸節奏開始講一個故事 — 想停就停。",
+        "在黑暗中找到伴侶的手 + 緊緊握住。沉默 3 分鐘，只是握著。",
+        "快入睡時：告訴伴侶 \"你最近為了什麼心懷感激\"，聆聽，然後換你回應。",
+        "並肩躺著時，用一隻手感受伴侶的心跳。2 分鐘，只感受那個。"
+      ],
+      "id": [
+        "Matikan lampu. Berbaring bersebelahan. Dalam gelap, mengobrollah selama 5 menit sambil hanya mendengarkan suara pasanganmu.",
+        "Sebelum tidur, sebutkan 3 hal yang paling kamu sukai dari pasanganmu. Dengan suara pelan dan lambat.",
+        "Sebelum tidur, sandarkan kepalamu ke dada pasanganmu dan mulailah sebuah dongeng mengikuti ritme napasnya — boleh berhenti di tengah jalan.",
+        "Dalam gelap, cari tangan pasanganmu + genggam erat. 3 menit dalam diam, hanya genggaman itu.",
+        "Menjelang tidur: ceritakan ke pasanganmu \"hal terakhir yang membuatmu bersyukur\", dengarkan dia, lalu balas giliranmu.",
+        "Saat berbaring bersebelahan, rasakan detak jantung pasanganmu dengan satu tangan. 2 menit hanya untuk itu."
+      ],
+      "hi": [
+        "बत्तियाँ बुझा दो। साथ-साथ लेटो। अंधेरे में सिर्फ़ अपने पार्टनर की आवाज़ सुनते हुए 5 मिनट बातें करो।",
+        "सोने से पहले अपने पार्टनर की 3 ऐसी बातें गिनाओ जो तुम्हें सबसे प्यारी लगती हैं। ज़ोर से, धीरे-धीरे।",
+        "सोने से पहले अपने पार्टनर के सीने पर सिर रखो और उसकी साँसों की लय में एक कहानी शुरू करो — चाहो तो बीच में छोड़ देना।",
+        "अंधेरे में अपने पार्टनर का हाथ ढूंढो और कसकर थाम लो। 3 मिनट की ख़ामोशी में, बस पकड़।",
+        "नींद के करीब: अपने पार्टनर को बताओ \"आख़िरी बार तुम किस बात के लिए शुक्रगुज़ार महसूस किए\", फिर सुनो, और बदले में तुम भी दो।",
+        "साथ लेटे हुए, एक हाथ से अपने पार्टनर की धड़कन को महसूस करो। 2 मिनट बस वही।"
+      ],
+      "ar": [
+        "أطفئ الأنوار. استلقيا جنباً إلى جنب. في الظلام، تحدّثا لمدة 5 دقائق مستمعاً فقط إلى صوت شريكك.",
+        "قبل النوم، عدّد 3 صفات تحبّها في شريكك. بصوت مسموع، ببطء.",
+        "قبل النوم، أسنِد رأسك على صدر شريكك وابدأ حكاية على إيقاع أنفاسه — واتركها في المنتصف إن أردت.",
+        "في الظلام، ابحث عن يد شريكك + امسكها بإحكام. 3 دقائق من الصمت، فقط القبضة.",
+        "قُرب النوم: احكِ لشريكك \"آخر شيء شعرت بالامتنان من أجله\"، أنصت، ثم بادله الدور.",
+        "وأنتما مستلقيان جنباً إلى جنب، تحسّس بإحدى يديك نبض قلب شريكك. دقيقتان لذلك فقط."
       ]
     }
   }

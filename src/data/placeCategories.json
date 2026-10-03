@@ -7,7 +7,13 @@
       "de": "Café",
       "fr": "Café",
       "es": "Café",
-      "it": "Caffè"
+      "it": "Caffè",
+      "ja": "カフェ",
+      "ko": "카페",
+      "zh-TW": "咖啡館",
+      "id": "Kafe",
+      "hi": "कैफ़े",
+      "ar": "المقهى"
     },
     "color": "#C97B4D",
     "icon": "☕",
@@ -20,14 +26,26 @@
           "de": "Morgenkaffee-Ecke",
           "fr": "Coin du café matinal",
           "es": "Rincón del café matutino",
-          "it": "Angolo del caffè mattutino"
+          "it": "Angolo del caffè mattutino",
+          "ja": "朝のコーヒーの一角",
+          "ko": "아침 커피 코너",
+          "zh-TW": "晨間咖啡角落",
+          "id": "Sudut kopi pagi",
+          "hi": "सुबह की कॉफ़ी का कोना",
+          "ar": "ركن قهوة الصباح"
         },
         "descriptionI18n": {
           "en": "The first coffee of the day at the quietest café on the street.",
           "de": "Der erste Kaffee des Tages im stillsten Café der Straße.",
           "fr": "Le premier café de la journée dans le café le plus calme de la rue.",
           "es": "El primer café del día en el lugar más silencioso de la calle.",
-          "it": "Il primo caffè della giornata nel locale più silenzioso della via."
+          "it": "Il primo caffè della giornata nel locale più silenzioso della via.",
+          "ja": "通りで一番静かなカフェで、一日の最初の一杯。",
+          "ko": "거리에서 가장 조용한 카페에서 그날의 첫 커피.",
+          "zh-TW": "在街上最安靜的咖啡館,享用一天的第一杯咖啡。",
+          "id": "Kopi pertama hari ini di kafe paling tenang di jalan itu.",
+          "hi": "गली के सबसे शांत कैफ़े में दिन की पहली कॉफ़ी।",
+          "ar": "أول قهوة في اليوم بأهدأ مقهى في الشارع."
         }
       },
       {
@@ -38,14 +56,26 @@
           "de": "Buchcafé",
           "fr": "Café-librairie",
           "es": "Café con libros",
-          "it": "Caffè letterario"
+          "it": "Caffè letterario",
+          "ja": "本のあるカフェ",
+          "ko": "책이 있는 카페",
+          "zh-TW": "書香咖啡館",
+          "id": "Kafe buku",
+          "hi": "किताबों वाला कैफ़े",
+          "ar": "مقهى الكتب"
         },
         "descriptionI18n": {
           "en": "A place that smells of old books and hushed voices.",
           "de": "Ein Ort voller Buchduft und Geflüster.",
           "fr": "Un lieu rempli de l'odeur des livres et de chuchotements.",
           "es": "Un lugar lleno de aroma a libros y susurros.",
-          "it": "Un posto pieno di profumo di libri e sussurri."
+          "it": "Un posto pieno di profumo di libri e sussurri.",
+          "ja": "本の香りとささやきに満ちた空間。",
+          "ko": "책 냄새와 속삭임으로 가득한 공간.",
+          "zh-TW": "一個充滿書香與低語的空間。",
+          "id": "Tempat yang penuh aroma buku dan bisikan.",
+          "hi": "किताबों की ख़ुशबू और फुसफुसाहट से भरी एक जगह।",
+          "ar": "مكان يفوح برائحة الكتب والهمسات."
         }
       },
       {
@@ -56,14 +86,26 @@
           "de": "Dachterrasse mit Aussicht",
           "fr": "Rooftop avec vue",
           "es": "Terraza con vista",
-          "it": "Terrazza panoramica"
+          "it": "Terrazza panoramica",
+          "ja": "眺めのいい屋上",
+          "ko": "전망 좋은 옥상",
+          "zh-TW": "景觀頂樓",
+          "id": "Loteng dengan pemandangan",
+          "hi": "मंज़र वाली छत",
+          "ar": "سطح بإطلالة"
         },
         "descriptionI18n": {
           "en": "A slow latte while watching the city from above.",
           "de": "Ein langer Latte, während ihr die Stadt von oben beobachtet.",
           "fr": "Un long latte en contemplant la ville d'en haut.",
           "es": "Un latte largo mirando la ciudad desde las alturas.",
-          "it": "Un lungo latte guardando la città dall'alto."
+          "it": "Un lungo latte guardando la città dall'alto.",
+          "ja": "街を見下ろしながら、ゆっくりラテを一杯。",
+          "ko": "도시를 내려다보며 긴 라떼 한 잔.",
+          "zh-TW": "居高臨下俯瞰城市,慢慢品一杯拿鐵。",
+          "id": "Latte panjang sambil memandang kota dari atas.",
+          "hi": "शहर को ऊँचाई से निहारते हुए एक लंबी लाते।",
+          "ar": "لاتيه طويل بينما تتأمّل المدينة من الأعلى."
         }
       },
       {
@@ -74,14 +116,26 @@
           "de": "Kleine Seitengasse",
           "fr": "Petite ruelle",
           "es": "Callejón escondido",
-          "it": "Piccolo vicolo"
+          "it": "Piccolo vicolo",
+          "ja": "小さな路地裏",
+          "ko": "작은 뒷골목",
+          "zh-TW": "小巷弄",
+          "id": "Gang kecil",
+          "hi": "छोटी-सी गली",
+          "ar": "زقاق صغير"
         },
         "descriptionI18n": {
           "en": "A full-of-character place to stumble into by accident.",
           "de": "Ein eigenwilliger Ort, den man zufällig entdeckt.",
           "fr": "Un endroit plein de caractère à découvrir par hasard.",
           "es": "Un lugar con carácter para descubrir por casualidad.",
-          "it": "Un posto pieno di carattere, da scoprire per caso."
+          "it": "Un posto pieno di carattere, da scoprire per caso.",
+          "ja": "偶然見つけたくなる、味のある場所。",
+          "ko": "우연히 발견하게 될 특색 있는 곳.",
+          "zh-TW": "偶然發現、別具風格的一處角落。",
+          "id": "Tempat berkarakter yang ditemukan secara kebetulan.",
+          "hi": "इत्तेफ़ाक़ से खोजी जाने वाली एक अनोखी जगह।",
+          "ar": "مكان بطابع مميّز تكتشفه بالصدفة."
         }
       }
     ],
@@ -96,7 +150,13 @@
       "de": "Restaurant",
       "fr": "Restaurant",
       "es": "Restaurante",
-      "it": "Ristorante"
+      "it": "Ristorante",
+      "ja": "レストラン",
+      "ko": "레스토랑",
+      "zh-TW": "餐廳",
+      "id": "Restoran",
+      "hi": "रेस्तरां",
+      "ar": "المطعم"
     },
     "color": "#D64545",
     "icon": "🍽️",
@@ -109,14 +169,26 @@
           "de": "Italienischer Abend",
           "fr": "Soirée italienne",
           "es": "Noche italiana",
-          "it": "Serata italiana"
+          "it": "Serata italiana",
+          "ja": "イタリアンな夜",
+          "ko": "이탈리안 저녁",
+          "zh-TW": "義式之夜",
+          "id": "Malam Italia",
+          "hi": "इटैलियन शाम",
+          "ar": "أمسية إيطالية"
         },
         "descriptionI18n": {
           "en": "Pasta and red wine by candlelight.",
           "de": "Pasta und Rotwein bei Kerzenschein.",
           "fr": "Pâtes et vin rouge aux chandelles.",
           "es": "Pasta y vino tinto a la luz de las velas.",
-          "it": "Pasta e vino rosso a lume di candela."
+          "it": "Pasta e vino rosso a lume di candela.",
+          "ja": "キャンドルの灯りでパスタと赤ワイン。",
+          "ko": "촛불 아래 파스타와 레드 와인.",
+          "zh-TW": "燭光下的義大利麵與紅酒。",
+          "id": "Pasta dan anggur merah di bawah cahaya lilin.",
+          "hi": "मोमबत्ती की रोशनी में पास्ता और रेड वाइन।",
+          "ar": "باستا ونبيذ أحمر على ضوء الشموع."
         }
       },
       {
@@ -127,14 +199,26 @@
           "de": "Am Meer",
           "fr": "Bord de mer",
           "es": "Frente al mar",
-          "it": "In riva al mare"
+          "it": "In riva al mare",
+          "ja": "海辺",
+          "ko": "바닷가",
+          "zh-TW": "海邊餐桌",
+          "id": "Tepi laut",
+          "hi": "समुद्र किनारे",
+          "ar": "على ضفة البحر"
         },
         "descriptionI18n": {
           "en": "The sound of waves + fresh fish.",
           "de": "Wellenrauschen + frischer Fisch.",
           "fr": "Le bruit des vagues + du poisson frais.",
           "es": "Sonido de las olas + pescado fresco.",
-          "it": "Rumore delle onde + pesce fresco."
+          "it": "Rumore delle onde + pesce fresco.",
+          "ja": "波の音＋新鮮な魚。",
+          "ko": "파도 소리 + 신선한 생선.",
+          "zh-TW": "海浪聲 + 新鮮海魚。",
+          "id": "Suara ombak + ikan segar.",
+          "hi": "लहरों की आवाज़ + ताज़ी मछली।",
+          "ar": "صوت الأمواج + سمك طازج."
         }
       },
       {
@@ -145,14 +229,26 @@
           "de": "Straßenküche",
           "fr": "Saveur de rue",
           "es": "Sabor callejero",
-          "it": "Sapore di strada"
+          "it": "Sapore di strada",
+          "ja": "ストリートフード",
+          "ko": "길거리 음식",
+          "zh-TW": "街頭美食",
+          "id": "Cita rasa jalanan",
+          "hi": "गली का ज़ायका",
+          "ar": "نكهة الشارع"
         },
         "descriptionI18n": {
           "en": "Piping-hot food at a local hole-in-the-wall.",
           "de": "Dampfendes Essen in einem lokalen Laden.",
           "fr": "Un plat fumant dans un lieu local.",
           "es": "Comida humeante en un lugar local.",
-          "it": "Cibo fumante in un locale locale."
+          "it": "Cibo fumante in un locale locale.",
+          "ja": "地元の店で湯気の立つ一皿。",
+          "ko": "현지 가게에서 김이 모락모락 나는 요리.",
+          "zh-TW": "在地小店,熱氣騰騰的料理。",
+          "id": "Makanan yang masih mengepul di warung lokal.",
+          "hi": "किसी देसी ठिकाने पर गरमागरम खाना।",
+          "ar": "طعام ساخن في مكان محلي أصيل."
         }
       },
       {
@@ -163,14 +259,26 @@
           "de": "Familienküche",
           "fr": "Cuisine familiale",
           "es": "Cocina familiar",
-          "it": "Cucina di famiglia"
+          "it": "Cucina di famiglia",
+          "ja": "家庭的なキッチン",
+          "ko": "가정식 주방",
+          "zh-TW": "家常廚房",
+          "id": "Dapur keluarga",
+          "hi": "घरेलू रसोई",
+          "ar": "مطبخ عائلي"
         },
         "descriptionI18n": {
           "en": "Small, warm, home-style cooking.",
           "de": "Klein, herzlich, hausgemacht.",
           "fr": "Petit, intime, fait maison.",
           "es": "Pequeño, íntimo, estilo casero.",
-          "it": "Piccolo, intimo, fatto in casa."
+          "it": "Piccolo, intimo, fatto in casa.",
+          "ja": "小さくて、温かくて、手料理の味。",
+          "ko": "작고, 아늑하고, 집밥 같은.",
+          "zh-TW": "小巧、溫馨、家的味道。",
+          "id": "Kecil, hangat, ala rumahan.",
+          "hi": "छोटा, आत्मीय, घर जैसा स्वाद।",
+          "ar": "صغير، حميم، بنكهة البيت."
         }
       }
     ],
@@ -185,7 +293,13 @@
       "de": "Park",
       "fr": "Parc",
       "es": "Parque",
-      "it": "Parco"
+      "it": "Parco",
+      "ja": "公園",
+      "ko": "공원",
+      "zh-TW": "公園",
+      "id": "Taman",
+      "hi": "पार्क",
+      "ar": "الحديقة"
     },
     "color": "#4CAF50",
     "icon": "🌳",
@@ -198,14 +312,26 @@
           "de": "Picknickdecke",
           "fr": "Couverture de pique-nique",
           "es": "Manta de picnic",
-          "it": "Coperta da picnic"
+          "it": "Coperta da picnic",
+          "ja": "ピクニックのブランケット",
+          "ko": "피크닉 담요",
+          "zh-TW": "野餐毯",
+          "id": "Selimut piknik",
+          "hi": "पिकनिक का कंबल",
+          "ar": "بطانية البيكنيك"
         },
         "descriptionI18n": {
           "en": "A basket, fruit, strawberry lemonade.",
           "de": "Korb, Obst, Erdbeerlimonade.",
           "fr": "Panier, fruits, limonade à la fraise.",
           "es": "Canasta, fruta, limonada con fresas.",
-          "it": "Cesto, frutta, limonata alla fragola."
+          "it": "Cesto, frutta, limonata alla fragola.",
+          "ja": "バスケット、フルーツ、いちごレモネード。",
+          "ko": "바구니, 과일, 딸기 레모네이드.",
+          "zh-TW": "提籃、水果、草莓檸檬汁。",
+          "id": "Keranjang, buah, limun stroberi.",
+          "hi": "टोकरी, फल, स्ट्रॉबेरी वाली नींबू पानी।",
+          "ar": "سلة، فواكه، وليموناضة بالفراولة."
         }
       },
       {
@@ -216,14 +342,26 @@
           "de": "Abendspaziergang",
           "fr": "Promenade du soir",
           "es": "Caminata al atardecer",
-          "it": "Passeggiata serale"
+          "it": "Passeggiata serale",
+          "ja": "夕方の散歩",
+          "ko": "저녁 산책",
+          "zh-TW": "黃昏散步",
+          "id": "Jalan sore",
+          "hi": "शाम की सैर",
+          "ar": "نزهة المساء"
         },
         "descriptionI18n": {
           "en": "A loop hand in hand at sunset.",
           "de": "Hand in Hand bei Sonnenuntergang.",
           "fr": "Un tour main dans la main au coucher du soleil.",
           "es": "Una vuelta de la mano al caer el sol.",
-          "it": "Un giro mano nella mano al tramonto."
+          "it": "Un giro mano nella mano al tramonto.",
+          "ja": "夕日の中、手をつないで一周。",
+          "ko": "해질녘 손잡고 한 바퀴.",
+          "zh-TW": "夕陽下牽著手走一圈。",
+          "id": "Satu putaran bergandengan tangan saat matahari terbenam.",
+          "hi": "सूरज ढलते वक़्त हाथों में हाथ डाले एक चक्कर।",
+          "ar": "جولة يداً بيد عند الغروب."
         }
       },
       {
@@ -234,14 +372,26 @@
           "de": "Auf der Bank",
           "fr": "Sur un banc",
           "es": "Sobre la banca",
-          "it": "Sulla panchina"
+          "it": "Sulla panchina",
+          "ja": "ベンチの上で",
+          "ko": "벤치 위에서",
+          "zh-TW": "長椅上",
+          "id": "Di atas bangku",
+          "hi": "बेंच पर",
+          "ar": "على المقعد"
         },
         "descriptionI18n": {
           "en": "A book under a tree and one shared pair of earbuds.",
           "de": "Unter dem Baum ein Buch und ein Kopfhörer zu zweit.",
           "fr": "Un livre sous un arbre et des écouteurs partagés.",
           "es": "Un libro y audífonos compartidos bajo un árbol.",
-          "it": "Un libro sotto l'albero e le cuffie da condividere."
+          "it": "Un libro sotto l'albero e le cuffie da condividere.",
+          "ja": "木陰で本とイヤホンをシェア。",
+          "ko": "나무 아래서 책과 이어폰 나눠 쓰기.",
+          "zh-TW": "樹蔭下共讀一本書、共享一副耳機。",
+          "id": "Berbagi buku dan earphone di bawah pohon.",
+          "hi": "पेड़ की छाँव में किताब और एक ही ईयरफ़ोन साथ में।",
+          "ar": "تحت الشجرة، كتاب وسمّاعة واحدة بينكما."
         }
       },
       {
@@ -252,14 +402,26 @@
           "de": "Früher Morgen",
           "fr": "Petit matin",
           "es": "Temprano por la mañana",
-          "it": "Prime ore del mattino"
+          "it": "Prime ore del mattino",
+          "ja": "早朝の時間",
+          "ko": "이른 아침",
+          "zh-TW": "清晨時分",
+          "id": "Pagi-pagi sekali",
+          "hi": "सुबह की सबसे पहली घड़ी",
+          "ar": "ساعات الصباح الأولى"
         },
         "descriptionI18n": {
           "en": "Birdsong, and only the two of you.",
           "de": "Vogelgezwitscher, nur ihr beide.",
           "fr": "Le chant des oiseaux, rien que vous deux.",
           "es": "El canto de los pájaros, solo ustedes dos.",
-          "it": "Il canto degli uccelli, soltanto voi due."
+          "it": "Il canto degli uccelli, soltanto voi due.",
+          "ja": "鳥のさえずり、二人だけ。",
+          "ko": "새소리, 오직 너희 둘뿐.",
+          "zh-TW": "鳥鳴聲中,只有你們兩個。",
+          "id": "Suara burung, hanya kalian berdua.",
+          "hi": "चिड़ियों की चहचहाहट, सिर्फ़ तुम दोनों।",
+          "ar": "أصوات العصافير، وأنتما وحدكما فقط."
         }
       }
     ],
@@ -274,7 +436,13 @@
       "de": "Kino",
       "fr": "Cinéma",
       "es": "Cine",
-      "it": "Cinema"
+      "it": "Cinema",
+      "ja": "映画館",
+      "ko": "영화관",
+      "zh-TW": "電影院",
+      "id": "Bioskop",
+      "hi": "सिनेमा",
+      "ar": "السينما"
     },
     "color": "#6A4C93",
     "icon": "🎬",
@@ -287,14 +455,26 @@
           "de": "Klassischer Saal + Popcorn",
           "fr": "Salle classique + popcorn",
           "es": "Sala clásica + palomitas",
-          "it": "Sala classica + popcorn"
+          "it": "Sala classica + popcorn",
+          "ja": "定番の劇場＋ポップコーン",
+          "ko": "클래식 상영관 + 팝콘",
+          "zh-TW": "經典廳 + 爆米花",
+          "id": "Studio klasik + popcorn",
+          "hi": "क्लासिक हॉल + पॉपकॉर्न",
+          "ar": "صالة كلاسيكية + فشار"
         },
         "descriptionI18n": {
           "en": "Dim room — sink deep into your seats.",
           "de": "Dunkler Saal, macht es euch im Sessel bequem.",
           "fr": "Salle obscure, installez-vous bien dans vos fauteuils.",
           "es": "Sala oscura, acomódense bien en el asiento.",
-          "it": "Sala buia, sprofondate nella poltrona."
+          "it": "Sala buia, sprofondate nella poltrona.",
+          "ja": "暗い館内、座席に深く沈み込んで。",
+          "ko": "어두운 상영관, 좌석에 푹 파묻혀.",
+          "zh-TW": "漆黑的影廳,舒舒服服地窩進座位。",
+          "id": "Studio gelap, bersandarlah dalam-dalam di kursi.",
+          "hi": "अँधेरा हॉल, सीट में अच्छे से धँस जाओ।",
+          "ar": "صالة معتمة، استقرّ في مقعدك جيداً."
         }
       },
       {
@@ -305,14 +485,26 @@
           "de": "Independent-Filmabend",
           "fr": "Soirée film indépendant",
           "es": "Noche de cine independiente",
-          "it": "Serata film indipendente"
+          "it": "Serata film indipendente",
+          "ja": "インディー映画の夜",
+          "ko": "독립영화의 밤",
+          "zh-TW": "獨立電影之夜",
+          "id": "Malam film independen",
+          "hi": "इंडी फ़िल्म की रात",
+          "ar": "ليلة أفلام مستقلة"
         },
         "descriptionI18n": {
           "en": "Something from a lesser-known director.",
           "de": "Von einer kaum bekannten Regie.",
           "fr": "D'un réalisateur peu connu.",
           "es": "De un director poco conocido.",
-          "it": "Di un regista poco conosciuto."
+          "it": "Di un regista poco conosciuto.",
+          "ja": "あまり知られていない監督の一作を。",
+          "ko": "잘 알려지지 않은 감독의 작품으로.",
+          "zh-TW": "來自一位鮮為人知的導演。",
+          "id": "Dari sutradara yang jarang dikenal.",
+          "hi": "किसी कम-मशहूर निर्देशक की फ़िल्म।",
+          "ar": "من مخرج قليل الشهرة."
         }
       },
       {
@@ -323,14 +515,26 @@
           "de": "Freiluftkino",
           "fr": "Cinéma en plein air",
           "es": "Cine al aire libre",
-          "it": "Cinema all'aperto"
+          "it": "Cinema all'aperto",
+          "ja": "野外映画",
+          "ko": "야외 영화관",
+          "zh-TW": "露天電影院",
+          "id": "Bioskop terbuka",
+          "hi": "ओपन-एयर सिनेमा",
+          "ar": "سينما في الهواء الطلق"
         },
         "descriptionI18n": {
           "en": "A screen under the stars.",
           "de": "Leinwand unter den Sternen.",
           "fr": "Un écran sous les étoiles.",
           "es": "Una pantalla bajo las estrellas.",
-          "it": "Schermo sotto le stelle."
+          "it": "Schermo sotto le stelle.",
+          "ja": "星空の下のスクリーン。",
+          "ko": "별 아래의 스크린.",
+          "zh-TW": "星空下的大銀幕。",
+          "id": "Layar di bawah bintang-bintang.",
+          "hi": "तारों के नीचे पर्दा।",
+          "ar": "شاشة تحت النجوم."
         }
       },
       {
@@ -341,14 +545,26 @@
           "de": "Festival zu Hause",
           "fr": "Festival à la maison",
           "es": "Festival en casa",
-          "it": "Festival in casa"
+          "it": "Festival in casa",
+          "ja": "おうちフェスティバル",
+          "ko": "집에서 영화제",
+          "zh-TW": "居家影展",
+          "id": "Festival di rumah",
+          "hi": "घर पर फ़िल्म महोत्सव",
+          "ar": "مهرجان في البيت"
         },
         "descriptionI18n": {
           "en": "Skip the theater — pick 3 short films instead.",
           "de": "Statt ins Kino zu gehen, wählt 3 Kurzfilme aus.",
           "fr": "Au lieu d'aller au cinéma, choisissez 3 courts métrages.",
           "es": "En vez de ir al cine, elijan 3 cortometrajes.",
-          "it": "Invece di andare al cinema, scegliete 3 cortometraggi."
+          "it": "Invece di andare al cinema, scegliete 3 cortometraggi.",
+          "ja": "映画館に行く代わりに、短編を3本選んで。",
+          "ko": "영화관 가는 대신 단편 3편을 골라봐.",
+          "zh-TW": "不去電影院,改在家挑三部短片。",
+          "id": "Daripada ke bioskop, pilih 3 film pendek.",
+          "hi": "सिनेमा जाने के बजाय 3 छोटी फ़िल्में चुन लो।",
+          "ar": "بدلاً من الذهاب إلى السينما، اختارا 3 أفلام قصيرة."
         }
       }
     ],
@@ -363,7 +579,13 @@
       "de": "Zuhause zu zweit",
       "fr": "En tête-à-tête à la maison",
       "es": "En Casa a Solas",
-      "it": "Casa a Due"
+      "it": "Casa a Due",
+      "ja": "二人のおうち時間",
+      "ko": "집에서 둘만",
+      "zh-TW": "家中獨處",
+      "id": "Berdua di Rumah",
+      "hi": "घर पर आमने-सामने",
+      "ar": "البيت وجهاً لوجه"
     },
     "color": "#EC7CAB",
     "icon": "🏠",
@@ -376,14 +598,26 @@
           "de": "Deckentunnel",
           "fr": "Tunnel de couvertures",
           "es": "Túnel de mantas",
-          "it": "Tunnel di coperte"
+          "it": "Tunnel di coperte",
+          "ja": "ブランケットのトンネル",
+          "ko": "담요 터널",
+          "zh-TW": "毛毯城堡",
+          "id": "Terowongan selimut",
+          "hi": "कंबल की सुरंग",
+          "ar": "نفق البطانيات"
         },
         "descriptionI18n": {
           "en": "Build the fort in the living room, roll the movie.",
           "de": "Bau die Burg im Wohnzimmer, starte den Film.",
           "fr": "Monte le fort dans le salon, lance le film.",
           "es": "Arma el fuerte en la sala, pon la película.",
-          "it": "Costruisci il castello in salotto, fai partire il film."
+          "it": "Costruisci il castello in salotto, fai partire il film.",
+          "ja": "リビングに秘密基地を作って、映画スタート。",
+          "ko": "거실에 요새를 짓고, 영화를 틀어.",
+          "zh-TW": "在客廳搭起堡壘,打開電影。",
+          "id": "Bangun bentengnya di ruang tamu, mulai filmnya.",
+          "hi": "ड्रॉइंग रूम में किला बनाओ, फ़िल्म चालू करो।",
+          "ar": "ابنِ القلعة في الصالون، وشغّل الفيلم."
         }
       },
       {
@@ -394,14 +628,26 @@
           "de": "Küchentanz",
           "fr": "Danse en cuisine",
           "es": "Baile en la cocina",
-          "it": "Danza in cucina"
+          "it": "Danza in cucina",
+          "ja": "キッチンでダンス",
+          "ko": "주방 댄스",
+          "zh-TW": "廚房共舞",
+          "id": "Dansa dapur",
+          "hi": "रसोई का नाच",
+          "ar": "رقصة المطبخ"
         },
         "descriptionI18n": {
           "en": "Music on while you cook together.",
           "de": "Beim gemeinsamen Kochen läuft Musik.",
           "fr": "Musique à fond pendant que vous cuisinez ensemble.",
           "es": "Música sonando mientras cocinan juntos.",
-          "it": "Musica accesa mentre cucinate insieme."
+          "it": "Musica accesa mentre cucinate insieme.",
+          "ja": "一緒に料理しながら音楽をかけて。",
+          "ko": "함께 요리하면서 음악은 켜둔 채로.",
+          "zh-TW": "一起做菜,放著音樂。",
+          "id": "Masak bersama dengan musik menyala.",
+          "hi": "साथ में खाना बनाते हुए म्यूज़िक चालू।",
+          "ar": "موسيقى تعزف بينما تطبخان معاً."
         }
       },
       {
@@ -412,14 +658,26 @@
           "de": "Balkonlichter",
           "fr": "Lumières du balcon",
           "es": "Luces del balcón",
-          "it": "Luci sul balcone"
+          "it": "Luci sul balcone",
+          "ja": "バルコニーの灯り",
+          "ko": "발코니 조명",
+          "zh-TW": "陽台燈光",
+          "id": "Lampu balkon",
+          "hi": "बालकनी की रोशनी",
+          "ar": "أضواء الشرفة"
         },
         "descriptionI18n": {
           "en": "Turn the lights off, light the candles.",
           "de": "Mach das Licht aus, zünd die Kerzen an.",
           "fr": "Éteins les lumières, allume les bougies.",
           "es": "Apaga las luces, enciende las velas.",
-          "it": "Spegni le luci, accendi le candele."
+          "it": "Spegni le luci, accendi le candele.",
+          "ja": "明かりを消して、キャンドルを灯して。",
+          "ko": "불을 끄고, 초를 켜.",
+          "zh-TW": "關掉燈,點起蠟燭。",
+          "id": "Matikan lampu, nyalakan lilin.",
+          "hi": "बत्तियाँ बुझा दो, मोमबत्तियाँ जला दो।",
+          "ar": "أطفئ الأنوار، وأشعل الشموع."
         }
       },
       {
@@ -430,14 +688,26 @@
           "de": "Bettgespräch",
           "fr": "Séance au lit",
           "es": "Sesión de cama",
-          "it": "Seduta sul letto"
+          "it": "Seduta sul letto",
+          "ja": "ベッドでの時間",
+          "ko": "침대 세션",
+          "zh-TW": "床上時光",
+          "id": "Sesi di ranjang",
+          "hi": "बिस्तर पर महफ़िल",
+          "ar": "جلسة السرير"
         },
         "descriptionI18n": {
           "en": "A long talk among the pillows.",
           "de": "Ein langes Gespräch zwischen Kissen.",
           "fr": "Une longue conversation entre les oreillers.",
           "es": "Charla larga entre almohadas.",
-          "it": "Una lunga chiacchierata tra i cuscini."
+          "it": "Una lunga chiacchierata tra i cuscini.",
+          "ja": "枕に埋もれながら、長いおしゃべり。",
+          "ko": "베개 사이에서 긴 수다.",
+          "zh-TW": "枕頭之間,長長的對話。",
+          "id": "Obrolan panjang di antara bantal-bantal.",
+          "hi": "तकियों के बीच लंबी बातचीत।",
+          "ar": "حديث طويل بين الوسائد."
         }
       }
     ],
@@ -452,7 +722,13 @@
       "de": "Überraschung",
       "fr": "Surprise",
       "es": "Sorpresa",
-      "it": "Sorpresa"
+      "it": "Sorpresa",
+      "ja": "サプライズ",
+      "ko": "서프라이즈",
+      "zh-TW": "驚喜",
+      "id": "Kejutan",
+      "hi": "सरप्राइज़",
+      "ar": "مفاجأة"
     },
     "color": "#F0A500",
     "icon": "🎁",
@@ -465,14 +741,26 @@
           "de": "Zufällige Autofahrt",
           "fr": "Route en voiture au hasard",
           "es": "Ruta al azar en auto",
-          "it": "Strada a caso in auto"
+          "it": "Strada a caso in auto",
+          "ja": "気ままなドライブ",
+          "ko": "무작정 드라이브",
+          "zh-TW": "隨興駕車之旅",
+          "id": "Rute mobil acak",
+          "hi": "बेतरतीब गाड़ी का सफ़र",
+          "ar": "طريق عشوائي بالسيارة"
         },
         "descriptionI18n": {
           "en": "No GPS — only \"left\" and \"right\" decisions.",
           "de": "Ohne GPS, nur mit \"rechts\" und \"links\" entscheiden.",
           "fr": "Sans GPS, juste avec des décisions \"à droite\" et \"à gauche\".",
           "es": "Sin GPS, solo con decisiones de \"a la derecha\" y \"a la izquierda\".",
-          "it": "Senza GPS, solo con decisioni \"a destra\" e \"a sinistra\"."
+          "it": "Senza GPS, solo con decisioni \"a destra\" e \"a sinistra\".",
+          "ja": "GPSなし、\"右\"と\"左\"だけで決めて。",
+          "ko": "GPS 없이, 오직 \"오른쪽\"과 \"왼쪽\" 결정만으로.",
+          "zh-TW": "不用 GPS,只憑 \"右轉\" 和 \"左轉\" 的決定。",
+          "id": "Tanpa GPS, hanya dengan keputusan \"kanan\" dan \"kiri\".",
+          "hi": "बिना GPS के, सिर्फ़ \"दाएँ\" और \"बाएँ\" के फ़ैसलों से।",
+          "ar": "بلا GPS، فقط بقرارات \"يمين\" و\"يسار\"."
         }
       },
       {
@@ -483,14 +771,26 @@
           "de": "Erstes Date noch mal",
           "fr": "Premier rendez-vous rejoué",
           "es": "La primera cita otra vez",
-          "it": "Primo appuntamento, di nuovo"
+          "it": "Primo appuntamento, di nuovo",
+          "ja": "初デートをもう一度",
+          "ko": "첫 데이트 다시",
+          "zh-TW": "重溫初次約會",
+          "id": "Kencan pertama diulang",
+          "hi": "पहली मुलाक़ात फिर से",
+          "ar": "اللقاء الأول من جديد"
         },
         "descriptionI18n": {
           "en": "Same place, same order of events.",
           "de": "Derselbe Ort, dieselbe Reihenfolge.",
           "fr": "Le même endroit, dans le même ordre.",
           "es": "El mismo lugar, en el mismo orden.",
-          "it": "Stesso posto, stesso ordine."
+          "it": "Stesso posto, stesso ordine.",
+          "ja": "同じ場所を、同じ順番で。",
+          "ko": "같은 장소를, 같은 순서대로.",
+          "zh-TW": "同樣的地方,同樣的順序。",
+          "id": "Tempat yang sama, urutan yang sama.",
+          "hi": "वही जगह, वही सिलसिला।",
+          "ar": "نفس المكان، وبنفس الترتيب."
         }
       },
       {
@@ -501,14 +801,26 @@
           "de": "Ein neues Viertel",
           "fr": "Un nouveau quartier",
           "es": "Un barrio nuevo",
-          "it": "Un quartiere nuovo"
+          "it": "Un quartiere nuovo",
+          "ja": "新しい街",
+          "ko": "새로운 동네",
+          "zh-TW": "陌生街區",
+          "id": "Lingkungan baru",
+          "hi": "नया मोहल्ला",
+          "ar": "حي جديد"
         },
         "descriptionI18n": {
           "en": "Head toward a district you've never set foot in.",
           "de": "In einen Stadtteil, in dem ihr noch nie wart.",
           "fr": "Vers un quartier où vous n'êtes jamais allés.",
           "es": "Hacia una zona a la que nunca han ido.",
-          "it": "Verso una zona in cui non siete mai stati."
+          "it": "Verso una zona in cui non siete mai stati.",
+          "ja": "行ったことのないエリアへ向かって。",
+          "ko": "한 번도 가본 적 없는 동네로.",
+          "zh-TW": "朝著你們從沒去過的區域出發。",
+          "id": "Menuju kawasan yang belum pernah kalian datangi.",
+          "hi": "किसी ऐसे इलाक़े की ओर जहाँ कभी नहीं गए।",
+          "ar": "اتّجها إلى منطقة لم تزوراها من قبل."
         }
       },
       {
@@ -519,14 +831,26 @@
           "de": "Rollenspiel-Abend",
           "fr": "Soirée jeu de rôle",
           "es": "Noche de rol",
-          "it": "Serata di ruolo"
+          "it": "Serata di ruolo",
+          "ja": "ロールプレイの夜",
+          "ko": "역할극의 밤",
+          "zh-TW": "角色扮演之夜",
+          "id": "Malam bermain peran",
+          "hi": "रोल-प्ले की रात",
+          "ar": "ليلة تقمّص الأدوار"
         },
         "descriptionI18n": {
           "en": "Introduce yourselves as strangers — meet at a café.",
           "de": "Stellt euch wie Fremde vor — trefft euch in einem Café.",
           "fr": "Présentez-vous comme des inconnus — retrouvez-vous dans un café.",
           "es": "Preséntense como extraños — encuéntrense en un café.",
-          "it": "Presentatevi come due sconosciuti — incontratevi in un caffè."
+          "it": "Presentatevi come due sconosciuti — incontratevi in un caffè.",
+          "ja": "初対面のふりで自己紹介して — カフェで待ち合わせ。",
+          "ko": "서로 처음 보는 사이처럼 소개해봐 — 카페에서 만나.",
+          "zh-TW": "像陌生人一樣自我介紹 — 約在一間咖啡館見面。",
+          "id": "Perkenalkan diri seolah orang asing — bertemu di sebuah kafe.",
+          "hi": "अपने आप को अजनबी की तरह पेश करो — किसी कैफ़े में मिलो।",
+          "ar": "قدّما نفسيكما كغريبَين — والتقيا في مقهى."
         }
       }
     ],

@@ -7,7 +7,13 @@
       "de": "Das Wort des Guides",
       "fr": "La Parole du Guide",
       "es": "La Palabra del Guía",
-      "it": "La Parola della Guida"
+      "it": "La Parola della Guida",
+      "ja": "導き手の言葉",
+      "ko": "안내자의 말",
+      "zh-TW": "引導者之語",
+      "id": "Kata Sang Pembimbing",
+      "hi": "मार्गदर्शक की बात",
+      "ar": "كلمة المرشد"
     },
     "color": "#1E3A8A",
     "icon": "🌙",
@@ -62,6 +68,54 @@
         "Scambio: in questo turno la Guida sei tu. Dai al partner 3 comandi tipo \"chiudi gli occhi, apri le labbra, trattieni il respiro\". Se obbedisce, 5 secondi di tocco come premio.",
         "La Guida porge un lato della mano al partner: \"bacia\". Poi \"lecca\". Poi \"mordi\". Tra un comando e l'altro, aspetta 3 secondi.",
         "La Guida dice \"vieni\". Il partner colma la distanza lentamente in 3 passi — senza mai staccare gli occhi da quelli della Guida."
+      ],
+      "ja": [
+        "このターンは一人が\"導き手\"になる。導き手はパートナーに3つの指示を出す — 息を吸って、目を閉じて、唇を舐めて。パートナーはその通りに従う。",
+        "導き手は、パートナーの手を自分の手に導きながら\"どこ？\"と尋ねる。パートナーは\"ここ\"か\"そこじゃない\"としか言えない。他の言葉は禁止。",
+        "導き手が一言告げる（\"止まって\"、\"ゆっくり\"、\"もう一度\"）。パートナーはその言葉のままに完全に留まる。3回繰り返し。",
+        "交代：このターンは君が導き手。パートナーに\"目を閉じて、唇を開いて、息を止めて\"のような3つの指示を出す。従ったら5秒間ご褒美の触れ合いを。",
+        "導き手は片手をパートナーに差し出す：\"キスして\"。次に\"舐めて\"。次に\"噛んで\"。それぞれの指示の間に3秒待つ。",
+        "導き手が\"おいで\"と言う。パートナーは3歩でゆっくり距離を縮める — 導き手の目から視線を外さずに。"
+      ],
+      "ko": [
+        "이번 턴에는 한 사람이 \"안내자\"가 돼. 안내자는 상대에게 세 가지 명령을 내려 — 숨을 들이쉬어, 눈을 감아, 입술을 핥아. 상대는 정확히 따라야 해.",
+        "안내자는 상대의 손을 자기 몸으로 이끌며 \"어디?\"라고 물어. 상대는 오직 \"여기\" 또는 \"거긴 아냐\"만 말할 수 있어. 다른 말은 금지.",
+        "안내자가 한 단어를 말해 (\"멈춰\", \"천천히\", \"다시\"). 상대는 그 단어 그대로 정확히 머물러. 3번 반복.",
+        "역할 교대: 이번엔 네가 안내자야. 상대에게 \"눈을 감아, 입을 벌려, 숨을 참아\" 같은 세 가지 명령을 내려. 잘 따르면 5초간 보상의 손길을.",
+        "안내자가 손을 상대에게 내밀어: \"입맞춰.\" 그다음 \"핥아.\" 그다음 \"깨물어.\" 각 명령 사이에 3초씩 기다려.",
+        "안내자가 \"와\"라고 말해. 상대는 세 걸음에 걸쳐 천천히 거리를 좁혀 — 안내자의 눈을 놓치지 않고."
+      ],
+      "zh-TW": [
+        "這一輪由一人擔任\"引導者\"。引導者給伴侶3個指令——深呼吸、閉上眼睛、舔舔嘴唇。伴侶完整照做。",
+        "引導者把伴侶的手引到自己身上，問\"哪裡\"。伴侶只能回答\"這裡\"或\"不是那裡\"。其他字詞禁止。",
+        "引導者說一個字（\"停\"、\"慢一點\"、\"再一次\"）。伴侶在那個字上完全停住。重複3次。",
+        "互換：這一輪你是引導者。給伴侶3個指令，像是\"閉上眼睛、張開嘴唇、屏住呼吸\"。若他照做，獎勵5秒的撫觸。",
+        "引導者把自己的一隻手伸向伴侶：\"吻\"。接著\"舔\"。接著\"咬\"。每個指令之間間隔3秒。",
+        "引導者說\"過來\"。伴侶用3步慢慢拉近距離——目光不離引導者的雙眼。"
+      ],
+      "id": [
+        "Satu orang jadi \"Pembimbing\" di ronde ini. Pembimbing memberi 3 perintah ke pasangannya — tarik napas, pejamkan mata, jilat bibirmu. Pasangan menuruti tepat seperti itu.",
+        "Pembimbing menuntun tangan pasangannya ke tangannya sendiri sambil bertanya \"ke mana\". Pasangan hanya boleh menjawab \"ke sini\" atau \"bukan di situ\". Kata lain dilarang.",
+        "Pembimbing mengucapkan satu kata (\"berhenti\", \"pelankan\", \"ulangi\"). Pasangan berhenti tepat pada kata itu. 3 kali ulangan.",
+        "Bergantian: ronde ini kamu jadi Pembimbing. Beri pasangan 3 perintah seperti \"pejamkan mata, buka bibirmu, tahan napasmu\". Kalau ia menuruti, beri 5 detik sentuhan hadiah.",
+        "Pembimbing menyodorkan satu sisi tangannya ke pasangan: \"cium\". Lalu \"jilat\". Lalu \"gigit\". Tunggu 3 detik di antara setiap perintah.",
+        "Pembimbing berkata \"kemari\". Pasangan menutup jarak perlahan dalam 3 langkah — tanpa melepaskan tatapan Pembimbing."
+      ],
+      "hi": [
+        "इस दौर में एक व्यक्ति \"मार्गदर्शक\" बनता है। मार्गदर्शक अपने पार्टनर को 3 आदेश देता है — सांस लो, आंखें बंद करो, होंठ चाटो। पार्टनर पूरी तरह से पालन करे।",
+        "मार्गदर्शक अपने पार्टनर के हाथों को अपने हाथों पर ले जाकर पूछता है \"कहाँ\"। पार्टनर सिर्फ \"यहाँ\" या \"वहाँ नहीं\" कह सकता है। दूसरे शब्द मना हैं।",
+        "मार्गदर्शक एक शब्द कहता है (\"रुको\", \"धीरे\", \"फिर से\")। पार्टनर उस शब्द पर पूरी तरह ठहर जाए। 3 बार दोहराओ।",
+        "अब बारी तुम्हारी: इस दौर में मार्गदर्शक तुम हो। पार्टनर को \"आंखें बंद करो, होंठ खोलो, सांस रोको\" जैसे 3 आदेश दो। वह मान ले तो 5 सेकंड का इनाम स्पर्श।",
+        "मार्गदर्शक अपने हाथ का एक हिस्सा पार्टनर की ओर बढ़ाता है: \"चूमो\"। फिर \"चाटो\"। फिर \"काटो\"। हर आदेश के बीच 3 सेकंड रुको।",
+        "मार्गदर्शक कहता है \"आओ\"। पार्टनर 3 कदमों में धीरे-धीरे दूरी मिटाए — मार्गदर्शक की आंखों से नज़र हटाए बिना।"
+      ],
+      "ar": [
+        "في هذه الجولة يصبح أحدكما \"المرشد\". يعطي المرشد شريكه ٣ أوامر — خذ نفساً، أغمض عينيك، المس شفتيك بلسانك. على الشريك أن ينفذها بدقة.",
+        "يأخذ المرشد يدي شريكه إلى يديه ويسأل \"إلى أين؟\". لا يحق للشريك إلا أن يقول \"هنا\" أو \"ليس هناك\". أي كلمات أخرى ممنوعة.",
+        "يقول المرشد كلمة واحدة (\"قف\"، \"أبطئ\"، \"أعِد\"). يبقى الشريك عند تلك الكلمة تماماً. ٣ تكرارات.",
+        "بالتبادل: في هذه الجولة أنت المرشد. أعطِ شريكك ٣ أوامر مثل \"أغمض عينيك، افتح شفتيك، احبس أنفاسك\". إن أطاع، كافئه بلمسة لمدة ٥ ثوانٍ.",
+        "يمدّ المرشد ظهر يده إلى شريكه: \"قبّل\". ثم \"العق\". ثم \"عُضّ\". انتظر ٣ ثوانٍ بين كل أمر وآخر.",
+        "يقول المرشد \"تعال\". يقطع الشريك المسافة في ٣ خطوات بطيئة — دون أن يترك عيني المرشد."
       ]
     }
   },
@@ -73,7 +127,13 @@
       "de": "Kleiner Widerstand",
       "fr": "Petite Résistance",
       "es": "Pequeña Resistencia",
-      "it": "Piccola Resistenza"
+      "it": "Piccola Resistenza",
+      "ja": "小さな抵抗",
+      "ko": "작은 저항",
+      "zh-TW": "小小抵抗",
+      "id": "Perlawanan Kecil",
+      "hi": "छोटा विद्रोह",
+      "ar": "مقاومة صغيرة"
     },
     "color": "#DB2777",
     "icon": "🎭",
@@ -128,6 +188,54 @@
         "Il partner dice di voler fare un gesto. Tu rispondi \"forse\". Quando dice \"promettimelo\", tu dici \"non lo farò\" — dopo 3 ripetizioni, concedi.",
         "Il partner chiede un bacio. Tu chiedi \"te lo sei meritato?\". Che ti dia 3 motivi. Quando scegli il più convincente, bacialo.",
         "Inversione dei ruoli. In questo turno le regole le fai tu: \"se mi lasci fare X, in cambio Y\". Qualunque sia la risposta, mantieni la parola."
+      ],
+      "ja": [
+        "パートナーが君に指示を出す。君はその真逆をする — ただし微笑みながら。彼／彼女が煽られずに何秒耐えられるか見てみよう。",
+        "パートナーが君に\"静かにして\"と言う。君は30秒間、真逆に — 笑い声、聞こえる吐息、挑発的な言葉。結局どちらが勝つ？",
+        "パートナーが近づいてくる。君は3回後ずさる — でも離れない。近さは緊張、抵抗は遊び。",
+        "パートナーがある動きをしたいと言う。君は\"たぶんね\"と答える。\"約束して\"と言われたら\"しないよ\"と返す — 3回繰り返した後に許す。",
+        "パートナーがキスをねだる。君は\"それに値する？\"と尋ねる。彼／彼女は3つの理由を挙げる。一番説得力があるものを選んだらキスする。",
+        "役割を逆転させよう。このターンのルールは君が決める：\"君にXをさせてくれるなら、代わりにY\"。何が返ってきても応じて。"
+      ],
+      "ko": [
+        "상대가 너에게 명령을 내려. 넌 정반대로 해 — 하지만 미소 지으면서. 상대가 너를 몇 초나 더 자극하지 않고 버틸 수 있는지 보자.",
+        "상대가 너에게 \"조용히 해\"라고 말해. 넌 30초 동안 정반대로 — 웃음, 소리 내는 숨, 도발적인 말. 결국 누가 이길까?",
+        "상대가 네게 다가와. 넌 세 번 뒤로 물러나 — 하지만 멀어지진 마. 가까움은 긴장, 저항은 놀이.",
+        "상대가 어떤 걸 하고 싶다고 말해. 넌 \"글쎄\"라고 해. \"약속해\"라고 하면 \"안 할 거야\"라고 해 — 세 번 반복한 뒤 허락해.",
+        "상대가 입맞춤을 원해. 넌 \"그럴 자격 있어?\"라고 물어. 상대가 세 가지 이유를 대. 가장 설득력 있는 걸 골라서 입맞춰.",
+        "역할을 뒤집어. 이번 턴엔 네가 규칙을 정해: \"내가 X 하게 해주면, 대신 Y 해줄게.\" 무슨 답이 오든 꼭 들어줘."
+      ],
+      "zh-TW": [
+        "伴侶給你一個指令。你做完全相反的事——但帶著微笑。看看他能忍多少秒才忍不住挑逗你。",
+        "伴侶對你說\"安靜\"。你反其道而行30秒——笑聲、出聲的呼吸、挑逗的話語。最後，誰贏了？",
+        "伴侶靠近你。你退後3次——但別走遠。靠近是張力，抵抗是遊戲。",
+        "伴侶說想做某個動作。你回\"也許吧\"。他說\"答應我\"時你回\"我不要\"——重複3次後再允許。",
+        "伴侶想要一個吻。你問\"你值得嗎？\"讓他給出3個理由。選最打動你的那個，然後吻他。",
+        "角色反轉。這一輪由你定規則：\"如果你讓我對你做X，作為回報就是Y。\"不管他回應什麼，就照做。"
+      ],
+      "id": [
+        "Pasanganmu memberimu satu perintah. Kamu lakukan kebalikannya — tapi sambil tersenyum. Lihat berapa detik ia bisa bertahan tanpa terpancing olehmu.",
+        "Pasanganmu berkata \"diam\". Kamu justru sebaliknya selama 30 detik — tawa, embusan napas, kata-kata menggoda. Akhirnya, siapa yang menang?",
+        "Pasanganmu mendekat. Kamu mundur 3 kali — tapi jangan menjauh. Kedekatan itu ketegangan, perlawanan itu permainan.",
+        "Pasanganmu bilang ia ingin melakukan satu gerakan. Kamu jawab \"mungkin\". Saat ia bilang \"janji\", jawab \"tidak akan\" — setelah 3 kali ulangan, izinkan.",
+        "Pasanganmu minta satu ciuman. Kamu tanya \"memangnya pantas?\". Minta ia memberi 3 alasan. Saat kamu memilih yang paling meyakinkan, cium dia.",
+        "Peran dibalik. Di ronde ini kamu yang menentukan aturan: \"kalau kamu izinkan aku melakukan X, imbalannya Y.\" Apa pun jawabannya, balas dengan tegas."
+      ],
+      "hi": [
+        "तुम्हारा पार्टनर तुम्हें एक आदेश देता है। तुम ठीक उल्टा करो — पर मुस्कुराते हुए। देखें वह कितनी देर तुम्हें और उकसाए बिना टिक सकता है।",
+        "तुम्हारा पार्टनर तुमसे कहता है \"चुप रहो\"। तुम 30 सेकंड तक बिल्कुल उल्टा करो — हँसी, तेज़ साँसें, उकसाने वाले शब्द। आखिर में कौन जीतेगा?",
+        "तुम्हारा पार्टनर तुम्हारे पास आता है। तुम 3 बार पीछे हटो — पर दूर मत जाओ। नज़दीकी तनाव है, विद्रोह खेल।",
+        "तुम्हारा पार्टनर कहता है कि वह कुछ करना चाहता है। तुम \"शायद\" कहो। जब वह कहे \"वादा करो\" तो \"नहीं करूँगा/करूँगी\" कहो — 3 बार दोहराने के बाद इजाज़त दो।",
+        "तुम्हारा पार्टनर एक चुंबन माँगता है। तुम पूछो \"क्या तुमने इसे कमाया है?\" वह 3 वजह बताए। जो सबसे प्रभावशाली लगे, उसे चुनकर चूमो।",
+        "भूमिकाएँ बदल दो। इस दौर में नियम तुम बनाओ: \"अगर तुम मुझे X करने दो, तो बदले में Y।\" जो भी हो, जवाब ज़रूर दो।"
+      ],
+      "ar": [
+        "يعطيك شريكك أمراً. افعل العكس تماماً — لكن بابتسامة. لنرَ كم ثانية يصمد قبل أن يستفزه إغراؤك.",
+        "يقول لك شريكك \"اصمت\". افعل العكس تماماً لمدة ٣٠ ثانية — ضحكات، أنفاس مسموعة، كلمات مثيرة. من الفائز في النهاية؟",
+        "يقترب منك شريكك. تراجع ٣ مرات — لكن لا تبتعد. القرب توتر، والمقاومة لعبة.",
+        "يقول لك شريكك إنه يريد أن يقوم بحركة ما. قل \"ربما\". حين يقول \"عدني\"، قل \"لن أفعل\" — بعد ٣ تكرارات اسمح له.",
+        "يطلب شريكك قبلة. اسأله \"هل تستحقها؟\". دعه يقدم ٣ أسباب. حين تختار الأكثر إقناعاً، قبّله.",
+        "لتنعكس الأدوار. في هذه الجولة ضع القاعدة أنت: \"إن سمحت لي بفعل كذا، أعطيك مقابله كذا\". مهما كان الرد، قدّم ما وعدت به."
       ]
     }
   },
@@ -139,7 +247,13 @@
       "de": "Erste Ader",
       "fr": "Première Veine",
       "es": "La Primera Vena",
-      "it": "Prima Vena"
+      "it": "Prima Vena",
+      "ja": "最初の脈",
+      "ko": "첫 떨림",
+      "zh-TW": "第一道脈動",
+      "id": "Denyut Pertama",
+      "hi": "पहली नस",
+      "ar": "النبض الأول"
     },
     "color": "#C2410C",
     "icon": "✋",
@@ -194,6 +308,54 @@
         "Con le dita, traccia una linea di 10 secondi con lieve pressione sulla schiena del partner — percepibile ma senza lasciare segno.",
         "Chiedi al partner \"morbido o deciso?\". In base alla risposta, dai 3 colpetti con il palmo sulla sua spalla.",
         "Afferra lievemente il polso o il collo del partner. Mantieni la presa per 5 secondi, poi lascia. Di nuovo 5 secondi. Costruisci ritmo e fiducia."
+      ],
+      "ja": [
+        "パートナーの背中に、開いた手のひらで3回優しく、加減した一打を — それぞれの間に5秒の間を置く。各一打の後に\"続ける？\"と尋ねる。",
+        "パートナーのお尻に、まず3秒間手で温もりを与え、その後ひとつだけ優しい一打。相手が何を感じたか言葉で言ってもらう。",
+        "手のひらでパートナーの太ももに5回リズミカルで軽い一打を — 音楽のリズムのように。その後\"どれが一番？\"と尋ねる。",
+        "指でパートナーの背中に10秒間、軽い圧のラインを描く — 感じられるけれど跡は残さない強さで。",
+        "パートナーに\"優しく、それとも強く？\"と尋ねる。答えに合わせて、手のひらで肩に3回の一打を。",
+        "手でパートナーの手首か首を軽く包む。5秒間その握りを保ち、放す。もう一度5秒。リズムと信頼を築く。"
+      ],
+      "ko": [
+        "상대의 등에 펼친 손바닥으로 세 번, 부드럽고 조절된 손길을 내려 — 사이사이 5초씩 쉬면서. 매번 뒤에 \"계속?\"하고 물어.",
+        "상대의 엉덩이에 먼저 3초간 손으로 따뜻함을 전해, 그다음 단 한 번의 부드러운 손길. 상대가 느낀 걸 말로 표현하게 해.",
+        "손바닥으로 상대의 허벅지에 리듬감 있게, 하지만 가볍게 다섯 번 — 음악의 박자처럼. 그다음 \"어느 게 제일 좋았어?\"라고 물어.",
+        "손가락으로 상대의 등에 10초 동안 가볍게 눌리는 선을 그려 — 느껴지지만 자국은 남지 않을 만큼.",
+        "상대에게 \"부드럽게? 세게?\"라고 물어. 그 대답에 맞춰 손바닥으로 어깨에 세 번 두드려.",
+        "상대의 손목이나 목을 손으로 가볍게 감싸. 5초 동안 그대로 쥐었다가, 놓아. 다시 5초. 리듬과 신뢰를 쌓아."
+      ],
+      "zh-TW": [
+        "用張開的手掌在伴侶背上輕拍3下，有分寸，每一下之間隔5秒。每拍一下後問\"繼續嗎？\"",
+        "先用手在伴侶的臀部停留3秒，傳遞溫度，然後給一下輕柔的觸碰。讓對方用言語說出他的感受。",
+        "用手心在伴侶的大腿上有節奏地輕拍5下——像一段音樂的節拍。然後問\"哪一下最強？\"",
+        "用手指在伴侶的背上畫出一條10秒的輕壓路線——感覺得到，但不留痕跡。",
+        "問伴侶\"要輕還是重？\"按照他的回答，用手掌在他肩膀上拍3下。",
+        "把手輕輕環住伴侶的手腕或脖子。握住5秒，然後放開。再握5秒。建立節奏與信任。"
+      ],
+      "id": [
+        "Dengan telapak terbuka, tepuk punggung pasanganmu 3 kali, lembut dan terukur — jeda 5 detik di antara masing-masing. Setelah setiap tepukan, tanyakan \"lanjut?\".",
+        "Di pinggul pasanganmu, pertama beri kehangatan dengan tanganmu selama 3 detik, lalu satu sentuhan lembut. Minta ia mengatakan dengan kata apa yang ia rasakan.",
+        "Dengan telapak tanganmu, tepuk paha pasanganmu 5 kali — ritmis tapi ringan, seperti irama musik. Lalu tanyakan \"yang mana paling terasa?\".",
+        "Dengan jari-jarimu, gambar satu garis di punggung pasanganmu selama 10 detik dengan tekanan ringan — terasa tapi tak meninggalkan bekas.",
+        "Tanya pasanganmu \"lembut atau keras?\". Sesuai jawabannya, beri 3 tepukan dengan telapak tanganmu di bahunya.",
+        "Genggam ringan pergelangan atau leher pasanganmu. Tahan genggaman itu 5 detik, lalu lepaskan. Ulangi 5 detik lagi. Bangun ritme dan kepercayaan."
+      ],
+      "hi": [
+        "पार्टनर की पीठ पर अपनी खुली हथेली से 3 नरम, मापी हुई थपकियाँ दो — हर एक के बीच 5 सेकंड का अंतर। हर थपकी के बाद पूछो \"और?\"",
+        "पार्टनर के कूल्हे पर पहले 3 सेकंड अपने हाथ से गर्माहट दो, फिर एक नरम थपकी। पार्टनर जो महसूस करे वह शब्दों में बताए।",
+        "अपनी हथेली से पार्टनर की जाँघ पर 5 बार लयबद्ध पर हल्की थपकियाँ दो — किसी संगीत की ताल जैसी। फिर पूछो \"कौन सी सबसे ज़्यादा?\"",
+        "अपनी उंगलियों से पार्टनर की पीठ पर 10 सेकंड की हल्के दबाव वाली एक रेखा खींचो — महसूस हो पर निशान न छोड़े।",
+        "पार्टनर से पूछो \"नरम या सख्त?\" उसके जवाब के अनुसार अपनी हथेली से उसके कंधे पर 3 थपकियाँ दो।",
+        "अपने हाथों से पार्टनर की कलाई या गर्दन को हल्के से पकड़ो। 5 सेकंड पकड़ बनाए रखो, फिर छोड़ दो। फिर से 5 सेकंड। लय और विश्वास बनाओ।"
+      ],
+      "ar": [
+        "اضرب ظهر شريكك براحة يدك المفتوحة ٣ ضربات لطيفة ومحسوبة — بين كل واحدة والأخرى ٥ ثوانٍ. بعد كل ضربة اسأل \"أكمل؟\".",
+        "امنح ردف شريكك دفء يدك أولاً لمدة ٣ ثوانٍ، ثم لمسة واحدة لطيفة. دعه يصف بالكلمات ما شعر به.",
+        "بباطن يديك اضرب فخذ شريكك ٥ ضربات خفيفة بإيقاع — كأنها نغمة موسيقية. ثم اسأل \"أيّها الأقوى؟\".",
+        "ارسم بأصابعك على ظهر شريكك خطاً بضغط خفيف لمدة ١٠ ثوانٍ — محسوس لكن دون أن يترك أثراً.",
+        "اسأل شريكك \"ناعم أم قوي؟\". بحسب جوابه، اضرب كتفه ٣ ضربات براحة يدك.",
+        "اقبض بلطف على معصم شريكك أو عنقه. امسك القبضة ٥ ثوانٍ، ثم أفلت. ثم ٥ ثوانٍ أخرى. ابنِ الإيقاع والثقة."
       ]
     }
   }

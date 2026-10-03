@@ -217,6 +217,15 @@
     "french": "Français",
     "spanish": "Español",
     "italian": "Italiano",
-    "close": "Schließen"
+    "close": "Schließen",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Neustart nötig",
+    "rtlReloadBody": "Arabisch wird von rechts nach links geschrieben. Die App muss neu starten, um die Richtung zu übernehmen.",
+    "rtlReloadButton": "Jetzt neu starten"
   }
 }

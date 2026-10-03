@@ -1,0 +1,231 @@
+{
+  "app": {
+    "loading": "Memuat…"
+  },
+  "common": {
+    "close": "Tutup",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "delete": "Hapus",
+    "save": "Simpan",
+    "retry": "Coba lagi",
+    "error": "Kesalahan:"
+  },
+  "home": {
+    "eyebrow": "UNTUK PASANGAN",
+    "title": "Love Games",
+    "subtitle": "Mini game untuk dimainkan berdua",
+    "footer": "Game baru segera hadir ✨"
+  },
+  "games": {
+    "wheel": {
+      "name": "Roda",
+      "tagline": "Putar dan temukan kategorimu"
+    },
+    "dice": {
+      "name": "Dadu",
+      "tagline": "Lempar — biarkan kejutan datang"
+    },
+    "cards": {
+      "name": "Kartu",
+      "tagline": "Pilih kategori, ambil satu kartu"
+    },
+    "boxes": {
+      "name": "Kotak",
+      "tagline": "Acak catatan, saling kejutkan"
+    }
+  },
+  "wheel": {
+    "eyebrow": "RODA",
+    "title": "Putar Roda",
+    "spinPrompt": "Ketuk tombol di tengah untuk memutar",
+    "spinBtn": "PUTAR",
+    "spinAgain": "Putar lagi",
+    "lastLabel": "Terakhir:",
+    "settings": {
+      "title": "Pengaturan Roda",
+      "summary": "{{active}} / {{total}} aktif · min {{min}} diperlukan",
+      "promptsCount": "{{count}} tantangan",
+      "lockNote": "Salah satu dari {{min}} kategori terakhir — tidak bisa dimatikan"
+    }
+  },
+  "dice": {
+    "eyebrow": "DADU",
+    "title": "Lempar Dadu",
+    "rollLabel": "LEMPAR",
+    "newRoll": "LEMPAR LAGI",
+    "poster": "KELUAR DARI KOTAK"
+  },
+  "cards": {
+    "eyebrow": "KARTU",
+    "title": "Ambil Kartu",
+    "drawCard": "Ambil Kartu",
+    "newCard": "Kartu Baru",
+    "hint": "Ketuk tumpukan di bawah → ambil satu kartu",
+    "cardBack": "love_games",
+    "selectionSummary": "{{count}} kategori · {{prompts}} tantangan",
+    "categoryFallback": "Kategori",
+    "footerPrompt": "Ambil lagi",
+    "settings": {
+      "title": "Pengaturan Kartu",
+      "summary": "{{active}} / {{total}} aktif · min {{min}} diperlukan",
+      "promptsCount": "{{count}} tantangan",
+      "lockNote": "Salah satu dari {{min}} terakhir — tidak bisa dimatikan"
+    }
+  },
+  "boxes": {
+    "lobbyEyebrow": "KOTAK",
+    "lobbyTitle": "Buat atau Gabung Ruang",
+    "lobbySubtitle": "Catatan tersinkron langsung antar dua ponsel — tanpa perlu QR",
+    "createNew": "Buat Ruang Baru",
+    "createNewSub": "Dapatkan kode 6 digit, bagikan ke pasanganmu",
+    "join": "Gabung Ruang",
+    "joinSub": "Masukkan kode dari pasanganmu",
+    "generatingCode": "Membuat…",
+    "generateCode": "Buat Kode",
+    "back": "Kembali",
+    "codeReadyTitle": "Kodemu Siap 🎉",
+    "codeReadyText": "Bagikan kode ini ke pasanganmu. Dia tinggal pilih \"Gabung Ruang\" lalu masukkan kodenya.",
+    "goToBoxes": "Ke Kotak",
+    "joinTitle": "Gabung Ruang",
+    "joinText": "Masukkan kode 6 digit dari pasanganmu.",
+    "joining": "Bergabung…",
+    "joinBtn": "Gabung",
+    "identityWait": "Identitas belum siap, coba lagi beberapa detik",
+    "roomNotFound": "Ruang tidak ditemukan. Periksa kodenya.",
+    "roomFull": "Ruang penuh (2 orang). Coba ruang lain.",
+    "listEyebrow": "KOTAK BERSAMA",
+    "listRoomLabel": "RUANG",
+    "listBoth": "2/2 orang",
+    "listWaiting": "1/2 · menunggu pasangan",
+    "listLiveSync": "Catatan tersinkron langsung",
+    "listGiveCode": "Berikan kode ke pasanganmu untuk terhubung",
+    "leaveRoom": "Keluar dari ruang",
+    "leaveConfirmTitle": "Keluar dari ruang",
+    "leaveConfirmText": "Tautan ruang di ponsel ini akan dihapus. Kotak tetap tersimpan di Firestore — kamu bisa gabung lagi dengan kode.",
+    "cancel": "Batal",
+    "leave": "Keluar",
+    "newBox": "Kotak Baru",
+    "loading": "Memuat…",
+    "error": "Kesalahan:",
+    "noBoxes": "Belum ada kotak",
+    "noBoxesHint": "Buat kotak baru, tambahkan catatan, acak bersama pasanganmu",
+    "boxCardMeta": "{{mine}} punyamu · {{partner}} punya pasangan",
+    "ready": "Siap",
+    "notesCount": "{{count}} catatan",
+    "createBoxTitle": "Kotak Baru",
+    "createBoxSub": "Beri nama dan tema untuk kotakmu",
+    "namePlaceholder": "misalnya Malam nonton",
+    "create": "Buat",
+    "boxNotFound": "Kotak tidak ditemukan",
+    "yours": "Catatanmu",
+    "newNotePlaceholder": "Tulis catatan baru…",
+    "add": "Tambah",
+    "emptyNote": "Belum ada catatan. Mulai mengetik di atas.",
+    "partner": "Pasanganmu",
+    "partnerNotesCount": "{{count}} catatan",
+    "partnerNotJoined": "Belum bergabung ke ruang",
+    "partnerReady": "Pasanganmu siap ✨",
+    "partnerNotConfirmed": "Belum konfirmasi",
+    "partnerNoNotes": "Belum menambah catatan",
+    "youConfirmed": "Kamu ✓ ({{count}})",
+    "youCount": "Kamu {{count}}",
+    "partnerConfirmed": "Pasangan ✓ ({{count}})",
+    "partnerCount": "Pasangan {{count}}",
+    "partnerWaiting": "Menunggu pasangan",
+    "notesDone": "Catatanku sudah siap",
+    "editNotes": "Ubah catatanku",
+    "editNotesWaiting": "Ubah catatanku · pasangan belum konfirmasi",
+    "shuffle": "ACAK",
+    "revealEyebrow": "KELUAR DARI KOTAK",
+    "close": "Tutup",
+    "shuffleAgain": "Acak lagi",
+    "deleteBoxTitle": "Hapus kotak",
+    "deleteBoxText": "Hapus \"{{name}}\" beserta semua catatannya? Ini akan terhapus di kedua ponsel."
+  },
+  "trackBar": {
+    "trackLevelInfo": "Level: {{track}} L{{level}}"
+  },
+  "tracks": {
+    "romantik": {
+      "label": "Keintiman",
+      "tagline": "Sentuhan emosional + fisik",
+      "levels": {
+        "1": {
+          "name": "Bisikan",
+          "hint": "Rayuan, tatapan mata, catatan rahasia"
+        },
+        "2": {
+          "name": "Kedekatan",
+          "hint": "Pelukan, ciuman, dekapan"
+        },
+        "3": {
+          "name": "Rahasia",
+          "hint": "Berbagi fantasi, eksplorasi indra"
+        },
+        "4": {
+          "name": "Bara",
+          "hint": "Momen membara, lambat & dalam"
+        },
+        "5": {
+          "name": "Ikatan",
+          "hint": "Penyatuan fisik + spiritual mendalam"
+        }
+      }
+    },
+    "cesur": {
+      "label": "Eksplorasi",
+      "tagline": "Dorong batas",
+      "levels": {
+        "1": {
+          "name": "Percikan",
+          "hint": "Tantangan menggoda"
+        },
+        "2": {
+          "name": "Cahaya",
+          "hint": "Penutup mata, lepas pakaian perlahan, sensorik"
+        },
+        "3": {
+          "name": "Keberanian",
+          "hint": "Pemandu/Pengikut, sentuhan ringan"
+        },
+        "4": {
+          "name": "Puncak",
+          "hint": "Peran jelas, adegan terstruktur"
+        },
+        "5": {
+          "name": "Legenda",
+          "hint": "Tingkat lanjut, ritual/protokol, dinamika mendalam"
+        }
+      }
+    }
+  },
+  "ageGate": {
+    "title": "Konten Dewasa",
+    "body": "Aplikasi ini ditujukan untuk **dewasa usia 18 tahun ke atas**. Konten mencakup tema seksual, keintiman, dan saran bernuansa kink. Untuk melanjutkan:",
+    "checkbox": "Saya berusia 18+ dan akan menggunakannya bersama **pasangan saya** dengan persetujuan bersama.",
+    "accept": "Setuju dan Lanjutkan",
+    "saving": "Menyimpan…",
+    "footer": "Persetujuan ini hanya disimpan di perangkatmu. Tidak ada info akun atau lokasi yang dikirim."
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "language": "Bahasa",
+    "english": "English",
+    "turkish": "Türkçe",
+    "german": "Deutsch",
+    "french": "Français",
+    "spanish": "Español",
+    "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Perlu memulai ulang",
+    "rtlReloadBody": "Bahasa Arab menggunakan tata letak kanan-ke-kiri. Aplikasi perlu dimulai ulang untuk menerapkan perubahan arah.",
+    "rtlReloadButton": "Mulai ulang sekarang",
+    "close": "Tutup"
+  }
+}

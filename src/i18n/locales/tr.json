@@ -187,6 +187,15 @@
     "french": "Français",
     "spanish": "Español",
     "italian": "Italiano",
+    "japanese": "日本語",
+    "korean": "한국어",
+    "chinese": "繁體中文",
+    "indonesian": "Bahasa Indonesia",
+    "hindi": "हिन्दी",
+    "arabic": "العربية",
+    "rtlReloadTitle": "Yeniden başlatma gerekli",
+    "rtlReloadBody": "Arapça sağdan sola yazılır. Yönün değişmesi için uygulamanın yeniden başlatılması gerek.",
+    "rtlReloadButton": "Şimdi yeniden başlat",
     "close": "Kapat"
   }
 }

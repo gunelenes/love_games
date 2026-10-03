@@ -4,6 +4,10 @@
  * locale list in `i18n/index.ts` because UI translations are mandatory for
  * each supported app language, while CONTENT translations are optional
  * (fall back to Turkish). Order here is just the admin dropdown order.
+ *
+ * Chinese is `zh-TW` (Traditional, Taiwan + diaspora) rather than `zh-CN`
+ * — mainland app stores block sensual content, so there is no path to
+ * ship a Simplified variant without a separate censored build.
  */
 export const CONTENT_LANGS = [
   'en',
@@ -13,7 +17,11 @@ export const CONTENT_LANGS = [
   'it',
   'pt',
   'ja',
-  'zh',
+  'ko',
+  'zh-TW',
+  'id',
+  'hi',
+  'ar',
 ] as const;
 
 export type ContentLang = (typeof CONTENT_LANGS)[number];
@@ -30,5 +38,9 @@ export const CONTENT_LANG_LABEL: Record<ContentLang | 'tr', string> = {
   it: 'Italiano',
   pt: 'Português',
   ja: '日本語',
-  zh: '中文',
+  ko: '한국어',
+  'zh-TW': '繁體中文',
+  id: 'Bahasa Indonesia',
+  hi: 'हिन्दी',
+  ar: 'العربية',
 };
