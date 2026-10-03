@@ -29,9 +29,11 @@ function newBlank(): Category {
   return {
     id: '',
     name: '',
+    nameEn: '',
     color: '#FF4D6D',
     icon: '✨',
     prompts: [''],
+    promptsEn: [''],
     track: 'romantik',
     level: 1,
   };
@@ -81,6 +83,13 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
       const clean: Category = {
         ...item,
         prompts: item.prompts.map((p) => p.trim()).filter(Boolean),
+        promptsEn: item.promptsEn
+          ? // Preserve indices by not filtering empties here. We trim and
+            // pad/truncate to match tr length so index-based fallback works.
+            item.promptsEn
+              .slice(0, item.prompts.filter((p) => p.trim()).length)
+              .map((p) => p.trim())
+          : undefined,
       };
       await saveDoc(collectionName, clean);
       setDirty((d) => {
@@ -120,9 +129,13 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
       alert('Bu ID zaten var');
       return;
     }
+    const trPrompts = newItem.prompts.map((p) => p.trim()).filter(Boolean);
     const clean: Category = {
       ...newItem,
-      prompts: newItem.prompts.map((p) => p.trim()).filter(Boolean),
+      prompts: trPrompts,
+      promptsEn: newItem.promptsEn
+        ? newItem.promptsEn.slice(0, trPrompts.length).map((p) => p.trim())
+        : undefined,
     };
     await saveDoc(collectionName, clean);
     setNewItem(null);
@@ -252,11 +265,20 @@ function CategoryCard({
               />
             </div>
             <div>
-              <label className="label">Ad</label>
+              <label className="label">Ad (TR)</label>
               <input
                 className="input"
                 value={item.name}
                 onChange={(e) => onChange({ name: e.target.value })}
+              />
+            </div>
+            <div>
+              <label className="label">Name (EN)</label>
+              <input
+                className="input"
+                value={item.nameEn ?? ''}
+                onChange={(e) => onChange({ nameEn: e.target.value })}
+                placeholder="Optional English translation"
               />
             </div>
             <div>
@@ -351,34 +373,57 @@ function CategoryCard({
           ) : null}
 
           <div>
-            <label className="label">Prompt&apos;lar</label>
+            <label className="label">
+              Prompt&apos;lar (TR solda, EN sağda — EN boşsa TR fallback)
+            </label>
             <div className="space-y-2">
-              {item.prompts.map((p, idx) => (
-                <div key={idx} className="flex gap-2">
-                  <input
-                    className="input flex-1"
-                    value={p}
-                    onChange={(e) => {
-                      const next = [...item.prompts];
-                      next[idx] = e.target.value;
-                      onChange({ prompts: next });
-                    }}
-                    placeholder="Prompt metni…"
-                  />
-                  <button
-                    onClick={() => {
-                      const next = item.prompts.filter((_, i) => i !== idx);
-                      onChange({ prompts: next });
-                    }}
-                    className="btn-ghost text-xs px-2"
-                  >
-                    ✕
-                  </button>
-                </div>
-              ))}
+              {item.prompts.map((p, idx) => {
+                const en = item.promptsEn?.[idx] ?? '';
+                return (
+                  <div key={idx} className="flex gap-2">
+                    <input
+                      className="input flex-1"
+                      value={p}
+                      onChange={(e) => {
+                        const next = [...item.prompts];
+                        next[idx] = e.target.value;
+                        onChange({ prompts: next });
+                      }}
+                      placeholder="TR prompt…"
+                    />
+                    <input
+                      className="input flex-1"
+                      value={en}
+                      onChange={(e) => {
+                        const base = item.promptsEn ?? [];
+                        const next = [...base];
+                        while (next.length <= idx) next.push('');
+                        next[idx] = e.target.value;
+                        onChange({ promptsEn: next });
+                      }}
+                      placeholder="EN prompt (optional)"
+                    />
+                    <button
+                      onClick={() => {
+                        const nextTr = item.prompts.filter((_, i) => i !== idx);
+                        const nextEn = item.promptsEn
+                          ? item.promptsEn.filter((_, i) => i !== idx)
+                          : undefined;
+                        onChange({ prompts: nextTr, promptsEn: nextEn });
+                      }}
+                      className="btn-ghost text-xs px-2"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                );
+              })}
               <button
                 onClick={() =>
-                  onChange({ prompts: [...item.prompts, ''] })
+                  onChange({
+                    prompts: [...item.prompts, ''],
+                    promptsEn: [...(item.promptsEn ?? []), ''],
+                  })
                 }
                 className="btn-ghost text-xs"
               >

@@ -9,6 +9,7 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
+import { useTranslation } from 'react-i18next';
 import { colors } from '@/theme/colors';
 
 type Props = {
@@ -18,6 +19,7 @@ type Props = {
 };
 
 export function SpinButton({ onPress, disabled = false, size = 96 }: Props) {
+  const { t } = useTranslation();
   const scale = useSharedValue(1);
   const breath = useSharedValue(0);
   const ripple = useSharedValue(0);
@@ -114,7 +116,7 @@ export function SpinButton({ onPress, disabled = false, size = 96 }: Props) {
           ]}
         >
           <View style={[styles.innerRing, { width: size * 0.82, height: size * 0.82, borderRadius: size * 0.41 }]} />
-          <Text style={styles.label}>ÇEVİR</Text>
+          <Text style={styles.label}>{t('wheel.spinBtn')}</Text>
         </Pressable>
       </Animated.View>
     </View>

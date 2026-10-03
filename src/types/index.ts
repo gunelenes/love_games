@@ -11,10 +11,18 @@ export type KinkFlavor =
 
 export type Category = {
   id: string;
+  /** Default (tr) name — kept required for back-compat with existing data. */
   name: string;
   color: string;
   icon: string;
   prompts: string[];
+  /** Optional English translation of `name`. */
+  nameEn?: string;
+  /**
+   * Optional English translations of `prompts`. If present, strings at the
+   * same index as the tr `prompts` override; empty slots fall back to tr.
+   */
+  promptsEn?: string[];
   /** İçeriğin ait olduğu track — bundle default'u romantik. */
   track: Track;
   /** 1-5 arası intimacy seviyesi — bundle default'u 1. */
@@ -27,6 +35,8 @@ export type Place = {
   name: string;
   description?: string;
   image?: string;
+  nameEn?: string;
+  descriptionEn?: string;
 };
 
 export type PlaceCategory = {
@@ -35,6 +45,7 @@ export type PlaceCategory = {
   color: string;
   icon: string;
   places: Place[];
+  nameEn?: string;
   track: Track;
   level: Level;
 };

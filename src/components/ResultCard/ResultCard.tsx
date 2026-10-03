@@ -17,6 +17,7 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
+import { useTranslation } from 'react-i18next';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { lighten, withAlpha } from '@/utils/color';
@@ -41,6 +42,7 @@ export function ResultCard({
   onClose,
   onAgain,
 }: Props) {
+  const { t } = useTranslation();
   const enter = useSharedValue(0);
   const iconScale = useSharedValue(0);
   const nameOpacity = useSharedValue(0);
@@ -195,7 +197,7 @@ export function ResultCard({
               ]}
               onPress={onClose}
             >
-              <Text style={styles.btnGhostText}>Kapat</Text>
+              <Text style={styles.btnGhostText}>{t('common.close')}</Text>
             </Pressable>
             <Pressable
               style={({ pressed }) => [
@@ -208,7 +210,7 @@ export function ResultCard({
               ]}
               onPress={onAgain}
             >
-              <Text style={styles.btnPrimaryText}>Tekrar Çevir</Text>
+              <Text style={styles.btnPrimaryText}>{t('wheel.spinAgain')}</Text>
             </Pressable>
           </Animated.View>
         </View>

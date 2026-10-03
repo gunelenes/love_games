@@ -10,6 +10,42 @@ import {
 import { firebaseFirestore } from './firebase';
 import type { Category, PlaceCategory } from './types';
 
+/**
+ * Firestore rejects writes containing `undefined`. Admin forms can leave
+ * optional fields (nameEn, promptsEn, flavors, etc.) blank — strip them
+ * before writing so the doc stays clean + Firestore accepts it.
+ *
+ * For arrays we keep empty-string entries intact (promptsEn uses index
+ * alignment with tr prompts — an empty slot means "fall back to tr at
+ * this index"), but drop the whole array when every entry is empty.
+ */
+function stripEmpty<T>(obj: T): T {
+  if (obj && typeof obj === 'object' && !Array.isArray(obj)) {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(obj as Record<string, unknown>)) {
+      if (v === undefined) continue;
+      if (typeof v === 'string' && v.trim() === '') continue;
+      if (Array.isArray(v)) {
+        if (v.length === 0) continue;
+        if (
+          v.every((x) => typeof x === 'string' && x.trim() === '')
+        ) {
+          continue;
+        }
+        out[k] = v.map((x) =>
+          typeof x === 'object' && x ? stripEmpty(x) : x
+        );
+      } else if (typeof v === 'object') {
+        out[k] = stripEmpty(v);
+      } else {
+        out[k] = v;
+      }
+    }
+    return out as T;
+  }
+  return obj;
+}
+
 async function bumpMetaVersion() {
   if (!firebaseFirestore) return;
   await setDoc(
@@ -38,7 +74,8 @@ export async function saveDoc<T extends { id: string }>(
 ) {
   if (!firebaseFirestore) throw new Error('Firestore not configured');
   const { id, ...rest } = item as any;
-  await setDoc(doc(firebaseFirestore, collectionName, id), rest, {
+  const payload = stripEmpty(rest);
+  await setDoc(doc(firebaseFirestore, collectionName, id), payload, {
     merge: true,
   });
   await bumpMetaVersion();

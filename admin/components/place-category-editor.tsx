@@ -62,6 +62,8 @@ export function PlaceCategoryEditor() {
         name: p.name.trim(),
         description: (p.description || '').trim() || undefined,
         image: p.image?.trim() || undefined,
+        nameEn: (p.nameEn || '').trim() || undefined,
+        descriptionEn: (p.descriptionEn || '').trim() || undefined,
       }))
       .filter((p) => p.name.length > 0);
 
@@ -240,11 +242,20 @@ function PCCard({
               />
             </div>
             <div>
-              <label className="label">Ad</label>
+              <label className="label">Ad (TR)</label>
               <input
                 className="input"
                 value={item.name}
                 onChange={(e) => onChange({ name: e.target.value })}
+              />
+            </div>
+            <div>
+              <label className="label">Name (EN)</label>
+              <input
+                className="input"
+                value={item.nameEn ?? ''}
+                onChange={(e) => onChange({ nameEn: e.target.value })}
+                placeholder="Optional English translation"
               />
             </div>
             <div>
@@ -315,26 +326,53 @@ function PCCard({
                 >
                   <div className="flex gap-2 items-start">
                     <div className="flex-1 space-y-2">
-                      <input
-                        className="input"
-                        value={p.name}
-                        onChange={(e) => {
-                          const next = [...item.places];
-                          next[idx] = { ...p, name: e.target.value };
-                          onChange({ places: next });
-                        }}
-                        placeholder="Mekan adı"
-                      />
-                      <input
-                        className="input"
-                        value={p.description || ''}
-                        onChange={(e) => {
-                          const next = [...item.places];
-                          next[idx] = { ...p, description: e.target.value };
-                          onChange({ places: next });
-                        }}
-                        placeholder="Açıklama (opsiyonel)"
-                      />
+                      <div className="grid grid-cols-2 gap-2">
+                        <input
+                          className="input"
+                          value={p.name}
+                          onChange={(e) => {
+                            const next = [...item.places];
+                            next[idx] = { ...p, name: e.target.value };
+                            onChange({ places: next });
+                          }}
+                          placeholder="Mekan adı (TR)"
+                        />
+                        <input
+                          className="input"
+                          value={p.nameEn ?? ''}
+                          onChange={(e) => {
+                            const next = [...item.places];
+                            next[idx] = { ...p, nameEn: e.target.value };
+                            onChange({ places: next });
+                          }}
+                          placeholder="Name (EN, optional)"
+                        />
+                      </div>
+                      <div className="grid grid-cols-2 gap-2">
+                        <input
+                          className="input"
+                          value={p.description || ''}
+                          onChange={(e) => {
+                            const next = [...item.places];
+                            next[idx] = { ...p, description: e.target.value };
+                            onChange({ places: next });
+                          }}
+                          placeholder="Açıklama (TR, opsiyonel)"
+                        />
+                        <input
+                          className="input"
+                          value={p.descriptionEn ?? ''}
+                          onChange={(e) => {
+                            const next = [...item.places];
+                            next[idx] = {
+                              ...p,
+                              descriptionEn: e.target.value,
+                            };
+                            onChange({ places: next });
+                          }}
+                          placeholder="Description (EN, optional)"
+                        />
+                      </div>
                     </div>
                     <button
                       onClick={() => {

@@ -2,6 +2,15 @@
   "app": {
     "loading": "Yükleniyor…"
   },
+  "common": {
+    "close": "Kapat",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "delete": "Sil",
+    "save": "Kaydet",
+    "retry": "Tekrar dene",
+    "error": "Hata:"
+  },
   "home": {
     "eyebrow": "SEVGİLİLER İÇİN",
     "title": "Sevgi Oyunları",
@@ -30,7 +39,15 @@
     "eyebrow": "ÇARK OYUNU",
     "title": "Çarkı Çevir",
     "spinPrompt": "Çevirmek için ortadaki butona bas",
-    "lastLabel": "Son:"
+    "spinBtn": "ÇEVİR",
+    "spinAgain": "Tekrar çevir",
+    "lastLabel": "Son:",
+    "settings": {
+      "title": "Çark Ayarları",
+      "summary": "{{active}} / {{total}} aktif · en az {{min}} olmalı",
+      "promptsCount": "{{count}} soru",
+      "lockNote": "Kalan son {{min}} kategoriden biri — kapatılamaz"
+    }
   },
   "dice": {
     "eyebrow": "ZAR OYUNU",
@@ -111,7 +128,11 @@
     "partnerReady": "Partner hazır ✨",
     "partnerNotConfirmed": "Henüz onaylamadı",
     "partnerNoNotes": "Henüz not eklemedi",
-    "senYou": "Sen",
+    "youConfirmed": "Sen ✓ ({{count}})",
+    "youCount": "Sen {{count}}",
+    "partnerConfirmed": "Partner ✓ ({{count}})",
+    "partnerCount": "Partner {{count}}",
+    "partnerWaiting": "Partner bekleniyor",
     "notesDone": "Notlarım bitti",
     "editNotes": "Notlarımı değiştir",
     "editNotesWaiting": "Notlarımı değiştir · partner henüz onaylamadı",

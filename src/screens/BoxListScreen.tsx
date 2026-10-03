@@ -66,12 +66,12 @@ export function BoxListScreen({ navigation }: Props) {
 
   const handleLeave = () => {
     Alert.alert(
-      'Odadan çık',
-      'Bu telefonda kaydedilmiş oda bağlantısı silinir. Kutular Firestore\'da kalır — kod ile tekrar girebilirsin.',
+      t('boxes.leaveConfirmTitle'),
+      t('boxes.leaveConfirmText'),
       [
-        { text: 'İptal', style: 'cancel' },
+        { text: t('boxes.cancel'), style: 'cancel' },
         {
-          text: 'Çık',
+          text: t('boxes.leave'),
           style: 'destructive',
           onPress: async () => {
             await leave();
@@ -137,7 +137,7 @@ export function BoxListScreen({ navigation }: Props) {
             <Text style={styles.emptyText}>{t('boxes.loading')}</Text>
           ) : error ? (
             <Text style={[styles.emptyText, { color: '#EF4444' }]}>
-              Hata: {error}
+              {t('boxes.error')} {error}
             </Text>
           ) : boxes.length === 0 ? (
             <View style={styles.empty}>
@@ -201,6 +201,7 @@ function BoxCard({
   myUid: string | null;
   onPress: () => void;
 }) {
+  const { t } = useTranslation();
   const scale = useSharedValue(1);
   const style = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
@@ -255,7 +256,10 @@ function BoxCard({
               {box.name}
             </Text>
             <Text style={styles.cardMeta}>
-              {myNotes.length} senin · {partnerNotes.length} partner
+              {t('boxes.boxCardMeta', {
+                mine: myNotes.length,
+                partner: partnerNotes.length,
+              })}
             </Text>
           </View>
           <View
@@ -279,7 +283,9 @@ function BoxCard({
                 },
               ]}
             >
-              {allConfirmed ? 'Hazır' : `${box.notes.length} not`}
+              {allConfirmed
+                ? t('boxes.ready')
+                : t('boxes.notesCount', { count: box.notes.length })}
             </Text>
           </View>
         </View>
@@ -330,12 +336,12 @@ function CreateBoxModal({
         >
           <Text style={styles.modalTitle}>{tCM('boxes.createBoxTitle')}</Text>
           <Text style={styles.modalSubtitle}>
-            Kutunuza bir isim ve tema verin
+            {tCM('boxes.createBoxSub')}
           </Text>
           <TextInput
             value={name}
             onChangeText={setName}
-            placeholder="Örn. Sinema gecesi"
+            placeholder={tCM('boxes.namePlaceholder')}
             placeholderTextColor="rgba(255,255,255,0.35)"
             style={styles.input}
             maxLength={30}
@@ -368,7 +374,7 @@ function CreateBoxModal({
           </View>
           <View style={styles.modalActions}>
             <Pressable onPress={handleClose} style={styles.cancelBtn}>
-              <Text style={styles.cancelLabel}>İptal</Text>
+              <Text style={styles.cancelLabel}>{tCM('boxes.cancel')}</Text>
             </Pressable>
             <Pressable
               onPress={submit}
@@ -381,7 +387,7 @@ function CreateBoxModal({
                 },
               ]}
             >
-              <Text style={styles.confirmLabel}>Oluştur</Text>
+              <Text style={styles.confirmLabel}>{tCM('boxes.create')}</Text>
             </Pressable>
           </View>
         </Pressable>

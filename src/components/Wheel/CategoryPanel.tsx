@@ -21,6 +21,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
+import { useTranslation } from 'react-i18next';
 import type { useCategoryPrefs } from '@/hooks/useCategoryPrefs';
 import type { Category } from '@/types';
 import { colors } from '@/theme/colors';
@@ -80,6 +81,7 @@ function Toggle({ value, color, disabled, onToggle }: ToggleProps) {
 }
 
 export function CategoryPanel({ visible, onClose, prefs, categories }: Props) {
+  const { t } = useTranslation();
   const insets = useSafeAreaInsets();
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -155,10 +157,13 @@ export function CategoryPanel({ visible, onClose, prefs, categories }: Props) {
 
           <View style={styles.header}>
             <View style={{ flex: 1 }}>
-              <Text style={styles.title}>Çark Ayarları</Text>
+              <Text style={styles.title}>{t('wheel.settings.title')}</Text>
               <Text style={styles.subtitle}>
-                {prefs.activeCount} / {prefs.totalCount} aktif · en az{' '}
-                {prefs.minActive} olmalı
+                {t('wheel.settings.summary', {
+                  active: prefs.activeCount,
+                  total: prefs.totalCount,
+                  min: prefs.minActive,
+                })}
               </Text>
             </View>
             <Pressable
@@ -225,7 +230,10 @@ export function CategoryPanel({ visible, onClose, prefs, categories }: Props) {
                         {cat.name}
                       </Text>
                       <Text style={styles.count}>
-                        {cat.prompts.length} soru {isExpanded ? '▴' : '▾'}
+                        {t('wheel.settings.promptsCount', {
+                          count: cat.prompts.length,
+                        })}{' '}
+                        {isExpanded ? '▴' : '▾'}
                       </Text>
                     </View>
                     <Toggle
@@ -258,7 +266,7 @@ export function CategoryPanel({ visible, onClose, prefs, categories }: Props) {
 
                   {cannotDisable ? (
                     <Text style={styles.lockNote}>
-                      Kalan son {prefs.minActive} kategoriden biri — kapatılamaz
+                      {t('wheel.settings.lockNote', { min: prefs.minActive })}
                     </Text>
                   ) : null}
                 </Animated.View>

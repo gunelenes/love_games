@@ -58,10 +58,18 @@ export const LEVEL_LABEL: Record<Track, Record<Level, string>> = {
 
 export type Category = {
   id: string;
+  /** Default (tr) name — kept required for back-compat with existing data. */
   name: string;
   color: string;
   icon: string;
   prompts: string[];
+  /** Optional English translation of `name`. */
+  nameEn?: string;
+  /**
+   * Optional English translations of `prompts`. Same index as the tr
+   * `prompts` overrides; empty slots fall back to tr.
+   */
+  promptsEn?: string[];
   order?: number;
   track: Track;
   level: Level;
@@ -72,6 +80,8 @@ export type Place = {
   name: string;
   description?: string;
   image?: string;
+  nameEn?: string;
+  descriptionEn?: string;
 };
 
 export type PlaceCategory = {
@@ -80,6 +90,7 @@ export type PlaceCategory = {
   color: string;
   icon: string;
   places: Place[];
+  nameEn?: string;
   order?: number;
   track: Track;
   level: Level;

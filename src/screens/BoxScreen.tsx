@@ -183,7 +183,7 @@ export function BoxScreen({ route, navigation }: Props) {
             <BackButton onPress={() => navigation.goBack()} />
           </View>
           <View style={styles.missingCard}>
-            <Text style={styles.missingText}>Yükleniyor…</Text>
+            <Text style={styles.missingText}>{t('app.loading')}</Text>
           </View>
         </SafeAreaView>
       </View>
@@ -241,8 +241,8 @@ export function BoxScreen({ route, navigation }: Props) {
             <StatusPill
               label={
                 myConfirmed
-                  ? `Sen ✓ (${myNotes.length})`
-                  : `Sen ${myNotes.length}`
+                  ? t('boxes.youConfirmed', { count: myNotes.length })
+                  : t('boxes.youCount', { count: myNotes.length })
               }
               active={myConfirmed}
               color={accent}
@@ -251,9 +251,11 @@ export function BoxScreen({ route, navigation }: Props) {
               label={
                 partnerUid
                   ? partnerConfirmed
-                    ? `Partner ✓ (${partnerNotes.length})`
-                    : `Partner ${partnerNotes.length}`
-                  : 'Partner bekleniyor'
+                    ? t('boxes.partnerConfirmed', {
+                        count: partnerNotes.length,
+                      })
+                    : t('boxes.partnerCount', { count: partnerNotes.length })
+                  : t('boxes.partnerWaiting')
               }
               active={partnerConfirmed}
               color={accent}

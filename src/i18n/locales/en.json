@@ -2,6 +2,15 @@
   "app": {
     "loading": "Loading…"
   },
+  "common": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "save": "Save",
+    "retry": "Retry",
+    "error": "Error:"
+  },
   "home": {
     "eyebrow": "FOR COUPLES",
     "title": "Love Games",
@@ -30,7 +39,15 @@
     "eyebrow": "WHEEL",
     "title": "Spin the Wheel",
     "spinPrompt": "Tap the button in the middle to spin",
-    "lastLabel": "Last:"
+    "spinBtn": "SPIN",
+    "spinAgain": "Spin again",
+    "lastLabel": "Last:",
+    "settings": {
+      "title": "Wheel Settings",
+      "summary": "{{active}} / {{total}} active · min {{min}} required",
+      "promptsCount": "{{count}} prompts",
+      "lockNote": "One of the last {{min}} categories — can't be turned off"
+    }
   },
   "dice": {
     "eyebrow": "DICE",
@@ -111,7 +128,11 @@
     "partnerReady": "Partner is ready ✨",
     "partnerNotConfirmed": "Hasn't confirmed yet",
     "partnerNoNotes": "Hasn't added notes yet",
-    "senYou": "You",
+    "youConfirmed": "You ✓ ({{count}})",
+    "youCount": "You {{count}}",
+    "partnerConfirmed": "Partner ✓ ({{count}})",
+    "partnerCount": "Partner {{count}}",
+    "partnerWaiting": "Waiting for partner",
     "notesDone": "My notes are done",
     "editNotes": "Change my notes",
     "editNotesWaiting": "Change my notes · partner hasn't confirmed",

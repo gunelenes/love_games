@@ -8,10 +8,15 @@ import React, {
   type ReactNode,
 } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useTranslation } from 'react-i18next';
 import { CATEGORIES as BUNDLE_CATEGORIES } from '@/data/categories';
 import { DICE_FACES as BUNDLE_DICE_FACES } from '@/data/diceFaces';
 import { PLACE_CATEGORIES as BUNDLE_PLACE_CATEGORIES } from '@/data/placeCategories';
 import { fetchAllContent, type AllContent } from '@/services/contentService';
+import {
+  localizeCategory,
+  localizePlaceCategory,
+} from '@/utils/localizedContent';
 import type { Category, PlaceCategory } from '@/types';
 
 const CACHE_KEY = 'content:v1';
@@ -119,16 +124,43 @@ export function ContentProvider({ children }: { children: ReactNode }) {
     };
   }, [applyContent]);
 
+  // react-i18next subscription: when the language changes we need to
+  // re-emit a localized view of the raw content so every consumer
+  // (which selects via cat.name / cat.prompts / place.name) picks up
+  // the new strings without each one knowing about i18n.
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+
+  const localizedCategories = useMemo(
+    () => categories.map(localizeCategory),
+    [categories, lang]
+  );
+  const localizedPlaceCategories = useMemo(
+    () => placeCategories.map(localizePlaceCategory),
+    [placeCategories, lang]
+  );
+  const localizedDiceFaces = useMemo(
+    () => diceFaces.map(localizeCategory),
+    [diceFaces, lang]
+  );
+
   const value = useMemo<ContentContextValue>(
     () => ({
-      categories,
-      placeCategories,
-      diceFaces,
+      categories: localizedCategories,
+      placeCategories: localizedPlaceCategories,
+      diceFaces: localizedDiceFaces,
       source,
       loading,
       refresh,
     }),
-    [categories, placeCategories, diceFaces, source, loading, refresh]
+    [
+      localizedCategories,
+      localizedPlaceCategories,
+      localizedDiceFaces,
+      source,
+      loading,
+      refresh,
+    ]
   );
 
   return (
