@@ -56,20 +56,27 @@ export const LEVEL_LABEL: Record<Track, Record<Level, string>> = {
   },
 };
 
+/**
+ * Translation maps keyed by locale code. Mirror of mobile `LocalizedString`
+ * / `LocalizedStringArray` in src/types/index.ts — keep both in sync.
+ */
+export type LocalizedString = Record<string, string>;
+export type LocalizedStringArray = Record<string, string[]>;
+
 export type Category = {
   id: string;
-  /** Default (tr) name — kept required for back-compat with existing data. */
+  /** Default (tr) name — authoring source, always present. */
   name: string;
   color: string;
   icon: string;
   prompts: string[];
-  /** Optional English translation of `name`. */
-  nameEn?: string;
+  /** Translations of `name`, keyed by locale code. */
+  nameI18n?: LocalizedString;
   /**
-   * Optional English translations of `prompts`. Same index as the tr
-   * `prompts` overrides; empty slots fall back to tr.
+   * Translations of `prompts`, keyed by locale code. Each array aligns
+   * by index with `prompts`; empty strings fall back to tr at that slot.
    */
-  promptsEn?: string[];
+  promptsI18n?: LocalizedStringArray;
   order?: number;
   track: Track;
   level: Level;
@@ -80,8 +87,8 @@ export type Place = {
   name: string;
   description?: string;
   image?: string;
-  nameEn?: string;
-  descriptionEn?: string;
+  nameI18n?: LocalizedString;
+  descriptionI18n?: LocalizedString;
 };
 
 export type PlaceCategory = {
@@ -90,7 +97,7 @@ export type PlaceCategory = {
   color: string;
   icon: string;
   places: Place[];
-  nameEn?: string;
+  nameI18n?: LocalizedString;
   order?: number;
   track: Track;
   level: Level;

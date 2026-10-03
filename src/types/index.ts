@@ -9,20 +9,33 @@ export type KinkFlavor =
   | 'roleplay'
   | 'impact';
 
+/**
+ * Content translation maps. Keyed by locale code (e.g. 'en', 'es', 'de').
+ * Any locale key may be missing; the resolver in utils/localizedContent.ts
+ * falls back through `en` and finally the Turkish `name` / `prompts`.
+ *
+ * Design choice: Turkish is the authoring default (lives on `name` /
+ * `prompts` for back-compat with existing Firestore docs). Every other
+ * language is a key on `nameI18n` / `promptsI18n` — adding the 11th
+ * language later is a data change, not a schema change.
+ */
+export type LocalizedString = Record<string, string>;
+export type LocalizedStringArray = Record<string, string[]>;
+
 export type Category = {
   id: string;
-  /** Default (tr) name — kept required for back-compat with existing data. */
+  /** Default (tr) name — authoring source, always present. */
   name: string;
   color: string;
   icon: string;
   prompts: string[];
-  /** Optional English translation of `name`. */
-  nameEn?: string;
+  /** Translations of `name`, keyed by locale code. */
+  nameI18n?: LocalizedString;
   /**
-   * Optional English translations of `prompts`. If present, strings at the
-   * same index as the tr `prompts` override; empty slots fall back to tr.
+   * Translations of `prompts`, keyed by locale code. Each array aligns
+   * by index with `prompts`; empty strings fall back to tr at that slot.
    */
-  promptsEn?: string[];
+  promptsI18n?: LocalizedStringArray;
   /** İçeriğin ait olduğu track — bundle default'u romantik. */
   track: Track;
   /** 1-5 arası intimacy seviyesi — bundle default'u 1. */
@@ -35,8 +48,8 @@ export type Place = {
   name: string;
   description?: string;
   image?: string;
-  nameEn?: string;
-  descriptionEn?: string;
+  nameI18n?: LocalizedString;
+  descriptionI18n?: LocalizedString;
 };
 
 export type PlaceCategory = {
@@ -45,7 +58,7 @@ export type PlaceCategory = {
   color: string;
   icon: string;
   places: Place[];
-  nameEn?: string;
+  nameI18n?: LocalizedString;
   track: Track;
   level: Level;
 };

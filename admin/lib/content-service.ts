@@ -36,7 +36,12 @@ function stripEmpty<T>(obj: T): T {
           typeof x === 'object' && x ? stripEmpty(x) : x
         );
       } else if (typeof v === 'object') {
-        out[k] = stripEmpty(v);
+        // Translation maps (nameI18n etc.) emit `{}` once every per-locale
+        // input is blank — drop those so Firestore docs stay clean.
+        const nested = stripEmpty(v) as Record<string, unknown>;
+        if (nested && Object.keys(nested).length > 0) {
+          out[k] = nested;
+        }
       } else {
         out[k] = v;
       }

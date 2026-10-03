@@ -7,6 +7,11 @@ import {
   saveDoc,
 } from '@/lib/content-service';
 import {
+  CONTENT_LANGS,
+  CONTENT_LANG_LABEL,
+  type ContentLang,
+} from '@/lib/contentLangs';
+import {
   FLAVORS,
   FLAVOR_LABEL,
   LEVELS,
@@ -29,14 +34,51 @@ function newBlank(): Category {
   return {
     id: '',
     name: '',
-    nameEn: '',
     color: '#FF4D6D',
     icon: '✨',
     prompts: [''],
-    promptsEn: [''],
     track: 'romantik',
     level: 1,
   };
+}
+
+/**
+ * Trim one translation map so the save payload stays clean:
+ * - every value is trimmed
+ * - empty strings are dropped
+ * - if the resulting map is empty, return undefined
+ */
+function cleanStringMap(
+  map: Record<string, string> | undefined
+): Record<string, string> | undefined {
+  if (!map) return undefined;
+  const out: Record<string, string> = {};
+  for (const [k, v] of Object.entries(map)) {
+    const trimmed = (v || '').trim();
+    if (trimmed) out[k] = trimmed;
+  }
+  return Object.keys(out).length ? out : undefined;
+}
+
+/**
+ * Translations of a prompt array. Each entry aligns by index with the
+ * default (tr) prompts, so empty slots encode "fall back to tr at this
+ * index". We truncate to the live tr length and drop fully-empty maps.
+ */
+function cleanPromptMap(
+  map: Record<string, string[]> | undefined,
+  trLength: number
+): Record<string, string[]> | undefined {
+  if (!map) return undefined;
+  const out: Record<string, string[]> = {};
+  for (const [lang, arr] of Object.entries(map)) {
+    if (!Array.isArray(arr)) continue;
+    const trimmed = arr.slice(0, trLength).map((p) => (p || '').trim());
+    if (trimmed.some((p) => p.length > 0)) {
+      out[lang] = trimmed;
+    }
+  }
+  return Object.keys(out).length ? out : undefined;
 }
 
 export function CategoryEditor({ collectionName, title, description }: Props) {
@@ -46,6 +88,8 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
   const [saving, setSaving] = useState<Set<string>>(new Set());
   const [expanded, setExpanded] = useState<string | null>(null);
   const [newItem, setNewItem] = useState<Category | null>(null);
+  /** '' = no translation column; else the active content locale (en, es, …). */
+  const [translateTo, setTranslateTo] = useState<ContentLang | ''>('');
 
   const load = async () => {
     setLoading(true);
@@ -80,16 +124,12 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
     }
     setSaving((s) => new Set(s).add(item.id));
     try {
+      const trPrompts = item.prompts.map((p) => p.trim()).filter(Boolean);
       const clean: Category = {
         ...item,
-        prompts: item.prompts.map((p) => p.trim()).filter(Boolean),
-        promptsEn: item.promptsEn
-          ? // Preserve indices by not filtering empties here. We trim and
-            // pad/truncate to match tr length so index-based fallback works.
-            item.promptsEn
-              .slice(0, item.prompts.filter((p) => p.trim()).length)
-              .map((p) => p.trim())
-          : undefined,
+        prompts: trPrompts,
+        nameI18n: cleanStringMap(item.nameI18n),
+        promptsI18n: cleanPromptMap(item.promptsI18n, trPrompts.length),
       };
       await saveDoc(collectionName, clean);
       setDirty((d) => {
@@ -133,9 +173,8 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
     const clean: Category = {
       ...newItem,
       prompts: trPrompts,
-      promptsEn: newItem.promptsEn
-        ? newItem.promptsEn.slice(0, trPrompts.length).map((p) => p.trim())
-        : undefined,
+      nameI18n: cleanStringMap(newItem.nameI18n),
+      promptsI18n: cleanPromptMap(newItem.promptsI18n, trPrompts.length),
     };
     await saveDoc(collectionName, clean);
     setNewItem(null);
@@ -144,15 +183,32 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
   };
 
   return (
-    <div className="p-6 max-w-4xl">
-      <div className="flex items-start justify-between mb-6">
+    <div className="p-6 max-w-5xl">
+      <div className="flex items-start justify-between mb-6 gap-4">
         <div>
           <h1 className="text-2xl font-extrabold text-white">{title}</h1>
           <p className="text-sm text-muted mt-1">{description}</p>
         </div>
-        <button onClick={addNew} className="btn-primary">
-          + Yeni
-        </button>
+        <div className="flex items-center gap-3">
+          <label className="text-xs text-muted">Translate to:</label>
+          <select
+            className="input"
+            value={translateTo}
+            onChange={(e) =>
+              setTranslateTo(e.target.value as ContentLang | '')
+            }
+          >
+            <option value="">— none —</option>
+            {CONTENT_LANGS.map((l) => (
+              <option key={l} value={l}>
+                {CONTENT_LANG_LABEL[l]} ({l})
+              </option>
+            ))}
+          </select>
+          <button onClick={addNew} className="btn-primary">
+            + Yeni
+          </button>
+        </div>
       </div>
 
       {loading ? (
@@ -165,6 +221,7 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
               expanded
               dirty
               saving={false}
+              translateTo={translateTo}
               onToggle={() => {}}
               onChange={(patch) => setNewItem({ ...newItem, ...patch })}
               onSave={saveNew}
@@ -180,6 +237,7 @@ export function CategoryEditor({ collectionName, title, description }: Props) {
               expanded={expanded === item.id}
               dirty={dirty.has(item.id)}
               saving={saving.has(item.id)}
+              translateTo={translateTo}
               onToggle={() =>
                 setExpanded(expanded === item.id ? null : item.id)
               }
@@ -205,6 +263,7 @@ function CategoryCard({
   expanded,
   dirty,
   saving,
+  translateTo,
   onToggle,
   onChange,
   onSave,
@@ -215,12 +274,40 @@ function CategoryCard({
   expanded: boolean;
   dirty: boolean;
   saving: boolean;
+  translateTo: ContentLang | '';
   onToggle: () => void;
   onChange: (patch: Partial<Category>) => void;
   onSave: () => void;
   onDelete: () => void;
   isNew?: boolean;
 }) {
+  const translating = translateTo !== '';
+  const langLabel = translating ? CONTENT_LANG_LABEL[translateTo] : '';
+  const nameTranslation = translating ? item.nameI18n?.[translateTo] ?? '' : '';
+
+  const setNameTranslation = (value: string) => {
+    if (!translating) return;
+    const next: Record<string, string> = { ...(item.nameI18n ?? {}) };
+    if (value.trim()) next[translateTo] = value;
+    else delete next[translateTo];
+    onChange({ nameI18n: Object.keys(next).length ? next : undefined });
+  };
+
+  const setPromptTranslation = (idx: number, value: string) => {
+    if (!translating) return;
+    const base = item.promptsI18n ?? {};
+    const curArr = Array.isArray(base[translateTo]) ? [...base[translateTo]] : [];
+    while (curArr.length <= idx) curArr.push('');
+    curArr[idx] = value;
+    const next: Record<string, string[]> = { ...base, [translateTo]: curArr };
+    onChange({ promptsI18n: next });
+  };
+
+  const promptTranslation = (idx: number): string => {
+    if (!translating) return '';
+    return item.promptsI18n?.[translateTo]?.[idx] ?? '';
+  };
+
   return (
     <div className="card">
       <div
@@ -242,6 +329,9 @@ function CategoryCard({
           </div>
           <div className="text-xs text-muted">
             {item.id || '(id yok)'} · {item.prompts.length} prompt
+            {item.nameI18n
+              ? ` · ${Object.keys(item.nameI18n).length} dil`
+              : ''}
           </div>
         </div>
         {dirty ? (
@@ -264,6 +354,8 @@ function CategoryCard({
                 placeholder="cesaret"
               />
             </div>
+            <div />
+
             <div>
               <label className="label">Ad (TR)</label>
               <input
@@ -272,15 +364,20 @@ function CategoryCard({
                 onChange={(e) => onChange({ name: e.target.value })}
               />
             </div>
-            <div>
-              <label className="label">Name (EN)</label>
-              <input
-                className="input"
-                value={item.nameEn ?? ''}
-                onChange={(e) => onChange({ nameEn: e.target.value })}
-                placeholder="Optional English translation"
-              />
-            </div>
+            {translating ? (
+              <div>
+                <label className="label">Name ({langLabel})</label>
+                <input
+                  className="input"
+                  value={nameTranslation}
+                  onChange={(e) => setNameTranslation(e.target.value)}
+                  placeholder={`Translation in ${langLabel}`}
+                />
+              </div>
+            ) : (
+              <div />
+            )}
+
             <div>
               <label className="label">Renk (hex)</label>
               <div className="flex gap-2">
@@ -374,56 +471,56 @@ function CategoryCard({
 
           <div>
             <label className="label">
-              Prompt&apos;lar (TR solda, EN sağda — EN boşsa TR fallback)
+              Prompt&apos;lar{' '}
+              {translating
+                ? `(TR solda, ${langLabel} sağda — boş = TR'ye düşer)`
+                : '(TR)'}
             </label>
             <div className="space-y-2">
-              {item.prompts.map((p, idx) => {
-                const en = item.promptsEn?.[idx] ?? '';
-                return (
-                  <div key={idx} className="flex gap-2">
+              {item.prompts.map((p, idx) => (
+                <div key={idx} className="flex gap-2">
+                  <input
+                    className="input flex-1"
+                    value={p}
+                    onChange={(e) => {
+                      const next = [...item.prompts];
+                      next[idx] = e.target.value;
+                      onChange({ prompts: next });
+                    }}
+                    placeholder="TR prompt…"
+                  />
+                  {translating ? (
                     <input
                       className="input flex-1"
-                      value={p}
-                      onChange={(e) => {
-                        const next = [...item.prompts];
-                        next[idx] = e.target.value;
-                        onChange({ prompts: next });
-                      }}
-                      placeholder="TR prompt…"
+                      value={promptTranslation(idx)}
+                      onChange={(e) => setPromptTranslation(idx, e.target.value)}
+                      placeholder={`${langLabel} (optional)`}
                     />
-                    <input
-                      className="input flex-1"
-                      value={en}
-                      onChange={(e) => {
-                        const base = item.promptsEn ?? [];
-                        const next = [...base];
-                        while (next.length <= idx) next.push('');
-                        next[idx] = e.target.value;
-                        onChange({ promptsEn: next });
-                      }}
-                      placeholder="EN prompt (optional)"
-                    />
-                    <button
-                      onClick={() => {
-                        const nextTr = item.prompts.filter((_, i) => i !== idx);
-                        const nextEn = item.promptsEn
-                          ? item.promptsEn.filter((_, i) => i !== idx)
-                          : undefined;
-                        onChange({ prompts: nextTr, promptsEn: nextEn });
-                      }}
-                      className="btn-ghost text-xs px-2"
-                    >
-                      ✕
-                    </button>
-                  </div>
-                );
-              })}
+                  ) : null}
+                  <button
+                    onClick={() => {
+                      const nextTr = item.prompts.filter((_, i) => i !== idx);
+                      const nextI18n = item.promptsI18n
+                        ? Object.fromEntries(
+                            Object.entries(item.promptsI18n).map(
+                              ([lang, arr]) => [
+                                lang,
+                                arr.filter((_, i) => i !== idx),
+                              ]
+                            )
+                          )
+                        : undefined;
+                      onChange({ prompts: nextTr, promptsI18n: nextI18n });
+                    }}
+                    className="btn-ghost text-xs px-2"
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
               <button
                 onClick={() =>
-                  onChange({
-                    prompts: [...item.prompts, ''],
-                    promptsEn: [...(item.promptsEn ?? []), ''],
-                  })
+                  onChange({ prompts: [...item.prompts, ''] })
                 }
                 className="btn-ghost text-xs"
               >

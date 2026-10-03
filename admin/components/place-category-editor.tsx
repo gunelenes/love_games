@@ -3,6 +3,11 @@
 import { useEffect, useState } from 'react';
 import { listDocs, removeDoc, saveDoc } from '@/lib/content-service';
 import {
+  CONTENT_LANGS,
+  CONTENT_LANG_LABEL,
+  type ContentLang,
+} from '@/lib/contentLangs';
+import {
   LEVELS,
   LEVEL_LABEL,
   TRACKS,
@@ -25,6 +30,18 @@ function newBlank(): PlaceCategory {
   };
 }
 
+function cleanStringMap(
+  map: Record<string, string> | undefined
+): Record<string, string> | undefined {
+  if (!map) return undefined;
+  const out: Record<string, string> = {};
+  for (const [k, v] of Object.entries(map)) {
+    const trimmed = (v || '').trim();
+    if (trimmed) out[k] = trimmed;
+  }
+  return Object.keys(out).length ? out : undefined;
+}
+
 export function PlaceCategoryEditor() {
   const [items, setItems] = useState<PlaceCategory[]>([]);
   const [loading, setLoading] = useState(true);
@@ -32,6 +49,7 @@ export function PlaceCategoryEditor() {
   const [saving, setSaving] = useState<Set<string>>(new Set());
   const [expanded, setExpanded] = useState<string | null>(null);
   const [newItem, setNewItem] = useState<PlaceCategory | null>(null);
+  const [translateTo, setTranslateTo] = useState<ContentLang | ''>('');
 
   const load = async () => {
     setLoading(true);
@@ -62,8 +80,8 @@ export function PlaceCategoryEditor() {
         name: p.name.trim(),
         description: (p.description || '').trim() || undefined,
         image: p.image?.trim() || undefined,
-        nameEn: (p.nameEn || '').trim() || undefined,
-        descriptionEn: (p.descriptionEn || '').trim() || undefined,
+        nameI18n: cleanStringMap(p.nameI18n),
+        descriptionI18n: cleanStringMap(p.descriptionI18n),
       }))
       .filter((p) => p.name.length > 0);
 
@@ -74,6 +92,7 @@ export function PlaceCategoryEditor() {
       const clean: PlaceCategory = {
         ...item,
         places: cleanPlaces(item.places),
+        nameI18n: cleanStringMap(item.nameI18n),
       };
       await saveDoc('placeCategories', clean);
       setDirty((d) => {
@@ -111,6 +130,7 @@ export function PlaceCategoryEditor() {
     const clean: PlaceCategory = {
       ...newItem,
       places: cleanPlaces(newItem.places),
+      nameI18n: cleanStringMap(newItem.nameI18n),
     };
     await saveDoc('placeCategories', clean);
     setNewItem(null);
@@ -119,8 +139,8 @@ export function PlaceCategoryEditor() {
   };
 
   return (
-    <div className="p-6 max-w-4xl">
-      <div className="flex items-start justify-between mb-6">
+    <div className="p-6 max-w-5xl">
+      <div className="flex items-start justify-between mb-6 gap-4">
         <div>
           <h1 className="text-2xl font-extrabold text-white">Place Categories</h1>
           <p className="text-sm text-muted mt-1">
@@ -128,9 +148,26 @@ export function PlaceCategoryEditor() {
             önerileri.
           </p>
         </div>
-        <button onClick={addNew} className="btn-primary">
-          + Yeni
-        </button>
+        <div className="flex items-center gap-3">
+          <label className="text-xs text-muted">Translate to:</label>
+          <select
+            className="input"
+            value={translateTo}
+            onChange={(e) =>
+              setTranslateTo(e.target.value as ContentLang | '')
+            }
+          >
+            <option value="">— none —</option>
+            {CONTENT_LANGS.map((l) => (
+              <option key={l} value={l}>
+                {CONTENT_LANG_LABEL[l]} ({l})
+              </option>
+            ))}
+          </select>
+          <button onClick={addNew} className="btn-primary">
+            + Yeni
+          </button>
+        </div>
       </div>
 
       {loading ? (
@@ -143,6 +180,7 @@ export function PlaceCategoryEditor() {
               expanded
               dirty
               saving={false}
+              translateTo={translateTo}
               onToggle={() => {}}
               onChange={(patch) => setNewItem({ ...newItem, ...patch })}
               onSave={saveNew}
@@ -158,6 +196,7 @@ export function PlaceCategoryEditor() {
               expanded={expanded === item.id}
               dirty={dirty.has(item.id)}
               saving={saving.has(item.id)}
+              translateTo={translateTo}
               onToggle={() =>
                 setExpanded(expanded === item.id ? null : item.id)
               }
@@ -183,6 +222,7 @@ function PCCard({
   expanded,
   dirty,
   saving,
+  translateTo,
   onToggle,
   onChange,
   onSave,
@@ -193,12 +233,52 @@ function PCCard({
   expanded: boolean;
   dirty: boolean;
   saving: boolean;
+  translateTo: ContentLang | '';
   onToggle: () => void;
   onChange: (patch: Partial<PlaceCategory>) => void;
   onSave: () => void;
   onDelete: () => void;
   isNew?: boolean;
 }) {
+  const translating = translateTo !== '';
+  const langLabel = translating ? CONTENT_LANG_LABEL[translateTo] : '';
+
+  const setCategoryNameI18n = (value: string) => {
+    if (!translating) return;
+    const next: Record<string, string> = { ...(item.nameI18n ?? {}) };
+    if (value.trim()) next[translateTo] = value;
+    else delete next[translateTo];
+    onChange({ nameI18n: Object.keys(next).length ? next : undefined });
+  };
+
+  const updatePlace = (idx: number, patch: Partial<Place>) => {
+    const next = [...item.places];
+    next[idx] = { ...next[idx], ...patch };
+    onChange({ places: next });
+  };
+
+  const setPlaceNameI18n = (idx: number, value: string) => {
+    if (!translating) return;
+    const place = item.places[idx];
+    const next: Record<string, string> = { ...(place.nameI18n ?? {}) };
+    if (value.trim()) next[translateTo] = value;
+    else delete next[translateTo];
+    updatePlace(idx, {
+      nameI18n: Object.keys(next).length ? next : undefined,
+    });
+  };
+
+  const setPlaceDescriptionI18n = (idx: number, value: string) => {
+    if (!translating) return;
+    const place = item.places[idx];
+    const next: Record<string, string> = { ...(place.descriptionI18n ?? {}) };
+    if (value.trim()) next[translateTo] = value;
+    else delete next[translateTo];
+    updatePlace(idx, {
+      descriptionI18n: Object.keys(next).length ? next : undefined,
+    });
+  };
+
   return (
     <div className="card">
       <div
@@ -220,6 +300,9 @@ function PCCard({
           </div>
           <div className="text-xs text-muted">
             {item.id || '(id yok)'} · {item.places.length} mekan
+            {item.nameI18n
+              ? ` · ${Object.keys(item.nameI18n).length} dil`
+              : ''}
           </div>
         </div>
         {dirty ? (
@@ -241,6 +324,8 @@ function PCCard({
                 onChange={(e) => onChange({ id: e.target.value })}
               />
             </div>
+            <div />
+
             <div>
               <label className="label">Ad (TR)</label>
               <input
@@ -249,15 +334,20 @@ function PCCard({
                 onChange={(e) => onChange({ name: e.target.value })}
               />
             </div>
-            <div>
-              <label className="label">Name (EN)</label>
-              <input
-                className="input"
-                value={item.nameEn ?? ''}
-                onChange={(e) => onChange({ nameEn: e.target.value })}
-                placeholder="Optional English translation"
-              />
-            </div>
+            {translating ? (
+              <div>
+                <label className="label">Name ({langLabel})</label>
+                <input
+                  className="input"
+                  value={item.nameI18n?.[translateTo] ?? ''}
+                  onChange={(e) => setCategoryNameI18n(e.target.value)}
+                  placeholder={`Translation in ${langLabel}`}
+                />
+              </div>
+            ) : (
+              <div />
+            )}
+
             <div>
               <label className="label">Renk</label>
               <div className="flex gap-2">
@@ -317,7 +407,12 @@ function PCCard({
           </div>
 
           <div>
-            <label className="label">Mekanlar</label>
+            <label className="label">
+              Mekanlar{' '}
+              {translating
+                ? `(TR solda, ${langLabel} sağda — boş = TR'ye düşer)`
+                : '(TR)'}
+            </label>
             <div className="space-y-3">
               {item.places.map((p, idx) => (
                 <div
@@ -326,52 +421,53 @@ function PCCard({
                 >
                   <div className="flex gap-2 items-start">
                     <div className="flex-1 space-y-2">
-                      <div className="grid grid-cols-2 gap-2">
+                      <div
+                        className={
+                          translating ? 'grid grid-cols-2 gap-2' : ''
+                        }
+                      >
                         <input
                           className="input"
                           value={p.name}
-                          onChange={(e) => {
-                            const next = [...item.places];
-                            next[idx] = { ...p, name: e.target.value };
-                            onChange({ places: next });
-                          }}
+                          onChange={(e) =>
+                            updatePlace(idx, { name: e.target.value })
+                          }
                           placeholder="Mekan adı (TR)"
                         />
-                        <input
-                          className="input"
-                          value={p.nameEn ?? ''}
-                          onChange={(e) => {
-                            const next = [...item.places];
-                            next[idx] = { ...p, nameEn: e.target.value };
-                            onChange({ places: next });
-                          }}
-                          placeholder="Name (EN, optional)"
-                        />
+                        {translating ? (
+                          <input
+                            className="input"
+                            value={p.nameI18n?.[translateTo] ?? ''}
+                            onChange={(e) =>
+                              setPlaceNameI18n(idx, e.target.value)
+                            }
+                            placeholder={`Name (${langLabel})`}
+                          />
+                        ) : null}
                       </div>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div
+                        className={
+                          translating ? 'grid grid-cols-2 gap-2' : ''
+                        }
+                      >
                         <input
                           className="input"
                           value={p.description || ''}
-                          onChange={(e) => {
-                            const next = [...item.places];
-                            next[idx] = { ...p, description: e.target.value };
-                            onChange({ places: next });
-                          }}
+                          onChange={(e) =>
+                            updatePlace(idx, { description: e.target.value })
+                          }
                           placeholder="Açıklama (TR, opsiyonel)"
                         />
-                        <input
-                          className="input"
-                          value={p.descriptionEn ?? ''}
-                          onChange={(e) => {
-                            const next = [...item.places];
-                            next[idx] = {
-                              ...p,
-                              descriptionEn: e.target.value,
-                            };
-                            onChange({ places: next });
-                          }}
-                          placeholder="Description (EN, optional)"
-                        />
+                        {translating ? (
+                          <input
+                            className="input"
+                            value={p.descriptionI18n?.[translateTo] ?? ''}
+                            onChange={(e) =>
+                              setPlaceDescriptionI18n(idx, e.target.value)
+                            }
+                            placeholder={`Description (${langLabel})`}
+                          />
+                        ) : null}
                       </div>
                     </div>
                     <button

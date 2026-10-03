@@ -1,17 +1,24 @@
 // Adding a new language — recipe:
-//   1. Copy `locales/en.json` to `locales/<xx>.json`, translate every value
-//      (keep the keys and {{placeholders}} intact).
-//   2. Import it here, add to the `resources` map, and add `'<xx>'` to
-//      `SUPPORTED_LANGUAGES` below. Add a label to `settings.<xx>` in every
-//      locale JSON so the Settings modal can show it.
-//   3. For user-generated content (categories/places), the mobile picks
-//      the right field in `utils/localizedContent.ts`. If the new language
-//      is a European/Latin one, you can reuse the existing `pickLang()`
-//      pattern by adding a `name<Xx>` / `prompts<Xx>` branch there and
-//      exposing the matching optional fields on the types in `types/index.ts`
-//      and `admin/lib/types.ts` (plus input fields in the admin editors).
 //
-// The default is English; Turkish is the fallback for untranslated keys.
+//   UI shell (strings baked into the app):
+//     1. Copy `locales/en.json` → `locales/<xx>.json`, translate every value
+//        (keep the keys and {{placeholders}} intact).
+//     2. Import it here, add to the `resources` map, and add `'<xx>'` to
+//        `SUPPORTED_LANGUAGES` below. Add a label to `settings.<xx>` in
+//        every locale JSON so the Settings modal can show it.
+//
+//   Dynamic content (categories / prompts / places from Firestore):
+//     3. Add the locale code + display label to `src/i18n/contentLangs.ts`
+//        AND `admin/lib/contentLangs.ts` (keep the two mirrors in sync).
+//        The admin dropdown surfaces it immediately — no editor changes
+//        needed. Mobile's resolver (`utils/localizedContent.ts`) picks the
+//        new key out of the per-item translation maps the moment admins
+//        start filling it in; untranslated items fall back to English
+//        and then to the Turkish authoring default.
+//
+// The UI default is English; Turkish is the UI fallback for untranslated
+// keys. For CONTENT, Turkish is the authoring default and English is the
+// secondary fallback.
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';

@@ -1,66 +1,117 @@
 import i18n from '@/i18n';
-import type { Category, Place, PlaceCategory } from '@/types';
+import { CONTENT_DEFAULT_LANG } from '@/i18n/contentLangs';
+import type {
+  Category,
+  LocalizedString,
+  LocalizedStringArray,
+  Place,
+  PlaceCategory,
+} from '@/types';
 
 /**
- * Content localization lives next to each item: the Turkish default is in
- * `name`/`prompts`, English translations are in optional `nameEn`/`promptsEn`.
- * When a translation is missing, we fall back to Turkish rather than show
- * a key — users prefer a familiar sentence over an empty one.
+ * Content lives next to each item as:
+ *   name:    string                    // authoring default (tr)
+ *   nameI18n?: Record<locale, string>  // other languages
  *
- * To add another language later: add `name<Xx>` / `prompts<Xx>` fields to
- * the item (and the type), then teach `pickLang()` which locale maps to it.
+ * Resolution (`pickString`):
+ *   1. If current UI locale IS the authoring default → the raw `name`.
+ *   2. Else look up `nameI18n[current]` (exact), then the base code
+ *      (e.g. `en-US` → `en`), then `en` as a universal secondary
+ *      fallback (translators usually ship EN first).
+ *   3. If nothing matches → the raw `name` (user sees Turkish instead
+ *      of an empty cell — never a key).
+ *
+ * Adding the N+1-th language is purely a data change: write a new key
+ * into the map from the admin panel. The schema does not move.
  */
 
-function pickLang(): 'en' | 'tr' {
-  const lang = (i18n.language || i18n.resolvedLanguage || 'en').toLowerCase();
-  if (lang.startsWith('tr')) return 'tr';
-  return 'en';
+function currentLang(): string {
+  const raw = i18n.language || i18n.resolvedLanguage || 'en';
+  return raw.toLowerCase();
 }
 
-function pickString(tr: string, en: string | undefined): string {
-  const lang = pickLang();
-  if (lang === 'en' && en && en.trim()) return en;
-  return tr;
+function baseLang(lang: string): string {
+  const i = lang.indexOf('-');
+  return i === -1 ? lang : lang.slice(0, i);
 }
 
-function pickOptional(
-  tr: string | undefined,
-  en: string | undefined
+function pickString(fallback: string, map: LocalizedString | undefined): string {
+  const cur = currentLang();
+  const base = baseLang(cur);
+  if (base === CONTENT_DEFAULT_LANG) return fallback;
+  if (!map) return fallback;
+  const exact = map[cur]?.trim();
+  if (exact) return exact;
+  const b = map[base]?.trim();
+  if (b) return b;
+  const en = map.en?.trim();
+  if (en) return en;
+  return fallback;
+}
+
+function pickOptionalString(
+  fallback: string | undefined,
+  map: LocalizedString | undefined
 ): string | undefined {
-  const lang = pickLang();
-  if (lang === 'en' && en && en.trim()) return en;
-  return tr;
+  if (fallback === undefined && !map) return undefined;
+  const cur = currentLang();
+  const base = baseLang(cur);
+  if (base === CONTENT_DEFAULT_LANG) return fallback;
+  if (map) {
+    const exact = map[cur]?.trim();
+    if (exact) return exact;
+    const b = map[base]?.trim();
+    if (b) return b;
+    const en = map.en?.trim();
+    if (en) return en;
+  }
+  return fallback;
 }
 
-function pickPrompts(tr: string[], en: string[] | undefined): string[] {
-  const lang = pickLang();
-  if (lang !== 'en' || !Array.isArray(en) || en.length === 0) return tr;
-  return tr.map((trPrompt, i) => {
-    const enPrompt = en[i];
-    return enPrompt && enPrompt.trim() ? enPrompt : trPrompt;
+function pickArrayByLang(
+  map: LocalizedStringArray | undefined
+): string[] | undefined {
+  if (!map) return undefined;
+  const cur = currentLang();
+  const base = baseLang(cur);
+  return map[cur] || map[base] || map.en;
+}
+
+function pickPrompts(
+  fallback: string[],
+  map: LocalizedStringArray | undefined
+): string[] {
+  const base = baseLang(currentLang());
+  if (base === CONTENT_DEFAULT_LANG) return fallback;
+  const chosen = pickArrayByLang(map);
+  if (!chosen) return fallback;
+  // Element-wise fallback keeps partially-translated categories usable.
+  return fallback.map((trPrompt, i) => {
+    const translated = chosen[i];
+    return translated && translated.trim() ? translated : trPrompt;
   });
 }
 
 export function localizeCategory(cat: Category): Category {
   return {
     ...cat,
-    name: pickString(cat.name, cat.nameEn),
-    prompts: pickPrompts(cat.prompts, cat.promptsEn),
+    name: pickString(cat.name, cat.nameI18n),
+    prompts: pickPrompts(cat.prompts, cat.promptsI18n),
   };
 }
 
 export function localizePlace(place: Place): Place {
   return {
     ...place,
-    name: pickString(place.name, place.nameEn),
-    description: pickOptional(place.description, place.descriptionEn),
+    name: pickString(place.name, place.nameI18n),
+    description: pickOptionalString(place.description, place.descriptionI18n),
   };
 }
 
 export function localizePlaceCategory(pc: PlaceCategory): PlaceCategory {
   return {
     ...pc,
-    name: pickString(pc.name, pc.nameEn),
+    name: pickString(pc.name, pc.nameI18n),
     places: pc.places.map(localizePlace),
   };
 }
