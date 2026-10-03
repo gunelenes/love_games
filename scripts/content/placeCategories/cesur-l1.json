@@ -2,91 +2,265 @@
   {
     "id": "yatak-odasi",
     "name": "Yatak Odası",
+    "nameI18n": { "en": "Bedroom" },
     "color": "#B91C1C",
     "icon": "🛏️",
     "track": "cesur",
     "level": 1,
     "order": 60,
     "places": [
-      { "name": "Yastıklar Kalesi", "description": "Battaniyeler ve yastıklarla bir sığınak kur." },
-      { "name": "Mum Işığında Yatak", "description": "Sadece 2 mum + yatak. Tavan izleme." },
-      { "name": "Sabah Yatağı", "description": "Uyanış saatinde, ışık henüz yumuşakken." },
-      { "name": "Karanlık Yatak", "description": "Işıklar tamamen kapalı, sadece hisler." }
+      {
+        "name": "Yastıklar Kalesi",
+        "description": "Battaniyeler ve yastıklarla bir sığınak kur.",
+        "nameI18n": { "en": "Pillow Fort" },
+        "descriptionI18n": {
+          "en": "Build a sanctuary out of blankets and pillows."
+        }
+      },
+      {
+        "name": "Mum Işığında Yatak",
+        "description": "Sadece 2 mum + yatak. Tavan izleme.",
+        "nameI18n": { "en": "Candlelit Bed" },
+        "descriptionI18n": {
+          "en": "Two candles + the bed. Watch the ceiling."
+        }
+      },
+      {
+        "name": "Sabah Yatağı",
+        "description": "Uyanış saatinde, ışık henüz yumuşakken.",
+        "nameI18n": { "en": "Morning Bed" },
+        "descriptionI18n": {
+          "en": "At waking hour, while the light is still soft."
+        }
+      },
+      {
+        "name": "Karanlık Yatak",
+        "description": "Işıklar tamamen kapalı, sadece hisler.",
+        "nameI18n": { "en": "Dark Bed" },
+        "descriptionI18n": {
+          "en": "Lights fully off — only sensation."
+        }
+      }
     ]
   },
   {
     "id": "dus-buhar",
     "name": "Duş & Buhar",
+    "nameI18n": { "en": "Shower & Steam" },
     "color": "#0F766E",
     "icon": "🚿",
     "track": "cesur",
     "level": 1,
     "order": 61,
     "places": [
-      { "name": "Sıcak Duş", "description": "Buhar dolu, ıslak, kapalı." },
-      { "name": "Küvet Zamanı", "description": "Doldurulmuş küvet, kimse acele etmiyor." },
-      { "name": "Duş Sonrası", "description": "Islak saçlar, havlu, aynanın önü." },
-      { "name": "Bahçe Duşu", "description": "Yaz gecesi açık havada duş." }
+      {
+        "name": "Sıcak Duş",
+        "description": "Buhar dolu, ıslak, kapalı.",
+        "nameI18n": { "en": "Hot Shower" },
+        "descriptionI18n": {
+          "en": "Full of steam, wet, closed in."
+        }
+      },
+      {
+        "name": "Küvet Zamanı",
+        "description": "Doldurulmuş küvet, kimse acele etmiyor.",
+        "nameI18n": { "en": "Tub Time" },
+        "descriptionI18n": {
+          "en": "A filled tub, no one in a hurry."
+        }
+      },
+      {
+        "name": "Duş Sonrası",
+        "description": "Islak saçlar, havlu, aynanın önü.",
+        "nameI18n": { "en": "After the Shower" },
+        "descriptionI18n": {
+          "en": "Wet hair, a towel, in front of the mirror."
+        }
+      },
+      {
+        "name": "Bahçe Duşu",
+        "description": "Yaz gecesi açık havada duş.",
+        "nameI18n": { "en": "Garden Shower" },
+        "descriptionI18n": {
+          "en": "An outdoor shower on a summer night."
+        }
+      }
     ]
   },
   {
     "id": "balkon-gecesi",
     "name": "Balkon Gecesi",
+    "nameI18n": { "en": "Balcony Night" },
     "color": "#4338CA",
     "icon": "🌃",
     "track": "cesur",
     "level": 1,
     "order": 62,
     "places": [
-      { "name": "Yıldızlar Altında", "description": "Balkon, karanlık, sadece siz." },
-      { "name": "Yağmurdan Sonra", "description": "Islak balkon, temiz hava." },
-      { "name": "Şehir Işıkları", "description": "Uzakta ışıklar, yakında siz." },
-      { "name": "Sabaha Yakın", "description": "Gün ağarmadan hemen önce." }
+      {
+        "name": "Yıldızlar Altında",
+        "description": "Balkon, karanlık, sadece siz.",
+        "nameI18n": { "en": "Under the Stars" },
+        "descriptionI18n": {
+          "en": "The balcony, the dark, just the two of you."
+        }
+      },
+      {
+        "name": "Yağmurdan Sonra",
+        "description": "Islak balkon, temiz hava.",
+        "nameI18n": { "en": "After the Rain" },
+        "descriptionI18n": {
+          "en": "Wet balcony, clean air."
+        }
+      },
+      {
+        "name": "Şehir Işıkları",
+        "description": "Uzakta ışıklar, yakında siz.",
+        "nameI18n": { "en": "City Lights" },
+        "descriptionI18n": {
+          "en": "Lights in the distance, the two of you up close."
+        }
+      },
+      {
+        "name": "Sabaha Yakın",
+        "description": "Gün ağarmadan hemen önce.",
+        "nameI18n": { "en": "Just Before Dawn" },
+        "descriptionI18n": {
+          "en": "Right before the day breaks."
+        }
+      }
     ]
   },
   {
     "id": "mum-isigi",
     "name": "Mum Işığı",
+    "nameI18n": { "en": "Candlelight" },
     "color": "#F59E0B",
     "icon": "🕯️",
     "track": "cesur",
     "level": 1,
     "order": 63,
     "places": [
-      { "name": "Salonun Ortası", "description": "Mumlar dizili, halı üstü." },
-      { "name": "Ateş Karşısında", "description": "Şömine veya büyük mum." },
-      { "name": "Ayna Karşısında", "description": "Mum ışığında yansımalar." },
-      { "name": "Loş Müzik", "description": "Sessiz, sadece mum + fısıltı." }
+      {
+        "name": "Salonun Ortası",
+        "description": "Mumlar dizili, halı üstü.",
+        "nameI18n": { "en": "Middle of the Living Room" },
+        "descriptionI18n": {
+          "en": "Candles in a row, on the rug."
+        }
+      },
+      {
+        "name": "Ateş Karşısında",
+        "description": "Şömine veya büyük mum.",
+        "nameI18n": { "en": "By the Fire" },
+        "descriptionI18n": {
+          "en": "A fireplace, or a big candle."
+        }
+      },
+      {
+        "name": "Ayna Karşısında",
+        "description": "Mum ışığında yansımalar.",
+        "nameI18n": { "en": "In Front of the Mirror" },
+        "descriptionI18n": {
+          "en": "Reflections in candlelight."
+        }
+      },
+      {
+        "name": "Loş Müzik",
+        "description": "Sessiz, sadece mum + fısıltı.",
+        "nameI18n": { "en": "Dim Music" },
+        "descriptionI18n": {
+          "en": "Quiet, just candles + whispers."
+        }
+      }
     ]
   },
   {
     "id": "otel-odasi",
     "name": "Otel Odası",
+    "nameI18n": { "en": "Hotel Room" },
     "color": "#7C2D12",
     "icon": "🏨",
     "track": "cesur",
     "level": 1,
     "order": 64,
     "places": [
-      { "name": "Şehir Merkezi Otel", "description": "Yabancı olmanın verdiği anonimlik." },
-      { "name": "Manzaralı Suite", "description": "Cam kenarı, yatak, manzara." },
-      { "name": "Küçük Boutique", "description": "Karakterli, samimi, 1 gecelik." },
-      { "name": "Deniz Kenarı Otel", "description": "Dalga sesi + kapalı perdeler." }
+      {
+        "name": "Şehir Merkezi Otel",
+        "description": "Yabancı olmanın verdiği anonimlik.",
+        "nameI18n": { "en": "Downtown Hotel" },
+        "descriptionI18n": {
+          "en": "The anonymity of being strangers in a city."
+        }
+      },
+      {
+        "name": "Manzaralı Suite",
+        "description": "Cam kenarı, yatak, manzara.",
+        "nameI18n": { "en": "Suite with a View" },
+        "descriptionI18n": {
+          "en": "Window side, bed, view."
+        }
+      },
+      {
+        "name": "Küçük Boutique",
+        "description": "Karakterli, samimi, 1 gecelik.",
+        "nameI18n": { "en": "Tiny Boutique" },
+        "descriptionI18n": {
+          "en": "Full of character, intimate, one night."
+        }
+      },
+      {
+        "name": "Deniz Kenarı Otel",
+        "description": "Dalga sesi + kapalı perdeler.",
+        "nameI18n": { "en": "Seaside Hotel" },
+        "descriptionI18n": {
+          "en": "The sound of waves + drawn curtains."
+        }
+      }
     ]
   },
   {
     "id": "gizli-mekan",
     "name": "Gizli Mekan",
+    "nameI18n": { "en": "Hidden Place" },
     "color": "#831843",
     "icon": "🗝️",
     "track": "cesur",
     "level": 1,
     "order": 65,
     "places": [
-      { "name": "Ofis Sonrası", "description": "Boş ofis, gece, yasak hissi." },
-      { "name": "Araç İçi", "description": "Park edilmiş, kapalı camlar." },
-      { "name": "Terk Edilmiş Oda", "description": "Kimsenin girmediği, siz keşfediyorsunuz." },
-      { "name": "Sürpriz Adres", "description": "Bir taraf mekanı seçer, diğeri şaşırır." }
+      {
+        "name": "Ofis Sonrası",
+        "description": "Boş ofis, gece, yasak hissi.",
+        "nameI18n": { "en": "After the Office" },
+        "descriptionI18n": {
+          "en": "An empty office at night, a forbidden feeling."
+        }
+      },
+      {
+        "name": "Araç İçi",
+        "description": "Park edilmiş, kapalı camlar.",
+        "nameI18n": { "en": "Inside a Car" },
+        "descriptionI18n": {
+          "en": "Parked, windows up."
+        }
+      },
+      {
+        "name": "Terk Edilmiş Oda",
+        "description": "Kimsenin girmediği, siz keşfediyorsunuz.",
+        "nameI18n": { "en": "Forgotten Room" },
+        "descriptionI18n": {
+          "en": "Somewhere no one goes — you're the ones discovering it."
+        }
+      },
+      {
+        "name": "Sürpriz Adres",
+        "description": "Bir taraf mekanı seçer, diğeri şaşırır.",
+        "nameI18n": { "en": "Surprise Address" },
+        "descriptionI18n": {
+          "en": "One of you picks the place; the other is surprised."
+        }
+      }
     ]
   }
 ]

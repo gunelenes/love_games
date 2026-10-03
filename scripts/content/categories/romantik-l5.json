@@ -2,6 +2,7 @@
   {
     "id": "gorunmez-ipler",
     "name": "Görünmez İpler",
+    "nameI18n": { "en": "Invisible Threads" },
     "color": "#DB2777",
     "icon": "🕊️",
     "track": "romantik",
@@ -14,11 +15,22 @@
       "Partnerinle bir \"işaret\" belirleyin (bir el hareketi, bir bakış). Gün içinde sadece ikinizin bildiği \"seni düşünüyorum\" mesajı.",
       "Bir hafta boyunca sabah kahvenizi paylaşırken tek bir soru sorun: \"bugün hangi anını benimle geçirmek istersin?\"",
       "Yatmadan önce her gece birbirinizin alnına bir öpücük + tek kelime söyleyin (bugünün özeti). Bir haftalık ritüel."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Propose a weekly ritual: every night before sleep, 3 minutes of forehead-to-forehead + eye-to-eye silence.",
+        "Start a shared journal — each night, one of you writes one word. Read it together after a week.",
+        "A \"moment I noticed you today\" ritual — share each night, for one week. See how it feels.",
+        "Agree on a \"signal\" with your partner (a hand gesture, a glance). A \"thinking of you\" message no one else knows.",
+        "For one week, over morning coffee, ask one single question: \"which moment of today do you want to spend with me?\"",
+        "Each night before sleep, a kiss on each other's forehead + one word (the day in a word). A seven-day ritual."
+      ]
+    }
   },
   {
     "id": "ruh-esi",
     "name": "Ruh Eşi",
+    "nameI18n": { "en": "Soul Mirror" },
     "color": "#C026D3",
     "icon": "✨",
     "track": "romantik",
@@ -31,11 +43,22 @@
       "Partnerinin ellerini avucuna al. 5 dakika göz kapalı — \"burada, benimle\" hissini paylaş.",
       "\"Beni ilk gördüğün anda ne düşündün?\" diye sor. Dinle. Sonra \"seni ilk gördüğümde…\" ile karşılık.",
       "Ortak bir \"gelecek anı\" hayal edin — 5 yıl sonrasını 3 dakika boyunca birlikte betimleyin, alternatif cümlelerle."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Twenty minutes, face to face. First 10: you speak, they listen (anything you want). Last 10: switch.",
+        "Close your eyes. Listening only to their voice, tell them the first memory they stir in you.",
+        "A \"silent evening\" — 2 hours, no words allowed. Communicate only by look, touch, gesture.",
+        "Take their hands in yours. Five minutes, eyes closed — share the feeling of \"I'm here, with you.\"",
+        "Ask \"what did you think the first time you saw me?\" Listen. Then answer with your own: \"when I first saw you…\"",
+        "Dream a shared \"future moment\" — describe five years from now together for 3 minutes, alternating sentences."
+      ]
+    }
   },
   {
     "id": "sabah-isigi",
     "name": "Sabah Işığı",
+    "nameI18n": { "en": "Morning Light" },
     "color": "#F472B6",
     "icon": "☀️",
     "track": "romantik",
@@ -48,6 +71,16 @@
       "Uyanır uyanmaz partnerine son gördüğün rüyayı 1 cümlede anlat. O da paylaşsın.",
       "Uyanış ritüeli: yataktayken önce 5 dakika birbirinize sarılıp uykudan tam uyanmayı bekleyin.",
       "Gün başlangıcında bir \"niyet\" paylaşın: \"bugünün en önemli anı için birlikte olalım\" — nasıl gerçekleşecek, planlayın."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "The moment you wake up, your first look at them gets a sentence — not \"good morning\" but \"I'm glad I'm seeing you.\"",
+        "Before leaving the bed, stroke their head for 30 seconds + a kiss on the forehead.",
+        "Make the morning coffee together — wordless. Like a dance. Coordinate with glances.",
+        "The moment you wake, tell them the last dream you had in one sentence. Have them share one back.",
+        "A waking ritual: in bed, hold each other for 5 minutes first — let yourselves finish waking up.",
+        "At the start of the day, share an intention: \"let's be together for today's most important moment\" — plan how it happens."
+      ]
+    }
   }
 ]

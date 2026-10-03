@@ -2,24 +2,41 @@
   {
     "id": "kafe",
     "name": "Kafe",
+    "nameI18n": { "en": "Café" },
     "color": "#C97B4D",
     "icon": "☕",
     "places": [
       {
         "name": "Sabah kahvesi köşesi",
-        "description": "Sokağın en sessiz kafesinde günün ilk kahvesi."
+        "description": "Sokağın en sessiz kafesinde günün ilk kahvesi.",
+        "nameI18n": { "en": "Morning-coffee corner" },
+        "descriptionI18n": {
+          "en": "The first coffee of the day at the quietest café on the street."
+        }
       },
       {
         "name": "Kitaplı kafe",
-        "description": "Kitap kokusu ve fısıltıyla dolu bir mekan."
+        "description": "Kitap kokusu ve fısıltıyla dolu bir mekan.",
+        "nameI18n": { "en": "Book café" },
+        "descriptionI18n": {
+          "en": "A place that smells of old books and hushed voices."
+        }
       },
       {
         "name": "Manzaralı çatı katı",
-        "description": "Şehri tepeden izleyerek uzun bir latte."
+        "description": "Şehri tepeden izleyerek uzun bir latte.",
+        "nameI18n": { "en": "Rooftop with a view" },
+        "descriptionI18n": {
+          "en": "A slow latte while watching the city from above."
+        }
       },
       {
         "name": "Küçük ara sokak",
-        "description": "Tesadüfen keşfedilecek karakterli bir yer."
+        "description": "Tesadüfen keşfedilecek karakterli bir yer.",
+        "nameI18n": { "en": "Tiny side street" },
+        "descriptionI18n": {
+          "en": "A full-of-character place to stumble into by accident."
+        }
       }
     ],
     "track": "romantik",
@@ -28,24 +45,41 @@
   {
     "id": "restoran",
     "name": "Restoran",
+    "nameI18n": { "en": "Restaurant" },
     "color": "#D64545",
     "icon": "🍽️",
     "places": [
       {
         "name": "İtalyan akşamı",
-        "description": "Mum ışığında pasta ve kırmızı şarap."
+        "description": "Mum ışığında pasta ve kırmızı şarap.",
+        "nameI18n": { "en": "Italian evening" },
+        "descriptionI18n": {
+          "en": "Pasta and red wine by candlelight."
+        }
       },
       {
         "name": "Deniz kenarı",
-        "description": "Dalga sesi + taze balık."
+        "description": "Dalga sesi + taze balık.",
+        "nameI18n": { "en": "Seaside table" },
+        "descriptionI18n": {
+          "en": "The sound of waves + fresh fish."
+        }
       },
       {
         "name": "Sokak lezzeti",
-        "description": "Yerel mekanda dumanı üstünde yemek."
+        "description": "Yerel mekanda dumanı üstünde yemek.",
+        "nameI18n": { "en": "Street food" },
+        "descriptionI18n": {
+          "en": "Piping-hot food at a local hole-in-the-wall."
+        }
       },
       {
         "name": "Aile mutfağı",
-        "description": "Küçük, samimi, ev usulü."
+        "description": "Küçük, samimi, ev usulü.",
+        "nameI18n": { "en": "Family kitchen" },
+        "descriptionI18n": {
+          "en": "Small, warm, home-style cooking."
+        }
       }
     ],
     "track": "romantik",
@@ -54,24 +88,41 @@
   {
     "id": "park",
     "name": "Park",
+    "nameI18n": { "en": "Park" },
     "color": "#4CAF50",
     "icon": "🌳",
     "places": [
       {
         "name": "Piknik battaniyesi",
-        "description": "Sepet, meyve, çilekli limonata."
+        "description": "Sepet, meyve, çilekli limonata.",
+        "nameI18n": { "en": "Picnic blanket" },
+        "descriptionI18n": {
+          "en": "A basket, fruit, strawberry lemonade."
+        }
       },
       {
         "name": "Akşam yürüyüşü",
-        "description": "Gün batımında el ele bir tur."
+        "description": "Gün batımında el ele bir tur.",
+        "nameI18n": { "en": "Evening walk" },
+        "descriptionI18n": {
+          "en": "A loop hand in hand at sunset."
+        }
       },
       {
         "name": "Bank üstünde",
-        "description": "Ağaç altında kitap ve kulaklık paylaşımı."
+        "description": "Ağaç altında kitap ve kulaklık paylaşımı.",
+        "nameI18n": { "en": "On a park bench" },
+        "descriptionI18n": {
+          "en": "A book under a tree and one shared pair of earbuds."
+        }
       },
       {
         "name": "Sabahın erken saati",
-        "description": "Kuş sesleri, sadece siz ikiniz."
+        "description": "Kuş sesleri, sadece siz ikiniz.",
+        "nameI18n": { "en": "Early morning" },
+        "descriptionI18n": {
+          "en": "Birdsong, and only the two of you."
+        }
       }
     ],
     "track": "romantik",
@@ -80,24 +131,41 @@
   {
     "id": "sinema",
     "name": "Sinema",
+    "nameI18n": { "en": "Cinema" },
     "color": "#6A4C93",
     "icon": "🎬",
     "places": [
       {
         "name": "Klasik salon + patlamış mısır",
-        "description": "Karanlık salon, koltuğa iyice yerleşin."
+        "description": "Karanlık salon, koltuğa iyice yerleşin.",
+        "nameI18n": { "en": "Classic theater + popcorn" },
+        "descriptionI18n": {
+          "en": "Dim room — sink deep into your seats."
+        }
       },
       {
         "name": "Bağımsız film gecesi",
-        "description": "Az bilinen bir yönetmenden."
+        "description": "Az bilinen bir yönetmenden.",
+        "nameI18n": { "en": "Indie film night" },
+        "descriptionI18n": {
+          "en": "Something from a lesser-known director."
+        }
       },
       {
         "name": "Açık hava sineması",
-        "description": "Yıldızların altında ekran."
+        "description": "Yıldızların altında ekran.",
+        "nameI18n": { "en": "Open-air cinema" },
+        "descriptionI18n": {
+          "en": "A screen under the stars."
+        }
       },
       {
         "name": "Evde festival",
-        "description": "Sinemaya gitmek yerine 3 kısa film seçin."
+        "description": "Sinemaya gitmek yerine 3 kısa film seçin.",
+        "nameI18n": { "en": "Home festival" },
+        "descriptionI18n": {
+          "en": "Skip the theater — pick 3 short films instead."
+        }
       }
     ],
     "track": "romantik",
@@ -106,24 +174,41 @@
   {
     "id": "ev",
     "name": "Ev Baş Başa",
+    "nameI18n": { "en": "Home, Just Us" },
     "color": "#EC7CAB",
     "icon": "🏠",
     "places": [
       {
         "name": "Battaniye tüneli",
-        "description": "Salonda kaleyi kur, filmi başlat."
+        "description": "Salonda kaleyi kur, filmi başlat.",
+        "nameI18n": { "en": "Blanket fort" },
+        "descriptionI18n": {
+          "en": "Build the fort in the living room, roll the movie."
+        }
       },
       {
         "name": "Mutfak dansı",
-        "description": "Birlikte yemek yaparken müzik açık."
+        "description": "Birlikte yemek yaparken müzik açık.",
+        "nameI18n": { "en": "Kitchen dance" },
+        "descriptionI18n": {
+          "en": "Music on while you cook together."
+        }
       },
       {
         "name": "Balkon ışıkları",
-        "description": "Işıkları kapa, mumları yak."
+        "description": "Işıkları kapa, mumları yak.",
+        "nameI18n": { "en": "Balcony lights" },
+        "descriptionI18n": {
+          "en": "Turn the lights off, light the candles."
+        }
       },
       {
         "name": "Yatak oturumu",
-        "description": "Yastıklar arası uzun sohbet."
+        "description": "Yastıklar arası uzun sohbet.",
+        "nameI18n": { "en": "Bed session" },
+        "descriptionI18n": {
+          "en": "A long talk among the pillows."
+        }
       }
     ],
     "track": "romantik",
@@ -132,24 +217,41 @@
   {
     "id": "surpriz",
     "name": "Sürpriz",
+    "nameI18n": { "en": "Surprise" },
     "color": "#F0A500",
     "icon": "🎁",
     "places": [
       {
         "name": "Rastgele araba yolu",
-        "description": "GPS'siz, sadece \"sağa\" ve \"sola\" kararlarıyla."
+        "description": "GPS'siz, sadece \"sağa\" ve \"sola\" kararlarıyla.",
+        "nameI18n": { "en": "Random drive" },
+        "descriptionI18n": {
+          "en": "No GPS — only \"left\" and \"right\" decisions."
+        }
       },
       {
         "name": "İlk buluşma yeniden",
-        "description": "Aynı yeri, aynı sırayla."
+        "description": "Aynı yeri, aynı sırayla.",
+        "nameI18n": { "en": "First date, again" },
+        "descriptionI18n": {
+          "en": "Same place, same order of events."
+        }
       },
       {
         "name": "Yeni bir mahalle",
-        "description": "Hiç gitmediğiniz semte doğru."
+        "description": "Hiç gitmediğiniz semte doğru.",
+        "nameI18n": { "en": "A new neighborhood" },
+        "descriptionI18n": {
+          "en": "Head toward a district you've never set foot in."
+        }
       },
       {
         "name": "Rol yap gecesi",
-        "description": "Kendinizi yabancı gibi tanıştırın — bir cafede buluşun."
+        "description": "Kendinizi yabancı gibi tanıştırın — bir cafede buluşun.",
+        "nameI18n": { "en": "Roleplay night" },
+        "descriptionI18n": {
+          "en": "Introduce yourselves as strangers — meet at a café."
+        }
       }
     ],
     "track": "romantik",

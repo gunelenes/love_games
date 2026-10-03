@@ -2,6 +2,7 @@
   {
     "id": "ipin-dilinden",
     "name": "İpin Dilinden",
+    "nameI18n": { "en": "In the Rope's Language" },
     "color": "#4C1D95",
     "icon": "🎀",
     "track": "cesur",
@@ -14,11 +15,22 @@
       "Bağladıktan sonra bir cümle: \"senin güvenin bende.\" 3 dakika sessizce dokunmadan sadece varlığınla ol. Sonra keşfet.",
       "Partner diz çökmüş, elleri arkada yumuşakça bağlı. Ustabaşı öne durur, sadece bakışla + nefesle 2 dakika iletişim. Sonra tek komut.",
       "Sahne sonu: bağı çöz, bilekleri masaj yap, göz göze bir dakika sessizce. \"Yanındayım, iyisin\" cümlesi. Su iç, bir şeyler ye — aftercare."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Pre-scene agreement: nail down the safeword, talk through limits. With a silk scarf, bind your partner's wrists in a mindful weave — three turns, loose, breath easy. For 5 minutes, hold them in that tie with only your gaze.",
+        "With a long scarf, wrap your partner's torso corset-style (chest and waist). Pressure felt, breathing fully easy. For 3 minutes, keep that hold with only gaze + words.",
+        "You're the Rigger. Bind their eyes + wrists + ankles in a three-point weave. Released only by the safeword. 5 minutes of exploration — keep checking breath and comfort.",
+        "Once they're bound, one sentence: \"your trust is with me.\" For 3 minutes, hold the space with your presence only — no touch. Then explore.",
+        "The partner kneels, hands softly bound behind. The Foreman stands in front — 2 minutes of pure gaze + breath communication. Then one single command.",
+        "End of scene: untie, massage the wrists, lock eyes for a quiet minute. Say \"I'm here, you're safe.\" Water, something to eat — aftercare."
+      ]
+    }
   },
   {
     "id": "kabul-toreni",
     "name": "Kabul Töreni",
+    "nameI18n": { "en": "Rite of Acceptance" },
     "color": "#78350F",
     "icon": "📜",
     "track": "cesur",
@@ -31,11 +43,22 @@
       "Karşılıklı: 3 rol öneri sunun (Halatçı/Örücü, Rehber/Takipçi, Bahçıvan/Kedi). Birini kabul et. O rolde 10 dakika kal. Sonra hakkında birbirinize ne hissettiğinizi söyleyin.",
       "Sahne kapanış ritüeli: Rehber, partnerinin başını okşar, \"iyisin, tamamsın\" der. 3 dakika sarılış. Karşılıklı geri bildirim — güven yenileme.",
       "Yatak öncesi ritüel: 5 dakika boyunca bugün ne beğendiğin, ne değişebileceğini paylaşın. Bu bir sonraki sahne için temel."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Scene-opening ritual: 3 minutes looking into each other's eyes. Then make it explicit: \"For these 15 minutes, you're/I'm the Guide.\" Safeword again.",
+        "Your partner sets a \"rule\" (e.g. \"I may not speak without permission\"). Follow that rule for 5 minutes. If it breaks, a 5-second pre-agreed consequence (a soft touch, a kiss redirected, etc.).",
+        "The Foreman prepares a token (a candle, a ring, a piece of cloth). Gives their partner a task around that object: \"Hold this. Until you complete it, nothing else happens.\"",
+        "Face to face: each of you proposes 3 roles (Rigger/Weaver, Guide/Follower, Caretaker/Cat). Accept one. Stay in it for 10 minutes. Then tell each other what you felt about it.",
+        "Scene-closing ritual: the Guide strokes the partner's head, says \"you're good, you're whole.\" Three minutes of embrace. Mutual feedback — trust renewed.",
+        "Pre-sleep ritual: for 5 minutes, share what you loved today, what could change next time. This is the ground for the next scene."
+      ]
+    }
   },
   {
     "id": "derin-bag",
     "name": "Derin Bağ",
+    "nameI18n": { "en": "Deep Bond" },
     "color": "#1E1B4B",
     "icon": "🌌",
     "track": "cesur",
@@ -48,6 +71,16 @@
       "\"Sessiz gece\": 30 dakika kelime yasak. Sadece bakış, dokunuş, nefes. Sonda 5 dakika birbirinize ne hissettiğinizi anlatın.",
       "\"Rol geceleri\": 1 hafta boyunca 2 gece rolleri değişerek yaşayın. Her gecenin sonunda 5 dakika değerlendirme.",
       "En derin ritüel: gözbağı + hafif ipek bağ + sesli müzik + 30 dakika. Ustabaşı yönetir. Sahne sonu 10 dakika sarılış + su iç + aftercare + geribildirim."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Plan a 20-minute scene. Opening: eye contact + safeword. Middle: three different activities (role, touch, word play). End: embrace + feedback. Set a timer.",
+        "Design a protocol like a \"morning routine\": a shared 5-minute ritual every morning (gaze, touch, word). Try it for a week.",
+        "A 10-minute pre-sleep scene as Foreman and Follower. The Foreman picks 3 activities — breath, touch, word. The Follower accepts each or steers with \"yellow/red.\"",
+        "\"Silent night\": 30 minutes, no words. Only gaze, touch, breath. At the end, 5 minutes to tell each other what you felt.",
+        "\"Role nights\": over one week, swap roles across two nights. End each night with a 5-minute debrief.",
+        "The deepest ritual: blindfold + light silk tie + music + 30 minutes. The Foreman leads. End of scene — 10 minutes of embrace + water + aftercare + feedback."
+      ]
+    }
   }
 ]

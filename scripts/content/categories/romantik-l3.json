@@ -2,6 +2,7 @@
   {
     "id": "fisiltinin-kitabi",
     "name": "Fısıltının Kitabı",
+    "nameI18n": { "en": "The Book of Whispers" },
     "color": "#7C3AED",
     "icon": "📖",
     "track": "romantik",
@@ -14,11 +15,22 @@
       "Kağıda \"keşke şunu birlikte yaşasak\" yazın. Değişip birbirinize verin. Yüksek sesle okuyun.",
       "Partnerine \"senden hâlâ öğrenmek istediğim tek şey…\" diye başla, dinle.",
       "Gözlerinizi kapatın. 3 dakika boyunca sırayla birbirinizin yüzüne dair bir anıyı anlatın."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Whisper a dream you've never told them into their ear. Just one sentence.",
+        "Start with \"a moment I want to live with you is…\" and describe it in full detail.",
+        "Whisper into their ear: \"my favorite thought about you today is…\"",
+        "On a slip of paper, write \"I wish we could live this together.\" Swap papers and read them aloud.",
+        "Begin with \"the one thing I still want to learn about you is…\" and then listen.",
+        "Close your eyes. For 3 minutes take turns telling a memory about each other's face."
+      ]
+    }
   },
   {
     "id": "kapali-gozlerle",
     "name": "Kapalı Gözlerle",
+    "nameI18n": { "en": "Eyes Closed" },
     "color": "#6366F1",
     "icon": "🎠",
     "track": "romantik",
@@ -31,11 +43,22 @@
       "Gözü kapalı partnerine 30 saniye kulağına konuş — anı, mekan, duyu detayları. O görüntüsünü zihninde kur.",
       "Partnerinin gözleri kapalı, sen elini onun elini tutup 1 dakika hiçbir şey söylemeden salla — hareket yavaş.",
       "Karşılıklı gözler kapalı. Bir hikayeyi 5 cümlede birlikte kurun — 1 sen, 1 o. Kimin nereye götüreceği belli değil."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Their eyes stay closed. Explore their face with your hands for 1 minute — soft, careful, like a sculpture.",
+        "Both of you — eyes closed. Sit facing each other. Only your hands may touch. Three minutes of exploration.",
+        "Have your partner close their eyes. Bring something with a scent (perfume, fruit, a flower). Hold it near slowly. Let them guess.",
+        "With their eyes closed, speak into their ear for 30 seconds — a memory, a place, sensory details. Let them build the picture.",
+        "Their eyes closed, hold their hand and sway it slowly for 1 minute without a word — gentle motion.",
+        "Both eyes closed. Build a story together in 5 sentences — one you, one them. Nobody knows where it'll go."
+      ]
+    }
   },
   {
     "id": "uykuya-yakin",
     "name": "Uykuya Yakın",
+    "nameI18n": { "en": "Close to Sleep" },
     "color": "#4F46E5",
     "icon": "🌙",
     "track": "romantik",
@@ -48,6 +71,16 @@
       "Karanlıkta partnerinin elini bul + sıkıca tut. 3 dakika sessizlikte, sadece tutuş.",
       "Uykuya yakın: \"en son ne için minnet duyduğunu\" partnerine anlat, dinle, karşılığında sen ver.",
       "Yanyana yatarken, bir eliyle partnerinin kalp atışını hisset. 2 dakika sadece o."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Turn off the lights. Lie side by side. In the dark, chat for 5 minutes while listening only to their voice.",
+        "Before sleep, name three favorite things about them. Out loud, slowly.",
+        "Before you sleep, rest your head on their chest and start a bedtime story in time with their breathing — stop whenever you want.",
+        "In the dark, find their hand + hold it tight. Three minutes of silence, just the grip.",
+        "Close to sleep: tell them the last thing you were grateful for, listen, then give them yours.",
+        "Side by side, feel their heartbeat with one hand. Two minutes, nothing else."
+      ]
+    }
   }
 ]

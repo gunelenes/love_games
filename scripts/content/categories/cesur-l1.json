@@ -2,6 +2,7 @@
   {
     "id": "ates-sozcukleri",
     "name": "Ateş Sözcükleri",
+    "nameI18n": { "en": "Fire Words" },
     "color": "#DC2626",
     "icon": "💬",
     "track": "cesur",
@@ -18,11 +19,26 @@
       "Kulağına \"seni izliyorum\" de. Sonra 20 saniye susup ona bak — hiçbir şey söyleme.",
       "Partnerine \"seni beğendiğim bir yönü söyle sana\" de. O söyler, sen sadece \"evet, o.\" ile onayla.",
       "İki kelimelik bir emir: \"bekle beni\". Sonra 1 metre uzaklaş, bir dakika bakışsız bekle."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Whisper only three words into your partner's ear for 10 seconds — but let the words be provocative.",
+        "Say a sentence beginning with \"the thing I want most today is…\" Choose your words carefully.",
+        "For 30 seconds, speak only in \"yes\" and \"no\" sentences — without breaking eye contact.",
+        "Lean close to their ear and, instead of their name, say one adjective. One that makes them look up at you.",
+        "Slow your voice down — stretch a sentence over 3 seconds: \"What's on my mind right now is…\" and finish it.",
+        "Tell them \"I want you.\" Say it three times in three different tones. Ask which one hit hardest.",
+        "Tempt your partner with one word: \"later.\" Keep what happens next to yourself — no hints.",
+        "Say \"I'm watching you\" into their ear. Then go quiet and look at them for 20 seconds — no words.",
+        "Tell them \"name one thing you like about me and say it to me.\" They say it; you only answer with \"yes, that.\"",
+        "A two-word order: \"wait for me.\" Then step a meter away and wait a minute, no glances."
+      ]
+    }
   },
   {
     "id": "bakisin-isigi",
     "name": "Bakışın Işığı",
+    "nameI18n": { "en": "The Light of a Gaze" },
     "color": "#6B21A8",
     "icon": "👁️",
     "track": "cesur",
@@ -39,11 +55,26 @@
       "Baş başa bir yastığın üstüne yatın. 30 saniye sadece bakış — kim ilk gözünü kırpar?",
       "2 metre uzaktan 10 saniye sadece bakışla partnerle iletişim kur. Sonra 3 adım yaklaş, tekrar 10 saniye.",
       "Ellerin ardında dursun. 1 dakika göz teması + hafif nefes. Dokunmak yasak — sadece bakış."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "For one full minute, don't look away from your partner's eyes. First one to smile loses — prize is the winner's call.",
+        "For 20 seconds, say what you want to do with only your eyes. Words forbidden.",
+        "Sit face to face. For 30 seconds sync your breathing — eyes open, hands over hands.",
+        "Let them feel you looking at their lips for 10 seconds. Then come back to their eyes — tell them with your eyes what you felt.",
+        "From across the room, pull your partner's attention with only your gaze — 5 seconds.",
+        "Hold eye contact for 30 seconds. In the middle, say \"how much I want you — right here.\" Let the words ride the gaze.",
+        "Lean toward each other. Close in until your breath touches their cheek — then hold there for 5 seconds, no touch.",
+        "Head to head on a pillow. 30 seconds of pure gaze — who blinks first?",
+        "From 2 meters away, communicate with your partner for 10 seconds using only your gaze. Then step 3 steps closer, 10 more seconds.",
+        "Hands behind your back. 1 minute of eye contact + soft breath. Touching forbidden — just the gaze."
+      ]
+    }
   },
   {
     "id": "siritan-cesaret",
     "name": "Sırıtan Cesaret",
+    "nameI18n": { "en": "Grinning Dare" },
     "color": "#BE185D",
     "icon": "😈",
     "track": "cesur",
@@ -60,6 +91,20 @@
       "Karşılıklı \"itiraf sırası\". Her turda bir cesur itiraf — dinle, yorum yok, sonra sıra sende.",
       "\"Bir zaafım var, bu senin karşında ortaya çıkıyor…\" cümlesini bitir. Detay ver.",
       "Partnerine \"sana yapmak istediğim tek şey…\" diye başla. Cümle net, kısa, cesur."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Confess a daring wish you've never told your partner. Gently, but clearly.",
+        "Ask: \"What would you have me do to you right now — don't hold back, say the boldest version.\"",
+        "Share a \"dirty secret\" about yourself — something about us that excites you and you've never said.",
+        "Sum up what turns you on the most in a single sentence. No speech, just one line.",
+        "Start with \"if you let me, the one thing I'd do right now is…\" — give three options. Let them pick.",
+        "Take turns with sentences starting \"the moment I want you most is…\" No commentary — just listen.",
+        "Finish the sentence \"something I think while watching you is…\" One sentence, sharp.",
+        "\"Confession rounds,\" face to face. Each round, one brave confession — listen, no response, then switch.",
+        "Finish the sentence \"I have a weakness that comes out around you…\" Give details.",
+        "Begin with \"the one thing I want to do to you is…\" One clear, short, bold sentence."
+      ]
+    }
   }
 ]

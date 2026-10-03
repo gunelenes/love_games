@@ -2,6 +2,7 @@
   {
     "id": "cesaret",
     "name": "Cesaret",
+    "nameI18n": { "en": "Courage" },
     "color": "#FF4D6D",
     "icon": "🔥",
     "prompts": [
@@ -14,12 +15,25 @@
       "Bir kağıda \"ideal bir Cumartesi gecesi\" tarif et, birbirinize okuyun.",
       "Partnerinin kulağına 10 saniyelik tatlı bir şey fısılda."
     ],
+    "promptsI18n": {
+      "en": [
+        "Tell your partner a dream you've never shared before.",
+        "For 30 seconds, look straight into their eyes and only say \"I love you.\"",
+        "Show the last 5 photos on your phone.",
+        "Share the most embarrassing moment you still remember from your first date.",
+        "Tell your partner 3 physical features of theirs you're drawn to.",
+        "Confess the last time you told them a lie.",
+        "On a piece of paper, describe an \"ideal Saturday night\" — read them to each other.",
+        "Whisper something sweet into your partner's ear for 10 seconds."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "dogruluk",
     "name": "Doğruluk",
+    "nameI18n": { "en": "Truth" },
     "color": "#4ECDC4",
     "icon": "💭",
     "prompts": [
@@ -32,12 +46,25 @@
       "Beni en çok hangi konuda takdir ediyorsun?",
       "Şu an içinde biriktirdiğin bir şey var mı?"
     ],
+    "promptsI18n": {
+      "en": [
+        "What would you most want to change about our relationship?",
+        "What did you think the first time you saw me?",
+        "What has made you happiest in the last month?",
+        "Is there anything about yourself we haven't talked about yet?",
+        "Pick three words to describe me.",
+        "Which memory of us is the most beautiful one for you?",
+        "What do you appreciate about me the most?",
+        "Is there anything you've been holding inside right now?"
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "sarilma",
     "name": "Sarılma",
+    "nameI18n": { "en": "Embrace" },
     "color": "#FFB84D",
     "icon": "🤗",
     "prompts": [
@@ -50,12 +77,25 @@
       "Elleriyle yüzünü tut ve gülümse.",
       "Sırt sırta ver ve 1 dakika birlikte sessizce nefes al."
     ],
+    "promptsI18n": {
+      "en": [
+        "Hold your partner tightly for 30 seconds — don't say a word.",
+        "Place a slow kiss on their forehead.",
+        "Hold their hands and try to feel their pulse.",
+        "Pull them close and hum a line from their favorite song.",
+        "Give three tiny kisses on their neck.",
+        "While holding them, whisper your favorite memory of us into their ear.",
+        "Cup their face in your hands and smile.",
+        "Sit back to back and breathe quietly together for a minute."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "anilar",
     "name": "Anılar",
+    "nameI18n": { "en": "Memories" },
     "color": "#A78BFA",
     "icon": "📸",
     "prompts": [
@@ -68,12 +108,25 @@
       "Birlikte kutladığımız en özel günü paylaş.",
       "İlişkimizde seni en çok duygulandıran anı anlat."
     ],
+    "promptsI18n": {
+      "en": [
+        "Remember the day we first met and write a message to that day.",
+        "Describe the most unforgettable place we've been to together.",
+        "What's the memory of us that made you laugh the hardest?",
+        "Describe the moment you first said \"I love you.\"",
+        "Find your favorite photo of us and explain why it's that one.",
+        "Think of an inside joke that belongs just to us and say it.",
+        "Share the most special day we've celebrated together.",
+        "Tell me the moment in our relationship that moved you the most."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "oyun",
     "name": "Oyun",
+    "nameI18n": { "en": "Play" },
     "color": "#F472B6",
     "icon": "🎲",
     "prompts": [
@@ -86,12 +139,25 @@
       "Partnerine tek kaşınla göz kırp — o da kırmaya çalışsın.",
       "Beraber bir cümleyi tersinden söyleyin: \"seni seviyorum\" → \"muroyives ines\"."
     ],
+    "promptsI18n": {
+      "en": [
+        "In 30 seconds, say each other's names in 20 different voices.",
+        "Describe your last 24 hours using only emojis.",
+        "Close your eyes and explore your partner's face only with your hand.",
+        "Have a 5-second imitation duel, face to face.",
+        "Both pick a number in your head at the same time — bet on whether they'll match.",
+        "Write a 30-second improvised song inspired by each other.",
+        "Wink with one eyebrow raised — see if your partner can match it.",
+        "Say a sentence backwards together: \"I love you\" → \"uoy evol I.\""
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "derin",
     "name": "Derin",
+    "nameI18n": { "en": "Deep" },
     "color": "#60A5FA",
     "icon": "🌊",
     "prompts": [
@@ -104,6 +170,18 @@
       "Bir gün başaramazsam benden ne isterdin?",
       "Beni sevmenin sana öğrettiği bir şey var mı?"
     ],
+    "promptsI18n": {
+      "en": [
+        "What are you most afraid of in life right now?",
+        "Where do you imagine us 5 years from now?",
+        "What is \"real love\" to you?",
+        "Is there something about yourself you'd like to change?",
+        "What's the deepest feeling you've carried from childhood until now?",
+        "Can you tell me where you feel most fragile?",
+        "If one day I fail, what would you ask of me?",
+        "Has loving me taught you something?"
+      ]
+    },
     "track": "romantik",
     "level": 1
   }

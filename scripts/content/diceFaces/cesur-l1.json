@@ -2,6 +2,7 @@
   {
     "id": "atesli-opucuk",
     "name": "Ateşli Öpücük",
+    "nameI18n": { "en": "Fiery Kiss" },
     "color": "#DC2626",
     "icon": "💋",
     "track": "cesur",
@@ -13,11 +14,21 @@
       "Öpücüğün ortasında partnerin dudağını hafifçe ısır — oyunbaz, kısa.",
       "Karşılıklı: aynı anda öpüşme, kim önce nefes almak zorunda kalır?",
       "Partnerine bir öpücük ver, sonra 3 saniye durup gözlerine bak, sonra bir öpücük daha."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "A slow kiss with your tongue — 20 unbroken seconds.",
+        "A slow trail of kisses from neck to lips — 5 of them, 2 seconds apart.",
+        "Mid-kiss, nip their lip lightly — playful, brief.",
+        "Face to face: kiss at the same time — who has to breathe first?",
+        "A kiss, then 3 seconds of pause looking into their eyes, then another kiss."
+      ]
+    }
   },
   {
     "id": "yavas-dokunus",
     "name": "Yavaş Dokunuş",
+    "nameI18n": { "en": "Slow Touch" },
     "color": "#0F766E",
     "icon": "🪶",
     "track": "cesur",
@@ -29,11 +40,21 @@
       "Partnerinin boynuna 5 farklı tempoda dokunuş — hangisinde titriyor?",
       "Ellerini partnerinin kalçasına götür, 3 saniye tut, sonra yavaşça çek.",
       "Partnerine bir avuç masajı yap — parmaklarını iç içe geçirerek."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Trace a 30-second path on their back with your fingertip — slow, felt.",
+        "Hold the warmth of your hand on their chest for 20 seconds — no pressure, just presence.",
+        "Touch their neck at 5 different tempos — which one makes them shiver?",
+        "Rest your hands on their hip, hold for 3 seconds, then pull away slowly.",
+        "Give them a palm massage — fingers interlaced."
+      ]
+    }
   },
   {
     "id": "kisikirtici-fisilti",
     "name": "Kışkırtıcı Fısıltı",
+    "nameI18n": { "en": "Teasing Whisper" },
     "color": "#DB2777",
     "icon": "🗣️",
     "track": "cesur",
@@ -45,11 +66,21 @@
       "Partnerinin kulağına sadece nefes ver — 10 saniye, kelime yok.",
       "\"Sonra…\" diye başlayan bir cümle fısılda, üçe böl.",
       "Kulağına \"bugün seninle ilgili düşüncem\" cümlesini bitir."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Whisper \"I want you\" into their ear — three different tones, three times.",
+        "Whisper the boldest idea you've had today.",
+        "Breathe into their ear — 10 seconds, no words.",
+        "Whisper a sentence beginning with \"later…\" — break it into three.",
+        "Finish the sentence \"my thought about you today is…\" in their ear."
+      ]
+    }
   },
   {
     "id": "gozbagi",
     "name": "Gözbağı",
+    "nameI18n": { "en": "Blindfold" },
     "color": "#4338CA",
     "icon": "🕶️",
     "track": "cesur",
@@ -61,11 +92,21 @@
       "Kendi gözlerini bağla, partnerin seni yönlendirsin — 2 dakika.",
       "Gözbağlı partnere yavaşça yaklaş — dudaklar değene kadar.",
       "Partnerinin gözlerini kapat, kulağına 20 saniye fantezi anlat."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Blindfold your partner. One minute of communication through touch alone.",
+        "Introduce three different textures to the blindfolded partner — let them guess each one.",
+        "Blindfold yourself, let your partner lead you — 2 minutes.",
+        "Approach your blindfolded partner slowly — until your lips touch.",
+        "Have them close their eyes; whisper a fantasy into their ear for 20 seconds."
+      ]
+    }
   },
   {
     "id": "rol-ver",
     "name": "Rol Ver",
+    "nameI18n": { "en": "Give a Role" },
     "color": "#0C4A6E",
     "icon": "🎭",
     "track": "cesur",
@@ -77,11 +118,21 @@
       "Partnerine yeni bir isim tak. Sadece bu isimle çağır — 5 dakika.",
       "Karşılıklı yabancı gibi tanışın — yeni bir hikaye ile 10 dakika.",
       "Partnerine sen ne olursan o olur — bir role gir, 2 dakika sürdür."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "For 5 minutes, you're the \"Guide.\" Give 3 commands — breathe, close your eyes, wait.",
+        "Roles: a \"Caretaker\" and a \"Cat.\" Three minutes of gaze + touch only.",
+        "Give your partner a new name. For 5 minutes, use only that name.",
+        "Meet each other as strangers — a brand-new story for 10 minutes.",
+        "Whatever you become, your partner becomes — step into a role, hold it for 2 minutes."
+      ]
+    }
   },
   {
     "id": "sinir-cesitle",
     "name": "Sınırı Çeşitle",
+    "nameI18n": { "en": "Play with the Line" },
     "color": "#B91C1C",
     "icon": "🎯",
     "track": "cesur",
@@ -93,6 +144,15 @@
       "Partnerine bir güvenlik kelimesi belirletmek: \"kırmızı\" = dur. Deneme yap.",
       "Karşılıklı sınır listesi: 5 dakika içinde birbirinize \"asla olmaz\" ve \"denerdik\" listesi paylaş.",
       "Partnerine \"neye evet dersen\" diye başla, kısa bir listeye evet almak için sor."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Begin with \"I'll say 3 things, pick 1.\" Offer bold options.",
+        "\"One rule for tonight: we can't do X.\" Then build a game around breaking that rule.",
+        "Have your partner pick a safeword: \"red\" = stop. Try it out.",
+        "A line-swap, both sides: in 5 minutes, share your \"never\" list and your \"we'd try\" list.",
+        "Begin with \"what will you say yes to?\" and get a yes to a short list of things."
+      ]
+    }
   }
 ]

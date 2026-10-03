@@ -2,6 +2,7 @@
   {
     "id": "yasak-duyular",
     "name": "Yasak Duyular",
+    "nameI18n": { "en": "Forbidden Senses" },
     "color": "#4338CA",
     "icon": "🕶️",
     "track": "cesur",
@@ -14,11 +15,22 @@
       "Gözbağı sende. Partnerin sana neyi hissettirmek istediğine karar verir — ama önce sana \"hazır mısın?\" diye sorması gerek.",
       "Odayı karart. Sadece bir mum yak. 5 dakika boyunca birbirinizin yüzünü sadece o ışıkla keşfedin.",
       "Partnerine \"gözlerini kapat\" de. Yanına yaklaş, kulağına 3 kelime fısılda, sonra dudaklarına 3 saniye değme — hafifçe. Sonra çekil, tekrar bekleyecek."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Put a blindfold on your partner (silk scarf, tie). For 3 minutes, touch them however you want with your hands — they only feel and react.",
+        "Both of you — eyes closed. Sit face to face. For 2 minutes, come closer feeling only each other's breath and the nearness of your hands — until your lips touch.",
+        "Blindfold your partner. For 30 seconds, touch one spot on their skin slowly with three different things (your lips, your finger, a cloth) — let them guess each one.",
+        "The blindfold is on you. Your partner decides what they want you to feel — but first they have to ask you \"are you ready?\"",
+        "Dim the room. Light one candle. For 5 minutes, discover each other's face by that light alone.",
+        "Tell them \"close your eyes.\" Lean in, whisper three words in their ear, then let your lips meet theirs for 3 seconds — barely. Then pull back, and let them wait for the next."
+      ]
+    }
   },
   {
     "id": "yavas-ritim",
     "name": "Yavaş Ritim",
+    "nameI18n": { "en": "Slow Rhythm" },
     "color": "#0F766E",
     "icon": "🌊",
     "track": "cesur",
@@ -31,11 +43,22 @@
       "Dokunmadan önce bir cümle: \"şimdi elimi nereye götürmemi istersin?\" O söyler, sen 30 saniye tam orada tut — hareketsiz.",
       "Partnerine 5 saniye süren tek bir öpücük ver — dil kullanmadan. Sonra 5 saniye ara. Bir öpücük daha. Ritim böyle 3 tekrar.",
       "Birbirinizin ellerini tutun. Yavaşça dans etmeye başlıyormuş gibi 30 saniye salının — göz teması bırakmayın, kelime yasak."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Take off one piece of your partner's clothing — over 60 full seconds. Keep the pace steady, no rush.",
+        "Sit face to face. Take turns removing one piece of each other's clothing — each turn, say one line: \"a moment I found you irresistible was…\"",
+        "Ask your partner \"which piece of my clothing do you want me to take off?\" Then take it off, stretched out slowly over 2 minutes.",
+        "Before you touch, say one line: \"where do you want my hand to go?\" They answer; you hold your hand right there for 30 motionless seconds.",
+        "Give your partner a single 5-second kiss — no tongue. Then 5 seconds of pause. Another kiss. Three rounds of that rhythm.",
+        "Hold each other's hands. Sway as if you're about to dance, 30 seconds — don't break eye contact, no words."
+      ]
+    }
   },
   {
     "id": "ipekten-dokunus",
     "name": "İpekten Dokunuş",
+    "nameI18n": { "en": "Silk Touch" },
     "color": "#9F1239",
     "icon": "🪶",
     "track": "cesur",
@@ -48,6 +71,16 @@
       "Sıcak nefesin partnerinin kulağının 2 cm yakınında olsun — 10 saniye boyunca dokunmadan sadece nefes.",
       "Partnerinin avucunun içine yumuşak bir dokunuş yap (parmakla, dudakla, ne istersen). \"Aynısını istediğim bir yere yap\" de.",
       "İki farklı sıcaklık (bir sıcak bir soğuk içecek). Sırayla partnerinin bileğine bir yudum sıcak, sonra bir yudum soğuk dokundur — her seferinde 3 saniye bekle."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "With silk in your hand (a scarf, the edge of a t-shirt, long hair) trace a slow 10-second line down your partner's back. Then ask: \"where next?\"",
+        "Take an ice cube into your mouth. Look at your partner for 5 seconds, then leave a drop from that cube on their brow or lip.",
+        "Prepare three textures (soft, firm, flowing — e.g. feather, wood, water). With their eyes closed, touch them with each in turn. Whichever made them shiver the most — go back there.",
+        "Let your warm breath hover 2 cm from their ear — 10 seconds, no touch, only breath.",
+        "Place one soft touch into their palm (finger, lip, whatever you want). Say \"do the same thing to a place I want.\"",
+        "Two different temperatures (one hot drink, one cold). Touch your partner's wrist with a sip of hot, then a sip of cold, in turn — wait 3 seconds between each."
+      ]
+    }
   }
 ]

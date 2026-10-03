@@ -2,6 +2,7 @@
   {
     "id": "opucuk",
     "name": "Öpücük",
+    "nameI18n": { "en": "Kiss" },
     "color": "#FF4D6D",
     "icon": "💋",
     "prompts": [
@@ -11,12 +12,22 @@
       "Boynuna 3 küçük öpücük ver.",
       "Bir öpücükte 5 saniye kalın, gözler kapalı."
     ],
+    "promptsI18n": {
+      "en": [
+        "Give your partner a soft kiss on the cheek.",
+        "Place a long kiss on their forehead.",
+        "Hold their hand and kiss the back of it.",
+        "Give 3 small kisses on their neck.",
+        "Hold a kiss for 5 seconds, eyes closed."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "sarilma",
     "name": "Sarılma",
+    "nameI18n": { "en": "Embrace" },
     "color": "#FFB84D",
     "icon": "🤗",
     "prompts": [
@@ -26,12 +37,22 @@
       "Ellerini tut, göz göze bak.",
       "Kucağına al ve sallan."
     ],
+    "promptsI18n": {
+      "en": [
+        "Hold each other tightly for 30 seconds.",
+        "Sit back to back and breathe quietly for a minute.",
+        "Hug them from behind and rest on their shoulder.",
+        "Hold their hands, lock eyes.",
+        "Pull them into your lap and rock gently."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "iltifat",
     "name": "İltifat",
+    "nameI18n": { "en": "Compliment" },
     "color": "#4ECDC4",
     "icon": "💫",
     "prompts": [
@@ -41,12 +62,22 @@
       "Ona kısa bir teşekkür mesajı söyle.",
       "Onun için hangi kelime aklına ilk geliyor?"
     ],
+    "promptsI18n": {
+      "en": [
+        "Tell them which physical feature of theirs is your favorite.",
+        "Describe a trait of theirs you deeply admire.",
+        "Share why they feel special to you today.",
+        "Say a short thank-you message to them.",
+        "What's the first word that comes to mind when you think of them?"
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "ani",
     "name": "Anı",
+    "nameI18n": { "en": "Memory" },
     "color": "#A78BFA",
     "icon": "📸",
     "prompts": [
@@ -56,12 +87,22 @@
       "En unutulmaz seyahatinizi anlat.",
       "Birlikte en çok güldüğünüz anı paylaş."
     ],
+    "promptsI18n": {
+      "en": [
+        "Tell your favorite memory of the two of you.",
+        "Share the funniest memory you have with them.",
+        "Remember the day you first met.",
+        "Describe your most unforgettable trip together.",
+        "Share the moment you laughed the hardest together."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "dokunus",
     "name": "Dokunuş",
+    "nameI18n": { "en": "Touch" },
     "color": "#F472B6",
     "icon": "✨",
     "prompts": [
@@ -71,12 +112,22 @@
       "Elini eline geçir, parmaklarını iç içe kilitle.",
       "Sırtına yumuşak bir masaj yap 30 saniye."
     ],
+    "promptsI18n": {
+      "en": [
+        "Rub your hands together slowly to warm them, then offer them.",
+        "Softly stroke their hair.",
+        "Frame their face with your hands.",
+        "Slide your hand into theirs — interlace your fingers.",
+        "Give them a soft back massage for 30 seconds."
+      ]
+    },
     "track": "romantik",
     "level": 1
   },
   {
     "id": "fisilti",
     "name": "Fısıltı",
+    "nameI18n": { "en": "Whisper" },
     "color": "#60A5FA",
     "icon": "🌙",
     "prompts": [
@@ -86,6 +137,15 @@
       "Beni en çok neyle mutlu ediyorsun de, fısıldayarak.",
       "Kulağına 3 kelimeyle \"seni seviyorum\" fısılda."
     ],
+    "promptsI18n": {
+      "en": [
+        "Whisper a line from your favorite song into their ear.",
+        "Tell them one of your secrets about yourself.",
+        "Whisper something that's been on your mind about them today.",
+        "Whisper what makes you happiest about them.",
+        "Whisper \"I love you\" in three words into their ear."
+      ]
+    },
     "track": "romantik",
     "level": 1
   }

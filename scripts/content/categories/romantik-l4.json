@@ -2,6 +2,7 @@
   {
     "id": "yavas-yakin",
     "name": "Yavaş Yakın",
+    "nameI18n": { "en": "Slow Close" },
     "color": "#DC2626",
     "icon": "🔥",
     "track": "romantik",
@@ -14,11 +15,22 @@
       "Partnerine \"gözlerini kapat\" de. Ondan izin isteyerek onu 2 dakika yavaşça öp — boyun, omuz, kaşlar, sırayla.",
       "Partnerine hangi bölgede dokunulmayı sevdiğini sor. 3 tane söylesin. Sırayla her birinde 30 saniye yavaş dokunuş.",
       "Elbiseli, sadece sarılma pozisyonunda 5 dakika. Ancak, kalp atışı hızlandığında partnerin \"yakında\" der. Öyle bir yakınlık kur."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Settle into bed slowly. For 3 minutes, lips only — no tongue, slow, exploring kisses.",
+        "Give your partner a kiss so complete that you're both breathless when it ends. No time limit — tempo is the limit.",
+        "Lie face to face. For 5 minutes, touch only as far as your arms can reach — clothes still on.",
+        "Tell them \"close your eyes.\" With their consent, kiss them slowly for 2 minutes — neck, shoulder, brows, in order.",
+        "Ask where they most love to be touched. Have them name three places. Spend 30 slow seconds on each in turn.",
+        "Dressed, in a simple embrace, for 5 minutes. When your heart quickens, let your partner say \"close.\" Build that kind of nearness."
+      ]
+    }
   },
   {
     "id": "nefes-nefese",
     "name": "Nefes Nefese",
+    "nameI18n": { "en": "Breath to Breath" },
     "color": "#EF4444",
     "icon": "💨",
     "track": "romantik",
@@ -31,11 +43,22 @@
       "Öpücük ver, dur, nefes ver, yeniden öpücük. Bu ritmi 5 kere tekrar et.",
       "Partnerinin göğsüne kulağını dayamış olarak 2 dakika kalp atışını dinle.",
       "Bir öpücükten sonra 3 saniye durup partnerinin gözünün içine bak. Sonra bir öpücük daha. 5 defa tekrar."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Chest to chest with your partner for 2 minutes. Let your breaths find the same rhythm. Slow, deep.",
+        "Sit face to face, forehead to forehead, eyes closed. Sync your breathing for 3 minutes — let it be audible.",
+        "Listen to their breathing with your ear. 30 seconds. Then switch.",
+        "Kiss, pause, exhale, kiss again. Repeat that rhythm 5 times.",
+        "With your ear pressed to their chest, listen to their heartbeat for 2 minutes.",
+        "After a kiss, pause 3 seconds and look into their eyes. Then kiss again. Five rounds."
+      ]
+    }
   },
   {
     "id": "isirgan-opucuk",
     "name": "Isırgan Öpücük",
+    "nameI18n": { "en": "Biting Kiss" },
     "color": "#B91C1C",
     "icon": "💋",
     "track": "romantik",
@@ -48,6 +71,16 @@
       "Öpücüğün ortasında bir cümle: \"seni istiyorum\" — dudakları hâlâ dokunuyor olsun.",
       "Partnerinin dudağına 3 saniyelik yumuşak bir öpücük, sonra hafif çekiliş, sonra 5 saniyelik derin bir öpücük.",
       "Karşılıklı: aynı anda tekrar tekrar öpüşmek — 1 dakika kesintisiz. Kim önce nefes almak zorunda kalır?"
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Nip their lip very lightly — curling, playful. Then kiss.",
+        "A long, measured kiss — 30 seconds. Let your breaths tangle.",
+        "A slow trail of kisses from their neck to their lips — 5 of them, a second's pause between each.",
+        "Mid-kiss, slip in a sentence: \"I want you\" — keep your lips touching.",
+        "A 3-second soft kiss on their lip, then a slight pull back, then a 5-second deep kiss.",
+        "Face to face: kiss again and again at the same time — 1 unbroken minute. Who has to breathe first?"
+      ]
+    }
   }
 ]

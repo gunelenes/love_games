@@ -2,6 +2,7 @@
   {
     "id": "halatcinin-el-isi",
     "name": "Halatçının El İşi",
+    "nameI18n": { "en": "The Rigger's Craft" },
     "color": "#7C2D12",
     "icon": "🪢",
     "track": "cesur",
@@ -14,11 +15,22 @@
       "Halatçı sensin. Partnerin bir güvenlik kelimesi belirlesin. Her ne yaparsan yap, o kelime söylenirse anında dur. Sonra keşfe devam.",
       "Partnerinin sadece bir bileğini ipeğe dola. Diğer eli serbest. O eliyle sana istediği yerden dokunabilir — sen çözmeden.",
       "Bir kravat ile partnerinin uyluklarını birbirine yakın olarak bağla. 2 dakika onunla göz teması + dokunuşla bekle. Sonra ipi çöz."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Scene start: nail down the safeword (e.g. \"red\" = stop instantly). With a silk scarf or sash, gently bring your partner's wrists together — not tight, present enough to be felt. For 1 minute, don't touch them — only look.",
+        "With a necktie, bring your partner's wrists together above their head. For 2 minutes, hold them in that pose and explore with touch. Watch their breathing.",
+        "With a long scarf, cover your partner's eyes + bind their wrists. For 3 minutes, keep them with voice, touch, and nearness.",
+        "You're the Rigger. Have your partner pick a safeword. Whatever you do, if that word is spoken — stop instantly. Then keep exploring.",
+        "Wrap only one of your partner's wrists in silk. The other hand is free. They can touch you anywhere they like with that hand — before you untie.",
+        "With a tie, bind your partner's thighs close together. For 2 minutes, hold them with eye contact + touch. Then untie."
+      ]
+    }
   },
   {
     "id": "yaramaz-kedi",
     "name": "Yaramaz Kedi",
+    "nameI18n": { "en": "Mischievous Cat" },
     "color": "#831843",
     "icon": "🐈",
     "track": "cesur",
@@ -31,11 +43,22 @@
       "Kedi Bahçıvanın önünde diz çöker. Bahçıvan yavaşça yaklaşır, saçlarını okşar, \"iyi kedi\" der. 1 dakika bu ritüel.",
       "Kedi sen isen: kelime kullanamazsın, sadece nefes ve mırıldanış. Bahçıvan sana bir görev verir (öp, dokun, otur). Görevi tam yap.",
       "Roller değişir. Bu tur Kedi sen olursun. Partnerin Bahçıvanın rolünde. 3 dakikalık bu düet — sonra roller tartışılır, ne hissettin?"
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "This round: one of you is the \"Caretaker,\" the other the \"Cat.\" The Cat is silent — speaks only through reactions. The Caretaker offers three kinds of stroking (slow, fast, soft). The Cat says which one with their body.",
+        "The person in the Cat role can't speak. For 5 minutes, the Caretaker communicates only with touch and words. The Cat answers only in reactions.",
+        "The Caretaker strokes the Cat behind the ear for 30 seconds. The Cat approves by reacting (a purr, leaning in). The Caretaker does the same on three different spots.",
+        "The Cat kneels in front of the Caretaker. The Caretaker approaches slowly, strokes their hair, says \"good cat.\" One minute of this ritual.",
+        "If you're the Cat: no words — only breath and small sounds. The Caretaker gives you a task (kiss, touch, sit). Carry it out exactly.",
+        "Switch roles. This round you're the Cat. Your partner is the Caretaker. Three-minute duet — then talk about the roles. What did you feel?"
+      ]
+    }
   },
   {
     "id": "ustabasi",
     "name": "Ustabaşı",
+    "nameI18n": { "en": "Foreman" },
     "color": "#0C4A6E",
     "icon": "🗝️",
     "track": "cesur",
@@ -48,6 +71,16 @@
       "Ustabaşı 3 komut zinciri kurar: \"Nefes al. Gözlerini aç. Bana bak.\" Partner tam yerine getirir. Sonra tekrar aynı zincir farklı temposu ile.",
       "Roller net: Ustabaşı ve Takipçi. Takipçi, sadece Ustabaşının komutlarıyla hareket eder. 5 dakika boyunca — kural bozarsa 5 saniyelik önceden kararlaştırılmış bir sonuç.",
       "Sahne sonu ritüel: Ustabaşı, Takipçinin başını 1 dakika okşar, \"iyiydi\" der. Takipçi karşılık verir. Güven yenileme + geri bildirim."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Start a \"scene\": \"Now we're playing a 10-minute game. Safe words: 'yellow' means keep going but slow down, 'red' means stop now.\" Then the Foreman starts giving commands.",
+        "The Foreman tries three positions with their partner — find the most comfortable one. Hold each for 30 seconds, then switch.",
+        "The Foreman has the partner close their eyes. Using one side of their hand, they touch different areas — the partner says \"here\" or \"elsewhere.\"",
+        "The Foreman builds a chain of three commands: \"Breathe. Open your eyes. Look at me.\" The partner follows exactly. Then the same chain again, different tempo.",
+        "Clear roles: Foreman and Follower. The Follower moves only on the Foreman's command. Five minutes — if a rule is broken, a 5-second pre-agreed consequence follows.",
+        "End-of-scene ritual: the Foreman strokes the Follower's head for 1 minute, says \"that was good.\" The Follower answers back. Trust renewed + feedback."
+      ]
+    }
   }
 ]

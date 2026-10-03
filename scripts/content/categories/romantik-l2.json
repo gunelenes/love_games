@@ -2,6 +2,7 @@
   {
     "id": "ellerin-sohbeti",
     "name": "Ellerin Sohbeti",
+    "nameI18n": { "en": "Hands' Conversation" },
     "color": "#F97316",
     "icon": "🤲",
     "track": "romantik",
@@ -14,11 +15,22 @@
       "Ellerinizi birbirine yaslayın (parmaklar açık, avuçlar temas). 1 dakika boyunca sadece sıcaklığı hissedin.",
       "Partnerine el masajı yap 2 dakika — avuç, bilek, parmak eklemleri sırayla. O gözlerini kapatsın.",
       "Partnerinin elini dudaklarına götür. Her parmağın ucuna hafif bir öpücük ver — çok yavaş, birer birer."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Clasp hands with your partner. For 30 seconds speak only with your fingers — a squeeze, a brush, a nail trace.",
+        "Take their hand into your palm. Stroke each finger in turn, naming it: \"this finger of yours is my favorite because…\"",
+        "\"Write\" a sentence on your partner's palm — letter by letter with your fingertip. Let them guess it.",
+        "Press your hands together (fingers open, palms touching). For a full minute, just feel the warmth.",
+        "Give them a hand massage for 2 minutes — palm, wrist, finger joints in order. Have them close their eyes.",
+        "Lift their hand to your lips. Place a light kiss on the tip of each finger — very slowly, one by one."
+      ]
+    }
   },
   {
     "id": "kucak-saati",
     "name": "Kucak Saati",
+    "nameI18n": { "en": "Embrace Hour" },
     "color": "#EA580C",
     "icon": "🤗",
     "track": "romantik",
@@ -31,11 +43,22 @@
       "Karşılıklı sarılmışken, birinin başı ötekinin omzunda. 1 dakika göz kapalı. Sonra rolleri değiştirin.",
       "Kucakta partnerinle sallanın — yavaş, ritim sizin. Bir şarkı yerine sadece nefes ritmi.",
       "Sarıldığınızda partnerinin sırtına yavaşça daire çizin — 30 saniye. Sonra o size aynısını yapsın."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Hold each other and say nothing for 3 minutes. Just sync your breathing.",
+        "Rest their head on your chest and stroke their hair for 2 minutes. The only words allowed: \"I love you.\"",
+        "Lie side by side, spoon each other from behind. Stay that way, silent, for 5 minutes.",
+        "Hold each other, one head on the other's shoulder. One minute, eyes closed. Then switch roles.",
+        "Rock your partner in your arms — slow, your own rhythm. No song, only the beat of your breathing.",
+        "While hugging, trace slow circles on your partner's back — 30 seconds. Then let them do the same for you."
+      ]
+    }
   },
   {
     "id": "alin-alina",
     "name": "Alın Alına",
+    "nameI18n": { "en": "Forehead to Forehead" },
     "color": "#F59E0B",
     "icon": "💛",
     "track": "romantik",
@@ -48,6 +71,16 @@
       "Partnerinin alnına elini koyar gibi, sadece 5 saniye boyunca sıcaklığını hissettir. Sonra dudakla değ.",
       "Alın alına, her nefes verirken bir hoş söz söyleyin sırayla: \"güvenlisin\", \"değerlisin\", \"yakınsın\".",
       "Partnerinin alnına 5 saniyelik bir öpücük ver + kulağına isim fısılda. Sonra göz göze bakın 10 saniye."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Rest your forehead on theirs. Eyes closed, one minute. Get to know each other's breathing.",
+        "Give three different kisses on their forehead — long, short, like a brush. Ask which one they liked, repeat it.",
+        "Sit face to face, knees touching. Bring your hands to each other's cheeks. Hold that gaze for 30 seconds.",
+        "Hover your hand near their forehead — just let them feel the warmth for 5 seconds. Then let your lips touch.",
+        "Forehead to forehead, take turns: with each exhale, one gentle word — \"safe,\" \"treasured,\" \"close.\"",
+        "A 5-second kiss on their forehead + whisper their name in their ear. Then lock eyes for 10 seconds."
+      ]
+    }
   }
 ]

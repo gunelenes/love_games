@@ -2,6 +2,7 @@
   {
     "id": "rehberin-sozu",
     "name": "Rehberin Sözü",
+    "nameI18n": { "en": "The Guide's Word" },
     "color": "#1E3A8A",
     "icon": "🌙",
     "track": "cesur",
@@ -14,11 +15,22 @@
       "Karşılıklı: bu tur Rehber sensin. Partnere \"gözlerini kapat, dudaklarını aç, nefesini tut\" gibi 3 komut ver. O uyarsa 5 saniye ödül dokunuş.",
       "Rehber, elinin bir tarafını partnerine uzatır: \"öp\". Sonra \"yala\". Sonra \"ısır\". Her komut arasında 3 saniye bekle.",
       "Rehber, \"gel\" der. Partner mesafeyi 3 adımda yavaşça kapatır — Rehberin gözlerini bırakmadan."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "One of you is the \"Guide\" this round. The Guide gives three commands — breathe, close your eyes, wet your lips. The partner follows exactly.",
+        "The Guide takes the partner's hands into their own and asks \"where?\" The partner may only say \"here\" or \"not there.\" Other words are forbidden.",
+        "The Guide says a word (\"stop,\" \"slower,\" \"again\"). The partner holds exactly in that word. Three rounds.",
+        "Face to face: this round, you're the Guide. Give three commands like \"close your eyes, part your lips, hold your breath.\" If they obey, 5 seconds of reward touch.",
+        "The Guide offers one side of their hand to the partner: \"kiss.\" Then \"lick.\" Then \"bite.\" Wait 3 seconds between commands.",
+        "The Guide says \"come.\" The partner closes the distance in three slow steps — without letting go of the Guide's eyes."
+      ]
+    }
   },
   {
     "id": "kucuk-direnis",
     "name": "Küçük Direniş",
+    "nameI18n": { "en": "Little Resistance" },
     "color": "#DB2777",
     "icon": "🎭",
     "track": "cesur",
@@ -31,11 +43,22 @@
       "Partnerin bir hareket yapmak istediğini söyler. Sen \"belki\" de. \"Söz ver\" dediğinde \"yapmam\" de — 3 kez tekrar sonrası izin ver.",
       "Partnerin bir öpücük ister. Sen \"hak ettin mi?\" diye sor. O 3 gerekçe sunsun. En ikna edeni seçtiğinde öp.",
       "Rol tersine dönsün. Bu turda kural sen belirle: \"sana X yapmama izin verirsen, karşılığında Y.\" Ne olursa olsun karşılık verse ver."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "Your partner gives you a command. Do the exact opposite — but smiling. See how many seconds they last before caving in to tempting you.",
+        "Your partner says \"be quiet.\" For 30 seconds, do the opposite — laughter, loud breath, provocative lines. Who wins?",
+        "Your partner moves closer. Pull back three times — but don't walk away. Closeness is the tension, resistance is the game.",
+        "Your partner says they want to do something. You say \"maybe.\" When they say \"promise?\" say \"I won't.\" After three rounds, let them.",
+        "Your partner asks for a kiss. Ask \"have you earned it?\" Let them give three reasons. When they pick the most convincing one, kiss them.",
+        "Flip the role. You set the rule this round: \"if you let me do X, you get Y.\" Hold the trade no matter what."
+      ]
+    }
   },
   {
     "id": "ilk-damar",
     "name": "İlk Damar",
+    "nameI18n": { "en": "First Pulse" },
     "color": "#C2410C",
     "icon": "✋",
     "track": "cesur",
@@ -48,6 +71,16 @@
       "Parmaklarınla partnerinin sırtında 10 saniyelik hafif basınçlı bir hat çiz — hissedilir ama iz bırakmayan.",
       "Partnerine \"yumuşak mı sert mi?\" diye sor. Verdiği cevap doğrultusunda avucunla omuzuna 3 vuruş yap.",
       "Ellerini partnerinin bilek ya da boynuna hafif kavrar. 5 saniye kavramayı tut, sonra bırak. Yeniden 5 saniye. Ritim ve güven kur."
-    ]
+    ],
+    "promptsI18n": {
+      "en": [
+        "With your open palm, give 3 soft, measured smacks to your partner's back — 5 seconds between each. After each one, ask \"keep going?\"",
+        "On your partner's hip, warm the skin with your hand for 3 seconds first, then one single soft tap. Have them say out loud what they felt.",
+        "With the heel of your hand, give 5 light rhythmic taps on their thigh — like a music beat. Then ask \"which one most?\"",
+        "With your fingers, trace a line down their back for 10 seconds under light pressure — felt, but leaving no mark.",
+        "Ask your partner \"soft or hard?\" Based on their answer, give three taps on their shoulder with your palm.",
+        "Softly cup their wrist or neck with your hand. Hold the grip for 5 seconds, then let go. Again, 5 seconds. Build rhythm and trust."
+      ]
+    }
   }
 ]
