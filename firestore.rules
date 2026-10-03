@@ -28,12 +28,17 @@ service cloud.firestore {
 
     match /rooms/{roomCode} {
       // Odayı sadece host veya guest okuyabilir.
-      // İstisna: doc hiç yoksa (resource == null) okunabilir — createRoom'un
-      // transaction içindeki tx.get() çakışma kontrolü ve joinRoom'un
-      // "kod geçerli mi" kontrolü bunu gerektiriyor. İçerik sızmıyor,
-      // sadece "bu kod kullanılıyor mu" bilgisi var.
+      // İstisnalar:
+      //   1) doc hiç yoksa (resource == null) — createRoom'un çakışma
+      //      kontrolü ve joinRoom'un "kod geçerli mi" kontrolü gerekli.
+      //   2) guestUid == null — joinRoom transaction'ı önce tx.get() yapıp
+      //      slot boş mu bakar; henüz guest olmayan kullanıcı bu adımı
+      //      geçemezse katılamıyor.
+      // İkisinde de içerik sızıntısı minimal: sadece "kod boşta mı /
+      // kullanımda mı / slot açık mı" bilgisi.
       allow read: if request.auth != null && (
         resource == null ||
+        resource.data.guestUid == null ||
         request.auth.uid == resource.data.hostUid ||
         request.auth.uid == resource.data.guestUid
       );
