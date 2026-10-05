@@ -26,6 +26,10 @@
       "name": "Dice",
       "tagline": "Roll — let the surprise find you"
     },
+    "poses": {
+      "name": "Poses",
+      "tagline": "Draw a pose, learn the art together"
+    },
     "cards": {
       "name": "Cards",
       "tagline": "Pick your categories, draw a card"
@@ -55,6 +59,14 @@
     "rollLabel": "ROLL",
     "newRoll": "NEW ROLL",
     "poster": "OUT OF THE BOX"
+  },
+  "poses": {
+    "eyebrow": "THE ART OF POSES",
+    "title": "A Pose for Us",
+    "subtitle": "Charcoal sketches, drawn one by one",
+    "drawPose": "Draw a Pose",
+    "newPose": "New Pose",
+    "hint": "Tap the button below to reveal a pose"
   },
   "cards": {
     "eyebrow": "CARDS",

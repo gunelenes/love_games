@@ -26,6 +26,10 @@
       "name": "Zar",
       "tagline": "At, sürpriz seni bulsun"
     },
+    "poses": {
+      "name": "Pozlar",
+      "tagline": "Bir poz çek, sanatı birlikte keşfedin"
+    },
     "cards": {
       "name": "Kart",
       "tagline": "Kategorini seç, kartından çıksın"
@@ -55,6 +59,14 @@
     "rollLabel": "ZAR AT",
     "newRoll": "YENİ ZAR",
     "poster": "KUTUDAN ÇIKTI"
+  },
+  "poses": {
+    "eyebrow": "POZ SANATI",
+    "title": "Bize Bir Poz",
+    "subtitle": "Karakalem çizimler, teker teker",
+    "drawPose": "Poz Çek",
+    "newPose": "Yeni Poz",
+    "hint": "Aşağıdaki butona basarak bir poz keşfet"
   },
   "cards": {
     "eyebrow": "KART OYUNU",

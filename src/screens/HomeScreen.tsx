@@ -26,18 +26,18 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 const { width, height } = Dimensions.get('window');
 
-type GameKey = 'Wheel' | 'Dice' | 'BoxList' | 'Cards';
+type GameKey = 'Wheel' | 'Poses' | 'BoxList' | 'Cards';
 
 type GameCardData = {
   key: GameKey;
-  i18nKey: 'wheel' | 'dice' | 'cards' | 'boxes';
+  i18nKey: 'wheel' | 'poses' | 'cards' | 'boxes';
   icon: string;
   color: string;
 };
 
 const GAMES: GameCardData[] = [
   { key: 'Wheel', i18nKey: 'wheel', icon: '🎡', color: '#FF4D6D' },
-  { key: 'Dice', i18nKey: 'dice', icon: '🎲', color: '#7C3AED' },
+  { key: 'Poses', i18nKey: 'poses', icon: '❦', color: '#C9A86A' },
   { key: 'Cards', i18nKey: 'cards', icon: '🃏', color: '#F59E0B' },
   { key: 'BoxList', i18nKey: 'boxes', icon: '📦', color: '#10B981' },
 ];

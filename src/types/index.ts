@@ -63,6 +63,19 @@ export type PlaceCategory = {
   level: Level;
 };
 
+/**
+ * Kama Sutra-style pose card. White charcoal-art background on dark app.
+ * Localized name/description so the pose UI works in all 10 locales.
+ */
+export type Pose = {
+  id: string;
+  name: string;
+  description?: string;
+  image: number;
+  nameI18n?: LocalizedString;
+  descriptionI18n?: LocalizedString;
+};
+
 export type BoxNote = {
   id: string;
   text: string;

@@ -6,6 +6,7 @@ import { DiceScreen } from '@/screens/DiceScreen';
 import { BoxListScreen } from '@/screens/BoxListScreen';
 import { BoxScreen } from '@/screens/BoxScreen';
 import { CardsScreen } from '@/screens/CardsScreen';
+import { PosesScreen } from '@/screens/PosesScreen';
 import { RoomLobbyScreen } from '@/screens/RoomLobbyScreen';
 import { colors } from '@/theme/colors';
 
@@ -17,6 +18,7 @@ export type RootStackParamList = {
   BoxList: undefined;
   Box: { boxId: string };
   Cards: undefined;
+  Poses: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -39,6 +41,7 @@ export function RootNav() {
         <Stack.Screen name="BoxList" component={BoxListScreen} />
         <Stack.Screen name="Box" component={BoxScreen} />
         <Stack.Screen name="Cards" component={CardsScreen} />
+        <Stack.Screen name="Poses" component={PosesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

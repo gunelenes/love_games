@@ -6,6 +6,7 @@ import type {
   LocalizedStringArray,
   Place,
   PlaceCategory,
+  Pose,
 } from '@/types';
 
 /**
@@ -113,5 +114,13 @@ export function localizePlaceCategory(pc: PlaceCategory): PlaceCategory {
     ...pc,
     name: pickString(pc.name, pc.nameI18n),
     places: pc.places.map(localizePlace),
+  };
+}
+
+export function localizePose(pose: Pose): Pose {
+  return {
+    ...pose,
+    name: pickString(pose.name, pose.nameI18n),
+    description: pickOptionalString(pose.description, pose.descriptionI18n),
   };
 }
