@@ -7,9 +7,12 @@ import {
   Text,
   View,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 import * as Haptics from 'expo-haptics';
 import { useLanguage } from '@/hooks/useLanguage';
+import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { withAlpha } from '@/utils/color';
@@ -38,11 +41,19 @@ type Props = {
 export function SettingsModal({ visible, onClose }: Props) {
   const { t } = useTranslation();
   const { language, setLanguage } = useLanguage();
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   const pick = async (lang: SupportedLanguage) => {
     if (lang === language) return;
     void Haptics.selectionAsync();
     await setLanguage(lang);
+  };
+
+  const goTo = (screen: 'Suggestions' | 'Fantasies') => {
+    void Haptics.selectionAsync();
+    onClose();
+    navigation.navigate(screen);
   };
 
   return (
@@ -75,6 +86,38 @@ export function SettingsModal({ visible, onClose }: Props) {
               />
             ))}
           </ScrollView>
+
+          <Text style={styles.label}>{t('settings.community')}</Text>
+          <View style={styles.linkRow}>
+            <Pressable
+              onPress={() => goTo('Suggestions')}
+              style={({ pressed }) => [
+                styles.linkBtn,
+                {
+                  borderColor: withAlpha('#5EA7FF', 0.4),
+                  backgroundColor: withAlpha('#5EA7FF', 0.1),
+                  opacity: pressed ? 0.85 : 1,
+                },
+              ]}
+            >
+              <Text style={styles.linkIcon}>💡</Text>
+              <Text style={styles.linkLabel}>{t('settings.suggestions')}</Text>
+            </Pressable>
+            <Pressable
+              onPress={() => goTo('Fantasies')}
+              style={({ pressed }) => [
+                styles.linkBtn,
+                {
+                  borderColor: withAlpha('#E26AA6', 0.4),
+                  backgroundColor: withAlpha('#E26AA6', 0.12),
+                  opacity: pressed ? 0.85 : 1,
+                },
+              ]}
+            >
+              <Text style={styles.linkIcon}>🌹</Text>
+              <Text style={styles.linkLabel}>{t('settings.fantasies')}</Text>
+            </Pressable>
+          </View>
 
           <Pressable onPress={onClose} style={styles.closeBtn}>
             <Text style={styles.closeBtnText}>{t('settings.close')}</Text>
@@ -179,6 +222,29 @@ const styles = StyleSheet.create({
   optionLabel: {
     fontSize: 13,
     fontWeight: '800',
+    textAlign: 'center',
+  },
+  linkRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  linkBtn: {
+    flex: 1,
+    paddingVertical: 14,
+    paddingHorizontal: 10,
+    borderRadius: 14,
+    borderWidth: 1.5,
+    alignItems: 'center',
+    gap: 6,
+  },
+  linkIcon: {
+    fontSize: 26,
+  },
+  linkLabel: {
+    color: colors.fg,
+    fontSize: 13,
+    fontWeight: '800',
+    letterSpacing: 0.5,
     textAlign: 'center',
   },
   closeBtn: {

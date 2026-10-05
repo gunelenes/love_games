@@ -208,6 +208,41 @@
     "rtlReloadTitle": "Yeniden başlatma gerekli",
     "rtlReloadBody": "Arapça sağdan sola yazılır. Yönün değişmesi için uygulamanın yeniden başlatılması gerek.",
     "rtlReloadButton": "Şimdi yeniden başlat",
+    "community": "Bize yardım et",
+    "suggestions": "Öneriler",
+    "fantasies": "Fantezilerin",
     "close": "Kapat"
+  },
+  "suggestions": {
+    "eyebrow": "ÖNERİLER",
+    "title": "Bize Yardım Et",
+    "subtitle": "Bu uygulamayı sen ve partnerin için nasıl daha iyi hale getirebiliriz?",
+    "placeholder": "Bir hata, eksik bir özellik ya da fikir paylaş…",
+    "help": "Notun anonim gönderilir — biz sadece metni görürüz.",
+    "submit": "Gönder",
+    "sending": "Gönderiliyor…",
+    "errorTooShort": "Birkaç kelime daha yazar mısın?",
+    "errorTooLong": "Lütfen 1000 karakter altında tut.",
+    "errorAuth": "Giriş yapılamadı. Birkaç saniye sonra tekrar dene.",
+    "errorGeneric": "Gönderilemedi. Tekrar dener misin?",
+    "thanksTitle": "Teşekkürler!",
+    "thanksBody": "Her öneriyi okuyoruz. Uyarsa bir sonraki güncellemede göreceksin.",
+    "sendAnother": "Bir tane daha gönder"
+  },
+  "fantasies": {
+    "eyebrow": "FANTEZİLERİN",
+    "title": "Yeni Bir Şey Hayal Et",
+    "subtitle": "Bir fantezi, senaryo ya da tema öner — desteye ekleyebiliriz.",
+    "placeholder": "Görmek istediğin fanteziyi ya da senaryoyu anlat…",
+    "help": "Anonim gönderilir. Profilinle hiçbir bağlantısı yok.",
+    "submit": "Paylaş",
+    "sending": "Paylaşılıyor…",
+    "errorTooShort": "Birkaç kelime daha yazar mısın?",
+    "errorTooLong": "Lütfen 1000 karakter altında tut.",
+    "errorAuth": "Giriş yapılamadı. Birkaç saniye sonra tekrar dene.",
+    "errorGeneric": "Gönderilemedi. Tekrar dener misin?",
+    "thanksTitle": "Teşekkürler ✨",
+    "thanksBody": "Kıvılcımın alındı. Yakında kart ya da senaryoya dönüşebilir.",
+    "sendAnother": "Bir tane daha paylaş"
   }
 }

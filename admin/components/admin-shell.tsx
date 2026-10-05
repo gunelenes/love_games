@@ -9,6 +9,8 @@ const NAV = [
   { href: '/categories', label: '🎯 Categories' },
   { href: '/place-categories', label: '📍 Places' },
   { href: '/dice-faces', label: '🎲 Dice Faces' },
+  { href: '/suggestions', label: '💡 Öneriler' },
+  { href: '/fantasies', label: '🌹 Fanteziler' },
 ];
 
 export function AdminShell({ children }: { children: ReactNode }) {

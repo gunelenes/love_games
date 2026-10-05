@@ -208,6 +208,41 @@
     "rtlReloadTitle": "Restart required",
     "rtlReloadBody": "Arabic uses right-to-left layout. The app needs to restart to apply the direction change.",
     "rtlReloadButton": "Restart now",
+    "community": "Help us grow",
+    "suggestions": "Suggestions",
+    "fantasies": "Your Fantasies",
     "close": "Close"
+  },
+  "suggestions": {
+    "eyebrow": "SUGGESTIONS",
+    "title": "Help Us Improve",
+    "subtitle": "What would make this app better for you and your partner?",
+    "placeholder": "Share a bug, a missing feature, or an idea…",
+    "help": "Your note is sent anonymously — we only see the text.",
+    "submit": "Send",
+    "sending": "Sending…",
+    "errorTooShort": "A few more words, please.",
+    "errorTooLong": "Please keep it under 1000 characters.",
+    "errorAuth": "Not signed in. Try again in a moment.",
+    "errorGeneric": "Couldn't send. Please try again.",
+    "thanksTitle": "Thank you!",
+    "thanksBody": "We read every suggestion. If it fits, you'll see it in a future update.",
+    "sendAnother": "Send another"
+  },
+  "fantasies": {
+    "eyebrow": "YOUR FANTASIES",
+    "title": "Dream Something New",
+    "subtitle": "Suggest a fantasy, scenario, or theme — we may add it to the deck.",
+    "placeholder": "Describe the fantasy or scenario you'd love to see…",
+    "help": "Sent anonymously. Nothing links it to your profile.",
+    "submit": "Share",
+    "sending": "Sharing…",
+    "errorTooShort": "A few more words, please.",
+    "errorTooLong": "Please keep it under 1000 characters.",
+    "errorAuth": "Not signed in. Try again in a moment.",
+    "errorGeneric": "Couldn't send. Please try again.",
+    "thanksTitle": "Thank you ✨",
+    "thanksBody": "Your spark is in. We might turn it into a card or scenario soon.",
+    "sendAnother": "Share another"
   }
 }

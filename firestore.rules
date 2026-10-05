@@ -24,6 +24,32 @@ service cloud.firestore {
       allow write: if request.auth != null && request.auth.token.admin == true;
     }
 
+    // -------- User submissions (öneriler + fanteziler) --------
+    // Signed-in users (anonymous auth) can CREATE but never read or
+    // modify others' submissions. Admin panel is the only reader.
+    // The uid on the doc must match the caller so we can later show
+    // "my submissions" or rate-limit per user.
+
+    match /suggestions/{doc} {
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.text is string
+        && request.resource.data.text.size() >= 4
+        && request.resource.data.text.size() <= 1000;
+      allow read, update, delete:
+        if request.auth != null && request.auth.token.admin == true;
+    }
+
+    match /fantasies/{doc} {
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.text is string
+        && request.resource.data.text.size() >= 4
+        && request.resource.data.text.size() <= 1000;
+      allow read, update, delete:
+        if request.auth != null && request.auth.token.admin == true;
+    }
+
     // -------- Rooms & Boxes (Kutular real-time) --------
 
     match /rooms/{roomCode} {

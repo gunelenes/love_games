@@ -102,3 +102,29 @@ export type PlaceCategory = {
   track: Track;
   level: Level;
 };
+
+export type SubmissionStatus = 'new' | 'reviewed' | 'implemented' | 'rejected';
+
+export type Submission = {
+  id: string;
+  text: string;
+  uid: string;
+  locale: string;
+  status: SubmissionStatus;
+  createdAt?: { seconds: number; nanoseconds: number } | null;
+  note?: string;
+};
+
+export const SUBMISSION_STATUSES: SubmissionStatus[] = [
+  'new',
+  'reviewed',
+  'implemented',
+  'rejected',
+];
+
+export const SUBMISSION_STATUS_LABEL: Record<SubmissionStatus, string> = {
+  new: '🆕 Yeni',
+  reviewed: '👀 İncelendi',
+  implemented: '✅ Eklendi',
+  rejected: '❌ Reddedildi',
+};
