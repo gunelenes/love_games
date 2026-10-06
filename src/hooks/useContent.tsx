@@ -12,19 +12,23 @@ import { useTranslation } from 'react-i18next';
 import { CATEGORIES as BUNDLE_CATEGORIES } from '@/data/categories';
 import { DICE_FACES as BUNDLE_DICE_FACES } from '@/data/diceFaces';
 import { PLACE_CATEGORIES as BUNDLE_PLACE_CATEGORIES } from '@/data/placeCategories';
+import { POSES as BUNDLE_POSES } from '@/data/poses';
 import { fetchAllContent, type AllContent } from '@/services/contentService';
 import {
   localizeCategory,
   localizePlaceCategory,
+  localizePose,
 } from '@/utils/localizedContent';
-import type { Category, PlaceCategory } from '@/types';
+import type { Category, PlaceCategory, Pose } from '@/types';
 
-const CACHE_KEY = 'content:v1';
+// Bumped from v1 → v2: Pose cache was added; older bundles don't carry poses.
+const CACHE_KEY = 'content:v2';
 
 type ContentContextValue = {
   categories: Category[];
   placeCategories: PlaceCategory[];
   diceFaces: Category[];
+  poses: Pose[];
   source: 'bundle' | 'cache' | 'cloud';
   loading: boolean;
   refresh: () => Promise<void>;
@@ -34,6 +38,7 @@ const BUNDLE_CONTENT = {
   categories: BUNDLE_CATEGORIES,
   placeCategories: BUNDLE_PLACE_CATEGORIES,
   diceFaces: BUNDLE_DICE_FACES,
+  poses: BUNDLE_POSES,
   version: null as number | null,
 };
 
@@ -53,6 +58,7 @@ async function readCache(): Promise<AllContent | null> {
         categories: parsed.categories,
         placeCategories: parsed.placeCategories,
         diceFaces: parsed.diceFaces,
+        poses: Array.isArray(parsed.poses) ? parsed.poses : [],
         version: typeof parsed.version === 'number' ? parsed.version : null,
       };
     }
@@ -80,6 +86,7 @@ export function ContentProvider({ children }: { children: ReactNode }) {
   const [diceFaces, setDiceFaces] = useState<Category[]>(
     BUNDLE_CONTENT.diceFaces
   );
+  const [poses, setPoses] = useState<Pose[]>(BUNDLE_CONTENT.poses);
   const [source, setSource] = useState<'bundle' | 'cache' | 'cloud'>('bundle');
   const [loading, setLoading] = useState(true);
 
@@ -88,6 +95,10 @@ export function ContentProvider({ children }: { children: ReactNode }) {
       setCategories(content.categories);
       setPlaceCategories(content.placeCategories);
       setDiceFaces(content.diceFaces);
+      // Cloud/cache is authoritative for poses once any have been seeded.
+      // If Firestore has zero poses yet, keep the bundled fallback visible
+      // so the Pozlar screen is never empty on fresh installs.
+      setPoses(content.poses.length > 0 ? content.poses : BUNDLE_CONTENT.poses);
       setSource(newSource);
     },
     []
@@ -143,12 +154,17 @@ export function ContentProvider({ children }: { children: ReactNode }) {
     () => diceFaces.map(localizeCategory),
     [diceFaces, lang]
   );
+  const localizedPoses = useMemo(
+    () => poses.map(localizePose),
+    [poses, lang]
+  );
 
   const value = useMemo<ContentContextValue>(
     () => ({
       categories: localizedCategories,
       placeCategories: localizedPlaceCategories,
       diceFaces: localizedDiceFaces,
+      poses: localizedPoses,
       source,
       loading,
       refresh,
@@ -157,6 +173,7 @@ export function ContentProvider({ children }: { children: ReactNode }) {
       localizedCategories,
       localizedPlaceCategories,
       localizedDiceFaces,
+      localizedPoses,
       source,
       loading,
       refresh,
