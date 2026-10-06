@@ -66,21 +66,14 @@ export type PlaceCategory = {
 /**
  * Kama Sutra-style pose card. White charcoal-art background on dark app.
  * Localized name/description so the pose UI works in all 10 locales.
- *
- * `image` is a number for bundled fallback (Metro's require() hash) and a
- * string URL for Firestore-sourced poses whose art lives in Firebase
- * Storage. Resolver in PosesScreen normalizes both into an Image source.
  */
 export type Pose = {
   id: string;
   name: string;
   description?: string;
-  image: number | string;
-  /** Admin uploads keep the raw Storage path so we can delete the blob on remove. */
-  imagePath?: string;
+  image: number;
   nameI18n?: LocalizedString;
   descriptionI18n?: LocalizedString;
-  order?: number;
 };
 
 export type BoxNote = {

@@ -103,23 +103,6 @@ export type PlaceCategory = {
   level: Level;
 };
 
-/**
- * Pose card content. Mirrors the mobile `Pose` type in
- * love_games/src/types/index.ts — keep in sync. `image` here is always a
- * Firebase Storage URL (admin cannot author require() hashes); the mobile
- * resolver accepts both string URLs and local require() numbers.
- */
-export type Pose = {
-  id: string;
-  name: string;
-  description?: string;
-  image: string;
-  imagePath?: string;
-  nameI18n?: LocalizedString;
-  descriptionI18n?: LocalizedString;
-  order?: number;
-};
-
 export type SubmissionStatus = 'new' | 'reviewed' | 'implemented' | 'rejected';
 
 export type Submission = {

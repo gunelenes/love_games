@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   Dimensions,
   Image,
@@ -24,7 +24,8 @@ import {
   type ConfettiBurstRef,
 } from '@/components/Confetti/ConfettiBurst';
 import { BackButton } from '@/components/ui/BackButton';
-import { useContent } from '@/hooks/useContent';
+import { POSES } from '@/data/poses';
+import { localizePose } from '@/utils/localizedContent';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { withAlpha } from '@/utils/color';
@@ -38,25 +39,31 @@ const CARD_WIDTH = Math.min(width - 56, 320);
 const CARD_HEIGHT = Math.min(CARD_WIDTH * 1.38, 440);
 
 export function PosesScreen({ navigation }: Props) {
-  const { t } = useTranslation();
-  const { poses } = useContent();
+  const { t, i18n } = useTranslation();
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
   const historyRef = useRef<string[]>([]);
   const drawCountRef = useRef(0);
+
+  const localizedPoses = useMemo(
+    () => POSES.map(localizePose),
+    // Re-localize when language changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [i18n.language]
+  );
 
   const [current, setCurrent] = useState<Pose | null>(null);
   const [cardKey, setCardKey] = useState(0);
 
   const pickPose = useCallback((): Pose | null => {
-    if (poses.length === 0) return null;
-    const available = poses.filter(
+    if (localizedPoses.length === 0) return null;
+    const available = localizedPoses.filter(
       (p) => !historyRef.current.includes(p.id)
     );
-    const pool = available.length > 0 ? available : poses;
+    const pool = available.length > 0 ? available : localizedPoses;
     const pose = pool[Math.floor(Math.random() * pool.length)];
     historyRef.current = [...historyRef.current, pose.id].slice(-5);
     return pose;
-  }, [poses]);
+  }, [localizedPoses]);
 
   const reveal = useSharedValue(0);
   const shimmer = useSharedValue(0);
@@ -161,11 +168,7 @@ function PoseCard({
       <View style={styles.cardFrame}>
         <View style={styles.imageWrap}>
           <Image
-            source={
-              typeof pose.image === 'string'
-                ? { uri: pose.image }
-                : pose.image
-            }
+            source={pose.image}
             style={styles.image}
             resizeMode="cover"
           />

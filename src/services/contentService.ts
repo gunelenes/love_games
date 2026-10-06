@@ -7,13 +7,12 @@ import {
   query,
 } from 'firebase/firestore';
 import { firebaseFirestore } from './firebase';
-import type { Category, PlaceCategory, Pose } from '@/types';
+import type { Category, PlaceCategory } from '@/types';
 
 export type AllContent = {
   categories: Category[];
   placeCategories: PlaceCategory[];
   diceFaces: Category[];
-  poses: Pose[];
   version: number | null;
 };
 
@@ -39,24 +38,6 @@ async function fetchCollection<T>(name: string): Promise<T[] | null> {
   return sortByOrder(items) as T[];
 }
 
-/**
- * Variant that swallows failures (missing rules, offline, 403) and returns
- * an empty list instead of null. Use for collections whose absence should
- * not knock the rest of the content out — e.g. `poses` before its rules
- * ship, where a permission-denied here would otherwise reject Promise.all
- * and send mobile back to the bundle fallback.
- */
-async function fetchCollectionSoft<T>(name: string): Promise<T[]> {
-  try {
-    const result = await fetchCollection<T>(name);
-    return result ?? [];
-  } catch (err) {
-    // eslint-disable-next-line no-console
-    console.warn(`[contentService] soft-fetch failed for ${name}:`, err);
-    return [];
-  }
-}
-
 async function fetchMetaVersion(): Promise<number | null> {
   if (!firebaseFirestore) return null;
   try {
@@ -76,22 +57,15 @@ async function fetchMetaVersion(): Promise<number | null> {
 export async function fetchAllContent(): Promise<AllContent | null> {
   if (!firebaseFirestore) return null;
   try {
-    const [categories, placeCategories, diceFaces, poses, version] =
+    const [categories, placeCategories, diceFaces, version] =
       await Promise.all([
         fetchCollection<Category>('categories'),
         fetchCollection<PlaceCategory>('placeCategories'),
         fetchCollection<Category>('diceFaces'),
-        fetchCollectionSoft<Pose>('poses'),
         fetchMetaVersion(),
       ]);
     if (!categories || !placeCategories || !diceFaces) return null;
-    return {
-      categories,
-      placeCategories,
-      diceFaces,
-      poses,
-      version,
-    };
+    return { categories, placeCategories, diceFaces, version };
   } catch (err) {
     // eslint-disable-next-line no-console
     console.warn('[contentService] fetch failed, using cache/bundle:', err);
