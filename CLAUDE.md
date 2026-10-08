@@ -50,23 +50,35 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 
 Çark/Zar/Kart için içerik: bundle fallback + Firestore (`useContent` hook, AsyncStorage cache).
 
-## Mevcut Oyunlar (4)
+## Mevcut Oyunlar (4 aktif + 1 dondurulmuş)
 
 - **Çark** — `src/screens/WheelScreen.tsx` + `components/Wheel/`. Skia canvas, dim + winner glow + sparkle burst.
-- **Zar** — `src/screens/DiceScreen.tsx` + `components/Dice/`. 2 küp side-by-side, arc + tumble + Skia gölge, `useDualDiceRoll`.
 - **Kart** — `src/screens/CardsScreen.tsx` + `components/Cards/`. 3D flip kart, kategori chip'leri, `useCardSelection`.
+- **Pozlar** — `src/screens/PosesScreen.tsx` + `src/data/poses.ts`. Beyaz "sanat eseri" kart, altın border, karakalem görsel + poz adı + açıklama. Track/level yok, tamamen rastgele. Görseller bundle'dan (`assets/poses/`). Yeni oyun — Zar yerine Home'a koyuldu.
 - **Kutular** — `src/screens/BoxListScreen.tsx` + `BoxScreen.tsx` + `RoomLobbyScreen.tsx`. Firebase real-time sync, room-based.
 
-## İçerik Durumu (Firestore)
+**Dondurulmuş**: **Zar** — `src/screens/DiceScreen.tsx` + `components/Dice/` + `useDualDiceRoll` hala duruyor, route hala `RootNav`'da. Home'dan link kaldırıldı (yerine Pozlar). İleride geri getirilebilir, kod silinmedi.
 
-| Collection | Adet | Notlar |
-|-----------|------|--------|
-| `categories` | 27 | 6 Romantik L1 bundle + 12 Romantik L2-L5 + 15 Cesur L1-L5 |
-| `diceFaces` | 12 | 6 Romantik L1 bundle + 6 Cesur L1 |
-| `placeCategories` | 12 | 6 Romantik L1 bundle + 6 Cesur L1 |
-| `meta/content` | 1 | version bump for cache invalidation |
+## Topluluk Özellikleri
+
+- **Öneriler + Fantezilerin** — `src/screens/SubmissionScreen.tsx` (ortak ekran, route adına göre `kind` seçer). Settings modal → "Bize yardım et" bölümünden erişim. Firestore koleksiyonları: `suggestions/`, `fantasies/`. Service: `src/services/submissionService.ts` (`submitFeedback(kind, text)`, 4-1000 char validation, uid + locale + status=new ekler). Mobile sadece create yapabilir, read/update/delete admin.
+- **Admin panel**: `/suggestions` + `/fantasies` sayfaları (`admin/app/{suggestions,fantasies}/page.tsx`), `admin/components/submissions-viewer.tsx` filtreli liste (yeni/incelendi/eklendi/reddedildi), status transitions + delete. Service: `admin/lib/submissions-service.ts`.
+
+## İçerik Durumu (Firestore + Bundle)
+
+| Collection | Adet | Kaynak | Notlar |
+|-----------|------|--------|--------|
+| `categories` | 27 | Firestore | 6 Romantik L1 bundle + 12 Romantik L2-L5 + 15 Cesur L1-L5 |
+| `diceFaces` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
+| `placeCategories` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
+| `poses` (bundle) | 8 | `src/data/poses.ts` | Lotus Kucaklaşması, Fısıltı Yayı, Örülü Omuzlar, Hilal Sarması, Ayna Diz Çöküşü, Gelgit Uzanması, İkiz Aylar, İpek Düğümü. Hepsi `assets/poses/pose-sample.jpeg` kullanıyor (geçici). İçerik yazarı yeni görseller gönderdikçe teker teker değiştirilir. |
+| `suggestions` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
+| `fantasies` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
+| `meta/content` | 1 | Firestore | version bump for cache invalidation |
 
 Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
+
+**Pozlar: cloud'a taşıma denendi + geri alındı** (`e7bf349` → `f2c473b`). Admin panelden görsel upload + Firebase Storage altyapısı yazıldı ama kullanıcı "proje klasöründe kalsın" dedi. Kod `git revert` ile temiz, ama pattern (`fetchCollectionSoft`, Storage rules, pose-service, pose-editor) ileride tekrar lazım olursa commit tarihçesinden geri çıkarılabilir.
 
 ## Kullanıcı Tercihleri (Bunları Bil)
 
@@ -112,12 +124,12 @@ Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
 ```
 love_games/                       # mobil
   src/
-    data/                         # bundle JSON'lar + tracks.ts (TRACK_META, LEVEL_META)
+    data/                         # bundle JSON'lar + tracks.ts (TRACK_META, LEVEL_META) + poses.ts
     hooks/                        # useAuth, useRoom, useRoomBoxes, useBoxDoc, useContent,
                                   # useCategoryPrefs, useCardSelection, usePlayPrefs,
                                   # useLanguage, useAgeGate, useWheelSpin, useDualDiceRoll
     services/                     # firebase.ts, firebaseConfig.ts, roomService, boxService,
-                                  # contentService
+                                  # contentService, submissionService
     i18n/                         # i18next init + locales/{en,tr}.json
     utils/                        # color.ts
     components/
@@ -127,7 +139,8 @@ love_games/                       # mobil
       Cards/                      # FlipCard, CardDeck, CardFace, CardSettingsPanel
       Wheel/, Dice/               # (mevcut)
       Background/, Confetti/, ResultCard/, ui/
-    screens/                      # Home, Wheel, Dice, Cards, RoomLobby, BoxList, Box
+    screens/                      # Home, Wheel, Dice (dondurulmuş), Cards, Poses,
+                                  # RoomLobby, BoxList, Box, Submission (Öneriler + Fantezilerin)
     navigation/RootNav.tsx
     theme/                        # colors, typography
   scripts/
@@ -148,13 +161,25 @@ love_games/                       # mobil
   App.tsx                         # provider zinciri: Language → AgeGate → Content → Auth → Room
 
 admin/                            # Next.js 14 admin panel (Railway'de deployed)
-  app/                            # login, categories, place-categories, dice-faces, no-access
+  app/                            # login, categories, place-categories, dice-faces,
+                                  # suggestions, fantasies, no-access
   components/                     # AdminShell, CategoryEditor (with Track/Level/Flavor dropdowns),
-                                  # PlaceCategoryEditor
-  lib/                            # firebase.ts, auth-context, content-service, types
-                                  # (mirror of mobile types + FLAVORS enum)
+                                  # PlaceCategoryEditor, submissions-viewer
+  lib/                            # firebase.ts, auth-context, content-service,
+                                  # submissions-service, types (mirror of mobile types + FLAVORS enum)
   scripts/                        # grant-admin.js, check-claims.js
   .env.local                      # gitignored — same Firebase config as mobile
+
+assets/
+  poses/                          # Pozlar oyunu görselleri (şu an sadece pose-sample.jpeg)
+
+örnek uygulama fantazileri/       # [untracked] rakip app ekran görüntüleri — App Store
+                                  # stratejisi için araştırma. Submit sonrası elle sil.
+örnek pozisyon kartı.jpeg         # [untracked] mevcut Pozlar görseli (çıplaklık + poz) —
+                                  # App Store riskli, adaptasyon bekliyor
+mail seçeneği.jpeg                # [untracked] Apple Developer Contact Us ekran görüntüsü
+dice/                             # [untracked] eski "zar" ekranı için gönderilen çift
+                                  # pozisyonu referans görselleri (3 adet)
 ```
 
 ## Kritik Tipler (`src/types/index.ts`)
@@ -171,6 +196,13 @@ export type Category = {
 };
 
 export type PlaceCategory = { /* similar, places[] instead of prompts */ };
+
+export type Pose = {
+  id: string; name: string; description?: string;
+  image: number; // require() hash (bundle only şu an)
+  nameI18n?: LocalizedString; descriptionI18n?: LocalizedString;
+};
+
 export type BoxNote = { id: string; text: string; authorUid: string; createdAt: number; };
 export type RoomBox = {
   id, name, color, icon, createdAt, updatedAt, createdBy: string;
@@ -178,7 +210,7 @@ export type RoomBox = {
 };
 ```
 
-`admin/lib/types.ts` bunun mirror'ı — güncellemede iki tarafı da senkron tut.
+`admin/lib/types.ts` bunun mirror'ı (categories/places için) — güncellemede iki tarafı da senkron tut. Admin'de `Submission` + `SubmissionStatus` tipleri var ama `Pose` yok (bundle-only olduğundan).
 
 ## Yapılacaklar / Bilinen Eksikler
 
@@ -186,16 +218,23 @@ export type RoomBox = {
 - BoxScreen (notes UI, karıştır, delete confirm) hala Türkçe
 - CategoryPanel modal (çark ayarları) hala Türkçe
 - Content prompts (Firestore'daki kategori isim/prompt'lar sadece Türkçe) — data model'e `nameEn`/`promptsEn` eklenmesi + çeviri gerek
+- Diğer 10 dil için `poses.*` ve `suggestions.*`/`fantasies.*` key'leri yok, en fallback'ine düşüyor
 
 **İçerik:**
 - Cesur L2-L5 kategorileri henüz 6 prompt'ta (L1 örneği 10 prompt'a çıkarıldı, aynı pattern uygulanabilir)
 - Romantik dice + places genişlemesi yok
 - Flavor tag'leri mobil UI'da görünmüyor (data yerinde, admin'de setlenebilir; sadece render eksik)
+- **Pozlar görselleri**: Şu an 8 pozun hepsi aynı sample görselini kullanıyor. Kullanıcı yeni görseller gönderdikçe `assets/poses/*.jpeg` + `src/data/poses.ts` içindeki `image` referansı güncellenecek.
 
 **Kutular:**
 - `expo-clipboard` ile "Kodu kopyala" butonu yok (kod uzun bas + seç)
 - In-place not düzenleme yok (sil + yeniden ekle)
 - Kutu adı rename UI'ı yok (service hazır: `renameBox` in `boxService.ts`)
+
+**Topluluk (Öneriler + Fantezilerin):**
+- Content moderation yok — explicit submission validation (OpenAI Moderation API, profanity filter) gerek, özellikle iOS submission öncesi
+- Admin'de user block / rate limiting yok
+- Mobile'da report flow yok
 
 **Store:**
 - EAS build henüz yapılmadı
@@ -206,10 +245,32 @@ export type RoomBox = {
 **Wheel:**
 - Outer glow wheel container'a sınırlı — halo dışa taşmıyor
 
-## Son Session Özet
+## App Store Stratejisi (2026-10-06 araştırma)
 
-Son turda tamamlanan iş: Cesur ladder içerik (15 kategori), Cesur dice+places, admin flavor dropdown, Kutular real-time track/level, i18n framework + ana ekranlar (Home/Wheel/Cards/Dice/RoomLobby/BoxList/TrackLevelBar/AgeGate), Settings butonu + dil değişimi.
+Kullanıcı rakip bir "couples dare" app'inin ekran görüntülerini paylaştı (`örnek uygulama fantazileri/`). Analiz sonuçları:
 
-Commit'ler: `bb59076`, `37425c2`, `506914f`, `ed29dc4`, `b8e011e`, `4dd8a4d`, `f1a1b5a` (bkz. `git log`).
+- **Rakip içerik bizden çok daha explicit** — "oral sex", "genitals", "orgasm", "BDSM club" direkt kullanıyor, bizim L5 bondage'tan ağır. Yıllık $250 abonelikle App Store'da.
+- **Kritik fark**: Rakip metin-only, biz görsel + animasyon + UGC (Fanteziler) kullanıyoruz. Apple'ın UGC gereksinimleri (§1.2: filter, EULA, report, block) olmadan iOS reject garanti.
+- **Pozlar görseli App Store riski**: Mevcut sample görseli çıplaklık + cinsel pozisyon tasvir ediyor. §1.1.4 nedeniyle neredeyse kesin reject. Kullanıcıya iki yol önerildi: (a) AI generator ile silhouette prompt, (b) manual Photopea edit (nipple + poz nötralize), (c) Fiverr $80 silhouette seti. Henüz karar verilmedi — "yarın bakalım" dendi.
+- **iOS strateji taslağı** (henüz implementasyon yok):
+  1. Fanteziler'i iOS build'de kapat (Platform.OS gate)
+  2. Pozlar görsellerini silhouette/clothed versiyona adapte et VEYA iOS'ta tamamen gizle
+  3. Store metadata'da "sensuel/kink/fantazi" kelimeleri geçmesin — "mindful intimacy games", "couples wellness" dili
+  4. Screenshots sadece Romantik L1-L2 kartlarından
+  5. Cesur L1-L5 içerik mobile'da kalır — rakip app çok daha explicit, mevcut içerik Apple'ı tetiklemez
+- **Pre-submission mail'i hazırlandı** (iki versiyon: genel içerik + poz görseli). Henüz gönderilmedi, kullanıcı önce illustrasyonu adapte etmek istiyor. Apple contact kanalı: Developer Portal → Contact Us → "App Review" ya da "Feedback and Other Topics". Pre-enrollment durumda app ID istendiği için formu kullanmak zor; email `appreview@apple.com` alternatif ama cevap oranı düşük.
+
+## Son Session Özet (2026-10-05 / 06)
+
+Tamamlanan:
+- **Pozlar oyunu** (yeni, Home'da Zar yerine) — 8 bundle poz, altın border beyaz kart, shimmer + konfeti
+- **Öneriler + Fantezilerin** — Settings modal'dan erişim, Firestore write, admin inbox + filtre + status transitions
+- Pozları cloud'a taşıma denendi + geri alındı — `src/data/poses.ts` + `assets/poses/` ile kalıyor
+- Firestore rules: `suggestions`, `fantasies` koleksiyonları eklendi (signed-in create, admin read/update/delete)
+- Content fetch sağlamlaştırıldı — `fetchCollectionSoft` ekleyip Cesur içeriğinin kaybolma bug'ı çözüldü (poses koleksiyonu yokken Promise.all tüm fetch'i reject ediyordu)
+
+Commit'ler: `0f34e0e` (Pozlar), `08a2be1` (submissions), `e7bf349` (cloud pozlar — reverted), `f2c473b` (revert) — HEAD şu an `f2c473b`.
 
 Plan dosyası: `.claude/plans/greedy-wibbling-reef.md` — content strategy + track/level + i18n vision.
+
+**Yarına kalan:** Pozlar görsel adaptasyonu + Apple mail gönderimi (contact kanalı seçimi dahil) + iOS feature-gating stratejisinin kodlanması.
