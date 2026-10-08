@@ -97,6 +97,20 @@ Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
 - **Railway**: Next.js admin panelini deploy eder (bkz. `admin/README.md`)
 - **GitHub Actions**: Firestore rules otomatik deploy (`.github/workflows/deploy-firestore-rules.yml`)
 
+## İlk Açılış Defaults (Apple-reviewer safe)
+
+- **Dil**: `DEFAULT_LANGUAGE = 'en'` (`src/i18n/index.ts`). İlk açılış İngilizce, kullanıcı Settings'ten değiştirince AsyncStorage'da `app:language:v1` persist edilir.
+- **Track + Level**: `DEFAULT_TRACK = 'romantik'`, `DEFAULT_LEVEL = 1` (`src/data/tracks.ts`). `PlayPrefsProvider` (App.tsx zincirinde) tek source of truth — tüm oyun ekranları aynı state'i paylaşır, flicker yok.
+- **Yaş kapısı**: İlk açılışta mutlaka onaylanmalı (`src/hooks/useAgeGate.tsx`, key `ageGate:accepted:v1`).
+- Her iki hook (`usePlayPrefs`, `useLanguage`) cache validation yapar — bozuk/eski cache sessizce silinir ve bir sonraki açılış defaults'tan başlar (console.warn ile loglanır).
+
+**Fresh install testi (Expo Go'da):** `expo start --clear` AsyncStorage'ı temizlemez. Test etmek için:
+1. Settings → "🧹 Reset Prefs (DEV)" butonuna bas (sadece dev build'de görünür)
+2. Uygulamayı tamamen kapat (background'dan swipe)
+3. Yeniden aç → EN + Romantik L1 + yaş kapısı gelmeli
+
+Veya gerçek cihazdan uninstall + reinstall yap.
+
 ## Test / Çalıştırma
 
 **Mobil:**

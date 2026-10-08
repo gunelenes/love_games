@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Alert,
   Modal,
   Pressable,
   ScrollView,
@@ -7,6 +8,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
@@ -54,6 +56,42 @@ export function SettingsModal({ visible, onClose }: Props) {
     void Haptics.selectionAsync();
     onClose();
     navigation.navigate(screen);
+  };
+
+  // DEV-only "fresh install" simulator. Clears the AsyncStorage keys that
+  // persist user choice so the next launch starts from the Apple-safe
+  // defaults (EN + Romantik L1). Room code is intentionally preserved so
+  // the shared partner link doesn't vanish during a reset. Hidden in
+  // production builds via __DEV__ guard.
+  const handleResetPrefs = () => {
+    Alert.alert(
+      'Reset Prefs?',
+      'Dil, track/level, yaş kapısı, çark seçimleri ve content cache temizlenecek. Uygulamayı yeniden başlat.',
+      [
+        { text: 'İptal', style: 'cancel' },
+        {
+          text: 'Resetle',
+          style: 'destructive',
+          onPress: async () => {
+            try {
+              await AsyncStorage.multiRemove([
+                'play:trackLevel:v1',
+                'app:language:v1',
+                'ageGate:accepted:v1',
+                'wheel:activeCategoryIds:v1',
+                'content:v2',
+              ]);
+              Alert.alert(
+                'Done',
+                'Prefs cleared. Uygulamayı tamamen kapatıp aç.'
+              );
+            } catch (e) {
+              Alert.alert('Reset failed', String(e));
+            }
+          },
+        },
+      ]
+    );
   };
 
   return (
@@ -118,6 +156,12 @@ export function SettingsModal({ visible, onClose }: Props) {
               <Text style={styles.linkLabel}>{t('settings.fantasies')}</Text>
             </Pressable>
           </View>
+
+          {__DEV__ ? (
+            <Pressable onPress={handleResetPrefs} style={styles.devResetBtn}>
+              <Text style={styles.devResetLabel}>🧹 Reset Prefs (DEV)</Text>
+            </Pressable>
+          ) : null}
 
           <Pressable onPress={onClose} style={styles.closeBtn}>
             <Text style={styles.closeBtnText}>{t('settings.close')}</Text>
@@ -246,6 +290,22 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 0.5,
     textAlign: 'center',
+  },
+  devResetBtn: {
+    marginTop: 4,
+    paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderStyle: 'dashed',
+    borderColor: 'rgba(255,200,100,0.4)',
+    backgroundColor: 'rgba(255,200,100,0.08)',
+    alignItems: 'center',
+  },
+  devResetLabel: {
+    color: 'rgba(255,200,100,0.9)',
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0.5,
   },
   closeBtn: {
     marginTop: 6,

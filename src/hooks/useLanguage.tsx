@@ -62,12 +62,23 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let cancelled = false;
     AsyncStorage.getItem(STORAGE_KEY)
-      .then((raw) => {
+      .then(async (raw) => {
         if (cancelled) return;
-        if (raw && (SUPPORTED_LANGUAGES as readonly string[]).includes(raw)) {
-          const lang = raw as SupportedLanguage;
-          setLangState(lang);
-          void i18n.changeLanguage(lang);
+        if (raw) {
+          if ((SUPPORTED_LANGUAGES as readonly string[]).includes(raw)) {
+            const lang = raw as SupportedLanguage;
+            setLangState(lang);
+            void i18n.changeLanguage(lang);
+          } else {
+            // Bilinmeyen bir dil kodu cache'de — temizle ki bir sonraki
+            // açılış DEFAULT_LANGUAGE ('en') ile başlasın. Apple reviewer
+            // için ilk açılış İngilizce olmalı.
+            // eslint-disable-next-line no-console
+            console.warn(
+              `[useLanguage] unknown cached language "${raw}", resetting to default`
+            );
+            await AsyncStorage.removeItem(STORAGE_KEY).catch(() => {});
+          }
         }
         setReady(true);
       })
