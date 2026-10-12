@@ -36,5 +36,10 @@
     "firebase:deploy:indexes": "npx --yes firebase-tools deploy --only firestore:indexes --project love-games-prod",
     "firebase:deploy": "npx --yes firebase-tools deploy --only firestore --project love-games-prod"
   },
-  "private": true
+  "private": true,
+  "allowScripts": {
+    "@firebase/util@1.15.3": true,
+    "@shopify/react-native-skia@2.6.2": true,
+    "protobufjs@7.6.6": true
+  }
 }
