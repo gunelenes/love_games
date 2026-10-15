@@ -30,6 +30,10 @@
       "name": "Poses",
       "tagline": "Draw a pose, learn the art together"
     },
+    "glimpses": {
+      "name": "Glimpse",
+      "tagline": "Half a photo — imagination does the rest"
+    },
     "cards": {
       "name": "Cards",
       "tagline": "Pick your categories, draw a card"
@@ -67,6 +71,14 @@
     "drawPose": "Draw a Pose",
     "newPose": "New Pose",
     "hint": "Tap the button below to reveal a pose"
+  },
+  "glimpses": {
+    "eyebrow": "A GLIMPSE",
+    "title": "Finish the Frame",
+    "subtitle": "Half-revealed moments, completed by you",
+    "draw": "Take a Glimpse",
+    "next": "Another Glimpse",
+    "hint": "Tap below — half a photo appears, the rest is yours to imagine"
   },
   "cards": {
     "eyebrow": "CARDS",

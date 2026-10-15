@@ -30,6 +30,10 @@
       "name": "Pozlar",
       "tagline": "Bir poz çek, sanatı birlikte keşfedin"
     },
+    "glimpses": {
+      "name": "Göz Ucuyla",
+      "tagline": "Yarım bir kare — gerisi hayal gücünde"
+    },
     "cards": {
       "name": "Kart",
       "tagline": "Kategorini seç, kartından çıksın"
@@ -67,6 +71,14 @@
     "drawPose": "Poz Çek",
     "newPose": "Yeni Poz",
     "hint": "Aşağıdaki butona basarak bir poz keşfet"
+  },
+  "glimpses": {
+    "eyebrow": "GÖZ UCUYLA",
+    "title": "Kareyi Tamamla",
+    "subtitle": "Yarısı saklı anlar, gerisini sen tamamla",
+    "draw": "Bir Bak",
+    "next": "Bir Daha Bak",
+    "hint": "Aşağıya dokun — yarım bir kare belirir, gerisini sen hayal et"
   },
   "cards": {
     "eyebrow": "KART OYUNU",

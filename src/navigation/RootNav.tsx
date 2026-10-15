@@ -7,6 +7,7 @@ import { BoxListScreen } from '@/screens/BoxListScreen';
 import { BoxScreen } from '@/screens/BoxScreen';
 import { CardsScreen } from '@/screens/CardsScreen';
 import { PosesScreen } from '@/screens/PosesScreen';
+import { GlimpsesScreen } from '@/screens/GlimpsesScreen';
 import { RoomLobbyScreen } from '@/screens/RoomLobbyScreen';
 import { SubmissionScreen } from '@/screens/SubmissionScreen';
 import { colors } from '@/theme/colors';
@@ -20,6 +21,7 @@ export type RootStackParamList = {
   Box: { boxId: string };
   Cards: undefined;
   Poses: undefined;
+  Glimpses: undefined;
   Suggestions: undefined;
   Fantasies: undefined;
 };
@@ -45,6 +47,7 @@ export function RootNav() {
         <Stack.Screen name="Box" component={BoxScreen} />
         <Stack.Screen name="Cards" component={CardsScreen} />
         <Stack.Screen name="Poses" component={PosesScreen} />
+        <Stack.Screen name="Glimpses" component={GlimpsesScreen} />
         <Stack.Screen name="Suggestions" component={SubmissionScreen} />
         <Stack.Screen name="Fantasies" component={SubmissionScreen} />
       </Stack.Navigator>
