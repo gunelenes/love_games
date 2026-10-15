@@ -107,7 +107,11 @@ export function ArtDeckGame({
     );
     const pool = available.length > 0 ? available : localizedItems;
     const item = pool[Math.floor(Math.random() * pool.length)];
-    historyRef.current = [...historyRef.current, item.id].slice(-5);
+    // Remember up to 5 recent draws, but always leave at least one
+    // candidate so small decks never repeat back-to-back.
+    const memory = Math.min(5, localizedItems.length - 1);
+    historyRef.current =
+      memory > 0 ? [...historyRef.current, item.id].slice(-memory) : [];
     return item;
   }, [localizedItems]);
 

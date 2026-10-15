@@ -55,7 +55,7 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 - **Çark** — `src/screens/WheelScreen.tsx` + `components/Wheel/`. Skia canvas, dim + winner glow + sparkle burst.
 - **Kart** — `src/screens/CardsScreen.tsx` + `components/Cards/`. 3D flip kart, kategori chip'leri, `useCardSelection`.
 - **Pozlar** — `src/screens/PosesScreen.tsx` + `src/data/poses.ts`. Beyaz "sanat eseri" kart, altın border, karakalem görsel + poz adı + açıklama. Track/level yok, tamamen rastgele. Görseller bundle'dan (`assets/poses/`). Yeni oyun — Zar yerine Home'a koyuldu.
-- **Göz Ucuyla / Glimpse** — `src/screens/GlimpsesScreen.tsx` + `src/data/glimpses.ts`. Pozlar'ın kardeşi: yarım/kışkırtıcı fotoğraf + hayal gücü prompt'u. Gece moru kart, gül-kızılı çerçeve. Görseller `assets/glimpses/` (şu an hepsi `glimpse-placeholder.png`). Pozlar ve Göz Ucuyla ortak `src/components/ArtDeck/ArtDeckGame.tsx` kullanır — sadece tema + veri + label farklı.
+- **Göz Ucuyla / Glimpse** — `src/screens/GlimpsesScreen.tsx` + `src/data/glimpses.ts`. Pozlar'ın kardeşi: yarım/kışkırtıcı fotoğraf + hayal gücü prompt'u. Gece moru kart, gül-kızılı çerçeve. Görseller `assets/glimpses/` (5 karakalem: covered-eyes, lifted-hem, from-behind, tilted-jaw, hand-in-hair). Pozlar ve Göz Ucuyla ortak `src/components/ArtDeck/ArtDeckGame.tsx` kullanır — sadece tema + veri + label farklı.
 - **Kutular** — `src/screens/BoxListScreen.tsx` + `BoxScreen.tsx` + `RoomLobbyScreen.tsx`. Firebase real-time sync, room-based.
 
 **Dondurulmuş**: **Zar** — `src/screens/DiceScreen.tsx` + `components/Dice/` + `useDualDiceRoll` hala duruyor, route hala `RootNav`'da. Home'dan link kaldırıldı (yerine Pozlar). İleride geri getirilebilir, kod silinmedi.
@@ -72,7 +72,8 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 | `categories` | 27 | Firestore | 6 Romantik L1 bundle + 12 Romantik L2-L5 + 15 Cesur L1-L5 |
 | `diceFaces` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
 | `placeCategories` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
-| `poses` (bundle) | 8 | `src/data/poses.ts` | Lotus Kucaklaşması, Fısıltı Yayı, Örülü Omuzlar, Hilal Sarması, Ayna Diz Çöküşü, Gelgit Uzanması, İkiz Aylar, İpek Düğümü. Hepsi `assets/poses/pose-sample.jpeg` kullanıyor (geçici). İçerik yazarı yeni görseller gönderdikçe teker teker değiştirilir. |
+| `poses` (bundle) | 3 | `src/data/poses.ts` | Taht, Yükselen Bacak, Binici — `assets/poses/{throne,raised-leg,rider}.jpeg`. Yeni poz: görseli klasöre koy + entry ekle. |
+| `glimpses` (bundle) | 5 | `src/data/glimpses.ts` | Göz Ucuyla — `assets/glimpses/*.jpeg` |
 | `suggestions` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `fantasies` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `meta/content` | 1 | Firestore | version bump for cache invalidation |
@@ -239,7 +240,7 @@ export type RoomBox = {
 - Cesur L2-L5 kategorileri henüz 6 prompt'ta (L1 örneği 10 prompt'a çıkarıldı, aynı pattern uygulanabilir)
 - Romantik dice + places genişlemesi yok
 - Flavor tag'leri mobil UI'da görünmüyor (data yerinde, admin'de setlenebilir; sadece render eksik)
-- **Pozlar görselleri**: Şu an 8 pozun hepsi aynı sample görselini kullanıyor. Kullanıcı yeni görseller gönderdikçe `assets/poses/*.jpeg` + `src/data/poses.ts` içindeki `image` referansı güncellenecek.
+- **Pozlar / Göz Ucuyla görselleri**: Yeni görsel gelince ilgili `assets/{poses,glimpses}/` klasörüne temiz bir isimle (boşluksuz) koy + `src/data/{poses,glimpses}.ts` içine entry ekle.
 
 **Kutular:**
 - `expo-clipboard` ile "Kodu kopyala" butonu yok (kod uzun bas + seç)

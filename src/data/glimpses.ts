@@ -1,100 +1,64 @@
 import type { Pose } from '@/types';
 
-const PLACEHOLDER = require('../../assets/glimpses/glimpse-placeholder.png');
-
 /**
- * Göz Ucuyla / Glimpse deck — half-revealed, suggestive photos; the
+ * Göz Ucuyla / Glimpse deck — half-revealed, suggestive sketches; the
  * description is a prompt that lets imagination finish the frame.
- * All entries share the placeholder for now — drop real photos into
- * assets/glimpses/ and swap each `image` require.
+ * Add a card: drop the image into assets/glimpses/ and append an entry.
  */
 export const GLIMPSES: Pose[] = [
   {
-    id: 'open-collar',
-    name: 'Açık Yaka',
+    id: 'covered-eyes',
+    name: 'Kapanan Gözler',
     description:
-      'Bir düğme daha açılsaydı ne görürdün? Partnerine fısıldayarak anlat.',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Open Collar' },
+      'Bir el gözlerini örtüyor, parmaklar dudaklarında. O el şimdi ne yapacak? Partnerinin gözlerini kapat ve göster.',
+    image: require('../../assets/glimpses/covered-eyes.jpeg'),
+    nameI18n: { en: 'Covered Eyes' },
     descriptionI18n: {
-      en: 'One more button undone — what would you see? Whisper it to your partner.',
+      en: 'A hand over the eyes, fingertips on the lips. What does that hand do next? Cover your partner’s eyes and show them.',
     },
   },
   {
-    id: 'half-shadow',
-    name: 'Yarım Gölge',
+    id: 'lifted-hem',
+    name: 'Sıyrılan Kumaş',
     description:
-      'Işığın bittiği yerden sonrasını sen tamamla. Gözlerini kapat ve tarif et.',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Half Shadow' },
+      'Kumaş yukarı sıyrılmış, bir el karında duruyor. Bir sonraki karede o el nerede? Partnerinin üzerinde göster.',
+    image: require('../../assets/glimpses/lifted-hem.jpeg'),
+    nameI18n: { en: 'Lifted Hem' },
     descriptionI18n: {
-      en: 'Finish what lies past the edge of the light. Close your eyes and describe it.',
+      en: 'Fabric pulled up, a hand resting on the stomach. Where is that hand in the next frame? Show it on your partner.',
     },
   },
   {
-    id: 'sheet-edge',
-    name: 'Çarşaf Kenarı',
+    id: 'from-behind',
+    name: 'Arkadan Sarılış',
     description:
-      'Çarşafın altında kalan anı hayal et. Bu sahnenin bir saniye sonrası nasıl?',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Edge of the Sheet' },
+      'Güçlü kollar arkadan sarılmış, bakışı yarı kapalı. Kulağına ne fısıldandı? Aynı cümleyi partnerine fısılda.',
+    image: require('../../assets/glimpses/from-behind.jpeg'),
+    nameI18n: { en: 'From Behind' },
     descriptionI18n: {
-      en: 'Imagine the moment hidden under the sheet. What happens one second later?',
+      en: 'Strong arms wrapped from behind, eyes half closed. What was just whispered in her ear? Whisper the same to your partner.',
     },
   },
   {
-    id: 'bare-shoulder',
-    name: 'Çıplak Omuz',
+    id: 'tilted-jaw',
+    name: 'Kaldırılan Çene',
     description:
-      'Bu omuzdan aşağı inen ilk öpücük nereye düşerdi? Göster, anlatma.',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Bare Shoulder' },
+      'Bir el çeneyi nazikçe yukarı kaldırıyor, boyun açıkta. Bu anın bir saniye sonrası nasıl? Kelimeler değil, dudaklar anlatsın.',
+    image: require('../../assets/glimpses/tilted-jaw.jpeg'),
+    nameI18n: { en: 'Tilted Jaw' },
     descriptionI18n: {
-      en: 'Where would the first kiss land on its way down from this shoulder? Show, don’t tell.',
+      en: 'A hand gently tilts the jaw up, neck exposed. What happens one second later? Let lips tell it, not words.',
     },
   },
   {
-    id: 'unfinished-zip',
-    name: 'Yarım Fermuar',
+    id: 'hand-in-hair',
+    name: 'Saçlardaki El',
     description:
-      'Fermuar yolun yarısında kalmış. Kalanını kim, ne kadar yavaş açar?',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Unfinished Zip' },
+      'Parmaklar saçlara gömülmüş, nefesler birbirine karışmış. Kadrajın dışında kalanı partnerine üç kelimeyle anlat.',
+    image: require('../../assets/glimpses/hand-in-hair.jpeg'),
+    nameI18n: { en: 'Hand in Hair' },
     descriptionI18n: {
-      en: 'The zip stopped halfway. Who finishes it — and how slowly?',
-    },
-  },
-  {
-    id: 'bitten-lip',
-    name: 'Isırılmış Dudak',
-    description:
-      'Bu bakışın sebebi ne olabilir? Partnerine aynı bakışı yaşatacak bir cümle kur.',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Bitten Lip' },
-    descriptionI18n: {
-      en: 'What caused this look? Say one sentence that would earn the same look from your partner.',
-    },
-  },
-  {
-    id: 'steamed-glass',
-    name: 'Buğulu Cam',
-    description:
-      'Camın ardında olanı sadece sen görebiliyorsun. Partnerine üç kelimeyle anlat.',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Steamed Glass' },
-    descriptionI18n: {
-      en: 'Only you can see what’s behind the glass. Describe it to your partner in three words.',
-    },
-  },
-  {
-    id: 'trailing-hand',
-    name: 'Kayan El',
-    description:
-      'Bu el bir sonraki karede nerede olurdu? Partnerinin üzerinde göster.',
-    image: PLACEHOLDER,
-    nameI18n: { en: 'Trailing Hand' },
-    descriptionI18n: {
-      en: 'Where would this hand be in the next frame? Show it on your partner.',
+      en: 'Fingers buried in hair, breaths tangled. Describe what lies outside the frame to your partner in three words.',
     },
   },
 ];
