@@ -1,8 +1,10 @@
 @AGENTS.md
 
-# love_games
+# Wisp & Flame (repo: love_games)
 
-Yetişkin çiftler için sensuel + kink-yönelimli mini oyunlar. **Expo SDK 57 + React Native 0.86 + Reanimated 4 + Skia 2.6 + Firebase 12 + i18next**. Cloud-backed (Firestore), 2 dil (English default, Türkçe secondary). 18+ yaş kapılı.
+Yetişkin çiftler için sensuel + kink-yönelimli mini oyunlar. Store adı **Wisp & Flame**, bundle ID / package `com.gunelenes.wispandflame` (Expo slug hala `love_games`). **Expo SDK 57 + React Native 0.86 + Reanimated 4 + Skia 2.6 + Firebase 12 + i18next**. Cloud-backed (Firestore + Storage), 12 dil (English default). 18+ yaş kapılı.
+
+> **Şu an:** iOS App Store'a ilk gönderim hazırlığı. Kod tarafı hazır; sıradaki iş ekran görüntüleri + EAS build + App Store Connect. Adım adım plan: **"iOS Yayın Planı"** bölümü (en altta).
 
 ## Kritik Kısıtlar
 
@@ -36,12 +38,12 @@ Uygulama iki paralel track sunar, her track içinde 5 seviye:
 - Kullanıcı her oyunda TrackLevelBar (üstte) ile seçer, `usePlayPrefs` AsyncStorage'a persist
 - Filter kümülatif: `c.track === selected && c.level <= selected`
 - Kutular odasında track/level Firestore'da paylaşımlı (real-time sync)
-- BDSM terimleri kamuflaje edildi: Rigger → Halatçı, Master → Rehber, Sadist → Sınavcı, Brat → Yaramaz, Petowner → Bahçıvan (bkz. `.claude/.../plans/greedy-wibbling-reef.md`)
+- BDSM terimleri kamuflaje edildi: Rigger → Halatçı, Master → Rehber, Sadist → Sınavcı, Brat → Yaramaz, Petowner → Bahçıvan
 - L3+ için opsiyonel `flavors?: KinkFlavor[]` (rope, command, petplay, primal, sensory, roleplay, impact)
 
 ### Kritik Karar: Offline-First → Cloud-Hybrid
 
-Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taşındı (bkz. plan file). Kutular artık:
+Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taşındı. Kutular artık:
 - Anonymous auth ile stabil UID
 - 6-char oda kodu (BASE32, çakışma-korumalı transaction)
 - Room-based Firestore doc + boxes subcollection
@@ -78,7 +80,7 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 | `fantasies` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `meta/content` | 1 | Firestore | version bump for cache invalidation |
 
-Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
+Toplam ~250 prompt. Türkçe yazılır (`name`/`prompts`), 11 dile çevrilmiş (`nameI18n`/`promptsI18n`: en, es, de, fr, it, ja, ko, zh-TW, id, hi, ar — 33/33 kategori). Çeviri: `scripts/translate-content.js`.
 
 **Art desteleri cloud-only (2026-10-19):** Pozlar + Göz Ucuyla görselleri ve metinleri Firestore + Firebase Storage'dan gelir, bundle'da hiçbir şey yok (kullanıcı kararı: iOS review sırasında uzaktan gating + küçük binary). İlk açılışta internet yoksa ve cache boşsa deste "Tekrar Dene" durumu gösterir.
 - Storage yolu `{deck}/{id}-{hash|ts}.{ext}` — her yeni görsel yeni URL → expo-image disk cache'i hiç bayatlamaz. `useContent` cloud verisi gelince `Image.prefetch(..., 'memory-disk')` yapar.
@@ -87,14 +89,22 @@ Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
 - `scripts/art/` bilerek `scripts/content/` dışında: `seed-content.js` oradaki her klasörü koleksiyon sayar.
 - **Firebase Storage Blaze plan ister** (bucket `love-games-prod.firebasestorage.app`).
 
-**Store kimliği (2026-10-19):** Uygulama adı **Wisp & Flame**, bundle ID / package `com.gunelenes.wispandflame` (slug hala `love_games`). Store metadata `store.config.json` (EAS Metadata) + `store/`. Gizlilik/destek sayfaları `docs/` → GitHub Pages. İletişim: Enes Günel · enesgunel@enesgunel.com (kullanıcının tercihi, sayfalarda public). Pozlar + Göz Ucuyla iOS'ta da açık kalacak (kullanıcı kararı, gating yok).
+## Store Kimliği + Marka (2026-10-19)
+
+- **Ad:** Wisp & Flame. Store başlığı `Wisp & Flame: Couples Games` / TR `Wisp & Flame: Çift Oyunları`. Bundle ID / package `com.gunelenes.wispandflame` (onaylandı — App Store kaydı açıldıktan sonra değiştirilemez).
+- **İletişim (public):** Enes Günel · enesgunel@enesgunel.com — kullanıcının tercihi, gizlilik/destek sayfalarında ve store'da görünür.
+- **Pozlar + Göz Ucuyla iOS'ta da açık** (kullanıcı kararı, feature-gating YOK). Store açıklamasında "elegant charcoal sketches" diliyle geçer, ekran görüntülerine konmaz.
+- **Metadata:** `store.config.json` (EAS Metadata, en-US + tr: başlık, altyazı, keyword, açıklama, yaş derecelendirmesi, kategori, reviewer notu, URL'ler). Play metinleri `store/google-play/`. Kurallar + App Store Connect'te elle doldurulacak cevaplar: `store/README.md`.
+- **Web (GitHub Pages, `docs/`, canlı):** https://gunelenes.github.io/love_games/ · `/privacy/` · `/support/` (EN + `#tr`). Gizlilik politikasındaki veri envanteri koddan çıkarıldı; yeni veri türü / analitik eklenirse **politika + App Privacy cevapları + `app.json` `ios.privacyManifests`** birlikte güncellenmeli.
+- **Logo: "Duo / Violet Pop"** — iki üst üste binen alev (pembe `#FF4FA3` + sarı `#FFD23F`, kesişim turuncu `#FF8A3D`), mor gradient zemin (`#8E2DE2 → #4A00E0`, düz karşılığı `#6C17E1`). Tüm ikonlar `scripts/brand/build-icons.mjs`'ten üretilir (renk/oran değişikliği = script'te tek edit + yeniden çalıştır). `assets/icon.png` alpha'sız RGB olmalı (Apple alpha'lı ikonu reddeder). Tasarım turları (reddedilenler dahil) claude.ai artifact'ında: https://claude.ai/artifact/BTh2HxLJqxWpFXPrzHRjPM
+- **Yaş kapısı metni** "kink" içermez ("sensual and intimate themes for couples", 12 dil) — reviewer ilk bunu görür, metadata diliyle tutarlı kalmalı. Store metninde de sex/kink/fantasy/BDSM geçmez.
 
 ## Kullanıcı Tercihleri (Bunları Bil)
 
-- **Animasyon çıtası yüksek**. "Amatör" görünen düz çözüm reddedilir. Detay: `.claude/.../memory/feedback_animation_bar.md`.
+- **Animasyon çıtası yüksek**. "Amatör" görünen düz çözüm reddedilir: spring/stagger/shimmer/haptics ile katmanlı hareket beklenir, tasarımda da düz/sıradan görünen ilk versiyonlar geri çevrildi (ör. logo 1. tur "daha canlı" diye reddedildi).
 - **Full otonomi verilir** — "sen yap" dediğinde büyük değişiklikleri commit + push et.
-- **Türkçe + English UI** — default en, ayarlar'dan tr'ye geçiş. Content prompts hala Türkçe.
-- **Sensual/kink content**: tam yetişkin bir çiftler uygulaması. BDSM terminolojisi discreet Türkçe kamuflajla (bkz. plan file).
+- **12 dilli UI** — default en, Settings'ten değişir. İçerik Türkçe yazılır + 11 dile çevrilir.
+- **Sensual/kink content**: tam yetişkin bir çiftler uygulaması. BDSM terminolojisi discreet Türkçe kamuflajla (yukarıdaki Track + Level bölümü). Eski plan dosyası (`.claude/plans/…`) artık mevcut değil.
 - **Store hedefi**: Google Play + iOS App Store denenecek (Play daha esnek), yetersiz kalırsa PWA fallback.
 - **Deneyimli geliştirici** — teknik detaylara girilebilir.
 
@@ -104,7 +114,10 @@ Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
   - Firestore, Auth (anonymous + admin panel için email/password), custom claims (`admin: true`)
   - Service account: `scripts/service-account.json` + `admin/scripts/service-account.json` (gitignored)
 - **Railway**: Next.js admin panelini deploy eder (bkz. `admin/README.md`)
-- **GitHub Actions**: Firestore rules otomatik deploy (`.github/workflows/deploy-firestore-rules.yml`)
+- **Firebase Storage**: Pozlar + Göz Ucuyla görselleri (Blaze plan açık). Bucket `love-games-prod.firebasestorage.app`, Firestore bölgesi `eur3`.
+- **GitHub Actions**: Firestore + Storage rules otomatik deploy (`.github/workflows/deploy-firestore-rules.yml`)
+- **GitHub Pages**: `docs/` → gizlilik / destek / ana sayfa
+- **Expo / EAS**: hesap `gunelenes`. `eas.json` hazır (preview + production, build numarası remote). `eas init` henüz yapılmadı.
 
 ## İlk Açılış Defaults (Apple-reviewer safe)
 
@@ -202,17 +215,15 @@ admin/                            # Next.js 14 admin panel (Railway'de deployed)
   scripts/                        # grant-admin.js, check-claims.js
   .env.local                      # gitignored — same Firebase config as mobile
 
-assets/
-  (sadece app ikonları — art desteleri Storage'da, kaynak kopya scripts/art/)
-
-örnek uygulama fantazileri/       # [untracked] rakip app ekran görüntüleri — App Store
-                                  # stratejisi için araştırma. Submit sonrası elle sil.
-örnek pozisyon kartı.jpeg         # [untracked] mevcut Pozlar görseli (çıplaklık + poz) —
-                                  # App Store riskli, adaptasyon bekliyor
-mail seçeneği.jpeg                # [untracked] Apple Developer Contact Us ekran görüntüsü
-dice/                             # [untracked] eski "zar" ekranı için gönderilen çift
-                                  # pozisyonu referans görselleri (3 adet)
+assets/                           # sadece app ikonları + splash (scripts/brand/ üretir)
+scripts/brand/                    # build-icons.mjs + icon.svg / mark.svg (logo master)
+store.config.json                 # EAS Metadata (App Store)
+store/                            # README (kurallar, ASC cevapları), google-play/, screenshots/
+docs/                             # GitHub Pages: index, privacy/, support/, favicon
+eas.json                          # EAS build/submit profilleri
 ```
+
+`.gitignore` tüm `*.png/*.jpg/*.jpeg`'i yok sayar; istisnalar: `assets/`, `docs/`, `store/`, `scripts/art/`. Başka yere görsel koyarsan git'e girmez.
 
 ## Kritik Tipler (`src/types/index.ts`)
 
@@ -247,11 +258,9 @@ export type RoomBox = {
 
 ## Yapılacaklar / Bilinen Eksikler
 
-**i18n eksikleri** (framework kurulu, en/tr locales var, ana ekranlar refactor edildi):
-- BoxScreen (notes UI, karıştır, delete confirm) hala Türkçe
-- CategoryPanel modal (çark ayarları) hala Türkçe
-- Content prompts (Firestore'daki kategori isim/prompt'lar sadece Türkçe) — data model'e `nameEn`/`promptsEn` eklenmesi + çeviri gerek
-- Diğer 10 dil için `poses.*` ve `suggestions.*`/`fantasies.*` key'leri yok, en fallback'ine düşüyor
+**i18n eksikleri:**
+- en + tr dışındaki 10 dilde `poses.*`, `glimpses.*`, `artDeck.*`, `suggestions.*`/`fantasies.*` key'leri yok → İngilizce fallback. (Store açıklaması "12 languages" diyor; UI'ın kalanı ve içerik çevrili.)
+- Settings'teki DEV reset diyaloğu Türkçe — `__DEV__` guard'lı, production'da görünmez.
 
 **İçerik:**
 - Cesur L2-L5 kategorileri henüz 6 prompt'ta (L1 örneği 10 prompt'a çıkarıldı, aynı pattern uygulanabilir)
@@ -269,61 +278,63 @@ export type RoomBox = {
 - Admin'de user block / rate limiting yok
 - Mobile'da report flow yok
 
-**Store:**
-- EAS build henüz yapılmadı
-- App Store metadata + screenshots hazır değil
-- Play Store submission testi yok
-- PWA fallback plan var ama implemente edilmedi (bkz. plan file)
+**Store:** bkz. "iOS Yayın Planı". Play Store ve PWA fallback sonraya.
+
+**Altyapı / açık sorular:**
+- `admin/package-lock.json` `package.json` ile senkron değil (`npm ci` düşer). Railway `npm ci` kullanıyorsa admin deploy'u kırılabilir → `cd admin && npm install` ile lock'u yenileyip commit et.
+- Rules deploy GitHub Action'ının Storage adımı CI'da hiç doğrulanmadı (kurallar elle deploy edildi). Kırmızıysa CI service account'una "Firebase Rules Admin" rolü ekle.
+- Gizlilik politikasında öneri/fantezi saklama süresi "en fazla 24 ay" yazıldı — Claude'un önerisi, kullanıcı henüz onaylamadı.
 
 **Wheel:**
 - Outer glow wheel container'a sınırlı — halo dışa taşmıyor
 
-## App Store Stratejisi (2026-10-06 araştırma)
+## Durum (2026-10-19 session'ı sonunda)
 
-Kullanıcı rakip bir "couples dare" app'inin ekran görüntülerini paylaştı (`örnek uygulama fantazileri/`). Analiz sonuçları:
+Bu session'da yapılanlar (hepsi push'lu, HEAD `af33eba` civarı):
+- **Art desteleri cloud-only** — Pozlar + Göz Ucuyla Firestore + Storage'dan (`f2c5e57`). Bundle'da görsel yok.
+- **Shuffle bag** — ArtDeck'te her kart turda 1 kez, tur bitince yeni karıştırma, yeni tur önceki son kartla başlamaz (`de9eb81`).
+- **Store metadata** — `store.config.json` + `store/` (`f08da3d`).
+- **iOS hazırlığı** — `app.json` (ad, bundle ID, iPhone-only, şifreleme beyanı, privacy manifest, splash plugin), `eas.json`, expo `~57.0.30`, yaş kapısı metni, `docs/` gizlilik + destek sayfaları (`904f5c0`). `npx expo-doctor` → 21/21.
+- **Logo** — Duo / Violet Pop ikonları, adaptive icon, splash, favicon (`af33eba`).
 
-- **Rakip içerik bizden çok daha explicit** — "oral sex", "genitals", "orgasm", "BDSM club" direkt kullanıyor, bizim L5 bondage'tan ağır. Yıllık $250 abonelikle App Store'da.
-- **Kritik fark**: Rakip metin-only, biz görsel + animasyon + UGC (Fanteziler) kullanıyoruz. Apple'ın UGC gereksinimleri (§1.2: filter, EULA, report, block) olmadan iOS reject garanti.
-- **Pozlar görseli App Store riski** (2026-10-15 güncelleme: sample görsel silindi, yerine giyinik/bikinili karakalem çizimler geldi — risk azaldı ama Pozlar hala cinsel pozisyon tasvir ediyor; Göz Ucuyla da görsel tabanlı, iOS gating planına dahil edilmeli). Eski not: Mevcut sample görseli çıplaklık + cinsel pozisyon tasvir ediyor. §1.1.4 nedeniyle neredeyse kesin reject. Kullanıcıya iki yol önerildi: (a) AI generator ile silhouette prompt, (b) manual Photopea edit (nipple + poz nötralize), (c) Fiverr $80 silhouette seti. Henüz karar verilmedi — "yarın bakalım" dendi.
-- **iOS strateji taslağı** (henüz implementasyon yok):
-  1. Fanteziler'i iOS build'de kapat (Platform.OS gate)
-  2. Pozlar görsellerini silhouette/clothed versiyona adapte et VEYA iOS'ta tamamen gizle
-  3. Store metadata'da "sensuel/kink/fantazi" kelimeleri geçmesin — "mindful intimacy games", "couples wellness" dili
-  4. Screenshots sadece Romantik L1-L2 kartlarından
-  5. Cesur L1-L5 içerik mobile'da kalır — rakip app çok daha explicit, mevcut içerik Apple'ı tetiklemez
-- **Pre-submission mail'i hazırlandı** (iki versiyon: genel içerik + poz görseli). Henüz gönderilmedi, kullanıcı önce illustrasyonu adapte etmek istiyor. Apple contact kanalı: Developer Portal → Contact Us → "App Review" ya da "Feedback and Other Topics". Pre-enrollment durumda app ID istendiği için formu kullanmak zor; email `appreview@apple.com` alternatif ama cevap oranı düşük.
+Önceki session'lar: 2026-10-15 Göz Ucuyla + ArtDeckGame refactor (`3e554e1`, `bdfa9bc`); 2026-10-05/06 Pozlar + Öneriler/Fanteziler (`0f34e0e`, `08a2be1`). Pozları cloud'a taşıma 10-06'da denenip geri alınmıştı (`e7bf349` → `f2c473b`); 10-19'da kullanıcı isteğiyle yeniden yapıldı.
 
-## Son Session Özet (2026-10-15)
+## iOS Yayın Planı (sıradaki iş)
 
-Tamamlanan:
-- **Göz Ucuyla / Glimpse** (yeni oyun, Home'da Pozlar'ın altında, ✧ ikon, renk `#D6336C`) — yarım/kışkırtıcı karakalem görsel + hayal gücü prompt'u. Gece moru kart (`#1C0F1A`), gül-kızılı çerçeve (`#F0507E`), kırmızı buton (`#E8366A`). İsim alternatifleri konuşuldu (Peek/Aralık, Tease/Yarım Kalan, Unseen/Görünmeyen) — şimdilik Glimpse / Göz Ucuyla.
-- **ArtDeckGame refactor** — PosesScreen'in tüm UI'ı `src/components/ArtDeck/ArtDeckGame.tsx`'e taşındı. `PosesScreen` + `GlimpsesScreen` sadece `ArtDeckTheme` sabiti + data + label veriyor. Tema module-level const olmalı (styles identity ile memoize).
-- **Gerçek görseller bağlandı** — kullanıcı 8 karakalem gönderdi: 5'i Göz Ucuyla'ya, 3'ü Pozlar'a. Dosyalar boşluksuz isimlere çevrildi, kart metinleri her görsele göre yazıldı. Eski 8 placeholder poz (Lotus Kucaklaşması vb.) silindi (git geçmişinde `3e554e1` ve öncesi).
-- Küçük destelerde aynı kartın arka arkaya gelmemesi için history boyu `min(5, n-1)` (2026-10-19: shuffle bag ile değişti — her kart turda 1 kez, tur bitince yeni karıştırma, yeni tur önceki son kartla başlamaz).
-- Home kart listesi ScrollView oldu (5 oyun küçük ekrana sığsın), kart minHeight 130 → 116.
-- i18n: `games.glimpses` + `glimpses.*` sadece en + tr'de; diğer 10 dil en fallback.
+Kullanıcı bu adımlara **Claude web** (claude.ai/code) ile devam etmek istiyor. Kullanıcı Windows'ta, **Mac yok** → iOS Simulator yok; build'ler EAS cloud'da, ekran görüntüleri gerçek iPhone'dan.
 
-Commit'ler: `3e554e1` (Glimpse + ArtDeck), `f232cad` (kullanıcı: poz görselleri), `bdfa9bc` (görseller bağlandı) — push edildi.
+### Claude web ortamı için notlar
 
-**Commit edilmemiş (kullanıcının):** `package.json` + `package-lock.json` — expo `^57.0.25` → `~57.0.29`. Dokunulmadı.
+- Repo GitHub'dan temiz klonlanır: önce `npm ci`. Windows/PowerShell notları (npx.cmd vb.) orada geçersiz.
+- **Yok:** `scripts/service-account.json` (gitignored) → seed script'leri ve elle rules deploy çalışmaz (rules zaten push ile GitHub Action'dan deploy olur). Firebase CLI login yok.
+- **EAS komutları** için ortamda `EXPO_TOKEN` env var'ı lazım (expo.dev → Account settings → Access tokens). Yoksa kullanıcıdan iste; token'ı asla repoya yazma.
+- **Apple Developer hesabı + 2FA** isteyen adımlar etkileşimlidir → kullanıcı kendi makinesinde bir kez çalıştırmalı (aşağıda **[Kullanıcı]** işaretli). Sonrasında credential'lar EAS sunucusunda durur ve `--non-interactive` build'ler token ile çalışır.
+- Görsel üretimi (ikon, ekran görüntüsü kompozisyonu): `npm i --no-save @resvg/resvg-js@2.6.2 sharp@0.33.5` (proje bağımlılığı değil).
 
-**Sonraki adımlar (açık):**
-- Göz Ucuyla + Pozlar'ı cihazda gözle kontrol et (refactor sonrası Pozlar görünümü aynı olmalı; beyaz zeminli görseller koyu Göz Ucuyla kartında nasıl duruyor bak)
-- Yeni görseller geldikçe `assets/{poses,glimpses}/` + data entry
-- Oyun ismini kesinleştir
-- Apple mail + iOS feature-gating (Fanteziler, Pozlar, Göz Ucuyla)
+### Adımlar
 
-## Önceki Session (2026-10-05 / 06)
+1. **[Kullanıcı] Apple Developer Program** — bireysel üyelik (Enes Günel), yıllık $99. Onay 24–48 saat sürebilir.
+2. **[Kullanıcı] App Store Connect'te uygulama kaydı** — My Apps → + → New App: platform iOS, ad `Wisp & Flame: Couples Games`, birincil dil English (U.S.), bundle ID `com.gunelenes.wispandflame` (önce Certificates, Identifiers & Profiles'ta kaydedilmeli; ya da 4. adımdaki ilk EAS build bunu otomatik yapar), SKU `wispandflame-ios`. Ad bu anda rezerve olur. Oluşan **Apple ID (sayısal ascAppId)** not edilmeli → `eas.json` `submit.production.ios.ascAppId`.
+3. **`eas init`** — `npx eas-cli@latest init` → `app.json`'a `extra.eas.projectId` + `owner` yazar; commit et.
+4. **[Kullanıcı] İlk iOS build** — `npx eas-cli build -p ios --profile production`. İlk seferde Apple ID ile giriş + 2FA ister, Distribution Certificate + Provisioning Profile'ı EAS üretir. Sonraki build'ler: `eas build -p ios --profile production --non-interactive` (EXPO_TOKEN ile Claude web'den de tetiklenebilir).
+5. **App Store Connect API key** — ASC → Users and Access → Integrations → App Store Connect API → Team Key (rol: App Manager). Issuer ID + Key ID + `.p8` dosyası `eas credentials` ile EAS'e yüklenir. **`.p8` repoya girmez.** Bu key submit + metadata push'u etkileşimsiz yapar.
+6. **TestFlight** — `npx eas-cli submit -p ios --latest` → build TestFlight'a düşer. Kullanıcı kendi iPhone'unda TestFlight ile kur, akışları test et (yaş kapısı → Home → her oyun → Kutular iki cihazla → Ayarlar dil değişimi). **Ekran görüntüleri bu build'den alınır** (gerçek ikon/splash, Expo Go arayüzü yok).
+7. **Ekran görüntüleri** (aşağıdaki bölüm).
+8. **Metadata** — `npx eas-cli metadata:push` (`store.config.json` → ASC). Önce `eas metadata:lint` ile doğrula. EAS Metadata ekran görüntüsü yüklemez → onları ASC'ye elle sürükle (ya da fastlane deliver).
+9. **[Kullanıcı] ASC'de elle doldurulacaklar** (`store/README.md` → "App Store Connect'te elle doldurulacaklar"): yeni yaş derecelendirmesi soruları (UGC: Yes, sonuç 18+), App Privacy etiketi (User ID + Other User Content, kimlikle bağlantısız, tracking yok), fiyat (ücretsiz?), review contact bilgileri.
+10. **Review'a gönder** — build'i sürüme bağla, reviewer notu `store.config.json`'da hazır. Red gelirse gerekçeye göre: Pozlar/Göz Ucuyla §1.1.4 riski en olası — içerik cloud'da olduğu için admin panelden kartları kaldırmak build gerektirmez.
 
-Tamamlanan:
-- **Pozlar oyunu** (yeni, Home'da Zar yerine) — 8 bundle poz, altın border beyaz kart, shimmer + konfeti
-- **Öneriler + Fantezilerin** — Settings modal'dan erişim, Firestore write, admin inbox + filtre + status transitions
-- Pozları cloud'a taşıma denendi + geri alındı — `src/data/poses.ts` + `assets/poses/` ile kalıyor
-- Firestore rules: `suggestions`, `fantasies` koleksiyonları eklendi (signed-in create, admin read/update/delete)
-- Content fetch sağlamlaştırıldı — `fetchCollectionSoft` ekleyip Cesur içeriğinin kaybolma bug'ı çözüldü (poses koleksiyonu yokken Promise.all tüm fetch'i reject ediyordu)
+### Ekran görüntüleri
 
-Commit'ler: `0f34e0e` (Pozlar), `08a2be1` (submissions), `e7bf349` (cloud pozlar — reverted), `f2c473b` (revert) — HEAD şu an `f2c473b`.
+- **Zorunlu:** 6.9" iPhone, dikey, **1320×2868** veya **1290×2796** PNG/JPG, 1–10 adet (hedef 6). `supportsTablet: false` → iPad gerekmez.
+- **Ham çekim [Kullanıcı]:** TestFlight build'inde Pro Max / Plus bir iPhone'da (yan tuş + ses açma). 16 Pro Max → 1320×2868, 14 Pro Max / 15 Plus / 15 Pro Max / 16 Plus → 1290×2796. Daha küçük bir iPhone da olur: ham görüntü aşağıdaki "Akış" adımında çerçeveye yerleştirilip 1290×2796'ya büyütülür.
+- **İçerik kuralı:** sadece **Romantik (Yakınlık) L1–L2** içerik; Pozlar / Göz Ucuyla / Keşif (Cesur) ekrana girmez. Dil EN (TR seti için Settings'ten Türkçe'ye geçip aynı ekranlar tekrar).
+- **Çekilecek 6 ekran** (başlıklar `store/README.md`'de, EN + TR): 1 Home · 2 Çark (dönerken/sonuç) · 3 Kart (açık kart) · 4 Track/Level bar görünür bir oyun ekranı · 5 Kutular (mümkünse iki telefon) · 6 Settings dil listesi.
+- **Akış:** kullanıcı ham PNG'leri `store/screenshots/raw/{en-US,tr}/01-home.png …` olarak commit'ler → Claude `scripts/brand/build-screenshots.mjs` yazar (sharp + resvg): mor gradient zemin (`#8E2DE2 → #4A00E0`), üstte başlık (Fredoka bold, beyaz), ortada yuvarlatılmış köşeli ham ekran + gölge → çıktı `store/screenshots/{en-US,tr}/01.png …` tam 1290×2796. Logo renkleriyle tutarlı olmalı; kullanıcının animasyon/tasarım çıtası yüksek, düz görünen kompozisyon reddedilir.
+- Status bar: saat/şarj ideal olmak zorunda değil ama bildirim ikonları olmasın.
 
-Plan dosyası: `.claude/plans/greedy-wibbling-reef.md` — content strategy + track/level + i18n vision.
+### Bilinen riskler
 
-**Yarına kalan:** Pozlar görsel adaptasyonu + Apple mail gönderimi (contact kanalı seçimi dahil) + iOS feature-gating stratejisinin kodlanması.
+- **§1.1.4 (cinsellik):** Pozlar karakalem poz çizimleri iOS'ta açık gidiyor (kullanıcı kararı). Reddedilirse ilk hamle admin'den Pozlar kartlarını kaldırmak/değiştirmek (build gerekmez); yine olmazsa Home'dan gizlemek için küçük bir remote flag (`meta/flags`) eklenebilir — **kullanıcıya sormadan ekleme**.
+- **Yaş derecelendirmesi:** advisory'de sexual content + mature themes `FREQUENT_OR_INTENSE`. Düşük göstermek red sebebi; yüksek göstermenin zararı yok (zaten 18+).
+- **Metadata dili:** "couples / intimacy / date night"; sex, kink, fantasy, BDSM, erotic geçmez (uygulama içi Fanteziler ekranı adı hariç).
