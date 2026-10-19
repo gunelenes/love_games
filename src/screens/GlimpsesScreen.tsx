@@ -5,7 +5,7 @@ import {
   ArtDeckGame,
   type ArtDeckTheme,
 } from '@/components/ArtDeck/ArtDeckGame';
-import { GLIMPSES } from '@/data/glimpses';
+import { useContent } from '@/hooks/useContent';
 import type { RootStackParamList } from '@/navigation/RootNav';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Glimpses'>;
@@ -27,9 +27,12 @@ const GLIMPSES_THEME: ArtDeckTheme = {
 
 export function GlimpsesScreen({ navigation }: Props) {
   const { t } = useTranslation();
+  const { glimpses, loading, refresh } = useContent();
   return (
     <ArtDeckGame
-      items={GLIMPSES}
+      items={glimpses}
+      loading={loading}
+      onRetry={refresh}
       theme={GLIMPSES_THEME}
       ornament="✧"
       labels={{

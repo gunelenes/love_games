@@ -103,6 +103,24 @@ export type PlaceCategory = {
   level: Level;
 };
 
+/**
+ * Art deck card (Pozlar + Göz Ucuyla). Mirrors the mobile `Pose` type in
+ * src/types/index.ts — keep in sync. `image` is a Firebase Storage
+ * download URL, `imagePath` the object path (for deleting the blob).
+ */
+export type ArtDeck = 'poses' | 'glimpses';
+
+export type ArtCard = {
+  id: string;
+  name: string;
+  description?: string;
+  image: string;
+  imagePath?: string;
+  nameI18n?: LocalizedString;
+  descriptionI18n?: LocalizedString;
+  order?: number;
+};
+
 export type SubmissionStatus = 'new' | 'reviewed' | 'implemented' | 'rejected';
 
 export type Submission = {

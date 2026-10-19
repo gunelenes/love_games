@@ -80,6 +80,11 @@
     "next": "Bir Daha Bak",
     "hint": "Aşağıya dokun — yarım bir kare belirir, gerisini sen hayal et"
   },
+  "artDeck": {
+    "loading": "Deste karıştırılıyor…",
+    "offline": "Kartlar yüklenemedi. Bağlantını kontrol edip tekrar dene.",
+    "retry": "Tekrar Dene"
+  },
   "cards": {
     "eyebrow": "KART OYUNU",
     "title": "Kart Çek",

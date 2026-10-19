@@ -1,0 +1,32 @@
+rules_version = '2';
+
+// Firebase Storage access rules.
+//
+// Art deck images (/poses/*, /glimpses/*) are public-readable because every
+// mobile client — including fresh/anonymous installs — renders them without
+// an auth hop. Only admin custom-claim holders can upload / overwrite / delete.
+// Max 5 MB per upload, image/* only; enforced server-side so a leaked SDK
+// key can't fill the bucket.
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    match /{deck}/{imageId} {
+      allow read: if deck in ['poses', 'glimpses'];
+      allow write: if deck in ['poses', 'glimpses']
+        && request.auth != null
+        && request.auth.token.admin == true
+        && (
+          request.resource == null
+          || (
+            request.resource.size < 5 * 1024 * 1024
+            && request.resource.contentType.matches('image/.*')
+          )
+        );
+    }
+
+    // Default deny for everything else.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

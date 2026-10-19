@@ -64,16 +64,20 @@ export type PlaceCategory = {
 };
 
 /**
- * Kama Sutra-style pose card. White charcoal-art background on dark app.
- * Localized name/description so the pose UI works in all 10 locales.
+ * Art deck card (Pozlar + Göz Ucuyla). Lives in Firestore (`poses/`,
+ * `glimpses/`); `image` is a Firebase Storage download URL. Nothing is
+ * bundled, so the decks can be gated or swapped without an app release.
  */
 export type Pose = {
   id: string;
   name: string;
   description?: string;
-  image: number;
+  image: string;
+  /** Storage object path — admin uses it to delete the blob on replace/remove. */
+  imagePath?: string;
   nameI18n?: LocalizedString;
   descriptionI18n?: LocalizedString;
+  order?: number;
 };
 
 export type BoxNote = {

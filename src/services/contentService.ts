@@ -7,12 +7,14 @@ import {
   query,
 } from 'firebase/firestore';
 import { firebaseFirestore } from './firebase';
-import type { Category, PlaceCategory } from '@/types';
+import type { Category, PlaceCategory, Pose } from '@/types';
 
 export type AllContent = {
   categories: Category[];
   placeCategories: PlaceCategory[];
   diceFaces: Category[];
+  poses: Pose[];
+  glimpses: Pose[];
   version: number | null;
 };
 
@@ -38,6 +40,27 @@ async function fetchCollection<T>(name: string): Promise<T[] | null> {
   return sortByOrder(items) as T[];
 }
 
+/**
+ * Variant that swallows failures (missing rules, 403) and returns an empty
+ * list instead of throwing. Use for collections whose absence must not knock
+ * the rest of the content out — a rejection here would fail Promise.all and
+ * send mobile back to the bundle fallback for categories too.
+ */
+async function fetchCollectionSoft<T>(name: string): Promise<T[]> {
+  try {
+    return (await fetchCollection<T>(name)) ?? [];
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.warn(`[contentService] soft-fetch failed for ${name}:`, err);
+    return [];
+  }
+}
+
+/** Art cards without a usable image URL would render as an empty frame. */
+function withImage(cards: Pose[]): Pose[] {
+  return cards.filter((c) => typeof c.image === 'string' && c.image.length > 0);
+}
+
 async function fetchMetaVersion(): Promise<number | null> {
   if (!firebaseFirestore) return null;
   try {
@@ -51,21 +74,31 @@ async function fetchMetaVersion(): Promise<number | null> {
 }
 
 /**
- * Firestore'dan tüm içeriği (categories + placeCategories + diceFaces) paralel çeker.
- * Firebase configure edilmemişse veya fetch başarısızsa null döner.
+ * Firestore'dan tüm içeriği (categories + placeCategories + diceFaces +
+ * poses + glimpses) paralel çeker. Firebase configure edilmemişse veya
+ * fetch başarısızsa null döner.
  */
 export async function fetchAllContent(): Promise<AllContent | null> {
   if (!firebaseFirestore) return null;
   try {
-    const [categories, placeCategories, diceFaces, version] =
+    const [categories, placeCategories, diceFaces, poses, glimpses, version] =
       await Promise.all([
         fetchCollection<Category>('categories'),
         fetchCollection<PlaceCategory>('placeCategories'),
         fetchCollection<Category>('diceFaces'),
+        fetchCollectionSoft<Pose>('poses'),
+        fetchCollectionSoft<Pose>('glimpses'),
         fetchMetaVersion(),
       ]);
     if (!categories || !placeCategories || !diceFaces) return null;
-    return { categories, placeCategories, diceFaces, version };
+    return {
+      categories,
+      placeCategories,
+      diceFaces,
+      poses: withImage(poses),
+      glimpses: withImage(glimpses),
+      version,
+    };
   } catch (err) {
     // eslint-disable-next-line no-console
     console.warn('[contentService] fetch failed, using cache/bundle:', err);

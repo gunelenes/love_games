@@ -10,6 +10,7 @@
     "@shopify/react-native-skia": "2.6.2",
     "expo": "^57.0.25",
     "expo-haptics": "~57.0.3",
+    "expo-image": "~57.0.5",
     "expo-status-bar": "~57.0.1",
     "firebase": "^12.19.0",
     "i18next": "^26.4.2",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@types/react": "~19.2.4",
     "babel-preset-expo": "~57.0.0",
+    "firebase-admin": "^13.10.0",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -34,7 +36,9 @@
     "web": "expo start --web",
     "firebase:deploy:rules": "npx --yes firebase-tools deploy --only firestore:rules --project love-games-prod",
     "firebase:deploy:indexes": "npx --yes firebase-tools deploy --only firestore:indexes --project love-games-prod",
-    "firebase:deploy": "npx --yes firebase-tools deploy --only firestore --project love-games-prod"
+    "firebase:deploy": "npx --yes firebase-tools deploy --only firestore --project love-games-prod",
+    "firebase:deploy:storage": "npx --yes firebase-tools deploy --only storage --project love-games-prod",
+    "seed:art": "node scripts/seed-art.js"
   },
   "private": true,
   "allowScripts": {

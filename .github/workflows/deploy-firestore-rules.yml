@@ -1,6 +1,6 @@
-name: Deploy Firestore Rules
+name: Deploy Firebase Rules
 
-# Rules + indexes değiştiğinde otomatik deploy.
+# Firestore + Storage rules + indexes değiştiğinde otomatik deploy.
 # Repository secret: FIREBASE_SERVICE_ACCOUNT (service-account.json içeriği).
 
 on:
@@ -9,6 +9,7 @@ on:
     paths:
       - 'firestore.rules'
       - 'firestore.indexes.json'
+      - 'storage.rules'
       - 'firebase.json'
       - '.firebaserc'
       - '.github/workflows/deploy-firestore-rules.yml'
@@ -41,8 +42,8 @@ jobs:
           printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > .ci/service-account.json
           echo "GOOGLE_APPLICATION_CREDENTIALS=$PWD/.ci/service-account.json" >> "$GITHUB_ENV"
 
-      - name: Deploy Firestore rules + indexes
-        run: firebase deploy --only firestore:rules,firestore:indexes --project love-games-prod --non-interactive
+      - name: Deploy Firestore + Storage rules + indexes
+        run: firebase deploy --only firestore:rules,firestore:indexes,storage --project love-games-prod --non-interactive
 
       - name: Cleanup
         if: always()

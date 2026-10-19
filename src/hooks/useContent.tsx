@@ -8,6 +8,7 @@ import React, {
   type ReactNode,
 } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Image } from 'expo-image';
 import { useTranslation } from 'react-i18next';
 import { CATEGORIES as BUNDLE_CATEGORIES } from '@/data/categories';
 import { DICE_FACES as BUNDLE_DICE_FACES } from '@/data/diceFaces';
@@ -16,15 +17,20 @@ import { fetchAllContent, type AllContent } from '@/services/contentService';
 import {
   localizeCategory,
   localizePlaceCategory,
+  localizePose,
 } from '@/utils/localizedContent';
-import type { Category, PlaceCategory } from '@/types';
+import type { Category, PlaceCategory, Pose } from '@/types';
 
-const CACHE_KEY = 'content:v1';
+// v2: art decks (poses + glimpses) joined the cache.
+const CACHE_KEY = 'content:v2';
 
 type ContentContextValue = {
   categories: Category[];
   placeCategories: PlaceCategory[];
   diceFaces: Category[];
+  /** Art decks are cloud-only — empty until cache or Firestore delivers. */
+  poses: Pose[];
+  glimpses: Pose[];
   source: 'bundle' | 'cache' | 'cloud';
   loading: boolean;
   refresh: () => Promise<void>;
@@ -34,6 +40,8 @@ const BUNDLE_CONTENT = {
   categories: BUNDLE_CATEGORIES,
   placeCategories: BUNDLE_PLACE_CATEGORIES,
   diceFaces: BUNDLE_DICE_FACES,
+  poses: [] as Pose[],
+  glimpses: [] as Pose[],
   version: null as number | null,
 };
 
@@ -53,6 +61,8 @@ async function readCache(): Promise<AllContent | null> {
         categories: parsed.categories,
         placeCategories: parsed.placeCategories,
         diceFaces: parsed.diceFaces,
+        poses: Array.isArray(parsed.poses) ? parsed.poses : [],
+        glimpses: Array.isArray(parsed.glimpses) ? parsed.glimpses : [],
         version: typeof parsed.version === 'number' ? parsed.version : null,
       };
     }
@@ -60,6 +70,16 @@ async function readCache(): Promise<AllContent | null> {
     // corrupt cache — ignore
   }
   return null;
+}
+
+/**
+ * Warm expo-image's disk cache so a drawn card shows its art instantly,
+ * even if the user goes offline after the first launch.
+ */
+function prefetchArt(content: AllContent) {
+  const urls = [...content.poses, ...content.glimpses].map((p) => p.image);
+  if (urls.length === 0) return;
+  void Image.prefetch(urls, 'memory-disk').catch(() => {});
 }
 
 async function writeCache(content: AllContent) {
@@ -80,6 +100,8 @@ export function ContentProvider({ children }: { children: ReactNode }) {
   const [diceFaces, setDiceFaces] = useState<Category[]>(
     BUNDLE_CONTENT.diceFaces
   );
+  const [poses, setPoses] = useState<Pose[]>(BUNDLE_CONTENT.poses);
+  const [glimpses, setGlimpses] = useState<Pose[]>(BUNDLE_CONTENT.glimpses);
   const [source, setSource] = useState<'bundle' | 'cache' | 'cloud'>('bundle');
   const [loading, setLoading] = useState(true);
 
@@ -88,7 +110,10 @@ export function ContentProvider({ children }: { children: ReactNode }) {
       setCategories(content.categories);
       setPlaceCategories(content.placeCategories);
       setDiceFaces(content.diceFaces);
+      setPoses(content.poses);
+      setGlimpses(content.glimpses);
       setSource(newSource);
+      prefetchArt(content);
     },
     []
   );
@@ -143,12 +168,19 @@ export function ContentProvider({ children }: { children: ReactNode }) {
     () => diceFaces.map(localizeCategory),
     [diceFaces, lang]
   );
+  const localizedPoses = useMemo(() => poses.map(localizePose), [poses, lang]);
+  const localizedGlimpses = useMemo(
+    () => glimpses.map(localizePose),
+    [glimpses, lang]
+  );
 
   const value = useMemo<ContentContextValue>(
     () => ({
       categories: localizedCategories,
       placeCategories: localizedPlaceCategories,
       diceFaces: localizedDiceFaces,
+      poses: localizedPoses,
+      glimpses: localizedGlimpses,
       source,
       loading,
       refresh,
@@ -157,6 +189,8 @@ export function ContentProvider({ children }: { children: ReactNode }) {
       localizedCategories,
       localizedPlaceCategories,
       localizedDiceFaces,
+      localizedPoses,
+      localizedGlimpses,
       source,
       loading,
       refresh,

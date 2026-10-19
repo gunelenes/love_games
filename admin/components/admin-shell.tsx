@@ -9,6 +9,8 @@ const NAV = [
   { href: '/categories', label: '🎯 Categories' },
   { href: '/place-categories', label: '📍 Places' },
   { href: '/dice-faces', label: '🎲 Dice Faces' },
+  { href: '/poses', label: '❦ Pozlar' },
+  { href: '/glimpses', label: '✧ Göz Ucuyla' },
   { href: '/suggestions', label: '💡 Öneriler' },
   { href: '/fantasies', label: '🌹 Fanteziler' },
 ];

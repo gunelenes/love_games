@@ -80,6 +80,11 @@
     "next": "Another Glimpse",
     "hint": "Tap below — half a photo appears, the rest is yours to imagine"
   },
+  "artDeck": {
+    "loading": "Shuffling the deck…",
+    "offline": "Couldn’t load the cards. Check your connection and try again.",
+    "retry": "Try Again"
+  },
   "cards": {
     "eyebrow": "CARDS",
     "title": "Draw a Card",

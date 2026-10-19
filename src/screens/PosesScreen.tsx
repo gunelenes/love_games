@@ -5,8 +5,8 @@ import {
   ArtDeckGame,
   type ArtDeckTheme,
 } from '@/components/ArtDeck/ArtDeckGame';
-import { POSES } from '@/data/poses';
 import { colors } from '@/theme/colors';
+import { useContent } from '@/hooks/useContent';
 import type { RootStackParamList } from '@/navigation/RootNav';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Poses'>;
@@ -28,9 +28,12 @@ const POSES_THEME: ArtDeckTheme = {
 
 export function PosesScreen({ navigation }: Props) {
   const { t } = useTranslation();
+  const { poses, loading, refresh } = useContent();
   return (
     <ArtDeckGame
-      items={POSES}
+      items={poses}
+      loading={loading}
+      onRetry={refresh}
       theme={POSES_THEME}
       ornament="❦"
       labels={{

@@ -1,13 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   Dimensions,
-  Image,
   Pressable,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Image } from 'expo-image';
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -23,7 +23,6 @@ import {
   type ConfettiBurstRef,
 } from '@/components/Confetti/ConfettiBurst';
 import { BackButton } from '@/components/ui/BackButton';
-import { localizePose } from '@/utils/localizedContent';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
 import { withAlpha } from '@/utils/color';
@@ -33,7 +32,8 @@ import type { Pose } from '@/types';
  * Shared "art card" deck used by Poses and Glimpses: draw a random
  * image card (avoiding the last 5), reveal with spring + shimmer +
  * confetti. Each game only supplies its items, i18n namespace and a
- * colour theme.
+ * colour theme. Items arrive already localized from useContent; their
+ * art is a remote Storage URL, so the deck has loading + offline states.
  */
 
 export type ArtDeckTheme = {
@@ -65,6 +65,9 @@ export type ArtDeckLabels = {
 
 type Props = {
   items: Pose[];
+  /** Content provider is still on its first cloud fetch. */
+  loading: boolean;
+  onRetry: () => Promise<void>;
   labels: ArtDeckLabels;
   /** Keep this a module-level constant — styles are memoized on identity. */
   theme: ArtDeckTheme;
@@ -78,42 +81,38 @@ const CARD_HEIGHT = Math.min(CARD_WIDTH * 1.38, 440);
 
 export function ArtDeckGame({
   items,
+  loading,
+  onRetry,
   labels,
   theme,
   ornament = '❦',
   onBack,
 }: Props) {
-  const { i18n } = useTranslation();
+  const { t } = useTranslation();
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
   const historyRef = useRef<string[]>([]);
   const drawCountRef = useRef(0);
 
   const themed = useMemo(() => makeThemedStyles(theme), [theme]);
 
-  const localizedItems = useMemo(
-    () => items.map(localizePose),
-    // Re-localize when language changes
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [items, i18n.language]
-  );
-
   const [current, setCurrent] = useState<Pose | null>(null);
   const [cardKey, setCardKey] = useState(0);
+  const [retrying, setRetrying] = useState(false);
 
   const pickItem = useCallback((): Pose | null => {
-    if (localizedItems.length === 0) return null;
-    const available = localizedItems.filter(
+    if (items.length === 0) return null;
+    const available = items.filter(
       (p) => !historyRef.current.includes(p.id)
     );
-    const pool = available.length > 0 ? available : localizedItems;
+    const pool = available.length > 0 ? available : items;
     const item = pool[Math.floor(Math.random() * pool.length)];
     // Remember up to 5 recent draws, but always leave at least one
     // candidate so small decks never repeat back-to-back.
-    const memory = Math.min(5, localizedItems.length - 1);
+    const memory = Math.min(5, items.length - 1);
     historyRef.current =
       memory > 0 ? [...historyRef.current, item.id].slice(-memory) : [];
     return item;
-  }, [localizedItems]);
+  }, [items]);
 
   const reveal = useSharedValue(0);
   const shimmer = useSharedValue(0);
@@ -137,6 +136,19 @@ export function ArtDeckGame({
     reveal.value = withSpring(1, { damping: 14, stiffness: 160 });
     confettiRef.current?.burst();
   }, [pickItem, reveal]);
+
+  const empty = items.length === 0;
+  const waiting = loading || retrying;
+
+  const handleRetry = useCallback(async () => {
+    if (retrying) return;
+    setRetrying(true);
+    try {
+      await onRetry();
+    } finally {
+      setRetrying(false);
+    }
+  }, [onRetry, retrying]);
 
   const cardStyle = useAnimatedStyle(() => ({
     opacity: reveal.value,
@@ -185,7 +197,13 @@ export function ArtDeckGame({
                   <Text style={[styles.hintIcon, themed.hintIcon]}>
                     {ornament}
                   </Text>
-                  <Text style={styles.hintText}>{labels.hint}</Text>
+                  <Text style={styles.hintText}>
+                    {!empty
+                      ? labels.hint
+                      : waiting
+                        ? t('artDeck.loading')
+                        : t('artDeck.offline')}
+                  </Text>
                 </View>
               </View>
             </View>
@@ -194,8 +212,11 @@ export function ArtDeckGame({
 
         <View style={styles.footer}>
           <DrawButton
-            onPress={handleDraw}
-            label={current ? labels.next : labels.draw}
+            onPress={empty ? handleRetry : handleDraw}
+            label={
+              empty ? t('artDeck.retry') : current ? labels.next : labels.draw
+            }
+            disabled={empty && waiting}
             themed={themed}
           />
         </View>
@@ -231,7 +252,14 @@ function ArtCard({
     <View style={[styles.card, themed.card]}>
       <View style={[styles.cardFrame, themed.cardFrame]}>
         <View style={[styles.imageWrap, themed.imageWrap]}>
-          <Image source={item.image} style={styles.image} resizeMode="cover" />
+          <Image
+            source={item.image}
+            style={styles.image}
+            contentFit="cover"
+            cachePolicy="memory-disk"
+            recyclingKey={item.id}
+            transition={220}
+          />
           <Animated.View
             style={[styles.shimmer, themed.shimmer, shimmerStyle]}
             pointerEvents="none"
@@ -263,10 +291,12 @@ function ArtCard({
 function DrawButton({
   onPress,
   label,
+  disabled,
   themed,
 }: {
   onPress: () => void;
   label: string;
+  disabled?: boolean;
   themed: ThemedStyles;
 }) {
   const scale = useSharedValue(1);
@@ -278,6 +308,7 @@ function DrawButton({
     <Animated.View style={style}>
       <Pressable
         onPress={onPress}
+        disabled={disabled}
         onPressIn={() =>
           (scale.value = withSpring(0.94, { damping: 14, stiffness: 260 }))
         }
@@ -287,7 +318,7 @@ function DrawButton({
         style={({ pressed }) => [
           styles.drawBtn,
           themed.drawBtn,
-          { opacity: pressed ? 0.95 : 1 },
+          { opacity: disabled ? 0.5 : pressed ? 0.95 : 1 },
         ]}
       >
         <Text style={[styles.drawLabel, themed.drawLabel]}>{label}</Text>

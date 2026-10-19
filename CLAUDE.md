@@ -54,8 +54,8 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 
 - **Çark** — `src/screens/WheelScreen.tsx` + `components/Wheel/`. Skia canvas, dim + winner glow + sparkle burst.
 - **Kart** — `src/screens/CardsScreen.tsx` + `components/Cards/`. 3D flip kart, kategori chip'leri, `useCardSelection`.
-- **Pozlar** — `src/screens/PosesScreen.tsx` + `src/data/poses.ts`. Beyaz "sanat eseri" kart, altın border, karakalem görsel + poz adı + açıklama. Track/level yok, tamamen rastgele. Görseller bundle'dan (`assets/poses/`). Yeni oyun — Zar yerine Home'a koyuldu.
-- **Göz Ucuyla / Glimpse** — `src/screens/GlimpsesScreen.tsx` + `src/data/glimpses.ts`. Pozlar'ın kardeşi: yarım/kışkırtıcı fotoğraf + hayal gücü prompt'u. Gece moru kart, gül-kızılı çerçeve. Görseller `assets/glimpses/` (5 karakalem: covered-eyes, lifted-hem, from-behind, tilted-jaw, hand-in-hair). Pozlar ve Göz Ucuyla ortak `src/components/ArtDeck/ArtDeckGame.tsx` kullanır — sadece tema + veri + label farklı.
+- **Pozlar** — `src/screens/PosesScreen.tsx`, veri Firestore `poses/` + Storage. Beyaz "sanat eseri" kart, altın border, karakalem görsel + poz adı + açıklama. Track/level yok, tamamen rastgele. Görseller Firebase Storage'dan (bundle'da yok). Yeni oyun — Zar yerine Home'a koyuldu.
+- **Göz Ucuyla / Glimpse** — `src/screens/GlimpsesScreen.tsx`, veri Firestore `glimpses/` + Storage. Pozlar'ın kardeşi: yarım/kışkırtıcı fotoğraf + hayal gücü prompt'u. Gece moru kart, gül-kızılı çerçeve. 5 karakalem: covered-eyes, lifted-hem, from-behind, tilted-jaw, hand-in-hair. Pozlar ve Göz Ucuyla ortak `src/components/ArtDeck/ArtDeckGame.tsx` kullanır — sadece tema + veri + label farklı.
 - **Kutular** — `src/screens/BoxListScreen.tsx` + `BoxScreen.tsx` + `RoomLobbyScreen.tsx`. Firebase real-time sync, room-based.
 
 **Dondurulmuş**: **Zar** — `src/screens/DiceScreen.tsx` + `components/Dice/` + `useDualDiceRoll` hala duruyor, route hala `RootNav`'da. Home'dan link kaldırıldı (yerine Pozlar). İleride geri getirilebilir, kod silinmedi.
@@ -72,15 +72,20 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 | `categories` | 27 | Firestore | 6 Romantik L1 bundle + 12 Romantik L2-L5 + 15 Cesur L1-L5 |
 | `diceFaces` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
 | `placeCategories` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
-| `poses` (bundle) | 3 | `src/data/poses.ts` | Taht, Yükselen Bacak, Binici — `assets/poses/{throne,raised-leg,rider}.jpeg`. Yeni poz: görseli klasöre koy + entry ekle. |
-| `glimpses` (bundle) | 5 | `src/data/glimpses.ts` | Göz Ucuyla — `assets/glimpses/*.jpeg` |
+| `poses` | 3 | Firestore + Storage | Taht, Yükselen Bacak, Binici. Admin `/poses` sayfasından yönetilir; kaynak kopya `scripts/art/poses{.json,/}` |
+| `glimpses` | 5 | Firestore + Storage | Göz Ucuyla. Admin `/glimpses`; kaynak kopya `scripts/art/glimpses{.json,/}` |
 | `suggestions` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `fantasies` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `meta/content` | 1 | Firestore | version bump for cache invalidation |
 
 Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
 
-**Pozlar: cloud'a taşıma denendi + geri alındı** (`e7bf349` → `f2c473b`). Admin panelden görsel upload + Firebase Storage altyapısı yazıldı ama kullanıcı "proje klasöründe kalsın" dedi. Kod `git revert` ile temiz, ama pattern (`fetchCollectionSoft`, Storage rules, pose-service, pose-editor) ileride tekrar lazım olursa commit tarihçesinden geri çıkarılabilir.
+**Art desteleri cloud-only (2026-10-19):** Pozlar + Göz Ucuyla görselleri ve metinleri Firestore + Firebase Storage'dan gelir, bundle'da hiçbir şey yok (kullanıcı kararı: iOS review sırasında uzaktan gating + küçük binary). İlk açılışta internet yoksa ve cache boşsa deste "Tekrar Dene" durumu gösterir.
+- Storage yolu `{deck}/{id}-{hash|ts}.{ext}` — her yeni görsel yeni URL → expo-image disk cache'i hiç bayatlamaz. `useContent` cloud verisi gelince `Image.prefetch(..., 'memory-disk')` yapar.
+- Admin: `admin/components/art-editor.tsx` (deck prop'lu, iki sayfa paylaşır) + `admin/lib/art-service.ts`. Görsel değiştirince eski blob kayıtta silinir.
+- Toplu/ilk yükleme: `npm run seed:art` (`scripts/seed-art.js`, service account gerek) — `scripts/art/{deck}.json` + görselleri yükler, içerik-hash'li path ile idempotent.
+- `scripts/art/` bilerek `scripts/content/` dışında: `seed-content.js` oradaki her klasörü koleksiyon sayar.
+- **Firebase Storage Blaze plan ister** (bucket `love-games-prod.firebasestorage.app`).
 
 ## Kullanıcı Tercihleri (Bunları Bil)
 
@@ -132,10 +137,13 @@ Veya gerçek cihazdan uninstall + reinstall yap.
 **Content seed:**
 - `node scripts/seed-firestore.js` — bundle JSON'ları upload eder (`categories/`, `placeCategories/`, `diceFaces/`)
 - `node scripts/seed-content.js` — `scripts/content/{collection}/*.json` dosyalarını Firestore'a merge eder
+- `npm run seed:art [poses|glimpses]` — art destelerini Storage + Firestore'a yükler
+- Script'ler root `firebase-admin` devDependency'sini + `scripts/service-account.json`'ı kullanır
 - Yeni içerik: `scripts/content/categories/cesur-l6.json` gibi bir dosya oluştur, seed çalıştır
 
-**Firestore rules:**
-- `firestore.rules`'a düzenle → push → GitHub Action auto-deploy (~1 dk)
+**Firestore + Storage rules:**
+- `firestore.rules` / `storage.rules`'a düzenle → push → GitHub Action auto-deploy (~1 dk)
+- Elle: `npm run firebase:deploy:storage` (CLI login yeterli)
 - Local test: `$env:GOOGLE_APPLICATION_CREDENTIALS="admin/scripts/service-account.json"; npm run firebase:deploy:rules`
 
 ## Dizin Rehberi
@@ -143,7 +151,7 @@ Veya gerçek cihazdan uninstall + reinstall yap.
 ```
 love_games/                       # mobil
   src/
-    data/                         # bundle JSON'lar + tracks.ts (TRACK_META, LEVEL_META) + poses.ts
+    data/                         # bundle JSON'lar + tracks.ts (TRACK_META, LEVEL_META)
     hooks/                        # useAuth, useRoom, useRoomBoxes, useBoxDoc, useContent,
                                   # useCategoryPrefs, useCardSelection, usePlayPrefs,
                                   # useLanguage, useAgeGate, useWheelSpin, useDualDiceRoll
@@ -166,6 +174,8 @@ love_games/                       # mobil
   scripts/
     seed-firestore.js             # bundle → Firestore
     seed-content.js               # scripts/content/{collection}/ → Firestore
+    seed-art.js                   # scripts/art/ → Storage + Firestore (poses, glimpses)
+    art/                          # art deck kaynak kopyası: {deck}.json + {deck}/*.jpeg
     add-track-level.js            # bir seferlik bundle migration
     content/
       categories/*.json           # 27 kategori (Romantik L2-L5 + Cesur L1-L5)
@@ -184,16 +194,14 @@ admin/                            # Next.js 14 admin panel (Railway'de deployed)
   app/                            # login, categories, place-categories, dice-faces,
                                   # suggestions, fantasies, no-access
   components/                     # AdminShell, CategoryEditor (with Track/Level/Flavor dropdowns),
-                                  # PlaceCategoryEditor, submissions-viewer
+                                  # PlaceCategoryEditor, submissions-viewer, ArtEditor (poses/glimpses)
   lib/                            # firebase.ts, auth-context, content-service,
-                                  # submissions-service, types (mirror of mobile types + FLAVORS enum)
+                                  # submissions-service, art-service, types (mirror of mobile types + FLAVORS enum)
   scripts/                        # grant-admin.js, check-claims.js
   .env.local                      # gitignored — same Firebase config as mobile
 
 assets/
-  poses/                          # Pozlar görselleri: throne, raised-leg, rider (.jpeg)
-  glimpses/                       # Göz Ucuyla görselleri: covered-eyes, lifted-hem, from-behind,
-                                  # tilted-jaw, hand-in-hair (.jpeg)
+  (sadece app ikonları — art desteleri Storage'da, kaynak kopya scripts/art/)
 
 örnek uygulama fantazileri/       # [untracked] rakip app ekran görüntüleri — App Store
                                   # stratejisi için araştırma. Submit sonrası elle sil.
@@ -221,7 +229,8 @@ export type PlaceCategory = { /* similar, places[] instead of prompts */ };
 
 export type Pose = {
   id: string; name: string; description?: string;
-  image: number; // require() hash (bundle only şu an)
+  image: string; // Firebase Storage download URL
+  imagePath?: string; order?: number;
   nameI18n?: LocalizedString; descriptionI18n?: LocalizedString;
 };
 
@@ -232,7 +241,7 @@ export type RoomBox = {
 };
 ```
 
-`admin/lib/types.ts` bunun mirror'ı (categories/places için) — güncellemede iki tarafı da senkron tut. Admin'de `Submission` + `SubmissionStatus` tipleri var ama `Pose` yok (bundle-only olduğundan).
+`admin/lib/types.ts` bunun mirror'ı (categories/places için) — güncellemede iki tarafı da senkron tut. Admin'de `Pose`'un karşılığı `ArtCard` (+ `ArtDeck = 'poses' | 'glimpses'`).
 
 ## Yapılacaklar / Bilinen Eksikler
 
@@ -246,7 +255,7 @@ export type RoomBox = {
 - Cesur L2-L5 kategorileri henüz 6 prompt'ta (L1 örneği 10 prompt'a çıkarıldı, aynı pattern uygulanabilir)
 - Romantik dice + places genişlemesi yok
 - Flavor tag'leri mobil UI'da görünmüyor (data yerinde, admin'de setlenebilir; sadece render eksik)
-- **Pozlar / Göz Ucuyla görselleri**: Yeni görsel gelince ilgili `assets/{poses,glimpses}/` klasörüne temiz bir isimle (boşluksuz) koy + `src/data/{poses,glimpses}.ts` içine entry ekle.
+- **Pozlar / Göz Ucuyla görselleri**: Yeni kart admin panelden (`/poses`, `/glimpses`) eklenir. İstenirse `scripts/art/` kaynak kopyasına da eklenip `npm run seed:art` ile yüklenir.
 
 **Kutular:**
 - `expo-clipboard` ile "Kodu kopyala" butonu yok (kod uzun bas + seç)

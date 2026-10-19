@@ -1,6 +1,7 @@
 import { getApps, initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
 import { getFirestore, type Firestore } from 'firebase/firestore';
+import { getStorage, type FirebaseStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -14,6 +15,7 @@ const firebaseConfig = {
 let firebaseApp: FirebaseApp | null = null;
 let firebaseAuth: Auth | null = null;
 let firebaseFirestore: Firestore | null = null;
+let firebaseStorage: FirebaseStorage | null = null;
 
 if (typeof window !== 'undefined' && firebaseConfig.apiKey) {
   firebaseApp = getApps().length
@@ -21,6 +23,7 @@ if (typeof window !== 'undefined' && firebaseConfig.apiKey) {
     : initializeApp(firebaseConfig as any);
   firebaseAuth = getAuth(firebaseApp);
   firebaseFirestore = getFirestore(firebaseApp);
+  firebaseStorage = getStorage(firebaseApp);
 }
 
-export { firebaseApp, firebaseAuth, firebaseFirestore };
+export { firebaseApp, firebaseAuth, firebaseFirestore, firebaseStorage };
