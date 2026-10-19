@@ -29,8 +29,9 @@ import { withAlpha } from '@/utils/color';
 import type { Pose } from '@/types';
 
 /**
- * Shared "art card" deck used by Poses and Glimpses: draw a random
- * image card (avoiding the last 5), reveal with spring + shimmer +
+ * Shared "art card" deck used by Poses and Glimpses: draw from a
+ * shuffle bag (every card once per round, then a fresh shuffle),
+ * reveal with spring + shimmer +
  * confetti. Each game only supplies its items, i18n namespace and a
  * colour theme. Items arrive already localized from useContent; their
  * art is a remote Storage URL, so the deck has loading + offline states.
@@ -90,7 +91,12 @@ export function ArtDeckGame({
 }: Props) {
   const { t } = useTranslation();
   const confettiRef = useRef<ConfettiBurstRef | null>(null);
-  const historyRef = useRef<string[]>([]);
+  // Ids still to be drawn this round, in draw order.
+  const bagRef = useRef<string[]>([]);
+  // Ids already drawn this round — keeps cards added mid-round from
+  // re-dealing ones the couple has already seen.
+  const drawnRef = useRef<Set<string>>(new Set());
+  const lastIdRef = useRef<string | null>(null);
   const drawCountRef = useRef(0);
 
   const themed = useMemo(() => makeThemedStyles(theme), [theme]);
@@ -101,17 +107,33 @@ export function ArtDeckGame({
 
   const pickItem = useCallback((): Pose | null => {
     if (items.length === 0) return null;
-    const available = items.filter(
-      (p) => !historyRef.current.includes(p.id)
-    );
-    const pool = available.length > 0 ? available : items;
-    const item = pool[Math.floor(Math.random() * pool.length)];
-    // Remember up to 5 recent draws, but always leave at least one
-    // candidate so small decks never repeat back-to-back.
-    const memory = Math.min(5, items.length - 1);
-    historyRef.current =
-      memory > 0 ? [...historyRef.current, item.id].slice(-memory) : [];
-    return item;
+    const byId = new Map(items.map((p) => [p.id, p]));
+
+    // Content may have changed since the bag was dealt (admin edit,
+    // cloud refresh): drop removed cards, slot new ones in at random.
+    const bag = bagRef.current.filter((id) => byId.has(id));
+    for (const p of items) {
+      if (!bag.includes(p.id) && !drawnRef.current.has(p.id)) {
+        bag.splice(Math.floor(Math.random() * (bag.length + 1)), 0, p.id);
+      }
+    }
+
+    if (bag.length === 0) {
+      // Round over — reshuffle everything, but never open the new round
+      // with the card that just closed the previous one.
+      drawnRef.current = new Set();
+      bag.push(...shuffle(items.map((p) => p.id)));
+      if (bag.length > 1 && bag[0] === lastIdRef.current) {
+        const j = 1 + Math.floor(Math.random() * (bag.length - 1));
+        [bag[0], bag[j]] = [bag[j], bag[0]];
+      }
+    }
+
+    const id = bag.shift()!;
+    bagRef.current = bag;
+    drawnRef.current.add(id);
+    lastIdRef.current = id;
+    return byId.get(id)!;
   }, [items]);
 
   const reveal = useSharedValue(0);
@@ -233,6 +255,16 @@ export function ArtDeckGame({
       />
     </View>
   );
+}
+
+/** Fisher–Yates, returns a new array. */
+function shuffle<T>(arr: T[]): T[] {
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
 }
 
 type ThemedStyles = ReturnType<typeof makeThemedStyles>;

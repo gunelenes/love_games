@@ -297,7 +297,7 @@ Tamamlanan:
 - **Göz Ucuyla / Glimpse** (yeni oyun, Home'da Pozlar'ın altında, ✧ ikon, renk `#D6336C`) — yarım/kışkırtıcı karakalem görsel + hayal gücü prompt'u. Gece moru kart (`#1C0F1A`), gül-kızılı çerçeve (`#F0507E`), kırmızı buton (`#E8366A`). İsim alternatifleri konuşuldu (Peek/Aralık, Tease/Yarım Kalan, Unseen/Görünmeyen) — şimdilik Glimpse / Göz Ucuyla.
 - **ArtDeckGame refactor** — PosesScreen'in tüm UI'ı `src/components/ArtDeck/ArtDeckGame.tsx`'e taşındı. `PosesScreen` + `GlimpsesScreen` sadece `ArtDeckTheme` sabiti + data + label veriyor. Tema module-level const olmalı (styles identity ile memoize).
 - **Gerçek görseller bağlandı** — kullanıcı 8 karakalem gönderdi: 5'i Göz Ucuyla'ya, 3'ü Pozlar'a. Dosyalar boşluksuz isimlere çevrildi, kart metinleri her görsele göre yazıldı. Eski 8 placeholder poz (Lotus Kucaklaşması vb.) silindi (git geçmişinde `3e554e1` ve öncesi).
-- Küçük destelerde aynı kartın arka arkaya gelmemesi için history boyu `min(5, n-1)`.
+- Küçük destelerde aynı kartın arka arkaya gelmemesi için history boyu `min(5, n-1)` (2026-10-19: shuffle bag ile değişti — her kart turda 1 kez, tur bitince yeni karıştırma, yeni tur önceki son kartla başlamaz).
 - Home kart listesi ScrollView oldu (5 oyun küçük ekrana sığsın), kart minHeight 130 → 116.
 - i18n: `games.glimpses` + `glimpses.*` sadece en + tr'de; diğer 10 dil en fallback.
 
