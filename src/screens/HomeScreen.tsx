@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {
   Dimensions,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -26,11 +27,11 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 const { width, height } = Dimensions.get('window');
 
-type GameKey = 'Wheel' | 'Poses' | 'BoxList' | 'Cards';
+type GameKey = 'Wheel' | 'Poses' | 'Glimpses' | 'BoxList' | 'Cards';
 
 type GameCardData = {
   key: GameKey;
-  i18nKey: 'wheel' | 'poses' | 'cards' | 'boxes';
+  i18nKey: 'wheel' | 'poses' | 'glimpses' | 'cards' | 'boxes';
   icon: string;
   color: string;
 };
@@ -38,6 +39,7 @@ type GameCardData = {
 const GAMES: GameCardData[] = [
   { key: 'Wheel', i18nKey: 'wheel', icon: '🎡', color: '#FF4D6D' },
   { key: 'Poses', i18nKey: 'poses', icon: '❦', color: '#C9A86A' },
+  { key: 'Glimpses', i18nKey: 'glimpses', icon: '✧', color: '#D6336C' },
   { key: 'Cards', i18nKey: 'cards', icon: '🃏', color: '#F59E0B' },
   { key: 'BoxList', i18nKey: 'boxes', icon: '📦', color: '#10B981' },
 ];
@@ -77,7 +79,11 @@ export function HomeScreen({ navigation }: Props) {
           <Text style={styles.subtitle}>{t('home.subtitle')}</Text>
         </View>
 
-        <View style={styles.cards}>
+        <ScrollView
+          style={styles.cardsScroll}
+          contentContainerStyle={styles.cards}
+          showsVerticalScrollIndicator={false}
+        >
           {GAMES.map((g) => (
             <GameCard
               key={g.key}
@@ -87,7 +93,7 @@ export function HomeScreen({ navigation }: Props) {
               onPress={() => handlePress(g.key)}
             />
           ))}
-        </View>
+        </ScrollView>
 
         <View style={styles.footer}>
           <Text style={styles.footerText}>{t('home.footer')}</Text>
@@ -229,10 +235,14 @@ const styles = StyleSheet.create({
     color: colors.fgDim,
     textAlign: 'center',
   },
-  cards: {
+  cardsScroll: {
     flex: 1,
+  },
+  cards: {
+    flexGrow: 1,
     paddingHorizontal: 20,
-    gap: 18,
+    paddingVertical: 8,
+    gap: 14,
     justifyContent: 'center',
   },
   card: {
@@ -245,7 +255,7 @@ const styles = StyleSheet.create({
     shadowRadius: 18,
     elevation: 8,
     position: 'relative',
-    minHeight: 130,
+    minHeight: 116,
   },
   cardGlow: {
     position: 'absolute',

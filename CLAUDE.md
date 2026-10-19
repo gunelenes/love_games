@@ -50,11 +50,12 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 
 Çark/Zar/Kart için içerik: bundle fallback + Firestore (`useContent` hook, AsyncStorage cache).
 
-## Mevcut Oyunlar (4 aktif + 1 dondurulmuş)
+## Mevcut Oyunlar (5 aktif + 1 dondurulmuş)
 
 - **Çark** — `src/screens/WheelScreen.tsx` + `components/Wheel/`. Skia canvas, dim + winner glow + sparkle burst.
 - **Kart** — `src/screens/CardsScreen.tsx` + `components/Cards/`. 3D flip kart, kategori chip'leri, `useCardSelection`.
 - **Pozlar** — `src/screens/PosesScreen.tsx` + `src/data/poses.ts`. Beyaz "sanat eseri" kart, altın border, karakalem görsel + poz adı + açıklama. Track/level yok, tamamen rastgele. Görseller bundle'dan (`assets/poses/`). Yeni oyun — Zar yerine Home'a koyuldu.
+- **Göz Ucuyla / Glimpse** — `src/screens/GlimpsesScreen.tsx` + `src/data/glimpses.ts`. Pozlar'ın kardeşi: yarım/kışkırtıcı fotoğraf + hayal gücü prompt'u. Gece moru kart, gül-kızılı çerçeve. Görseller `assets/glimpses/` (5 karakalem: covered-eyes, lifted-hem, from-behind, tilted-jaw, hand-in-hair). Pozlar ve Göz Ucuyla ortak `src/components/ArtDeck/ArtDeckGame.tsx` kullanır — sadece tema + veri + label farklı.
 - **Kutular** — `src/screens/BoxListScreen.tsx` + `BoxScreen.tsx` + `RoomLobbyScreen.tsx`. Firebase real-time sync, room-based.
 
 **Dondurulmuş**: **Zar** — `src/screens/DiceScreen.tsx` + `components/Dice/` + `useDualDiceRoll` hala duruyor, route hala `RootNav`'da. Home'dan link kaldırıldı (yerine Pozlar). İleride geri getirilebilir, kod silinmedi.
@@ -71,7 +72,8 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 | `categories` | 27 | Firestore | 6 Romantik L1 bundle + 12 Romantik L2-L5 + 15 Cesur L1-L5 |
 | `diceFaces` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
 | `placeCategories` | 12 | Firestore | 6 Romantik L1 bundle + 6 Cesur L1 |
-| `poses` (bundle) | 8 | `src/data/poses.ts` | Lotus Kucaklaşması, Fısıltı Yayı, Örülü Omuzlar, Hilal Sarması, Ayna Diz Çöküşü, Gelgit Uzanması, İkiz Aylar, İpek Düğümü. Hepsi `assets/poses/pose-sample.jpeg` kullanıyor (geçici). İçerik yazarı yeni görseller gönderdikçe teker teker değiştirilir. |
+| `poses` (bundle) | 3 | `src/data/poses.ts` | Taht, Yükselen Bacak, Binici — `assets/poses/{throne,raised-leg,rider}.jpeg`. Yeni poz: görseli klasöre koy + entry ekle. |
+| `glimpses` (bundle) | 5 | `src/data/glimpses.ts` | Göz Ucuyla — `assets/glimpses/*.jpeg` |
 | `suggestions` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `fantasies` | — | Firestore (user) | Kullanıcı gönderileri, admin inbox |
 | `meta/content` | 1 | Firestore | version bump for cache invalidation |
@@ -116,6 +118,9 @@ Veya gerçek cihazdan uninstall + reinstall yap.
 **Mobil:**
 - `npm start` — LAN mode
 - `npx expo start --tunnel` — farklı ağlar (gunelenes hesabı gerek)
+  - **Windows PowerShell**: `npx` execution policy hatası verir → `npx.cmd` kullan ya da bir kere `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
+  - Expo CLI şu an login değil (`expo whoami` → Not logged in), tunnel URL'i `xxx-anonymous-8081.exp.direct` olur. `npx expo login` ile gunelenes'e gir.
+  - ngrok bazen `TypeError: Cannot read properties of undefined (reading 'body')` ile düşer — geçici, tekrar dene.
 - `npx tsc --noEmit` — TS check
 - `npx expo export --platform android --output-dir .metro-check` — bundle sanity
 
@@ -150,10 +155,11 @@ love_games/                       # mobil
       TrackLevelBar/              # track chip + level dot bar (Wheel/Dice/Cards/BoxList)
       Settings/SettingsModal      # dil değişimi
       AgeGate/AgeGateModal        # ilk açılış 18+ blocker
+      ArtDeck/ArtDeckGame         # Pozlar + Göz Ucuyla ortak kart ekranı (tema + veri + label prop'ları)
       Cards/                      # FlipCard, CardDeck, CardFace, CardSettingsPanel
       Wheel/, Dice/               # (mevcut)
       Background/, Confetti/, ResultCard/, ui/
-    screens/                      # Home, Wheel, Dice (dondurulmuş), Cards, Poses,
+    screens/                      # Home, Wheel, Dice (dondurulmuş), Cards, Poses, Glimpses,
                                   # RoomLobby, BoxList, Box, Submission (Öneriler + Fantezilerin)
     navigation/RootNav.tsx
     theme/                        # colors, typography
@@ -185,7 +191,9 @@ admin/                            # Next.js 14 admin panel (Railway'de deployed)
   .env.local                      # gitignored — same Firebase config as mobile
 
 assets/
-  poses/                          # Pozlar oyunu görselleri (şu an sadece pose-sample.jpeg)
+  poses/                          # Pozlar görselleri: throne, raised-leg, rider (.jpeg)
+  glimpses/                       # Göz Ucuyla görselleri: covered-eyes, lifted-hem, from-behind,
+                                  # tilted-jaw, hand-in-hair (.jpeg)
 
 örnek uygulama fantazileri/       # [untracked] rakip app ekran görüntüleri — App Store
                                   # stratejisi için araştırma. Submit sonrası elle sil.
@@ -238,7 +246,7 @@ export type RoomBox = {
 - Cesur L2-L5 kategorileri henüz 6 prompt'ta (L1 örneği 10 prompt'a çıkarıldı, aynı pattern uygulanabilir)
 - Romantik dice + places genişlemesi yok
 - Flavor tag'leri mobil UI'da görünmüyor (data yerinde, admin'de setlenebilir; sadece render eksik)
-- **Pozlar görselleri**: Şu an 8 pozun hepsi aynı sample görselini kullanıyor. Kullanıcı yeni görseller gönderdikçe `assets/poses/*.jpeg` + `src/data/poses.ts` içindeki `image` referansı güncellenecek.
+- **Pozlar / Göz Ucuyla görselleri**: Yeni görsel gelince ilgili `assets/{poses,glimpses}/` klasörüne temiz bir isimle (boşluksuz) koy + `src/data/{poses,glimpses}.ts` içine entry ekle.
 
 **Kutular:**
 - `expo-clipboard` ile "Kodu kopyala" butonu yok (kod uzun bas + seç)
@@ -265,7 +273,7 @@ Kullanıcı rakip bir "couples dare" app'inin ekran görüntülerini paylaştı 
 
 - **Rakip içerik bizden çok daha explicit** — "oral sex", "genitals", "orgasm", "BDSM club" direkt kullanıyor, bizim L5 bondage'tan ağır. Yıllık $250 abonelikle App Store'da.
 - **Kritik fark**: Rakip metin-only, biz görsel + animasyon + UGC (Fanteziler) kullanıyoruz. Apple'ın UGC gereksinimleri (§1.2: filter, EULA, report, block) olmadan iOS reject garanti.
-- **Pozlar görseli App Store riski**: Mevcut sample görseli çıplaklık + cinsel pozisyon tasvir ediyor. §1.1.4 nedeniyle neredeyse kesin reject. Kullanıcıya iki yol önerildi: (a) AI generator ile silhouette prompt, (b) manual Photopea edit (nipple + poz nötralize), (c) Fiverr $80 silhouette seti. Henüz karar verilmedi — "yarın bakalım" dendi.
+- **Pozlar görseli App Store riski** (2026-10-15 güncelleme: sample görsel silindi, yerine giyinik/bikinili karakalem çizimler geldi — risk azaldı ama Pozlar hala cinsel pozisyon tasvir ediyor; Göz Ucuyla da görsel tabanlı, iOS gating planına dahil edilmeli). Eski not: Mevcut sample görseli çıplaklık + cinsel pozisyon tasvir ediyor. §1.1.4 nedeniyle neredeyse kesin reject. Kullanıcıya iki yol önerildi: (a) AI generator ile silhouette prompt, (b) manual Photopea edit (nipple + poz nötralize), (c) Fiverr $80 silhouette seti. Henüz karar verilmedi — "yarın bakalım" dendi.
 - **iOS strateji taslağı** (henüz implementasyon yok):
   1. Fanteziler'i iOS build'de kapat (Platform.OS gate)
   2. Pozlar görsellerini silhouette/clothed versiyona adapte et VEYA iOS'ta tamamen gizle
@@ -274,7 +282,27 @@ Kullanıcı rakip bir "couples dare" app'inin ekran görüntülerini paylaştı 
   5. Cesur L1-L5 içerik mobile'da kalır — rakip app çok daha explicit, mevcut içerik Apple'ı tetiklemez
 - **Pre-submission mail'i hazırlandı** (iki versiyon: genel içerik + poz görseli). Henüz gönderilmedi, kullanıcı önce illustrasyonu adapte etmek istiyor. Apple contact kanalı: Developer Portal → Contact Us → "App Review" ya da "Feedback and Other Topics". Pre-enrollment durumda app ID istendiği için formu kullanmak zor; email `appreview@apple.com` alternatif ama cevap oranı düşük.
 
-## Son Session Özet (2026-10-05 / 06)
+## Son Session Özet (2026-10-15)
+
+Tamamlanan:
+- **Göz Ucuyla / Glimpse** (yeni oyun, Home'da Pozlar'ın altında, ✧ ikon, renk `#D6336C`) — yarım/kışkırtıcı karakalem görsel + hayal gücü prompt'u. Gece moru kart (`#1C0F1A`), gül-kızılı çerçeve (`#F0507E`), kırmızı buton (`#E8366A`). İsim alternatifleri konuşuldu (Peek/Aralık, Tease/Yarım Kalan, Unseen/Görünmeyen) — şimdilik Glimpse / Göz Ucuyla.
+- **ArtDeckGame refactor** — PosesScreen'in tüm UI'ı `src/components/ArtDeck/ArtDeckGame.tsx`'e taşındı. `PosesScreen` + `GlimpsesScreen` sadece `ArtDeckTheme` sabiti + data + label veriyor. Tema module-level const olmalı (styles identity ile memoize).
+- **Gerçek görseller bağlandı** — kullanıcı 8 karakalem gönderdi: 5'i Göz Ucuyla'ya, 3'ü Pozlar'a. Dosyalar boşluksuz isimlere çevrildi, kart metinleri her görsele göre yazıldı. Eski 8 placeholder poz (Lotus Kucaklaşması vb.) silindi (git geçmişinde `3e554e1` ve öncesi).
+- Küçük destelerde aynı kartın arka arkaya gelmemesi için history boyu `min(5, n-1)`.
+- Home kart listesi ScrollView oldu (5 oyun küçük ekrana sığsın), kart minHeight 130 → 116.
+- i18n: `games.glimpses` + `glimpses.*` sadece en + tr'de; diğer 10 dil en fallback.
+
+Commit'ler: `3e554e1` (Glimpse + ArtDeck), `f232cad` (kullanıcı: poz görselleri), `bdfa9bc` (görseller bağlandı) — push edildi.
+
+**Commit edilmemiş (kullanıcının):** `package.json` + `package-lock.json` — expo `^57.0.25` → `~57.0.29`. Dokunulmadı.
+
+**Sonraki adımlar (açık):**
+- Göz Ucuyla + Pozlar'ı cihazda gözle kontrol et (refactor sonrası Pozlar görünümü aynı olmalı; beyaz zeminli görseller koyu Göz Ucuyla kartında nasıl duruyor bak)
+- Yeni görseller geldikçe `assets/{poses,glimpses}/` + data entry
+- Oyun ismini kesinleştir
+- Apple mail + iOS feature-gating (Fanteziler, Pozlar, Göz Ucuyla)
+
+## Önceki Session (2026-10-05 / 06)
 
 Tamamlanan:
 - **Pozlar oyunu** (yeni, Home'da Zar yerine) — 8 bundle poz, altın border beyaz kart, shimmer + konfeti

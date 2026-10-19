@@ -1,125 +1,41 @@
 import type { Pose } from '@/types';
 
-const SAMPLE = require('../../assets/poses/pose-sample.jpeg');
-
 /**
- * Starter Kama Sutra pose deck. All entries share the sample charcoal
- * sketch for now — swap individual `image` references as new art lands
- * under assets/poses/.
+ * Pose deck — sketch artwork lives under assets/poses/.
+ * Add a pose: drop the image there and append an entry.
  */
 export const POSES: Pose[] = [
   {
-    id: 'lotus-embrace',
-    name: 'Lotus Kucaklaşması',
+    id: 'throne',
+    name: 'Taht',
     description:
-      'Yüz yüze oturun, bacaklar birbirine dolanmış. Nefeslerinizi eşitleyin, alınlarınız değsin.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Lotus Embrace',
-      de: 'Lotus-Umarmung',
-      fr: 'Étreinte du Lotus',
-      es: 'Abrazo de Loto',
-      it: 'Abbraccio del Loto',
-      ja: '蓮の抱擁',
-      ko: '연꽃의 포옹',
-      'zh-TW': '蓮花擁抱',
-      id: 'Pelukan Lotus',
-      hi: 'कमल आलिंगन',
-      ar: 'عناق اللوتس',
-    },
+      'Partnerin sırt üstü uzanır, sen dizlerinin üzerinde, onun üstünde yükselirsin. Kontrol tamamen sende; ritmi sen belirle.',
+    image: require('../../assets/poses/throne.jpeg'),
+    nameI18n: { en: 'The Throne' },
     descriptionI18n: {
-      en: 'Sit face to face, legs intertwined. Match your breath, let your foreheads touch.',
+      en: 'Your partner lies back while you rise above them on your knees. You hold all the control — set the rhythm.',
     },
   },
   {
-    id: 'whispered-arch',
-    name: 'Fısıltı Yayı',
+    id: 'raised-leg',
+    name: 'Yükselen Bacak',
     description:
-      'Biriniz sırt üstü, diğeri yanında eğilmiş; kulağına yavaşça fısıldar.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Whispered Arch',
-    },
+      'Biri yan yatar, diğeri diz çöküp bir bacağını omzuna doğru kaldırır. Yavaş başlayın, göz temasını bırakmayın.',
+    image: require('../../assets/poses/raised-leg.jpeg'),
+    nameI18n: { en: 'Raised Leg' },
     descriptionI18n: {
-      en: 'One lies back, the other leans in to whisper slowly into their ear.',
+      en: 'One lies on their side, the other kneels and lifts a leg toward their shoulder. Start slow, keep the eye contact.',
     },
   },
   {
-    id: 'braided-shoulders',
-    name: 'Örülü Omuzlar',
+    id: 'rider',
+    name: 'Binici',
     description:
-      'Yan yana oturun, kollar birbirinin omzundan geçer, başlar yaslanır.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Braided Shoulders',
-    },
+      'Partnerin uzanır, sen kucağına oturursun; elleri belinde, yön sende. Gözlerini kapat ve sadece hisset.',
+    image: require('../../assets/poses/rider.jpeg'),
+    nameI18n: { en: 'The Rider' },
     descriptionI18n: {
-      en: 'Sit side by side, arms over each other’s shoulders, heads resting.',
-    },
-  },
-  {
-    id: 'crescent-wrap',
-    name: 'Hilal Sarması',
-    description:
-      'Biri yan yatar, diğeri arkadan sarılır; nefesler aynı ritimde gider.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Crescent Wrap',
-    },
-    descriptionI18n: {
-      en: 'One lies on their side, the other wraps from behind; breath syncs.',
-    },
-  },
-  {
-    id: 'mirror-kneel',
-    name: 'Ayna Diz Çöküşü',
-    description:
-      'Karşılıklı diz çökün, avuçlarınızı birleştirin, gözlerinizi kaçırmayın.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Mirror Kneel',
-    },
-    descriptionI18n: {
-      en: 'Kneel facing each other, press palms together, hold the gaze.',
-    },
-  },
-  {
-    id: 'tide-recline',
-    name: 'Gelgit Uzanması',
-    description:
-      'Biriniz uzanır, diğeri kafasını göğsüne koyar; parmaklar saçta gezer.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Tide Recline',
-    },
-    descriptionI18n: {
-      en: 'One reclines; the other rests their head on their chest, fingers drifting through hair.',
-    },
-  },
-  {
-    id: 'twin-moons',
-    name: 'İkiz Aylar',
-    description:
-      'Yüz yüze yan yatın; dizler birbirine değer, eller yüzlerde dolaşır.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Twin Moons',
-    },
-    descriptionI18n: {
-      en: 'Lie face to face on your sides; knees touch, hands wander across faces.',
-    },
-  },
-  {
-    id: 'silk-knot',
-    name: 'İpek Düğümü',
-    description:
-      'Biri bağdaş kurup oturur, diğeri kucağına yerleşir; bacaklar sarılır.',
-    image: SAMPLE,
-    nameI18n: {
-      en: 'Silk Knot',
-    },
-    descriptionI18n: {
-      en: 'One sits cross-legged, the other settles into their lap; legs intertwine.',
+      en: 'Your partner lies back, you sit astride; their hands on your waist, you lead. Close your eyes and just feel.',
     },
   },
 ];
