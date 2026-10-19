@@ -87,6 +87,8 @@ Toplam ~250 prompt (çoğu Türkçe; İngilizce çevirisi henüz yok).
 - `scripts/art/` bilerek `scripts/content/` dışında: `seed-content.js` oradaki her klasörü koleksiyon sayar.
 - **Firebase Storage Blaze plan ister** (bucket `love-games-prod.firebasestorage.app`).
 
+**Store kimliği (2026-10-19):** Uygulama adı **Wisp & Flame**, bundle ID / package `com.gunelenes.wispandflame` (slug hala `love_games`). Store metadata `store.config.json` (EAS Metadata) + `store/`. Gizlilik/destek sayfaları `docs/` → GitHub Pages. İletişim: Enes Günel · enesgunel@enesgunel.com (kullanıcının tercihi, sayfalarda public). Pozlar + Göz Ucuyla iOS'ta da açık kalacak (kullanıcı kararı, gating yok).
+
 ## Kullanıcı Tercihleri (Bunları Bil)
 
 - **Animasyon çıtası yüksek**. "Amatör" görünen düz çözüm reddedilir. Detay: `.claude/.../memory/feedback_animation_bar.md`.

@@ -10,7 +10,7 @@ App Store açıklaması ile Play uzun açıklaması aynı metin; birini değişt
 ## Kurallar (metin değiştirirken)
 
 - **Metadata'da geçmeyecek kelimeler:** sex, kink, fantasy, BDSM, erotic, adult toy. "Intimacy", "romantic", "date night", "for adult couples (18+)" güvenli.
-- **Pozlar / Göz Ucuyla açıklamada yok** — iOS'ta uzaktan kapalı gönderilecek. Açılırsa açıklamaya ve ekran görüntülerine sonra eklenir.
+- **Pozlar / Göz Ucuyla** uygulamada açık ve açıklamada "zarif karakalem çizimler" diliyle geçiyor. Ekran görüntülerine konmuyor (review riskini görsel olarak öne çıkarmamak için).
 - Keyword alanına ad/altyazıdaki kelimeleri tekrar yazma (Apple zaten sayıyor). Sınır: virgüllerle birlikte 100 karakter.
 - Ekran görüntüleri sadece Romantik (Yakınlık) L1–L2 içeriğinden.
 
@@ -50,10 +50,22 @@ iPhone 6.9" (1320×2868) zorunlu. `supportsTablet: false` olursa iPad gerekmez.
 - Fiyat: Ücretsiz (veya karar verilecek)
 - Review contact: ad, e-posta, telefon — bilerek repoya yazılmadı, App Store Connect'te gir.
 
+## Web sayfaları
+
+`docs/` → GitHub Pages (Settings → Pages → Deploy from branch: `main` / `/docs`):
+- https://gunelenes.github.io/love_games/ — ana sayfa (marketingUrl)
+- https://gunelenes.github.io/love_games/privacy/ — gizlilik politikası (EN + `#tr`)
+- https://gunelenes.github.io/love_games/support/ — destek + SSS (EN + `#tr`)
+
+Gizlilik politikası veri envanteri koddan çıkarıldı (anonim UID, Kutular, Öneri/Fanteziler, AsyncStorage, Firebase eur3). Analitik, reklam veya yeni bir veri türü eklenirse **politika + App Privacy tablosu + `app.json` privacyManifests** birlikte güncellenmeli.
+
 ## Eksik (göndermeden önce)
 
-- [ ] `privacyPolicyUrl` + `supportUrl` — Apple **zorunlu**. Sayfalar yazılınca iki locale'e de ekle.
-- [ ] `app.json`: ad "Wisp & Flame", `ios.bundleIdentifier`, `ITSAppUsesNonExemptEncryption: false`, privacy manifest, `supportsTablet: false`, splash.
-- [ ] Pozlar + Göz Ucuyla için iOS uzaktan bayrağı (review'a kapalı gönder).
-- [ ] Uygulama içi metinler: yaş kapısı "kink-oriented suggestions" diyor — reviewer bunu okur; metadata ile aynı dile ("intimate themes") çekilmeli.
-- [ ] App Store Connect'te uygulama kaydını aç — "Wisp & Flame" adı orada rezerve olur.
+- [x] Gizlilik + destek URL'leri
+- [x] `app.json`: ad, bundle ID `com.gunelenes.wispandflame`, şifreleme beyanı, privacy manifest, `supportsTablet: false`, splash · `eas.json`
+- [x] Yaş kapısı metni (kink ifadesi kaldırıldı, 12 dil)
+- [ ] GitHub Pages'i aç (yukarıdaki ayar) ve URL'lerin açıldığını kontrol et
+- [ ] Logo / app ikonu + splash görseli (şu an Expo varsayılanı)
+- [ ] Apple Developer üyeliği → App Store Connect'te uygulama kaydı ("Wisp & Flame" adı orada rezerve olur)
+- [ ] `eas init` + `eas build -p ios --profile production` + `eas metadata:push`
+- [ ] Ekran görüntüleri

@@ -1,0 +1,41 @@
+:root {
+  --bg: #0f0f1a;
+  --bg-soft: #1a1a2e;
+  --fg: #f5f5f7;
+  --fg-dim: #b0b0c0;
+  --accent: #ff4d6d;
+  --gold: #ffd166;
+  --border: rgba(255, 255, 255, 0.08);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+header { margin-bottom: 32px; }
+.brand { color: var(--gold); letter-spacing: 0.18em; font-size: 13px; font-weight: 700; text-transform: uppercase; text-decoration: none; }
+h1 { font-size: 32px; line-height: 1.2; margin: 8px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 8px; color: var(--fg); }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+p, li { color: var(--fg-dim); }
+strong { color: var(--fg); }
+a { color: var(--accent); }
+ul { padding-left: 20px; }
+.meta { color: var(--fg-dim); font-size: 14px; margin: 0; }
+.lang { display: flex; gap: 8px; margin-top: 16px; }
+.lang a { padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; color: var(--fg); text-decoration: none; font-size: 14px; }
+.lang a:hover { border-color: var(--accent); }
+section + section { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--border); color: var(--fg-dim); }
+th { color: var(--fg); font-weight: 600; }
+.cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 24px; }
+.card { display: block; padding: 20px; background: var(--bg-soft); border: 1px solid var(--border); border-radius: 16px; color: var(--fg); text-decoration: none; }
+.card:hover { border-color: var(--accent); }
+.card span { display: block; color: var(--fg-dim); font-size: 14px; margin-top: 4px; }
+footer { margin-top: 64px; color: var(--fg-dim); font-size: 13px; }
+@media (max-width: 480px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--border); padding: 10px 0; } }
