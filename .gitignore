@@ -50,6 +50,12 @@ admin/scripts/service-account.json
 # but keep app assets
 !assets/**/*.png
 !assets/**/*.jpg
+!docs/**/*.png
+!store/**/*.png
+!store/**/*.jpg
+!scripts/art/**/*.jpeg
+!scripts/art/**/*.jpg
+!scripts/art/**/*.png
 !assets/**/*.jpeg
 
 # typescript
