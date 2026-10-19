@@ -62,7 +62,7 @@
     "drawCard": "カードを引く",
     "newCard": "次のカード",
     "hint": "下のデッキをタップ → 一枚引く",
-    "cardBack": "love_games",
+    "cardBack": "Wisp & Flame",
     "selectionSummary": "{{count}} カテゴリー · {{prompts}} 件のお題",
     "categoryFallback": "カテゴリー",
     "footerPrompt": "もう一枚引く",
