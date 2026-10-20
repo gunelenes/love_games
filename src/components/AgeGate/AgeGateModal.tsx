@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
   Dimensions,
+  Linking,
   Modal,
   Pressable,
   StyleSheet,
@@ -14,6 +15,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
 import { useTranslation } from 'react-i18next';
+import { legalUrl } from '@/data/legal';
 import { useAgeGate } from '@/hooks/useAgeGate';
 import { colors } from '@/theme/colors';
 import { typography } from '@/theme/typography';
@@ -22,7 +24,7 @@ import { withAlpha } from '@/utils/color';
 const { width } = Dimensions.get('window');
 
 export function AgeGateModal() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { accepted, ready, accept } = useAgeGate();
   const [checked, setChecked] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -93,6 +95,15 @@ export function AgeGateModal() {
           </Pressable>
 
           <Pressable
+            onPress={() => void Linking.openURL(legalUrl('terms', i18n.language))}
+            accessibilityRole="link"
+            hitSlop={8}
+            style={styles.termsLink}
+          >
+            <Text style={styles.termsLinkText}>{t('legal.readTerms')} ↗</Text>
+          </Pressable>
+
+          <Pressable
             onPress={submit}
             disabled={!checked || submitting}
             style={[
@@ -132,6 +143,18 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.1)',
     gap: 14,
+  },
+  termsLink: {
+    alignSelf: 'flex-start',
+    marginTop: -6,
+    minHeight: 32,
+    justifyContent: 'center',
+  },
+  termsLinkText: {
+    color: colors.accent,
+    fontSize: 13,
+    fontWeight: '700',
+    textDecorationLine: 'underline',
   },
   emoji: {
     fontSize: 48,

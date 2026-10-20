@@ -203,7 +203,7 @@
   "ageGate": {
     "title": "Konten Dewasa",
     "body": "Aplikasi ini ditujukan untuk **dewasa usia 18 tahun ke atas**. Konten mencakup tema sensual dan intim untuk pasangan. Untuk melanjutkan:",
-    "checkbox": "Saya berusia 18+ dan akan menggunakannya bersama **pasangan saya** dengan persetujuan bersama.",
+    "checkbox": "Saya berusia 18+, akan menggunakannya bersama **pasangan saya** atas persetujuan bersama, dan menyetujui **Ketentuan Penggunaan**.",
     "accept": "Setuju dan Lanjutkan",
     "saving": "Menyimpan…",
     "footer": "Persetujuan ini hanya disimpan di perangkatmu. Tidak ada info akun atau lokasi yang dikirim."
@@ -227,5 +227,52 @@
     "rtlReloadBody": "Bahasa Arab menggunakan tata letak kanan-ke-kiri. Aplikasi perlu dimulai ulang untuk menerapkan perubahan arah.",
     "rtlReloadButton": "Mulai ulang sekarang",
     "close": "Tutup"
+  },
+  "safety": {
+    "menuTitle": "Opsi ruang",
+    "reportProblem": "Laporkan masalah",
+    "reportProblemSub": "Ceritakan pelecehan atau apa pun yang terasa tidak benar",
+    "blockPartner": "Keluarkan & blokir pasangan",
+    "blockPartnerSub": "Kehilangan akses dan tidak bisa bergabung lagi",
+    "leaveSub": "Keluar dari ruang ini",
+    "blockTitle": "Keluarkan & blokir pasanganmu?",
+    "blockTextHost": "Pasanganmu langsung dikeluarkan dari ruang ini dan catatannya dihapus. Ia tidak bisa bergabung lagi dengan kode ini atau ke ruang yang kamu buat nanti.",
+    "blockTextGuest": "Kamu akan keluar dari ruang ini dan tidak bisa bergabung ke ruang yang dibuat orang ini di masa depan.",
+    "blockConfirm": "Keluarkan & blokir",
+    "leaveTitle": "Keluar dari ruang?",
+    "leaveGuest": "Kamu akan keluar dari ruang ini. Kotak tetap ada pada pasanganmu, dan kamu bisa bergabung lagi dengan kode.",
+    "leaveHostHandover": "Pasanganmu menjadi pemilik ruang dan menyimpan kotaknya. Kamu bisa bergabung lagi dengan kode.",
+    "leaveHostClose": "Kamu sendirian di ruang ini, jadi jika keluar ruang ini akan dihapus beserta semua kotaknya.",
+    "working": "Sebentar…",
+    "blocking": "Memblokir…",
+    "reportTitle": "Laporkan masalah",
+    "reportNoteTitle": "Laporkan catatan ini",
+    "reportNote": "Laporkan",
+    "reasonLabel": "Apa masalahnya?",
+    "reason": {
+      "harassment": "Pelecehan atau ancaman",
+      "inappropriate": "Konten yang tidak diinginkan atau menyinggung",
+      "spam": "Spam",
+      "other": "Lainnya"
+    },
+    "detailsPlaceholder": "Tambahkan detail (opsional)",
+    "sendReport": "Kirim laporan",
+    "sending": "Mengirim…",
+    "reportError": "Laporan tidak dapat dikirim. Periksa koneksimu lalu coba lagi.",
+    "reportFootnote": "Laporan hanya dikirim ke tim Wisp & Flame, tidak pernah ke pasanganmu. Kami meninjau setiap laporan dalam 24 jam.",
+    "reportSentTitle": "Terima kasih sudah memberi tahu kami",
+    "reportSentText": "Kami akan meninjaunya dalam 24 jam. Jika kamu merasa tidak aman, kamu bisa mengeluarkan dan memblokir pasanganmu sekarang.",
+    "alsoBlock": "Keluarkan & blokir pasangan",
+    "done": "Selesai",
+    "roomBlocked": "Kamu tidak bisa bergabung ke ruang ini.",
+    "noticeRemoved": "Pasanganmu mengeluarkanmu dari ruang.",
+    "noticeClosed": "Ruang itu ditutup oleh pemiliknya."
+  },
+  "legal": {
+    "title": "Legal & dukungan",
+    "terms": "Ketentuan Penggunaan",
+    "privacy": "Kebijakan Privasi",
+    "support": "Bantuan & kontak",
+    "readTerms": "Baca Ketentuan Penggunaan"
   }
 }

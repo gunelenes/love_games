@@ -203,7 +203,7 @@
   "ageGate": {
     "title": "Contenu adulte",
     "body": "Cette app est destinée aux **adultes de 18 ans et plus**. Le contenu aborde des thèmes sensuels et intimes pour les couples. Pour continuer :",
-    "checkbox": "J'ai 18 ans ou plus et j'utiliserai cette app avec **mon/ma partenaire** en plein consentement mutuel.",
+    "checkbox": "J'ai 18 ans ou plus, j'utiliserai l'app avec **mon/ma partenaire** d'un commun accord et j'accepte les **Conditions d'utilisation**.",
     "accept": "Accepter et continuer",
     "saving": "Enregistrement…",
     "footer": "Ce consentement est stocké uniquement sur ton appareil. Aucun compte ni info de localisation n'est envoyé."
@@ -227,5 +227,52 @@
     "rtlReloadTitle": "Redémarrage nécessaire",
     "rtlReloadBody": "L'arabe s'affiche de droite à gauche. L'app doit redémarrer pour appliquer ce changement.",
     "rtlReloadButton": "Redémarrer"
+  },
+  "safety": {
+    "menuTitle": "Options du salon",
+    "reportProblem": "Signaler un problème",
+    "reportProblemSub": "Dis-nous en cas de harcèlement ou de malaise",
+    "blockPartner": "Retirer et bloquer le/la partenaire",
+    "blockPartnerSub": "Perd l'accès et ne peut plus revenir",
+    "leaveSub": "Quitter ce salon",
+    "blockTitle": "Retirer et bloquer ton/ta partenaire ?",
+    "blockTextHost": "Ton/ta partenaire est retiré(e) du salon immédiatement et ses notes sont supprimées. Il/elle ne pourra pas revenir avec ce code ni rejoindre tes futurs salons.",
+    "blockTextGuest": "Tu quitteras ce salon et ne pourras plus rejoindre les salons créés par cette personne.",
+    "blockConfirm": "Retirer et bloquer",
+    "leaveTitle": "Quitter le salon ?",
+    "leaveGuest": "Tu quittes ce salon. Ton/ta partenaire garde les boîtes, et tu peux revenir avec le code.",
+    "leaveHostHandover": "Ton/ta partenaire devient propriétaire du salon et garde les boîtes. Tu peux revenir avec le code.",
+    "leaveHostClose": "Tu es seul(e) dans ce salon : en le quittant, il sera supprimé avec toutes ses boîtes.",
+    "working": "Un instant…",
+    "blocking": "Blocage…",
+    "reportTitle": "Signaler un problème",
+    "reportNoteTitle": "Signaler cette note",
+    "reportNote": "Signaler",
+    "reasonLabel": "Quel est le problème ?",
+    "reason": {
+      "harassment": "Harcèlement ou menaces",
+      "inappropriate": "Contenu non désiré ou choquant",
+      "spam": "Spam",
+      "other": "Autre chose"
+    },
+    "detailsPlaceholder": "Ajouter des détails (facultatif)",
+    "sendReport": "Envoyer le signalement",
+    "sending": "Envoi…",
+    "reportError": "Impossible d'envoyer le signalement. Vérifie ta connexion et réessaie.",
+    "reportFootnote": "Les signalements vont uniquement à l'équipe Wisp & Flame, jamais à ton/ta partenaire. Nous examinons chaque signalement sous 24 heures.",
+    "reportSentTitle": "Merci de nous avoir prévenus",
+    "reportSentText": "Nous l'examinerons sous 24 heures. Si tu ne te sens pas en sécurité, tu peux retirer et bloquer ton/ta partenaire maintenant.",
+    "alsoBlock": "Retirer et bloquer le/la partenaire",
+    "done": "Terminé",
+    "roomBlocked": "Tu ne peux pas rejoindre ce salon.",
+    "noticeRemoved": "Ton/ta partenaire t'a retiré(e) du salon.",
+    "noticeClosed": "Ce salon a été fermé par son propriétaire."
+  },
+  "legal": {
+    "title": "Mentions légales et aide",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "support": "Aide et contact",
+    "readTerms": "Lire les Conditions d'utilisation"
   }
 }

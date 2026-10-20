@@ -10,6 +10,7 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Animated, { FadeInDown, FadeOutUp } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
 import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -32,7 +33,7 @@ type Mode = 'idle' | 'creating' | 'joining';
 export function RoomLobbyScreen({ navigation }: Props) {
   const { t } = useTranslation();
   const { uid, ready: authReady, error: authError, retry: retryAuth } = useAuth();
-  const { setCode } = useRoom();
+  const { setCode, notice, clearNotice } = useRoom();
   const [mode, setMode] = useState<Mode>('idle');
   const [code, setCodeInput] = useState('');
   const [busy, setBusy] = useState(false);
@@ -102,6 +103,8 @@ export function RoomLobbyScreen({ navigation }: Props) {
       setError(t('boxes.roomNotFound'));
     } else if (res.status === 'full') {
       setError(t('boxes.roomFull'));
+    } else if (res.status === 'blocked') {
+      setError(t('safety.roomBlocked'));
     } else {
       setError(res.message);
     }
@@ -126,6 +129,28 @@ export function RoomLobbyScreen({ navigation }: Props) {
             <Text style={styles.title}>{t('boxes.lobbyTitle')}</Text>
             <Text style={styles.subtitle}>{t('boxes.lobbySubtitle')}</Text>
           </View>
+
+          {notice ? (
+            <Animated.View
+              entering={FadeInDown.springify().damping(16)}
+              exiting={FadeOutUp.duration(180)}
+              style={styles.notice}
+            >
+              <Text style={styles.noticeText}>
+                {notice === 'removed'
+                  ? t('safety.noticeRemoved')
+                  : t('safety.noticeClosed')}
+              </Text>
+              <Pressable
+                onPress={clearNotice}
+                hitSlop={10}
+                accessibilityRole="button"
+                accessibilityLabel={t('boxes.close')}
+              >
+                <Text style={styles.noticeClose}>✕</Text>
+              </Pressable>
+            </Animated.View>
+          ) : null}
 
           {!authReady ? (
             <View style={styles.centerHint}>
@@ -426,5 +451,29 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
     marginTop: 4,
+  },
+  notice: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    marginHorizontal: 24,
+    marginBottom: 8,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: withAlpha('#FCD34D', 0.45),
+    backgroundColor: withAlpha('#FCD34D', 0.1),
+  },
+  noticeText: {
+    flex: 1,
+    color: colors.fg,
+    fontSize: 13,
+    lineHeight: 18,
+  },
+  noticeClose: {
+    color: colors.fgDim,
+    fontSize: 14,
+    fontWeight: '700',
   },
 });

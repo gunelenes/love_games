@@ -203,7 +203,7 @@
   "ageGate": {
     "title": "Contenido para adultos",
     "body": "Esta app está pensada para **adultos de 18 años o más**. El contenido incluye temas sensuales e íntimos para parejas. Para continuar:",
-    "checkbox": "Tengo 18+ y voy a usarla con **mi pareja** en consentimiento mutuo.",
+    "checkbox": "Tengo 18+, lo usaré con **mi pareja** con consentimiento mutuo y acepto las **Condiciones de uso**.",
     "accept": "Aceptar y continuar",
     "saving": "Guardando…",
     "footer": "Este consentimiento se guarda solo en tu dispositivo. No se envía ninguna cuenta ni ubicación."
@@ -227,5 +227,52 @@
     "rtlReloadTitle": "Reinicio necesario",
     "rtlReloadBody": "El árabe usa una disposición de derecha a izquierda. La app debe reiniciarse para aplicar el cambio de dirección.",
     "rtlReloadButton": "Reiniciar ahora"
+  },
+  "safety": {
+    "menuTitle": "Opciones de la sala",
+    "reportProblem": "Informar de un problema",
+    "reportProblemSub": "Cuéntanos si hay acoso o algo que no se sienta bien",
+    "blockPartner": "Expulsar y bloquear a tu pareja",
+    "blockPartnerSub": "Pierde el acceso y no puede volver a entrar",
+    "leaveSub": "Salir de esta sala",
+    "blockTitle": "¿Expulsar y bloquear a tu pareja?",
+    "blockTextHost": "Tu pareja sale de la sala al instante y sus notas se eliminan. No podrá volver con este código ni unirse a salas que crees más adelante.",
+    "blockTextGuest": "Saldrás de esta sala y no podrás unirte a las salas que esta persona cree en el futuro.",
+    "blockConfirm": "Expulsar y bloquear",
+    "leaveTitle": "¿Salir de la sala?",
+    "leaveGuest": "Saldrás de esta sala. Tu pareja conserva las cajas y puedes volver con el código.",
+    "leaveHostHandover": "Tu pareja pasa a ser la dueña de la sala y conserva las cajas. Puedes volver con el código.",
+    "leaveHostClose": "Estás solo en esta sala, así que al salir se eliminará junto con todas sus cajas.",
+    "working": "Un momento…",
+    "blocking": "Bloqueando…",
+    "reportTitle": "Informar de un problema",
+    "reportNoteTitle": "Denunciar esta nota",
+    "reportNote": "Denunciar",
+    "reasonLabel": "¿Qué ocurre?",
+    "reason": {
+      "harassment": "Acoso o amenazas",
+      "inappropriate": "Contenido no deseado u ofensivo",
+      "spam": "Spam",
+      "other": "Otra cosa"
+    },
+    "detailsPlaceholder": "Añade detalles (opcional)",
+    "sendReport": "Enviar denuncia",
+    "sending": "Enviando…",
+    "reportError": "No se pudo enviar la denuncia. Revisa tu conexión e inténtalo de nuevo.",
+    "reportFootnote": "Las denuncias solo llegan al equipo de Wisp & Flame, nunca a tu pareja. Revisamos cada denuncia en 24 horas.",
+    "reportSentTitle": "Gracias por avisarnos",
+    "reportSentText": "La revisaremos en 24 horas. Si no te sientes seguro, puedes expulsar y bloquear a tu pareja ahora.",
+    "alsoBlock": "Expulsar y bloquear a tu pareja",
+    "done": "Listo",
+    "roomBlocked": "No puedes unirte a esta sala.",
+    "noticeRemoved": "Tu pareja te ha sacado de la sala.",
+    "noticeClosed": "La sala fue cerrada por su dueño."
+  },
+  "legal": {
+    "title": "Legal y ayuda",
+    "terms": "Condiciones de uso",
+    "privacy": "Política de privacidad",
+    "support": "Ayuda y contacto",
+    "readTerms": "Leer las Condiciones de uso"
   }
 }

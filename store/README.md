@@ -32,7 +32,7 @@ iPhone 6.9" (1320×2868) zorunlu. `supportsTablet: false` olursa iPad gerekmez.
 `store.config.json`'ın kapsamadığı alanlar:
 
 **Yaş derecelendirmesi — yeni sorular** (EAS şemasında yok):
-- User-generated content: **Yes** — Kutular'daki notlar odadaki iki partner arasında paylaşılıyor. Öneriler/Fanteziler sadece geliştiriciye gidiyor, kimseye gösterilmiyor.
+- User-generated content: **Yes** — Kutular'daki notlar odadaki iki partner arasında paylaşılıyor. Öneriler/Fanteziler sadece geliştiriciye gidiyor, kimseye gösterilmiyor. §1.2 önlemleri yerinde: şikâyet (not + partner), partneri çıkar ve engelle (Firestore rules ile zorlanır), Kullanım Koşulları (sıfır tolerans, yaş kapısında kabul), admin `/reports` paneli. **Şikâyetlere 24 saat içinde bakma sözü verildi** (uygulama, Terms ve reviewer notunda).
 - Messaging / chat: **No**
 - Advertising: **No**
 - Sonuç: **18+** olmalı (advisory'de sexual content + mature themes "frequent/intense" işaretli; uygulama içi 18+ kapısıyla tutarlı).
@@ -42,7 +42,7 @@ iPhone 6.9" (1320×2868) zorunlu. `supportsTablet: false` olursa iPad gerekmez.
 | Veri türü | Neden | Kimlikle bağlantılı? |
 |---|---|---|
 | Identifiers → User ID (Firebase anonim UID) | App Functionality | Hayır |
-| User Content → Other User Content (Kutular notları, Öneri/Fantezi metinleri) | App Functionality | Hayır |
+| User Content → Other User Content (Kutular notları, Öneri/Fantezi metinleri, şikâyet metinleri) | App Functionality | Hayır |
 
 İsim, e-posta, konum, kişiler, analitik, crash log **toplanmıyor**. Analitik veya Crashlytics eklenirse bu tablo güncellenmeli.
 
@@ -56,6 +56,7 @@ iPhone 6.9" (1320×2868) zorunlu. `supportsTablet: false` olursa iPad gerekmez.
 - https://gunelenes.github.io/love_games/ — ana sayfa (marketingUrl)
 - https://gunelenes.github.io/love_games/privacy/ — gizlilik politikası (EN + `#tr`)
 - https://gunelenes.github.io/love_games/support/ — destek + SSS (EN + `#tr`)
+- https://gunelenes.github.io/love_games/terms/ — Kullanım Koşulları, §1.2 sıfır tolerans maddesi (EN + `#tr`). Uygulama içinde yaş kapısından ve Ayarlar → Yasal ve destek'ten açılır.
 
 Gizlilik politikası veri envanteri koddan çıkarıldı (anonim UID, Kutular, Öneri/Fanteziler, AsyncStorage, Firebase eur3). Analitik, reklam veya yeni bir veri türü eklenirse **politika + App Privacy tablosu + `app.json` privacyManifests** birlikte güncellenmeli.
 

@@ -203,7 +203,7 @@
   "ageGate": {
     "title": "Contenuto per adulti",
     "body": "Questa app è destinata ad **adulti dai 18 anni in su**. I contenuti includono tematiche sensuali e intime per coppie. Per continuare:",
-    "checkbox": "Ho 18+ anni e userò l'app con **il mio partner** nel reciproco consenso.",
+    "checkbox": "Ho 18+ anni, userò l’app con **il/la mio/a partner** di comune accordo e accetto i **Termini di utilizzo**.",
     "accept": "Accetto e Continuo",
     "saving": "Salvataggio…",
     "footer": "Questo consenso viene salvato solo sul tuo dispositivo. Nessun account o informazione sulla posizione viene inviata."
@@ -227,5 +227,52 @@
     "rtlReloadTitle": "Riavvio necessario",
     "rtlReloadBody": "L'arabo usa il layout da destra a sinistra. L'app deve riavviarsi per applicare il cambio di direzione.",
     "rtlReloadButton": "Riavvia ora"
+  },
+  "safety": {
+    "menuTitle": "Opzioni della stanza",
+    "reportProblem": "Segnala un problema",
+    "reportProblemSub": "Raccontaci di molestie o di qualsiasi cosa non vada",
+    "blockPartner": "Rimuovi e blocca il partner",
+    "blockPartnerSub": "Perde l’accesso e non può rientrare",
+    "leaveSub": "Esci da questa stanza",
+    "blockTitle": "Rimuovere e bloccare il partner?",
+    "blockTextHost": "Il partner viene rimosso subito dalla stanza e le sue note vengono eliminate. Non potrà rientrare con questo codice né unirsi alle stanze che crei in futuro.",
+    "blockTextGuest": "Uscirai da questa stanza e non potrai unirti alle stanze che questa persona creerà in futuro.",
+    "blockConfirm": "Rimuovi e blocca",
+    "leaveTitle": "Uscire dalla stanza?",
+    "leaveGuest": "Uscirai da questa stanza. Le scatole restano al partner e puoi rientrare con il codice.",
+    "leaveHostHandover": "Il partner diventa proprietario della stanza e tiene le scatole. Puoi rientrare con il codice.",
+    "leaveHostClose": "Sei da solo nella stanza: uscendo verrà eliminata con tutte le sue scatole.",
+    "working": "Un momento…",
+    "blocking": "Blocco in corso…",
+    "reportTitle": "Segnala un problema",
+    "reportNoteTitle": "Segnala questa nota",
+    "reportNote": "Segnala",
+    "reasonLabel": "Qual è il problema?",
+    "reason": {
+      "harassment": "Molestie o minacce",
+      "inappropriate": "Contenuti indesiderati o offensivi",
+      "spam": "Spam",
+      "other": "Altro"
+    },
+    "detailsPlaceholder": "Aggiungi dettagli (facoltativo)",
+    "sendReport": "Invia segnalazione",
+    "sending": "Invio…",
+    "reportError": "Impossibile inviare la segnalazione. Controlla la connessione e riprova.",
+    "reportFootnote": "Le segnalazioni arrivano solo al team di Wisp & Flame, mai al tuo partner. Esaminiamo ogni segnalazione entro 24 ore.",
+    "reportSentTitle": "Grazie per avercelo detto",
+    "reportSentText": "La esamineremo entro 24 ore. Se non ti senti al sicuro, puoi rimuovere e bloccare il partner adesso.",
+    "alsoBlock": "Rimuovi e blocca il partner",
+    "done": "Fatto",
+    "roomBlocked": "Non puoi unirti a questa stanza.",
+    "noticeRemoved": "Il tuo partner ti ha rimosso dalla stanza.",
+    "noticeClosed": "La stanza è stata chiusa dal proprietario."
+  },
+  "legal": {
+    "title": "Note legali e assistenza",
+    "terms": "Termini di utilizzo",
+    "privacy": "Informativa sulla privacy",
+    "support": "Aiuto e contatti",
+    "readTerms": "Leggi i Termini di utilizzo"
   }
 }

@@ -6,6 +6,7 @@ import {
   updateDoc,
 } from 'firebase/firestore';
 import { firebaseFirestore } from './firebase';
+import { getLocalBlocked } from './safetyService';
 import type { Level, Track } from '@/types';
 
 // Unambiguous alphabet (excludes 0/O/1/I/L)
@@ -30,6 +31,8 @@ export type Room = {
   track?: Track;
   /** Ortak level. */
   level?: Level;
+  /** Uids the host removed + blocked; firestore.rules refuses their join. */
+  blockedUids?: string[];
 };
 
 export type CreateRoomResult =
@@ -40,6 +43,7 @@ export type JoinRoomResult =
   | { status: 'ok'; code: string }
   | { status: 'not_found' }
   | { status: 'full' }
+  | { status: 'blocked' }
   | { status: 'error'; message: string };
 
 /**
@@ -50,6 +54,9 @@ export async function createRoom(hostUid: string): Promise<CreateRoomResult> {
   if (!firebaseFirestore) {
     return { status: 'error', message: 'Firestore hazır değil' };
   }
+  // Carry this user's blocks into the new room so a blocked partner
+  // can't simply be handed a fresh code.
+  const blockedUids = await getLocalBlocked();
   for (let attempt = 0; attempt < 5; attempt++) {
     const code = generateCode();
     try {
@@ -65,6 +72,7 @@ export async function createRoom(hostUid: string): Promise<CreateRoomResult> {
           active: true,
           track: 'romantik',
           level: 1,
+          blockedUids,
         });
         return true;
       });
@@ -91,6 +99,7 @@ export async function joinRoom(
   if (!/^[A-Z2-9]{6}$/.test(normalized)) {
     return { status: 'not_found' };
   }
+  const myBlocked = await getLocalBlocked();
   try {
     return await runTransaction<JoinRoomResult>(
       firebaseFirestore,
@@ -101,6 +110,12 @@ export async function joinRoom(
         const data = snap.data() as Room;
         if (data.hostUid === uid || data.guestUid === uid) {
           return { status: 'ok', code: normalized };
+        }
+        if (
+          data.blockedUids?.includes(uid) ||
+          myBlocked.includes(data.hostUid)
+        ) {
+          return { status: 'blocked' };
         }
         if (data.guestUid && data.guestUid !== uid) {
           return { status: 'full' };

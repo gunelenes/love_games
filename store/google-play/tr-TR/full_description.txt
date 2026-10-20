@@ -15,6 +15,7 @@ OYUNLAR
 
 İKİ KİŞİ İÇİN TASARLANDI
 • Üyelik yok, profil yok, akış yok. Uygulamayı açın ve oynayın.
+• Gizlilik öncelikli: Odalar yalnızca davetle açılır; istediğiniz an şikâyet edebilir veya engelleyebilirsiniz.
 • Çiftler için yazılmış yüzlerce görev; yenileri düzenli olarak ekleniyor.
 • Türkçe, İngilizce, İspanyolca, Almanca, Fransızca, Japonca ve Korece dahil 12 dilde.
 • Kendi fikirlerinizi Ayarlar'dan bize gönderin; en iyileri yeni kartlar olabilir.

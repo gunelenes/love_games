@@ -146,3 +146,38 @@ export const SUBMISSION_STATUS_LABEL: Record<SubmissionStatus, string> = {
   implemented: '✅ Eklendi',
   rejected: '❌ Reddedildi',
 };
+
+/**
+ * Safety report filed from the mobile Boxes screens (App Store §1.2).
+ * Mirrors the payload of submitReport in src/services/safetyService.ts.
+ */
+export type ReportReason = 'harassment' | 'inappropriate' | 'spam' | 'other';
+export type ReportStatus = 'new' | 'actioned' | 'dismissed';
+
+export type Report = {
+  id: string;
+  uid: string;
+  roomCode: string;
+  reportedUid: string | null;
+  reason: ReportReason;
+  details: string;
+  noteText: string;
+  locale: string;
+  status: ReportStatus;
+  createdAt?: { seconds: number; nanoseconds: number } | null;
+};
+
+export const REPORT_STATUSES: ReportStatus[] = ['new', 'actioned', 'dismissed'];
+
+export const REPORT_STATUS_LABEL: Record<ReportStatus, string> = {
+  new: '🚩 Yeni',
+  actioned: '✅ İşlem yapıldı',
+  dismissed: '➖ Geçersiz',
+};
+
+export const REPORT_REASON_LABEL: Record<ReportReason, string> = {
+  harassment: 'Taciz / tehdit',
+  inappropriate: 'İstenmeyen / rahatsız edici içerik',
+  spam: 'Spam',
+  other: 'Diğer',
+};

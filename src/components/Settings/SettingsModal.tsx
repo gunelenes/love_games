@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Alert,
+  Linking,
   Modal,
   Pressable,
   ScrollView,
@@ -13,6 +14,7 @@ import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 import * as Haptics from 'expo-haptics';
+import { legalUrl } from '@/data/legal';
 import { useLanguage } from '@/hooks/useLanguage';
 import type { RootStackParamList } from '@/navigation/RootNav';
 import { colors } from '@/theme/colors';
@@ -157,6 +159,20 @@ export function SettingsModal({ visible, onClose }: Props) {
             </Pressable>
           </View>
 
+          <Text style={styles.label}>{t('legal.title')}</Text>
+          <View style={styles.legalRow}>
+            {(['terms', 'privacy', 'support'] as const).map((page) => (
+              <Pressable
+                key={page}
+                onPress={() => void Linking.openURL(legalUrl(page, language))}
+                accessibilityRole="link"
+                style={({ pressed }) => [styles.legalChip, { opacity: pressed ? 0.75 : 1 }]}
+              >
+                <Text style={styles.legalChipText}>{t(`legal.${page}`)}</Text>
+              </Pressable>
+            ))}
+          </View>
+
           {__DEV__ ? (
             <Pressable onPress={handleResetPrefs} style={styles.devResetBtn}>
               <Text style={styles.devResetLabel}>🧹 Reset Prefs (DEV)</Text>
@@ -271,6 +287,25 @@ const styles = StyleSheet.create({
   linkRow: {
     flexDirection: 'row',
     gap: 10,
+  },
+  legalRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  legalChip: {
+    minHeight: 40,
+    justifyContent: 'center',
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.14)',
+    backgroundColor: 'rgba(255,255,255,0.04)',
+  },
+  legalChipText: {
+    color: colors.fg,
+    fontSize: 13,
+    fontWeight: '700',
   },
   linkBtn: {
     flex: 1,

@@ -202,7 +202,7 @@
   "ageGate": {
     "title": "Adult Content",
     "body": "This app is intended for **adults aged 18 and over**. Content includes sensual and intimate themes for couples. To continue:",
-    "checkbox": "I am 18+ and will use this with **my partner** in mutual consent.",
+    "checkbox": "I am 18+, will use this with **my partner** in mutual consent, and agree to the **Terms of Use**.",
     "accept": "Accept and Continue",
     "saving": "Saving…",
     "footer": "This consent is stored only on your device. No account or location info is sent."
@@ -261,5 +261,52 @@
     "thanksTitle": "Thank you ✨",
     "thanksBody": "Your spark is in. We might turn it into a card or scenario soon.",
     "sendAnother": "Share another"
+  },
+  "safety": {
+    "menuTitle": "Room options",
+    "reportProblem": "Report a problem",
+    "reportProblemSub": "Tell us about abuse or anything that feels wrong",
+    "blockPartner": "Remove & block partner",
+    "blockPartnerSub": "They lose access and can't rejoin",
+    "leaveSub": "Step out of this room",
+    "blockTitle": "Remove & block your partner?",
+    "blockTextHost": "Your partner is removed from this room right away and their notes are deleted. They can't rejoin with this code or join rooms you create later.",
+    "blockTextGuest": "You'll leave this room and won't be able to join rooms this person creates in the future.",
+    "blockConfirm": "Remove & block",
+    "leaveTitle": "Leave the room?",
+    "leaveGuest": "You'll leave this room. Your partner keeps the boxes, and you can rejoin with the code.",
+    "leaveHostHandover": "Your partner becomes the room owner and keeps the boxes. You can rejoin with the code.",
+    "leaveHostClose": "You're alone in this room, so leaving deletes it together with all its boxes.",
+    "working": "One moment…",
+    "blocking": "Blocking…",
+    "reportTitle": "Report a problem",
+    "reportNoteTitle": "Report this note",
+    "reportNote": "Report",
+    "reasonLabel": "What's wrong?",
+    "reason": {
+      "harassment": "Harassment or threats",
+      "inappropriate": "Unwanted or offensive content",
+      "spam": "Spam",
+      "other": "Something else"
+    },
+    "detailsPlaceholder": "Add details (optional)",
+    "sendReport": "Send report",
+    "sending": "Sending…",
+    "reportError": "Couldn't send the report. Check your connection and try again.",
+    "reportFootnote": "Reports go only to the Wisp & Flame team, never to your partner. We review every report within 24 hours.",
+    "reportSentTitle": "Thanks for telling us",
+    "reportSentText": "We'll review it within 24 hours. If you feel unsafe, you can remove and block your partner now.",
+    "alsoBlock": "Remove & block partner",
+    "done": "Done",
+    "roomBlocked": "You can't join this room.",
+    "noticeRemoved": "Your partner removed you from the room.",
+    "noticeClosed": "That room was closed by its owner."
+  },
+  "legal": {
+    "title": "Legal & support",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "support": "Help & contact",
+    "readTerms": "Read the Terms of Use"
   }
 }

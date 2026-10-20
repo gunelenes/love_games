@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Alert,
   Dimensions,
   Modal,
   Pressable,
@@ -19,6 +18,8 @@ import Animated, {
 import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuroraBackground } from '@/components/Background/AuroraBackground';
+import { ReportSheet } from '@/components/Safety/ReportSheet';
+import { RoomMenuSheet } from '@/components/Safety/RoomMenuSheet';
 import { BackButton } from '@/components/ui/BackButton';
 import { useAuth } from '@/hooks/useAuth';
 import { useRoom } from '@/hooks/useRoom';
@@ -46,9 +47,11 @@ const PRESETS = [
 export function BoxListScreen({ navigation }: Props) {
   const { t } = useTranslation();
   const { uid } = useAuth();
-  const { code, room, leave } = useRoom();
+  const { code, room, partnerUid, leave, block } = useRoom();
   const { boxes, loading, error } = useRoomBoxes(code);
   const [creating, setCreating] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [reportOpen, setReportOpen] = useState(false);
 
   // If we've somehow arrived here without a room code, bounce back to Lobby.
   useEffect(() => {
@@ -64,22 +67,16 @@ export function BoxListScreen({ navigation }: Props) {
     navigation.navigate('Box', { boxId: id });
   };
 
-  const handleLeave = () => {
-    Alert.alert(
-      t('boxes.leaveConfirmTitle'),
-      t('boxes.leaveConfirmText'),
-      [
-        { text: t('boxes.cancel'), style: 'cancel' },
-        {
-          text: t('boxes.leave'),
-          style: 'destructive',
-          onPress: async () => {
-            await leave();
-            navigation.replace('RoomLobby');
-          },
-        },
-      ]
-    );
+  // Both clear the room code when this phone leaves (a guest blocking the
+  // host leaves too); the !code effect above then returns to the Lobby.
+  const handleLeave = leave;
+  const handleBlock = block;
+
+  // iOS can't present a second Modal while the first is still animating
+  // out, so the report sheet opens once the menu has closed.
+  const openReport = () => {
+    setMenuOpen(false);
+    setTimeout(() => setReportOpen(true), 280);
   };
 
   const guestJoined = !!room?.guestUid;
@@ -92,11 +89,13 @@ export function BoxListScreen({ navigation }: Props) {
         <View style={styles.topBar}>
           <BackButton onPress={() => navigation.goBack()} />
           <Pressable
-            onPress={handleLeave}
-            style={styles.leaveBtn}
+            onPress={() => setMenuOpen(true)}
+            style={styles.menuBtn}
             hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel={t('safety.menuTitle')}
           >
-            <Text style={styles.leaveBtnText}>{t('boxes.leaveRoom')}</Text>
+            <Text style={styles.menuBtnText}>•••</Text>
           </Pressable>
         </View>
 
@@ -163,6 +162,26 @@ export function BoxListScreen({ navigation }: Props) {
         onClose={() => setCreating(false)}
         onCreate={handleCreate}
       />
+
+      <RoomMenuSheet
+        visible={menuOpen}
+        onClose={() => setMenuOpen(false)}
+        hasPartner={!!partnerUid}
+        isHost={room?.hostUid === uid}
+        onReport={openReport}
+        onBlock={handleBlock}
+        onLeave={handleLeave}
+      />
+
+      {code ? (
+        <ReportSheet
+          visible={reportOpen}
+          onClose={() => setReportOpen(false)}
+          roomCode={code}
+          reportedUid={partnerUid}
+          onBlock={partnerUid ? handleBlock : undefined}
+        />
+      ) : null}
     </View>
   );
 }
@@ -406,18 +425,22 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 4,
   },
-  leaveBtn: {
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    borderRadius: 10,
+  menuBtn: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.15)',
     backgroundColor: 'rgba(255,255,255,0.06)',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  leaveBtnText: {
+  menuBtnText: {
     color: colors.fg,
-    fontSize: 12,
-    fontWeight: '700',
+    fontSize: 14,
+    fontWeight: '900',
+    letterSpacing: 1,
+    marginTop: -2,
   },
   header: {
     alignItems: 'center',

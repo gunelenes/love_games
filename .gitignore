@@ -64,3 +64,6 @@ admin/scripts/service-account.json
 # generated native folders
 /ios
 /android
+
+# emulator logs
+*-debug.log

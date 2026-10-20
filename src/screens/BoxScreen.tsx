@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   Alert,
   Dimensions,
@@ -28,6 +28,7 @@ import {
   ConfettiBurst,
   type ConfettiBurstRef,
 } from '@/components/Confetti/ConfettiBurst';
+import { ReportSheet } from '@/components/Safety/ReportSheet';
 import { BackButton } from '@/components/ui/BackButton';
 import { useAuth } from '@/hooks/useAuth';
 import { useBoxDoc } from '@/hooks/useBoxDoc';
@@ -52,8 +53,14 @@ export function BoxScreen({ route, navigation }: Props) {
   const { t } = useTranslation();
   const { boxId } = route.params;
   const { uid } = useAuth();
-  const { code, room } = useRoom();
+  const { code, room, block } = useRoom();
   const { box, loading } = useBoxDoc(code, boxId);
+  const [reporting, setReporting] = useState<BoxNote | null>(null);
+
+  // Removed from the room (or it closed) while this box was open.
+  useEffect(() => {
+    if (!code) navigation.goBack();
+  }, [code, navigation]);
 
   const [draft, setDraft] = useState('');
   const [revealed, setRevealed] = useState<BoxNote | null>(null);
@@ -439,6 +446,16 @@ export function BoxScreen({ route, navigation }: Props) {
               />
               <Text style={styles.revealEyebrow}>{t('boxes.revealEyebrow')}</Text>
               <Text style={styles.revealText}>{revealed.text}</Text>
+              {revealed.authorUid !== uid ? (
+                <Pressable
+                  onPress={() => setReporting(revealed)}
+                  style={styles.reportLink}
+                  hitSlop={8}
+                  accessibilityRole="button"
+                >
+                  <Text style={styles.reportLinkText}>⚑ {t('safety.reportNote')}</Text>
+                </Pressable>
+              ) : null}
               <View style={styles.revealActions}>
                 <Pressable
                   onPress={handleCloseReveal}
@@ -456,6 +473,24 @@ export function BoxScreen({ route, navigation }: Props) {
             </View>
           </Animated.View>
         </>
+      ) : null}
+
+      {code ? (
+        <ReportSheet
+          visible={!!reporting}
+          onClose={() => setReporting(null)}
+          roomCode={code}
+          reportedUid={reporting?.authorUid ?? null}
+          noteText={reporting?.text}
+          onBlock={
+            partnerUid && reporting?.authorUid === partnerUid
+              ? async () => {
+                  handleCloseReveal();
+                  await block();
+                }
+              : undefined
+          }
+        />
       ) : null}
 
       <ConfettiBurst
@@ -782,6 +817,20 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   revealActions: { flexDirection: 'row', gap: 10 },
+  reportLink: {
+    alignSelf: 'center',
+    minHeight: 32,
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    marginTop: -6,
+    marginBottom: 10,
+  },
+  reportLinkText: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0.4,
+  },
   revealCloseBtn: {
     flex: 1,
     paddingVertical: 12,

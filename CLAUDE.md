@@ -62,6 +62,19 @@ Eski offline QR-based Kutular kaldırıldı, Firebase Firestore real-time'a taş
 
 **Dondurulmuş**: **Zar** — `src/screens/DiceScreen.tsx` + `components/Dice/` + `useDualDiceRoll` hala duruyor, route hala `RootNav`'da. Home'dan link kaldırıldı (yerine Pozlar). İleride geri getirilebilir, kod silinmedi.
 
+## Güvenlik / App Store §1.2 (Kutular)
+
+Kutular tek kullanıcıdan-kullanıcıya içerik yeri (davetli 2 kişilik oda). Önlemler (2026-10-20):
+- **Oda menüsü (•••)** — `src/components/Safety/RoomMenuSheet.tsx`: Sorun bildir · Partneri çıkar ve engelle · Odadan ayrıl. Ortak `src/components/ui/BottomSheet.tsx`.
+- **Şikâyet** — `ReportSheet.tsx`: açılan partner notunda "Şikâyet et" + menüden genel şikâyet. `reports/` koleksiyonu (create-only; admin okur). Gönderince "partneri de engelle" teklif edilir.
+- **Engelleme** — `src/services/safetyService.ts`. Host engellerse: partnerin notları + onayları tüm kutulardan silinir, `guestUid=null`, `blockedUids` arrayUnion. Guest engellerse: odadan çıkar. Her iki durumda uid cihazdaki `safety:blocked:v1` listesine girer → yeni açılan odalara `blockedUids` olarak taşınır, o kişinin host olduğu odalara `joinRoom` `blocked` döner.
+- **Ayrılma artık sunucuda** — guest slotu boşaltır; host partner varsa odayı devreder (`hostUid=guestUid`), yalnızsa kutuları + odayı siler.
+- **Çıkarılan taraf** — `useRoom` snapshot'ta kendini üye olarak görmezse kodu siler + lobide `notice` gösterir (`removed` / `closed`). Kendi ayrılmasında `leavingRef` ile bastırılır.
+- **Rules** (`firestore.rules` rooms): host hostUid'i sadece mevcut guest'e devredebilir; guest sadece `track/level/guestUid→null`; join sadece `guestUid` alanı + `blockedUids`'te değilse; admin rooms/boxes read+update (silme yok). **Test:** `scripts/rules-test` (`npm install && npm test`, Java gerekir) — 41 senaryo. Rules değişince mutlaka çalıştır.
+- **Admin** — `/reports` (`admin/components/reports-viewer.tsx`, `admin/lib/reports-service.ts`): kişinin notlarını sil, odadan çıkar + engelle (host ise oda partnere devredilir), durum (yeni / işlem yapıldı / geçersiz), 24 saati geçen yeni şikâyet kırmızı.
+- **Söz verildi: her şikâyet 24 saat içinde incelenir** (uygulama içi metin, Terms, reviewer notu). Admin `/reports`'u düzenli kontrol etmek gerekiyor; ileride e-posta bildirimi (Cloud Function) eklenebilir.
+- **Kullanım Koşulları** — `docs/terms/` (sıfır tolerans). Yaş kapısı onay cümlesi Terms kabulünü içerir + "Kullanım Koşulları'nı oku" linki; Settings → "Yasal ve destek" (Terms / Gizlilik / Yardım). URL'ler `src/data/legal.ts` (`tr` → `#tr`).
+
 ## Topluluk Özellikleri
 
 - **Öneriler + Fantezilerin** — `src/screens/SubmissionScreen.tsx` (ortak ekran, route adına göre `kind` seçer). Settings modal → "Bize yardım et" bölümünden erişim. Firestore koleksiyonları: `suggestions/`, `fantasies/`. Service: `src/services/submissionService.ts` (`submitFeedback(kind, text)`, 4-1000 char validation, uid + locale + status=new ekler). Mobile sadece create yapabilir, read/update/delete admin.

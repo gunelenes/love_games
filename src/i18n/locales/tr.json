@@ -202,7 +202,7 @@
   "ageGate": {
     "title": "Yetişkin İçeriği",
     "body": "Bu uygulama **18 yaş ve üzeri** yetişkinlere yöneliktir. İçerik, çiftlere yönelik sensüel ve mahrem temalar barındırır. Devam etmek için:",
-    "checkbox": "18 yaşından büyüğüm ve karşılıklı rızayla **partnerimle** kullanacağım.",
+    "checkbox": "18 yaşından büyüğüm, karşılıklı rızayla **partnerimle** kullanacağım ve **Kullanım Koşulları**nı kabul ediyorum.",
     "accept": "Kabul Et ve Devam",
     "saving": "Kaydediliyor…",
     "footer": "Bu onay yalnızca cihazınızda saklanır. Herhangi bir hesap veya konum bilgisi gönderilmez."
@@ -261,5 +261,52 @@
     "thanksTitle": "Teşekkürler ✨",
     "thanksBody": "Kıvılcımın alındı. Yakında kart ya da senaryoya dönüşebilir.",
     "sendAnother": "Bir tane daha paylaş"
+  },
+  "safety": {
+    "menuTitle": "Oda seçenekleri",
+    "reportProblem": "Sorun bildir",
+    "reportProblemSub": "Taciz ya da yanlış hissettiren her şeyi bize anlat",
+    "blockPartner": "Partneri çıkar ve engelle",
+    "blockPartnerSub": "Erişimini kaybeder, tekrar katılamaz",
+    "leaveSub": "Bu odadan çık",
+    "blockTitle": "Partnerin çıkarılıp engellensin mi?",
+    "blockTextHost": "Partnerin bu odadan hemen çıkarılır ve notları silinir. Bu kodla tekrar katılamaz, ileride açacağın odalara da giremez.",
+    "blockTextGuest": "Bu odadan çıkarsın ve bu kişinin ileride açacağı odalara katılamazsın.",
+    "blockConfirm": "Çıkar ve engelle",
+    "leaveTitle": "Odadan çıkılsın mı?",
+    "leaveGuest": "Bu odadan çıkarsın. Kutular partnerinde kalır; kodla tekrar katılabilirsin.",
+    "leaveHostHandover": "Odanın sahibi partnerin olur ve kutular onda kalır. Kodla tekrar katılabilirsin.",
+    "leaveHostClose": "Odada yalnızsın; çıkarsan oda tüm kutularıyla birlikte silinir.",
+    "working": "Bir saniye…",
+    "blocking": "Engelleniyor…",
+    "reportTitle": "Sorun bildir",
+    "reportNoteTitle": "Bu notu şikâyet et",
+    "reportNote": "Şikâyet et",
+    "reasonLabel": "Sorun ne?",
+    "reason": {
+      "harassment": "Taciz veya tehdit",
+      "inappropriate": "İstenmeyen ya da rahatsız edici içerik",
+      "spam": "Spam",
+      "other": "Başka bir şey"
+    },
+    "detailsPlaceholder": "Ayrıntı ekle (isteğe bağlı)",
+    "sendReport": "Şikâyeti gönder",
+    "sending": "Gönderiliyor…",
+    "reportError": "Şikâyet gönderilemedi. Bağlantını kontrol edip tekrar dene.",
+    "reportFootnote": "Şikâyetler partnerine değil, yalnızca Wisp & Flame ekibine gider. Her şikâyeti 24 saat içinde inceleriz.",
+    "reportSentTitle": "Bize bildirdiğin için teşekkürler",
+    "reportSentText": "24 saat içinde inceleyeceğiz. Kendini güvende hissetmiyorsan partnerini şimdi çıkarıp engelleyebilirsin.",
+    "alsoBlock": "Partneri çıkar ve engelle",
+    "done": "Tamam",
+    "roomBlocked": "Bu odaya katılamazsın.",
+    "noticeRemoved": "Partnerin seni odadan çıkardı.",
+    "noticeClosed": "Bu oda, sahibi tarafından kapatıldı."
+  },
+  "legal": {
+    "title": "Yasal ve destek",
+    "terms": "Kullanım Koşulları",
+    "privacy": "Gizlilik Politikası",
+    "support": "Yardım ve iletişim",
+    "readTerms": "Kullanım Koşulları’nı oku"
   }
 }

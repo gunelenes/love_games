@@ -203,7 +203,7 @@
   "ageGate": {
     "title": "成人內容",
     "body": "本應用程式僅供 **18 歲以上成人** 使用。內容包含適合情侶的感性與親密主題。若要繼續：",
-    "checkbox": "我已年滿 18 歲，將與 **我的另一半** 在雙方同意下使用。",
+    "checkbox": "我已滿 18 歲，將在雙方同意下與**我的伴侶**一起使用，並同意**使用條款**。",
     "accept": "同意並繼續",
     "saving": "儲存中…",
     "footer": "此同意僅儲存於你的裝置上，不會傳送任何帳號或位置資訊。"
@@ -227,5 +227,52 @@
     "rtlReloadBody": "阿拉伯文採用由右至左的版面。應用程式需要重新啟動以套用方向變更。",
     "rtlReloadButton": "立即重啟",
     "close": "關閉"
+  },
+  "safety": {
+    "menuTitle": "房間選項",
+    "reportProblem": "回報問題",
+    "reportProblemSub": "若遇到騷擾或任何讓你不舒服的事，請告訴我們",
+    "blockPartner": "移除並封鎖伴侶",
+    "blockPartnerSub": "對方會失去存取權，且無法再加入",
+    "leaveSub": "離開這個房間",
+    "blockTitle": "要移除並封鎖你的伴侶嗎？",
+    "blockTextHost": "你的伴侶會立即被移出房間，其筆記也會被刪除。對方將無法再用此代碼加入，也無法加入你之後建立的房間。",
+    "blockTextGuest": "你將離開這個房間，之後也無法加入此人建立的房間。",
+    "blockConfirm": "移除並封鎖",
+    "leaveTitle": "要離開房間嗎？",
+    "leaveGuest": "你將離開這個房間。盒子會留在伴侶那裡，你可以用代碼重新加入。",
+    "leaveHostHandover": "你的伴侶會成為房主並保留盒子。你可以用代碼重新加入。",
+    "leaveHostClose": "房間裡只有你一人，離開後房間及所有盒子都會被刪除。",
+    "working": "請稍候…",
+    "blocking": "封鎖中…",
+    "reportTitle": "回報問題",
+    "reportNoteTitle": "檢舉這則筆記",
+    "reportNote": "檢舉",
+    "reasonLabel": "發生了什麼問題？",
+    "reason": {
+      "harassment": "騷擾或威脅",
+      "inappropriate": "不想要或令人反感的內容",
+      "spam": "垃圾訊息",
+      "other": "其他"
+    },
+    "detailsPlaceholder": "補充說明（選填）",
+    "sendReport": "送出檢舉",
+    "sending": "傳送中…",
+    "reportError": "無法送出檢舉。請檢查網路連線後再試一次。",
+    "reportFootnote": "檢舉只會送到 Wisp & Flame 團隊，絕不會通知你的伴侶。我們會在 24 小時內審查每一則檢舉。",
+    "reportSentTitle": "謝謝你告訴我們",
+    "reportSentText": "我們會在 24 小時內審查。如果你感到不安全，現在就可以移除並封鎖你的伴侶。",
+    "alsoBlock": "移除並封鎖伴侶",
+    "done": "完成",
+    "roomBlocked": "你無法加入這個房間。",
+    "noticeRemoved": "你的伴侶已將你移出房間。",
+    "noticeClosed": "房主已關閉這個房間。"
+  },
+  "legal": {
+    "title": "法律與支援",
+    "terms": "使用條款",
+    "privacy": "隱私權政策",
+    "support": "說明與聯絡",
+    "readTerms": "閱讀使用條款"
   }
 }

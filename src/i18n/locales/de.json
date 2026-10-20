@@ -203,7 +203,7 @@
   "ageGate": {
     "title": "Inhalte für Erwachsene",
     "body": "Diese App ist für **Erwachsene ab 18 Jahren**. Die Inhalte umfassen sinnliche und intime Themen für Paare. Um fortzufahren:",
-    "checkbox": "Ich bin 18+ und nutze dies mit **meinem Partner** im Einvernehmen.",
+    "checkbox": "Ich bin 18+, nutze dies mit **meinem Partner** im Einvernehmen und stimme den **Nutzungsbedingungen** zu.",
     "accept": "Annehmen & weiter",
     "saving": "Speichert …",
     "footer": "Diese Zustimmung bleibt nur auf deinem Gerät. Kein Konto, keine Standortdaten."
@@ -227,5 +227,52 @@
     "rtlReloadTitle": "Neustart nötig",
     "rtlReloadBody": "Arabisch wird von rechts nach links geschrieben. Die App muss neu starten, um die Richtung zu übernehmen.",
     "rtlReloadButton": "Jetzt neu starten"
+  },
+  "safety": {
+    "menuTitle": "Raumoptionen",
+    "reportProblem": "Problem melden",
+    "reportProblemSub": "Erzähl uns von Belästigung oder allem, was sich falsch anfühlt",
+    "blockPartner": "Partner entfernen & blockieren",
+    "blockPartnerSub": "Verliert den Zugang und kann nicht wieder beitreten",
+    "leaveSub": "Diesen Raum verlassen",
+    "blockTitle": "Partner entfernen & blockieren?",
+    "blockTextHost": "Dein Partner wird sofort aus dem Raum entfernt und seine Notizen werden gelöscht. Er kann weder mit diesem Code noch später deinen neuen Räumen beitreten.",
+    "blockTextGuest": "Du verlässt diesen Raum und kannst künftig keinen Räumen dieser Person beitreten.",
+    "blockConfirm": "Entfernen & blockieren",
+    "leaveTitle": "Raum verlassen?",
+    "leaveGuest": "Du verlässt diesen Raum. Die Boxen bleiben bei deinem Partner, mit dem Code kannst du wieder beitreten.",
+    "leaveHostHandover": "Dein Partner wird Besitzer des Raums und behält die Boxen. Mit dem Code kannst du wieder beitreten.",
+    "leaveHostClose": "Du bist allein im Raum. Wenn du ihn verlässt, wird er mit allen Boxen gelöscht.",
+    "working": "Einen Moment…",
+    "blocking": "Wird blockiert…",
+    "reportTitle": "Problem melden",
+    "reportNoteTitle": "Diese Notiz melden",
+    "reportNote": "Melden",
+    "reasonLabel": "Was ist los?",
+    "reason": {
+      "harassment": "Belästigung oder Drohungen",
+      "inappropriate": "Unerwünschte oder anstößige Inhalte",
+      "spam": "Spam",
+      "other": "Etwas anderes"
+    },
+    "detailsPlaceholder": "Details hinzufügen (optional)",
+    "sendReport": "Meldung senden",
+    "sending": "Wird gesendet…",
+    "reportError": "Die Meldung konnte nicht gesendet werden. Prüfe deine Verbindung und versuche es erneut.",
+    "reportFootnote": "Meldungen gehen nur an das Wisp & Flame-Team, nie an deinen Partner. Wir prüfen jede Meldung innerhalb von 24 Stunden.",
+    "reportSentTitle": "Danke für deine Meldung",
+    "reportSentText": "Wir prüfen sie innerhalb von 24 Stunden. Wenn du dich unsicher fühlst, kannst du deinen Partner jetzt entfernen und blockieren.",
+    "alsoBlock": "Partner entfernen & blockieren",
+    "done": "Fertig",
+    "roomBlocked": "Du kannst diesem Raum nicht beitreten.",
+    "noticeRemoved": "Dein Partner hat dich aus dem Raum entfernt.",
+    "noticeClosed": "Dieser Raum wurde vom Besitzer geschlossen."
+  },
+  "legal": {
+    "title": "Rechtliches & Hilfe",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "support": "Hilfe & Kontakt",
+    "readTerms": "Nutzungsbedingungen lesen"
   }
 }

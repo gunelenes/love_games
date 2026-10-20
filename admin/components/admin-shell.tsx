@@ -13,6 +13,7 @@ const NAV = [
   { href: '/glimpses', label: '✧ Göz Ucuyla' },
   { href: '/suggestions', label: '💡 Öneriler' },
   { href: '/fantasies', label: '🌹 Fanteziler' },
+  { href: '/reports', label: '🚩 Şikâyetler' },
 ];
 
 export function AdminShell({ children }: { children: ReactNode }) {
