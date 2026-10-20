@@ -295,7 +295,6 @@ export type RoomBox = {
 
 **Altyapı / açık sorular:**
 - `admin/package-lock.json` `package.json` ile senkron değil (`npm ci` düşer). Railway `npm ci` kullanıyorsa admin deploy'u kırılabilir → `cd admin && npm install` ile lock'u yenileyip commit et.
-- Rules deploy GitHub Action'ının Storage adımı CI'da hiç doğrulanmadı (kurallar elle deploy edildi). Kırmızıysa CI service account'una "Firebase Rules Admin" rolü ekle.
 - Gizlilik politikasında öneri/fantezi saklama süresi "en fazla 24 ay" yazıldı — Claude'un önerisi, kullanıcı henüz onaylamadı.
 
 **Wheel:**
@@ -345,6 +344,19 @@ Kullanıcı bu adımlara **Claude web** (claude.ai/code) ile devam etmek istiyor
 - **Çekilecek 6 ekran** (başlıklar `store/README.md`'de, EN + TR): 1 Home · 2 Çark (dönerken/sonuç) · 3 Kart (açık kart) · 4 Track/Level bar görünür bir oyun ekranı · 5 Kutular (mümkünse iki telefon) · 6 Settings dil listesi.
 - **Akış:** kullanıcı ham PNG'leri `store/screenshots/raw/{en-US,tr}/01-home.png …` olarak commit'ler → Claude `scripts/brand/build-screenshots.mjs` yazar (sharp + resvg): mor gradient zemin (`#8E2DE2 → #4A00E0`), üstte başlık (Fredoka bold, beyaz), ortada yuvarlatılmış köşeli ham ekran + gölge → çıktı `store/screenshots/{en-US,tr}/01.png …` tam 1290×2796. Logo renkleriyle tutarlı olmalı; kullanıcının animasyon/tasarım çıtası yüksek, düz görünen kompozisyon reddedilir.
 - Status bar: saat/şarj ideal olmak zorunda değil ama bildirim ikonları olmasın.
+
+## Android / Google Play Planı
+
+Kod tarafı hazır: package `com.gunelenes.wispandflame`, adaptive icon, splash, `versionCode` EAS remote. Gereksiz şablon izinleri `android.blockedPermissions` ile kaldırıldı (SYSTEM_ALERT_WINDOW, READ/WRITE_EXTERNAL_STORAGE) → kalanlar INTERNET + VIBRATE. Listing görselleri `store/google-play/icon-512.png` + `feature-graphic.png` (1024×500, `scripts/brand/build-icons.mjs` üretir; font `scripts/brand/fonts/Fredoka-Bold.ttf`, OFL).
+
+1. **[Kullanıcı] Play Console geliştirici hesabı** ($25, tek seferlik, kimlik doğrulama birkaç gün sürebilir).
+2. **Kişisel hesaplar için zorunlu kapalı test:** 2023 sonrası açılan kişisel hesaplarda production'a çıkmadan önce **en az 12 test kullanıcısıyla 14 gün kesintisiz kapalı test** gerekiyor. Takvimde en uzun kalem bu → hesap açılır açılmaz başlat.
+3. Build: `npx eas-cli build -p android --profile production` → AAB. İmza anahtarını EAS üretir/saklar (Play App Signing açık kalsın).
+4. **İlk AAB'yi Play Console'a elle yükle** (internal/closed testing track). Sonrakiler `eas submit -p android` ile — bunun için Google Cloud service account JSON'u gerekir (repoya girmez).
+5. **[Kullanıcı] Play Console formları:** Data safety (App Privacy cevaplarıyla aynı: User ID + user content, şifreli aktarım, silme talebi e-postayla), içerik derecelendirmesi (IARC anketi — cinsel temalar: evet → yetişkin), hedef kitle **18+**, uygulama erişimi (giriş yok), reklam yok, gizlilik URL'i.
+6. Listing: `store/google-play/{en-US,tr-TR}/` metinleri + ikon + feature graphic + en az 2 telefon ekran görüntüsü (iOS için çekilenler kullanılabilir, 16:9 / 9:16 oranında).
+
+**Play'e özel risk:** Google Play'in *Sexual Content* politikası Apple'dan katı. Cinsel eylemi tasvir eden içerik yasak; Pozlar'daki poz çizimleri buna takılabilir (Apple'da §1.1.4 riskiyle aynı). Reddedilirse ilk hamle yine admin'den Pozlar kartlarını değiştirmek/kaldırmak.
 
 ### Bilinen riskler
 

@@ -15,6 +15,11 @@
  *   assets/android-icon-{foreground,background,monochrome}.png — adaptive icon layers
  *   assets/splash-icon.png                    — splash mark (transparent)
  *   assets/favicon.png, docs/favicon.png, docs/apple-touch-icon.png
+ *   store/google-play/icon-512.png, feature-graphic.png (1024×500) — Play listing
+ *
+ * Wordmark font: Fredoka Bold (SIL OFL, scripts/brand/fonts/), a static
+ * wght=700 instance of the Google Fonts variable file — resvg ignores
+ * variation axes, so the variable font would render at its default weight.
  */
 import fs from 'fs';
 import path from 'path';
@@ -64,7 +69,23 @@ const files = {
   splash: svg(fit(0.92, flames), clip),
 };
 
-const png = (s, size) => new Resvg(s, { fitTo: { mode: 'width', value: size } }).render().asPng();
+const FONT = out('scripts/brand/fonts/Fredoka-Bold.ttf');
+const png = (s, size) =>
+  new Resvg(s, {
+    fitTo: { mode: 'width', value: size },
+    font: { fontFiles: [FONT], loadSystemFonts: false, defaultFontFamily: 'Fredoka' },
+  })
+    .render()
+    .asPng();
+
+// Play feature graphic: mark on the left, wordmark + tagline on the right.
+const feature = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 500" width="1024" height="500">
+<defs>${bgGradient}${clip}<radialGradient id="glow" cx="270" cy="260" r="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF4FA3" stop-opacity="0.35"/><stop offset="1" stop-color="#FF4FA3" stop-opacity="0"/></radialGradient></defs>
+<rect width="1024" height="500" fill="url(#bg)"/><rect width="1024" height="500" fill="url(#glow)"/>
+<g transform="translate(270 255) scale(0.5) translate(${-CX} ${-CY})">${flames}</g>
+<text x="478" y="246" font-family="Fredoka" font-size="74" fill="#FFFFFF">Wisp <tspan fill="${COLORS.flameB}">&amp;</tspan> Flame</text>
+<text x="482" y="306" font-family="Fredoka" font-size="31" fill="#FFFFFF" fill-opacity="0.82">Games made for two</text>
+</svg>`;
 const opaque = (buf) => sharp(buf).flatten({ background: COLORS.bgSolid }).removeAlpha().png().toBuffer();
 
 fs.writeFileSync(out('scripts/brand/icon.svg'), files.icon);
@@ -77,4 +98,7 @@ fs.writeFileSync(out('assets/splash-icon.png'), png(files.splash, 1024));
 fs.writeFileSync(out('assets/favicon.png'), await opaque(png(files.icon, 48)));
 fs.writeFileSync(out('docs/favicon.png'), await opaque(png(files.icon, 64)));
 fs.writeFileSync(out('docs/apple-touch-icon.png'), await opaque(png(files.icon, 180)));
+fs.mkdirSync(out('store/google-play'), { recursive: true });
+fs.writeFileSync(out('store/google-play/icon-512.png'), await opaque(png(files.icon, 512)));
+fs.writeFileSync(out('store/google-play/feature-graphic.png'), await opaque(png(feature, 1024)));
 console.log('brand assets written');
