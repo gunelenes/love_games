@@ -73,6 +73,12 @@
           "backgroundColor": "#6C17E1"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "532d00ae-8801-488e-97f5-eb543684c3fa"
+      }
+    },
+    "owner": "enesgunel"
   }
 }
