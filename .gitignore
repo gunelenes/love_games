@@ -67,3 +67,8 @@ admin/scripts/service-account.json
 
 # emulator logs
 *-debug.log
+
+# Generated store screenshots (node scripts/brand/build-screenshots.mjs); raw captures stay tracked.
+store/screenshots/ios/
+store/screenshots/ios-6.5/
+store/screenshots/play/
