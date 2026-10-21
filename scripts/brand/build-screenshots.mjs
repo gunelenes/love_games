@@ -3,6 +3,7 @@
  *
  * Input:  store/screenshots/raw/{en-US,tr}/NN-name.{png,jpg}   (NN picks the caption)
  * Output: store/screenshots/ios/{locale}/NN.png    1290×2796 (App Store 6.9")
+ *         store/screenshots/ios-6.5/{locale}/NN.png 1284×2778 (App Store 6.5")
  *         store/screenshots/play/{locale}/NN.png   1080×1920 (Play: long side ≤ 2× short side)
  *
  * Usage (same ad hoc renderers as build-icons.mjs):
@@ -49,6 +50,8 @@ const CAPTIONS = {
 
 const TARGETS = {
   ios: { w: 1290, h: 2796, caption: 118, captionTop: 250, phoneTop: 560, side: 120 },
+  // App Store Connect's 6.5" slot (shown instead of 6.9" on some versions).
+  'ios-6.5': { w: 1284, h: 2778, caption: 117, captionTop: 248, phoneTop: 556, side: 120 },
   play: { w: 1080, h: 1920, caption: 84, captionTop: 170, phoneTop: 380, side: 210 },
 };
 
